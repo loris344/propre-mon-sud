@@ -1,0 +1,118 @@
+import { Button } from "@/components/ui/button";
+import { Phone, Menu, X } from "lucide-react";
+import { useState } from "react";
+
+const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+      setIsMenuOpen(false);
+    }
+  };
+
+  return (
+    <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border/50 shadow-sm">
+      <nav className="container mx-auto px-4 py-4">
+        <div className="flex items-center justify-between">
+          
+          {/* Logo */}
+          <div className="flex items-center space-x-2">
+            <div className="w-10 h-10 bg-gradient-to-br from-primary to-primary/80 rounded-lg flex items-center justify-center">
+              <span className="text-primary-foreground font-bold text-xl">D</span>
+            </div>
+            <div>
+              <div className="font-bold text-foreground text-lg">Nettoyage Pro</div>
+              <div className="text-xs text-muted-foreground">Montpellier</div>
+            </div>
+          </div>
+
+          {/* Desktop Navigation */}
+          <div className="hidden md:flex items-center space-x-8">
+            <button 
+              onClick={() => scrollToSection('accueil')}
+              className="text-foreground hover:text-primary transition-colors font-medium"
+            >
+              Accueil
+            </button>
+            <button 
+              onClick={() => scrollToSection('services')}
+              className="text-foreground hover:text-primary transition-colors font-medium"
+            >
+              Services
+            </button>
+            <button 
+              onClick={() => scrollToSection('contact')}
+              className="text-foreground hover:text-primary transition-colors font-medium"
+            >
+              Contact
+            </button>
+          </div>
+
+          {/* CTA Button */}
+          <div className="hidden md:flex items-center space-x-4">
+            <Button variant="outline" size="sm">
+              <Phone className="w-4 h-4" />
+              04 67 XX XX XX
+            </Button>
+            <Button variant="hero" size="sm">
+              Devis Gratuit
+            </Button>
+          </div>
+
+          {/* Mobile Menu Button */}
+          <button
+            className="md:hidden p-2"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          >
+            {isMenuOpen ? (
+              <X className="w-6 h-6 text-foreground" />
+            ) : (
+              <Menu className="w-6 h-6 text-foreground" />
+            )}
+          </button>
+        </div>
+
+        {/* Mobile Navigation */}
+        {isMenuOpen && (
+          <div className="md:hidden mt-4 p-4 bg-card rounded-lg shadow-lg border border-border/50">
+            <div className="space-y-4">
+              <button 
+                onClick={() => scrollToSection('accueil')}
+                className="block w-full text-left text-foreground hover:text-primary transition-colors font-medium py-2"
+              >
+                Accueil
+              </button>
+              <button 
+                onClick={() => scrollToSection('services')}
+                className="block w-full text-left text-foreground hover:text-primary transition-colors font-medium py-2"
+              >
+                Services
+              </button>
+              <button 
+                onClick={() => scrollToSection('contact')}
+                className="block w-full text-left text-foreground hover:text-primary transition-colors font-medium py-2"
+              >
+                Contact
+              </button>
+              
+              <div className="pt-4 border-t border-border/50 space-y-3">
+                <Button variant="outline" size="sm" className="w-full">
+                  <Phone className="w-4 h-4" />
+                  04 67 XX XX XX
+                </Button>
+                <Button variant="hero" size="sm" className="w-full">
+                  Devis Gratuit
+                </Button>
+              </div>
+            </div>
+          </div>
+        )}
+      </nav>
+    </header>
+  );
+};
+
+export default Header;
