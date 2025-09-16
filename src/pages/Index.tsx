@@ -4,16 +4,16 @@ import Contact from "../components/Contact";
 
 const Index = () => {
   return (
-    <main>
-      <div id="accueil">
+    <main role="main">
+      <section id="accueil" aria-labelledby="hero-title">
         <Hero />
-      </div>
-      <div id="services">
+      </section>
+      <section id="services" aria-labelledby="services-title">
         <Services />
-      </div>
-      <div id="contact">
+      </section>
+      <section id="contact" aria-labelledby="contact-title">
         <Contact />
-      </div>
+      </section>
     </main>
   );
 };

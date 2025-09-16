@@ -24,7 +24,7 @@ const Header = () => {
               <span className="text-primary-foreground font-bold text-xl">D</span>
             </div>
             <div>
-              <div className="font-bold text-foreground text-lg">Nettoyage Pro</div>
+              <div className="font-bold text-foreground text-lg">SOS Nettoyage Diogène</div>
               <div className="text-xs text-muted-foreground">Montpellier</div>
             </div>
           </div>
@@ -55,7 +55,7 @@ const Header = () => {
           <div className="hidden md:flex items-center space-x-4">
             <Button variant="outline" size="sm">
               <Phone className="w-4 h-4" />
-              04 67 XX XX XX
+              07 67 13 54 58
             </Button>
             <Button variant="hero" size="sm">
               Devis Gratuit
@@ -101,7 +101,7 @@ const Header = () => {
               <div className="pt-4 border-t border-border/50 space-y-3">
                 <Button variant="outline" size="sm" className="w-full">
                   <Phone className="w-4 h-4" />
-                  04 67 XX XX XX
+                  07 67 13 54 58
                 </Button>
                 <Button variant="hero" size="sm" className="w-full">
                   Devis Gratuit

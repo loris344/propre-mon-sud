@@ -13,7 +13,7 @@ const Hero = () => {
           {/* Content */}
           <div className="space-y-8">
             <div className="space-y-4">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
+              <h1 id="hero-title" className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
                 Nettoyage et Débarras
                 <span className="block text-primary">Syndrome de Diogène</span>
               </h1>
@@ -60,8 +60,11 @@ const Hero = () => {
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <img 
                 src={heroImage} 
-                alt="Équipe professionnelle de nettoyage spécialisé"
+                alt="Équipe professionnelle de nettoyage spécialisé syndrome de Diogène à Montpellier - Intervention discrète et respectueuse"
                 className="w-full h-[500px] object-cover"
+                loading="eager"
+                width="800"
+                height="500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent"></div>
             </div>
