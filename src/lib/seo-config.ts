@@ -52,7 +52,11 @@ export const seoConfig: Record<string, SEOConfig> = {
         { "@type": "City", "name": "Sète" },
         { "@type": "City", "name": "Béziers" },
         { "@type": "City", "name": "Nîmes" },
-        { "@type": "City", "name": "Perpignan" }
+        { "@type": "City", "name": "Perpignan" },
+        { "@type": "City", "name": "Toulouse" },
+        { "@type": "City", "name": "Marseille" },
+        { "@type": "City", "name": "Nice" },
+        { "@type": "City", "name": "Bordeaux" }
       ],
       "serviceType": [
         "Nettoyage Syndrome de Diogène",

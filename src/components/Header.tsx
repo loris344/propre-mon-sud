@@ -59,7 +59,11 @@ const Header = () => {
               <Phone className="w-4 h-4" />
               07 67 13 54 58
             </Button>
-            <Button variant="hero" size="sm">
+            <Button 
+              variant="hero" 
+              size="sm"
+              onClick={() => scrollToSection('contact')}
+            >
               Devis Gratuit
             </Button>
           </div>
@@ -105,7 +109,12 @@ const Header = () => {
                   <Phone className="w-4 h-4" />
                   07 67 13 54 58
                 </Button>
-                <Button variant="hero" size="sm" className="w-full">
+                <Button 
+                  variant="hero" 
+                  size="sm" 
+                  className="w-full"
+                  onClick={() => scrollToSection('contact')}
+                >
                   Devis Gratuit
                 </Button>
               </div>

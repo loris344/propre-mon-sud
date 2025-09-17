@@ -30,7 +30,7 @@ const ServiceDebarras = () => {
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
               Évacuation et tri de tous types d'objets, meubles et déchets en respectant l'environnement. 
-              Service professionnel pour particuliers et professionnels à Montpellier et région.
+              Service professionnel pour particuliers et professionnels dans tout le Sud de la France.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button variant="hero" size="lg" className="text-lg px-8">

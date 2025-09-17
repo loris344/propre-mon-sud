@@ -27,11 +27,31 @@ const Hero = () => {
             
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button variant="hero" size="lg" className="text-lg px-8 py-6">
+              <Button 
+                variant="hero" 
+                size="lg" 
+                className="text-lg px-8 py-6"
+                onClick={() => {
+                  const element = document.getElementById('contact');
+                  if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }}
+              >
                 <Phone className="w-5 h-5" />
                 Devis Gratuit
               </Button>
-              <Button variant="accent" size="lg" className="text-lg px-8 py-6">
+              <Button 
+                variant="accent" 
+                size="lg" 
+                className="text-lg px-8 py-6"
+                onClick={() => {
+                  const element = document.getElementById('contact');
+                  if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }}
+              >
                 <Mail className="w-5 h-5" />
                 Contact Discret
               </Button>
@@ -71,7 +91,7 @@ const Hero = () => {
             {/* Floating Card */}
             <div className="absolute -bottom-6 -left-6 bg-card p-6 rounded-xl shadow-lg border border-border max-w-xs">
               <div className="text-center space-y-2">
-                <div className="text-2xl font-bold text-primary">15+</div>
+                <div className="text-2xl font-bold text-primary">6+</div>
                 <div className="text-sm text-muted-foreground">Années d'expérience</div>
               </div>
             </div>

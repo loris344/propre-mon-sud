@@ -310,7 +310,7 @@ const ServiceDesinfection = () => {
                 <h3 className="text-2xl font-bold mb-4">Désinfection d'Urgence</h3>
                 <p className="text-lg mb-6 opacity-90">
                   En cas de contamination virale, bactérienne ou infestation, 
-                  nous intervenons sous 4 heures à Montpellier et région.
+                  nous intervenons sous 4 heures dans tout le Sud de la France.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button variant="secondary" size="lg" className="text-lg px-8">

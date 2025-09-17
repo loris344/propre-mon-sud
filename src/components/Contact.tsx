@@ -272,7 +272,7 @@ const Contact = () => {
                 <h3 className="text-2xl font-bold mb-2">Urgence 7j/7</h3>
                 <p className="text-xl font-semibold mb-4">07 67 13 54 58</p>
                 <p className="text-primary-foreground/90">
-                  Intervention rapide dans l'Hérault et départements limitrophes
+                  Intervention rapide dans le Sud de la France : Occitanie, PACA, Nouvelle-Aquitaine
                 </p>
               </CardContent>
             </Card>
@@ -286,7 +286,7 @@ const Contact = () => {
                 <div>
                   <h4 className="font-semibold text-foreground mb-1">Zone d'intervention</h4>
                   <p className="text-muted-foreground">
-                    Montpellier et agglomération, Sète, Béziers, Nîmes, Perpignan et toute l'Occitanie
+                    Montpellier, Sète, Béziers, Nîmes, Perpignan, Toulouse, Marseille, Nice, Bordeaux et tout le Sud de la France
                   </p>
                 </div>
               </div>
@@ -311,7 +311,7 @@ const Contact = () => {
                 <div>
                   <h4 className="font-semibold text-foreground mb-1">Email</h4>
                   <p className="text-muted-foreground">
-                    contact@nettoyage-diogene-montpellier.fr
+                    contact@sosnettoyagediogene.fr
                   </p>
                 </div>
               </div>

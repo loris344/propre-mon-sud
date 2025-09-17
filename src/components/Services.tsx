@@ -111,7 +111,17 @@ const Services = () => {
           </div>
           
           <div className="text-center">
-            <Button variant="hero" size="lg" className="px-8">
+            <Button 
+              variant="hero" 
+              size="lg" 
+              className="px-8"
+              onClick={() => {
+                const element = document.getElementById('contact');
+                if (element) {
+                  element.scrollIntoView({ behavior: 'smooth' });
+                }
+              }}
+            >
               <Phone className="w-5 h-5" />
               Demander un devis gratuit
             </Button>

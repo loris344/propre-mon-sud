@@ -158,11 +158,11 @@ const ServiceDiogene = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-8 text-foreground">
-              Zone d'Intervention - Montpellier et Région
+              Zone d'Intervention - Sud de la France
             </h2>
             
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
-              {['Montpellier Centre', 'Montpellier Nord', 'Montpellier Sud', 'Castelnau-le-Lez', 'Juvignac', 'Lattes', 'Pérols', 'Villeneuve-lès-Maguelone', 'Fabrègues'].map((ville, index) => (
+              {['Montpellier', 'Sète', 'Béziers', 'Nîmes', 'Perpignan', 'Toulouse', 'Marseille', 'Nice', 'Bordeaux', 'Aix-en-Provence', 'Toulon', 'Avignon'].map((ville, index) => (
                 <div key={index} className="flex items-center gap-2 text-muted-foreground">
                   <MapPin className="w-4 h-4 text-accent" />
                   <span>{ville}</span>
@@ -176,7 +176,7 @@ const ServiceDiogene = () => {
                 <h3 className="text-2xl font-bold mb-2">Intervention d'Urgence</h3>
                 <p className="text-xl font-semibold mb-4">07 67 13 54 58</p>
                 <p className="text-primary-foreground/90">
-                  Disponible 7j/7 de 8h à 20h pour Montpellier et communes limitrophes
+                  Disponible 7j/7 de 8h à 20h pour tout le Sud de la France
                 </p>
               </CardContent>
             </Card>
