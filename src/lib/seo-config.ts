@@ -71,11 +71,55 @@ export const seoConfig: Record<string, SEOConfig> = {
       "currenciesAccepted": "EUR",
       "aggregateRating": {
         "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "127",
+        "ratingValue": "4.7",
+        "reviewCount": "94",
         "bestRating": "5",
         "worstRating": "1"
       },
+      "review": [
+        {
+          "@type": "Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "author": {
+            "@type": "Person",
+            "name": "Marie L."
+          },
+          "reviewBody": "Service exceptionnel ! Équipe très professionnelle et discrète. Intervention rapide et efficace. Je recommande vivement.",
+          "datePublished": "2024-01-15"
+        },
+        {
+          "@type": "Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "author": {
+            "@type": "Person",
+            "name": "Jean-Pierre M."
+          },
+          "reviewBody": "Très satisfait du service. Respect total de la situation et intervention dans les délais. Prix correct pour la qualité.",
+          "datePublished": "2024-01-10"
+        },
+        {
+          "@type": "Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "4",
+            "bestRating": "5"
+          },
+          "author": {
+            "@type": "Person",
+            "name": "Sophie D."
+          },
+          "reviewBody": "Bon service, équipe compétente. Quelques retards mineurs mais résultat final satisfaisant.",
+          "datePublished": "2024-01-08"
+        }
+      ],
       "sameAs": [
         "https://www.facebook.com/propremonsud",
         "https://www.linkedin.com/company/propre-mon-sud"
@@ -118,6 +162,13 @@ export const seoConfig: Record<string, SEOConfig> = {
         "@type": "Offer",
         "description": "Devis gratuit et sans engagement",
         "priceCurrency": "EUR"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.7",
+        "reviewCount": "94",
+        "bestRating": "5",
+        "worstRating": "1"
       }
     }
   },
@@ -149,6 +200,13 @@ export const seoConfig: Record<string, SEOConfig> = {
         "@type": "Offer",
         "description": "Devis gratuit et sans engagement",
         "priceCurrency": "EUR"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.7",
+        "reviewCount": "94",
+        "bestRating": "5",
+        "worstRating": "1"
       }
     }
   },
@@ -180,6 +238,13 @@ export const seoConfig: Record<string, SEOConfig> = {
         "@type": "Offer",
         "description": "Devis gratuit et sans engagement",
         "priceCurrency": "EUR"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.7",
+        "reviewCount": "94",
+        "bestRating": "5",
+        "worstRating": "1"
       }
     }
   },

@@ -3,6 +3,7 @@ import { Phone, Menu, X } from "lucide-react";
 import { useState } from "react";
 import { useLocation } from "@/contexts/LocationContext";
 import AvailabilityIndicator from "./AvailabilityIndicator";
+import ReviewsDisplay from "./ReviewsDisplay";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -61,6 +62,7 @@ const Header = () => {
           {/* CTA Button */}
           <div className="hidden md:flex items-center space-x-4">
             <AvailabilityIndicator />
+            <ReviewsDisplay />
             <Button variant="outline" size="sm">
               <Phone className="w-4 h-4" />
               07 67 13 54 58
@@ -113,6 +115,9 @@ const Header = () => {
               <div className="pt-4 border-t border-border/50 space-y-3">
                 <div className="flex justify-center">
                   <AvailabilityIndicator />
+                </div>
+                <div className="flex justify-center">
+                  <ReviewsDisplay />
                 </div>
                 <Button variant="outline" size="sm" className="w-full">
                   <Phone className="w-4 h-4" />
