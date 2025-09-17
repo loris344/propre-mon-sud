@@ -2,16 +2,127 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { useToast } from "@/hooks/use-toast";
+import { sendContactEmail, ContactFormData } from "@/lib/emailService";
 import { 
   Phone, 
   Mail, 
   MapPin, 
   Clock, 
   Shield, 
-  Heart
+  Heart,
+  Send,
+  CheckCircle,
+  AlertCircle
 } from "lucide-react";
+import { useState } from "react";
+
+interface FormErrors {
+  firstName?: string;
+  phone?: string;
+  email?: string;
+}
 
 const Contact = () => {
+  const { toast } = useToast();
+  const [formData, setFormData] = useState<ContactFormData>({
+    firstName: '',
+    phone: '',
+    email: '',
+    city: '',
+    description: ''
+  });
+  const [errors, setErrors] = useState<FormErrors>({});
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  // Validation des champs
+  const validateForm = (): boolean => {
+    const newErrors: FormErrors = {};
+
+    if (!formData.firstName.trim()) {
+      newErrors.firstName = "Le prénom est obligatoire";
+    }
+
+    if (!formData.phone.trim()) {
+      newErrors.phone = "Le téléphone est obligatoire";
+    } else if (!/^[0-9\s\+\-\(\)]{10,}$/.test(formData.phone.replace(/\s/g, ''))) {
+      newErrors.phone = "Format de téléphone invalide";
+    }
+
+    if (formData.email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
+      newErrors.email = "Format d'email invalide";
+    }
+
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
+
+  // Gestion des changements de champs
+  const handleInputChange = (field: keyof ContactFormData, value: string) => {
+    setFormData(prev => ({ ...prev, [field]: value }));
+    // Effacer l'erreur du champ modifié
+    if (errors[field as keyof FormErrors]) {
+      setErrors(prev => ({ ...prev, [field]: undefined }));
+    }
+  };
+
+  // Soumission du formulaire
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    if (!validateForm()) {
+      toast({
+        title: "Erreur de validation",
+        description: "Veuillez corriger les erreurs dans le formulaire",
+        variant: "destructive",
+      });
+      return;
+    }
+
+    setIsSubmitting(true);
+
+    try {
+      // Envoyer l'email via le service
+      const success = await sendContactEmail(formData);
+      
+      if (success) {
+        // Marquer comme soumis
+        setIsSubmitted(true);
+        
+        toast({
+          title: "Demande envoyée avec succès !",
+          description: "Votre demande a été transmise à notre équipe. Nous vous contacterons rapidement au " + formData.phone + ".",
+          variant: "default",
+        });
+
+        // Réinitialiser le formulaire après 5 secondes
+        setTimeout(() => {
+          setFormData({
+            firstName: '',
+            phone: '',
+            email: '',
+            city: '',
+            description: ''
+          });
+          setIsSubmitted(false);
+        }, 5000);
+      } else {
+        throw new Error('Échec de l\'envoi de l\'email');
+      }
+
+    } catch (error) {
+      console.error('Erreur lors de l\'envoi:', error);
+      toast({
+        title: "Erreur d'envoi",
+        description: "Une erreur est survenue lors de l'envoi de votre demande. Veuillez nous appeler directement au 07 67 13 54 58.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <section className="py-20 bg-gradient-to-b from-secondary/20 to-background">
       <div className="container mx-auto px-4">
@@ -37,48 +148,117 @@ const Contact = () => {
               </CardTitle>
             </CardHeader>
             
-            <CardContent className="space-y-6">
-              <div className="grid sm:grid-cols-2 gap-4">
-                <div className="space-y-2">
-                  <label className="text-sm font-medium text-foreground">Prénom *</label>
-                  <Input placeholder="Votre prénom" />
+            <CardContent>
+              {isSubmitted ? (
+                <div className="text-center py-8 space-y-4">
+                  <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto">
+                    <CheckCircle className="w-8 h-8 text-green-600" />
+                  </div>
+                  <h3 className="text-xl font-semibold text-foreground">Demande envoyée !</h3>
+                  <p className="text-muted-foreground">
+                    Votre demande a été transmise. Nous vous contacterons rapidement au {formData.phone}.
+                  </p>
                 </div>
-                <div className="space-y-2">
-                  <label className="text-sm font-medium text-foreground">Téléphone *</label>
-                  <Input placeholder="06 00 00 00 00" />
-                </div>
-              </div>
-              
-              <div className="space-y-2">
-                <label className="text-sm font-medium text-foreground">Email</label>
-                <Input type="email" placeholder="votre.email@exemple.fr" />
-              </div>
-              
-              <div className="space-y-2">
-                <label className="text-sm font-medium text-foreground">Ville d'intervention</label>
-                <Input placeholder="Montpellier, Sète, Béziers..." />
-              </div>
-              
-              <div className="space-y-2">
-                <label className="text-sm font-medium text-foreground">Description de la situation</label>
-                <Textarea 
-                  placeholder="Décrivez brièvement votre situation (type de logement, surfaces approximatives, urgence...)"
-                  rows={4}
-                />
-              </div>
-              
-              <div className="flex items-start gap-3 p-4 bg-accent/10 rounded-lg border border-accent/20">
-                <Shield className="w-5 h-5 text-accent mt-0.5 flex-shrink-0" />
-                <p className="text-sm text-muted-foreground">
-                  <span className="font-medium text-foreground">Confidentialité garantie :</span> 
-                  {" "}Toutes vos informations sont traitées avec la plus grande discrétion et ne seront jamais communiquées à des tiers.
-                </p>
-              </div>
-              
-              <Button variant="hero" size="lg" className="w-full">
-                <Phone className="w-5 h-5" />
-                Envoyer ma demande
-              </Button>
+              ) : (
+                <form onSubmit={handleSubmit} className="space-y-6">
+                  <div className="grid sm:grid-cols-2 gap-4">
+                    <div className="space-y-2">
+                      <label className="text-sm font-medium text-foreground">Prénom *</label>
+                      <Input 
+                        placeholder="Votre prénom" 
+                        value={formData.firstName}
+                        onChange={(e) => handleInputChange('firstName', e.target.value)}
+                        className={errors.firstName ? "border-red-500" : ""}
+                      />
+                      {errors.firstName && (
+                        <p className="text-sm text-red-500 flex items-center gap-1">
+                          <AlertCircle className="w-4 h-4" />
+                          {errors.firstName}
+                        </p>
+                      )}
+                    </div>
+                    <div className="space-y-2">
+                      <label className="text-sm font-medium text-foreground">Téléphone *</label>
+                      <Input 
+                        placeholder="06 00 00 00 00" 
+                        value={formData.phone}
+                        onChange={(e) => handleInputChange('phone', e.target.value)}
+                        className={errors.phone ? "border-red-500" : ""}
+                      />
+                      {errors.phone && (
+                        <p className="text-sm text-red-500 flex items-center gap-1">
+                          <AlertCircle className="w-4 h-4" />
+                          {errors.phone}
+                        </p>
+                      )}
+                    </div>
+                  </div>
+                  
+                  <div className="space-y-2">
+                    <label className="text-sm font-medium text-foreground">Email</label>
+                    <Input 
+                      type="email" 
+                      placeholder="votre.email@exemple.fr" 
+                      value={formData.email}
+                      onChange={(e) => handleInputChange('email', e.target.value)}
+                      className={errors.email ? "border-red-500" : ""}
+                    />
+                    {errors.email && (
+                      <p className="text-sm text-red-500 flex items-center gap-1">
+                        <AlertCircle className="w-4 h-4" />
+                        {errors.email}
+                      </p>
+                    )}
+                  </div>
+                  
+                  <div className="space-y-2">
+                    <label className="text-sm font-medium text-foreground">Ville d'intervention</label>
+                    <Input 
+                      placeholder="Montpellier, Sète, Béziers..." 
+                      value={formData.city}
+                      onChange={(e) => handleInputChange('city', e.target.value)}
+                    />
+                  </div>
+                  
+                  <div className="space-y-2">
+                    <label className="text-sm font-medium text-foreground">Description de la situation</label>
+                    <Textarea 
+                      placeholder="Décrivez brièvement votre situation (type de logement, surfaces approximatives, urgence...)"
+                      rows={4}
+                      value={formData.description}
+                      onChange={(e) => handleInputChange('description', e.target.value)}
+                    />
+                  </div>
+                  
+                  <div className="flex items-start gap-3 p-4 bg-accent/10 rounded-lg border border-accent/20">
+                    <Shield className="w-5 h-5 text-accent mt-0.5 flex-shrink-0" />
+                    <p className="text-sm text-muted-foreground">
+                      <span className="font-medium text-foreground">Confidentialité garantie :</span> 
+                      {" "}Toutes vos informations sont traitées avec la plus grande discrétion et ne seront jamais communiquées à des tiers.
+                    </p>
+                  </div>
+                  
+                  <Button 
+                    type="submit" 
+                    variant="hero" 
+                    size="lg" 
+                    className="w-full"
+                    disabled={isSubmitting}
+                  >
+                    {isSubmitting ? (
+                      <>
+                        <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin mr-2" />
+                        Envoi en cours...
+                      </>
+                    ) : (
+                      <>
+                        <Send className="w-5 h-5" />
+                        Envoyer ma demande
+                      </>
+                    )}
+                  </Button>
+                </form>
+              )}
             </CardContent>
           </Card>
 
