@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Phone, Menu, X } from "lucide-react";
 import { useState } from "react";
 import { useLocation } from "@/contexts/LocationContext";
+import AvailabilityIndicator from "./AvailabilityIndicator";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -59,6 +60,7 @@ const Header = () => {
 
           {/* CTA Button */}
           <div className="hidden md:flex items-center space-x-4">
+            <AvailabilityIndicator />
             <Button variant="outline" size="sm">
               <Phone className="w-4 h-4" />
               07 67 13 54 58
@@ -109,6 +111,9 @@ const Header = () => {
               </button>
               
               <div className="pt-4 border-t border-border/50 space-y-3">
+                <div className="flex justify-center">
+                  <AvailabilityIndicator />
+                </div>
                 <Button variant="outline" size="sm" className="w-full">
                   <Phone className="w-4 h-4" />
                   07 67 13 54 58

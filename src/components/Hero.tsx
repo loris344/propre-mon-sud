@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Phone, Mail, Clock } from "lucide-react";
 import { useLocation } from "@/contexts/LocationContext";
+import AvailabilityIndicator from "./AvailabilityIndicator";
 
 const Hero = () => {
   const { locationText, isLoading } = useLocation();
@@ -62,6 +63,7 @@ const Hero = () => {
             
             {/* Quick Info */}
             <div className="flex flex-wrap gap-6 pt-6 border-t border-border/50">
+              <AvailabilityIndicator />
               <div className="flex items-center gap-2 text-muted-foreground">
                 <Clock className="w-4 h-4 text-accent" />
                 <span className="text-sm font-medium">Intervention 7j/7</span>
