@@ -20,10 +20,10 @@ const Header = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border/50 shadow-sm">
       <nav className="container mx-auto px-4 py-4">
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between gap-8">
           
           {/* Logo */}
-          <div className="flex items-center space-x-6">
+          <div className="flex items-center space-x-6 flex-shrink-0">
             <img 
               src="/logo.png" 
               alt="SOS Nettoyage Diogène Logo" 
@@ -38,7 +38,7 @@ const Header = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-8 flex-1 justify-center">
             <button 
               onClick={() => scrollToSection('accueil')}
               className="text-foreground hover:text-primary transition-colors font-medium"
@@ -60,7 +60,7 @@ const Header = () => {
           </div>
 
           {/* CTA Button */}
-          <div className="hidden md:flex items-center space-x-4">
+          <div className="hidden md:flex items-center space-x-6">
             <AvailabilityIndicator />
             <ReviewsDisplay />
             <Button variant="outline" size="sm">
