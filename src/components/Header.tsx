@@ -45,18 +45,24 @@ const Header = () => {
             >
               Accueil
             </button>
-            <button 
-              onClick={() => scrollToSection('services')}
-              className="text-foreground hover:text-primary transition-colors font-medium"
-            >
-              Services
-            </button>
-            <button 
-              onClick={() => scrollToSection('contact')}
-              className="text-foreground hover:text-primary transition-colors font-medium"
-            >
-              Contact
-            </button>
+                  <button 
+                    onClick={() => scrollToSection('services')}
+                    className="text-foreground hover:text-primary transition-colors font-medium"
+                  >
+                    Services
+                  </button>
+                  <button 
+                    onClick={() => scrollToSection('avis')}
+                    className="text-foreground hover:text-primary transition-colors font-medium"
+                  >
+                    Avis
+                  </button>
+                  <button 
+                    onClick={() => scrollToSection('contact')}
+                    className="text-foreground hover:text-primary transition-colors font-medium"
+                  >
+                    Contact
+                  </button>
           </div>
 
           {/* CTA Button */}
@@ -100,18 +106,24 @@ const Header = () => {
               >
                 Accueil
               </button>
-              <button 
-                onClick={() => scrollToSection('services')}
-                className="block w-full text-left text-foreground hover:text-primary transition-colors font-medium py-2"
-              >
-                Services
-              </button>
-              <button 
-                onClick={() => scrollToSection('contact')}
-                className="block w-full text-left text-foreground hover:text-primary transition-colors font-medium py-2"
-              >
-                Contact
-              </button>
+                     <button 
+                       onClick={() => scrollToSection('services')}
+                       className="block w-full text-left text-foreground hover:text-primary transition-colors font-medium py-2"
+                     >
+                       Services
+                     </button>
+                     <button 
+                       onClick={() => scrollToSection('avis')}
+                       className="block w-full text-left text-foreground hover:text-primary transition-colors font-medium py-2"
+                     >
+                       Avis
+                     </button>
+                     <button 
+                       onClick={() => scrollToSection('contact')}
+                       className="block w-full text-left text-foreground hover:text-primary transition-colors font-medium py-2"
+                     >
+                       Contact
+                     </button>
               
               <div className="pt-4 border-t border-border/50 space-y-3">
                 <div className="flex justify-center">
