@@ -19,15 +19,15 @@ const Header = () => {
         <div className="flex items-center justify-between">
           
           {/* Logo */}
-          <div className="flex items-center space-x-5">
+          <div className="flex items-center space-x-6">
             <img 
               src="/logo.png" 
               alt="SOS Nettoyage Diogène Logo" 
-              className="w-20 h-20 object-contain"
+              className="w-24 h-24 object-contain"
             />
             <div>
-              <div className="font-bold text-foreground text-2xl">SOS Nettoyage Diogène</div>
-              <div className="text-base text-muted-foreground">Montpellier</div>
+              <div className="font-bold text-foreground text-3xl">SOS Nettoyage Diogène</div>
+              <div className="text-lg text-muted-foreground">Montpellier</div>
             </div>
           </div>
 
