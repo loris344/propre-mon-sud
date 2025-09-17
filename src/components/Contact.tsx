@@ -212,7 +212,7 @@ const Contact = () => {
                   </div>
                   
                   <div className="space-y-2">
-                    <label className="text-sm font-medium text-foreground">Ville d'intervention</label>
+                    <label className="text-sm font-medium text-foreground">Ville ou village d'intervention</label>
                     <Input 
                       placeholder="Montpellier, Sète, Béziers..." 
                       value={formData.city}
