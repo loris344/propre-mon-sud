@@ -115,3 +115,31 @@ All colors MUST be HSL.
     @apply bg-background text-foreground;
   }
 }
+
+@layer utilities {
+  /* Améliorations pour la responsivité mobile */
+  .container {
+    @apply px-4 sm:px-6 lg:px-8;
+  }
+  
+  /* Amélioration des inputs sur mobile */
+  input, textarea {
+    @apply text-base;
+  }
+  
+  /* Amélioration des boutons sur mobile */
+  button {
+    @apply touch-manipulation;
+  }
+  
+  /* Prévention du zoom sur les inputs iOS */
+  @media screen and (max-width: 768px) {
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea,
+    select {
+      font-size: 16px !important;
+    }
+  }
+}

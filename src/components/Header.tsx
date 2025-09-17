@@ -23,15 +23,15 @@ const Header = () => {
                <div className="flex items-center justify-between gap-4">
                  
                  {/* Logo */}
-                 <div className="flex items-center space-x-4 flex-shrink-0">
+                 <div className="flex items-center space-x-2 sm:space-x-4 flex-shrink-0">
             <img 
               src="/logo.png" 
               alt="SOS Nettoyage Diogène Logo" 
-              className="w-24 h-24 object-contain"
+              className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 object-contain"
             />
-            <div>
-              <div className="font-bold text-foreground text-3xl">SOS Nettoyage Diogène</div>
-              <div className="text-lg text-muted-foreground">
+            <div className="min-w-0 flex-1">
+              <div className="font-bold text-foreground text-sm sm:text-lg md:text-xl lg:text-2xl xl:text-3xl leading-tight">SOS Nettoyage Diogène</div>
+              <div className="text-xs sm:text-sm md:text-base lg:text-lg text-muted-foreground truncate">
                 {isLoading ? 'Chargement...' : (location?.city || 'Montpellier')}
               </div>
             </div>
@@ -66,7 +66,7 @@ const Header = () => {
           </div>
 
           {/* CTA Button */}
-          <div className="hidden md:flex items-center space-x-2 flex-shrink-0">
+          <div className="hidden lg:flex items-center space-x-2 flex-shrink-0">
             <AvailabilityIndicator />
             <ReviewsDisplay />
             <Button variant="outline" size="sm" className="whitespace-nowrap text-xs px-2">
@@ -85,7 +85,7 @@ const Header = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2"
+            className="lg:hidden p-2"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? (
@@ -98,7 +98,7 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden mt-4 p-4 bg-card rounded-lg shadow-lg border border-border/50">
+          <div className="lg:hidden mt-4 p-4 bg-card rounded-lg shadow-lg border border-border/50">
             <div className="space-y-4">
               <button 
                 onClick={() => scrollToSection('accueil')}
