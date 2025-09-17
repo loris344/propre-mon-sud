@@ -1,3 +1,6 @@
+/**
+ * Interface pour les données du formulaire de contact
+ */
 export interface ContactFormData {
   firstName: string;
   phone: string;
@@ -6,7 +9,11 @@ export interface ContactFormData {
   description: string;
 }
 
-// Solution avec Formspree (gratuit et simple)
+/**
+ * Envoie un email via Formspree avec les données du formulaire de contact
+ * @param formData - Les données du formulaire de contact
+ * @returns Promise<boolean> - true si l'envoi a réussi, false sinon
+ */
 export const sendContactEmail = async (formData: ContactFormData): Promise<boolean> => {
   try {
     // URL Formspree - Endpoint configuré
@@ -57,52 +64,3 @@ Envoyé le ${new Date().toLocaleString('fr-FR')} depuis ${window.location.href}
   }
 };
 
-// Alternative avec fetch vers un service d'email (si EmailJS ne convient pas)
-export const sendContactEmailViaAPI = async (formData: ContactFormData): Promise<boolean> => {
-  try {
-    const response = await fetch('/api/send-email', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        to: 'loris@sosnettoyagediogene.fr',
-        subject: `Nouvelle demande de devis - ${formData.firstName}`,
-        html: `
-          <h2>Nouvelle demande de devis</h2>
-          <p><strong>Prénom:</strong> ${formData.firstName}</p>
-          <p><strong>Téléphone:</strong> ${formData.phone}</p>
-          <p><strong>Email:</strong> ${formData.email || 'Non renseigné'}</p>
-          <p><strong>Ville d'intervention:</strong> ${formData.city || 'Non renseignée'}</p>
-          <p><strong>Description:</strong></p>
-          <p>${formData.description || 'Aucune description fournie'}</p>
-          <hr>
-          <p><small>Envoyé le ${new Date().toLocaleString('fr-FR')} depuis ${window.location.href}</small></p>
-        `,
-        text: `
-Nouvelle demande de devis
-
-Prénom: ${formData.firstName}
-Téléphone: ${formData.phone}
-Email: ${formData.email || 'Non renseigné'}
-Ville d'intervention: ${formData.city || 'Non renseignée'}
-
-Description:
-${formData.description || 'Aucune description fournie'}
-
-Envoyé le ${new Date().toLocaleString('fr-FR')} depuis ${window.location.href}
-        `
-      })
-    });
-
-    if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
-    }
-
-    return true;
-
-  } catch (error) {
-    console.error('Erreur lors de l\'envoi de l\'email via API:', error);
-    return false;
-  }
-};

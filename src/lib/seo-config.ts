@@ -34,7 +34,7 @@ export const seoConfig: Record<string, SEOConfig> = {
       "description": "SOS Nettoyage Diogène - Société spécialisée dans le nettoyage et débarras syndrome de Diogène à Montpellier. Intervention discrète, professionnelle et respectueuse.",
       "url": baseConfig.siteUrl,
       "telephone": "+33767135458",
-      "email": "contact@nettoyage-diogene-montpellier.fr",
+      "email": "contact@sosnettoyagediogene.fr",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Montpellier",

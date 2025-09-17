@@ -1,7 +1,8 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Star, Quote } from "lucide-react";
+import { memo } from "react";
 
-const CustomerReviews = () => {
+const CustomerReviews = memo(() => {
   // Avis cohérents avec les données JSON-LD (les 3 premiers correspondent exactement)
   const reviews = [
     {
@@ -133,6 +134,8 @@ const CustomerReviews = () => {
       </div>
     </section>
   );
-};
+});
+
+CustomerReviews.displayName = 'CustomerReviews';
 
 export default CustomerReviews;
