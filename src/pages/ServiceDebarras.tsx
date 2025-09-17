@@ -1,5 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import SEOHead from "../components/SEOHead";
+import { useSEO } from "../hooks/useSEO";
 import { 
   Trash2, 
   Recycle, 
@@ -12,8 +14,11 @@ import {
 } from "lucide-react";
 
 const ServiceDebarras = () => {
+  const seoConfig = useSEO();
   return (
-    <div className="min-h-screen bg-gradient-to-b from-background to-secondary/20">
+    <>
+      <SEOHead {...seoConfig} />
+      <div className="min-h-screen bg-gradient-to-b from-background to-secondary/20">
       
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-br from-primary/5 to-accent/5">
@@ -257,7 +262,8 @@ const ServiceDebarras = () => {
           </Button>
         </div>
       </section>
-    </div>
+      </div>
+    </>
   );
 };
 

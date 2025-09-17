@@ -19,10 +19,12 @@ const Header = () => {
         <div className="flex items-center justify-between">
           
           {/* Logo */}
-          <div className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-gradient-to-br from-primary to-primary/80 rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-xl">D</span>
-            </div>
+          <div className="flex items-center space-x-3">
+            <img 
+              src="/logo.png" 
+              alt="SOS Nettoyage Diogène Logo" 
+              className="w-10 h-10 object-contain"
+            />
             <div>
               <div className="font-bold text-foreground text-lg">SOS Nettoyage Diogène</div>
               <div className="text-xs text-muted-foreground">Montpellier</div>
