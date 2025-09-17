@@ -105,6 +105,48 @@ export const seoConfig: Record<string, SEOConfig> = {
           "reviewBody": "Très satisfait du service. Respect total de la situation et intervention dans les délais. Prix correct pour la qualité.",
           "datePublished": "2024-01-10"
         },
+        {
+          "@type": "Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "author": {
+            "@type": "Person",
+            "name": "Michel R."
+          },
+          "reviewBody": "Excellent service ! L'équipe a su comprendre notre situation et nous accompagner avec bienveillance. Le résultat dépasse nos attentes.",
+          "datePublished": "2024-01-05"
+        },
+        {
+          "@type": "Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "author": {
+            "@type": "Person",
+            "name": "Catherine B."
+          },
+          "reviewBody": "Service professionnel et humain. L'équipe a su gérer une situation complexe avec beaucoup de délicatesse. Je recommande sans hésitation.",
+          "datePublished": "2024-01-02"
+        },
+        {
+          "@type": "Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "author": {
+            "@type": "Person",
+            "name": "Alain T."
+          },
+          "reviewBody": "Très bon service, équipe compétente et discrète. Le nettoyage a été fait dans les règles de l'art. Merci pour votre professionnalisme.",
+          "datePublished": "2023-12-28"
+        }
       ],
       "sameAs": [
         "https://www.facebook.com/propremonsud",
