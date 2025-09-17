@@ -1,7 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { Phone, Mail, Clock } from "lucide-react";
+import { useLocation } from "@/contexts/LocationContext";
 
 const Hero = () => {
+  const { locationText, isLoading } = useLocation();
+  
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-background via-secondary/30 to-background">
       <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-accent/5"></div>
@@ -20,7 +23,7 @@ const Hero = () => {
               <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl">
                 Société spécialisée dans le débarras et nettoyage de l'extrême, insalubrité et gros volumes. 
                 <span className="block mt-2 font-medium text-foreground">
-                  Intervention discrète et professionnelle à Montpellier et région.
+                  Intervention discrète et professionnelle à {isLoading ? 'votre ville' : locationText}.
                 </span>
               </p>
             </div>
@@ -65,7 +68,9 @@ const Hero = () => {
               </div>
               <div className="flex items-center gap-2 text-muted-foreground">
                 <div className="w-2 h-2 bg-accent rounded-full"></div>
-                <span className="text-sm font-medium">Montpellier et région</span>
+                <span className="text-sm font-medium">
+                  {isLoading ? 'Votre région' : locationText}
+                </span>
               </div>
               <div className="flex items-center gap-2 text-muted-foreground">
                 <div className="w-2 h-2 bg-accent rounded-full"></div>

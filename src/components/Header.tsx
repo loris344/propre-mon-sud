@@ -1,9 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { Phone, Menu, X } from "lucide-react";
 import { useState } from "react";
+import { useLocation } from "@/contexts/LocationContext";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { location, isLoading } = useLocation();
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -27,7 +29,9 @@ const Header = () => {
             />
             <div>
               <div className="font-bold text-foreground text-3xl">SOS Nettoyage Diogène</div>
-              <div className="text-lg text-muted-foreground">Montpellier</div>
+              <div className="text-lg text-muted-foreground">
+                {isLoading ? 'Chargement...' : (location?.city || 'Montpellier')}
+              </div>
             </div>
           </div>
 
