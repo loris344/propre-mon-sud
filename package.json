@@ -6,13 +6,14 @@
   "homepage": "https://www.sosnettoyagediogene.fr",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "build:dev": "vite build --mode development",
+    "build": "vite build && node scripts/generate-sitemap.js",
+    "build:dev": "vite build --mode development && node scripts/generate-sitemap.js",
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
-    "deploy:build": "npm run predeploy && npm run deploy"
+    "deploy:build": "npm run predeploy && npm run deploy",
+    "sitemap": "node scripts/generate-sitemap.js"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.2.3",
@@ -24,6 +25,7 @@
     "lucide-react": "^0.462.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-helmet-async": "^2.0.5",
     "react-router-dom": "^6.30.1",
     "sonner": "^1.7.4",
     "tailwind-merge": "^2.6.0",
