@@ -44,7 +44,7 @@ export const LocationProvider: React.FC<LocationProviderProps> = ({ children }) 
     loadLocation();
   }, []);
 
-  const locationText = location ? formatLocationText(location) : 'Votre ville et région';
+  const locationText = location ? formatLocationText(location) : 'Montpellier';
   const isInServiceAreaFlag = location ? isInServiceArea(location) : true;
 
   const value: LocationContextType = {

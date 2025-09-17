@@ -111,7 +111,7 @@ export const getLocationWithFallback = async (): Promise<UserLocation> => {
 
 // Formater le texte de localisation
 export const formatLocationText = (location: UserLocation): string => {
-  return `${location.city} et région`;
+  return location.city;
 };
 
 // Vérifier si l'utilisateur est dans une zone de service

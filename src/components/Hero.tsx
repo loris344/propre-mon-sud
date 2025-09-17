@@ -23,7 +23,7 @@ const Hero = () => {
               <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl">
                 Société spécialisée dans le débarras et nettoyage de l'extrême, insalubrité et gros volumes. 
                 <span className="block mt-2 font-medium text-foreground">
-                  Intervention discrète et professionnelle à {isLoading ? 'votre ville' : locationText}.
+                  Intervention discrète et professionnelle à {locationText}.
                 </span>
               </p>
             </div>
@@ -69,7 +69,7 @@ const Hero = () => {
               <div className="flex items-center gap-2 text-muted-foreground">
                 <div className="w-2 h-2 bg-accent rounded-full"></div>
                 <span className="text-sm font-medium">
-                  {isLoading ? 'Votre région' : locationText}
+                  {locationText}
                 </span>
               </div>
               <div className="flex items-center gap-2 text-muted-foreground">
