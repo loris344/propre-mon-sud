@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/hero-cleaning.jpg";
 import { Phone, Mail, Clock } from "lucide-react";
 
 const Hero = () => {
@@ -59,7 +58,7 @@ const Hero = () => {
           <div className="relative">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <img 
-                src={heroImage} 
+                src="/p1.png" 
                 alt="Équipe professionnelle de nettoyage spécialisé syndrome de Diogène à Montpellier - Intervention discrète et respectueuse"
                 className="w-full h-[500px] object-cover"
                 loading="eager"

@@ -13,7 +13,7 @@ export interface SEOConfig {
 const baseConfig = {
   siteName: "SOS Nettoyage Diogène",
   siteUrl: "https://sosnettoyagediogene.fr",
-  defaultImage: "https://sosnettoyagediogene.fr/hero-cleaning.jpg",
+  defaultImage: "https://sosnettoyagediogene.fr/p1.png",
   defaultKeywords: "sos nettoyage diogène, nettoyage syndrome diogène, débarras montpellier, nettoyage extrême, insalubrité, désinfection, évacuation déchets, nettoyage professionnel, montpellier, sète, béziers, hérault, occitanie"
 };
 
