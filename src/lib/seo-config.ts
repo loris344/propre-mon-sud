@@ -105,20 +105,6 @@ export const seoConfig: Record<string, SEOConfig> = {
           "reviewBody": "Très satisfait du service. Respect total de la situation et intervention dans les délais. Prix correct pour la qualité.",
           "datePublished": "2024-01-10"
         },
-        {
-          "@type": "Review",
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "4",
-            "bestRating": "5"
-          },
-          "author": {
-            "@type": "Person",
-            "name": "Sophie D."
-          },
-          "reviewBody": "Bon service, équipe compétente. Quelques retards mineurs mais résultat final satisfaisant.",
-          "datePublished": "2024-01-08"
-        }
       ],
       "sameAs": [
         "https://www.facebook.com/propremonsud",

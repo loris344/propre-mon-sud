@@ -24,15 +24,6 @@ const CustomerReviews = () => {
     },
     {
       id: 3,
-      name: "Sophie D.",
-      location: "Béziers",
-      rating: 4,
-      date: "2024-01-08",
-      text: "Bon service, équipe compétente. Quelques retards mineurs mais résultat final satisfaisant.",
-      service: "Désinfection Insalubrité"
-    },
-    {
-      id: 4,
       name: "Michel R.",
       location: "Nîmes",
       rating: 5,
@@ -41,7 +32,7 @@ const CustomerReviews = () => {
       service: "Nettoyage Syndrome de Diogène"
     },
     {
-      id: 5,
+      id: 4,
       name: "Catherine B.",
       location: "Perpignan",
       rating: 5,
@@ -50,10 +41,10 @@ const CustomerReviews = () => {
       service: "Débarras Gros Volumes"
     },
     {
-      id: 6,
+      id: 5,
       name: "Alain T.",
       location: "Toulouse",
-      rating: 4,
+      rating: 5,
       date: "2023-12-28",
       text: "Très bon service, équipe compétente et discrète. Le nettoyage a été fait dans les règles de l'art. Merci pour votre professionnalisme.",
       service: "Désinfection Insalubrité"
