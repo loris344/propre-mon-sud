@@ -42,7 +42,7 @@ const AvailabilityIndicator = () => {
         )}
       </div>
       
-      <span className={`text-sm font-medium whitespace-nowrap ${
+      <span className={`text-xs font-medium whitespace-nowrap ${
         isAvailable ? 'text-green-600' : 'text-gray-500'
       }`}>
         {isAvailable ? 'Disponible maintenant' : 'Hors horaires'}

@@ -20,7 +20,7 @@ const ReviewsDisplay = () => {
       </div>
       
       {/* Note et nombre d'avis */}
-      <div className="flex items-center gap-1 text-sm whitespace-nowrap">
+      <div className="flex items-center gap-1 text-xs whitespace-nowrap">
         <span className="font-semibold text-foreground">4,7</span>
         <span className="text-muted-foreground">(94 avis)</span>
       </div>

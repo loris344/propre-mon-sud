@@ -60,17 +60,17 @@ const Header = () => {
           </div>
 
           {/* CTA Button */}
-          <div className="hidden md:flex items-center space-x-6 flex-shrink-0">
+          <div className="hidden md:flex items-center space-x-4 flex-shrink-0">
             <AvailabilityIndicator />
             <ReviewsDisplay />
-            <Button variant="outline" size="sm" className="whitespace-nowrap">
-              <Phone className="w-4 h-4" />
+            <Button variant="outline" size="sm" className="whitespace-nowrap text-xs px-3">
+              <Phone className="w-3 h-3" />
               07 67 13 54 58
             </Button>
             <Button 
               variant="hero" 
               size="sm"
-              className="whitespace-nowrap"
+              className="whitespace-nowrap text-xs px-3"
               onClick={() => scrollToSection('contact')}
             >
               Devis Gratuit
