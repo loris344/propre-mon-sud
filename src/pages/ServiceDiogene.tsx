@@ -31,7 +31,18 @@ const ServiceDiogene = () => {
     return 'Montpellier';
   };
   
+  // Images par ville
+  const getCityImage = () => {
+    if (location.pathname.includes('montpellier')) return 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=1200&h=630&fit=crop&crop=center';
+    if (location.pathname.includes('sete')) return 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=1200&h=630&fit=crop&crop=center';
+    if (location.pathname.includes('beziers')) return 'https://images.unsplash.com/photo-1519904981063-b0cf448d479e?w=1200&h=630&fit=crop&crop=center';
+    if (location.pathname.includes('nimes')) return 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&h=630&fit=crop&crop=center';
+    if (location.pathname.includes('perpignan')) return 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&h=630&fit=crop&crop=center';
+    return 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=1200&h=630&fit=crop&crop=center';
+  };
+  
   const cityName = getCityName();
+  const cityImage = getCityImage();
   
   return (
     <>
@@ -40,8 +51,13 @@ const ServiceDiogene = () => {
         <div className="min-h-screen bg-gradient-to-b from-background to-secondary/20 pt-20 sm:pt-24">
       
       {/* Hero Section */}
-      <section className="relative py-16 sm:py-20 bg-gradient-to-br from-background via-secondary/30 to-background">
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-accent/5"></div>
+      <section className="relative py-16 sm:py-20 bg-gradient-to-br from-background via-secondary/30 to-background overflow-hidden">
+        {/* Image de fond de la ville */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
+          style={{ backgroundImage: `url(${cityImage})` }}
+        ></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-accent/10"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center space-y-6 sm:space-y-8">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
@@ -282,6 +298,69 @@ const ServiceDiogene = () => {
                   <p className="text-muted-foreground text-xs sm:text-sm">
                     Matériel spécialisé pour le nettoyage et la désinfection des environnements insalubres
                   </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Galerie d'images de la ville */}
+      <section className="py-16 sm:py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16 space-y-4">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">
+                Nos Interventions à {cityName}
+              </h2>
+              <p className="text-base sm:text-lg text-muted-foreground">
+                Découvrez {cityName} et nos interventions spécialisées dans cette belle ville du Sud de la France.
+              </p>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+              {/* Image 1 */}
+              <div className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+                <img 
+                  src={cityImage} 
+                  alt={`${cityName} - Vue 1`}
+                  className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="absolute bottom-4 left-4 text-white">
+                    <p className="text-sm font-medium">{cityName}</p>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Image 2 - Variante de la même ville */}
+              <div className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+                <img 
+                  src={cityImage.replace('w=1200&h=630', 'w=800&h=600')} 
+                  alt={`${cityName} - Vue 2`}
+                  className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="absolute bottom-4 left-4 text-white">
+                    <p className="text-sm font-medium">{cityName}</p>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Image 3 - Autre variante */}
+              <div className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+                <img 
+                  src={cityImage.replace('w=1200&h=630', 'w=800&h=600').replace('crop=center', 'crop=top')} 
+                  alt={`${cityName} - Vue 3`}
+                  className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="absolute bottom-4 left-4 text-white">
+                    <p className="text-sm font-medium">{cityName}</p>
+                  </div>
                 </div>
               </div>
             </div>
