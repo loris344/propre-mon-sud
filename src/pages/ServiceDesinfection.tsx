@@ -1,6 +1,8 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import SEOHead from "../components/SEOHead";
+import Contact from "../components/Contact";
+import CustomerReviews from "../components/CustomerReviews";
 import { useSEO } from "../hooks/useSEO";
 import { 
   Shield, 
@@ -18,7 +20,8 @@ const ServiceDesinfection = () => {
   return (
     <>
       <SEOHead {...seoConfig} />
-      <div className="min-h-screen bg-gradient-to-b from-background to-secondary/20">
+      <main role="main">
+        <div className="min-h-screen bg-gradient-to-b from-background to-secondary/20">
       
       {/* Hero Section */}
       <section className="relative py-16 sm:py-20 bg-gradient-to-br from-background via-secondary/30 to-background">
@@ -348,7 +351,18 @@ const ServiceDesinfection = () => {
           </div>
         </div>
       </section>
-      </div>
+
+      {/* Avis clients */}
+      <section id="avis" aria-labelledby="avis-title">
+        <CustomerReviews />
+      </section>
+
+      {/* Contact */}
+      <section id="contact" aria-labelledby="contact-title">
+        <Contact />
+      </section>
+        </div>
+      </main>
     </>
   );
 };
