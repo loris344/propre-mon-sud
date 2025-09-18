@@ -10,13 +10,13 @@ function getAssets() {
   const assetsDir = path.join(__dirname, '../dist/assets');
   const files = fs.readdirSync(assetsDir);
   
-  const cssFile = files.find(file => file.startsWith('index-') && file.endsWith('.css'));
+  const cssFile = files.find(file => file.startsWith('style-') && file.endsWith('.css'));
   const jsFile = files.find(file => file.startsWith('index-') && file.endsWith('.js'));
   const vendorFile = files.find(file => file.startsWith('vendor-') && file.endsWith('.js'));
   const uiFile = files.find(file => file.startsWith('ui-') && file.endsWith('.js'));
   
   return {
-    css: cssFile ? `/assets/${cssFile}` : '/assets/index-CuWdLtSX.css',
+    css: cssFile ? `/assets/${cssFile}` : '/assets/style-B9E75ZrC.css',
     js: jsFile ? `/assets/${jsFile}` : '/assets/index-CLrQbLfy.js',
     vendor: vendorFile ? `/assets/${vendorFile}` : '/assets/vendor-C6lW22JT.js',
     ui: uiFile ? `/assets/${uiFile}` : '/assets/ui-B9ycnt8Y.js'
