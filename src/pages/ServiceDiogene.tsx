@@ -10,7 +10,8 @@ import {
   CheckCircle,
   Phone,
   MapPin,
-  Star
+  Star,
+  Home
 } from "lucide-react";
 
 const ServiceDiogene = () => {
@@ -21,20 +22,21 @@ const ServiceDiogene = () => {
       <div className="min-h-screen bg-gradient-to-b from-background to-secondary/20">
       
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-primary/5 to-accent/5">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center space-y-6">
-            <h1 className="text-4xl md:text-5xl font-bold text-foreground">
+      <section className="relative py-16 sm:py-20 bg-gradient-to-br from-background via-secondary/30 to-background">
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-accent/5"></div>
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-4xl mx-auto text-center space-y-6 sm:space-y-8">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
               Nettoyage Syndrome de Diogène
               <span className="block text-primary">Montpellier</span>
             </h1>
-            <p className="text-xl text-muted-foreground leading-relaxed">
+            <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
               Intervention spécialisée et respectueuse pour les situations d'accumulation compulsive. 
               Notre équipe formée intervient avec discrétion et bienveillance à Montpellier et sa région.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="hero" size="lg" className="text-lg px-8">
-                <Phone className="w-5 h-5" />
+            <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
+              <Button variant="hero" size="lg" className="text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6">
+                <Phone className="w-4 h-4 sm:w-5 sm:h-5" />
                 Devis Gratuit - 07 67 13 54 58
               </Button>
             </div>
@@ -43,53 +45,59 @@ const ServiceDiogene = () => {
       </section>
 
       {/* Processus d'intervention */}
-      <section className="py-16">
+      <section className="py-16 sm:py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl font-bold text-center mb-12 text-foreground">
-              Notre Processus d'Intervention Respectueux
-            </h2>
+            <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16 space-y-4">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">
+                Notre Processus d'Intervention Respectueux
+              </h2>
+              <p className="text-base sm:text-lg text-muted-foreground">
+                Une approche professionnelle et humaine pour chaque situation, 
+                avec la discrétion et l'expertise que vous méritez.
+              </p>
+            </div>
             
-            <div className="grid md:grid-cols-3 gap-8">
-              <Card className="text-center">
-                <CardHeader>
-                  <div className="w-16 h-16 bg-gradient-to-br from-primary to-primary/80 rounded-xl flex items-center justify-center mx-auto mb-4">
-                    <Heart className="w-8 h-8 text-primary-foreground" />
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+              <Card className="group hover:shadow-xl transition-all duration-300 border-border/50 hover:border-primary/30 text-center">
+                <CardHeader className="pb-4">
+                  <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-primary to-primary/80 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                    <Heart className="w-6 h-6 sm:w-8 sm:h-8 text-primary-foreground" />
                   </div>
-                  <CardTitle className="text-xl">1. Évaluation Bienveillante</CardTitle>
+                  <CardTitle className="text-lg sm:text-xl font-semibold">1. Évaluation Bienveillante</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-muted-foreground">
+                  <p className="text-muted-foreground text-sm sm:text-base">
                     Visite gratuite et confidentielle pour évaluer la situation 
                     et établir un plan d'intervention personnalisé.
                   </p>
                 </CardContent>
               </Card>
 
-              <Card className="text-center">
-                <CardHeader>
-                  <div className="w-16 h-16 bg-gradient-to-br from-accent to-accent/80 rounded-xl flex items-center justify-center mx-auto mb-4">
-                    <Users className="w-8 h-8 text-accent-foreground" />
+              <Card className="group hover:shadow-xl transition-all duration-300 border-border/50 hover:border-primary/30 text-center">
+                <CardHeader className="pb-4">
+                  <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-accent to-accent/80 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                    <Users className="w-6 h-6 sm:w-8 sm:h-8 text-accent-foreground" />
                   </div>
-                  <CardTitle className="text-xl">2. Intervention Respectueuse</CardTitle>
+                  <CardTitle className="text-lg sm:text-xl font-semibold">2. Intervention Respectueuse</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-muted-foreground">
+                  <p className="text-muted-foreground text-sm sm:text-base">
                     Équipe formée aux techniques spécialisées et à l'accompagnement 
                     psychologique. Tri minutieux et respect des objets personnels.
                   </p>
                 </CardContent>
               </Card>
 
-              <Card className="text-center">
-                <CardHeader>
-                  <div className="w-16 h-16 bg-gradient-to-br from-primary to-primary/80 rounded-xl flex items-center justify-center mx-auto mb-4">
-                    <Shield className="w-8 h-8 text-primary-foreground" />
+              <Card className="group hover:shadow-xl transition-all duration-300 border-border/50 hover:border-primary/30 text-center sm:col-span-2 lg:col-span-1">
+                <CardHeader className="pb-4">
+                  <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-primary to-primary/80 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                    <Shield className="w-6 h-6 sm:w-8 sm:h-8 text-primary-foreground" />
                   </div>
-                  <CardTitle className="text-xl">3. Suivi et Accompagnement</CardTitle>
+                  <CardTitle className="text-lg sm:text-xl font-semibold">3. Suivi et Accompagnement</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-muted-foreground">
+                  <p className="text-muted-foreground text-sm sm:text-base">
                     Nettoyage et désinfection complets. Suivi post-intervention 
                     et conseils pour maintenir un environnement sain.
                   </p>
@@ -101,96 +109,101 @@ const ServiceDiogene = () => {
       </section>
 
       {/* Types d'interventions */}
-      <section className="py-16 bg-card">
+      <section className="py-16 sm:py-20 bg-card">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl font-bold text-center mb-12 text-foreground">
-              Types d'Interventions Syndrome de Diogène
-            </h2>
+            <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16 space-y-4">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">
+                Types d'Interventions Syndrome de Diogène
+              </h2>
+              <p className="text-base sm:text-lg text-muted-foreground">
+                Des solutions adaptées à chaque situation, avec l'expertise et la bienveillance nécessaires.
+              </p>
+            </div>
             
-            <div className="grid md:grid-cols-3 gap-8">
-              <Card className="text-center">
-                <CardHeader>
-                  <div className="w-16 h-16 bg-gradient-to-br from-primary to-primary/80 rounded-xl flex items-center justify-center mx-auto mb-4">
-                    <Home className="w-8 h-8 text-primary-foreground" />
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+              <Card className="group hover:shadow-xl transition-all duration-300 border-border/50 hover:border-primary/30">
+                <CardHeader className="text-center pb-4">
+                  <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-primary to-primary/80 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                    <Home className="w-6 h-6 sm:w-8 sm:h-8 text-primary-foreground" />
                   </div>
-                  <CardTitle className="text-xl">Intervention Complète</CardTitle>
+                  <CardTitle className="text-lg sm:text-xl font-semibold">Intervention Complète</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <ul className="space-y-2 text-left text-muted-foreground">
-                    <li className="flex items-center gap-2">
-                      <CheckCircle className="w-4 h-4 text-accent" />
-                      <span>Évaluation psychologique</span>
+                  <ul className="space-y-2 text-left">
+                    <li className="flex items-center gap-2 text-sm sm:text-base">
+                      <CheckCircle className="w-3 h-3 sm:w-4 sm:h-4 text-accent flex-shrink-0" />
+                      <span className="text-muted-foreground">Évaluation psychologique</span>
                     </li>
-                    <li className="flex items-center gap-2">
-                      <CheckCircle className="w-4 h-4 text-accent" />
-                      <span>Tri respectueux des objets</span>
+                    <li className="flex items-center gap-2 text-sm sm:text-base">
+                      <CheckCircle className="w-3 h-3 sm:w-4 sm:h-4 text-accent flex-shrink-0" />
+                      <span className="text-muted-foreground">Tri respectueux des objets</span>
                     </li>
-                    <li className="flex items-center gap-2">
-                      <CheckCircle className="w-4 h-4 text-accent" />
-                      <span>Nettoyage en profondeur</span>
+                    <li className="flex items-center gap-2 text-sm sm:text-base">
+                      <CheckCircle className="w-3 h-3 sm:w-4 sm:h-4 text-accent flex-shrink-0" />
+                      <span className="text-muted-foreground">Nettoyage en profondeur</span>
                     </li>
-                    <li className="flex items-center gap-2">
-                      <CheckCircle className="w-4 h-4 text-accent" />
-                      <span>Désinfection complète</span>
+                    <li className="flex items-center gap-2 text-sm sm:text-base">
+                      <CheckCircle className="w-3 h-3 sm:w-4 sm:h-4 text-accent flex-shrink-0" />
+                      <span className="text-muted-foreground">Désinfection complète</span>
                     </li>
                   </ul>
                 </CardContent>
               </Card>
 
-              <Card className="text-center">
-                <CardHeader>
-                  <div className="w-16 h-16 bg-gradient-to-br from-accent to-accent/80 rounded-xl flex items-center justify-center mx-auto mb-4">
-                    <Users className="w-8 h-8 text-accent-foreground" />
+              <Card className="group hover:shadow-xl transition-all duration-300 border-border/50 hover:border-primary/30">
+                <CardHeader className="text-center pb-4">
+                  <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-accent to-accent/80 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                    <Users className="w-6 h-6 sm:w-8 sm:h-8 text-accent-foreground" />
                   </div>
-                  <CardTitle className="text-xl">Accompagnement Familial</CardTitle>
+                  <CardTitle className="text-lg sm:text-xl font-semibold">Accompagnement Familial</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <ul className="space-y-2 text-left text-muted-foreground">
-                    <li className="flex items-center gap-2">
-                      <CheckCircle className="w-4 h-4 text-accent" />
-                      <span>Support psychologique</span>
+                  <ul className="space-y-2 text-left">
+                    <li className="flex items-center gap-2 text-sm sm:text-base">
+                      <CheckCircle className="w-3 h-3 sm:w-4 sm:h-4 text-accent flex-shrink-0" />
+                      <span className="text-muted-foreground">Support psychologique</span>
                     </li>
-                    <li className="flex items-center gap-2">
-                      <CheckCircle className="w-4 h-4 text-accent" />
-                      <span>Conseils post-intervention</span>
+                    <li className="flex items-center gap-2 text-sm sm:text-base">
+                      <CheckCircle className="w-3 h-3 sm:w-4 sm:h-4 text-accent flex-shrink-0" />
+                      <span className="text-muted-foreground">Conseils post-intervention</span>
                     </li>
-                    <li className="flex items-center gap-2">
-                      <CheckCircle className="w-4 h-4 text-accent" />
-                      <span>Suivi personnalisé</span>
+                    <li className="flex items-center gap-2 text-sm sm:text-base">
+                      <CheckCircle className="w-3 h-3 sm:w-4 sm:h-4 text-accent flex-shrink-0" />
+                      <span className="text-muted-foreground">Suivi personnalisé</span>
                     </li>
-                    <li className="flex items-center gap-2">
-                      <CheckCircle className="w-4 h-4 text-accent" />
-                      <span>Réseau d'aide</span>
+                    <li className="flex items-center gap-2 text-sm sm:text-base">
+                      <CheckCircle className="w-3 h-3 sm:w-4 sm:h-4 text-accent flex-shrink-0" />
+                      <span className="text-muted-foreground">Réseau d'aide</span>
                     </li>
                   </ul>
                 </CardContent>
               </Card>
 
-              <Card className="text-center">
-                <CardHeader>
-                  <div className="w-16 h-16 bg-gradient-to-br from-primary to-primary/80 rounded-xl flex items-center justify-center mx-auto mb-4">
-                    <Shield className="w-8 h-8 text-primary-foreground" />
+              <Card className="group hover:shadow-xl transition-all duration-300 border-border/50 hover:border-primary/30 sm:col-span-2 lg:col-span-1">
+                <CardHeader className="text-center pb-4">
+                  <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-primary to-primary/80 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                    <Shield className="w-6 h-6 sm:w-8 sm:h-8 text-primary-foreground" />
                   </div>
-                  <CardTitle className="text-xl">Intervention d'Urgence</CardTitle>
+                  <CardTitle className="text-lg sm:text-xl font-semibold">Intervention d'Urgence</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <ul className="space-y-2 text-left text-muted-foreground">
-                    <li className="flex items-center gap-2">
-                      <CheckCircle className="w-4 h-4 text-accent" />
-                      <span>Dégagement d'urgence</span>
+                  <ul className="space-y-2 text-left">
+                    <li className="flex items-center gap-2 text-sm sm:text-base">
+                      <CheckCircle className="w-3 h-3 sm:w-4 sm:h-4 text-accent flex-shrink-0" />
+                      <span className="text-muted-foreground">Dégagement d'urgence</span>
                     </li>
-                    <li className="flex items-center gap-2">
-                      <CheckCircle className="w-4 h-4 text-accent" />
-                      <span>Évacuation sanitaire</span>
+                    <li className="flex items-center gap-2 text-sm sm:text-base">
+                      <CheckCircle className="w-3 h-3 sm:w-4 sm:h-4 text-accent flex-shrink-0" />
+                      <span className="text-muted-foreground">Évacuation sanitaire</span>
                     </li>
-                    <li className="flex items-center gap-2">
-                      <CheckCircle className="w-4 h-4 text-accent" />
-                      <span>Intervention 24h/24</span>
+                    <li className="flex items-center gap-2 text-sm sm:text-base">
+                      <CheckCircle className="w-3 h-3 sm:w-4 sm:h-4 text-accent flex-shrink-0" />
+                      <span className="text-muted-foreground">Intervention 24h/24</span>
                     </li>
-                    <li className="flex items-center gap-2">
-                      <CheckCircle className="w-4 h-4 text-accent" />
-                      <span>Sécurisation immédiate</span>
+                    <li className="flex items-center gap-2 text-sm sm:text-base">
+                      <CheckCircle className="w-3 h-3 sm:w-4 sm:h-4 text-accent flex-shrink-0" />
+                      <span className="text-muted-foreground">Sécurisation immédiate</span>
                     </li>
                   </ul>
                 </CardContent>
@@ -201,49 +214,54 @@ const ServiceDiogene = () => {
       </section>
 
       {/* Avantages spécifiques */}
-      <section className="py-16">
+      <section className="py-16 sm:py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-center mb-12 text-foreground">
-              Pourquoi Choisir Notre Expertise ?
-            </h2>
+            <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16 space-y-4">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">
+                Pourquoi Choisir Notre Expertise ?
+              </h2>
+              <p className="text-base sm:text-lg text-muted-foreground">
+                Une expertise reconnue et une approche humaine pour chaque intervention.
+              </p>
+            </div>
             
-            <div className="grid sm:grid-cols-2 gap-6">
-              <div className="flex items-start gap-4">
-                <CheckCircle className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
+            <div className="grid sm:grid-cols-2 gap-6 sm:gap-8">
+              <div className="flex items-start gap-4 p-4 rounded-lg hover:bg-card/50 transition-colors duration-300">
+                <CheckCircle className="w-5 h-5 sm:w-6 sm:h-6 text-accent flex-shrink-0 mt-1" />
                 <div>
-                  <h3 className="font-semibold text-foreground mb-2">Formation Spécialisée</h3>
-                  <p className="text-muted-foreground text-sm">
+                  <h3 className="font-semibold text-foreground mb-2 text-sm sm:text-base">Formation Spécialisée</h3>
+                  <p className="text-muted-foreground text-xs sm:text-sm">
                     Équipe formée aux techniques de nettoyage extrême et à l'accompagnement psychologique
                   </p>
                 </div>
               </div>
 
-              <div className="flex items-start gap-4">
-                <CheckCircle className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
+              <div className="flex items-start gap-4 p-4 rounded-lg hover:bg-card/50 transition-colors duration-300">
+                <CheckCircle className="w-5 h-5 sm:w-6 sm:h-6 text-accent flex-shrink-0 mt-1" />
                 <div>
-                  <h3 className="font-semibold text-foreground mb-2">Discrétion Totale</h3>
-                  <p className="text-muted-foreground text-sm">
+                  <h3 className="font-semibold text-foreground mb-2 text-sm sm:text-base">Discrétion Totale</h3>
+                  <p className="text-muted-foreground text-xs sm:text-sm">
                     Respect absolu de la vie privée et confidentialité garantie
                   </p>
                 </div>
               </div>
 
-              <div className="flex items-start gap-4">
-                <CheckCircle className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
+              <div className="flex items-start gap-4 p-4 rounded-lg hover:bg-card/50 transition-colors duration-300">
+                <CheckCircle className="w-5 h-5 sm:w-6 sm:h-6 text-accent flex-shrink-0 mt-1" />
                 <div>
-                  <h3 className="font-semibold text-foreground mb-2">Intervention Rapide</h3>
-                  <p className="text-muted-foreground text-sm">
+                  <h3 className="font-semibold text-foreground mb-2 text-sm sm:text-base">Intervention Rapide</h3>
+                  <p className="text-muted-foreground text-xs sm:text-sm">
                     Disponibilité 7j/7, intervention sous 24h en cas d'urgence
                   </p>
                 </div>
               </div>
 
-              <div className="flex items-start gap-4">
-                <CheckCircle className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
+              <div className="flex items-start gap-4 p-4 rounded-lg hover:bg-card/50 transition-colors duration-300">
+                <CheckCircle className="w-5 h-5 sm:w-6 sm:h-6 text-accent flex-shrink-0 mt-1" />
                 <div>
-                  <h3 className="font-semibold text-foreground mb-2">Équipement Professionnel</h3>
-                  <p className="text-muted-foreground text-sm">
+                  <h3 className="font-semibold text-foreground mb-2 text-sm sm:text-base">Équipement Professionnel</h3>
+                  <p className="text-muted-foreground text-xs sm:text-sm">
                     Matériel spécialisé pour le nettoyage et la désinfection des environnements insalubres
                   </p>
                 </div>
@@ -254,28 +272,33 @@ const ServiceDiogene = () => {
       </section>
 
       {/* Zone d'intervention */}
-      <section className="py-16">
+      <section className="py-16 sm:py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-8 text-foreground">
-              Zone d'Intervention - Sud de la France
-            </h2>
+            <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16 space-y-4">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">
+                Zone d'Intervention - Sud de la France
+              </h2>
+              <p className="text-base sm:text-lg text-muted-foreground">
+                Nous intervenons dans tout le Sud de la France avec la même qualité de service.
+              </p>
+            </div>
             
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4 mb-8 sm:mb-12">
               {['Montpellier', 'Sète', 'Béziers', 'Nîmes', 'Perpignan', 'Toulouse', 'Marseille', 'Nice', 'Bordeaux', 'Aix-en-Provence', 'Toulon', 'Avignon'].map((ville, index) => (
-                <div key={index} className="flex items-center gap-2 text-muted-foreground">
-                  <MapPin className="w-4 h-4 text-accent" />
-                  <span>{ville}</span>
+                <div key={index} className="flex items-center gap-2 text-muted-foreground p-2 rounded-lg hover:bg-card/50 transition-colors duration-300">
+                  <MapPin className="w-3 h-3 sm:w-4 sm:h-4 text-accent flex-shrink-0" />
+                  <span className="text-xs sm:text-sm">{ville}</span>
                 </div>
               ))}
             </div>
 
-            <Card className="bg-gradient-to-br from-primary to-primary/90 text-primary-foreground border-0">
-              <CardContent className="p-8">
-                <Phone className="w-12 h-12 mx-auto mb-4" />
-                <h3 className="text-2xl font-bold mb-2">Intervention d'Urgence</h3>
-                <p className="text-xl font-semibold mb-4">07 67 13 54 58</p>
-                <p className="text-primary-foreground/90">
+            <Card className="bg-gradient-to-br from-primary to-primary/90 text-primary-foreground border-0 shadow-xl">
+              <CardContent className="p-6 sm:p-8">
+                <Phone className="w-10 h-10 sm:w-12 sm:h-12 mx-auto mb-4" />
+                <h3 className="text-xl sm:text-2xl font-bold mb-2">Intervention d'Urgence</h3>
+                <p className="text-lg sm:text-xl font-semibold mb-4">07 67 13 54 58</p>
+                <p className="text-primary-foreground/90 text-sm sm:text-base">
                   Disponible 7j/7 de 8h à 20h pour tout le Sud de la France
                 </p>
               </CardContent>

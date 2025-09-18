@@ -21,20 +21,21 @@ const ServiceDebarras = () => {
       <div className="min-h-screen bg-gradient-to-b from-background to-secondary/20">
       
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-primary/5 to-accent/5">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center space-y-6">
-            <h1 className="text-4xl md:text-5xl font-bold text-foreground">
+      <section className="relative py-16 sm:py-20 bg-gradient-to-br from-background via-secondary/30 to-background">
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-accent/5"></div>
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-4xl mx-auto text-center space-y-6 sm:space-y-8">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
               Débarras Gros Volumes
               <span className="block text-primary">Montpellier</span>
             </h1>
-            <p className="text-xl text-muted-foreground leading-relaxed">
+            <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
               Évacuation et tri de tous types d'objets, meubles et déchets en respectant l'environnement. 
               Service professionnel pour particuliers et professionnels dans tout le Sud de la France.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="hero" size="lg" className="text-lg px-8">
-                <Phone className="w-5 h-5" />
+            <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
+              <Button variant="hero" size="lg" className="text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6">
+                <Phone className="w-4 h-4 sm:w-5 sm:h-5" />
                 Devis Gratuit - 07 67 13 54 58
               </Button>
             </div>
@@ -43,20 +44,25 @@ const ServiceDebarras = () => {
       </section>
 
       {/* Types de débarras */}
-      <section className="py-16">
+      <section className="py-16 sm:py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl font-bold text-center mb-12 text-foreground">
-              Types de Débarras Réalisés
-            </h2>
+            <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16 space-y-4">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">
+                Types de Débarras Réalisés
+              </h2>
+              <p className="text-base sm:text-lg text-muted-foreground">
+                Des solutions complètes pour tous vos besoins de débarras et d'évacuation.
+              </p>
+            </div>
             
-            <div className="grid md:grid-cols-3 gap-8">
-              <Card className="text-center">
-                <CardHeader>
-                  <div className="w-16 h-16 bg-gradient-to-br from-primary to-primary/80 rounded-xl flex items-center justify-center mx-auto mb-4">
-                    <Trash2 className="w-8 h-8 text-primary-foreground" />
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+              <Card className="group hover:shadow-xl transition-all duration-300 border-border/50 hover:border-primary/30 text-center">
+                <CardHeader className="pb-4">
+                  <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-primary to-primary/80 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                    <Trash2 className="w-6 h-6 sm:w-8 sm:h-8 text-primary-foreground" />
                   </div>
-                  <CardTitle className="text-xl">Débarras Particuliers</CardTitle>
+                  <CardTitle className="text-lg sm:text-xl font-semibold">Débarras Particuliers</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-2 text-left text-muted-foreground">
@@ -80,12 +86,12 @@ const ServiceDebarras = () => {
                 </CardContent>
               </Card>
 
-              <Card className="text-center">
-                <CardHeader>
-                  <div className="w-16 h-16 bg-gradient-to-br from-accent to-accent/80 rounded-xl flex items-center justify-center mx-auto mb-4">
-                    <Truck className="w-8 h-8 text-accent-foreground" />
+              <Card className="group hover:shadow-xl transition-all duration-300 border-border/50 hover:border-primary/30 text-center">
+                <CardHeader className="pb-4">
+                  <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-accent to-accent/80 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                    <Truck className="w-6 h-6 sm:w-8 sm:h-8 text-accent-foreground" />
                   </div>
-                  <CardTitle className="text-xl">Débarras Professionnels</CardTitle>
+                  <CardTitle className="text-lg sm:text-xl font-semibold">Débarras Professionnels</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-2 text-left text-muted-foreground">
@@ -109,12 +115,12 @@ const ServiceDebarras = () => {
                 </CardContent>
               </Card>
 
-              <Card className="text-center">
-                <CardHeader>
-                  <div className="w-16 h-16 bg-gradient-to-br from-primary to-primary/80 rounded-xl flex items-center justify-center mx-auto mb-4">
-                    <Recycle className="w-8 h-8 text-primary-foreground" />
+              <Card className="group hover:shadow-xl transition-all duration-300 border-border/50 hover:border-primary/30 text-center sm:col-span-2 lg:col-span-1">
+                <CardHeader className="pb-4">
+                  <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-primary to-primary/80 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                    <Recycle className="w-6 h-6 sm:w-8 sm:h-8 text-primary-foreground" />
                   </div>
-                  <CardTitle className="text-xl">Tri et Recyclage</CardTitle>
+                  <CardTitle className="text-lg sm:text-xl font-semibold">Tri et Recyclage</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-2 text-left text-muted-foreground">
