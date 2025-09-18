@@ -25,32 +25,16 @@ export const ResponsiveImage = ({
   const ultraMobileSrc = mobileSrc.replace('mobile', 'mobile-ultra');
   
   return (
-    <picture>
-      {/* Ultra small mobile (≤320px) */}
-      <source 
-        media="(max-width: 320px)" 
-        srcSet={ultraMobileSrc}
-      />
-      {/* Small mobile (≤480px) */}
-      <source 
-        media="(max-width: 480px)" 
-        srcSet={smallMobileSrc}
-      />
-      {/* Mobile (≤768px) */}
-      <source 
-        media="(max-width: 768px)" 
-        srcSet={mobileSrc}
-      />
-      {/* Desktop (>768px) */}
-      <img
-        src={src}
-        alt={alt}
-        className={className}
-        loading={loading}
-        fetchpriority={fetchpriority}
-        width={width}
-        height={height}
-      />
-    </picture>
+    <img
+      src={mobileSrc}
+      srcSet={`${ultraMobileSrc} 320w, ${smallMobileSrc} 480w, ${mobileSrc} 768w, ${src} 1200w`}
+      sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 768px) 768px, 1200px"
+      alt={alt}
+      className={className}
+      loading={loading}
+      fetchpriority={fetchpriority}
+      width={width}
+      height={height}
+    />
   );
 };

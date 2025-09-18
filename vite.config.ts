@@ -44,7 +44,6 @@ export default defineConfig(({ mode }) => ({
     target: 'es2015',
     cssCodeSplit: false,
     chunkSizeWarningLimit: 1000,
-    cssMinify: 'lightningcss',
   },
   
   // Configuration pour le preview
