@@ -23,6 +23,36 @@ function getAssets() {
   };
 }
 
+// Configuration des images par ville
+const cityImages = {
+  montpellier: {
+    hero: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=1200&h=630&fit=crop&crop=center",
+    ogImage: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=1200&h=630&fit=crop&crop=center"
+  },
+  sete: {
+    hero: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=1200&h=630&fit=crop&crop=center",
+    ogImage: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=1200&h=630&fit=crop&crop=center"
+  },
+  beziers: {
+    hero: "https://images.unsplash.com/photo-1519904981063-b0cf448d479e?w=1200&h=630&fit=crop&crop=center",
+    ogImage: "https://images.unsplash.com/photo-1519904981063-b0cf448d479e?w=1200&h=630&fit=crop&crop=center"
+  },
+  nimes: {
+    hero: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&h=630&fit=crop&crop=center",
+    ogImage: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&h=630&fit=crop&crop=center"
+  },
+  perpignan: {
+    hero: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&h=630&fit=crop&crop=center",
+    ogImage: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&h=630&fit=crop&crop=center"
+  }
+};
+
+// Fonction pour extraire la ville depuis l'URL
+function extractCityFromUrl(url) {
+  const cityMatch = url.match(/(?:nettoyage-syndrome-diogene-|debarras-gros-volumes-|desinfection-insalubrite-)(.+)/);
+  return cityMatch ? cityMatch[1] : 'montpellier';
+}
+
 // Configuration des pages statiques à générer
 const staticPages = [
   {
@@ -30,21 +60,24 @@ const staticPages = [
     title: 'Nettoyage Syndrome de Diogène Montpellier | SOS Nettoyage Diogène',
     description: 'Intervention spécialisée et respectueuse pour les situations d\'accumulation compulsive. Notre équipe formée intervient avec discrétion et bienveillance à Montpellier et sa région.',
     keywords: 'nettoyage syndrome diogène, montpellier, intervention spécialisée, accumulation compulsive, nettoyage extrême, débarras, désinfection',
-    content: 'ServiceDiogene'
+    content: 'ServiceDiogene',
+    city: 'montpellier'
   },
   {
     route: '/debarras-gros-volumes-montpellier',
     title: 'Débarras Gros Volumes Montpellier | Évacuation Professionnelle',
     description: 'Évacuation et tri de tous types d\'objets, meubles et déchets en respectant l\'environnement. Service professionnel pour particuliers et professionnels dans tout le Sud de la France.',
     keywords: 'débarras gros volumes, montpellier, évacuation déchets, tri sélectif, recyclage, nettoyage professionnel',
-    content: 'ServiceDebarras'
+    content: 'ServiceDebarras',
+    city: 'montpellier'
   },
   {
     route: '/desinfection-insalubrite-montpellier',
     title: 'Désinfection & Insalubrité Montpellier | Traitement Professionnel',
     description: 'Traitement des environnements insalubres avec des produits professionnels et techniques adaptées. Intervention spécialisée pour restaurer un environnement sain et sécurisé.',
     keywords: 'désinfection, insalubrité, montpellier, traitement professionnel, nettoyage extrême, désinfection virale',
-    content: 'ServiceDesinfection'
+    content: 'ServiceDesinfection',
+    city: 'montpellier'
   },
   // Pages géographiques pour SEO local
   {
@@ -52,34 +85,39 @@ const staticPages = [
     title: 'Nettoyage Syndrome de Diogène Sète | SOS Nettoyage Diogène',
     description: 'Intervention spécialisée et respectueuse pour les situations d\'accumulation compulsive à Sète. Notre équipe formée intervient avec discrétion et bienveillance dans l\'Hérault.',
     keywords: 'nettoyage syndrome diogène, sete, intervention spécialisée, accumulation compulsive, nettoyage extrême, débarras, désinfection, hérault',
-    content: 'ServiceDiogene'
+    content: 'ServiceDiogene',
+    city: 'sete'
   },
   {
     route: '/nettoyage-syndrome-diogene-beziers',
     title: 'Nettoyage Syndrome de Diogène Béziers | SOS Nettoyage Diogène',
     description: 'Intervention spécialisée et respectueuse pour les situations d\'accumulation compulsive à Béziers. Notre équipe formée intervient avec discrétion et bienveillance dans l\'Hérault.',
     keywords: 'nettoyage syndrome diogène, beziers, intervention spécialisée, accumulation compulsive, nettoyage extrême, débarras, désinfection, hérault',
-    content: 'ServiceDiogene'
+    content: 'ServiceDiogene',
+    city: 'beziers'
   },
   {
     route: '/nettoyage-syndrome-diogene-nimes',
     title: 'Nettoyage Syndrome de Diogène Nîmes | SOS Nettoyage Diogène',
     description: 'Intervention spécialisée et respectueuse pour les situations d\'accumulation compulsive à Nîmes. Notre équipe formée intervient avec discrétion et bienveillance dans le Gard.',
     keywords: 'nettoyage syndrome diogène, nimes, intervention spécialisée, accumulation compulsive, nettoyage extrême, débarras, désinfection, gard',
-    content: 'ServiceDiogene'
+    content: 'ServiceDiogene',
+    city: 'nimes'
   },
   {
     route: '/nettoyage-syndrome-diogene-perpignan',
     title: 'Nettoyage Syndrome de Diogène Perpignan | SOS Nettoyage Diogène',
     description: 'Intervention spécialisée et respectueuse pour les situations d\'accumulation compulsive à Perpignan. Notre équipe formée intervient avec discrétion et bienveillance dans les Pyrénées-Orientales.',
     keywords: 'nettoyage syndrome diogène, perpignan, intervention spécialisée, accumulation compulsive, nettoyage extrême, débarras, désinfection, pyrenees orientales',
-    content: 'ServiceDiogene'
+    content: 'ServiceDiogene',
+    city: 'perpignan'
   }
 ];
 
 // Template HTML de base
 const htmlTemplate = (page) => {
   const assets = getAssets();
+  const cityImage = cityImages[page.city] || cityImages.montpellier;
   return `<!doctype html>
 <html lang="fr">
   <head>
@@ -110,10 +148,10 @@ const htmlTemplate = (page) => {
     <meta property="og:url" content="https://sosnettoyagediogene.fr${page.route}" />
     <meta property="og:title" content="${page.title}" />
     <meta property="og:description" content="${page.description}" />
-    <meta property="og:image" content="https://sosnettoyagediogene.fr/hero-cleaning.jpg" />
+    <meta property="og:image" content="${cityImage.ogImage}" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="Équipe professionnelle de nettoyage spécialisé syndrome de Diogène" />
+    <meta property="og:image:alt" content="Intervention nettoyage syndrome de Diogène à ${page.city}" />
     <meta property="og:site_name" content="SOS Nettoyage Diogène" />
     <meta property="og:locale" content="fr_FR" />
     
@@ -122,8 +160,8 @@ const htmlTemplate = (page) => {
     <meta name="twitter:url" content="https://sosnettoyagediogene.fr${page.route}" />
     <meta name="twitter:title" content="${page.title}" />
     <meta name="twitter:description" content="${page.description}" />
-    <meta name="twitter:image" content="https://sosnettoyagediogene.fr/hero-cleaning.jpg" />
-    <meta name="twitter:image:alt" content="Équipe professionnelle de nettoyage spécialisé syndrome de Diogène" />
+    <meta name="twitter:image" content="${cityImage.ogImage}" />
+    <meta name="twitter:image:alt" content="Intervention nettoyage syndrome de Diogène à ${page.city}" />
     
     <!-- Business/Local SEO -->
     <meta name="business:contact_data:phone_number" content="+33767135458" />
@@ -156,7 +194,7 @@ const htmlTemplate = (page) => {
     </script>
     
     <!-- Resource hints -->
-    <link rel="preload" href="/hero-cleaning.jpg" as="image" type="image/jpeg" />
+    <link rel="preload" href="${cityImage.hero}" as="image" type="image/jpeg" />
     
     <!-- Performance optimizations -->
     <meta name="format-detection" content="telephone=no" />
@@ -231,7 +269,7 @@ const htmlTemplate = (page) => {
         "https://www.facebook.com/propremonsud",
         "https://www.linkedin.com/company/propre-mon-sud"
       ],
-      "image": "https://sosnettoyagediogene.fr/hero-cleaning.jpg",
+      "image": "${cityImage.ogImage}",
       "logo": "https://sosnettoyagediogene.fr/logo.png"
     }
     </script>
