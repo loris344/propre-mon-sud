@@ -9,7 +9,7 @@ const __dirname = path.dirname(__filename);
 const SITE_URL = 'https://sosnettoyagediogene.fr';
 const BUILD_DIR = path.join(__dirname, '../dist');
 
-// Pages principales - SEULEMENT CELLES QUI EXISTENT VRAIMENT
+// Pages principales - TOUTES LES PAGES EXISTANTES
 const pages = [
   {
     url: '/',
@@ -34,6 +34,31 @@ const pages = [
     lastmod: new Date().toISOString().split('T')[0],
     changefreq: 'monthly',
     priority: '0.9'
+  },
+  // Pages géographiques pour SEO local
+  {
+    url: '/nettoyage-syndrome-diogene-sete',
+    lastmod: new Date().toISOString().split('T')[0],
+    changefreq: 'monthly',
+    priority: '0.7'
+  },
+  {
+    url: '/nettoyage-syndrome-diogene-beziers',
+    lastmod: new Date().toISOString().split('T')[0],
+    changefreq: 'monthly',
+    priority: '0.7'
+  },
+  {
+    url: '/nettoyage-syndrome-diogene-nimes',
+    lastmod: new Date().toISOString().split('T')[0],
+    changefreq: 'monthly',
+    priority: '0.7'
+  },
+  {
+    url: '/nettoyage-syndrome-diogene-perpignan',
+    lastmod: new Date().toISOString().split('T')[0],
+    changefreq: 'monthly',
+    priority: '0.7'
   }
 ];
 

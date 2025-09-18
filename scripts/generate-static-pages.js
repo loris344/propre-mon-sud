@@ -1277,6 +1277,156 @@ const htmlTemplate = (page) => `<!doctype html>
           </div>
         </div>
       </section>
+
+      <!-- Avis clients -->
+      <section id="avis" class="py-16 sm:py-20 bg-card">
+        <div class="container mx-auto px-4">
+          <div class="max-w-4xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16 space-y-4">
+              <h2 id="avis-title" class="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">
+                Avis Clients
+              </h2>
+              <p class="text-base sm:text-lg text-muted-foreground">
+                Découvrez les témoignages de nos clients satisfaits.
+              </p>
+            </div>
+            
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+              <div class="card text-center">
+                <div class="pb-4">
+                  <div class="flex justify-center mb-4">
+                    <div class="flex text-yellow-400">
+                      ⭐⭐⭐⭐⭐
+                    </div>
+                  </div>
+                  <h3 class="font-semibold text-foreground mb-2">Marie L.</h3>
+                  <p class="text-muted-foreground text-sm">
+                    "Service exceptionnel, équipe très professionnelle et discrète. Je recommande vivement !"
+                  </p>
+                </div>
+              </div>
+
+              <div class="card text-center">
+                <div class="pb-4">
+                  <div class="flex justify-center mb-4">
+                    <div class="flex text-yellow-400">
+                      ⭐⭐⭐⭐⭐
+                    </div>
+                  </div>
+                  <h3 class="font-semibold text-foreground mb-2">Jean-Pierre M.</h3>
+                  <p class="text-muted-foreground text-sm">
+                    "Intervention rapide et efficace. L'équipe a su faire preuve de respect et de bienveillance."
+                  </p>
+                </div>
+              </div>
+
+              <div class="card text-center sm:col-span-2 lg:col-span-1">
+                <div class="pb-4">
+                  <div class="flex justify-center mb-4">
+                    <div class="flex text-yellow-400">
+                      ⭐⭐⭐⭐⭐
+                    </div>
+                  </div>
+                  <h3 class="font-semibold text-foreground mb-2">Sophie D.</h3>
+                  <p class="text-muted-foreground text-sm">
+                    "Excellent service, prix correct et résultat impeccable. Merci pour votre professionnalisme."
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="py-16 sm:py-20">
+        <div class="container mx-auto px-4">
+          <div class="max-w-4xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16 space-y-4">
+              <h2 id="contact-title" class="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">
+                Contactez-Nous
+              </h2>
+              <p class="text-base sm:text-lg text-muted-foreground">
+                Demandez votre devis gratuit et sans engagement.
+              </p>
+            </div>
+            
+            <div class="grid sm:grid-cols-2 gap-8">
+              <div class="space-y-6">
+                <div class="flex items-start gap-4">
+                  <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center flex-shrink-0">
+                    <span class="text-primary-foreground text-xl">📞</span>
+                  </div>
+                  <div>
+                    <h3 class="font-semibold text-foreground mb-2">Téléphone</h3>
+                    <p class="text-muted-foreground text-sm">
+                      <a href="tel:0767135458" class="text-primary hover:underline">07 67 13 54 58</a>
+                    </p>
+                    <p class="text-muted-foreground text-xs">
+                      Disponible 7j/7 de 8h à 20h
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-4">
+                  <div class="w-12 h-12 bg-accent rounded-lg flex items-center justify-center flex-shrink-0">
+                    <span class="text-accent-foreground text-xl">📧</span>
+                  </div>
+                  <div>
+                    <h3 class="font-semibold text-foreground mb-2">Email</h3>
+                    <p class="text-muted-foreground text-sm">
+                      <a href="mailto:contact@sosnettoyagediogene.fr" class="text-primary hover:underline">contact@sosnettoyagediogene.fr</a>
+                    </p>
+                    <p class="text-muted-foreground text-xs">
+                      Réponse sous 24h
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-4">
+                  <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center flex-shrink-0">
+                    <span class="text-primary-foreground text-xl">📍</span>
+                  </div>
+                  <div>
+                    <h3 class="font-semibold text-foreground mb-2">Zone d'intervention</h3>
+                    <p class="text-muted-foreground text-sm">
+                      Tout le Sud de la France
+                    </p>
+                    <p class="text-muted-foreground text-xs">
+                      Montpellier, Sète, Béziers, Nîmes, Perpignan...
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <h3 class="text-xl font-bold text-foreground mb-4">Demande de devis</h3>
+                <form class="space-y-4">
+                  <div>
+                    <label class="block text-sm font-medium text-foreground mb-2">Nom *</label>
+                    <input type="text" required class="w-full px-3 py-2 border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-primary">
+                  </div>
+                  <div>
+                    <label class="block text-sm font-medium text-foreground mb-2">Téléphone *</label>
+                    <input type="tel" required class="w-full px-3 py-2 border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-primary">
+                  </div>
+                  <div>
+                    <label class="block text-sm font-medium text-foreground mb-2">Email</label>
+                    <input type="email" class="w-full px-3 py-2 border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-primary">
+                  </div>
+                  <div>
+                    <label class="block text-sm font-medium text-foreground mb-2">Message</label>
+                    <textarea rows="4" class="w-full px-3 py-2 border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-primary" placeholder="Décrivez votre situation..."></textarea>
+                  </div>
+                  <button type="submit" class="w-full btn btn-hero">
+                    📞 Demander un devis gratuit
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
     
     <!-- Script pour rediriger vers l'application React -->
