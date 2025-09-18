@@ -20,6 +20,7 @@ const BUILD_DIR = path.join(__dirname, '../dist');
 function getAssets() {
   const assetsDir = path.join(BUILD_DIR, 'assets');
   if (!fs.existsSync(assetsDir)) {
+    console.error('❌ Dossier assets non trouvé:', assetsDir);
     return {
       css: '/assets/style-C1Q8LmPZ.css',
       js: '/assets/index-cM5BUZph.js',
@@ -30,6 +31,7 @@ function getAssets() {
   }
   
   const files = fs.readdirSync(assetsDir);
+  console.log('📁 Assets trouvés:', files);
   
   const cssFile = files.find(file => file.startsWith('style-') && file.endsWith('.css'));
   const jsFile = files.find(file => file.startsWith('index-') && file.endsWith('.js'));
@@ -37,13 +39,16 @@ function getAssets() {
   const uiFile = files.find(file => file.startsWith('ui-') && file.endsWith('.js'));
   const routerFile = files.find(file => file.startsWith('router-') && file.endsWith('.js'));
   
-  return {
+  const assets = {
     css: cssFile ? `/assets/${cssFile}` : '/assets/style-C1Q8LmPZ.css',
     js: jsFile ? `/assets/${jsFile}` : '/assets/index-cM5BUZph.js',
     vendor: vendorFile ? `/assets/${vendorFile}` : '/assets/vendor-p2fE49VT.js',
     ui: uiFile ? `/assets/${uiFile}` : '/assets/ui-Bwadxvvo.js',
     router: routerFile ? `/assets/${routerFile}` : '/assets/router-XA8Cen7S.js'
   };
+  
+  console.log('🎯 Assets utilisés:', assets);
+  return assets;
 }
 
 // Configuration des pages à générer
