@@ -100,8 +100,108 @@ const ServiceDiogene = () => {
         </div>
       </section>
 
-      {/* Avantages spécifiques */}
+      {/* Types d'interventions */}
       <section className="py-16 bg-card">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-3xl font-bold text-center mb-12 text-foreground">
+              Types d'Interventions Syndrome de Diogène
+            </h2>
+            
+            <div className="grid md:grid-cols-3 gap-8">
+              <Card className="text-center">
+                <CardHeader>
+                  <div className="w-16 h-16 bg-gradient-to-br from-primary to-primary/80 rounded-xl flex items-center justify-center mx-auto mb-4">
+                    <Home className="w-8 h-8 text-primary-foreground" />
+                  </div>
+                  <CardTitle className="text-xl">Intervention Complète</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-2 text-left text-muted-foreground">
+                    <li className="flex items-center gap-2">
+                      <CheckCircle className="w-4 h-4 text-accent" />
+                      <span>Évaluation psychologique</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <CheckCircle className="w-4 h-4 text-accent" />
+                      <span>Tri respectueux des objets</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <CheckCircle className="w-4 h-4 text-accent" />
+                      <span>Nettoyage en profondeur</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <CheckCircle className="w-4 h-4 text-accent" />
+                      <span>Désinfection complète</span>
+                    </li>
+                  </ul>
+                </CardContent>
+              </Card>
+
+              <Card className="text-center">
+                <CardHeader>
+                  <div className="w-16 h-16 bg-gradient-to-br from-accent to-accent/80 rounded-xl flex items-center justify-center mx-auto mb-4">
+                    <Users className="w-8 h-8 text-accent-foreground" />
+                  </div>
+                  <CardTitle className="text-xl">Accompagnement Familial</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-2 text-left text-muted-foreground">
+                    <li className="flex items-center gap-2">
+                      <CheckCircle className="w-4 h-4 text-accent" />
+                      <span>Support psychologique</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <CheckCircle className="w-4 h-4 text-accent" />
+                      <span>Conseils post-intervention</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <CheckCircle className="w-4 h-4 text-accent" />
+                      <span>Suivi personnalisé</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <CheckCircle className="w-4 h-4 text-accent" />
+                      <span>Réseau d'aide</span>
+                    </li>
+                  </ul>
+                </CardContent>
+              </Card>
+
+              <Card className="text-center">
+                <CardHeader>
+                  <div className="w-16 h-16 bg-gradient-to-br from-primary to-primary/80 rounded-xl flex items-center justify-center mx-auto mb-4">
+                    <Shield className="w-8 h-8 text-primary-foreground" />
+                  </div>
+                  <CardTitle className="text-xl">Intervention d'Urgence</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-2 text-left text-muted-foreground">
+                    <li className="flex items-center gap-2">
+                      <CheckCircle className="w-4 h-4 text-accent" />
+                      <span>Dégagement d'urgence</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <CheckCircle className="w-4 h-4 text-accent" />
+                      <span>Évacuation sanitaire</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <CheckCircle className="w-4 h-4 text-accent" />
+                      <span>Intervention 24h/24</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <CheckCircle className="w-4 h-4 text-accent" />
+                      <span>Sécurisation immédiate</span>
+                    </li>
+                  </ul>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Avantages spécifiques */}
+      <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-center mb-12 text-foreground">

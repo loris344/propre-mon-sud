@@ -27,11 +27,11 @@ const Header = () => {
             <img 
               src="/logo.png" 
               alt="SOS Nettoyage Diogène Logo" 
-              className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 object-contain"
+              className="w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 object-contain"
             />
             <div className="min-w-0 flex-1">
-              <div className="font-bold text-foreground text-sm sm:text-lg md:text-xl lg:text-2xl xl:text-3xl leading-tight">SOS Nettoyage Diogène</div>
-              <div className="text-xs sm:text-sm md:text-base lg:text-lg text-muted-foreground truncate">
+              <div className="font-bold text-foreground text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl leading-tight">SOS Nettoyage Diogène</div>
+              <div className="text-xs sm:text-xs md:text-sm lg:text-base text-muted-foreground truncate">
                 {isLoading ? 'Chargement...' : (location?.city || 'Montpellier')}
               </div>
             </div>

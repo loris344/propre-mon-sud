@@ -297,14 +297,14 @@ const ServiceDesinfection = () => {
       </section>
 
       {/* Urgences */}
-      <section className="py-16 bg-gradient-to-br from-red-50 to-orange-50 dark:from-red-950/20 dark:to-orange-950/20">
+      <section className="py-16 bg-gradient-to-br from-destructive/5 to-destructive/10">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-8 text-foreground">
               Intervention d'Urgence 24h/24
             </h2>
             
-            <Card className="bg-gradient-to-br from-red-600 to-red-700 text-white border-0">
+            <Card className="bg-gradient-to-br from-destructive to-destructive/90 text-destructive-foreground border-0">
               <CardContent className="p-8">
                 <AlertTriangle className="w-16 h-16 mx-auto mb-6" />
                 <h3 className="text-2xl font-bold mb-4">Désinfection d'Urgence</h3>
@@ -317,7 +317,7 @@ const ServiceDesinfection = () => {
                     <Phone className="w-5 h-5" />
                     07 67 13 54 58
                   </Button>
-                  <Button variant="outline" size="lg" className="text-lg px-8 border-white text-white hover:bg-white hover:text-red-700">
+                  <Button variant="outline" size="lg" className="text-lg px-8 border-destructive-foreground text-destructive-foreground hover:bg-destructive-foreground hover:text-destructive">
                     <Clock className="w-5 h-5" />
                     Urgence 24h/24
                   </Button>
