@@ -217,8 +217,8 @@ const htmlTemplate = (page) => `<!doctype html>
     </script>
     
     <!-- CSS identique à l'application React -->
-    <link rel="stylesheet" crossorigin href="/assets/index-c5jv7gWJ.css" />
-    <script type="module" crossorigin src="/assets/index-7TVkLJa2.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CuWdLtSX.css" />
+    <script type="module" crossorigin src="/assets/index-BVHmcy16.js"></script>
     <link rel="modulepreload" crossorigin href="/assets/vendor-C6lW22JT.js">
     <link rel="modulepreload" crossorigin href="/assets/ui-B9ycnt8Y.js">
     <style>
