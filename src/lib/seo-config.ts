@@ -277,6 +277,182 @@ export const seoConfig: Record<string, SEOConfig> = {
     }
   },
 
+  // Page Nettoyage Après Décès Montpellier
+  "/nettoyage-apres-deces-montpellier": {
+    title: "Nettoyage Après Décès Montpellier | Service Respectueux et Discret",
+    description: "Service spécialisé de nettoyage et remise en état après décès à Montpellier. Intervention respectueuse, discrète et professionnelle avec protocoles sanitaires stricts. Devis gratuit. Tél: 07 67 13 54 58",
+    keywords: `${baseConfig.defaultKeywords}, nettoyage après décès, nettoyage décès montpellier, remise en état décès, nettoyage post décès, désinfection décès, nettoyage respectueux`,
+    canonical: `${baseConfig.siteUrl}/nettoyage-apres-deces-montpellier`,
+    ogImage: baseConfig.defaultImage,
+    structuredData: {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Nettoyage Après Décès",
+      "description": "Service spécialisé de nettoyage et remise en état après décès avec respect, discrétion et bienveillance",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "SOS Nettoyage Diogène",
+        "telephone": "+33767135458",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Montpellier",
+          "addressRegion": "Hérault",
+          "addressCountry": "FR"
+        }
+      },
+      "areaServed": [
+        { "@type": "City", "name": "Montpellier" },
+        { "@type": "City", "name": "Sète" },
+        { "@type": "City", "name": "Béziers" }
+      ],
+      "serviceType": "Nettoyage Après Décès",
+      "offers": {
+        "@type": "Offer",
+        "description": "Devis gratuit et sans engagement",
+        "priceCurrency": "EUR"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.7",
+        "reviewCount": "94",
+        "bestRating": "5",
+        "worstRating": "1"
+      }
+    }
+  },
+
+  // Page Nettoyage Après Décès Nîmes
+  "/nettoyage-apres-deces-nimes": {
+    title: "Nettoyage Après Décès Nîmes | Service Respectueux et Discret",
+    description: "Service spécialisé de nettoyage et remise en état après décès à Nîmes. Intervention respectueuse, discrète et professionnelle avec protocoles sanitaires stricts. Devis gratuit. Tél: 07 67 13 54 58",
+    keywords: `${baseConfig.defaultKeywords}, nettoyage après décès, nettoyage décès nimes, remise en état décès, nettoyage post décès, désinfection décès, nettoyage respectueux, gard`,
+    canonical: `${baseConfig.siteUrl}/nettoyage-apres-deces-nimes`,
+    ogImage: baseConfig.defaultImage,
+    structuredData: {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Nettoyage Après Décès",
+      "description": "Service spécialisé de nettoyage et remise en état après décès avec respect, discrétion et bienveillance",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "SOS Nettoyage Diogène",
+        "telephone": "+33767135458",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Nîmes",
+          "addressRegion": "Gard",
+          "addressCountry": "FR"
+        }
+      },
+      "areaServed": [
+        { "@type": "City", "name": "Nîmes" },
+        { "@type": "City", "name": "Alès" },
+        { "@type": "City", "name": "Uzès" }
+      ],
+      "serviceType": "Nettoyage Après Décès",
+      "offers": {
+        "@type": "Offer",
+        "description": "Devis gratuit et sans engagement",
+        "priceCurrency": "EUR"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.7",
+        "reviewCount": "94",
+        "bestRating": "5",
+        "worstRating": "1"
+      }
+    }
+  },
+
+  // Page Nettoyage Insalubre Montpellier
+  "/nettoyage-insalubre-montpellier": {
+    title: "Nettoyage Insalubre Montpellier | Traitement Professionnel",
+    description: "Service spécialisé de nettoyage et remise en état d'environnements insalubres à Montpellier. Intervention professionnelle avec protocoles sanitaires stricts. Devis gratuit. Tél: 07 67 13 54 58",
+    keywords: `${baseConfig.defaultKeywords}, nettoyage insalubre, nettoyage insalubre montpellier, remise en état insalubre, nettoyage extrême, désinfection insalubre, traitement insalubrité`,
+    canonical: `${baseConfig.siteUrl}/nettoyage-insalubre-montpellier`,
+    ogImage: baseConfig.defaultImage,
+    structuredData: {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Nettoyage Insalubre",
+      "description": "Service spécialisé de nettoyage et remise en état d'environnements insalubres avec protocoles professionnels",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "SOS Nettoyage Diogène",
+        "telephone": "+33767135458",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Montpellier",
+          "addressRegion": "Hérault",
+          "addressCountry": "FR"
+        }
+      },
+      "areaServed": [
+        { "@type": "City", "name": "Montpellier" },
+        { "@type": "City", "name": "Sète" },
+        { "@type": "City", "name": "Béziers" }
+      ],
+      "serviceType": "Nettoyage Insalubre",
+      "offers": {
+        "@type": "Offer",
+        "description": "Devis gratuit et sans engagement",
+        "priceCurrency": "EUR"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.7",
+        "reviewCount": "94",
+        "bestRating": "5",
+        "worstRating": "1"
+      }
+    }
+  },
+
+  // Page Nettoyage Insalubre Nîmes
+  "/nettoyage-insalubre-nimes": {
+    title: "Nettoyage Insalubre Nîmes | Traitement Professionnel",
+    description: "Service spécialisé de nettoyage et remise en état d'environnements insalubres à Nîmes. Intervention professionnelle avec protocoles sanitaires stricts. Devis gratuit. Tél: 07 67 13 54 58",
+    keywords: `${baseConfig.defaultKeywords}, nettoyage insalubre, nettoyage insalubre nimes, remise en état insalubre, nettoyage extrême, désinfection insalubre, traitement insalubrité, gard`,
+    canonical: `${baseConfig.siteUrl}/nettoyage-insalubre-nimes`,
+    ogImage: baseConfig.defaultImage,
+    structuredData: {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Nettoyage Insalubre",
+      "description": "Service spécialisé de nettoyage et remise en état d'environnements insalubres avec protocoles professionnels",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "SOS Nettoyage Diogène",
+        "telephone": "+33767135458",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Nîmes",
+          "addressRegion": "Gard",
+          "addressCountry": "FR"
+        }
+      },
+      "areaServed": [
+        { "@type": "City", "name": "Nîmes" },
+        { "@type": "City", "name": "Alès" },
+        { "@type": "City", "name": "Uzès" }
+      ],
+      "serviceType": "Nettoyage Insalubre",
+      "offers": {
+        "@type": "Offer",
+        "description": "Devis gratuit et sans engagement",
+        "priceCurrency": "EUR"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.7",
+        "reviewCount": "94",
+        "bestRating": "5",
+        "worstRating": "1"
+      }
+    }
+  },
+
   // Page 404
   "/404": {
     title: "Page Non Trouvée | SOS Nettoyage Diogène",

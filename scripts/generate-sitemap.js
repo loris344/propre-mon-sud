@@ -59,6 +59,32 @@ const pages = [
     lastmod: new Date().toISOString().split('T')[0],
     changefreq: 'monthly',
     priority: '0.7'
+  },
+  // Nouvelles pages nettoyage après décès
+  {
+    url: '/nettoyage-apres-deces-montpellier',
+    lastmod: new Date().toISOString().split('T')[0],
+    changefreq: 'monthly',
+    priority: '0.8'
+  },
+  {
+    url: '/nettoyage-apres-deces-nimes',
+    lastmod: new Date().toISOString().split('T')[0],
+    changefreq: 'monthly',
+    priority: '0.7'
+  },
+  // Nouvelles pages nettoyage insalubre
+  {
+    url: '/nettoyage-insalubre-montpellier',
+    lastmod: new Date().toISOString().split('T')[0],
+    changefreq: 'monthly',
+    priority: '0.8'
+  },
+  {
+    url: '/nettoyage-insalubre-nimes',
+    lastmod: new Date().toISOString().split('T')[0],
+    changefreq: 'monthly',
+    priority: '0.7'
   }
 ];
 

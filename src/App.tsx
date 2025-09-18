@@ -8,6 +8,8 @@ import NotFound from "./pages/NotFound";
 import ServiceDiogene from "./pages/ServiceDiogene";
 import ServiceDebarras from "./pages/ServiceDebarras";
 import ServiceDesinfection from "./pages/ServiceDesinfection";
+import ServiceNettoyageApresDeces from "./pages/ServiceNettoyageApresDeces";
+import ServiceNettoyageInsalubre from "./pages/ServiceNettoyageInsalubre";
 import Header from "./components/Header";
 
 const App = () => (
@@ -26,6 +28,10 @@ const App = () => (
           <Route path="/nettoyage-syndrome-diogene-perpignan" element={<ServiceDiogene />} />
           <Route path="/debarras-gros-volumes-montpellier" element={<ServiceDebarras />} />
           <Route path="/desinfection-insalubrite-montpellier" element={<ServiceDesinfection />} />
+          <Route path="/nettoyage-apres-deces-montpellier" element={<ServiceNettoyageApresDeces />} />
+          <Route path="/nettoyage-apres-deces-nimes" element={<ServiceNettoyageApresDeces />} />
+          <Route path="/nettoyage-insalubre-montpellier" element={<ServiceNettoyageInsalubre />} />
+          <Route path="/nettoyage-insalubre-nimes" element={<ServiceNettoyageInsalubre />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

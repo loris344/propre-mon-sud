@@ -141,6 +141,40 @@ const staticPages = [
     keywords: 'nettoyage syndrome diogène, perpignan, intervention spécialisée, accumulation compulsive, nettoyage extrême, débarras, désinfection, pyrenees orientales',
     content: 'ServiceDiogene',
     city: 'perpignan'
+  },
+  // Nouvelles pages nettoyage après décès
+  {
+    route: '/nettoyage-apres-deces-montpellier',
+    title: 'Nettoyage Après Décès Montpellier | Service Respectueux et Discret',
+    description: 'Service spécialisé de nettoyage et remise en état après décès à Montpellier. Intervention respectueuse, discrète et professionnelle avec protocoles sanitaires stricts. Devis gratuit. Tél: 07 67 13 54 58',
+    keywords: 'nettoyage après décès, nettoyage décès montpellier, remise en état décès, nettoyage post décès, désinfection décès, nettoyage respectueux, montpellier, hérault',
+    content: 'ServiceNettoyageApresDeces',
+    city: 'montpellier'
+  },
+  {
+    route: '/nettoyage-apres-deces-nimes',
+    title: 'Nettoyage Après Décès Nîmes | Service Respectueux et Discret',
+    description: 'Service spécialisé de nettoyage et remise en état après décès à Nîmes. Intervention respectueuse, discrète et professionnelle avec protocoles sanitaires stricts. Devis gratuit. Tél: 07 67 13 54 58',
+    keywords: 'nettoyage après décès, nettoyage décès nimes, remise en état décès, nettoyage post décès, désinfection décès, nettoyage respectueux, nimes, gard',
+    content: 'ServiceNettoyageApresDeces',
+    city: 'nimes'
+  },
+  // Nouvelles pages nettoyage insalubre
+  {
+    route: '/nettoyage-insalubre-montpellier',
+    title: 'Nettoyage Insalubre Montpellier | Traitement Professionnel',
+    description: 'Service spécialisé de nettoyage et remise en état d\'environnements insalubres à Montpellier. Intervention professionnelle avec protocoles sanitaires stricts. Devis gratuit. Tél: 07 67 13 54 58',
+    keywords: 'nettoyage insalubre, nettoyage insalubre montpellier, remise en état insalubre, nettoyage extrême, désinfection insalubre, traitement insalubrité, montpellier, hérault',
+    content: 'ServiceNettoyageInsalubre',
+    city: 'montpellier'
+  },
+  {
+    route: '/nettoyage-insalubre-nimes',
+    title: 'Nettoyage Insalubre Nîmes | Traitement Professionnel',
+    description: 'Service spécialisé de nettoyage et remise en état d\'environnements insalubres à Nîmes. Intervention professionnelle avec protocoles sanitaires stricts. Devis gratuit. Tél: 07 67 13 54 58',
+    keywords: 'nettoyage insalubre, nettoyage insalubre nimes, remise en état insalubre, nettoyage extrême, désinfection insalubre, traitement insalubrité, nimes, gard',
+    content: 'ServiceNettoyageInsalubre',
+    city: 'nimes'
   }
 ];
 
