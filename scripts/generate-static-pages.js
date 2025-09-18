@@ -27,6 +27,35 @@ const staticPages = [
     description: 'Traitement des environnements insalubres avec des produits professionnels et techniques adaptées. Intervention spécialisée pour restaurer un environnement sain et sécurisé.',
     keywords: 'désinfection, insalubrité, montpellier, traitement professionnel, nettoyage extrême, désinfection virale',
     content: 'ServiceDesinfection'
+  },
+  // Pages géographiques pour SEO local
+  {
+    route: '/nettoyage-syndrome-diogene-sete',
+    title: 'Nettoyage Syndrome de Diogène Sète | SOS Nettoyage Diogène',
+    description: 'Intervention spécialisée et respectueuse pour les situations d\'accumulation compulsive à Sète. Notre équipe formée intervient avec discrétion et bienveillance dans l\'Hérault.',
+    keywords: 'nettoyage syndrome diogène, sete, intervention spécialisée, accumulation compulsive, nettoyage extrême, débarras, désinfection, hérault',
+    content: 'ServiceDiogene'
+  },
+  {
+    route: '/nettoyage-syndrome-diogene-beziers',
+    title: 'Nettoyage Syndrome de Diogène Béziers | SOS Nettoyage Diogène',
+    description: 'Intervention spécialisée et respectueuse pour les situations d\'accumulation compulsive à Béziers. Notre équipe formée intervient avec discrétion et bienveillance dans l\'Hérault.',
+    keywords: 'nettoyage syndrome diogène, beziers, intervention spécialisée, accumulation compulsive, nettoyage extrême, débarras, désinfection, hérault',
+    content: 'ServiceDiogene'
+  },
+  {
+    route: '/nettoyage-syndrome-diogene-nimes',
+    title: 'Nettoyage Syndrome de Diogène Nîmes | SOS Nettoyage Diogène',
+    description: 'Intervention spécialisée et respectueuse pour les situations d\'accumulation compulsive à Nîmes. Notre équipe formée intervient avec discrétion et bienveillance dans le Gard.',
+    keywords: 'nettoyage syndrome diogène, nimes, intervention spécialisée, accumulation compulsive, nettoyage extrême, débarras, désinfection, gard',
+    content: 'ServiceDiogene'
+  },
+  {
+    route: '/nettoyage-syndrome-diogene-perpignan',
+    title: 'Nettoyage Syndrome de Diogène Perpignan | SOS Nettoyage Diogène',
+    description: 'Intervention spécialisée et respectueuse pour les situations d\'accumulation compulsive à Perpignan. Notre équipe formée intervient avec discrétion et bienveillance dans les Pyrénées-Orientales.',
+    keywords: 'nettoyage syndrome diogène, perpignan, intervention spécialisée, accumulation compulsive, nettoyage extrême, débarras, désinfection, pyrenees orientales',
+    content: 'ServiceDiogene'
   }
 ];
 
@@ -1121,7 +1150,7 @@ const htmlTemplate = (page) => `<!doctype html>
           <div class="max-w-4xl mx-auto text-center space-y-6 sm:space-y-8">
             <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
               ${page.title.split(' | ')[0]}
-              <span class="block text-primary">Montpellier</span>
+              <span class="block text-primary">${page.route.includes('sete') ? 'Sète' : page.route.includes('beziers') ? 'Béziers' : page.route.includes('nimes') ? 'Nîmes' : page.route.includes('perpignan') ? 'Perpignan' : 'Montpellier'}</span>
             </h1>
             <p class="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
               ${page.description}
