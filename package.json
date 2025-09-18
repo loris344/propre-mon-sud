@@ -6,8 +6,8 @@
   "homepage": "https://www.sosnettoyagediogene.fr",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && node scripts/build-simple.js",
-    "build:dev": "vite build --mode development && node scripts/build-simple.js",
+    "build": "vite build && node scripts/generate-static-pages-simple.js && node scripts/build-simple.js",
+    "build:dev": "vite build --mode development && node scripts/generate-static-pages-simple.js && node scripts/build-simple.js",
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
