@@ -9,13 +9,10 @@ import {
   AlertTriangle, 
   Shield, 
   Droplets, 
-  Clock,
   CheckCircle,
   Phone,
   MapPin,
-  Zap,
-  Users,
-  FileText
+  Zap
 } from "lucide-react";
 
 const ServiceNettoyageInsalubre = () => {
@@ -24,8 +21,8 @@ const ServiceNettoyageInsalubre = () => {
 
   // Extraire le nom de la ville depuis l'URL
   const getCityName = () => {
-    if (location.pathname.includes('nimes')) return 'Nîmes';
     if (location.pathname.includes('montpellier')) return 'Montpellier';
+    if (location.pathname.includes('nimes')) return 'Nîmes';
     return 'Montpellier';
   };
 
@@ -37,8 +34,7 @@ const ServiceNettoyageInsalubre = () => {
         gallery: [
           'https://images.unsplash.com/photo-1702174653587-c5e10d5a2aa3?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8TmltZXN8ZW58MHx8MHx8fDA%3D',
           'https://images.unsplash.com/photo-1729086871923-36fee2e2f9f5?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8TmltZXN8ZW58MHx8MHx8fDA%3D',
-          'https://images.unsplash.com/photo-1706233674922-febe573ad52f?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8TmltZXN8ZW58MHx8MHx8fDA%3D',
-          'https://images.unsplash.com/photo-1627376086893-4908c2692389?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8TmltZXN8ZW58MHx8MHx8fDA%3D'
+          'https://images.unsplash.com/photo-1706233674922-febe573ad52f?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8TmltZXN8ZW58MHx8MHx8fDA%3D'
         ]
       };
     }
@@ -47,8 +43,7 @@ const ServiceNettoyageInsalubre = () => {
       gallery: [
         'https://images.unsplash.com/photo-1613283850334-9219c5fb7143?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bW9udHBlbGxpZXJ8ZW58MHx8MHx8fDA%3D',
         'https://images.unsplash.com/photo-1608728212004-04441ea6e3cf?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bW9udHBlbGxpZXJ8ZW58MHx8MHx8fDA%3D',
-        'https://images.unsplash.com/photo-1690132007585-1ef4b16f49d3?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bW9udHBlbGxpZXJ8ZW58MHx8MHx8fDA%3D',
-        'https://images.unsplash.com/photo-1666886677737-2cd1f108e080?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bW9udHBlbGxpZXJ8ZW58MHx8MHx8fDA%3D'
+        'https://images.unsplash.com/photo-1690132007585-1ef4b16f49d3?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bW9udHBlbGxpZXJ8ZW58MHx8MHx8fDA%3D'
       ]
     };
   };
@@ -78,47 +73,28 @@ const ServiceNettoyageInsalubre = () => {
             </h1>
             <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
               Service spécialisé de nettoyage et remise en état d'environnements insalubres. 
-              Intervention professionnelle pour restaurer un habitat sain et sécurisé à {cityName} et sa région.
+              Intervention professionnelle avec protocoles sanitaires stricts à {cityName} et sa région.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
               <Button variant="hero" size="lg" className="text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6">
                 <Phone className="w-4 h-4 sm:w-5 sm:h-5" />
-                Intervention Professionnelle - 07 67 13 54 58
+                Intervention Urgente - 07 67 13 54 58
               </Button>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Message d'urgence */}
-      <section className="py-16 sm:py-20 bg-gradient-to-br from-destructive/5 to-destructive/10">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center space-y-6">
-            <div className="w-16 h-16 bg-destructive/20 rounded-full flex items-center justify-center mx-auto">
-              <AlertTriangle className="w-8 h-8 text-destructive" />
-            </div>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">
-              Intervention d'Urgence Insalubrité
-            </h2>
-            <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
-              Face à une situation d'insalubrité, l'intervention rapide est cruciale pour la santé et la sécurité. 
-              Notre équipe spécialisée intervient avec des protocoles sanitaires stricts et un équipement professionnel 
-              pour traiter efficacement tous types d'insalubrité.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Types d'insalubrité */}
+      {/* Types d'interventions */}
       <section className="py-16 sm:py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16 space-y-4">
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">
-                Types d'Insalubrité Traités
+                Types d'Environnements Insalubres
               </h2>
               <p className="text-base sm:text-lg text-muted-foreground">
-                Des solutions complètes pour tous types d'environnements insalubres.
+                Des solutions professionnelles pour tous types de situations d'insalubrité.
               </p>
             </div>
             
@@ -126,27 +102,27 @@ const ServiceNettoyageInsalubre = () => {
               <Card className="group hover:shadow-xl transition-all duration-300 border-border/50 hover:border-primary/30 text-center">
                 <CardHeader className="pb-4">
                   <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-primary to-primary/80 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                    <Droplets className="w-6 h-6 sm:w-8 sm:h-8 text-primary-foreground" />
+                    <AlertTriangle className="w-6 h-6 sm:w-8 sm:h-8 text-primary-foreground" />
                   </div>
-                  <CardTitle className="text-lg sm:text-xl font-semibold">Insalubrité Humide</CardTitle>
+                  <CardTitle className="text-lg sm:text-xl font-semibold">Accumulation Extrême</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-2 text-left">
                     <li className="flex items-center gap-2 text-sm sm:text-base">
                       <CheckCircle className="w-3 h-3 sm:w-4 sm:h-4 text-accent flex-shrink-0" />
-                      <span className="text-muted-foreground">Moisissures et champignons</span>
+                      <span className="text-muted-foreground">Syndrome de Diogène</span>
                     </li>
                     <li className="flex items-center gap-2 text-sm sm:text-base">
                       <CheckCircle className="w-3 h-3 sm:w-4 sm:h-4 text-accent flex-shrink-0" />
-                      <span className="text-muted-foreground">Infiltrations d'eau</span>
+                      <span className="text-muted-foreground">Encombrement total</span>
                     </li>
                     <li className="flex items-center gap-2 text-sm sm:text-base">
                       <CheckCircle className="w-3 h-3 sm:w-4 sm:h-4 text-accent flex-shrink-0" />
-                      <span className="text-muted-foreground">Humidité excessive</span>
+                      <span className="text-muted-foreground">Déchets organiques</span>
                     </li>
                     <li className="flex items-center gap-2 text-sm sm:text-base">
                       <CheckCircle className="w-3 h-3 sm:w-4 sm:h-4 text-accent flex-shrink-0" />
-                      <span className="text-muted-foreground">Dégâts des eaux</span>
+                      <span className="text-muted-foreground">Risques sanitaires</span>
                     </li>
                   </ul>
                 </CardContent>
@@ -155,27 +131,27 @@ const ServiceNettoyageInsalubre = () => {
               <Card className="group hover:shadow-xl transition-all duration-300 border-border/50 hover:border-primary/30 text-center">
                 <CardHeader className="pb-4">
                   <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-accent to-accent/80 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                    <AlertTriangle className="w-6 h-6 sm:w-8 sm:h-8 text-accent-foreground" />
+                    <Droplets className="w-6 h-6 sm:w-8 sm:h-8 text-accent-foreground" />
                   </div>
-                  <CardTitle className="text-lg sm:text-xl font-semibold">Insalubrité Biologique</CardTitle>
+                  <CardTitle className="text-lg sm:text-xl font-semibold">Contamination Biologique</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-2 text-left">
                     <li className="flex items-center gap-2 text-sm sm:text-base">
                       <CheckCircle className="w-3 h-3 sm:w-4 sm:h-4 text-accent flex-shrink-0" />
-                      <span className="text-muted-foreground">Punaises de lit</span>
+                      <span className="text-muted-foreground">Moisissures</span>
                     </li>
                     <li className="flex items-center gap-2 text-sm sm:text-base">
                       <CheckCircle className="w-3 h-3 sm:w-4 sm:h-4 text-accent flex-shrink-0" />
-                      <span className="text-muted-foreground">Cafards et blattes</span>
+                      <span className="text-muted-foreground">Bactéries pathogènes</span>
                     </li>
                     <li className="flex items-center gap-2 text-sm sm:text-base">
                       <CheckCircle className="w-3 h-3 sm:w-4 sm:h-4 text-accent flex-shrink-0" />
-                      <span className="text-muted-foreground">Rats et souris</span>
+                      <span className="text-muted-foreground">Virus</span>
                     </li>
                     <li className="flex items-center gap-2 text-sm sm:text-base">
                       <CheckCircle className="w-3 h-3 sm:w-4 sm:h-4 text-accent flex-shrink-0" />
-                      <span className="text-muted-foreground">Puces et acariens</span>
+                      <span className="text-muted-foreground">Parasites</span>
                     </li>
                   </ul>
                 </CardContent>
@@ -186,25 +162,25 @@ const ServiceNettoyageInsalubre = () => {
                   <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-primary to-primary/80 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                     <Shield className="w-6 h-6 sm:w-8 sm:h-8 text-primary-foreground" />
                   </div>
-                  <CardTitle className="text-lg sm:text-xl font-semibold">Insalubrité Chimique</CardTitle>
+                  <CardTitle className="text-lg sm:text-xl font-semibold">Nuisances & Infestations</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-2 text-left">
                     <li className="flex items-center gap-2 text-sm sm:text-base">
                       <CheckCircle className="w-3 h-3 sm:w-4 sm:h-4 text-accent flex-shrink-0" />
-                      <span className="text-muted-foreground">Produits toxiques</span>
+                      <span className="text-muted-foreground">Rats et souris</span>
                     </li>
                     <li className="flex items-center gap-2 text-sm sm:text-base">
                       <CheckCircle className="w-3 h-3 sm:w-4 sm:h-4 text-accent flex-shrink-0" />
-                      <span className="text-muted-foreground">Gaz dangereux</span>
+                      <span className="text-muted-foreground">Cafards</span>
                     </li>
                     <li className="flex items-center gap-2 text-sm sm:text-base">
                       <CheckCircle className="w-3 h-3 sm:w-4 sm:h-4 text-accent flex-shrink-0" />
-                      <span className="text-muted-foreground">Contamination</span>
+                      <span className="text-muted-foreground">Punaises de lit</span>
                     </li>
                     <li className="flex items-center gap-2 text-sm sm:text-base">
                       <CheckCircle className="w-3 h-3 sm:w-4 sm:h-4 text-accent flex-shrink-0" />
-                      <span className="text-muted-foreground">Déchets dangereux</span>
+                      <span className="text-muted-foreground">Odeurs nauséabondes</span>
                     </li>
                   </ul>
                 </CardContent>
@@ -214,7 +190,7 @@ const ServiceNettoyageInsalubre = () => {
         </div>
       </section>
 
-      {/* Techniques et protocoles */}
+      {/* Techniques utilisées */}
       <section className="py-16 sm:py-20 bg-card">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
@@ -223,7 +199,7 @@ const ServiceNettoyageInsalubre = () => {
                 Techniques et Protocoles Professionnels
               </h2>
               <p className="text-base sm:text-lg text-muted-foreground">
-                Des techniques avancées et des protocoles stricts pour traiter efficacement l'insalubrité.
+                Des techniques avancées et des protocoles stricts pour une remise en état efficace.
               </p>
             </div>
             
@@ -234,33 +210,33 @@ const ServiceNettoyageInsalubre = () => {
                     <Zap className="w-6 h-6 text-primary-foreground" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-foreground mb-2">Nébulisation Professionnelle</h3>
+                    <h3 className="font-semibold text-foreground mb-2">Nettoyage Haute Pression</h3>
                     <p className="text-muted-foreground text-sm">
-                      Pulvérisation fine de produits désinfectants pour atteindre tous les recoins et éliminer les agents pathogènes
+                      Élimination des résidus tenaces et désinfection des surfaces avec équipement professionnel
                     </p>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 bg-accent rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Shield className="w-6 h-6 text-accent-foreground" />
+                    <Droplets className="w-6 h-6 text-accent-foreground" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-foreground mb-2">Équipement de Protection</h3>
+                    <h3 className="font-semibold text-foreground mb-2">Désinfection Chimique</h3>
                     <p className="text-muted-foreground text-sm">
-                      Utilisation d'équipements de protection individuel (EPI) et de matériel professionnel pour la sécurité de tous
+                      Utilisation de produits certifiés NF EN 14476 pour éliminer tous les agents pathogènes
                     </p>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Droplets className="w-6 h-6 text-primary-foreground" />
+                    <Shield className="w-6 h-6 text-primary-foreground" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-foreground mb-2">Produits Certifiés</h3>
+                    <h3 className="font-semibold text-foreground mb-2">Protection Individuelle</h3>
                     <p className="text-muted-foreground text-sm">
-                      Utilisation exclusive de produits désinfectants certifiés et homologués par les autorités sanitaires
+                      Équipement de protection complet pour garantir la sécurité de nos équipes
                     </p>
                   </div>
                 </div>
@@ -269,12 +245,12 @@ const ServiceNettoyageInsalubre = () => {
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 bg-accent rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Clock className="w-6 h-6 text-accent-foreground" />
+                    <AlertTriangle className="w-6 h-6 text-accent-foreground" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-foreground mb-2">Protocoles Temporels</h3>
+                    <h3 className="font-semibold text-foreground mb-2">Évaluation des Risques</h3>
                     <p className="text-muted-foreground text-sm">
-                      Respect des temps de contact et des protocoles de sécurité pour une efficacité maximale
+                      Diagnostic complet des risques sanitaires et établissement du protocole adapté
                     </p>
                   </div>
                 </div>
@@ -284,9 +260,9 @@ const ServiceNettoyageInsalubre = () => {
                     <MapPin className="w-6 h-6 text-primary-foreground" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-foreground mb-2">Zonage et Isolation</h3>
+                    <h3 className="font-semibold text-foreground mb-2">Traitement Ciblé</h3>
                     <p className="text-muted-foreground text-sm">
-                      Mise en place de zones de travail isolées pour éviter la contamination et protéger l'environnement
+                      Intervention spécifique selon les zones contaminées et le type de contamination
                     </p>
                   </div>
                 </div>
@@ -298,7 +274,7 @@ const ServiceNettoyageInsalubre = () => {
                   <div>
                     <h3 className="font-semibold text-foreground mb-2">Contrôle Qualité</h3>
                     <p className="text-muted-foreground text-sm">
-                      Tests de surface et contrôles post-traitement pour valider l'efficacité de la désinfection
+                      Tests de surface et analyses pour valider l'efficacité du traitement
                     </p>
                   </div>
                 </div>
@@ -327,10 +303,10 @@ const ServiceNettoyageInsalubre = () => {
                   <span className="text-primary-foreground font-bold">1</span>
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-foreground mb-2">Diagnostic et Évaluation</h3>
+                  <h3 className="text-xl font-semibold text-foreground mb-2">Diagnostic Initial</h3>
                   <p className="text-muted-foreground">
-                    Évaluation complète de la situation d'insalubrité, identification des risques sanitaires 
-                    et établissement du protocole de traitement adapté.
+                    Évaluation de la situation par téléphone ou email, identification des risques sanitaires 
+                    et établissement du protocole de traitement adapté à votre environnement.
                   </p>
                 </div>
               </div>
@@ -340,10 +316,10 @@ const ServiceNettoyageInsalubre = () => {
                   <span className="text-accent-foreground font-bold">2</span>
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-foreground mb-2">Mise en Sécurité</h3>
+                  <h3 className="text-xl font-semibold text-foreground mb-2">Préparation Sécurisée</h3>
                   <p className="text-muted-foreground">
-                    Mise en place des mesures de sécurité, isolation des zones contaminées et 
-                    protection des biens et personnes non affectés.
+                    Mise en sécurité des lieux, protection des biens et préparation des produits 
+                    de nettoyage et désinfection selon le protocole établi.
                   </p>
                 </div>
               </div>
@@ -353,10 +329,10 @@ const ServiceNettoyageInsalubre = () => {
                   <span className="text-primary-foreground font-bold">3</span>
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-foreground mb-2">Traitement et Nettoyage</h3>
+                  <h3 className="text-xl font-semibold text-foreground mb-2">Traitement Intensif</h3>
                   <p className="text-muted-foreground">
-                    Application des protocoles de désinfection et nettoyage selon les techniques professionnelles. 
-                    Élimination complète des agents pathogènes et contaminants.
+                    Nettoyage approfondi, évacuation des déchets et désinfection complète selon 
+                    les techniques professionnelles et les protocoles sanitaires.
                   </p>
                 </div>
               </div>
@@ -366,73 +342,11 @@ const ServiceNettoyageInsalubre = () => {
                   <span className="text-accent-foreground font-bold">4</span>
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-foreground mb-2">Contrôle et Validation</h3>
+                  <h3 className="text-xl font-semibold text-foreground mb-2">Contrôle & Validation</h3>
                   <p className="text-muted-foreground">
-                    Contrôles de qualité, tests de surface et validation de l'efficacité du traitement. 
-                    Remise en état complète et conseils de prévention.
+                    Vérification de l'efficacité du traitement, remise en état des lieux et 
+                    délivrance du certificat de désinfection.
                   </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Aspects réglementaires */}
-      <section className="py-16 sm:py-20 bg-card">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16 space-y-4">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">
-                Conformité Réglementaire
-              </h2>
-              <p className="text-base sm:text-lg text-muted-foreground">
-                Respect de toutes les normes et réglementations en vigueur.
-              </p>
-            </div>
-            
-            <div className="grid sm:grid-cols-2 gap-6 sm:gap-8">
-              <div className="space-y-6">
-                <div className="flex items-start gap-4 p-4 rounded-lg hover:bg-card/50 transition-colors duration-300">
-                  <FileText className="w-5 h-5 sm:w-6 sm:h-6 text-accent flex-shrink-0 mt-1" />
-                  <div>
-                    <h3 className="font-semibold text-foreground mb-2 text-sm sm:text-base">Certifications Professionnelles</h3>
-                    <p className="text-muted-foreground text-xs sm:text-sm">
-                      Équipe certifiée et formée aux protocoles de désinfection et de traitement de l'insalubrité
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4 p-4 rounded-lg hover:bg-card/50 transition-colors duration-300">
-                  <Shield className="w-5 h-5 sm:w-6 sm:h-6 text-accent flex-shrink-0 mt-1" />
-                  <div>
-                    <h3 className="font-semibold text-foreground mb-2 text-sm sm:text-base">Normes Sanitaires</h3>
-                    <p className="text-muted-foreground text-xs sm:text-sm">
-                      Respect des normes NF EN 14476 et des réglementations sanitaires en vigueur
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="space-y-6">
-                <div className="flex items-start gap-4 p-4 rounded-lg hover:bg-card/50 transition-colors duration-300">
-                  <Users className="w-5 h-5 sm:w-6 sm:h-6 text-accent flex-shrink-0 mt-1" />
-                  <div>
-                    <h3 className="font-semibold text-foreground mb-2 text-sm sm:text-base">Assurance et Responsabilité</h3>
-                    <p className="text-muted-foreground text-xs sm:text-sm">
-                      Assurance professionnelle complète et responsabilité civile pour tous types d'interventions
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4 p-4 rounded-lg hover:bg-card/50 transition-colors duration-300">
-                  <Clock className="w-5 h-5 sm:w-6 sm:h-6 text-accent flex-shrink-0 mt-1" />
-                  <div>
-                    <h3 className="font-semibold text-foreground mb-2 text-sm sm:text-base">Intervention Rapide</h3>
-                    <p className="text-muted-foreground text-xs sm:text-sm">
-                      Intervention dans les 24-48h pour les situations d'insalubrité nécessitant un traitement urgent
-                    </p>
-                  </div>
                 </div>
               </div>
             </div>
@@ -449,17 +363,17 @@ const ServiceNettoyageInsalubre = () => {
                 Intervention d'Urgence 24h/24
               </h2>
               <p className="text-base sm:text-lg text-muted-foreground">
-                En cas d'insalubrité grave, nous intervenons rapidement pour protéger la santé et la sécurité.
+                En cas d'urgence sanitaire, nous intervenons rapidement dans tout le Sud de la France.
               </p>
             </div>
             
             <Card className="bg-gradient-to-br from-destructive to-destructive/90 text-destructive-foreground border-0">
               <CardContent className="p-8">
                 <AlertTriangle className="w-16 h-16 mx-auto mb-6" />
-                <h3 className="text-2xl font-bold mb-4">Insalubrité d'Urgence</h3>
+                <h3 className="text-2xl font-bold mb-4">Urgence Sanitaire</h3>
                 <p className="text-lg mb-6 opacity-90">
-                  En cas d'insalubrité grave menaçant la santé publique ou la sécurité, 
-                  nous intervenons sous 4 heures dans tout le Sud de la France.
+                  En cas de situation d'insalubrité critique, nous intervenons sous 4 heures 
+                  dans tout le Sud de la France.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button variant="secondary" size="lg" className="text-lg px-8">
@@ -467,7 +381,7 @@ const ServiceNettoyageInsalubre = () => {
                     07 67 13 54 58
                   </Button>
                   <Button variant="outline" size="lg" className="text-lg px-8 border-destructive-foreground text-destructive-foreground hover:bg-destructive-foreground hover:text-destructive">
-                    <Clock className="w-5 h-5" />
+                    <AlertTriangle className="w-5 h-5" />
                     Urgence 24h/24
                   </Button>
                 </div>
