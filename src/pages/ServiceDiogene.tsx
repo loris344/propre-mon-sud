@@ -3,10 +3,7 @@ import { Button } from "@/components/ui/button";
 import SEOHead from "../components/SEOHead";
 import Contact from "../components/Contact";
 import CustomerReviews from "../components/CustomerReviews";
-import CityHero from "../components/CityHero";
-import CityGallery from "../components/CityGallery";
 import { useSEO } from "../hooks/useSEO";
-import { useLocation } from "react-router-dom";
 import { 
   Heart, 
   Shield, 
@@ -21,26 +18,34 @@ import {
 
 const ServiceDiogene = () => {
   const seoConfig = useSEO();
-  const location = useLocation();
-  const cityName = location.pathname.includes('montpellier') ? 'Montpellier' :
-                   location.pathname.includes('sete') ? 'Sète' :
-                   location.pathname.includes('beziers') ? 'Béziers' :
-                   location.pathname.includes('nimes') ? 'Nîmes' :
-                   location.pathname.includes('perpignan') ? 'Perpignan' : 'Montpellier';
-  
   return (
     <>
       <SEOHead {...seoConfig} />
       <main role="main">
         <div className="min-h-screen bg-gradient-to-b from-background to-secondary/20 pt-20 sm:pt-24">
       
-      {/* Hero Section avec image de fond */}
-      <CityHero
-        cityName={cityName}
-        pathname={location.pathname}
-        title="Nettoyage Syndrome de Diogène"
-        description={`Intervention spécialisée et respectueuse pour les situations d'accumulation compulsive. Notre équipe formée intervient avec discrétion et bienveillance à ${cityName} et sa région.`}
-      />
+      {/* Hero Section */}
+      <section className="relative py-16 sm:py-20 bg-gradient-to-br from-background via-secondary/30 to-background">
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-accent/5"></div>
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-4xl mx-auto text-center space-y-6 sm:space-y-8">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
+              Nettoyage Syndrome de Diogène
+              <span className="block text-primary">Montpellier</span>
+            </h1>
+            <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
+              Intervention spécialisée et respectueuse pour les situations d'accumulation compulsive. 
+              Notre équipe formée intervient avec discrétion et bienveillance à Montpellier et sa région.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
+              <Button variant="hero" size="lg" className="text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6">
+                <Phone className="w-4 h-4 sm:w-5 sm:h-5" />
+                Devis Gratuit - 07 67 13 54 58
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Processus d'intervention */}
       <section className="py-16 sm:py-20">
@@ -268,12 +273,6 @@ const ServiceDiogene = () => {
           </div>
         </div>
       </section>
-
-      {/* Galerie d'images de la ville */}
-      <CityGallery
-        cityName={cityName}
-        pathname={location.pathname}
-      />
 
       {/* Zone d'intervention */}
       <section className="py-16 sm:py-20">
