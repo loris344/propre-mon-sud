@@ -5,6 +5,7 @@ import { useLocation } from "@/contexts/LocationContext";
 import { useNavigate, useLocation as useRouterLocation } from "react-router-dom";
 import AvailabilityIndicator from "./AvailabilityIndicator";
 import ReviewsDisplay from "./ReviewsDisplay";
+import { ResponsiveImage } from "./ResponsiveImage";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -47,9 +48,10 @@ const Header = () => {
                    className="flex items-center space-x-2 sm:space-x-4 flex-shrink-0 cursor-pointer"
                    onClick={handleLogoClick}
                  >
-            <img 
-              src="/logo.png?v=2" 
-              alt="SOS Nettoyage Diogène Logo" 
+            <ResponsiveImage
+              src="/logo.png?v=2"
+              mobileSrc="/logo-mobile.png?v=2"
+              alt="SOS Nettoyage Diogène Logo"
               className="w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 object-contain"
             />
             <div className="min-w-0 flex-1">

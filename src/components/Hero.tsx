@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Phone, Mail, Clock } from "lucide-react";
 import { useLocation } from "@/contexts/LocationContext";
 import AvailabilityIndicator from "./AvailabilityIndicator";
+import { ResponsiveImage } from "./ResponsiveImage";
 
 const Hero = () => {
   const { locationText, isLoading } = useLocation();
@@ -84,14 +85,15 @@ const Hero = () => {
           {/* Image */}
           <div className="relative order-first lg:order-last">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-              <img 
-                src="/p1.png?v=2" 
+              <ResponsiveImage
+                src="/p1.png?v=2"
+                mobileSrc="/p1-mobile.png?v=2"
                 alt="Équipe professionnelle de nettoyage spécialisé syndrome de Diogène à Montpellier - Intervention discrète et respectueuse"
                 className="w-full h-[300px] sm:h-[400px] lg:h-[500px] object-cover"
                 loading="eager"
                 fetchpriority="high"
-                width="800"
-                height="500"
+                width={800}
+                height={500}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent"></div>
             </div>
