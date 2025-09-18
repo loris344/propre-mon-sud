@@ -1,17 +1,17 @@
 // Configuration centralisée du site
 export const SITE_CONFIG = {
   // Identité
-  name: "Propre Mon Sud",
+  name: "SOS Nettoyage Diogène",
   tagline: "Nettoyage Professionnel & Débarras",
   description: "Société spécialisée dans le nettoyage et débarras syndrome de Diogène, insalubrité et gros volumes. Intervention discrète, professionnelle et respectueuse dans le Sud de la France.",
   
   // Contact
   phone: "07 67 13 54 58",
-  email: "contact@propremonsud.fr",
+  email: "contact@sosnettoyagediogene.fr",
   availability: "7j/7 de 8h00 à 20h00",
   
   // URLs
-  baseUrl: "https://www.propremonsud.fr",
+  baseUrl: "https://www.sosnettoyagediogene.fr",
   social: {
     facebook: "https://www.facebook.com/propremonsud",
     linkedin: "https://www.linkedin.com/company/propre-mon-sud"

@@ -13,7 +13,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // Configuration
-const SITE_URL = 'https://www.propremonsud.fr';
+const SITE_URL = 'https://www.sosnettoyagediogene.fr';
 const BUILD_DIR = path.join(__dirname, '../dist');
 
 // Génération du sitemap simplifié
@@ -54,7 +54,7 @@ function generateSitemap() {
 
 // Génération du robots.txt
 function generateRobotsTxt() {
-  return `# Robots.txt pour Propre Mon Sud
+  return `# Robots.txt pour SOS Nettoyage Diogène
 # https://www.robotstxt.org/robotstxt.html
 
 User-agent: *
@@ -89,7 +89,7 @@ Disallow: /
 
 // Génération du llms.txt
 function generateLlmsTxt() {
-  return `# Propre Mon Sud
+  return `# SOS Nettoyage Diogène
 
 > Société spécialisée dans le nettoyage et débarras syndrome de Diogène, insalubrité et gros volumes. Intervention discrète, professionnelle et respectueuse dans le Sud de la France. Disponible 7j/7 pour des interventions d'urgence.
 
@@ -108,7 +108,7 @@ function generateLlmsTxt() {
 ## Informations de Contact
 
 - **Téléphone** : 07 67 13 54 58
-- **Email** : contact@propremonsud.fr
+- **Email** : contact@sosnettoyagediogene.fr
 - **Disponibilité** : 7j/7 de 8h00 à 20h00
 - **Urgences** : Intervention rapide acceptée en soirée
 
@@ -129,12 +129,12 @@ Intervention dans tout le Sud de la France :
 
 ---
 
-*Propre Mon Sud - Votre partenaire de confiance pour des interventions discrètes et professionnelles*`;
+*SOS Nettoyage Diogène - Votre partenaire de confiance pour des interventions discrètes et professionnelles*`;
 }
 
 // Fonction principale
 function build() {
-  console.log('🚀 Build simplifié de Propre Mon Sud...');
+  console.log('🚀 Build simplifié de SOS Nettoyage Diogène...');
   
   // Créer le dossier dist s'il n'existe pas
   if (!fs.existsSync(BUILD_DIR)) {

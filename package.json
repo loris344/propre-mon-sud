@@ -1,9 +1,9 @@
 {
-  "name": "propre-mon-sud",
+  "name": "sos-nettoyage-diogene",
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "homepage": "https://www.propremonsud.fr",
+  "homepage": "https://www.sosnettoyagediogene.fr",
   "scripts": {
     "dev": "vite",
     "build": "vite build && node scripts/build-simple.js",
