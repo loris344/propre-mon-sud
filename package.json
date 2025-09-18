@@ -1,20 +1,20 @@
 {
-  "name": "sos-nettoyage-diogene",
+  "name": "propre-mon-sud",
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "homepage": "https://www.sosnettoyagediogene.fr",
+  "homepage": "https://www.propremonsud.fr",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && node scripts/generate-static-pages.js && node scripts/generate-sitemap.js && node scripts/generate-llms-txt.js",
-    "build:dev": "vite build --mode development && node scripts/generate-sitemap.js && node scripts/generate-llms-txt.js",
+    "build": "vite build && node scripts/build-simple.js",
+    "build:dev": "vite build --mode development && node scripts/build-simple.js",
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "deploy:build": "npm run predeploy && npm run deploy",
-    "sitemap": "node scripts/generate-sitemap.js",
-    "llms": "node scripts/generate-llms-txt.js"
+    "sitemap": "node scripts/build-simple.js",
+    "llms": "node scripts/build-simple.js"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.2.3",
