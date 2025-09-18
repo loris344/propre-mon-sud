@@ -187,148 +187,1096 @@ const htmlTemplate = (page) => `<!doctype html>
     }
     </script>
     
-    <!-- CSS pour le contenu statique -->
+    <!-- CSS identique à l'application React -->
+    <link rel="stylesheet" href="/assets/index-D6doAFu4.css" />
     <style>
+      /* Styles de base pour la cohérence */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
       body { 
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-        margin: 0; 
-        padding: 20px; 
-        background: #f8fafc;
-        color: #1e293b;
+        background: hsl(var(--background));
+        color: hsl(var(--foreground));
         line-height: 1.6;
+        min-height: 100vh;
       }
+      
+      .min-h-screen {
+        min-height: 100vh;
+      }
+      
+      .bg-gradient-to-b {
+        background: linear-gradient(to bottom, hsl(var(--background)), hsl(var(--secondary) / 0.2));
+      }
+      
+      .bg-gradient-to-br {
+        background: linear-gradient(to bottom right, hsl(var(--background)), hsl(var(--secondary) / 0.3), hsl(var(--background)));
+      }
+      
+      .bg-gradient-to-r {
+        background: linear-gradient(to right, hsl(var(--primary) / 0.05), hsl(var(--accent) / 0.05));
+      }
+      
       .container { 
-        max-width: 800px; 
+        max-width: 1200px;
         margin: 0 auto; 
-        background: white;
-        padding: 40px;
-        border-radius: 12px;
-        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        padding: 0 1rem;
       }
-      h1 { 
-        color: #1e40af; 
-        font-size: 2.5rem;
-        margin-bottom: 20px;
-        border-bottom: 3px solid #3b82f6;
-        padding-bottom: 10px;
+      
+      .py-16 {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
       }
-      h2 { 
-        color: #1e40af; 
-        font-size: 1.8rem;
-        margin-top: 30px;
-        margin-bottom: 15px;
+      
+      .py-20 {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
       }
-      .cta { 
-        background: linear-gradient(135deg, #1e40af, #3b82f6);
-        color: white;
-        padding: 20px;
-        border-radius: 8px;
+      
+      .text-center {
         text-align: center;
-        margin: 30px 0;
       }
-      .cta h3 { 
-        margin: 0 0 10px 0; 
-        font-size: 1.5rem;
+      
+      .max-w-4xl {
+        max-width: 56rem;
       }
-      .cta p { 
-        margin: 0 0 15px 0; 
-        font-size: 1.1rem;
+      
+      .mx-auto {
+        margin-left: auto;
+        margin-right: auto;
       }
-      .phone { 
-        background: #10b981;
-        color: white;
-        padding: 15px 30px;
-        border-radius: 6px;
+      
+      .space-y-6 > * + * {
+        margin-top: 1.5rem;
+      }
+      
+      .space-y-8 > * + * {
+        margin-top: 2rem;
+      }
+      
+      .mb-12 {
+        margin-bottom: 3rem;
+      }
+      
+      .mb-16 {
+        margin-bottom: 4rem;
+      }
+      
+      h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        line-height: 1.1;
+        color: hsl(var(--foreground));
+        margin-bottom: 1.5rem;
+      }
+      
+      h2 {
+        font-size: 2.25rem;
+        font-weight: 700;
+        color: hsl(var(--foreground));
+        margin-bottom: 1rem;
+      }
+      
+      .text-primary {
+        color: hsl(var(--primary));
+      }
+      
+      .text-muted-foreground {
+        color: hsl(var(--muted-foreground));
+      }
+      
+      .text-lg {
+        font-size: 1.125rem;
+      }
+      
+      .text-xl {
+        font-size: 1.25rem;
+      }
+      
+      .leading-relaxed {
+        line-height: 1.625;
+      }
+      
+      .leading-tight {
+        line-height: 1.25;
+      }
+      
+      .block {
+        display: block;
+      }
+      
+      .flex {
+        display: flex;
+      }
+      
+      .flex-col {
+        flex-direction: column;
+      }
+      
+      .justify-center {
+        justify-content: center;
+      }
+      
+      .gap-4 {
+        gap: 1rem;
+      }
+      
+      .pt-4 {
+        padding-top: 1rem;
+      }
+      
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0.5rem;
+        font-size: 1rem;
+        font-weight: 500;
+        transition: all 0.2s;
         text-decoration: none;
-        font-weight: bold;
-        font-size: 1.2rem;
-        display: inline-block;
-        margin: 10px;
+        border: none;
+        cursor: pointer;
+        padding: 0.75rem 1.5rem;
+        gap: 0.5rem;
       }
-      .phone:hover { 
-        background: #059669;
-        transform: translateY(-2px);
+      
+      .btn-hero {
+        background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary) / 0.9));
+        color: hsl(var(--primary-foreground));
+      }
+      
+      .btn-hero:hover {
+        background: linear-gradient(135deg, hsl(var(--primary) / 0.9), hsl(var(--primary) / 0.8));
+        transform: translateY(-1px);
+        box-shadow: 0 10px 25px hsl(var(--primary) / 0.3);
+      }
+      
+      .btn-lg {
+        padding: 1rem 2rem;
+        font-size: 1.125rem;
+      }
+      
+      .grid {
+        display: grid;
+      }
+      
+      .grid-cols-1 {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+      }
+      
+      .grid-cols-2 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      
+      .grid-cols-3 {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+      
+      .gap-6 {
+        gap: 1.5rem;
+      }
+      
+      .gap-8 {
+        gap: 2rem;
+      }
+      
+      .card {
+        background: hsl(var(--card));
+        border: 1px solid hsl(var(--border));
+        border-radius: 0.75rem;
+        padding: 1.5rem;
+        box-shadow: 0 1px 3px hsl(var(--border) / 0.1);
         transition: all 0.3s ease;
       }
-      .features { 
-        display: grid; 
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
-        gap: 20px; 
-        margin: 30px 0;
+      
+      .card:hover {
+        box-shadow: 0 20px 25px -5px hsl(var(--border) / 0.1), 0 10px 10px -5px hsl(var(--border) / 0.04);
+        transform: translateY(-2px);
       }
-      .feature { 
-        background: #f8fafc; 
-        padding: 20px; 
-        border-radius: 8px; 
-        border-left: 4px solid #3b82f6;
+      
+      .text-center {
+        text-align: center;
       }
-      .feature h4 { 
-        color: #1e40af; 
-        margin: 0 0 10px 0;
+      
+      .pb-4 {
+        padding-bottom: 1rem;
       }
-      ul { 
-        padding-left: 20px; 
+      
+      .mb-4 {
+        margin-bottom: 1rem;
       }
-      li { 
-        margin: 8px 0; 
+      
+      .w-12 {
+        width: 3rem;
       }
-      .loading { 
-        text-align: center; 
-        padding: 40px; 
-        color: #64748b;
+      
+      .h-12 {
+        height: 3rem;
       }
-      .loading::after { 
-        content: "Chargement de l'application..."; 
-        animation: pulse 2s infinite;
+      
+      .w-16 {
+        width: 4rem;
       }
-      @keyframes pulse { 
-        0%, 100% { opacity: 1; } 
-        50% { opacity: 0.5; } 
+      
+      .h-16 {
+        height: 4rem;
+      }
+      
+      .bg-gradient-to-br {
+        background: linear-gradient(to bottom right, hsl(var(--primary)), hsl(var(--primary) / 0.8));
+      }
+      
+      .rounded-xl {
+        border-radius: 0.75rem;
+      }
+      
+      .flex {
+        display: flex;
+      }
+      
+      .items-center {
+        align-items: center;
+      }
+      
+      .justify-center {
+        justify-content: center;
+      }
+      
+      .mx-auto {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      
+      .text-primary-foreground {
+        color: hsl(var(--primary-foreground));
+      }
+      
+      .text-lg {
+        font-size: 1.125rem;
+      }
+      
+      .text-xl {
+        font-size: 1.25rem;
+      }
+      
+      .font-semibold {
+        font-weight: 600;
+      }
+      
+      .space-y-2 > * + * {
+        margin-top: 0.5rem;
+      }
+      
+      .text-left {
+        text-align: left;
+      }
+      
+      .text-sm {
+        font-size: 0.875rem;
+      }
+      
+      .text-base {
+        font-size: 1rem;
+      }
+      
+      .flex {
+        display: flex;
+      }
+      
+      .items-center {
+        align-items: center;
+      }
+      
+      .gap-2 {
+        gap: 0.5rem;
+      }
+      
+      .w-3 {
+        width: 0.75rem;
+      }
+      
+      .h-3 {
+        height: 0.75rem;
+      }
+      
+      .w-4 {
+        width: 1rem;
+      }
+      
+      .h-4 {
+        height: 1rem;
+      }
+      
+      .text-accent {
+        color: hsl(var(--accent));
+      }
+      
+      .flex-shrink-0 {
+        flex-shrink: 0;
+      }
+      
+      .text-muted-foreground {
+        color: hsl(var(--muted-foreground));
+      }
+      
+      .bg-card {
+        background: hsl(var(--card));
+      }
+      
+      .py-16 {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+      }
+      
+      .py-20 {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+      }
+      
+      .max-w-6xl {
+        max-width: 72rem;
+      }
+      
+      .max-w-3xl {
+        max-width: 48rem;
+      }
+      
+      .space-y-4 > * + * {
+        margin-top: 1rem;
+      }
+      
+      .mb-12 {
+        margin-bottom: 3rem;
+      }
+      
+      .mb-16 {
+        margin-bottom: 4rem;
+      }
+      
+      .text-2xl {
+        font-size: 1.5rem;
+      }
+      
+      .text-3xl {
+        font-size: 1.875rem;
+      }
+      
+      .text-4xl {
+        font-size: 2.25rem;
+      }
+      
+      .font-bold {
+        font-weight: 700;
+      }
+      
+      .text-foreground {
+        color: hsl(var(--foreground));
+      }
+      
+      .text-muted-foreground {
+        color: hsl(var(--muted-foreground));
+      }
+      
+      .text-base {
+        font-size: 1rem;
+      }
+      
+      .text-lg {
+        font-size: 1.125rem;
+      }
+      
+      .group:hover .group-hover\\:scale-110 {
+        transform: scale(1.1);
+      }
+      
+      .transition-all {
+        transition: all 0.3s ease;
+      }
+      
+      .duration-300 {
+        transition-duration: 300ms;
+      }
+      
+      .hover\\:shadow-xl:hover {
+        box-shadow: 0 20px 25px -5px hsl(var(--border) / 0.1), 0 10px 10px -5px hsl(var(--border) / 0.04);
+      }
+      
+      .border-border\\/50 {
+        border-color: hsl(var(--border) / 0.5);
+      }
+      
+      .hover\\:border-primary\\/30:hover {
+        border-color: hsl(var(--primary) / 0.3);
+      }
+      
+      .transition-transform {
+        transition: transform 0.3s ease;
+      }
+      
+      .group-hover\\:scale-110 {
+        transform: scale(1);
+      }
+      
+      .group:hover .group-hover\\:scale-110 {
+        transform: scale(1.1);
+      }
+      
+      .transition-colors {
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+      
+      .hover\\:bg-card\\/50:hover {
+        background: hsl(var(--card) / 0.5);
+      }
+      
+      .p-4 {
+        padding: 1rem;
+      }
+      
+      .rounded-lg {
+        border-radius: 0.5rem;
+      }
+      
+      .w-5 {
+        width: 1.25rem;
+      }
+      
+      .h-5 {
+        height: 1.25rem;
+      }
+      
+      .w-6 {
+        width: 1.5rem;
+      }
+      
+      .h-6 {
+        height: 1.5rem;
+      }
+      
+      .mt-1 {
+        margin-top: 0.25rem;
+      }
+      
+      .mb-2 {
+        margin-bottom: 0.5rem;
+      }
+      
+      .text-xs {
+        font-size: 0.75rem;
+      }
+      
+      .text-sm {
+        font-size: 0.875rem;
+      }
+      
+      .text-base {
+        font-size: 1rem;
+      }
+      
+      .font-semibold {
+        font-weight: 600;
+      }
+      
+      .text-foreground {
+        color: hsl(var(--foreground));
+      }
+      
+      .text-muted-foreground {
+        color: hsl(var(--muted-foreground));
+      }
+      
+      .grid-cols-2 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      
+      .grid-cols-3 {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+      
+      .grid-cols-4 {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+      }
+      
+      .gap-3 {
+        gap: 0.75rem;
+      }
+      
+      .gap-4 {
+        gap: 1rem;
+      }
+      
+      .gap-6 {
+        gap: 1.5rem;
+      }
+      
+      .gap-8 {
+        gap: 2rem;
+      }
+      
+      .mb-8 {
+        margin-bottom: 2rem;
+      }
+      
+      .mb-12 {
+        margin-bottom: 3rem;
+      }
+      
+      .w-3 {
+        width: 0.75rem;
+      }
+      
+      .h-3 {
+        height: 0.75rem;
+      }
+      
+      .w-4 {
+        width: 1rem;
+      }
+      
+      .h-4 {
+        height: 1rem;
+      }
+      
+      .text-accent {
+        color: hsl(var(--accent));
+      }
+      
+      .flex-shrink-0 {
+        flex-shrink: 0;
+      }
+      
+      .text-muted-foreground {
+        color: hsl(var(--muted-foreground));
+      }
+      
+      .p-2 {
+        padding: 0.5rem;
+      }
+      
+      .rounded-lg {
+        border-radius: 0.5rem;
+      }
+      
+      .hover\\:bg-card\\/50:hover {
+        background: hsl(var(--card) / 0.5);
+      }
+      
+      .transition-colors {
+        transition: background-color 0.3s ease;
+      }
+      
+      .duration-300 {
+        transition-duration: 300ms;
+      }
+      
+      .text-xs {
+        font-size: 0.75rem;
+      }
+      
+      .text-sm {
+        font-size: 0.875rem;
+      }
+      
+      .bg-gradient-to-br {
+        background: linear-gradient(to bottom right, hsl(var(--primary)), hsl(var(--primary) / 0.9));
+      }
+      
+      .text-primary-foreground {
+        color: hsl(var(--primary-foreground));
+      }
+      
+      .border-0 {
+        border: 0;
+      }
+      
+      .shadow-xl {
+        box-shadow: 0 20px 25px -5px hsl(var(--border) / 0.1), 0 10px 10px -5px hsl(var(--border) / 0.04);
+      }
+      
+      .p-6 {
+        padding: 1.5rem;
+      }
+      
+      .p-8 {
+        padding: 2rem;
+      }
+      
+      .w-10 {
+        width: 2.5rem;
+      }
+      
+      .h-10 {
+        height: 2.5rem;
+      }
+      
+      .w-12 {
+        width: 3rem;
+      }
+      
+      .h-12 {
+        height: 3rem;
+      }
+      
+      .mx-auto {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      
+      .mb-4 {
+        margin-bottom: 1rem;
+      }
+      
+      .text-xl {
+        font-size: 1.25rem;
+      }
+      
+      .text-2xl {
+        font-size: 1.5rem;
+      }
+      
+      .font-bold {
+        font-weight: 700;
+      }
+      
+      .mb-2 {
+        margin-bottom: 0.5rem;
+      }
+      
+      .text-lg {
+        font-size: 1.125rem;
+      }
+      
+      .text-xl {
+        font-size: 1.25rem;
+      }
+      
+      .font-semibold {
+        font-weight: 600;
+      }
+      
+      .mb-4 {
+        margin-bottom: 1rem;
+      }
+      
+      .text-primary-foreground\\/90 {
+        color: hsl(var(--primary-foreground) / 0.9);
+      }
+      
+      .text-sm {
+        font-size: 0.875rem;
+      }
+      
+      .text-base {
+        font-size: 1rem;
+      }
+      
+      /* Responsive */
+      @media (min-width: 640px) {
+        .sm\\:py-20 {
+          padding-top: 5rem;
+          padding-bottom: 5rem;
+        }
+        
+        .sm\\:space-y-8 > * + * {
+          margin-top: 2rem;
+        }
+        
+        .sm\\:text-4xl {
+          font-size: 2.25rem;
+        }
+        
+        .sm\\:text-5xl {
+          font-size: 3rem;
+        }
+        
+        .sm\\:text-6xl {
+          font-size: 3.75rem;
+        }
+        
+        .sm\\:text-xl {
+          font-size: 1.25rem;
+        }
+        
+        .sm\\:px-8 {
+          padding-left: 2rem;
+          padding-right: 2rem;
+        }
+        
+        .sm\\:py-6 {
+          padding-top: 1.5rem;
+          padding-bottom: 1.5rem;
+        }
+        
+        .sm\\:text-lg {
+          font-size: 1.125rem;
+        }
+        
+        .sm\\:mb-16 {
+          margin-bottom: 4rem;
+        }
+        
+        .sm\\:text-3xl {
+          font-size: 1.875rem;
+        }
+        
+        .sm\\:text-4xl {
+          font-size: 2.25rem;
+        }
+        
+        .sm\\:grid-cols-2 {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+        
+        .sm\\:grid-cols-3 {
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+        
+        .sm\\:grid-cols-4 {
+          grid-template-columns: repeat(4, minmax(0, 1fr));
+        }
+        
+        .sm\\:gap-4 {
+          gap: 1rem;
+        }
+        
+        .sm\\:gap-8 {
+          gap: 2rem;
+        }
+        
+        .sm\\:w-16 {
+          width: 4rem;
+        }
+        
+        .sm\\:h-16 {
+          height: 4rem;
+        }
+        
+        .sm\\:w-8 {
+          width: 2rem;
+        }
+        
+        .sm\\:h-8 {
+          height: 2rem;
+        }
+        
+        .sm\\:text-xl {
+          font-size: 1.25rem;
+        }
+        
+        .sm\\:text-base {
+          font-size: 1rem;
+        }
+        
+        .sm\\:w-4 {
+          width: 1rem;
+        }
+        
+        .sm\\:h-4 {
+          height: 1rem;
+        }
+        
+        .sm\\:w-5 {
+          width: 1.25rem;
+        }
+        
+        .sm\\:h-5 {
+          height: 1.25rem;
+        }
+        
+        .sm\\:w-6 {
+          width: 1.5rem;
+        }
+        
+        .sm\\:h-6 {
+          height: 1.5rem;
+        }
+        
+        .sm\\:text-base {
+          font-size: 1rem;
+        }
+        
+        .sm\\:text-sm {
+          font-size: 0.875rem;
+        }
+        
+        .sm\\:gap-8 {
+          gap: 2rem;
+        }
+        
+        .sm\\:mb-12 {
+          margin-bottom: 3rem;
+        }
+        
+        .sm\\:p-8 {
+          padding: 2rem;
+        }
+        
+        .sm\\:w-12 {
+          width: 3rem;
+        }
+        
+        .sm\\:h-12 {
+          height: 3rem;
+        }
+        
+        .sm\\:text-2xl {
+          font-size: 1.5rem;
+        }
+        
+        .sm\\:text-base {
+          font-size: 1rem;
+        }
+      }
+      
+      @media (min-width: 768px) {
+        .md\\:text-5xl {
+          font-size: 3rem;
+        }
+        
+        .md\\:text-6xl {
+          font-size: 3.75rem;
+        }
+        
+        .md\\:text-4xl {
+          font-size: 2.25rem;
+        }
+      }
+      
+      @media (min-width: 1024px) {
+        .lg\\:text-6xl {
+          font-size: 3.75rem;
+        }
+        
+        .lg\\:grid-cols-3 {
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+        
+        .lg\\:grid-cols-4 {
+          grid-template-columns: repeat(4, minmax(0, 1fr));
+        }
+        
+        .lg\\:col-span-1 {
+          grid-column: span 1 / span 1;
+        }
+      }
+      
+      /* Variables CSS pour la cohérence */
+      :root {
+        --background: 0 0% 100%;
+        --foreground: 222.2 84% 4.9%;
+        --card: 0 0% 100%;
+        --card-foreground: 222.2 84% 4.9%;
+        --popover: 0 0% 100%;
+        --popover-foreground: 222.2 84% 4.9%;
+        --primary: 221.2 83.2% 53.3%;
+        --primary-foreground: 210 40% 98%;
+        --secondary: 210 40% 96%;
+        --secondary-foreground: 222.2 84% 4.9%;
+        --muted: 210 40% 96%;
+        --muted-foreground: 215.4 16.3% 46.9%;
+        --accent: 210 40% 96%;
+        --accent-foreground: 222.2 84% 4.9%;
+        --destructive: 0 84.2% 60.2%;
+        --destructive-foreground: 210 40% 98%;
+        --border: 214.3 31.8% 91.4%;
+        --input: 214.3 31.8% 91.4%;
+        --ring: 221.2 83.2% 53.3%;
+        --radius: 0.5rem;
+      }
+      
+      .dark {
+        --background: 222.2 84% 4.9%;
+        --foreground: 210 40% 98%;
+        --card: 222.2 84% 4.9%;
+        --card-foreground: 210 40% 98%;
+        --popover: 222.2 84% 4.9%;
+        --popover-foreground: 210 40% 98%;
+        --primary: 217.2 91.2% 59.8%;
+        --primary-foreground: 222.2 84% 4.9%;
+        --secondary: 217.2 32.6% 17.5%;
+        --secondary-foreground: 210 40% 98%;
+        --muted: 217.2 32.6% 17.5%;
+        --muted-foreground: 215 20.2% 65.1%;
+        --accent: 217.2 32.6% 17.5%;
+        --accent-foreground: 210 40% 98%;
+        --destructive: 0 62.8% 30.6%;
+        --destructive-foreground: 210 40% 98%;
+        --border: 217.2 32.6% 17.5%;
+        --input: 217.2 32.6% 17.5%;
+        --ring: 224.3 76.3% 94.1%;
       }
     </style>
   </head>
 
   <body>
-    <div class="container">
-      <h1>${page.title.split(' | ')[0]}</h1>
-      
-      <div class="cta">
-        <h3>🚨 Intervention d'Urgence</h3>
-        <p>Disponible 7j/7 de 8h à 20h</p>
-        <a href="tel:0767135458" class="phone">📞 07 67 13 54 58</a>
-      </div>
-      
-      <h2>Nos Services Spécialisés</h2>
-      <div class="features">
-        <div class="feature">
-          <h4>🏠 Nettoyage Syndrome de Diogène</h4>
-          <p>Intervention spécialisée dans les situations d'accumulation compulsive avec respect et discrétion totale.</p>
+    <div class="min-h-screen bg-gradient-to-b">
+      <!-- Hero Section -->
+      <section class="relative py-16 sm:py-20 bg-gradient-to-br">
+        <div class="absolute inset-0 bg-gradient-to-r"></div>
+        <div class="container mx-auto px-4 relative z-10">
+          <div class="max-w-4xl mx-auto text-center space-y-6 sm:space-y-8">
+            <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
+              ${page.title.split(' | ')[0]}
+              <span class="block text-primary">Montpellier</span>
+            </h1>
+            <p class="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
+              ${page.description}
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center pt-4">
+              <a href="tel:0767135458" class="btn btn-hero btn-lg">
+                📞 Devis Gratuit - 07 67 13 54 58
+              </a>
+            </div>
+          </div>
         </div>
-        <div class="feature">
-          <h4>🗑️ Débarras Gros Volumes</h4>
-          <p>Évacuation et tri de tous types d'objets, meubles et déchets en respectant l'environnement.</p>
+      </section>
+
+      <!-- Services Section -->
+      <section class="py-16 sm:py-20">
+        <div class="container mx-auto px-4">
+          <div class="max-w-6xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16 space-y-4">
+              <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">
+                Nos Services Spécialisés
+              </h2>
+              <p class="text-base sm:text-lg text-muted-foreground">
+                Une approche professionnelle et humaine pour chaque situation, avec la discrétion et l'expertise que vous méritez.
+              </p>
+            </div>
+            
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+              <div class="card group hover:shadow-xl transition-all duration-300 border-border/50 hover:border-primary/30 text-center">
+                <div class="pb-4">
+                  <div class="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                    <span class="text-primary-foreground text-2xl">🏠</span>
+                  </div>
+                  <h3 class="text-lg sm:text-xl font-semibold">Nettoyage Syndrome de Diogène</h3>
+                </div>
+                <div>
+                  <p class="text-muted-foreground text-sm sm:text-base">
+                    Intervention spécialisée dans les situations d'accumulation compulsive avec respect et discrétion totale.
+                  </p>
+                </div>
+              </div>
+
+              <div class="card group hover:shadow-xl transition-all duration-300 border-border/50 hover:border-primary/30 text-center">
+                <div class="pb-4">
+                  <div class="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                    <span class="text-primary-foreground text-2xl">🗑️</span>
+                  </div>
+                  <h3 class="text-lg sm:text-xl font-semibold">Débarras Gros Volumes</h3>
+                </div>
+                <div>
+                  <p class="text-muted-foreground text-sm sm:text-base">
+                    Évacuation et tri de tous types d'objets, meubles et déchets en respectant l'environnement.
+                  </p>
+                </div>
+              </div>
+
+              <div class="card group hover:shadow-xl transition-all duration-300 border-border/50 hover:border-primary/30 text-center sm:col-span-2 lg:col-span-1">
+                <div class="pb-4">
+                  <div class="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                    <span class="text-primary-foreground text-2xl">🛡️</span>
+                  </div>
+                  <h3 class="text-lg sm:text-xl font-semibold">Désinfection & Insalubrité</h3>
+                </div>
+                <div>
+                  <p class="text-muted-foreground text-sm sm:text-base">
+                    Traitement des environnements insalubres avec des produits professionnels et techniques adaptées.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="feature">
-          <h4>🛡️ Désinfection & Insalubrité</h4>
-          <p>Traitement des environnements insalubres avec des produits professionnels et techniques adaptées.</p>
+      </section>
+
+      <!-- Avantages Section -->
+      <section class="py-16 sm:py-20 bg-card">
+        <div class="container mx-auto px-4">
+          <div class="max-w-4xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16 space-y-4">
+              <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">
+                Pourquoi Nous Choisir ?
+              </h2>
+              <p class="text-base sm:text-lg text-muted-foreground">
+                Une expertise reconnue et une approche humaine pour chaque intervention.
+              </p>
+            </div>
+            
+            <div class="grid sm:grid-cols-2 gap-6 sm:gap-8">
+              <div class="flex items-start gap-4 p-4 rounded-lg hover:bg-card/50 transition-colors duration-300">
+                <div class="w-5 h-5 sm:w-6 sm:h-6 text-accent flex-shrink-0 mt-1">✓</div>
+                <div>
+                  <h3 class="font-semibold text-foreground mb-2 text-sm sm:text-base">Disponibilité 7j/7</h3>
+                  <p class="text-muted-foreground text-xs sm:text-sm">
+                    Intervention rapide et flexible
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4 p-4 rounded-lg hover:bg-card/50 transition-colors duration-300">
+                <div class="w-5 h-5 sm:w-6 sm:h-6 text-accent flex-shrink-0 mt-1">✓</div>
+                <div>
+                  <h3 class="font-semibold text-foreground mb-2 text-sm sm:text-base">Équipe experte</h3>
+                  <p class="text-muted-foreground text-xs sm:text-sm">
+                    Professionnels formés et équipés
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4 p-4 rounded-lg hover:bg-card/50 transition-colors duration-300">
+                <div class="w-5 h-5 sm:w-6 sm:h-6 text-accent flex-shrink-0 mt-1">✓</div>
+                <div>
+                  <h3 class="font-semibold text-foreground mb-2 text-sm sm:text-base">Discrétion assurée</h3>
+                  <p class="text-muted-foreground text-xs sm:text-sm">
+                    Confidentialité et respect total
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4 p-4 rounded-lg hover:bg-card/50 transition-colors duration-300">
+                <div class="w-5 h-5 sm:w-6 sm:h-6 text-accent flex-shrink-0 mt-1">✓</div>
+                <div>
+                  <h3 class="font-semibold text-foreground mb-2 text-sm sm:text-base">Assurance complète</h3>
+                  <p class="text-muted-foreground text-xs sm:text-sm">
+                    Intervention sécurisée et assurée
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      
-      <h2>Pourquoi Nous Choisir ?</h2>
-      <ul>
-        <li><strong>Disponibilité 7j/7</strong> - Intervention rapide et flexible</li>
-        <li><strong>Équipe experte</strong> - Professionnels formés et équipés</li>
-        <li><strong>Discrétion assurée</strong> - Confidentialité et respect total</li>
-        <li><strong>Assurance complète</strong> - Intervention sécurisée et assurée</li>
-      </ul>
-      
-      <div class="cta">
-        <h3>Devis Gratuit</h3>
-        <p>Contactez-nous pour un devis personnalisé</p>
-        <a href="tel:0767135458" class="phone">📞 07 67 13 54 58</a>
-      </div>
-      
-      <div class="loading"></div>
+      </section>
+
+      <!-- CTA Final -->
+      <section class="py-16 sm:py-20">
+        <div class="container mx-auto px-4">
+          <div class="max-w-4xl mx-auto text-center">
+            <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16 space-y-4">
+              <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">
+                Besoin d'une Intervention ?
+              </h2>
+              <p class="text-base sm:text-lg text-muted-foreground">
+                Contactez-nous pour un devis gratuit et une intervention rapide.
+              </p>
+            </div>
+
+            <div class="bg-gradient-to-br text-primary-foreground border-0 shadow-xl p-6 sm:p-8 rounded-xl">
+              <div class="w-10 h-10 sm:w-12 sm:h-12 mx-auto mb-4 text-4xl">📞</div>
+              <h3 class="text-xl sm:text-2xl font-bold mb-2">Intervention d'Urgence</h3>
+              <p class="text-lg sm:text-xl font-semibold mb-4">07 67 13 54 58</p>
+              <p class="text-primary-foreground/90 text-sm sm:text-base">
+                Disponible 7j/7 de 8h à 20h pour tout le Sud de la France
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
     
     <!-- Script pour rediriger vers l'application React -->
@@ -336,7 +1284,7 @@ const htmlTemplate = (page) => `<!doctype html>
       // Redirection vers l'application React après un court délai
       setTimeout(function() {
         window.location.href = '${page.route}';
-      }, 2000);
+      }, 3000);
       
       // Redirection immédiate si JavaScript est activé
       if (window.location.pathname !== '${page.route}') {
