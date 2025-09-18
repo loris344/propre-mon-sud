@@ -13,7 +13,7 @@ export interface SEOConfig {
 const baseConfig = {
   siteName: "SOS Nettoyage Diogène",
   siteUrl: "https://sosnettoyagediogene.fr",
-  defaultImage: "https://sosnettoyagediogene.fr/p1.png",
+  defaultImage: "https://sosnettoyagediogene.fr/p1.png?v=2",
   defaultKeywords: "sos nettoyage diogène, nettoyage syndrome diogène, débarras montpellier, nettoyage extrême, insalubrité, désinfection, évacuation déchets, nettoyage professionnel, montpellier, sète, béziers, hérault, occitanie"
 };
 
@@ -153,7 +153,7 @@ export const seoConfig: Record<string, SEOConfig> = {
         "https://www.linkedin.com/company/propre-mon-sud"
       ],
       "image": baseConfig.defaultImage,
-      "logo": "https://sosnettoyagediogene.fr/logo.png"
+      "logo": "https://sosnettoyagediogene.fr/logo.png?v=2"
     }
   },
 

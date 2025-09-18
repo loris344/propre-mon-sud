@@ -48,7 +48,7 @@ const Header = () => {
                    onClick={handleLogoClick}
                  >
             <img 
-              src="/logo.png" 
+              src="/logo.png?v=2" 
               alt="SOS Nettoyage Diogène Logo" 
               className="w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 object-contain"
             />

@@ -85,7 +85,7 @@ const Hero = () => {
           <div className="relative order-first lg:order-last">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <img 
-                src="/p1.png" 
+                src="/p1.png?v=2" 
                 alt="Équipe professionnelle de nettoyage spécialisé syndrome de Diogène à Montpellier - Intervention discrète et respectueuse"
                 className="w-full h-[300px] sm:h-[400px] lg:h-[500px] object-cover"
                 loading="eager"
