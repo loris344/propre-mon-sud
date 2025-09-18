@@ -88,7 +88,7 @@ const CustomerReviews = memo(() => {
                 {/* En-tête de l'avis */}
                 <div className="flex items-start justify-between mb-4">
                   <div>
-                    <h4 className="font-semibold text-foreground">{review.name}</h4>
+                    <h3 className="font-semibold text-foreground">{review.name}</h3>
                     <p className="text-sm text-muted-foreground">{review.location}</p>
                     <p className="text-xs text-muted-foreground">{review.date}</p>
                   </div>

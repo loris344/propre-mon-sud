@@ -89,6 +89,7 @@ const Hero = () => {
                 alt="Équipe professionnelle de nettoyage spécialisé syndrome de Diogène à Montpellier - Intervention discrète et respectueuse"
                 className="w-full h-[300px] sm:h-[400px] lg:h-[500px] object-cover"
                 loading="eager"
+                fetchpriority="high"
                 width="800"
                 height="500"
               />
