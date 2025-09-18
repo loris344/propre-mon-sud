@@ -257,6 +257,21 @@ const htmlTemplate = (page) => {
           height: 500px;
         }
       }
+
+      /* Styles pour éviter le CLS */
+      .w-full { width: 100%; }
+      .h-\\[300px\\] { height: 300px; }
+      .sm\\:h-\\[400px\\] { height: 300px; }
+      .lg\\:h-\\[500px\\] { height: 300px; }
+      .object-cover { object-fit: cover; }
+      
+      @media (min-width: 640px) {
+        .sm\\:h-\\[400px\\] { height: 400px; }
+      }
+      
+      @media (min-width: 1024px) {
+        .lg\\:h-\\[500px\\] { height: 500px; }
+      }
     </style>
     
     <!-- Language and Geo Tags -->

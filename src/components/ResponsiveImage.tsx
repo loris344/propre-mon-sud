@@ -20,11 +20,17 @@ export const ResponsiveImage = ({
   height
 }: ResponsiveImageProps) => {
   // Utilise des images avec CSS pour la responsivité
-  // Desktop: src, Mobile: mobileSrc, Small Mobile: mobileSrc avec -small
+  // Desktop: src, Mobile: mobileSrc, Small Mobile: mobileSrc avec -small, Ultra Small: mobileSrc avec -ultra
   const smallMobileSrc = mobileSrc.replace('mobile', 'mobile-small');
+  const ultraMobileSrc = mobileSrc.replace('mobile', 'mobile-ultra');
   
   return (
     <picture>
+      {/* Ultra small mobile (≤320px) */}
+      <source 
+        media="(max-width: 320px)" 
+        srcSet={ultraMobileSrc}
+      />
       {/* Small mobile (≤480px) */}
       <source 
         media="(max-width: 480px)" 
