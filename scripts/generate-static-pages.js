@@ -178,7 +178,7 @@ const staticPages = [
   }
 ];
 
-// Template HTML de base
+// Template HTML de base - utilise l'app React
 const htmlTemplate = (page) => {
   const assets = getAssets();
   const cityImage = cityImages[page.city] || cityImages.montpellier;
@@ -199,114 +199,6 @@ const htmlTemplate = (page) => {
     
     <!-- Canonical URL -->
     <link rel="canonical" href="https://sosnettoyagediogene.fr${page.route}" />
-    
-    <!-- CSS Critique intégré pour éviter le blocage -->
-    <style>
-      /* CSS Critique pour le Hero - styles essentiels */
-      :root {
-        --background: 0 0% 100%;
-        --foreground: 215 25% 27%;
-        --primary: 210 75% 35%;
-        --primary-foreground: 0 0% 100%;
-        --secondary: 210 20% 96%;
-        --muted-foreground: 215 15% 45%;
-      }
-
-      * {
-        box-sizing: border-box;
-      }
-
-      body {
-        margin: 0;
-        font-family: system-ui, -apple-system, sans-serif;
-        background-color: hsl(var(--background));
-        color: hsl(var(--foreground));
-      }
-
-      /* Styles critiques pour le Hero */
-      .hero-section {
-        position: relative;
-        min-height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: linear-gradient(135deg, hsl(var(--background)), hsl(var(--secondary) / 0.3), hsl(var(--background)));
-      }
-
-      .hero-container {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 0 1rem;
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 2rem;
-        align-items: center;
-      }
-
-      .hero-content {
-        text-align: center;
-        z-index: 10;
-      }
-
-      .hero-title {
-        font-size: 2.5rem;
-        font-weight: 800;
-        line-height: 1.1;
-        margin-bottom: 1rem;
-        color: hsl(var(--foreground));
-      }
-
-      .hero-subtitle {
-        font-size: 1.25rem;
-        color: hsl(var(--muted-foreground));
-        margin-bottom: 2rem;
-        line-height: 1.6;
-      }
-
-      .hero-image {
-        width: 100%;
-        height: 300px;
-        object-fit: cover;
-        border-radius: 1rem;
-      }
-
-      /* Responsive */
-      @media (min-width: 640px) {
-        .hero-image {
-          height: 400px;
-        }
-      }
-
-      @media (min-width: 1024px) {
-        .hero-container {
-          grid-template-columns: 1fr 1fr;
-          gap: 4rem;
-        }
-        
-        .hero-content {
-          text-align: left;
-        }
-        
-        .hero-image {
-          height: 500px;
-        }
-      }
-
-      /* Styles pour éviter le CLS */
-      .w-full { width: 100%; }
-      .h-\\[300px\\] { height: 300px; }
-      .sm\\:h-\\[400px\\] { height: 300px; }
-      .lg\\:h-\\[500px\\] { height: 300px; }
-      .object-cover { object-fit: cover; }
-      
-      @media (min-width: 640px) {
-        .sm\\:h-\\[400px\\] { height: 400px; }
-      }
-      
-      @media (min-width: 1024px) {
-        .lg\\:h-\\[500px\\] { height: 500px; }
-      }
-    </style>
     
     <!-- Language and Geo Tags -->
     <meta name="language" content="fr" />
@@ -448,29 +340,15 @@ const htmlTemplate = (page) => {
     }
     </script>
     
-    <!-- CSS identique à l'application React -->
+    <!-- CSS et JS de l'application React -->
     <link rel="stylesheet" crossorigin href="${assets.css}" />
     <script type="module" crossorigin src="${assets.js}"></script>
     <link rel="modulepreload" crossorigin href="${assets.vendor}">
     <link rel="modulepreload" crossorigin href="${assets.ui}">
-    <style>
-      /* Styles de base pour la cohérence */
-      body { 
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-        line-height: 1.6;
-        min-height: 100vh;
-      }
-    </style>
   </head>
 
   <body>
     <div id="root"></div>
-    
-    <!-- Script pour l'application React -->
-    <script>
-      // L'application React va prendre le relais
-      console.log('Page statique chargée pour ${page.route}');
-    </script>
   </body>
 </html>`;
 };
