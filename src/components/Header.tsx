@@ -2,12 +2,15 @@ import { Button } from "@/components/ui/button";
 import { Phone, Menu, X } from "lucide-react";
 import { useState } from "react";
 import { useLocation } from "@/contexts/LocationContext";
+import { useNavigate, useLocation as useRouterLocation } from "react-router-dom";
 import AvailabilityIndicator from "./AvailabilityIndicator";
 import ReviewsDisplay from "./ReviewsDisplay";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { location, isLoading } = useLocation();
+  const navigate = useNavigate();
+  const routerLocation = useRouterLocation();
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -17,13 +20,33 @@ const Header = () => {
     }
   };
 
+  const handleNavigation = (section: string) => {
+    setIsMenuOpen(false);
+    
+    // Si on est sur la page d'accueil, faire un scroll
+    if (routerLocation.pathname === '/') {
+      scrollToSection(section);
+    } else {
+      // Sinon, naviguer vers l'accueil avec la section
+      navigate(`/#${section}`);
+    }
+  };
+
+  const handleLogoClick = () => {
+    setIsMenuOpen(false);
+    navigate('/');
+  };
+
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border/50 shadow-sm">
       <nav className="container mx-auto px-4 py-4">
                <div className="flex items-center justify-between gap-4">
                  
                  {/* Logo */}
-                 <div className="flex items-center space-x-2 sm:space-x-4 flex-shrink-0">
+                 <div 
+                   className="flex items-center space-x-2 sm:space-x-4 flex-shrink-0 cursor-pointer"
+                   onClick={handleLogoClick}
+                 >
             <img 
               src="/logo.png" 
               alt="SOS Nettoyage Diogène Logo" 
@@ -40,25 +63,25 @@ const Header = () => {
                  {/* Desktop Navigation */}
                  <div className="hidden md:flex items-center space-x-6 flex-1 justify-center">
             <button 
-              onClick={() => scrollToSection('accueil')}
+              onClick={() => handleNavigation('accueil')}
               className="text-foreground hover:text-primary transition-colors font-medium"
             >
               Accueil
             </button>
                   <button 
-                    onClick={() => scrollToSection('services')}
+                    onClick={() => handleNavigation('services')}
                     className="text-foreground hover:text-primary transition-colors font-medium"
                   >
                     Services
                   </button>
                   <button 
-                    onClick={() => scrollToSection('avis')}
+                    onClick={() => handleNavigation('avis')}
                     className="text-foreground hover:text-primary transition-colors font-medium"
                   >
                     Avis
                   </button>
                   <button 
-                    onClick={() => scrollToSection('contact')}
+                    onClick={() => handleNavigation('contact')}
                     className="text-foreground hover:text-primary transition-colors font-medium"
                   >
                     Contact
@@ -77,7 +100,7 @@ const Header = () => {
               variant="hero" 
               size="sm"
               className="whitespace-nowrap text-xs px-2"
-              onClick={() => scrollToSection('contact')}
+              onClick={() => handleNavigation('contact')}
             >
               Devis Gratuit
             </Button>
@@ -101,25 +124,25 @@ const Header = () => {
           <div className="lg:hidden mt-4 p-4 bg-card rounded-lg shadow-lg border border-border/50">
             <div className="space-y-4">
               <button 
-                onClick={() => scrollToSection('accueil')}
+                onClick={() => handleNavigation('accueil')}
                 className="block w-full text-left text-foreground hover:text-primary transition-colors font-medium py-2"
               >
                 Accueil
               </button>
                      <button 
-                       onClick={() => scrollToSection('services')}
+                       onClick={() => handleNavigation('services')}
                        className="block w-full text-left text-foreground hover:text-primary transition-colors font-medium py-2"
                      >
                        Services
                      </button>
                      <button 
-                       onClick={() => scrollToSection('avis')}
+                       onClick={() => handleNavigation('avis')}
                        className="block w-full text-left text-foreground hover:text-primary transition-colors font-medium py-2"
                      >
                        Avis
                      </button>
                      <button 
-                       onClick={() => scrollToSection('contact')}
+                       onClick={() => handleNavigation('contact')}
                        className="block w-full text-left text-foreground hover:text-primary transition-colors font-medium py-2"
                      >
                        Contact
@@ -140,7 +163,7 @@ const Header = () => {
                   variant="hero" 
                   size="sm" 
                   className="w-full"
-                  onClick={() => scrollToSection('contact')}
+                  onClick={() => handleNavigation('contact')}
                 >
                   Devis Gratuit
                 </Button>
