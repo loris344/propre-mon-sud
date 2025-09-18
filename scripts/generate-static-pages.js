@@ -5,6 +5,24 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
+// Fonction pour détecter automatiquement les assets
+function getAssets() {
+  const assetsDir = path.join(__dirname, '../dist/assets');
+  const files = fs.readdirSync(assetsDir);
+  
+  const cssFile = files.find(file => file.startsWith('index-') && file.endsWith('.css'));
+  const jsFile = files.find(file => file.startsWith('index-') && file.endsWith('.js'));
+  const vendorFile = files.find(file => file.startsWith('vendor-') && file.endsWith('.js'));
+  const uiFile = files.find(file => file.startsWith('ui-') && file.endsWith('.js'));
+  
+  return {
+    css: cssFile ? `/assets/${cssFile}` : '/assets/index-CuWdLtSX.css',
+    js: jsFile ? `/assets/${jsFile}` : '/assets/index-CLrQbLfy.js',
+    vendor: vendorFile ? `/assets/${vendorFile}` : '/assets/vendor-C6lW22JT.js',
+    ui: uiFile ? `/assets/${uiFile}` : '/assets/ui-B9ycnt8Y.js'
+  };
+}
+
 // Configuration des pages statiques à générer
 const staticPages = [
   {
@@ -60,7 +78,9 @@ const staticPages = [
 ];
 
 // Template HTML de base
-const htmlTemplate = (page) => `<!doctype html>
+const htmlTemplate = (page) => {
+  const assets = getAssets();
+  return `<!doctype html>
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
@@ -217,10 +237,10 @@ const htmlTemplate = (page) => `<!doctype html>
     </script>
     
     <!-- CSS identique à l'application React -->
-    <link rel="stylesheet" crossorigin href="/assets/index-CuWdLtSX.css" />
-    <script type="module" crossorigin src="/assets/index-CLrQbLfy.js"></script>
-    <link rel="modulepreload" crossorigin href="/assets/vendor-C6lW22JT.js">
-    <link rel="modulepreload" crossorigin href="/assets/ui-B9ycnt8Y.js">
+    <link rel="stylesheet" crossorigin href="${assets.css}" />
+    <script type="module" crossorigin src="${assets.js}"></script>
+    <link rel="modulepreload" crossorigin href="${assets.vendor}">
+    <link rel="modulepreload" crossorigin href="${assets.ui}">
     <style>
       /* Styles de base pour la cohérence */
       body { 
@@ -241,6 +261,7 @@ const htmlTemplate = (page) => `<!doctype html>
     </script>
   </body>
 </html>`;
+};
 
 // Fonction pour créer les dossiers nécessaires
 function ensureDirectoryExists(dirPath) {
