@@ -22,11 +22,11 @@ jobs:
         
     - name: Install dependencies
       run: |
-        npm ci --include=optional
+        npm install --include=optional
         # Fallback si l'installation échoue
         if [ $? -ne 0 ]; then
           echo "Installation failed, trying with legacy peer deps..."
-          npm ci --include=optional --legacy-peer-deps
+          npm install --include=optional --legacy-peer-deps
         fi
         
     - name: Build
