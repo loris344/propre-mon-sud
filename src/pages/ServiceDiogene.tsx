@@ -22,7 +22,7 @@ const ServiceDiogene = () => {
     <>
       <SEOHead {...seoConfig} />
       <main role="main">
-        <div className="min-h-screen bg-gradient-to-b from-background to-secondary/20">
+        <div className="min-h-screen bg-gradient-to-b from-background to-secondary/20 pt-20 sm:pt-24">
       
       {/* Hero Section */}
       <section className="relative py-16 sm:py-20 bg-gradient-to-br from-background via-secondary/30 to-background">
