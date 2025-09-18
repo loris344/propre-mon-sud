@@ -244,6 +244,12 @@ const htmlTemplate = (page) => {
         }
       }(window.location))
     </script>
+    
+    <!-- Script d'initialisation React -->
+    <script>
+      // L'application React va se charger automatiquement via les modules ES6
+      console.log('Page statique chargée pour ${page.route}');
+    </script>
   </body>
 </html>`;
 };
