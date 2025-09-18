@@ -4,6 +4,7 @@ import SEOHead from "../components/SEOHead";
 import Contact from "../components/Contact";
 import CustomerReviews from "../components/CustomerReviews";
 import { useSEO } from "../hooks/useSEO";
+import { useLocation } from "react-router-dom";
 import { 
   Trash2, 
   Recycle, 
@@ -17,6 +18,30 @@ import {
 
 const ServiceDebarras = () => {
   const seoConfig = useSEO();
+  const location = useLocation();
+
+  // Extraire le nom de la ville depuis l'URL
+  const getCityName = () => {
+    if (location.pathname.includes('montpellier')) return 'Montpellier';
+    return 'Montpellier';
+  };
+
+  // Images par ville (pour l'instant seulement Montpellier)
+  const getCityImages = () => {
+    return {
+      hero: 'https://images.unsplash.com/photo-1613283850334-9219c5fb7143?w=1200&h=630&fit=crop&crop=center',
+      gallery: [
+        'https://images.unsplash.com/photo-1613283850334-9219c5fb7143?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bW9udHBlbGxpZXJ8ZW58MHx8MHx8fDA%3D',
+        'https://images.unsplash.com/photo-1608728212004-04441ea6e3cf?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bW9udHBlbGxpZXJ8ZW58MHx8MHx8fDA%3D',
+        'https://images.unsplash.com/photo-1690132007585-1ef4b16f49d3?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bW9udHBlbGxpZXJ8ZW58MHx8MHx8fDA%3D',
+        'https://images.unsplash.com/photo-1666886677737-2cd1f108e080?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bW9udHBlbGxpZXJ8ZW58MHx8MHx8fDA%3D'
+      ]
+    };
+  };
+
+  const cityName = getCityName();
+  const cityImages = getCityImages();
+
   return (
     <>
       <SEOHead {...seoConfig} />
@@ -24,17 +49,22 @@ const ServiceDebarras = () => {
         <div className="min-h-screen bg-gradient-to-b from-background to-secondary/20 pt-20 sm:pt-24">
       
       {/* Hero Section */}
-      <section className="relative py-16 sm:py-20 bg-gradient-to-br from-background via-secondary/30 to-background">
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-accent/5"></div>
+      <section className="relative py-16 sm:py-20 bg-gradient-to-br from-background via-secondary/30 to-background overflow-hidden">
+        {/* Image de fond de la ville */}
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
+          style={{ backgroundImage: `url(${cityImages.hero})` }}
+        ></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-accent/10"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center space-y-6 sm:space-y-8">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
               Débarras Gros Volumes
-              <span className="block text-primary">Montpellier</span>
+              <span className="block text-primary">{cityName}</span>
             </h1>
             <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
               Évacuation et tri de tous types d'objets, meubles et déchets en respectant l'environnement. 
-              Service professionnel pour particuliers et professionnels dans tout le Sud de la France.
+              Service professionnel pour particuliers et professionnels à {cityName} et sa région.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
               <Button variant="hero" size="lg" className="text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6">
@@ -279,6 +309,40 @@ const ServiceDebarras = () => {
             <Phone className="w-5 h-5" />
             07 67 13 54 58
           </Button>
+        </div>
+      </section>
+
+      {/* Galerie d'images de la ville */}
+      <section className="py-16 sm:py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16 space-y-4">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">
+                Nos Interventions à {cityName}
+              </h2>
+              <p className="text-base sm:text-lg text-muted-foreground">
+                Découvrez {cityName} et nos interventions de débarras dans cette belle ville du Sud de la France.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+              {cityImages.gallery.slice(0, 3).map((image, index) => (
+                <div key={index} className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+                  <img
+                    src={image}
+                    alt={`${cityName} - Vue ${index + 1}`}
+                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div className="absolute bottom-4 left-4 text-white">
+                      <p className="text-sm font-medium">{cityName}</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 

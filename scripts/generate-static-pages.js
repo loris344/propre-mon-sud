@@ -26,24 +26,54 @@ function getAssets() {
 // Configuration des images par ville
 const cityImages = {
   montpellier: {
-    hero: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=1200&h=630&fit=crop&crop=center",
-    ogImage: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=1200&h=630&fit=crop&crop=center"
+    hero: "https://images.unsplash.com/photo-1613283850334-9219c5fb7143?w=1200&h=630&fit=crop&crop=center",
+    ogImage: "https://images.unsplash.com/photo-1613283850334-9219c5fb7143?w=1200&h=630&fit=crop&crop=center",
+    gallery: [
+      "https://images.unsplash.com/photo-1613283850334-9219c5fb7143?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bW9udHBlbGxpZXJ8ZW58MHx8MHx8fDA%3D",
+      "https://images.unsplash.com/photo-1608728212004-04441ea6e3cf?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bW9udHBlbGxpZXJ8ZW58MHx8MHx8fDA%3D",
+      "https://images.unsplash.com/photo-1690132007585-1ef4b16f49d3?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bW9udHBlbGxpZXJ8ZW58MHx8MHx8fDA%3D",
+      "https://images.unsplash.com/photo-1666886677737-2cd1f108e080?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bW9udHBlbGxpZXJ8ZW58MHx8MHx8fDA%3D"
+    ]
   },
   sete: {
-    hero: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=1200&h=630&fit=crop&crop=center",
-    ogImage: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=1200&h=630&fit=crop&crop=center"
+    hero: "https://images.unsplash.com/photo-1646676125144-cad4fcea488c?w=1200&h=630&fit=crop&crop=center",
+    ogImage: "https://images.unsplash.com/photo-1646676125144-cad4fcea488c?w=1200&h=630&fit=crop&crop=center",
+    gallery: [
+      "https://images.unsplash.com/photo-1646676125144-cad4fcea488c?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8UyVDMyVBOHRlfGVufDB8fDB8fHww",
+      "https://images.unsplash.com/photo-1683791886181-68f3a1d1a7c4?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fFMlQzMlQTh0ZXxlbnwwfHwwfHx8MA%3D%3D",
+      "https://images.unsplash.com/photo-1683791885269-6c1a78ae97fc?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8UyVDMyVBOHRlfGVufDB8fDB8fHww",
+      "https://images.unsplash.com/photo-1541493304174-39545bc85815?q=80&w=1035&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ]
   },
   beziers: {
-    hero: "https://images.unsplash.com/photo-1519904981063-b0cf448d479e?w=1200&h=630&fit=crop&crop=center",
-    ogImage: "https://images.unsplash.com/photo-1519904981063-b0cf448d479e?w=1200&h=630&fit=crop&crop=center"
+    hero: "https://images.unsplash.com/photo-1723911490474-f9d1ce7a057a?w=1200&h=630&fit=crop&crop=center",
+    ogImage: "https://images.unsplash.com/photo-1723911490474-f9d1ce7a057a?w=1200&h=630&fit=crop&crop=center",
+    gallery: [
+      "https://images.unsplash.com/photo-1723911490474-f9d1ce7a057a?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YiVDMyVBOXppZXJzfGVufDB8fDB8fHww",
+      "https://images.unsplash.com/photo-1596812069451-ccca1e62b66d?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YiVDMyVBOXppZXJzfGVufDB8fDB8fHww",
+      "https://images.unsplash.com/photo-1723911489123-64c6490e7818?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGIlQzMlQTl6aWVyc3xlbnwwfHwwfHx8MA%3D%3D",
+      "https://images.unsplash.com/photo-1709483068799-a5b790cc5dc8?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGIlQzMlQTl6aWVyc3xlbnwwfHwwfHx8MA%3D%3D"
+    ]
   },
   nimes: {
-    hero: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&h=630&fit=crop&crop=center",
-    ogImage: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&h=630&fit=crop&crop=center"
+    hero: "https://images.unsplash.com/photo-1702174653587-c5e10d5a2aa3?w=1200&h=630&fit=crop&crop=center",
+    ogImage: "https://images.unsplash.com/photo-1702174653587-c5e10d5a2aa3?w=1200&h=630&fit=crop&crop=center",
+    gallery: [
+      "https://images.unsplash.com/photo-1702174653587-c5e10d5a2aa3?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8TmltZXN8ZW58MHx8MHx8fDA%3D",
+      "https://images.unsplash.com/photo-1729086871923-36fee2e2f9f5?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8TmltZXN8ZW58MHx8MHx8fDA%3D",
+      "https://images.unsplash.com/photo-1706233674922-febe573ad52f?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8TmltZXN8ZW58MHx8MHx8fDA%3D",
+      "https://images.unsplash.com/photo-1627376086893-4908c2692389?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8TmltZXN8ZW58MHx8MHx8fDA%3D"
+    ]
   },
   perpignan: {
-    hero: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&h=630&fit=crop&crop=center",
-    ogImage: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&h=630&fit=crop&crop=center"
+    hero: "https://images.unsplash.com/photo-1722605266573-e981c2ffed30?w=1200&h=630&fit=crop&crop=center",
+    ogImage: "https://images.unsplash.com/photo-1722605266573-e981c2ffed30?w=1200&h=630&fit=crop&crop=center",
+    gallery: [
+      "https://images.unsplash.com/photo-1722605266573-e981c2ffed30?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVycGlnbmFufGVufDB8fDB8fHww",
+      "https://images.unsplash.com/photo-1722605267546-22242cd6ed4a?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cGVycGlnbmFufGVufDB8fDB8fHww",
+      "https://images.unsplash.com/photo-1722605268092-462b90839596?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cGVycGlnbmFufGVufDB8fDB8fHww",
+      "https://images.unsplash.com/photo-1722605267383-812e07e593a5?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHBlcnBpZ25hbnxlbnwwfHwwfHx8MA%3D%3D"
+    ]
   }
 };
 
