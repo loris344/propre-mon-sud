@@ -17,7 +17,7 @@ const Services = () => {
       icon: Home,
       title: "Nettoyage Syndrome de Diogène",
       description: "Intervention spécialisée dans les situations d'accumulation compulsive avec respect et discrétion totale.",
-      features: ["Évaluation gratuite", "Plan d'intervention personnalisé", "Respect de la dignité"]
+      features: ["Évaluation gratuite par téléphone", "Plan d'intervention personnalisé", "Respect de la dignité"]
     },
     {
       icon: Trash2,

@@ -71,7 +71,7 @@ const ServiceDiogene = () => {
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground text-sm sm:text-base">
-                    Visite gratuite et confidentielle pour évaluer la situation 
+                    Évaluation gratuite et confidentielle par téléphone ou email pour analyser la situation 
                     et établir un plan d'intervention personnalisé.
                   </p>
                 </CardContent>
@@ -136,7 +136,7 @@ const ServiceDiogene = () => {
                   <ul className="space-y-2 text-left">
                     <li className="flex items-center gap-2 text-sm sm:text-base">
                       <CheckCircle className="w-3 h-3 sm:w-4 sm:h-4 text-accent flex-shrink-0" />
-                      <span className="text-muted-foreground">Évaluation psychologique</span>
+                      <span className="text-muted-foreground">Évaluation psychologique par téléphone</span>
                     </li>
                     <li className="flex items-center gap-2 text-sm sm:text-base">
                       <CheckCircle className="w-3 h-3 sm:w-4 sm:h-4 text-accent flex-shrink-0" />

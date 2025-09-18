@@ -266,7 +266,7 @@ const ServiceDesinfection = () => {
                 <div>
                   <h3 className="text-xl font-semibold text-foreground mb-2">Diagnostic Initial</h3>
                   <p className="text-muted-foreground">
-                    Évaluation de la situation, identification des risques et établissement 
+                    Évaluation de la situation par téléphone ou email, identification des risques et établissement 
                     du protocole de traitement adapté à votre environnement.
                   </p>
                 </div>

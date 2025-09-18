@@ -172,7 +172,7 @@ const ServiceDebarras = () => {
                 <div>
                   <h3 className="text-xl font-semibold text-foreground mb-2">Évaluation Gratuite</h3>
                   <p className="text-muted-foreground">
-                    Visite sur site pour évaluer le volume et le type d'objets à évacuer. 
+                    Évaluation par téléphone ou email pour estimer le volume et le type d'objets à évacuer. 
                     Devis détaillé et personnalisé selon vos besoins.
                   </p>
                 </div>
