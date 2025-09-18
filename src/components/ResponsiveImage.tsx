@@ -22,10 +22,20 @@ export const ResponsiveImage = ({
   height
 }: ResponsiveImageProps) => {
   const isMobile = useMediaQuery('(max-width: 768px)');
+  const isSmallMobile = useMediaQuery('(max-width: 480px)');
+  
+  // Utilise la version la plus optimisée selon la taille d'écran
+  const getImageSrc = () => {
+    if (isSmallMobile && mobileSrc.includes('mobile')) {
+      // Remplace 'mobile' par 'mobile-small' pour les très petits écrans
+      return mobileSrc.replace('mobile', 'mobile-small');
+    }
+    return isMobile ? mobileSrc : src;
+  };
   
   return (
     <img
-      src={isMobile ? mobileSrc : src}
+      src={getImageSrc()}
       alt={alt}
       className={className}
       loading={loading}
