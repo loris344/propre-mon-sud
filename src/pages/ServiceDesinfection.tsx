@@ -65,22 +65,22 @@ const ServiceDesinfection = () => {
                   <CardTitle className="text-lg sm:text-xl font-semibold">Désinfection Virale</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <ul className="space-y-2 text-left text-muted-foreground">
-                    <li className="flex items-center gap-2">
-                      <CheckCircle className="w-4 h-4 text-accent" />
-                      <span>COVID-19 et variants</span>
+                  <ul className="space-y-2 text-left">
+                    <li className="flex items-center gap-2 text-sm sm:text-base">
+                      <CheckCircle className="w-3 h-3 sm:w-4 sm:h-4 text-accent flex-shrink-0" />
+                      <span className="text-muted-foreground">COVID-19 et variants</span>
                     </li>
-                    <li className="flex items-center gap-2">
-                      <CheckCircle className="w-4 h-4 text-accent" />
-                      <span>Grippe et virus saisonniers</span>
+                    <li className="flex items-center gap-2 text-sm sm:text-base">
+                      <CheckCircle className="w-3 h-3 sm:w-4 sm:h-4 text-accent flex-shrink-0" />
+                      <span className="text-muted-foreground">Grippe et virus saisonniers</span>
                     </li>
-                    <li className="flex items-center gap-2">
-                      <CheckCircle className="w-4 h-4 text-accent" />
-                      <span>Norovirus et gastro-entérites</span>
+                    <li className="flex items-center gap-2 text-sm sm:text-base">
+                      <CheckCircle className="w-3 h-3 sm:w-4 sm:h-4 text-accent flex-shrink-0" />
+                      <span className="text-muted-foreground">Norovirus et gastro-entérites</span>
                     </li>
-                    <li className="flex items-center gap-2">
-                      <CheckCircle className="w-4 h-4 text-accent" />
-                      <span>Prévention épidémies</span>
+                    <li className="flex items-center gap-2 text-sm sm:text-base">
+                      <CheckCircle className="w-3 h-3 sm:w-4 sm:h-4 text-accent flex-shrink-0" />
+                      <span className="text-muted-foreground">Prévention épidémies</span>
                     </li>
                   </ul>
                 </CardContent>
@@ -94,22 +94,22 @@ const ServiceDesinfection = () => {
                   <CardTitle className="text-lg sm:text-xl font-semibold">Désinfection Bactérienne</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <ul className="space-y-2 text-left text-muted-foreground">
-                    <li className="flex items-center gap-2">
-                      <CheckCircle className="w-4 h-4 text-accent" />
-                      <span>Staphylocoques</span>
+                  <ul className="space-y-2 text-left">
+                    <li className="flex items-center gap-2 text-sm sm:text-base">
+                      <CheckCircle className="w-3 h-3 sm:w-4 sm:h-4 text-accent flex-shrink-0" />
+                      <span className="text-muted-foreground">Staphylocoques</span>
                     </li>
-                    <li className="flex items-center gap-2">
-                      <CheckCircle className="w-4 h-4 text-accent" />
-                      <span>E.coli et salmonelles</span>
+                    <li className="flex items-center gap-2 text-sm sm:text-base">
+                      <CheckCircle className="w-3 h-3 sm:w-4 sm:h-4 text-accent flex-shrink-0" />
+                      <span className="text-muted-foreground">E.coli et salmonelles</span>
                     </li>
-                    <li className="flex items-center gap-2">
-                      <CheckCircle className="w-4 h-4 text-accent" />
-                      <span>Legionella</span>
+                    <li className="flex items-center gap-2 text-sm sm:text-base">
+                      <CheckCircle className="w-3 h-3 sm:w-4 sm:h-4 text-accent flex-shrink-0" />
+                      <span className="text-muted-foreground">Legionella</span>
                     </li>
-                    <li className="flex items-center gap-2">
-                      <CheckCircle className="w-4 h-4 text-accent" />
-                      <span>Bactéries résistantes</span>
+                    <li className="flex items-center gap-2 text-sm sm:text-base">
+                      <CheckCircle className="w-3 h-3 sm:w-4 sm:h-4 text-accent flex-shrink-0" />
+                      <span className="text-muted-foreground">Bactéries résistantes</span>
                     </li>
                   </ul>
                 </CardContent>
@@ -123,22 +123,22 @@ const ServiceDesinfection = () => {
                   <CardTitle className="text-lg sm:text-xl font-semibold">Insalubrité & Nuisances</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <ul className="space-y-2 text-left text-muted-foreground">
-                    <li className="flex items-center gap-2">
-                      <CheckCircle className="w-4 h-4 text-accent" />
-                      <span>Punaises de lit</span>
+                  <ul className="space-y-2 text-left">
+                    <li className="flex items-center gap-2 text-sm sm:text-base">
+                      <CheckCircle className="w-3 h-3 sm:w-4 sm:h-4 text-accent flex-shrink-0" />
+                      <span className="text-muted-foreground">Punaises de lit</span>
                     </li>
-                    <li className="flex items-center gap-2">
-                      <CheckCircle className="w-4 h-4 text-accent" />
-                      <span>Cafards et blattes</span>
+                    <li className="flex items-center gap-2 text-sm sm:text-base">
+                      <CheckCircle className="w-3 h-3 sm:w-4 sm:h-4 text-accent flex-shrink-0" />
+                      <span className="text-muted-foreground">Cafards et blattes</span>
                     </li>
-                    <li className="flex items-center gap-2">
-                      <CheckCircle className="w-4 h-4 text-accent" />
-                      <span>Rats et souris</span>
+                    <li className="flex items-center gap-2 text-sm sm:text-base">
+                      <CheckCircle className="w-3 h-3 sm:w-4 sm:h-4 text-accent flex-shrink-0" />
+                      <span className="text-muted-foreground">Rats et souris</span>
                     </li>
-                    <li className="flex items-center gap-2">
-                      <CheckCircle className="w-4 h-4 text-accent" />
-                      <span>Moisissures et champignons</span>
+                    <li className="flex items-center gap-2 text-sm sm:text-base">
+                      <CheckCircle className="w-3 h-3 sm:w-4 sm:h-4 text-accent flex-shrink-0" />
+                      <span className="text-muted-foreground">Moisissures et champignons</span>
                     </li>
                   </ul>
                 </CardContent>
@@ -149,12 +149,17 @@ const ServiceDesinfection = () => {
       </section>
 
       {/* Techniques utilisées */}
-      <section className="py-16 bg-card">
+      <section className="py-16 sm:py-20 bg-card">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-center mb-12 text-foreground">
-              Techniques et Produits Professionnels
-            </h2>
+            <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16 space-y-4">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">
+                Techniques et Produits Professionnels
+              </h2>
+              <p className="text-base sm:text-lg text-muted-foreground">
+                Des techniques avancées et des produits certifiés pour une désinfection efficace.
+              </p>
+            </div>
             
             <div className="grid sm:grid-cols-2 gap-8">
               <div className="space-y-6">
@@ -238,12 +243,17 @@ const ServiceDesinfection = () => {
       </section>
 
       {/* Processus d'intervention */}
-      <section className="py-16">
+      <section className="py-16 sm:py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-center mb-12 text-foreground">
-              Déroulement de l'Intervention
-            </h2>
+            <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16 space-y-4">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">
+                Déroulement de l'Intervention
+              </h2>
+              <p className="text-base sm:text-lg text-muted-foreground">
+                Un processus structuré et professionnel pour chaque intervention de désinfection.
+              </p>
+            </div>
             
             <div className="space-y-8">
               <div className="flex items-start gap-6">
@@ -303,12 +313,17 @@ const ServiceDesinfection = () => {
       </section>
 
       {/* Urgences */}
-      <section className="py-16 bg-gradient-to-br from-destructive/5 to-destructive/10">
+      <section className="py-16 sm:py-20 bg-gradient-to-br from-destructive/5 to-destructive/10">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-8 text-foreground">
-              Intervention d'Urgence 24h/24
-            </h2>
+            <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16 space-y-4">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">
+                Intervention d'Urgence 24h/24
+              </h2>
+              <p className="text-base sm:text-lg text-muted-foreground">
+                En cas d'urgence, nous intervenons rapidement dans tout le Sud de la France.
+              </p>
+            </div>
             
             <Card className="bg-gradient-to-br from-destructive to-destructive/90 text-destructive-foreground border-0">
               <CardContent className="p-8">
