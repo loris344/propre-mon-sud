@@ -24,6 +24,10 @@ const App = () => (
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/nettoyage-syndrome-diogene-montpellier" element={<ServiceDiogene />} />
+            <Route path="/nettoyage-syndrome-diogene-sete" element={<ServiceDiogene />} />
+            <Route path="/nettoyage-syndrome-diogene-beziers" element={<ServiceDiogene />} />
+            <Route path="/nettoyage-syndrome-diogene-nimes" element={<ServiceDiogene />} />
+            <Route path="/nettoyage-syndrome-diogene-perpignan" element={<ServiceDiogene />} />
             <Route path="/debarras-gros-volumes-montpellier" element={<ServiceDebarras />} />
             <Route path="/desinfection-insalubrite-montpellier" element={<ServiceDesinfection />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}

@@ -4,6 +4,7 @@ import SEOHead from "../components/SEOHead";
 import Contact from "../components/Contact";
 import CustomerReviews from "../components/CustomerReviews";
 import { useSEO } from "../hooks/useSEO";
+import { useLocation } from "react-router-dom";
 import { 
   Heart, 
   Shield, 
@@ -18,6 +19,20 @@ import {
 
 const ServiceDiogene = () => {
   const seoConfig = useSEO();
+  const location = useLocation();
+  
+  // Extraire le nom de la ville depuis l'URL
+  const getCityName = () => {
+    if (location.pathname.includes('montpellier')) return 'Montpellier';
+    if (location.pathname.includes('sete')) return 'Sète';
+    if (location.pathname.includes('beziers')) return 'Béziers';
+    if (location.pathname.includes('nimes')) return 'Nîmes';
+    if (location.pathname.includes('perpignan')) return 'Perpignan';
+    return 'Montpellier';
+  };
+  
+  const cityName = getCityName();
+  
   return (
     <>
       <SEOHead {...seoConfig} />
@@ -31,11 +46,11 @@ const ServiceDiogene = () => {
           <div className="max-w-4xl mx-auto text-center space-y-6 sm:space-y-8">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
               Nettoyage Syndrome de Diogène
-              <span className="block text-primary">Montpellier</span>
+              <span className="block text-primary">{cityName}</span>
             </h1>
             <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
               Intervention spécialisée et respectueuse pour les situations d'accumulation compulsive. 
-              Notre équipe formée intervient avec discrétion et bienveillance à Montpellier et sa région.
+              Notre équipe formée intervient avec discrétion et bienveillance à {cityName} et sa région.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
               <Button variant="hero" size="lg" className="text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6">
