@@ -111,12 +111,60 @@ All colors MUST be HSL.
     @apply border-border;
   }
 
+  html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+
   body {
     @apply bg-background text-foreground;
+    overflow-x: hidden;
+    width: 100%;
+    font-display: swap;
+  }
+
+  /* Optimisations de performance */
+  img {
+    content-visibility: auto;
+    contain-intrinsic-size: 300px 200px;
+  }
+
+  /* Préchargement des polices critiques */
+  @font-face {
+    font-family: 'Inter';
+    font-display: swap;
+    font-weight: 400 700;
   }
 }
 
 @layer utilities {
+  /* Animations stylées pour les villes */
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(15px) scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+  
+  @keyframes shimmer {
+    0% {
+      background-position: -200% 0;
+    }
+    100% {
+      background-position: 200% 0;
+    }
+  }
+  
+  .animate-fade-in {
+    animation: fade-in 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    background-size: 200% 100%;
+    animation-fill-mode: both;
+  }
+  
   /* Améliorations pour la responsivité mobile */
   .container {
     @apply px-4 sm:px-6 lg:px-8;
@@ -140,6 +188,48 @@ All colors MUST be HSL.
     textarea,
     select {
       font-size: 16px !important;
+    }
+  }
+  
+  /* Prévention du débordement horizontal */
+  .container {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  
+  /* Améliorations spécifiques pour mobile */
+  @media screen and (max-width: 640px) {
+    /* Prévention du débordement */
+    * {
+      max-width: 100%;
+      box-sizing: border-box;
+    }
+    
+    /* Amélioration de la lisibilité sur mobile */
+    .text-xs {
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+    }
+    
+    .text-sm {
+      font-size: 1rem;
+      line-height: 1.5rem;
+    }
+    
+    .text-base {
+      font-size: 1.125rem;
+      line-height: 1.75rem;
+    }
+    
+    /* Boutons plus faciles à toucher sur mobile */
+    button {
+      min-height: 44px;
+    }
+    
+    /* Inputs plus faciles à utiliser sur mobile */
+    input, textarea {
+      min-height: 44px;
+      font-size: 16px;
     }
   }
 }

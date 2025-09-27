@@ -11,7 +11,7 @@ export const SITE_CONFIG = {
   availability: "7j/7 de 8h00 à 20h00",
   
   // URLs
-  baseUrl: "https://www.sosnettoyagediogene.fr",
+  baseUrl: "https://sosnettoyagediogene.fr",
   social: {
     facebook: "https://www.facebook.com/propremonsud",
     linkedin: "https://www.linkedin.com/company/propre-mon-sud"

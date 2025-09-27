@@ -1,5 +1,5 @@
 import { Helmet } from "react-helmet-async";
-import { SEOConfig } from "@/lib/seo-config";
+import { SEOConfig } from "@/lib/seo-simple";
 
 interface SEOHeadProps extends SEOConfig {
   // Props optionnelles pour override

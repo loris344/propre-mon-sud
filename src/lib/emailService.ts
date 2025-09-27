@@ -1,3 +1,5 @@
+import { sendContactNotification } from './telegramService';
+
 /**
  * Interface pour les données du formulaire de contact
  */
@@ -53,6 +55,13 @@ Envoyé le ${new Date().toLocaleString('fr-FR')} depuis ${window.location.href}
 
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
+    }
+
+    // Envoi de la notification Telegram
+    try {
+      await sendContactNotification(formData);
+    } catch (telegramError) {
+      console.warn('Email envoyé mais notification Telegram échouée:', telegramError);
     }
 
     console.log('Email envoyé avec succès via Formspree');

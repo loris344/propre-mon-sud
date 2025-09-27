@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, memo } from "react";
 
 const AvailabilityIndicator = () => {
   const [isAvailable, setIsAvailable] = useState(true);
@@ -51,4 +51,4 @@ const AvailabilityIndicator = () => {
   );
 };
 
-export default AvailabilityIndicator;
+export default memo(AvailabilityIndicator);

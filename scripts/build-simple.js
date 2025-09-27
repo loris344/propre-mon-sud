@@ -13,24 +13,40 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // Configuration
-const SITE_URL = 'https://www.sosnettoyagediogene.fr';
+const SITE_URL = 'https://sosnettoyagediogene.fr';
 const BUILD_DIR = path.join(__dirname, '../dist');
 
 // Génération du sitemap simplifié
 function generateSitemap() {
   const pages = [
-    { url: '/', priority: '1.0' },
-    { url: '/nettoyage-syndrome-diogene-montpellier', priority: '0.9' },
-    { url: '/nettoyage-syndrome-diogene-sete', priority: '0.8' },
-    { url: '/nettoyage-syndrome-diogene-beziers', priority: '0.8' },
-    { url: '/nettoyage-syndrome-diogene-nimes', priority: '0.8' },
-    { url: '/nettoyage-syndrome-diogene-perpignan', priority: '0.8' },
-    { url: '/debarras-gros-volumes-montpellier', priority: '0.9' },
-    { url: '/desinfection-insalubrite-montpellier', priority: '0.9' },
-    { url: '/nettoyage-apres-deces-montpellier', priority: '0.8' },
-    { url: '/nettoyage-apres-deces-nimes', priority: '0.7' },
-    { url: '/nettoyage-insalubre-montpellier', priority: '0.8' },
-    { url: '/nettoyage-insalubre-nimes', priority: '0.7' }
+    // Pages principales
+    { url: '/', priority: '1.0', changefreq: 'weekly' },
+    
+    // Nouvelles pages complètes
+    { url: '/debarras-gros-volumes', priority: '0.9', changefreq: 'monthly' },
+    { url: '/nettoyage-apres-deces', priority: '0.9', changefreq: 'monthly' },
+    { url: '/desinfection-insalubrite', priority: '0.9', changefreq: 'monthly' },
+    
+    // Blog et articles
+    { url: '/blog', priority: '0.9', changefreq: 'weekly' },
+    { url: '/blog/syndrome-diogene-identifier-gerer', priority: '0.8', changefreq: 'monthly' },
+    { url: '/blog/debarras-apres-deces-accompagnement', priority: '0.8', changefreq: 'monthly' },
+    { url: '/blog/desinfection-assainissement-protocoles', priority: '0.8', changefreq: 'monthly' },
+    { url: '/blog/prevention-insalubrite-conseils', priority: '0.8', changefreq: 'monthly' },
+    
+    // Services par ville
+    { url: '/nettoyage-syndrome-diogene-montpellier', priority: '0.9', changefreq: 'monthly' },
+    { url: '/nettoyage-syndrome-diogene-sete', priority: '0.8', changefreq: 'monthly' },
+    { url: '/nettoyage-syndrome-diogene-beziers', priority: '0.8', changefreq: 'monthly' },
+    { url: '/nettoyage-syndrome-diogene-nimes', priority: '0.8', changefreq: 'monthly' },
+    { url: '/nettoyage-syndrome-diogene-perpignan', priority: '0.8', changefreq: 'monthly' },
+    { url: '/debarras-gros-volumes-montpellier', priority: '0.9', changefreq: 'monthly' },
+    { url: '/desinfection-insalubrite-montpellier', priority: '0.9', changefreq: 'monthly' },
+    { url: '/nettoyage-apres-deces-montpellier', priority: '0.8', changefreq: 'monthly' },
+    { url: '/nettoyage-apres-deces-nimes', priority: '0.7', changefreq: 'monthly' },
+    { url: '/nettoyage-insalubre-montpellier', priority: '0.8', changefreq: 'monthly' },
+    { url: '/nettoyage-insalubre-nimes', priority: '0.7', changefreq: 'monthly' },
+    { url: '/partenariat-maisons-retraite', priority: '0.6', changefreq: 'monthly' }
   ];
 
   let sitemap = `<?xml version="1.0" encoding="UTF-8"?>
@@ -40,8 +56,8 @@ function generateSitemap() {
   pages.forEach(page => {
     sitemap += `  <url>
     <loc>${SITE_URL}${page.url}</loc>
-    <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2025-01-20</lastmod>
+    <changefreq>${page.changefreq || 'monthly'}</changefreq>
     <priority>${page.priority}</priority>
   </url>
 `;
@@ -75,6 +91,10 @@ User-agent: Bingbot
 Allow: /
 Crawl-delay: 0
 
+User-agent: YandexBot
+Allow: /
+Crawl-delay: 0
+
 # Bloquer les bots indésirables
 User-agent: AhrefsBot
 Disallow: /
@@ -84,6 +104,18 @@ Disallow: /
 
 User-agent: DotBot
 Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MajesticSEO
+Disallow: /
+
+# Bloquer l'accès aux fichiers techniques
+Disallow: /assets/
+Disallow: /*.json$
+Disallow: /*.js$
+Disallow: /*.css$
 `;
 }
 

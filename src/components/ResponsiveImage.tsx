@@ -1,21 +1,23 @@
+import { memo } from "react";
+
 interface ResponsiveImageProps {
   src: string;
   mobileSrc: string;
   alt: string;
   className?: string;
   loading?: 'eager' | 'lazy';
-  fetchpriority?: 'high' | 'low' | 'auto';
+  fetchPriority?: 'high' | 'low' | 'auto';
   width?: number;
   height?: number;
 }
 
-export const ResponsiveImage = ({
+export const ResponsiveImage = memo(({
   src,
   mobileSrc,
   alt,
   className = '',
   loading = 'lazy',
-  fetchpriority = 'auto',
+  fetchPriority = 'auto',
   width,
   height
 }: ResponsiveImageProps) => {
@@ -32,9 +34,12 @@ export const ResponsiveImage = ({
       alt={alt}
       className={className}
       loading={loading}
-      fetchpriority={fetchpriority}
+      fetchpriority={fetchPriority}
       width={width}
       height={height}
+      decoding="async"
     />
   );
-};
+});
+
+ResponsiveImage.displayName = 'ResponsiveImage';

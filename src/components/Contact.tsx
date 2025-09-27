@@ -17,6 +17,13 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 
+// Déclaration TypeScript pour gtag
+declare global {
+  interface Window {
+    gtag: (command: string, targetId: string, config?: any) => void;
+  }
+}
+
 interface FormErrors {
   firstName?: string;
   phone?: string;
@@ -90,6 +97,13 @@ const Contact = () => {
         // Marquer comme soumis
         setIsSubmitted(true);
         
+        // Événement de conversion Google Ads
+        if (typeof window !== 'undefined' && window.gtag) {
+          window.gtag('event', 'conversion', {
+            'send_to': 'AW-17579670391/JzBOCJz696AbEPf20b5B'
+          });
+        }
+        
         toast({
           title: "Demande envoyée avec succès !",
           description: "Votre demande a été transmise à notre équipe. Nous vous contacterons rapidement au " + formData.phone + ".",
@@ -125,14 +139,14 @@ const Contact = () => {
 
   return (
     <section className="py-16 sm:py-20 bg-gradient-to-b from-secondary/20 to-background">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 sm:px-6">
         
         {/* Header */}
-        <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16 space-y-4">
-          <h2 id="contact-title" className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">
+        <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16 space-y-4 sm:space-y-6">
+          <h2 id="contact-title" className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground">
             Contactez-Nous en Toute Discrétion
           </h2>
-          <p className="text-base sm:text-lg text-muted-foreground">
+          <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed">
             Nous comprenons la sensibilité de votre situation. 
             Contactez-nous pour un échange confidentiel et un devis gratuit.
           </p>
@@ -141,9 +155,9 @@ const Contact = () => {
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 max-w-7xl mx-auto">
           
           {/* Contact Form */}
-          <Card className="shadow-xl border-border/50">
-            <CardHeader>
-              <CardTitle className="text-xl sm:text-2xl font-semibold text-foreground">
+          <Card className="shadow-xl border-border/50 p-4 sm:p-6">
+            <CardHeader className="pb-4 sm:pb-6">
+              <CardTitle className="text-2xl sm:text-3xl font-semibold text-foreground">
                 Demande de Devis Gratuit
               </CardTitle>
             </CardHeader>
@@ -160,81 +174,81 @@ const Contact = () => {
                   </p>
                 </div>
               ) : (
-                <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
-                  <div className="grid sm:grid-cols-2 gap-4">
-                    <div className="space-y-2">
-                      <label className="text-sm font-medium text-foreground">Prénom *</label>
+                <form onSubmit={handleSubmit} className="space-y-6 sm:space-y-8">
+                  <div className="grid sm:grid-cols-2 gap-4 sm:gap-6">
+                    <div className="space-y-3">
+                      <label className="text-base sm:text-lg font-medium text-foreground">Prénom *</label>
                       <Input 
                         placeholder="Votre prénom" 
                         value={formData.firstName}
                         onChange={(e) => handleInputChange('firstName', e.target.value)}
-                        className={`text-base ${errors.firstName ? "border-red-500" : ""}`}
+                        className={`text-base sm:text-lg py-3 sm:py-4 ${errors.firstName ? "border-red-500" : ""}`}
                       />
                       {errors.firstName && (
-                        <p className="text-sm text-red-500 flex items-center gap-1">
-                          <AlertCircle className="w-4 h-4" />
+                        <p className="text-sm sm:text-base text-red-500 flex items-center gap-2">
+                          <AlertCircle className="w-4 h-4 sm:w-5 sm:h-5" />
                           {errors.firstName}
                         </p>
                       )}
                     </div>
-                    <div className="space-y-2">
-                      <label className="text-sm font-medium text-foreground">Téléphone *</label>
+                    <div className="space-y-3">
+                      <label className="text-base sm:text-lg font-medium text-foreground">Téléphone *</label>
                       <Input 
                         placeholder="06 00 00 00 00" 
                         value={formData.phone}
                         onChange={(e) => handleInputChange('phone', e.target.value)}
-                        className={`text-base ${errors.phone ? "border-red-500" : ""}`}
+                        className={`text-base sm:text-lg py-3 sm:py-4 ${errors.phone ? "border-red-500" : ""}`}
                       />
                       {errors.phone && (
-                        <p className="text-sm text-red-500 flex items-center gap-1">
-                          <AlertCircle className="w-4 h-4" />
+                        <p className="text-sm sm:text-base text-red-500 flex items-center gap-2">
+                          <AlertCircle className="w-4 h-4 sm:w-5 sm:h-5" />
                           {errors.phone}
                         </p>
                       )}
                     </div>
                   </div>
                   
-                  <div className="space-y-2">
-                    <label className="text-sm font-medium text-foreground">Email</label>
+                  <div className="space-y-3">
+                    <label className="text-base sm:text-lg font-medium text-foreground">Email</label>
                     <Input 
                       type="email" 
                       placeholder="votre.email@exemple.fr" 
                       value={formData.email}
                       onChange={(e) => handleInputChange('email', e.target.value)}
-                      className={`text-base ${errors.email ? "border-red-500" : ""}`}
+                      className={`text-base sm:text-lg py-3 sm:py-4 ${errors.email ? "border-red-500" : ""}`}
                     />
                     {errors.email && (
-                      <p className="text-sm text-red-500 flex items-center gap-1">
-                        <AlertCircle className="w-4 h-4" />
+                      <p className="text-sm sm:text-base text-red-500 flex items-center gap-2">
+                        <AlertCircle className="w-4 h-4 sm:w-5 sm:h-5" />
                         {errors.email}
                       </p>
                     )}
                   </div>
                   
-                  <div className="space-y-2">
-                    <label className="text-sm font-medium text-foreground">Ville ou village d'intervention</label>
+                  <div className="space-y-3">
+                    <label className="text-base sm:text-lg font-medium text-foreground">Ville ou village d'intervention</label>
                     <Input 
                       placeholder="Montpellier, Sète, Béziers..." 
                       value={formData.city}
                       onChange={(e) => handleInputChange('city', e.target.value)}
-                      className="text-base"
+                      className="text-base sm:text-lg py-3 sm:py-4"
                     />
                   </div>
                   
-                  <div className="space-y-2">
-                    <label className="text-sm font-medium text-foreground">Description de la situation</label>
+                  <div className="space-y-3">
+                    <label className="text-base sm:text-lg font-medium text-foreground">Description de la situation</label>
                     <Textarea 
                       placeholder="Décrivez brièvement votre situation (type de logement, surfaces approximatives, urgence...)"
                       rows={4}
                       value={formData.description}
                       onChange={(e) => handleInputChange('description', e.target.value)}
-                      className="text-base"
+                      className="text-base sm:text-lg py-3 sm:py-4"
                     />
                   </div>
                   
-                  <div className="flex items-start gap-3 p-4 bg-accent/10 rounded-lg border border-accent/20">
-                    <Shield className="w-5 h-5 text-accent mt-0.5 flex-shrink-0" />
-                    <p className="text-sm text-muted-foreground">
+                  <div className="flex items-start gap-3 sm:gap-4 p-4 sm:p-6 bg-accent/10 rounded-lg border border-accent/20">
+                    <Shield className="w-6 h-6 sm:w-7 sm:h-7 text-accent mt-0.5 flex-shrink-0" />
+                    <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
                       <span className="font-medium text-foreground">Confidentialité garantie :</span> 
                       {" "}Toutes vos informations sont traitées avec la plus grande discrétion et ne seront jamais communiquées à des tiers.
                     </p>
@@ -244,17 +258,17 @@ const Contact = () => {
                     type="submit" 
                     variant="hero" 
                     size="lg" 
-                    className="w-full text-base sm:text-lg py-3 sm:py-4"
+                    className="w-full text-lg sm:text-xl py-6 sm:py-8 min-h-[60px] sm:min-h-[70px]"
                     disabled={isSubmitting}
                   >
                     {isSubmitting ? (
                       <>
-                        <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin mr-2" />
+                        <div className="w-5 h-5 sm:w-6 sm:h-6 border-2 border-white border-t-transparent rounded-full animate-spin mr-2" />
                         Envoi en cours...
                       </>
                     ) : (
                       <>
-                        <Send className="w-4 h-4 sm:w-5 sm:h-5" />
+                        <Send className="w-5 h-5 sm:w-6 sm:h-6" />
                         Envoyer ma demande
                       </>
                     )}
@@ -274,7 +288,7 @@ const Contact = () => {
                 <h3 className="text-xl sm:text-2xl font-bold mb-2">Urgence 7j/7</h3>
                 <p className="text-lg sm:text-xl font-semibold mb-4">07 67 13 54 58</p>
                 <p className="text-primary-foreground/90 text-sm sm:text-base">
-                  Intervention rapide dans le Sud de la France : Occitanie, PACA, Nouvelle-Aquitaine
+                  Intervention rapide dans le Sud de la France
                 </p>
               </CardContent>
             </Card>

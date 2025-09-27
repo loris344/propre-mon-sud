@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "homepage": "https://www.sosnettoyagediogene.fr",
+  "homepage": "https://sosnettoyagediogene.fr",
   "scripts": {
     "dev": "vite",
     "build": "vite build && node scripts/build-simple.js",

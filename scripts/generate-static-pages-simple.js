@@ -13,46 +13,66 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // Configuration
-const SITE_URL = 'https://www.sosnettoyagediogene.fr';
+const SITE_URL = 'https://sosnettoyagediogene.fr';
 const BUILD_DIR = path.join(__dirname, '../dist');
 
 // Fonction pour détecter automatiquement les assets
 function getAssets() {
-  const assetsDir = path.join(BUILD_DIR, 'assets');
-  if (!fs.existsSync(assetsDir)) {
-    console.error('❌ Dossier assets non trouvé:', assetsDir);
-    return {
-      css: '/assets/style-C1Q8LmPZ.css',
-      js: '/assets/index-cM5BUZph.js',
-      vendor: '/assets/vendor-p2fE49VT.js',
-      ui: '/assets/ui-Bwadxvvo.js',
-      router: '/assets/router-XA8Cen7S.js'
+  const cssDir = path.join(BUILD_DIR, 'css');
+  const jsDir = path.join(BUILD_DIR, 'js');
+  
+  let cssFile = '';
+  let jsFiles = {};
+  
+  // Détecter le fichier CSS
+  if (fs.existsSync(cssDir)) {
+    const cssFiles = fs.readdirSync(cssDir);
+    cssFile = cssFiles.find(file => file.startsWith('index-') && file.endsWith('.css')) || '';
+  }
+  
+  // Détecter les fichiers JS
+  if (fs.existsSync(jsDir)) {
+    const jsFilesList = fs.readdirSync(jsDir);
+    jsFiles = {
+      js: jsFilesList.find(file => file.startsWith('index-') && file.endsWith('.js')) || '',
+      vendor: jsFilesList.find(file => file.startsWith('vendor-') && file.endsWith('.js')) || '',
+      ui: jsFilesList.find(file => file.startsWith('ui-') && file.endsWith('.js')) || '',
+      router: jsFilesList.find(file => file.startsWith('router-') && file.endsWith('.js')) || '',
+      helmet: jsFilesList.find(file => file.startsWith('helmet-') && file.endsWith('.js')) || '',
+      icons: jsFilesList.find(file => file.startsWith('icons-') && file.endsWith('.js')) || ''
     };
   }
   
-  const files = fs.readdirSync(assetsDir);
-  console.log('📁 Assets trouvés:', files);
-  
-  const cssFile = files.find(file => file.startsWith('style-') && file.endsWith('.css'));
-  const jsFile = files.find(file => file.startsWith('index-') && file.endsWith('.js'));
-  const vendorFile = files.find(file => file.startsWith('vendor-') && file.endsWith('.js'));
-  const uiFile = files.find(file => file.startsWith('ui-') && file.endsWith('.js'));
-  const routerFile = files.find(file => file.startsWith('router-') && file.endsWith('.js'));
-  
   const assets = {
-    css: cssFile ? `/assets/${cssFile}` : '/assets/style-C1Q8LmPZ.css',
-    js: jsFile ? `/assets/${jsFile}` : '/assets/index-cM5BUZph.js',
-    vendor: vendorFile ? `/assets/${vendorFile}` : '/assets/vendor-p2fE49VT.js',
-    ui: uiFile ? `/assets/${uiFile}` : '/assets/ui-Bwadxvvo.js',
-    router: routerFile ? `/assets/${routerFile}` : '/assets/router-XA8Cen7S.js'
+    css: cssFile ? `/css/${cssFile}` : '/css/index.css',
+    js: jsFiles.js ? `/js/${jsFiles.js}` : '/js/index.js',
+    vendor: jsFiles.vendor ? `/js/${jsFiles.vendor}` : '/js/vendor.js',
+    ui: jsFiles.ui ? `/js/${jsFiles.ui}` : '/js/ui.js',
+    router: jsFiles.router ? `/js/${jsFiles.router}` : '/js/router.js',
+    helmet: jsFiles.helmet ? `/js/${jsFiles.helmet}` : '/js/helmet.js',
+    icons: jsFiles.icons ? `/js/${jsFiles.icons}` : '/js/icons.js'
   };
   
-  console.log('🎯 Assets utilisés:', assets);
+  console.log('🎯 Assets détectés:', assets);
   return assets;
 }
 
 // Configuration des pages à générer
 const pages = [
+  {
+    route: '/debarras-gros-volumes',
+    title: 'Débarras Gros Volumes | Évacuation Professionnelle Sud de la France',
+    description: 'Service professionnel de débarras et évacuation gros volumes. Greniers, caves, garages, déménagements, successions. Tri et recyclage respectueux de l\'environnement. Devis gratuit 7j/7.',
+    keywords: 'débarras gros volumes, évacuation déchets, tri sélectif, recyclage, greniers caves, déménagements, successions, nettoyage professionnel, sud france',
+    city: 'montpellier'
+  },
+  {
+    route: '/nettoyage-apres-deces',
+    title: 'Nettoyage Après Décès | Service Respectueux et Discret | SOS Nettoyage Diogène',
+    description: 'Service spécialisé de nettoyage et remise en état après décès. Intervention respectueuse, discrète et professionnelle avec protocoles sanitaires stricts. Devis gratuit 7j/7.',
+    keywords: 'nettoyage après décès, nettoyage décès, remise en état décès, nettoyage post décès, désinfection décès, nettoyage respectueux, service discret, protocoles sanitaires',
+    city: 'montpellier'
+  },
   {
     route: '/nettoyage-syndrome-diogene-montpellier',
     title: 'Nettoyage Syndrome de Diogène Montpellier | SOS Nettoyage Diogène',
@@ -129,6 +149,13 @@ const pages = [
     description: 'Service spécialisé de nettoyage et remise en état d\'environnements insalubres à Nîmes. Intervention professionnelle avec protocoles sanitaires stricts. Devis gratuit. Tél: 07 67 13 54 58',
     keywords: 'nettoyage insalubre, nettoyage insalubre nimes, remise en état insalubre, nettoyage extrême, désinfection insalubre, traitement insalubrité, nimes, gard',
     city: 'nimes'
+  },
+  {
+    route: '/partenariat-maisons-retraite',
+    title: 'Partenariat Maisons de Retraite | -20% de Réduction | SOS Nettoyage Diogène',
+    description: 'Rejoignez notre réseau de partenaires et offrez -20% de réduction à vos résidents sur nos services de nettoyage spécialisé. Intervention prioritaire et formation spécialisée pour les maisons de retraite.',
+    keywords: 'partenariat maisons de retraite, réduction résidents, nettoyage spécialisé, intervention prioritaire, formation équipes, ehpad, maison retraite',
+    city: 'montpellier'
   }
 ];
 
@@ -189,6 +216,7 @@ const htmlTemplate = (page) => {
     <!-- Additional SEO -->
     <meta name="theme-color" content="#1e40af" />
     <meta name="msapplication-TileColor" content="#1e40af" />
+    <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="default" />
     <meta name="apple-mobile-web-app-title" content="SOS Nettoyage Diogène" />

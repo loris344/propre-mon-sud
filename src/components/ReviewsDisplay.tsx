@@ -1,4 +1,5 @@
 import { Star } from "lucide-react";
+import { memo } from "react";
 
 const ReviewsDisplay = () => {
   return (
@@ -28,4 +29,4 @@ const ReviewsDisplay = () => {
   );
 };
 
-export default ReviewsDisplay;
+export default memo(ReviewsDisplay);
