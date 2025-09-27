@@ -16,6 +16,7 @@ import MJPMPartnership from "./pages/MJPMPartnership";
 import DebarrasGrosVolumes from "./pages/DebarrasGrosVolumes";
 import NettoyageApresDeces from "./pages/NettoyageApresDeces";
 import DesinfectionInsalubrite from "./pages/DesinfectionInsalubrite";
+import AdminDashboard from "./pages/AdminDashboard";
 
 const App = () => (
   <HelmetProvider>
@@ -58,6 +59,9 @@ const App = () => (
         
         {/* Route partenariat MJPM (non visible publiquement) */}
         <Route path="/partenariat-mjpm" element={<MJPMPartnership />} />
+        
+        {/* Route dashboard admin (protégée) */}
+        <Route path="/admin" element={<AdminDashboard />} />
         
         {/* Route 404 */}
         <Route path="*" element={<NotFound />} />
