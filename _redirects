@@ -1,6 +1,0 @@
-# Redirections pour GitHub Pages
-# Redirection www vers non-www
-https://www.sosnettoyagediogene.fr/* https://sosnettoyagediogene.fr/:splat 301!
-
-# Redirection des pages avec trailing slash
-/*/ /:splat 301!
