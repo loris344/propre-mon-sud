@@ -56,7 +56,7 @@ function generateSitemap() {
   pages.forEach(page => {
     sitemap += `  <url>
     <loc>${SITE_URL}${page.url}</loc>
-    <lastmod>2025-01-20</lastmod>
+    <lastmod>2025-01-21</lastmod>
     <changefreq>${page.changefreq || 'monthly'}</changefreq>
     <priority>${page.priority}</priority>
   </url>

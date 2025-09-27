@@ -23,7 +23,7 @@ const SEOHead = ({
   const finalTitle = customTitle || title;
   const finalDescription = customDescription || description;
   const finalKeywords = customKeywords || keywords;
-  const finalCanonical = canonical || `https://sosnettoyagediogene.fr${window.location.pathname}`;
+  const finalCanonical = canonical ? `https://sosnettoyagediogene.fr${canonical}` : `https://sosnettoyagediogene.fr${window.location.pathname}`;
 
   return (
     <Helmet>
