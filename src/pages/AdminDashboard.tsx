@@ -251,7 +251,7 @@ const AdminDashboard: React.FC = () => {
                             rel="noopener noreferrer"
                             className="text-blue-600 hover:underline"
                           >
-                            {page.url}
+                            https://sosnettoyagediogene.fr{page.url}
                           </a>
                         </div>
                         <div className="text-xs text-gray-600 mt-1">{page.title}</div>
