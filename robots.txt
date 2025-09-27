@@ -5,7 +5,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://www.sosnettoyagediogene.fr/sitemap.xml
+Sitemap: https://sosnettoyagediogene.fr/sitemap.xml
 
 # Crawl-delay pour éviter la surcharge
 Crawl-delay: 1
@@ -19,6 +19,10 @@ User-agent: Bingbot
 Allow: /
 Crawl-delay: 0
 
+User-agent: YandexBot
+Allow: /
+Crawl-delay: 0
+
 # Bloquer les bots indésirables
 User-agent: AhrefsBot
 Disallow: /
@@ -28,3 +32,15 @@ Disallow: /
 
 User-agent: DotBot
 Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MajesticSEO
+Disallow: /
+
+# Bloquer l'accès aux fichiers techniques
+Disallow: /assets/
+Disallow: /*.json$
+Disallow: /*.js$
+Disallow: /*.css$
