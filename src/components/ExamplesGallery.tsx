@@ -24,7 +24,7 @@ const ExamplesGallery = () => {
               <div className="relative bg-card rounded-xl p-3 pb-4 border border-border/50 shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <div className="rounded-lg">
                   <img
-                    src="/ex1.png"
+                    src="/images/examples/ex1.png"
                     alt="Exemple de transformation 1"
                     className="w-full h-48 sm:h-56 object-cover"
                     draggable="false"
@@ -43,7 +43,7 @@ const ExamplesGallery = () => {
               <div className="relative bg-card rounded-xl p-3 pb-4 border border-border/50 shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <div className="rounded-lg">
                   <img
-                    src="/ex2.jpg"
+                    src="/images/examples/ex2.jpg"
                     alt="Exemple de transformation 2"
                     className="w-full h-48 sm:h-56 object-cover"
                     draggable="false"
@@ -62,7 +62,7 @@ const ExamplesGallery = () => {
               <div className="relative bg-card rounded-xl p-3 pb-4 border border-border/50 shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <div className="rounded-lg">
                   <img
-                    src="/p1.png"
+                    src="/images/logos/p1.png"
                     alt="Équipe professionnelle de nettoyage spécialisé"
                     className="w-full h-48 sm:h-56 object-cover"
                     draggable="false"

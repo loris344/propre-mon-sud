@@ -1,8 +1,13 @@
 import { Shield, Heart } from 'lucide-react';
+import SEOHead from '../components/SEOHead';
+import { useSEO } from '../hooks/useSEO';
 
-const MJPMPartnership = () => {
+const NursingHomePartnership = () => {
+  const seoConfig = useSEO();
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 py-12 px-4">
+    <>
+      <SEOHead {...seoConfig} />
+      <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 py-12 px-4">
       <div className="max-w-4xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
@@ -12,11 +17,11 @@ const MJPMPartnership = () => {
             </div>
           </div>
           <h1 className="text-4xl font-bold text-gray-900 mb-4">
-            Partenariat Associations MJPM
+            Partenariat Maisons de Retraite
           </h1>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Rejoignez notre réseau de partenaires et offrez à vos protégés 
-            <span className="font-semibold text-blue-600"> -20% de réduction</span> sur nos services de nettoyage spécialisé.
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            Rejoignez notre réseau de partenaires EHPAD et maisons de retraite. Offrez à vos résidents 
+            <span className="font-semibold text-blue-600"> -20% de réduction</span> sur nos services de nettoyage spécialisé pour leurs logements personnels.
           </p>
         </div>
 
@@ -34,7 +39,7 @@ const MJPMPartnership = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold text-gray-900">-20% de réduction</h3>
-                  <p className="text-sm text-gray-600">Sur tous nos services pour vos protégés</p>
+                  <p className="text-sm text-gray-600">Sur tous nos services pour vos résidents</p>
                 </div>
               </div>
               
@@ -44,7 +49,7 @@ const MJPMPartnership = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold text-gray-900">Intervention prioritaire</h3>
-                  <p className="text-sm text-gray-600">Nos équipes interviennent en priorité pour vos protégés</p>
+                  <p className="text-sm text-gray-600">Nos équipes interviennent en priorité pour vos résidents</p>
                 </div>
               </div>
               
@@ -76,7 +81,7 @@ const MJPMPartnership = () => {
               Inscription au Partenariat
             </h2>
             <p className="text-gray-600 mb-6">
-              Remplissez ce formulaire pour devenir partenaire MJPM et bénéficier de nos tarifs préférentiels pour vos protégés.
+              Remplissez ce formulaire pour devenir partenaire EHPAD et bénéficier de nos tarifs préférentiels pour vos résidents.
             </p>
             
             <iframe 
@@ -97,7 +102,7 @@ const MJPMPartnership = () => {
         <div className="bg-white rounded-lg shadow-lg p-6 mt-8">
           <div className="text-center">
             <h3 className="text-lg font-semibold text-gray-900 mb-2">
-              Questions sur le partenariat MJPM ?
+              Questions sur le partenariat Maisons de Retraite ?
             </h3>
             <p className="text-gray-600 mb-4">
               Notre équipe est à votre disposition pour vous accompagner dans votre démarche de partenariat.
@@ -113,8 +118,9 @@ const MJPMPartnership = () => {
           </div>
         </div>
       </div>
-    </div>
+      </div>
+    </>
   );
 };
 
-export default MJPMPartnership;
+export default NursingHomePartnership;

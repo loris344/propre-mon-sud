@@ -5,6 +5,7 @@ import CustomerReviews from "../components/CustomerReviews";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import SEOHead from "../components/SEOHead";
+import { useSEO } from "../hooks/useSEO";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -45,38 +46,7 @@ const DesinfectionInsalubrite = () => {
     }
   }, [location.hash]);
 
-  const seoConfig = {
-    title: "Désinfection & Insalubrité | Service Professionnel de Remise en État | SOS Nettoyage Diogène",
-    description: "Service spécialisé de désinfection et remise en état de logements insalubres. Intervention professionnelle avec protocoles sanitaires stricts et respect des normes. Devis gratuit 7j/7.",
-    keywords: "désinfection insalubrité, nettoyage logement insalubre, syndrome diogène, désinfection professionnelle, remise en état, protocoles sanitaires, santé publique",
-    canonical: "/desinfection-insalubrite",
-    ogImage: "https://sosnettoyagediogene.fr/désinfection.jpg",
-    structuredData: {
-      "@context": "https://schema.org",
-      "@type": "Service",
-      "name": "Désinfection & Insalubrité",
-      "description": "Service spécialisé de désinfection et remise en état de logements insalubres avec protocoles sanitaires stricts.",
-      "provider": {
-        "@type": "LocalBusiness",
-        "name": "SOS Nettoyage Diogène",
-        "telephone": "07 67 13 54 58",
-        "email": "contact@sosnettoyagediogene.fr"
-      },
-      "areaServed": [
-        { "@type": "City", "name": "Montpellier" },
-        { "@type": "City", "name": "Sète" },
-        { "@type": "City", "name": "Béziers" },
-        { "@type": "City", "name": "Nîmes" },
-        { "@type": "City", "name": "Perpignan" }
-      ],
-      "serviceType": "Désinfection & Insalubrité",
-      "offers": {
-        "@type": "Offer",
-        "description": "Devis gratuit et sans engagement",
-        "priceCurrency": "EUR"
-      }
-    }
-  };
+  const seoConfig = useSEO();
 
   return (
     <>

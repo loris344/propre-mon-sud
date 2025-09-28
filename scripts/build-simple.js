@@ -40,13 +40,10 @@ function generateSitemap() {
     { url: '/nettoyage-syndrome-diogene-beziers', priority: '0.8', changefreq: 'monthly' },
     { url: '/nettoyage-syndrome-diogene-nimes', priority: '0.8', changefreq: 'monthly' },
     { url: '/nettoyage-syndrome-diogene-perpignan', priority: '0.8', changefreq: 'monthly' },
-    { url: '/debarras-gros-volumes-montpellier', priority: '0.9', changefreq: 'monthly' },
-    { url: '/desinfection-insalubrite-montpellier', priority: '0.9', changefreq: 'monthly' },
-    { url: '/nettoyage-apres-deces-montpellier', priority: '0.8', changefreq: 'monthly' },
-    { url: '/nettoyage-apres-deces-nimes', priority: '0.7', changefreq: 'monthly' },
-    { url: '/nettoyage-insalubre-montpellier', priority: '0.8', changefreq: 'monthly' },
-    { url: '/nettoyage-insalubre-nimes', priority: '0.7', changefreq: 'monthly' },
-    { url: '/partenariat-maisons-retraite', priority: '0.6', changefreq: 'monthly' }
+    { url: '/partenariat-maisons-retraite', priority: '0.6', changefreq: 'monthly' },
+    
+    // Page mentions légales
+    { url: '/mentions-legales', priority: '0.3', changefreq: 'yearly' }
   ];
 
   let sitemap = `<?xml version="1.0" encoding="UTF-8"?>
@@ -188,8 +185,25 @@ function build() {
   fs.writeFileSync(path.join(BUILD_DIR, 'llms.txt'), llmsTxt);
   console.log('✅ llms.txt généré');
   
+  // Nettoyer les images dupliquées copiées par Vite
+  const duplicateDirs = ['cities', 'examples', 'logos', 'services'];
+  duplicateDirs.forEach(dir => {
+    const dirPath = path.join(BUILD_DIR, dir);
+    if (fs.existsSync(dirPath)) {
+      fs.rmSync(dirPath, { recursive: true, force: true });
+    }
+  });
+  console.log('✅ Images dupliquées nettoyées');
+  
   console.log('🎉 Build terminé avec succès !');
 }
 
 // Exécuter le build
 build();
+
+// Générer les pages statiques avec meta tags
+import('./generate-static-pages.js').then(() => {
+  console.log('✅ Pages statiques générées');
+}).catch(err => {
+  console.error('❌ Erreur génération pages statiques:', err);
+});

@@ -16,7 +16,17 @@ import MJPMPartnership from "./pages/MJPMPartnership";
 import DebarrasGrosVolumes from "./pages/DebarrasGrosVolumes";
 import NettoyageApresDeces from "./pages/NettoyageApresDeces";
 import DesinfectionInsalubrite from "./pages/DesinfectionInsalubrite";
-import AdminDashboard from "./pages/AdminDashboard";
+import MentionsLegales from "./pages/MentionsLegales";
+import SyndromeDiogeneMontpellier from "./pages/SyndromeDiogeneMontpellier";
+import SyndromeDiogeneSete from "./pages/SyndromeDiogeneSete";
+import SyndromeDiogeneBeziers from "./pages/SyndromeDiogeneBeziers";
+import SyndromeDiogeneNimes from "./pages/SyndromeDiogeneNimes";
+import SyndromeDiogenePerpignan from "./pages/SyndromeDiogenePerpignan";
+import SyndromeDiogeneMarseille from "./pages/SyndromeDiogeneMarseille";
+import NettoyageApresDecesMarseille from "./pages/NettoyageApresDecesMarseille";
+import TousNosServices from "./pages/TousNosServices";
+import EntrepriseNettoyageMontpellier from "./pages/EntrepriseNettoyageMontpellier";
+import EntrepriseNettoyageMarseille from "./pages/EntrepriseNettoyageMarseille";
 
 const App = () => (
   <HelmetProvider>
@@ -40,12 +50,17 @@ const App = () => (
         <Route path="/nettoyage-apres-deces" element={<NettoyageApresDeces />} />
         <Route path="/desinfection-insalubrite" element={<DesinfectionInsalubrite />} />
         
-        {/* Routes de services - toutes utilisent le même composant ServicePage */}
-        <Route path="/nettoyage-syndrome-diogene-montpellier" element={<ServicePage />} />
-        <Route path="/nettoyage-syndrome-diogene-sete" element={<ServicePage />} />
-        <Route path="/nettoyage-syndrome-diogene-beziers" element={<ServicePage />} />
-        <Route path="/nettoyage-syndrome-diogene-nimes" element={<ServicePage />} />
-        <Route path="/nettoyage-syndrome-diogene-perpignan" element={<ServicePage />} />
+        {/* Routes de services - pages spécifiques par ville */}
+        <Route path="/nettoyage-syndrome-diogene-montpellier" element={<SyndromeDiogeneMontpellier />} />
+        <Route path="/nettoyage-syndrome-diogene-sete" element={<SyndromeDiogeneSete />} />
+        <Route path="/nettoyage-syndrome-diogene-beziers" element={<SyndromeDiogeneBeziers />} />
+        <Route path="/nettoyage-syndrome-diogene-nimes" element={<SyndromeDiogeneNimes />} />
+        <Route path="/nettoyage-syndrome-diogene-perpignan" element={<SyndromeDiogenePerpignan />} />
+        <Route path="/nettoyage-syndrome-diogene-marseille" element={<SyndromeDiogeneMarseille />} />
+        <Route path="/nettoyage-apres-deces-marseille" element={<NettoyageApresDecesMarseille />} />
+        <Route path="/tous-nos-services" element={<TousNosServices />} />
+        <Route path="/entreprise-nettoyage-montpellier" element={<EntrepriseNettoyageMontpellier />} />
+        <Route path="/entreprise-nettoyage-marseille" element={<EntrepriseNettoyageMarseille />} />
         
         <Route path="/debarras-gros-volumes-montpellier" element={<ServicePage />} />
         
@@ -60,8 +75,8 @@ const App = () => (
         {/* Route partenariat MJPM (non visible publiquement) */}
         <Route path="/partenariat-mjpm" element={<MJPMPartnership />} />
         
-        {/* Route dashboard admin (protégée) */}
-        <Route path="/admin" element={<AdminDashboard />} />
+        {/* Route mentions légales */}
+        <Route path="/mentions-legales" element={<MentionsLegales />} />
         
         {/* Route 404 */}
         <Route path="*" element={<NotFound />} />

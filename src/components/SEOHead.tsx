@@ -1,11 +1,12 @@
 import { Helmet } from "react-helmet-async";
-import { SEOConfig } from "@/lib/seo-simple";
+import { SEOConfig } from "@/lib/seo-config";
 
 interface SEOHeadProps extends SEOConfig {
   // Props optionnelles pour override
   customTitle?: string;
   customDescription?: string;
   customKeywords?: string;
+  structuredData?: object;
 }
 
 const SEOHead = ({ 

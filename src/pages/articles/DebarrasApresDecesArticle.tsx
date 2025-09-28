@@ -6,12 +6,7 @@ import { ResponsiveImage } from "../../components/ResponsiveImage";
 
 const DebarrasApresDecesArticle = () => {
   const navigate = useNavigate();
-  const seoConfig = useSEO({
-    title: "Débarras après décès : Guide Complet 2025 | Accompagnement Respectueux et Professionnel",
-    description: "Découvrez notre protocole de débarras après décès : délais légaux, étapes et accompagnement psychologique. Service 24h/24 avec équipes formées.",
-    keywords: "débarras après décès, accompagnement, respect, discrétion, nettoyage, professionnel, délais légaux, protocole, 2025",
-    canonical: "/blog/debarras-apres-deces-accompagnement"
-  });
+  const seoConfig = useSEO();
 
   return (
     <>
@@ -35,7 +30,7 @@ const DebarrasApresDecesArticle = () => {
             <div className="flex items-center gap-4 text-sm text-muted-foreground mb-4">
               <div className="flex items-center gap-1">
                 <Calendar className="w-4 h-4" />
-                <span>10 Janvier 2025</span>
+                <span>10 Janvier 2024</span>
               </div>
               <div className="flex items-center gap-1">
                 <Clock className="w-4 h-4" />

@@ -64,8 +64,8 @@ const Header = () => {
                    onClick={handleLogoClick}
                  >
             <ResponsiveImage
-              src="/logo.png"
-              mobileSrc="/logo-mobile.png"
+              src="/images/logos/logo.png"
+              mobileSrc="/images/logos/logo-mobile.png"
               alt="SOS Nettoyage Diogène Logo"
               className="w-16 h-16 sm:w-12 sm:h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 object-contain"
             />

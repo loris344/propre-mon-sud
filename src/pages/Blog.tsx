@@ -10,12 +10,7 @@ const Blog = () => {
   const [email, setEmail] = useState("");
   const [isSubscribing, setIsSubscribing] = useState(false);
   
-  const seoConfig = useSEO({
-    title: "Blog - SOS Nettoyage Diogène | Conseils et Actualités",
-    description: "Découvrez nos conseils d'experts pour le nettoyage, le débarras et la désinfection. Actualités et guides pratiques par SOS Nettoyage Diogène.",
-    keywords: "blog nettoyage, conseils débarras, syndrome diogène, désinfection, actualités nettoyage",
-    canonical: "/blog"
-  });
+  const seoConfig = useSEO();
 
   const handleNewsletterSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -68,7 +63,7 @@ const Blog = () => {
                 <div className="mb-4">
                   <div className="flex items-center gap-2 mb-2">
                     <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded-full">Santé mentale</span>
-                    <span className="text-sm text-muted-foreground">15 Janvier 2022</span>
+                    <span className="text-sm text-muted-foreground">15 Janvier 2024</span>
                   </div>
                   <h2 className="text-xl md:text-2xl font-bold text-foreground mb-4">
                     Syndrome de Diogène : Comment identifier et gérer cette situation
@@ -96,7 +91,7 @@ const Blog = () => {
                 <div className="mb-4">
                   <div className="flex items-center gap-2 mb-2">
                     <span className="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full">Accompagnement</span>
-                    <span className="text-sm text-muted-foreground">10 Janvier 2023</span>
+                    <span className="text-sm text-muted-foreground">10 Janvier 2024</span>
                   </div>
                   <h2 className="text-xl md:text-2xl font-bold text-foreground mb-4">
                     Débarras après décès : Un accompagnement respectueux et professionnel
@@ -124,7 +119,7 @@ const Blog = () => {
                 <div className="mb-4">
                   <div className="flex items-center gap-2 mb-2">
                     <span className="text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full">Technique</span>
-                    <span className="text-sm text-muted-foreground">5 Janvier 2025</span>
+                    <span className="text-sm text-muted-foreground">5 Janvier 2024</span>
                   </div>
                   <h2 className="text-xl md:text-2xl font-bold text-foreground mb-4">
                     Désinfection et assainissement : Protocoles et bonnes pratiques
@@ -152,7 +147,7 @@ const Blog = () => {
                 <div className="mb-4">
                   <div className="flex items-center gap-2 mb-2">
                     <span className="text-xs bg-orange-100 text-orange-700 px-2 py-1 rounded-full">Prévention</span>
-                    <span className="text-sm text-muted-foreground">1 Janvier 2025</span>
+                    <span className="text-sm text-muted-foreground">1 Janvier 2024</span>
                   </div>
                   <h2 className="text-xl md:text-2xl font-bold text-foreground mb-4">
                     Prévention de l'insalubrité : Conseils pour maintenir un logement sain

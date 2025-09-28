@@ -6,12 +6,7 @@ import { ResponsiveImage } from "../../components/ResponsiveImage";
 
 const PreventionInsalubriteArticle = () => {
   const navigate = useNavigate();
-  const seoConfig = useSEO({
-    title: "Prévention de l'Insalubrité : Guide Complet 2025 | Conseils d'Experts pour un Logement Sain",
-    description: "Découvrez 15 conseils d'experts pour prévenir l'insalubrité : entretien, organisation, signes d'alerte. Guide pratique avec checklist gratuite et audit préventif.",
-    keywords: "prévention insalubrité, conseils, logement sain, environnement, maintenance, prévention, checklist, audit, 2025",
-    canonical: "/blog/prevention-insalubrite-conseils"
-  });
+  const seoConfig = useSEO();
 
   return (
     <>
@@ -35,7 +30,7 @@ const PreventionInsalubriteArticle = () => {
             <div className="flex items-center gap-4 text-sm text-muted-foreground mb-4">
               <div className="flex items-center gap-1">
                 <Calendar className="w-4 h-4" />
-                <span>1 Janvier 2025</span>
+                <span>1 Janvier 2024</span>
               </div>
               <div className="flex items-center gap-1">
                 <Clock className="w-4 h-4" />

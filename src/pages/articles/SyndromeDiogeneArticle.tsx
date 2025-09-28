@@ -6,12 +6,7 @@ import { ResponsiveImage } from "../../components/ResponsiveImage";
 
 const SyndromeDiogeneArticle = () => {
   const navigate = useNavigate();
-  const seoConfig = useSEO({
-    title: "Syndrome de Diogène : Guide Complet d'Identification et de Gestion | SOS Nettoyage Diogène",
-    description: "Découvrez les 8 signes d'alerte du syndrome de Diogène, les statistiques en France et notre protocole d'intervention professionnel. Guide expert 2025.",
-    keywords: "syndrome diogène, identification, gestion, accompagnement, nettoyage, débarras, statistiques, protocole, France, 2025",
-    canonical: "/blog/syndrome-diogene-identifier-gerer"
-  });
+  const seoConfig = useSEO();
 
   return (
     <>
@@ -35,7 +30,7 @@ const SyndromeDiogeneArticle = () => {
             <div className="flex items-center gap-4 text-sm text-muted-foreground mb-4">
               <div className="flex items-center gap-1">
                 <Calendar className="w-4 h-4" />
-                <span>15 Janvier 2025</span>
+                <span>15 Janvier 2024</span>
               </div>
               <div className="flex items-center gap-1">
                 <Clock className="w-4 h-4" />

@@ -1,5 +1,5 @@
 import { useLocation } from "react-router-dom";
-import { getSEOConfig, SEOConfig } from "@/lib/seo-simple";
+import { getSEOConfig, SEOConfig } from "@/lib/seo-config";
 
 /**
  * Hook personnalisé pour gérer le SEO dynamique

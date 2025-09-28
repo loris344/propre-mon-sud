@@ -6,12 +6,7 @@ import { ResponsiveImage } from "../../components/ResponsiveImage";
 
 const DesinfectionArticle = () => {
   const navigate = useNavigate();
-  const seoConfig = useSEO({
-    title: "Désinfection et Assainissement : Protocoles Professionnels 2025 | Guide Complet",
-    description: "Découvrez nos protocoles de désinfection certifiés, produits homologués et techniques professionnelles. Garantie 99,9% d'efficacité contre virus et bactéries.",
-    keywords: "désinfection, assainissement, protocoles, bonnes pratiques, nettoyage, environnement sain, virus, bactéries, certification, 2025",
-    canonical: "/blog/desinfection-assainissement-protocoles"
-  });
+  const seoConfig = useSEO();
 
   return (
     <>
@@ -35,7 +30,7 @@ const DesinfectionArticle = () => {
             <div className="flex items-center gap-4 text-sm text-muted-foreground mb-4">
               <div className="flex items-center gap-1">
                 <Calendar className="w-4 h-4" />
-                <span>5 Janvier 2025</span>
+                <span>5 Janvier 2024</span>
               </div>
               <div className="flex items-center gap-1">
                 <Clock className="w-4 h-4" />

@@ -5,6 +5,7 @@ import CustomerReviews from "../components/CustomerReviews";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import SEOHead from "../components/SEOHead";
+import { useSEO } from "../hooks/useSEO";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -43,38 +44,7 @@ const NettoyageApresDeces = () => {
     }
   }, [location.hash]);
 
-  const seoConfig = {
-    title: "Nettoyage Après Décès | Service Respectueux et Discret | SOS Nettoyage Diogène",
-    description: "Service spécialisé de nettoyage et remise en état après décès. Intervention respectueuse, discrète et professionnelle avec protocoles sanitaires stricts. Devis gratuit 7j/7.",
-    keywords: "nettoyage après décès, nettoyage décès, remise en état décès, nettoyage post décès, désinfection décès, nettoyage respectueux, service discret, protocoles sanitaires",
-    canonical: "/nettoyage-apres-deces",
-    ogImage: "https://sosnettoyagediogene.fr/ex2.jpg",
-    structuredData: {
-      "@context": "https://schema.org",
-      "@type": "Service",
-      "name": "Nettoyage Après Décès",
-      "description": "Service spécialisé de nettoyage et remise en état après décès. Intervention respectueuse, discrète et professionnelle.",
-      "provider": {
-        "@type": "LocalBusiness",
-        "name": "SOS Nettoyage Diogène",
-        "telephone": "07 67 13 54 58",
-        "email": "contact@sosnettoyagediogene.fr"
-      },
-      "areaServed": [
-        { "@type": "City", "name": "Montpellier" },
-        { "@type": "City", "name": "Sète" },
-        { "@type": "City", "name": "Béziers" },
-        { "@type": "City", "name": "Nîmes" },
-        { "@type": "City", "name": "Perpignan" }
-      ],
-      "serviceType": "Nettoyage Après Décès",
-      "offers": {
-        "@type": "Offer",
-        "description": "Devis gratuit et sans engagement",
-        "priceCurrency": "EUR"
-      }
-    }
-  };
+  const seoConfig = useSEO();
 
   return (
     <>
@@ -82,7 +52,7 @@ const NettoyageApresDeces = () => {
       <main role="main">
         {/* Hero Section spécialisé */}
         <section id="accueil" className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-background via-secondary/30 to-background overflow-hidden">
-          <div className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20" style={{ backgroundImage: `url('/ex2.jpg')` }}></div>
+          <div className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20" style={{ backgroundImage: `url('/images/examples/ex2.jpg')` }}></div>
           <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-accent/10"></div>
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-4xl mx-auto text-center space-y-8">

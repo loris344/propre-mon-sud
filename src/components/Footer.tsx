@@ -14,8 +14,8 @@ const Footer = () => {
           <div className="sm:col-span-2 lg:col-span-1 space-y-4">
             <div className="flex items-center space-x-3">
               <ResponsiveImage
-                src="/logo.png"
-                mobileSrc="/logo-mobile.png"
+                src="/images/logos/logo.png"
+                mobileSrc="/images/logos/logo-mobile.png"
                 alt="SOS Nettoyage Diogène Logo"
                 className="w-12 h-12 sm:w-16 sm:h-16 object-contain"
               />
@@ -155,6 +155,12 @@ const Footer = () => {
                   className="text-primary hover:text-primary/80 transition-colors"
                 >
                   Partenariat
+                </Link>
+                <Link 
+                  to="/mentions-legales"
+                  className="text-primary hover:text-primary/80 transition-colors"
+                >
+                  Mentions Légales
                 </Link>
               </div>
             </div>

@@ -8,8 +8,8 @@ const Hero = () => {
   const [currentCityIndex, setCurrentCityIndex] = useState(0);
   
   const cities = [
-    "Montpellier", "Sète", "Béziers", "Nîmes", "Perpignan", 
-    "Toulouse", "Marseille", "Nice", "Aix-en-Provence", 
+    "Montpellier", "Sète", "Béziers", "Nîmes", "Perpignan", "Marseille",
+    "Toulouse", "Nice", "Aix-en-Provence", 
     "Toulon", "Avignon", "Bordeaux"
   ];
 
@@ -104,7 +104,7 @@ const Hero = () => {
               {/* Image 1 - ex1.png */}
               <div className="relative">
                 <img
-                  src="/ex1.png"
+                  src="/images/examples/ex1.png"
                   alt="Exemple de transformation - Avant/Après nettoyage syndrome de Diogène"
                   className="w-full h-[200px] sm:h-[250px] lg:h-[300px] object-cover rounded-lg"
                   loading="eager"
@@ -121,7 +121,7 @@ const Hero = () => {
               {/* Image 2 - ex2.jpg */}
               <div className="relative">
                 <img
-                  src="/ex2.jpg"
+                  src="/images/examples/ex2.jpg"
                   alt="Exemple de transformation - Résultat après intervention professionnelle"
                   className="w-full h-[200px] sm:h-[250px] lg:h-[300px] object-cover rounded-lg"
                   loading="eager"

@@ -60,10 +60,10 @@ export const optimizeImageUrl = (url: string, width?: number, quality?: number):
 // Fonction pour précharger les ressources critiques
 export const preloadCriticalResources = () => {
   const criticalImages = [
-    '/logo.png',
-    '/p1.png',
-    '/ex1.png',
-    '/ex2.jpg'
+    '/images/logos/logo.png',
+    '/images/logos/p1.png',
+    '/images/examples/ex1.png',
+    '/images/examples/ex2.jpg'
   ];
   
   criticalImages.forEach(src => {

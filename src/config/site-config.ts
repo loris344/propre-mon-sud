@@ -19,9 +19,19 @@ export const SITE_CONFIG = {
   
   // Images par défaut
   defaultImages: {
-    hero: "/p1.png",
-    logo: "/logo.png",
-    ogImage: "/p1.png"
+    hero: "/images/logos/p1.png",
+    logo: "/images/logos/logo.png",
+    ogImage: "/images/logos/p1.png"
+  },
+  
+  // Images des villes
+  cityImages: {
+    montpellier: "/images/cities/montpellier.jpg",
+    sete: "/images/cities/sete.jpg",
+    beziers: "/images/cities/bézier.webp",
+    nimes: "/images/cities/nimes.webp",
+    perpignan: "/images/cities/perpignan.jpeg",
+    marseille: "/images/cities/marseille1.jpg"
   }
 };
 
@@ -223,11 +233,11 @@ export const CITIES = {
     department: "34",
     coordinates: { lat: "43.611", lng: "3.8767" },
     images: {
-      hero: "https://images.unsplash.com/photo-1613283850334-9219c5fb7143?w=1200&h=630&fit=crop&crop=center",
+      hero: "/images/cities/montpellier.jpg",
       gallery: [
-        "https://images.unsplash.com/photo-1613283850334-9219c5fb7143?w=900&auto=format&fit=crop&q=60",
-        "https://images.unsplash.com/photo-1608728212004-04441ea6e3cf?w=900&auto=format&fit=crop&q=60",
-        "https://images.unsplash.com/photo-1690132007585-1ef4b16f49d3?w=900&auto=format&fit=crop&q=60"
+        "/images/cities/montpellier.jpg",
+        "/images/examples/ex1.png",
+        "/images/examples/ex2.jpg"
       ]
     }
   },
@@ -238,11 +248,11 @@ export const CITIES = {
     department: "34",
     coordinates: { lat: "43.403", lng: "3.696" },
     images: {
-      hero: "https://images.unsplash.com/photo-1646676125144-cad4fcea488c?w=1200&h=630&fit=crop&crop=center",
+      hero: "/images/cities/sete.jpg",
       gallery: [
-        "https://images.unsplash.com/photo-1646676125144-cad4fcea488c?w=900&auto=format&fit=crop&q=60",
-        "https://images.unsplash.com/photo-1683791886181-68f3a1d1a7c4?w=900&auto=format&fit=crop&q=60",
-        "https://images.unsplash.com/photo-1683791885269-6c1a78ae97fc?w=900&auto=format&fit=crop&q=60"
+        "/images/cities/sete.jpg",
+        "/images/examples/ex1.png",
+        "/images/examples/ex2.jpg"
       ]
     }
   },
@@ -253,11 +263,11 @@ export const CITIES = {
     department: "34",
     coordinates: { lat: "43.347", lng: "3.215" },
     images: {
-      hero: "https://images.unsplash.com/photo-1723911490474-f9d1ce7a057a?w=1200&h=630&fit=crop&crop=center",
+      hero: "/images/cities/bézier.webp",
       gallery: [
-        "https://images.unsplash.com/photo-1723911490474-f9d1ce7a057a?w=900&auto=format&fit=crop&q=60",
-        "https://images.unsplash.com/photo-1596812069451-ccca1e62b66d?w=900&auto=format&fit=crop&q=60",
-        "https://images.unsplash.com/photo-1723911489123-64c6490e7818?w=900&auto=format&fit=crop&q=60"
+        "/images/cities/bézier.webp",
+        "/images/examples/ex1.png",
+        "/images/examples/ex2.jpg"
       ]
     }
   },
@@ -268,11 +278,11 @@ export const CITIES = {
     department: "30",
     coordinates: { lat: "43.836", lng: "4.360" },
     images: {
-      hero: "https://images.unsplash.com/photo-1702174653587-c5e10d5a2aa3?w=1200&h=630&fit=crop&crop=center",
+      hero: "/images/cities/nimes.webp",
       gallery: [
-        "https://images.unsplash.com/photo-1702174653587-c5e10d5a2aa3?w=900&auto=format&fit=crop&q=60",
-        "https://images.unsplash.com/photo-1729086871923-36fee2e2f9f5?w=900&auto=format&fit=crop&q=60",
-        "https://images.unsplash.com/photo-1706233674922-febe573ad52f?w=900&auto=format&fit=crop&q=60"
+        "/images/cities/nimes.webp",
+        "/images/examples/ex1.png",
+        "/images/examples/ex2.jpg"
       ]
     }
   },
@@ -283,11 +293,26 @@ export const CITIES = {
     department: "66",
     coordinates: { lat: "42.688", lng: "2.895" },
     images: {
-      hero: "https://images.unsplash.com/photo-1722605266573-e981c2ffed30?w=1200&h=630&fit=crop&crop=center",
+      hero: "/images/cities/perpignan.jpeg",
       gallery: [
-        "https://images.unsplash.com/photo-1722605266573-e981c2ffed30?w=900&auto=format&fit=crop&q=60",
-        "https://images.unsplash.com/photo-1722605267546-22242cd6ed4a?w=900&auto=format&fit=crop&q=60",
-        "https://images.unsplash.com/photo-1722605268092-462b90839596?w=900&auto=format&fit=crop&q=60"
+        "/images/cities/perpignan.jpeg",
+        "/images/examples/ex1.png",
+        "/images/examples/ex2.jpg"
+      ]
+    }
+  },
+  marseille: {
+    id: "marseille",
+    name: "Marseille",
+    region: "Bouches-du-Rhône",
+    department: "13",
+    coordinates: { lat: "43.296", lng: "5.369" },
+    images: {
+      hero: "/images/cities/marseille1.jpg",
+      gallery: [
+        "/images/cities/marseille1.jpg",
+        "/images/cities/marseille2.jpg",
+        "/images/cities/marseille3.jpg"
       ]
     }
   }

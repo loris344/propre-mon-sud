@@ -1,8 +1,13 @@
 import { Shield, Heart } from 'lucide-react';
+import SEOHead from '../components/SEOHead';
+import { useSEO } from '../hooks/useSEO';
 
 const MJPMPartnership = () => {
+  const seoConfig = useSEO();
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 py-12 px-4">
+    <>
+      <SEOHead {...seoConfig} />
+      <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 py-12 px-4">
       <div className="max-w-4xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
@@ -113,7 +118,8 @@ const MJPMPartnership = () => {
           </div>
         </div>
       </div>
-    </div>
+      </div>
+    </>
   );
 };
 

@@ -14,7 +14,8 @@
     "deploy": "gh-pages -d dist",
     "deploy:build": "npm run predeploy && npm run deploy",
     "sitemap": "node scripts/build-simple.js",
-    "llms": "node scripts/build-simple.js"
+    "llms": "node scripts/build-simple.js",
+    "generate-static": "node scripts/generate-static-pages.js && node scripts/update-sitemap.js"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.2.3",

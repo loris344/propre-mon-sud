@@ -5,6 +5,7 @@ import CustomerReviews from "../components/CustomerReviews";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import SEOHead from "../components/SEOHead";
+import { useSEO } from "../hooks/useSEO";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -44,38 +45,7 @@ const DebarrasGrosVolumes = () => {
     }
   }, [location.hash]);
 
-  const seoConfig = {
-    title: "Débarras Gros Volumes | Évacuation Professionnelle Sud de la France",
-    description: "Service professionnel de débarras et évacuation gros volumes. Greniers, caves, garages, déménagements, successions. Tri et recyclage respectueux de l'environnement. Devis gratuit 7j/7.",
-    keywords: "débarras gros volumes, évacuation déchets, tri sélectif, recyclage, greniers caves, déménagements, successions, nettoyage professionnel, sud france",
-    canonical: "/debarras-gros-volumes",
-    ogImage: "https://sosnettoyagediogene.fr/ex1.png",
-    structuredData: {
-      "@context": "https://schema.org",
-      "@type": "Service",
-      "name": "Débarras Gros Volumes",
-      "description": "Service professionnel de débarras et évacuation gros volumes avec tri et recyclage respectueux de l'environnement.",
-      "provider": {
-        "@type": "LocalBusiness",
-        "name": "SOS Nettoyage Diogène",
-        "telephone": "07 67 13 54 58",
-        "email": "contact@sosnettoyagediogene.fr"
-      },
-      "areaServed": [
-        { "@type": "City", "name": "Montpellier" },
-        { "@type": "City", "name": "Sète" },
-        { "@type": "City", "name": "Béziers" },
-        { "@type": "City", "name": "Nîmes" },
-        { "@type": "City", "name": "Perpignan" }
-      ],
-      "serviceType": "Débarras Gros Volumes",
-      "offers": {
-        "@type": "Offer",
-        "description": "Devis gratuit et sans engagement",
-        "priceCurrency": "EUR"
-      }
-    }
-  };
+  const seoConfig = useSEO();
 
   return (
     <>
@@ -83,7 +53,7 @@ const DebarrasGrosVolumes = () => {
       <main role="main">
         {/* Hero Section spécialisé */}
         <section id="accueil" className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-background via-secondary/30 to-background overflow-hidden">
-          <div className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20" style={{ backgroundImage: `url('/ex1.png')` }}></div>
+          <div className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20" style={{ backgroundImage: `url('/images/examples/ex1.png')` }}></div>
           <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-accent/10"></div>
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-4xl mx-auto text-center space-y-8">
