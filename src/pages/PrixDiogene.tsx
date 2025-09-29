@@ -277,10 +277,10 @@ export default function PrixDiogene() {
                 📞 07 67 13 54 58
               </a>
               <a 
-                href="https://sosnettoyagediogene.fr" 
+                href="https://sosnettoyagediogene.fr/#contact-form" 
                 className="inline-block bg-secondary text-secondary-foreground border border-border px-6 py-3 rounded-lg font-bold hover:bg-secondary/80 transition-colors duration-300"
               >
-                🌐 Voir le site web
+                📝 Demander un devis
               </a>
             </div>
           </div>
