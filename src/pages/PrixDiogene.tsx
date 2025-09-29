@@ -29,15 +29,15 @@ export default function PrixDiogene() {
         canonical="/prix-diogene"
       />
       
-      <div className="min-h-screen bg-gray-50">
+      <div className="min-h-screen bg-background">
         {/* Hero Section */}
-        <div className="bg-white pt-32 pb-12">
+        <div className="bg-white pt-40 pb-12">
           <div className="container mx-auto px-4 max-w-4xl">
             <div className="text-center">
-              <h1 className="text-3xl md:text-4xl font-bold mb-4 leading-tight text-gray-900">
+              <h1 className="text-3xl md:text-4xl font-bold mb-4 leading-tight text-foreground">
                 Prix Diogène : L'Expertise de SOS Nettoyage Diogène
               </h1>
-              <p className="text-lg text-gray-600 leading-relaxed">
+              <p className="text-lg text-muted-foreground leading-relaxed">
                 Pour les Interventions Extrêmes et le Nettoyage d'Insalubrité
               </p>
             </div>
@@ -46,30 +46,30 @@ export default function PrixDiogene() {
 
         <div className="container mx-auto px-4 py-8 max-w-4xl">
           {/* Introduction */}
-          <div className="bg-white rounded-lg shadow-lg p-6 mb-8">
-            <p className="text-gray-700 leading-relaxed mb-4">
+          <div className="bg-card rounded-lg shadow-lg p-6 mb-8 border">
+            <p className="text-foreground leading-relaxed mb-4">
               Le syndrome de Diogène, caractérisé par une accumulation compulsive et un délaissement de l'hygiène, 
               exige une intervention spécialisée. Chez <strong>SOS Nettoyage Diogène</strong>, nous sommes les experts reconnus 
               pour le nettoyage d'insalubrité et de l'extrême, offrant une approche humaine, discrète et professionnelle 
               pour ces situations délicates.
             </p>
-            <p className="text-gray-600">
-              Le <strong>"prix Diogène"</strong> est une estimation personnalisée, reflétant la complexité unique de chaque cas.
+            <p className="text-muted-foreground">
+              Chaque <strong>devis Diogène</strong> est établi sur mesure, en tenant compte de la complexité unique de chaque situation.
             </p>
           </div>
 
           {/* Section Tarifs */}
-          <div className="bg-white rounded-lg shadow-lg p-6 mb-8">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">
+          <div className="bg-card rounded-lg shadow-lg p-6 mb-8 border">
+            <h2 className="text-2xl font-bold text-foreground mb-6">
               Comprendre le Coût d'une Intervention Spécialisée
             </h2>
-            <p className="text-gray-700 mb-6">
+            <p className="text-foreground mb-6">
               Le coût d'une intervention de nettoyage Diogène avec SOS Nettoyage Diogène est déterminé par plusieurs facteurs clés, 
               garantissant une prestation adaptée et juste.
             </p>
 
             {/* Image d'intervention */}
-            <div className="mb-6">
+            <div className="mb-6 max-w-md mx-auto">
               <img 
                 src={images[0].src}
                 alt={images[0].alt}
@@ -77,8 +77,8 @@ export default function PrixDiogene() {
               />
             </div>
 
-            <h3 className="text-xl font-semibold text-gray-800 mb-4">Facteurs Influençant le Prix</h3>
-            <ul className="space-y-3 text-gray-700 mb-6">
+            <h3 className="text-xl font-semibold text-foreground mb-4">Facteurs Influençant le Prix</h3>
+            <ul className="space-y-3 text-foreground mb-6">
               <li className="flex items-start">
                 <span className="text-gray-600 mr-2">•</span>
                 <span><strong>L'Ampleur de l'Encombrement :</strong> La quantité et la nature des objets accumulés influencent directement le temps de travail et les coûts d'évacuation.</span>
@@ -97,46 +97,46 @@ export default function PrixDiogene() {
               </li>
             </ul>
 
-            <h3 className="text-xl font-semibold text-gray-800 mb-4">Tarifs Indicatifs par Superficie</h3>
-            <p className="text-gray-600 mb-4">Interventions complètes (débarras, nettoyage, désinfection)</p>
+            <h3 className="text-xl font-semibold text-foreground mb-4">Tarifs Indicatifs par Superficie</h3>
+            <p className="text-muted-foreground mb-4">Interventions complètes (débarras, nettoyage, désinfection)</p>
             
             <div className="grid md:grid-cols-2 gap-4 mb-6">
-              <div className="flex justify-between items-center p-3 bg-gray-50 rounded border">
-                <span className="font-medium text-gray-800">20-30 m²</span>
-                <span className="font-bold text-gray-900">800€ - 1 500€</span>
+              <div className="flex justify-between items-center p-3 bg-muted rounded border">
+                <span className="font-medium text-foreground">20-30 m²</span>
+                <span className="font-bold text-foreground">800€ - 1 500€</span>
               </div>
-              <div className="flex justify-between items-center p-3 bg-gray-50 rounded border">
-                <span className="font-medium text-gray-800">~70 m²</span>
-                <span className="font-bold text-gray-900">1 500€ - 2 500€</span>
+              <div className="flex justify-between items-center p-3 bg-muted rounded border">
+                <span className="font-medium text-foreground">~70 m²</span>
+                <span className="font-bold text-foreground">1 500€ - 2 500€</span>
               </div>
-              <div className="flex justify-between items-center p-3 bg-gray-50 rounded border">
-                <span className="font-medium text-gray-800">~100 m²</span>
-                <span className="font-bold text-gray-900">2 000€ - 3 500€</span>
+              <div className="flex justify-between items-center p-3 bg-muted rounded border">
+                <span className="font-medium text-foreground">~100 m²</span>
+                <span className="font-bold text-foreground">2 000€ - 3 500€</span>
               </div>
-              <div className="flex justify-between items-center p-3 bg-gray-50 rounded border">
-                <span className="font-medium text-gray-800">~150 m²</span>
-                <span className="font-bold text-gray-900">3 000€ - 5 000€</span>
+              <div className="flex justify-between items-center p-3 bg-muted rounded border">
+                <span className="font-medium text-foreground">~150 m²</span>
+                <span className="font-bold text-foreground">3 000€ - 5 000€</span>
               </div>
             </div>
             
-            <div className="p-4 bg-gray-100 rounded border">
-              <p className="text-sm text-gray-700">
+            <div className="p-4 bg-muted rounded border">
+              <p className="text-sm text-foreground">
                 <strong>Note :</strong> Ces chiffres sont des estimations et peuvent varier en fonction de l'état exact du logement et des services spécifiques requis.
               </p>
             </div>
           </div>
 
           {/* Services Inclus */}
-          <div className="bg-white rounded-lg shadow-lg p-6 mb-8">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">
+          <div className="bg-card rounded-lg shadow-lg p-6 mb-8 border">
+            <h2 className="text-2xl font-bold text-foreground mb-6">
               Services Spécialisés Inclus
             </h2>
-            <p className="text-gray-700 mb-6">
+            <p className="text-foreground mb-6">
               Chez SOS Nettoyage Diogène, nos interventions incluent systématiquement :
             </p>
 
             {/* Image des services */}
-            <div className="mb-6">
+            <div className="mb-6 max-w-md mx-auto">
               <img 
                 src={images[1].src}
                 alt={images[1].alt}
@@ -145,7 +145,7 @@ export default function PrixDiogene() {
             </div>
 
             <div className="grid md:grid-cols-2 gap-4">
-              <ul className="space-y-3 text-gray-700">
+              <ul className="space-y-3 text-foreground">
                 <li className="flex items-start">
                   <span className="text-gray-600 mr-2">✓</span>
                   <span><strong>Débarras Complet :</strong> Tri minutieux et évacuation écologique de tous les objets et déchets.</span>
@@ -160,7 +160,7 @@ export default function PrixDiogene() {
                 </li>
               </ul>
               
-              <ul className="space-y-3 text-gray-700">
+              <ul className="space-y-3 text-foreground">
                 <li className="flex items-start">
                   <span className="text-gray-600 mr-2">✓</span>
                   <span><strong>Nettoyage Extrême :</strong> Nettoyage approfondi des sols, murs, plafonds et vitres.</span>
@@ -179,17 +179,17 @@ export default function PrixDiogene() {
 
 
           {/* Devis et Ressources */}
-          <div className="bg-white rounded-lg shadow-lg p-6 mb-8">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">
+          <div className="bg-card rounded-lg shadow-lg p-6 mb-8 border">
+            <h2 className="text-2xl font-bold text-foreground mb-6">
               Obtenir un Devis Personnalisé et Transparent
             </h2>
             
-            <p className="text-gray-700 mb-6">
+            <p className="text-foreground mb-6">
               Pour vous offrir une estimation précise et sans surprise, SOS Nettoyage Diogène propose :
             </p>
 
             {/* Image de fin d'intervention */}
-            <div className="mb-6">
+            <div className="mb-6 max-w-md mx-auto">
               <img 
                 src={images[2].src}
                 alt={images[2].alt}
@@ -199,8 +199,8 @@ export default function PrixDiogene() {
 
             <div className="grid md:grid-cols-2 gap-6 mb-6">
               <div>
-                <h3 className="text-lg font-semibold text-gray-800 mb-4">Notre Process</h3>
-                <ul className="space-y-3 text-gray-700">
+                <h3 className="text-lg font-semibold text-foreground mb-4">Notre Process</h3>
+                <ul className="space-y-3 text-foreground">
                   <li className="flex items-start">
                     <span className="text-gray-600 mr-2">1.</span>
                     <span><strong>Devis Gratuit et Sans Engagement :</strong> Contactez-nous pour une première évaluation par téléphone.</span>
@@ -217,8 +217,8 @@ export default function PrixDiogene() {
               </div>
 
               <div>
-                <h3 className="text-lg font-semibold text-gray-800 mb-4">Pourquoi Choisir SOS Nettoyage Diogène ?</h3>
-                <ul className="space-y-3 text-gray-700">
+                <h3 className="text-lg font-semibold text-foreground mb-4">Pourquoi Choisir SOS Nettoyage Diogène ?</h3>
+                <ul className="space-y-3 text-foreground">
                   <li className="flex items-start">
                     <span className="text-gray-600 mr-2">✓</span>
                     <span><strong>Équipe Experte :</strong> Professionnels formés aux situations les plus difficiles</span>
@@ -240,11 +240,11 @@ export default function PrixDiogene() {
             </div>
 
             {/* Ressources Utiles */}
-            <div className="bg-gray-50 p-4 rounded border">
-              <h3 className="text-lg font-semibold text-gray-900 mb-3">
+            <div className="bg-muted p-4 rounded border">
+              <h3 className="text-lg font-semibold text-foreground mb-3">
                 Ressources Utiles
               </h3>
-              <p className="text-gray-700 mb-3">
+              <p className="text-foreground mb-3">
                 Si vous êtes locataire, propriétaire ou bailleur et que vous rencontrez des désordres dans un logement 
                 qui n'ont pas été pris en charge malgré vos démarches, vous pouvez utiliser la plateforme Signal Logement 
                 pour constituer et suivre votre dossier auprès des services compétents.
@@ -261,24 +261,24 @@ export default function PrixDiogene() {
           </div>
 
           {/* CTA Final */}
-          <div className="bg-white rounded-lg shadow-lg p-6 text-center">
-            <h2 className="text-2xl font-bold mb-4 text-gray-900">
+          <div className="bg-card rounded-lg shadow-lg p-6 text-center border">
+            <h2 className="text-2xl font-bold mb-4 text-foreground">
               Besoin d'un Devis pour une Intervention Diogène ?
             </h2>
-            <p className="text-gray-700 mb-6">
+            <p className="text-foreground mb-6">
               Contactez <strong>SOS Nettoyage Diogène</strong> pour une estimation gratuite et personnalisée. 
               Notre expertise unique dans le nettoyage d'insalubrité et de l'extrême vous garantit une intervention professionnelle et respectueuse.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <a 
                 href="tel:0767135458" 
-                className="inline-block bg-gray-800 text-white px-6 py-3 rounded-lg font-bold hover:bg-gray-900 transition-colors duration-300"
+                className="inline-block bg-primary text-primary-foreground px-6 py-3 rounded-lg font-bold hover:bg-primary/90 transition-colors duration-300"
               >
                 📞 07 67 13 54 58
               </a>
               <a 
                 href="https://sosnettoyagediogene.fr" 
-                className="inline-block bg-gray-100 text-gray-800 border border-gray-300 px-6 py-3 rounded-lg font-bold hover:bg-gray-200 transition-colors duration-300"
+                className="inline-block bg-secondary text-secondary-foreground border border-border px-6 py-3 rounded-lg font-bold hover:bg-secondary/80 transition-colors duration-300"
               >
                 🌐 Voir le site web
               </a>
