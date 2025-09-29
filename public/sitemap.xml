@@ -150,8 +150,15 @@
   
   <url>
     <loc>https://sosnettoyagediogene.fr/meilleures-societes-nettoyage-montpellier</loc>
-    <lastmod>2025-09-29</lastmod>
+    <lastmod>2025-01-20</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>2025-01-27</priority>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://sosnettoyagediogene.fr/prix-diogene</loc>
+    <lastmod>2025-01-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 </urlset>
