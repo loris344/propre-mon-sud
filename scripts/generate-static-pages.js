@@ -185,6 +185,12 @@ const pagesMeta = {
     keywords: "entreprise nettoyage Marseille, nettoyage professionnel Marseille, société nettoyage Bouches-du-Rhône, nettoyage spécialisé Marseille, syndrome diogène Marseille, nettoyage après décès Marseille, débarras Marseille, désinfection Marseille",
     canonical: "/entreprise-nettoyage-marseille"
   },
+  '/meilleures-societes-nettoyage-montpellier': {
+    title: "Les 10 Meilleures Sociétés de Nettoyage à Montpellier : Votre Guide Complet 2025",
+    description: "Découvrez notre classement des meilleures entreprises de nettoyage à Montpellier. SOS Nettoyage Diogène, Au'clean, Nova Clean et plus. Services spécialisés et expertise reconnue dans l'Hérault.",
+    keywords: "société de nettoyage, Montpellier, nettoyage professionnel, entreprise nettoyage, Hérault, SOS Nettoyage Diogène, Au'clean, Nova Clean, nettoyage bureaux, nettoyage industriel",
+    canonical: "/meilleures-societes-nettoyage-montpellier"
+  },
 };
 
 // Template HTML de base
