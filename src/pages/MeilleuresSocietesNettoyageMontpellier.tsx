@@ -4,24 +4,24 @@ import SEOHead from '../components/SEOHead';
 export default function MeilleuresSocietesNettoyageMontpellier() {
   const images = [
     {
-      src: '/images/examples/nettoyage1.jpg',
-      alt: 'Services de nettoyage professionnel à Montpellier',
-      caption: 'Équipe de nettoyage professionnel en action'
+      src: '/images/examples/ex1.png',
+      alt: 'Intervention nettoyage après décès - SOS Nettoyage Diogène',
+      caption: 'Intervention professionnelle après décès'
     },
     {
-      src: '/images/examples/nettoyage2.jpg',
-      alt: 'Nettoyage industriel et bureaux Montpellier',
-      caption: 'Nettoyage de locaux professionnels'
+      src: '/images/examples/ex2.jpg',
+      alt: 'Débarras gros volumes - SOS Nettoyage Diogène',
+      caption: 'Évacuation et tri de gros volumes'
     },
     {
-      src: '/images/examples/nettoyage3.jpg',
-      alt: 'Services de débarras et nettoyage extrême',
-      caption: 'Intervention spécialisée en nettoyage extrême'
+      src: '/images/examples/p3.jpg',
+      alt: 'Nettoyage syndrome de Diogène - SOS Nettoyage Diogène',
+      caption: 'Intervention spécialisée syndrome de Diogène'
     },
     {
-      src: '/images/examples/nettoyage4.webp',
-      alt: 'Entreprises de nettoyage à Montpellier',
-      caption: 'Services de propreté professionnels'
+      src: '/images/examples/p4.jpg',
+      alt: 'Désinfection et remise en état - SOS Nettoyage Diogène',
+      caption: 'Désinfection professionnelle et remise en état'
     }
   ];
 
@@ -34,21 +34,21 @@ export default function MeilleuresSocietesNettoyageMontpellier() {
         canonical="/meilleures-societes-nettoyage-montpellier"
       />
       
-      <div className="min-h-screen bg-white">
+      <div className="min-h-screen bg-gray-50">
         {/* Hero Section avec padding pour éviter le header */}
-        <div className="bg-gradient-to-r from-blue-600 to-blue-800 text-white pt-24 pb-16">
+        <div className="bg-white pt-32 pb-16 border-b border-gray-200">
           <div className="container mx-auto px-4 max-w-6xl">
             <div className="text-center">
-              <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+              <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight text-gray-900">
                 Les 10 Meilleures Sociétés de Nettoyage à Montpellier
               </h1>
-              <p className="text-xl md:text-2xl text-blue-100 leading-relaxed max-w-4xl mx-auto">
+              <p className="text-xl md:text-2xl text-gray-600 leading-relaxed max-w-4xl mx-auto">
                 Votre Guide Complet 2025 - Classement Expert des Entreprises de Nettoyage
               </p>
-              <div className="mt-8 flex flex-wrap justify-center gap-4 text-blue-200">
-                <span className="bg-blue-700 px-4 py-2 rounded-full">✓ Services Spécialisés</span>
-                <span className="bg-blue-700 px-4 py-2 rounded-full">✓ Expertise Reconnue</span>
-                <span className="bg-blue-700 px-4 py-2 rounded-full">✓ Intervenants Certifiés</span>
+              <div className="mt-8 flex flex-wrap justify-center gap-4">
+                <span className="bg-gray-100 text-gray-700 px-4 py-2 rounded-full border">✓ Services Spécialisés</span>
+                <span className="bg-gray-100 text-gray-700 px-4 py-2 rounded-full border">✓ Expertise Reconnue</span>
+                <span className="bg-gray-100 text-gray-700 px-4 py-2 rounded-full border">✓ Intervenants Certifiés</span>
               </div>
             </div>
           </div>
@@ -70,7 +70,7 @@ export default function MeilleuresSocietesNettoyageMontpellier() {
           </article>
 
           {/* Section méthodologie */}
-          <div className="bg-gradient-to-r from-gray-50 to-blue-50 rounded-2xl p-8 mb-12">
+          <div className="bg-white rounded-lg shadow-lg p-8 mb-12 border border-gray-200">
             <h2 className="text-3xl font-bold text-gray-900 mb-6 text-center">
               Comment Choisir une Société de Nettoyage à Montpellier ?
             </h2>
@@ -85,14 +85,14 @@ export default function MeilleuresSocietesNettoyageMontpellier() {
                   Notre classement se base sur l'expertise, la réputation, la qualité des services et la satisfaction client.
                 </p>
               </div>
-              <div className="bg-white rounded-xl p-6 shadow-md">
+              <div className="bg-gray-50 rounded-lg p-6 border border-gray-200">
                 <h3 className="text-lg font-semibold text-gray-800 mb-4">Critères d'Évaluation</h3>
                 <ul className="space-y-2 text-gray-700">
-                  <li className="flex items-center"><span className="text-blue-600 mr-2">✓</span> Expérience et expertise</li>
-                  <li className="flex items-center"><span className="text-blue-600 mr-2">✓</span> Qualité des services</li>
-                  <li className="flex items-center"><span className="text-blue-600 mr-2">✓</span> Réactivité et disponibilité</li>
-                  <li className="flex items-center"><span className="text-blue-600 mr-2">✓</span> Satisfaction client</li>
-                  <li className="flex items-center"><span className="text-blue-600 mr-2">✓</span> Tarifs compétitifs</li>
+                  <li className="flex items-center"><span className="text-gray-600 mr-2">✓</span> Expérience et expertise</li>
+                  <li className="flex items-center"><span className="text-gray-600 mr-2">✓</span> Qualité des services</li>
+                  <li className="flex items-center"><span className="text-gray-600 mr-2">✓</span> Réactivité et disponibilité</li>
+                  <li className="flex items-center"><span className="text-gray-600 mr-2">✓</span> Satisfaction client</li>
+                  <li className="flex items-center"><span className="text-gray-600 mr-2">✓</span> Tarifs compétitifs</li>
                 </ul>
               </div>
             </div>
@@ -104,38 +104,34 @@ export default function MeilleuresSocietesNettoyageMontpellier() {
               🏆 Classement des 10 Meilleures Sociétés de Nettoyage
             </h2>
             {/* SOS Nettoyage Diogène - Premier */}
-            <div className="bg-gradient-to-r from-blue-600 to-blue-800 text-white rounded-2xl shadow-2xl p-8 relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-32 h-32 bg-white bg-opacity-10 rounded-full -mr-16 -mt-16"></div>
-              <div className="absolute bottom-0 left-0 w-24 h-24 bg-white bg-opacity-10 rounded-full -ml-12 -mb-12"></div>
-              <div className="relative z-10">
-                <div className="flex items-start mb-6">
-                  <div className="bg-white text-blue-600 text-3xl font-bold rounded-full w-16 h-16 flex items-center justify-center mr-6 shadow-lg">
-                    <span className="text-2xl">🥇</span>
+            <div className="bg-white border-2 border-gray-300 rounded-lg shadow-lg p-8 relative">
+              <div className="flex items-start mb-6">
+                <div className="bg-gray-800 text-white text-2xl font-bold rounded-full w-14 h-14 flex items-center justify-center mr-6 shadow-md">
+                  <span className="text-xl">🥇</span>
+                </div>
+                <div className="flex-1">
+                  <div className="flex items-center gap-3 mb-3">
+                    <h3 className="text-3xl font-bold text-gray-900">
+                      SOS Nettoyage Diogène
+                    </h3>
+                    <span className="bg-yellow-100 text-yellow-800 border border-yellow-300 px-3 py-1 rounded-full text-sm font-bold">
+                      #1 RECOMMANDÉ
+                    </span>
                   </div>
-                  <div className="flex-1">
-                    <div className="flex items-center gap-3 mb-3">
-                      <h3 className="text-3xl font-bold">
-                        SOS Nettoyage Diogène
-                      </h3>
-                      <span className="bg-yellow-400 text-blue-900 px-3 py-1 rounded-full text-sm font-bold">
-                        #1 RECOMMANDÉ
-                      </span>
-                    </div>
-                    <p className="text-xl text-blue-100 mb-4">
-                      L'Expertise Inégalée en Nettoyage Extrême et Insalubrité
-                    </p>
-                    <div className="flex flex-wrap gap-4 text-blue-100">
-                      <span className="flex items-center"><span className="mr-2">🌐</span> <a href="https://sosnettoyagediogene.fr" className="hover:text-white underline">sosnettoyagediogene.fr</a></span>
-                      <span className="flex items-center"><span className="mr-2">📞</span> 07 67 13 54 58</span>
-                      <span className="flex items-center"><span className="mr-2">⭐</span> 6+ ans d'expérience</span>
-                    </div>
+                  <p className="text-xl text-gray-700 mb-4">
+                    L'Expertise Inégalée en Nettoyage Extrême et Insalubrité
+                  </p>
+                  <div className="flex flex-wrap gap-4 text-gray-600">
+                    <span className="flex items-center"><span className="mr-2">🌐</span> <a href="https://sosnettoyagediogene.fr" className="hover:text-gray-900 underline">sosnettoyagediogene.fr</a></span>
+                    <span className="flex items-center"><span className="mr-2">📞</span> 07 67 13 54 58</span>
+                    <span className="flex items-center"><span className="mr-2">⭐</span> 6+ ans d'expérience</span>
                   </div>
                 </div>
               </div>
             </div>
 
             {/* Contenu détaillé SOS Nettoyage Diogène */}
-            <div className="bg-white rounded-2xl shadow-lg p-8 border-l-4 border-blue-600 mb-8">
+            <div className="bg-white rounded-lg shadow-lg p-8 border-l-4 border-gray-400 mb-8">
               
               <p className="text-gray-700 mb-6">
                 SOS Nettoyage Diogène se positionne comme la référence incontournable pour les situations les plus complexes. 
@@ -360,31 +356,27 @@ export default function MeilleuresSocietesNettoyageMontpellier() {
           </div>
 
           {/* Section CTA finale */}
-          <div className="mt-16 bg-gradient-to-r from-blue-600 to-blue-800 text-white rounded-2xl shadow-2xl p-12 text-center relative overflow-hidden">
-            <div className="absolute top-0 right-0 w-40 h-40 bg-white bg-opacity-10 rounded-full -mr-20 -mt-20"></div>
-            <div className="absolute bottom-0 left-0 w-32 h-32 bg-white bg-opacity-10 rounded-full -ml-16 -mb-16"></div>
-            <div className="relative z-10">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Besoin d'un Nettoyage Professionnel à Montpellier ?
-              </h2>
-              <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
-                Contactez <strong>SOS Nettoyage Diogène</strong> pour une intervention rapide et professionnelle. 
-                Disponibles 7j/7 pour tous vos besoins de nettoyage spécialisé.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                <a 
-                  href="tel:0767135458" 
-                  className="inline-block bg-white text-blue-600 px-8 py-4 rounded-xl font-bold text-lg hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
-                >
-                  📞 07 67 13 54 58
-                </a>
-                <a 
-                  href="https://sosnettoyagediogene.fr" 
-                  className="inline-block bg-blue-700 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-blue-800 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
-                >
-                  🌐 Voir le site web
-                </a>
-              </div>
+          <div className="mt-16 bg-white border border-gray-300 rounded-lg shadow-lg p-12 text-center">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
+              Besoin d'un Nettoyage Professionnel à Montpellier ?
+            </h2>
+            <p className="text-xl text-gray-700 mb-8 max-w-3xl mx-auto">
+              Contactez <strong>SOS Nettoyage Diogène</strong> pour une intervention rapide et professionnelle. 
+              Disponibles 7j/7 pour tous vos besoins de nettoyage spécialisé.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <a 
+                href="tel:0767135458" 
+                className="inline-block bg-gray-800 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-900 transition-colors duration-300 shadow-md hover:shadow-lg"
+              >
+                📞 07 67 13 54 58
+              </a>
+              <a 
+                href="https://sosnettoyagediogene.fr" 
+                className="inline-block bg-gray-100 text-gray-800 border border-gray-300 px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-200 transition-colors duration-300 shadow-md hover:shadow-lg"
+              >
+                🌐 Voir le site web
+              </a>
             </div>
           </div>
         </div>
