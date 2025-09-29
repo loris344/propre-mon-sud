@@ -29,6 +29,7 @@ import TousNosServices from "./pages/TousNosServices";
 import EntrepriseNettoyageMontpellier from "./pages/EntrepriseNettoyageMontpellier";
 import EntrepriseNettoyageMarseille from "./pages/EntrepriseNettoyageMarseille";
 import MeilleuresSocietesNettoyageMontpellier from "./pages/MeilleuresSocietesNettoyageMontpellier";
+import PrixDiogene from "./pages/PrixDiogene";
 
 const App = () => (
   <HelmetProvider>
@@ -65,6 +66,7 @@ const App = () => (
         <Route path="/entreprise-nettoyage-montpellier" element={<EntrepriseNettoyageMontpellier />} />
         <Route path="/entreprise-nettoyage-marseille" element={<EntrepriseNettoyageMarseille />} />
         <Route path="/meilleures-societes-nettoyage-montpellier" element={<MeilleuresSocietesNettoyageMontpellier />} />
+        <Route path="/prix-diogene" element={<PrixDiogene />} />
         
         <Route path="/debarras-gros-volumes-montpellier" element={<ServicePage />} />
         

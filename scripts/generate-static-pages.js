@@ -191,6 +191,12 @@ const pagesMeta = {
     keywords: "société de nettoyage, Montpellier, nettoyage professionnel, entreprise nettoyage, Hérault, SOS Nettoyage Diogène, Au'clean, Nova Clean, nettoyage bureaux, nettoyage industriel",
     canonical: "/meilleures-societes-nettoyage-montpellier"
   },
+  '/prix-diogene': {
+    title: "Prix Diogène : L'Expertise de SOS Nettoyage Diogène pour les Interventions Extrêmes",
+    description: "Découvrez nos tarifs pour le nettoyage syndrome de Diogène. Devis gratuit et transparent pour interventions spécialisées. SOS Nettoyage Diogène : expertise, discrétion et approche humaine dans tout le Sud de la France.",
+    keywords: "prix diogène, tarif nettoyage syndrome diogène, devis nettoyage insalubrité, coût intervention diogène, prix nettoyage extrême, SOS nettoyage diogène, montpellier, sete, beziers, nimes, perpignan, marseille, herault, gard, pyrenees-orientales",
+    canonical: "/prix-diogene"
+  },
 };
 
 // Template HTML de base

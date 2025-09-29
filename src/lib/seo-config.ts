@@ -186,6 +186,22 @@ export const SEO_CONFIGS: Record<string, SEOConfig> = {
     canonical: "/entreprise-nettoyage-marseille"
   },
 
+  // Page guide des meilleures sociétés
+  '/meilleures-societes-nettoyage-montpellier': {
+    title: "Les 10 Meilleures Sociétés de Nettoyage à Montpellier : Votre Guide Complet 2025",
+    description: "Découvrez notre classement des meilleures entreprises de nettoyage à Montpellier. SOS Nettoyage Diogène, Au'clean, Nova Clean et plus. Services spécialisés et expertise reconnue dans l'Hérault.",
+    keywords: "société de nettoyage, Montpellier, nettoyage professionnel, entreprise nettoyage, Hérault, SOS Nettoyage Diogène, Au'clean, Nova Clean, nettoyage bureaux, nettoyage industriel",
+    canonical: "/meilleures-societes-nettoyage-montpellier"
+  },
+
+  // Page prix Diogène
+  '/prix-diogene': {
+    title: "Prix Diogène : L'Expertise de SOS Nettoyage Diogène pour les Interventions Extrêmes",
+    description: "Découvrez nos tarifs pour le nettoyage syndrome de Diogène. Devis gratuit et transparent pour interventions spécialisées. SOS Nettoyage Diogène : expertise, discrétion et approche humaine dans tout le Sud de la France.",
+    keywords: "prix diogène, tarif nettoyage syndrome diogène, devis nettoyage insalubrité, coût intervention diogène, prix nettoyage extrême, SOS nettoyage diogène, montpellier, sete, beziers, nimes, perpignan, marseille, herault, gard, pyrenees-orientales",
+    canonical: "/prix-diogene"
+  },
+
   // Page 404
   '/404': {
     title: "Page Non Trouvée | SOS Nettoyage Diogène | Montpellier, Sète, Béziers, Nîmes, Perpignan, Marseille, Nice, Toulouse",
