@@ -4,24 +4,24 @@ import SEOHead from '../components/SEOHead';
 export default function MeilleuresSocietesNettoyageMontpellier() {
   const images = [
     {
-      src: '/images/examples/ex1.png',
-      alt: 'Intervention nettoyage après décès - SOS Nettoyage Diogène',
-      caption: 'Intervention professionnelle après décès'
+      src: '/images/examples/nettoyage1.jpg',
+      alt: 'Services de nettoyage professionnel à Montpellier',
+      caption: 'Équipe de nettoyage professionnel en action'
     },
     {
-      src: '/images/examples/ex2.jpg',
-      alt: 'Débarras gros volumes - SOS Nettoyage Diogène',
-      caption: 'Évacuation et tri de gros volumes'
+      src: '/images/examples/nettoyage2.jpg',
+      alt: 'Nettoyage industriel et bureaux Montpellier',
+      caption: 'Nettoyage de locaux professionnels'
     },
     {
-      src: '/images/examples/p3.jpg',
-      alt: 'Nettoyage syndrome de Diogène - SOS Nettoyage Diogène',
-      caption: 'Intervention spécialisée syndrome de Diogène'
+      src: '/images/examples/nettoyage3.jpg',
+      alt: 'Services de débarras et nettoyage extrême',
+      caption: 'Intervention spécialisée en nettoyage extrême'
     },
     {
-      src: '/images/examples/p4.jpg',
-      alt: 'Désinfection et remise en état - SOS Nettoyage Diogène',
-      caption: 'Désinfection professionnelle et remise en état'
+      src: '/images/examples/nettoyage4.webp',
+      alt: 'Entreprises de nettoyage à Montpellier',
+      caption: 'Services de propreté professionnels'
     }
   ];
 
@@ -318,7 +318,7 @@ export default function MeilleuresSocietesNettoyageMontpellier() {
           {/* Section avec images */}
           <div className="mt-12 bg-white rounded-lg shadow-lg p-8">
             <h2 className="text-2xl font-semibold text-gray-900 mb-6">
-              Nos Interventions en Images
+              Exemples de Services de Nettoyage
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
               <img 
