@@ -15,6 +15,7 @@ import Header from "./components/Header";
 import MJPMPartnership from "./pages/MJPMPartnership";
 import DebarrasGrosVolumes from "./pages/DebarrasGrosVolumes";
 import NettoyageApresDeces from "./pages/NettoyageApresDeces";
+import NettoyageAppartementApresDeces from "./pages/NettoyageAppartementApresDeces";
 import DesinfectionInsalubrite from "./pages/DesinfectionInsalubrite";
 import MentionsLegales from "./pages/MentionsLegales";
 import SyndromeDiogeneMontpellier from "./pages/SyndromeDiogeneMontpellier";
@@ -48,6 +49,7 @@ const App = () => (
         {/* Nouvelles pages complètes */}
         <Route path="/debarras-gros-volumes" element={<DebarrasGrosVolumes />} />
         <Route path="/nettoyage-apres-deces" element={<NettoyageApresDeces />} />
+        <Route path="/nettoyage-appartement-apres-deces" element={<NettoyageAppartementApresDeces />} />
         <Route path="/desinfection-insalubrite" element={<DesinfectionInsalubrite />} />
         
         {/* Routes de services - pages spécifiques par ville */}

@@ -16,53 +16,23 @@ const __dirname = path.dirname(__filename);
 const SITE_URL = 'https://sosnettoyagediogene.fr';
 const BUILD_DIR = path.join(__dirname, '../dist');
 
-// Génération du sitemap simplifié
-function generateSitemap() {
-  const pages = [
-    // Pages principales
-    { url: '/', priority: '1.0', changefreq: 'weekly' },
+// Copie du sitemap depuis public/ vers dist/ avec mise à jour des dates
+function copySitemap() {
+  const publicSitemap = path.join(__dirname, '../public/sitemap.xml');
+  const distSitemap = path.join(BUILD_DIR, 'sitemap.xml');
+  
+  if (fs.existsSync(publicSitemap)) {
+    // Mettre à jour la date de dernière modification
+    let sitemapContent = fs.readFileSync(publicSitemap, 'utf8');
+    const today = new Date().toISOString().split('T')[0];
     
-    // Nouvelles pages complètes
-    { url: '/debarras-gros-volumes', priority: '0.9', changefreq: 'monthly' },
-    { url: '/nettoyage-apres-deces', priority: '0.9', changefreq: 'monthly' },
-    { url: '/desinfection-insalubrite', priority: '0.9', changefreq: 'monthly' },
+    // Remplacer toutes les dates lastmod par la date d'aujourd'hui
+    sitemapContent = sitemapContent.replace(/<lastmod>\d{4}-\d{2}-\d{2}<\/lastmod>/g, `<lastmod>${today}</lastmod>`);
     
-    // Blog et articles
-    { url: '/blog', priority: '0.9', changefreq: 'weekly' },
-    { url: '/blog/syndrome-diogene-identifier-gerer', priority: '0.8', changefreq: 'monthly' },
-    { url: '/blog/debarras-apres-deces-accompagnement', priority: '0.8', changefreq: 'monthly' },
-    { url: '/blog/desinfection-assainissement-protocoles', priority: '0.8', changefreq: 'monthly' },
-    { url: '/blog/prevention-insalubrite-conseils', priority: '0.8', changefreq: 'monthly' },
-    
-    // Services par ville
-    { url: '/nettoyage-syndrome-diogene-montpellier', priority: '0.9', changefreq: 'monthly' },
-    { url: '/nettoyage-syndrome-diogene-sete', priority: '0.8', changefreq: 'monthly' },
-    { url: '/nettoyage-syndrome-diogene-beziers', priority: '0.8', changefreq: 'monthly' },
-    { url: '/nettoyage-syndrome-diogene-nimes', priority: '0.8', changefreq: 'monthly' },
-    { url: '/nettoyage-syndrome-diogene-perpignan', priority: '0.8', changefreq: 'monthly' },
-    { url: '/partenariat-maisons-retraite', priority: '0.6', changefreq: 'monthly' },
-    
-    // Page mentions légales
-    { url: '/mentions-legales', priority: '0.3', changefreq: 'yearly' }
-  ];
-
-  let sitemap = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-`;
-
-  pages.forEach(page => {
-    sitemap += `  <url>
-    <loc>${SITE_URL}${page.url}</loc>
-    <lastmod>2025-01-21</lastmod>
-    <changefreq>${page.changefreq || 'monthly'}</changefreq>
-    <priority>${page.priority}</priority>
-  </url>
-`;
-  });
-
-  sitemap += `</urlset>`;
-
-  return sitemap;
+    fs.writeFileSync(distSitemap, sitemapContent);
+    return true;
+  }
+  return false;
 }
 
 // Génération du robots.txt
@@ -170,10 +140,12 @@ function build() {
     fs.mkdirSync(BUILD_DIR, { recursive: true });
   }
   
-  // Générer le sitemap
-  const sitemap = generateSitemap();
-  fs.writeFileSync(path.join(BUILD_DIR, 'sitemap.xml'), sitemap);
-  console.log('✅ Sitemap généré');
+  // Copier le sitemap depuis public/ vers dist/
+  if (copySitemap()) {
+    console.log('✅ Sitemap copié et mis à jour');
+  } else {
+    console.log('❌ Erreur: sitemap.xml non trouvé dans public/');
+  }
   
   // Générer le robots.txt
   const robotsTxt = generateRobotsTxt();

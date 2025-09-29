@@ -70,6 +70,13 @@ export const SEO_CONFIGS: Record<string, SEOConfig> = {
     canonical: "/nettoyage-apres-deces"
   },
 
+  '/nettoyage-appartement-apres-deces': {
+    title: "Nettoyage Appartement Après Décès - Service Professionnel et Discret | SOS Nettoyage Diogène",
+    description: "Service spécialisé de nettoyage d'appartement après décès. Bio-nettoyage, désinfection et remise en état avec protocoles sanitaires stricts. Intervention rapide et discrète dans tout le Sud de la France.",
+    keywords: `nettoyage appartement après décès, bio-nettoyage, désinfection après décès, remise en état, protocoles sanitaires, intervention discrète, ${DEFAULT_LOCATIONS}`,
+    canonical: "/nettoyage-appartement-apres-deces"
+  },
+
   '/debarras-gros-volumes': {
     title: "Débarras Gros Volumes | Évacuation Professionnelle | SOS Nettoyage Diogène | Montpellier, Sète, Béziers, Nîmes, Perpignan, Marseille, Nice, Toulouse",
     description: "Service professionnel de débarras et évacuation gros volumes à Montpellier, Sète, Béziers, Nîmes, Perpignan, Marseille, Nice, Toulouse et tout le Sud de la France. Greniers, caves, garages, déménagements, successions. Tri et recyclage respectueux de l'environnement. Devis gratuit 7j/7.",

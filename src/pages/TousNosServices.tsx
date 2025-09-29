@@ -53,6 +53,9 @@ function getServicePages(): ServicePage[] {
       else if (url.includes('nimes')) city = 'Nîmes';
       else if (url.includes('perpignan')) city = 'Perpignan';
       else if (url.includes('marseille')) city = 'Marseille';
+    } else if (url.includes('nettoyage-appartement-apres-deces')) {
+      category = 'Nettoyage après décès';
+      icon = <Heart className="h-5 w-5" />;
     } else if (url.includes('apres-deces')) {
       category = 'Nettoyage après décès';
       icon = <Heart className="h-5 w-5" />;
