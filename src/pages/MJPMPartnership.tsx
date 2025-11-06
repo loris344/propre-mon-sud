@@ -89,8 +89,8 @@ const MJPMPartnership = () => {
               width="100%" 
               height="500" 
               frameBorder="0" 
-              marginHeight="0" 
-              marginWidth="0"
+              marginHeight={0} 
+              marginWidth={0}
               className="rounded-lg"
             >
               Chargement…
@@ -112,7 +112,6 @@ const MJPMPartnership = () => {
                 <span className="text-sm text-gray-600">📧 contact@sosnettoyagediogene.fr</span>
               </div>
               <div className="flex items-center gap-2">
-                <span className="text-sm text-gray-600">📞 07 67 13 54 58</span>
               </div>
             </div>
           </div>

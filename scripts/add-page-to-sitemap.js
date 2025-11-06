@@ -56,3 +56,8 @@ fs.writeFileSync(sitemapPath, sitemapContent);
 console.log(`✅ Page ${url} ajoutée au sitemap avec priorité ${priority} et fréquence ${changefreq}`);
 console.log('💡 N\'oubliez pas de faire "npm run build" pour déployer les changements !');
 
+
+
+
+
+

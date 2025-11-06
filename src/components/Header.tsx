@@ -120,10 +120,6 @@ const Header = () => {
           <div className="hidden lg:flex items-center space-x-2 flex-shrink-0">
             <AvailabilityIndicator />
             <ReviewsDisplay />
-            <Button variant="outline" size="sm" className="whitespace-nowrap text-xs px-2">
-              <Phone className="w-3 h-3" />
-              07 67 13 54 58
-            </Button>
             <Button 
               variant="hero" 
               size="sm"
@@ -134,19 +130,22 @@ const Header = () => {
             </Button>
           </div>
 
-          {/* Mobile Menu Button */}
-          <button
-            className="lg:hidden p-2 sm:p-3"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            aria-label={isMenuOpen ? "Fermer le menu" : "Ouvrir le menu"}
-            aria-expanded={isMenuOpen}
-          >
-            {isMenuOpen ? (
-              <X className="w-6 h-6 sm:w-7 sm:h-7 text-foreground" />
-            ) : (
-              <Menu className="w-6 h-6 sm:w-7 sm:h-7 text-foreground" />
-            )}
-          </button>
+          {/* Mobile CTA Elements */}
+          <div className="lg:hidden flex items-center space-x-2 flex-shrink-0">
+            <AvailabilityIndicator />
+            <button
+              className="p-2 sm:p-3"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              aria-label={isMenuOpen ? "Fermer le menu" : "Ouvrir le menu"}
+              aria-expanded={isMenuOpen}
+            >
+              {isMenuOpen ? (
+                <X className="w-6 h-6 sm:w-7 sm:h-7 text-foreground" />
+              ) : (
+                <Menu className="w-6 h-6 sm:w-7 sm:h-7 text-foreground" />
+              )}
+            </button>
+          </div>
         </div>
 
         {/* Mobile Navigation */}
@@ -194,10 +193,6 @@ const Header = () => {
                 <div className="flex justify-center">
                   <ReviewsDisplay />
                 </div>
-                <Button variant="outline" size="lg" className="w-full text-base sm:text-lg py-4 sm:py-6">
-                  <Phone className="w-5 h-5 sm:w-6 sm:h-6" />
-                  07 67 13 54 58
-                </Button>
                 <Button 
                   variant="hero" 
                   size="lg" 

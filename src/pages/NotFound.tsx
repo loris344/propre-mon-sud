@@ -87,7 +87,7 @@ const NotFound = () => {
                 className="text-base px-8"
               >
                 <Phone className="w-5 h-5" />
-                07 67 13 54 58
+                Contactez-nous
               </Button>
             </div>
           </div>

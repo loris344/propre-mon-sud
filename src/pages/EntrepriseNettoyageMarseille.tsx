@@ -219,9 +219,6 @@ const EntrepriseNettoyageMarseille: React.FC = () => {
                 <CardContent className="space-y-4">
                   <div className="flex items-center gap-3">
                     <Phone className="h-4 w-4 text-gray-600" />
-                    <a href="tel:0767135458" className="text-blue-600 hover:underline">
-                      07 67 13 54 58
-                    </a>
                   </div>
                   <div className="flex items-center gap-3">
                     <Mail className="h-4 w-4 text-gray-600" />
@@ -303,12 +300,6 @@ const EntrepriseNettoyageMarseille: React.FC = () => {
               Contactez-nous pour une intervention professionnelle à Marseille et dans tout le département
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" variant="secondary">
-                <a href="tel:0767135458">
-                  <Phone className="h-4 w-4 mr-2" />
-                  07 67 13 54 58
-                </a>
-              </Button>
               <Button asChild size="lg" variant="outline" className="bg-transparent border-white text-white hover:bg-white hover:text-blue-600">
                 <a href="/#contact">
                   Demander un devis

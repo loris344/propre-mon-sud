@@ -35,13 +35,6 @@ const Footer = () => {
             <h3 className="font-semibold text-foreground text-lg">Contact</h3>
             <div className="space-y-3">
               <div className="flex items-center gap-3">
-                <Phone className="w-5 h-5 text-primary flex-shrink-0" />
-                <div>
-                  <div className="font-medium text-foreground">07 67 13 54 58</div>
-                  <div className="text-sm text-muted-foreground">Urgence 7j/7</div>
-                </div>
-              </div>
-              <div className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-primary flex-shrink-0" />
                 <div>
                   <div className="font-medium text-foreground">contact@sosnettoyagediogene.fr</div>
@@ -155,12 +148,6 @@ const Footer = () => {
                   className="text-primary hover:text-primary/80 transition-colors"
                 >
                   Partenariat
-                </Link>
-                <Link 
-                  to="/mentions-legales"
-                  className="text-primary hover:text-primary/80 transition-colors"
-                >
-                  Mentions Légales
                 </Link>
               </div>
             </div>

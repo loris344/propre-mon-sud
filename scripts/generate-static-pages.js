@@ -118,12 +118,6 @@ const pagesMeta = {
     keywords: "page non trouvée, 404, erreur, nettoyage, débarras, services, montpellier, sete, beziers, nimes, perpignan, marseille, nice, toulouse, herault, gard, pyrenees-orientales, bouches-du-rhone, alpes-maritimes, haute-garonne",
     canonical: "/404"
   },
-  '/mentions-legales': {
-    title: "Mentions Légales | SOS Nettoyage Diogène | Société de Nettoyage Professionnel",
-    description: "Mentions légales de SOS Nettoyage Diogène - Société spécialisée dans le nettoyage et débarras syndrome de Diogène. Informations légales, coordonnées et données de l'entreprise.",
-    keywords: "mentions légales, SOS nettoyage diogène, société nettoyage, débarras professionnel, informations légales, coordonnées entreprise, SIREN, SIRET",
-    canonical: "/mentions-legales"
-  },
   // Pages dynamiques ville/service
   '/nettoyage-syndrome-diogene-montpellier': {
     title: "Nettoyage Syndrome de Diogène à Montpellier | Service Professionnel | SOS Nettoyage Diogène",
@@ -238,12 +232,11 @@ function getBaseHTML() {
       gtag('config', 'G-VDZL4FT7QQ');
       gtag('config', 'AW-17579670391');
     </script>
-    
+  </head>
+  <body>
     <!-- React App -->
     <div id="root"></div>
     <script type="module" src="/js/${jsFile}"></script>
-  </head>
-  <body>
     <noscript>Vous devez activer JavaScript pour utiliser cette application.</noscript>
   </body>
 </html>`;

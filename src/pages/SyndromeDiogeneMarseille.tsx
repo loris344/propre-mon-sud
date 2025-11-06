@@ -31,9 +31,6 @@ const SyndromeDiogeneMarseille: React.FC = () => {
               Intervention discrète et professionnelle à Marseille (1er–16e) et dans tout le 13: débarras gros volumes, tri sélectif, évacuation réglementée, désinfection et remise en état.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="tel:0767135458" className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
-                📞 07 67 13 54 58
-              </a>
               <Link to="/#contact" className="bg-blue-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-400 transition-colors">
                 📧 Devis Gratuit
               </Link>
@@ -141,7 +138,7 @@ const SyndromeDiogeneMarseille: React.FC = () => {
           <div className="bg-white p-8 rounded-lg shadow-lg mb-8">
             <h2 className="text-2xl font-bold text-gray-900 mb-6">Zones d'Intervention – Marseille et 13</h2>
             <p className="text-gray-700 mb-6">
-              Intervention sous 24–72h selon l'ampleur – <a href="tel:0767135458" className="text-blue-600 hover:underline">07 67 13 54 58</a>
+              Intervention sous 24–72h selon l'ampleur
             </p>
             <div className="grid md:grid-cols-2 gap-6">
               <div>
@@ -368,9 +365,6 @@ const SyndromeDiogeneMarseille: React.FC = () => {
               Discrétion garantie – Approche humaine
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="tel:0767135458" className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
-                📞 07 67 13 54 58
-              </a>
               <Link to="/#contact" className="bg-blue-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-400 transition-colors">
                 📧 Demander un Devis
               </Link>

@@ -106,7 +106,6 @@ function generateLlmsTxt() {
 
 ## Informations de Contact
 
-- **Téléphone** : 07 67 13 54 58
 - **Email** : contact@sosnettoyagediogene.fr
 - **Disponibilité** : 7j/7 de 8h00 à 20h00
 - **Urgences** : Intervention rapide acceptée en soirée
@@ -158,7 +157,7 @@ function build() {
   console.log('✅ llms.txt généré');
   
   // Nettoyer les images dupliquées copiées par Vite
-  const duplicateDirs = ['cities', 'examples', 'logos', 'services'];
+  const duplicateDirs = ['cities', 'examples', 'services'];
   duplicateDirs.forEach(dir => {
     const dirPath = path.join(BUILD_DIR, dir);
     if (fs.existsSync(dirPath)) {

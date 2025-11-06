@@ -123,7 +123,6 @@ export default function MeilleuresSocietesNettoyageMontpellier() {
                   </p>
                   <div className="flex flex-wrap gap-4 text-gray-600">
                     <span className="flex items-center"><span className="mr-2">🌐</span> <a href="https://sosnettoyagediogene.fr" className="hover:text-gray-900 underline">sosnettoyagediogene.fr</a></span>
-                    <span className="flex items-center"><span className="mr-2">📞</span> 07 67 13 54 58</span>
                     <span className="flex items-center"><span className="mr-2">⭐</span> 6+ ans d'expérience</span>
                   </div>
                 </div>
@@ -362,12 +361,6 @@ export default function MeilleuresSocietesNettoyageMontpellier() {
               Disponibles 7j/7 pour tous vos besoins de nettoyage spécialisé.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <a 
-                href="tel:0767135458" 
-                className="inline-block bg-gray-800 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-900 transition-colors duration-300 shadow-md hover:shadow-lg"
-              >
-                📞 07 67 13 54 58
-              </a>
               <a 
                 href="https://sosnettoyagediogene.fr" 
                 className="inline-block bg-gray-100 text-gray-800 border border-gray-300 px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-200 transition-colors duration-300 shadow-md hover:shadow-lg"

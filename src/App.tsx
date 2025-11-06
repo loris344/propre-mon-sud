@@ -17,7 +17,6 @@ import DebarrasGrosVolumes from "./pages/DebarrasGrosVolumes";
 import NettoyageApresDeces from "./pages/NettoyageApresDeces";
 import NettoyageAppartementApresDeces from "./pages/NettoyageAppartementApresDeces";
 import DesinfectionInsalubrite from "./pages/DesinfectionInsalubrite";
-import MentionsLegales from "./pages/MentionsLegales";
 import SyndromeDiogeneMontpellier from "./pages/SyndromeDiogeneMontpellier";
 import SyndromeDiogeneSete from "./pages/SyndromeDiogeneSete";
 import SyndromeDiogeneBeziers from "./pages/SyndromeDiogeneBeziers";
@@ -81,8 +80,6 @@ const App = () => (
         {/* Route partenariat MJPM (non visible publiquement) */}
         <Route path="/partenariat-mjpm" element={<MJPMPartnership />} />
         
-        {/* Route mentions légales */}
-        <Route path="/mentions-legales" element={<MentionsLegales />} />
         
         {/* Route 404 */}
         <Route path="*" element={<NotFound />} />

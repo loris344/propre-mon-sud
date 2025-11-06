@@ -17,13 +17,6 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 
-// Déclaration TypeScript pour gtag
-declare global {
-  interface Window {
-    gtag: (command: string, targetId: string, config?: any) => void;
-  }
-}
-
 interface FormErrors {
   firstName?: string;
   phone?: string;
@@ -97,13 +90,6 @@ const Contact = () => {
         // Marquer comme soumis
         setIsSubmitted(true);
         
-        // Événement de conversion Google Ads
-        if (typeof window !== 'undefined' && window.gtag) {
-          window.gtag('event', 'conversion', {
-            'send_to': 'AW-17579670391/JzBOCJz696AbEPf20b5B'
-          });
-        }
-        
         toast({
           title: "Demande envoyée avec succès !",
           description: "Votre demande a été transmise à notre équipe. Nous vous contacterons rapidement au " + formData.phone + ".",
@@ -129,7 +115,7 @@ const Contact = () => {
       console.error('Erreur lors de l\'envoi:', error);
       toast({
         title: "Erreur d'envoi",
-        description: "Une erreur est survenue lors de l'envoi de votre demande. Veuillez nous appeler directement au 07 67 13 54 58.",
+        description: "Une erreur est survenue lors de l'envoi de votre demande. Veuillez réessayer ou nous contacter par email.",
         variant: "destructive",
       });
     } finally {
@@ -286,9 +272,8 @@ const Contact = () => {
               <CardContent className="p-6 sm:p-8 text-center">
                 <Phone className="w-10 h-10 sm:w-12 sm:h-12 mx-auto mb-4" />
                 <h3 className="text-xl sm:text-2xl font-bold mb-2">Urgence 7j/7</h3>
-                <p className="text-lg sm:text-xl font-semibold mb-4">07 67 13 54 58</p>
                 <p className="text-primary-foreground/90 text-sm sm:text-base">
-                  Intervention rapide dans le Sud de la France
+                  Intervention rapide dans le Sud de la France : Occitanie, PACA, Nouvelle-Aquitaine
                 </p>
               </CardContent>
             </Card>
@@ -302,7 +287,7 @@ const Contact = () => {
                 <div>
                   <h4 className="font-semibold text-foreground mb-1 text-sm sm:text-base">Zone d'intervention</h4>
                   <p className="text-muted-foreground text-sm sm:text-base">
-                    Montpellier, Sète, Béziers, Nîmes, Perpignan, Marseille, Toulouse, Nice, Bordeaux et tout le Sud de la France
+                    Montpellier, Sète, Béziers, Nîmes, Perpignan, Toulouse, Marseille, Nice, Bordeaux et tout le Sud de la France
                   </p>
                 </div>
               </div>

@@ -31,9 +31,6 @@ const SyndromeDiogeneNimes: React.FC = () => {
               Service spécialisé de nettoyage et débarras pour les situations de syndrome de Diogène dans la ville romaine de Nîmes et le Gard
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="tel:0767135458" className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
-                📞 07 67 13 54 58
-              </a>
               <Link to="/#contact" className="bg-blue-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-400 transition-colors">
                 📧 Devis Gratuit
               </Link>
@@ -238,9 +235,6 @@ const SyndromeDiogeneNimes: React.FC = () => {
               Notre équipe spécialisée intervient rapidement dans tout le Gard
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="tel:0767135458" className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
-                📞 07 67 13 54 58
-              </a>
               <Link to="/#contact" className="bg-blue-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-400 transition-colors">
                 📧 Demande de Devis
               </Link>

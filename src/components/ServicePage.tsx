@@ -87,7 +87,7 @@ const ServicePage = () => {
                 <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
                   <Button variant="hero" size="lg" className="text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6">
                     <Phone className="w-4 h-4 sm:w-5 sm:h-5" />
-                    Devis Gratuit - {SITE_CONFIG.phone}
+                    Devis Gratuit
                   </Button>
                 </div>
               </div>
@@ -262,7 +262,6 @@ const ServicePage = () => {
                   <CardContent className="p-6 sm:p-8">
                     <Phone className="w-10 h-10 sm:w-12 sm:h-12 mx-auto mb-4" />
                     <h3 className="text-xl sm:text-2xl font-bold mb-2">Intervention d'Urgence</h3>
-                    <p className="text-lg sm:text-xl font-semibold mb-4">{SITE_CONFIG.phone}</p>
                     <p className="text-primary-foreground/90 text-sm sm:text-base">
                       Disponible 7j/7 de 8h à 20h pour tout le Sud de la France
                     </p>

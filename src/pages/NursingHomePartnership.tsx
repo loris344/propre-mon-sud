@@ -112,7 +112,6 @@ const NursingHomePartnership = () => {
                 <span className="text-sm text-gray-600">📧 contact@sosnettoyagediogene.fr</span>
               </div>
               <div className="flex items-center gap-2">
-                <span className="text-sm text-gray-600">📞 07 67 13 54 58</span>
               </div>
             </div>
           </div>

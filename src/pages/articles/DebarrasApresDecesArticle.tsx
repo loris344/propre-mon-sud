@@ -212,12 +212,6 @@ const DebarrasApresDecesArticle = () => {
                   >
                     Demander un devis
                   </button>
-                  <a 
-                    href="tel:0767135458"
-                    className="bg-green-600 text-white px-6 py-2 rounded-md hover:bg-green-700 transition-colors font-medium text-center"
-                  >
-                    📞 07 67 13 54 58
-                  </a>
                 </div>
               </div>
             </div>

@@ -119,7 +119,6 @@ npm run deploy:build
 
 ## 📞 Contact
 
-- **Téléphone** : 07 67 13 54 58
 - **Email** : contact@sosnettoyagediogene.fr
 - **Site** : https://sosnettoyagediogene.fr
 

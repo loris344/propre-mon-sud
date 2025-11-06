@@ -160,7 +160,7 @@ const NettoyageApresDeces = () => {
       console.error('Erreur lors de l\'envoi:', error);
       toast({
         title: "Erreur d'envoi",
-        description: "Une erreur est survenue lors de l'envoi de votre demande. Veuillez nous appeler directement au 07 67 13 54 58.",
+        description: "Une erreur est survenue lors de l'envoi de votre demande. Veuillez réessayer ou nous contacter par email.",
         variant: "destructive",
       });
     } finally {
@@ -227,7 +227,7 @@ const NettoyageApresDeces = () => {
                       }}
                     >
                       <Phone className="w-5 h-5" />
-                      Devis Gratuit - 07 67 13 54 58
+                      Devis Gratuit
                     </Button>
                   </div>
                 </div>
@@ -281,7 +281,7 @@ const NettoyageApresDeces = () => {
                             <input
                               type="tel"
                               className={`w-full px-3 py-2 border rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-primary ${errors.phone ? "border-red-500" : "border-border"}`}
-                              placeholder="07 67 13 54 58"
+                              placeholder="06 00 00 00 00"
                               value={formData.phone}
                               onChange={(e) => handleInputChange('phone', e.target.value)}
                             />
@@ -417,7 +417,6 @@ const NettoyageApresDeces = () => {
                 <CardContent className="p-8">
                   <Phone className="w-12 h-12 mx-auto mb-4" />
                   <h3 className="text-2xl font-bold mb-2">Intervention d'Urgence</h3>
-                  <p className="text-xl font-semibold mb-4">07 67 13 54 58</p>
                   <p className="text-primary-foreground/90">
                     Disponible 7j/7 de 8h à 20h pour tout le Sud de la France
                   </p>

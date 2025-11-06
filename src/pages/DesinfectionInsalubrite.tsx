@@ -83,7 +83,7 @@ const DesinfectionInsalubrite = () => {
                   }}
                 >
                   <Phone className="w-5 h-5" />
-                  Devis Gratuit - 07 67 13 54 58
+                  Devis Gratuit
                 </Button>
               </div>
             </div>
@@ -357,7 +357,6 @@ const DesinfectionInsalubrite = () => {
                 <CardContent className="p-8">
                   <Phone className="w-12 h-12 mx-auto mb-4" />
                   <h3 className="text-2xl font-bold mb-2">Intervention d'Urgence</h3>
-                  <p className="text-xl font-semibold mb-4">07 67 13 54 58</p>
                   <p className="text-primary-foreground/90">
                     Disponible 7j/7 de 8h à 20h pour tout le Sud de la France
                   </p>

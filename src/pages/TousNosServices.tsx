@@ -202,14 +202,8 @@ const TousNosServices: React.FC = () => {
                   <div className="p-4 bg-blue-100 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
                     <Phone className="h-8 w-8 text-blue-600" />
                   </div>
-                  <h3 className="text-lg font-semibold mb-2">Appelez-nous</h3>
+                  <h3 className="text-lg font-semibold mb-2">Contactez-nous</h3>
                   <p className="text-gray-600 mb-4">Disponible 7j/7</p>
-                  <a 
-                    href="tel:0767135458" 
-                    className="text-blue-600 font-semibold hover:underline"
-                  >
-                    07 67 13 54 58
-                  </a>
                 </div>
                 
                 <div className="text-center">
