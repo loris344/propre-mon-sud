@@ -30,6 +30,9 @@ const NettoyageApresDecesMarseille: React.FC = () => {
               Faire soi-même ou confier à des spécialistes — le guide clair, utile et actionnable pour agir correctement sans faux pas
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a href="tel:0605310199" className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                📞 06 05 31 01 99
+              </a>
               <Link to="/#contact" className="bg-blue-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-400 transition-colors">
                 📧 Devis Gratuit
               </Link>
@@ -353,6 +356,9 @@ const NettoyageApresDecesMarseille: React.FC = () => {
               Notre équipe spécialisée intervient rapidement à Marseille avec protocoles sanitaires stricts
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a href="tel:0605310199" className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                📞 06 05 31 01 99
+              </a>
               <Link to="/#contact" className="bg-blue-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-400 transition-colors">
                 📧 Demander un Devis
               </Link>

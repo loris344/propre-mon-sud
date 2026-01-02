@@ -35,6 +35,15 @@ const Footer = () => {
             <h3 className="font-semibold text-foreground text-lg">Contact</h3>
             <div className="space-y-3">
               <div className="flex items-center gap-3">
+                <Phone className="w-5 h-5 text-primary flex-shrink-0" />
+                <div>
+                  <a href="tel:0605310199" className="font-medium text-foreground hover:text-primary transition-colors">
+                    06 05 31 01 99
+                  </a>
+                  <div className="text-sm text-muted-foreground">Disponible 7j/7</div>
+                </div>
+              </div>
+              <div className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-primary flex-shrink-0" />
                 <div>
                   <div className="font-medium text-foreground">contact@sosnettoyagediogene.fr</div>

@@ -271,8 +271,14 @@ export default function PrixDiogene() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <a 
-                href="/#contact-title" 
+                href="tel:0605310199"
                 className="inline-block bg-primary text-primary-foreground px-6 py-3 rounded-lg font-bold hover:bg-primary/90 transition-colors duration-300"
+              >
+                📞 06 05 31 01 99
+              </a>
+              <a 
+                href="/#contact-title" 
+                className="inline-block bg-secondary text-secondary-foreground border border-border px-6 py-3 rounded-lg font-bold hover:bg-secondary/80 transition-colors duration-300"
               >
                 📝 Demander un devis
               </a>

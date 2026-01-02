@@ -212,6 +212,12 @@ const DebarrasApresDecesArticle = () => {
                   >
                     Demander un devis
                   </button>
+                  <a 
+                    href="tel:0605310199"
+                    className="bg-green-600 text-white px-6 py-2 rounded-md hover:bg-green-700 transition-colors font-medium text-center"
+                  >
+                    📞 06 05 31 01 99
+                  </a>
                 </div>
               </div>
             </div>

@@ -272,6 +272,9 @@ const Contact = () => {
               <CardContent className="p-6 sm:p-8 text-center">
                 <Phone className="w-10 h-10 sm:w-12 sm:h-12 mx-auto mb-4" />
                 <h3 className="text-xl sm:text-2xl font-bold mb-2">Urgence 7j/7</h3>
+                <a href="tel:0605310199" className="text-2xl sm:text-3xl font-bold mb-3 block hover:underline">
+                  06 05 31 01 99
+                </a>
                 <p className="text-primary-foreground/90 text-sm sm:text-base">
                   Intervention rapide dans le Sud de la France : Occitanie, PACA, Nouvelle-Aquitaine
                 </p>

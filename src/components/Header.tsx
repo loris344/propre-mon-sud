@@ -120,6 +120,13 @@ const Header = () => {
           <div className="hidden lg:flex items-center space-x-2 flex-shrink-0">
             <AvailabilityIndicator />
             <ReviewsDisplay />
+            <a 
+              href="tel:0605310199"
+              className="text-primary font-semibold hover:underline text-sm whitespace-nowrap flex items-center gap-1"
+            >
+              <Phone className="w-4 h-4" />
+              06 05 31 01 99
+            </a>
             <Button 
               variant="hero" 
               size="sm"
@@ -193,6 +200,13 @@ const Header = () => {
                 <div className="flex justify-center">
                   <ReviewsDisplay />
                 </div>
+                <a 
+                  href="tel:0605310199"
+                  className="block w-full text-center bg-primary text-primary-foreground px-6 py-4 rounded-lg font-bold text-lg hover:bg-primary/90 transition-colors"
+                >
+                  <Phone className="w-5 h-5 inline-block mr-2" />
+                  06 05 31 01 99
+                </a>
                 <Button 
                   variant="hero" 
                   size="lg" 
