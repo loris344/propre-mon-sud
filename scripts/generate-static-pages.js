@@ -223,6 +223,9 @@ function getBaseHTML() {
     <!-- Styles -->
     <link rel="stylesheet" href="/css/${cssFile}" />
     
+    <!-- Hotjar / ContentSquare -->
+    <script src="https://t.contentsquare.net/uxa/88615d367e891.js"></script>
+    
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-VDZL4FT7QQ"></script>
     <script>
