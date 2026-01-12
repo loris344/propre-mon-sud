@@ -12,6 +12,7 @@ import DesinfectionArticle from "./pages/articles/DesinfectionArticle";
 import PreventionInsalubriteArticle from "./pages/articles/PreventionInsalubriteArticle";
 import ServicePage from "./components/ServicePage";
 import Header from "./components/Header";
+import PhoneToast from "./components/PhoneToast";
 import MJPMPartnership from "./pages/MJPMPartnership";
 import DebarrasGrosVolumes from "./pages/DebarrasGrosVolumes";
 import NettoyageApresDeces from "./pages/NettoyageApresDeces";
@@ -36,6 +37,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <PhoneToast />
         <Header />
         <Routes>
         <Route path="/" element={<Index />} />
