@@ -116,7 +116,7 @@ const LandingDiogene = () => {
               Comment se déroule l'intervention ?
             </h2>
             <p className="text-center text-muted-foreground mb-12 max-w-xl mx-auto">
-              Un processus simple et rapide, sans déplacement inutile pour l'évaluation.
+              Un processus simple et rapide.
             </p>
             
             <div className="max-w-4xl mx-auto">
