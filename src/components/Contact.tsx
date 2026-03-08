@@ -124,7 +124,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="py-16 sm:py-20 bg-gradient-to-b from-secondary/20 to-background">
+    <section id="contact" className="py-16 sm:py-20 bg-gradient-to-b from-secondary/20 to-background">
       <div className="container mx-auto px-4 sm:px-6">
         
         {/* Header */}
