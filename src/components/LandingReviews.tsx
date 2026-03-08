@@ -56,8 +56,8 @@ const LandingReviews = memo(({ serviceKey }: LandingReviewsProps) => {
   const review = reviews[currentIndex];
 
   return (
-    <section className="py-16 sm:py-20">
-      <div className="container mx-auto px-4 sm:px-6">
+    <section className="py-16 sm:py-20" style={{ touchAction: 'pan-y' }}>
+      <div className="container mx-auto px-4 sm:px-6" style={{ touchAction: 'pan-y' }}>
         <div className="max-w-2xl mx-auto text-center mb-10">
           <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-2">
             Ce que disent nos clients
