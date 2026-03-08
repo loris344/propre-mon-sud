@@ -129,12 +129,6 @@ All colors MUST be HSL.
     contain-intrinsic-size: 300px 200px;
   }
 
-  /* Préchargement des polices critiques */
-  @font-face {
-    font-family: 'Inter';
-    font-display: swap;
-    font-weight: 400 700;
-  }
 }
 
 @layer utilities {

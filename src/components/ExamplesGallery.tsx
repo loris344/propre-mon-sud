@@ -66,6 +66,7 @@ const ExamplesGallery = () => {
                   <img
                     src="/images/logos/p1.png"
                     alt="Équipe professionnelle de nettoyage spécialisé"
+                    loading="lazy"
                     className="w-full h-48 sm:h-56 object-cover"
                     draggable="false"
                     style={{ objectPosition: 'center top' }}
