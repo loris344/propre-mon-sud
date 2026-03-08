@@ -191,6 +191,35 @@ const pagesMeta = {
     keywords: "prix diogène, tarif nettoyage syndrome diogène, devis nettoyage insalubrité, coût intervention diogène, prix nettoyage extrême, SOS nettoyage diogène, montpellier, sete, beziers, nimes, perpignan, marseille, herault, gard, pyrenees-orientales",
     canonical: "/prix-diogene"
   },
+  // Landing pages Google Ads (noindex)
+  '/landing/nettoyage-syndrome-diogene': {
+    title: "Nettoyage Syndrome de Diogène | Intervention Discrète 7j/7 | SOS Nettoyage Diogène",
+    description: "Service spécialisé nettoyage syndrome de Diogène. Intervention discrète, professionnelle et respectueuse dans tout le Sud de la France. Devis gratuit.",
+    keywords: "nettoyage syndrome diogène, intervention discrète, débarras, insalubrité, sud france",
+    canonical: "/landing/nettoyage-syndrome-diogene",
+    noIndex: true
+  },
+  '/landing/debarras-gros-volumes': {
+    title: "Débarras Gros Volumes | Évacuation Rapide | SOS Nettoyage Diogène",
+    description: "Débarras et évacuation gros volumes : maison, appartement, cave, grenier. Tri, recyclage et évacuation rapide dans tout le Sud de la France.",
+    keywords: "débarras gros volumes, évacuation, tri, recyclage, sud france",
+    canonical: "/landing/debarras-gros-volumes",
+    noIndex: true
+  },
+  '/landing/desinfection-insalubrite': {
+    title: "Désinfection & Insalubrité | Intervention Urgente | SOS Nettoyage Diogène",
+    description: "Désinfection et remise en état de logements insalubres. Intervention professionnelle avec protocoles sanitaires stricts. Devis gratuit 7j/7.",
+    keywords: "désinfection, insalubrité, nettoyage, protocoles sanitaires, sud france",
+    canonical: "/landing/desinfection-insalubrite",
+    noIndex: true
+  },
+  '/landing/nettoyage-apres-deces': {
+    title: "Nettoyage de Logement Après Décès | Service Respectueux | SOS Nettoyage Diogène",
+    description: "Nettoyage de logement après décès. Intervention respectueuse, discrète et professionnelle dans tout le Sud de la France. Devis gratuit 7j/7.",
+    keywords: "nettoyage après décès, nettoyage logement décès, désinfection, sud france",
+    canonical: "/landing/nettoyage-apres-deces",
+    noIndex: true
+  },
 };
 
 // Template HTML de base
@@ -269,9 +298,9 @@ function generatePage(route, meta) {
     <meta name="description" content="${meta.description}" />
     <meta name="keywords" content="${meta.keywords}" />
     <meta name="author" content="SOS Nettoyage Diogène - Nettoyage Professionnel" />
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-    <meta name="googlebot" content="index, follow" />
-    <meta name="bingbot" content="index, follow" />
+    <meta name="robots" content="${meta.noIndex ? 'noindex, nofollow' : 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'}" />
+    <meta name="googlebot" content="${meta.noIndex ? 'noindex, nofollow' : 'index, follow'}" />
+    <meta name="bingbot" content="${meta.noIndex ? 'noindex, nofollow' : 'index, follow'}" />
     
     <!-- Canonical URL -->
     <link rel="canonical" href="${SITE_URL}${route}" />
