@@ -131,34 +131,37 @@ const Footer = () => {
             <div className="text-sm text-muted-foreground text-center sm:text-left">
               © {new Date().getFullYear()} SOS Nettoyage Diogène. Tous droits réservés.
             </div>
-            <div className="flex flex-wrap items-center justify-center gap-4 text-sm text-muted-foreground text-center sm:text-right">
-              <span>Société spécialisée dans le nettoyage et débarras professionnel</span>
-              <div className="flex gap-4">
-                <Link 
-                  to="/debarras-gros-volumes"
-                  className="text-primary hover:text-primary/80 transition-colors"
-                >
-                  Débarras
-                </Link>
-                <Link 
-                  to="/nettoyage-apres-deces"
-                  className="text-primary hover:text-primary/80 transition-colors"
-                >
-                  Après Décès
-                </Link>
-                <Link 
-                  to="/desinfection-insalubrite"
-                  className="text-primary hover:text-primary/80 transition-colors"
-                >
-                  Désinfection
-                </Link>
-                <Link 
-                  to="/partenariat-mjpm"
-                  className="text-primary hover:text-primary/80 transition-colors"
-                >
-                  Partenariat
-                </Link>
-              </div>
+            <div className="flex flex-wrap items-center justify-center gap-4 text-sm text-muted-foreground">
+              <Link 
+                to="/mentions-legales"
+                className="hover:text-foreground transition-colors"
+              >
+                Mentions légales
+              </Link>
+              <Link 
+                to="/politique-confidentialite"
+                className="hover:text-foreground transition-colors"
+              >
+                Politique de confidentialité
+              </Link>
+              <Link 
+                to="/debarras-gros-volumes"
+                className="text-primary hover:text-primary/80 transition-colors"
+              >
+                Débarras
+              </Link>
+              <Link 
+                to="/nettoyage-apres-deces"
+                className="text-primary hover:text-primary/80 transition-colors"
+              >
+                Après Décès
+              </Link>
+              <Link 
+                to="/desinfection-insalubrite"
+                className="text-primary hover:text-primary/80 transition-colors"
+              >
+                Désinfection
+              </Link>
             </div>
           </div>
         </div>

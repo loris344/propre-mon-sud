@@ -29,6 +29,12 @@ const EntrepriseNettoyageMarseille = lazy(() => import("./pages/EntrepriseNettoy
 const MeilleuresSocietesNettoyageMontpellier = lazy(() => import("./pages/MeilleuresSocietesNettoyageMontpellier"));
 const PrixDiogene = lazy(() => import("./pages/PrixDiogene"));
 const SyndromeDiogeneCity = lazy(() => import("./pages/SyndromeDiogeneCity"));
+const MentionsLegales = lazy(() => import("./pages/MentionsLegales"));
+const PolitiqueConfidentialite = lazy(() => import("./pages/PolitiqueConfidentialite"));
+const LandingDiogene = lazy(() => import("./pages/landing/LandingDiogene"));
+const LandingDebarras = lazy(() => import("./pages/landing/LandingDebarras"));
+const LandingDesinfection = lazy(() => import("./pages/landing/LandingDesinfection"));
+const LandingApresDeces = lazy(() => import("./pages/landing/LandingApresDeces"));
 
 const PageLoader = () => (
   <div className="min-h-screen flex items-center justify-center bg-background">
@@ -83,6 +89,16 @@ const App = () => (
             {/* Partenariats */}
             <Route path="/partenariat-mjpm" element={<MJPMPartnership />} />
             <Route path="/partenariat-maisons-retraite" element={<NursingHomePartnership />} />
+
+            {/* Pages légales */}
+            <Route path="/mentions-legales" element={<MentionsLegales />} />
+            <Route path="/politique-confidentialite" element={<PolitiqueConfidentialite />} />
+
+            {/* Landing pages Google Ads (noindex) */}
+            <Route path="/landing/nettoyage-syndrome-diogene" element={<LandingDiogene />} />
+            <Route path="/landing/debarras-gros-volumes" element={<LandingDebarras />} />
+            <Route path="/landing/desinfection-insalubrite" element={<LandingDesinfection />} />
+            <Route path="/landing/nettoyage-apres-deces" element={<LandingApresDeces />} />
 
             {/* 404 */}
             <Route path="*" element={<NotFound />} />
