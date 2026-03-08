@@ -59,7 +59,7 @@ const NettoyageApresDecesMarseille: React.FC = () => {
 
           {/* Option 1 - Faire soi-même */}
           <div className="bg-white p-8 rounded-lg shadow-lg mb-8">
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">Option 1 — Faire soi-même : possible mais seulement dans des cas simples</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-6">Option 1 : Faire soi-même, possible mais seulement dans des cas simples</h2>
             <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-6 mb-6">
               <h3 className="text-lg font-semibold text-yellow-800 mb-3">⚠️ Conditions strictes</h3>
               <p className="text-yellow-700">
