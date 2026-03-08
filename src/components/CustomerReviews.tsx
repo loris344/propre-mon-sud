@@ -97,7 +97,7 @@ const CustomerReviews = memo(() => {
               className="flex transition-transform duration-500 ease-in-out"
               style={{ transform: `translateX(-${currentIndex * 100}%)` }}
             >
-              {reviews.map((review, index) => (
+              {REVIEWS.map((review, index) => (
                 <div key={review.id} className="w-full flex-shrink-0">
                   <Card className="shadow-lg border-border/50">
                     <CardContent className="p-6">
