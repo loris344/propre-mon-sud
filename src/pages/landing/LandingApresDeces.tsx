@@ -1,9 +1,10 @@
-import { Phone, Heart, CheckCircle, ArrowRight, Star, Clock, Eye, Shield, MapPin, Users, Camera, MessageCircle, Scale } from "lucide-react";
+import { Phone, Heart, CheckCircle, ArrowRight, Star, Clock, Eye, Shield, MapPin, Users, Scale } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import SEOHead from "@/components/SEOHead";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import LandingReviews from "@/components/LandingReviews";
 
 const LandingApresDeces = () => {
   const scrollToContact = () => {
@@ -76,7 +77,7 @@ const LandingApresDeces = () => {
           </div>
         </section>
 
-        {/* Comment ça marche */}
+        {/* Comment ça se passe */}
         <section className="py-16 sm:py-20 bg-card border-y border-border/50">
           <div className="container mx-auto px-4 sm:px-6">
             <h2 className="text-2xl sm:text-3xl font-bold text-center text-foreground mb-4">
@@ -88,9 +89,9 @@ const LandingApresDeces = () => {
             
             <div className="max-w-4xl mx-auto grid sm:grid-cols-3 gap-6">
               {[
-                { icon: MessageCircle, step: "1", title: "Échangeons ensemble", desc: "Appelez-nous ou écrivez-nous. On vous écoute avec bienveillance, sans engagement." },
-                { icon: Camera, step: "2", title: "Envoyez quelques photos", desc: "Quelques photos du logement suffisent pour établir un devis précis. Pas de déplacement nécessaire." },
-                { icon: Heart, step: "3", title: "On s'occupe de tout", desc: "Bio-nettoyage, désinfection, évacuation. Vous n'avez rien à gérer, on prend tout en charge." },
+                { step: "1", title: "Échangeons ensemble", desc: "Appelez-nous ou écrivez-nous. On vous écoute avec bienveillance, sans engagement." },
+                { step: "2", title: "Envoyez quelques photos", desc: "Quelques photos du logement suffisent pour établir un devis précis. Pas de déplacement nécessaire." },
+                { step: "3", title: "On s'occupe de tout", desc: "Bio-nettoyage, désinfection, évacuation. Vous n'avez rien à gérer, on prend tout en charge." },
               ].map((item, i) => (
                 <Card key={i} className="p-6 sm:p-8 border-border/50 text-center">
                   <div className="w-14 h-14 rounded-2xl bg-primary text-primary-foreground flex items-center justify-center text-xl font-bold mx-auto mb-5">
@@ -139,12 +140,20 @@ const LandingApresDeces = () => {
         <section className="py-16 sm:py-20 bg-card border-y border-border/50">
           <div className="container mx-auto px-4 sm:px-6">
             <div className="max-w-5xl mx-auto grid sm:grid-cols-2 gap-10 items-center">
-              <img 
-                src="/images/team/equipe-intervention.jpeg" 
-                alt="Notre équipe en tenue lors d'une intervention" 
-                className="rounded-2xl object-cover w-full h-72 sm:h-96 shadow-lg"
-                loading="lazy"
-              />
+              <div className="grid grid-cols-2 gap-3">
+                <img 
+                  src="/images/team/equipe-intervention.jpeg" 
+                  alt="Notre équipe en tenue lors d'une intervention" 
+                  className="rounded-2xl object-cover w-full h-52 sm:h-72 shadow-lg"
+                  loading="lazy"
+                />
+                <img 
+                  src="/images/logos/p1.png" 
+                  alt="L'équipe SOS Nettoyage Diogène au complet" 
+                  className="rounded-2xl object-cover w-full h-52 sm:h-72 shadow-lg"
+                  loading="lazy"
+                />
+              </div>
               <div>
                 <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-6">
                   Qui fait appel à nous ?
@@ -174,8 +183,11 @@ const LandingApresDeces = () => {
           </div>
         </section>
 
+        {/* Avis clients */}
+        <LandingReviews serviceKey="deces" />
+
         {/* Ce qu'on fait */}
-        <section className="py-16 sm:py-20">
+        <section className="py-16 sm:py-20 bg-card border-y border-border/50">
           <div className="container mx-auto px-4 sm:px-6">
             <div className="max-w-3xl mx-auto">
               <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-6">
