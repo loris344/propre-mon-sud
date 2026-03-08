@@ -85,13 +85,13 @@ const LandingDebarras = () => {
               Comment ça marche ?
             </h2>
             <p className="text-center text-muted-foreground mb-12 max-w-xl mx-auto">
-              Pas besoin de se déplacer pour évaluer. Quelques photos suffisent.
+              Simple, rapide et sans engagement.
             </p>
             
             <div className="max-w-4xl mx-auto grid sm:grid-cols-3 gap-6">
               {[
                 { step: "1", title: "Appelez ou écrivez-nous", desc: "Décrivez votre situation par téléphone ou par mail. On vous guide." },
-                { step: "2", title: "Envoyez quelques photos", desc: "Quelques photos du lieu suffisent pour qu'on établisse un devis précis, sans déplacement." },
+                { step: "2", title: "Quelques infos & photos", desc: "Envoyez-nous quelques photos du lieu et décrivez la situation. On établit un devis précis." },
                 { step: "3", title: "On intervient", desc: "Notre équipe vide, trie et évacue tout. Vous n'avez rien à faire." },
               ].map((item, i) => (
                 <Card key={i} className="p-6 sm:p-8 border-border/50 text-center">

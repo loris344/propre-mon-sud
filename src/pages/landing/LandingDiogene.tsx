@@ -122,7 +122,7 @@ const LandingDiogene = () => {
             <div className="max-w-4xl mx-auto">
               {[
                 { step: "01", title: "Échange téléphonique ou par mail", desc: "Vous nous décrivez la situation librement. On écoute, on comprend, sans engagement." },
-                { step: "02", title: "Envoyez-nous quelques photos", desc: "Pas besoin de se déplacer pour évaluer. Quelques photos du logement nous suffisent pour établir un devis précis." },
+                { step: "02", title: "Quelques infos & photos", desc: "Envoyez-nous quelques photos du logement et décrivez la situation. On établit un devis précis." },
                 { step: "03", title: "Devis gratuit & intervention sur-mesure", desc: "On vous envoie un devis clair et détaillé. Puis notre équipe intervient : tri, nettoyage, désinfection, évacuation." },
                 { step: "04", title: "Remise en état & suivi", desc: "Le logement est rendu propre et habitable. Nous assurons un suivi de satisfaction." },
               ].map((item, i) => (

@@ -83,14 +83,14 @@ const LandingApresDeces = () => {
             <h2 className="text-2xl sm:text-3xl font-bold text-center text-foreground mb-4">
               Comment ça se passe ?
             </h2>
-            <p className="text-center text-muted-foreground mb-12 max-w-xl mx-auto">
-              Un processus simple et humain. Pas besoin de se déplacer pour l'évaluation.
+             <p className="text-center text-muted-foreground mb-12 max-w-xl mx-auto">
+              Un processus simple et humain.
             </p>
             
             <div className="max-w-4xl mx-auto grid sm:grid-cols-3 gap-6">
               {[
                 { step: "1", title: "Échangeons ensemble", desc: "Appelez-nous ou écrivez-nous. On vous écoute avec bienveillance, sans engagement." },
-                { step: "2", title: "Envoyez quelques photos", desc: "Quelques photos du logement suffisent pour établir un devis précis. Pas de déplacement nécessaire." },
+                { step: "2", title: "Quelques infos & photos", desc: "Envoyez-nous quelques photos du logement et décrivez la situation. On établit un devis précis." },
                 { step: "3", title: "On s'occupe de tout", desc: "Bio-nettoyage, désinfection, évacuation. Vous n'avez rien à gérer, on prend tout en charge." },
               ].map((item, i) => (
                 <Card key={i} className="p-6 sm:p-8 border-border/50 text-center">

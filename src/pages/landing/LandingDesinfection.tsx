@@ -84,13 +84,13 @@ const LandingDesinfection = () => {
               Comment ça marche ?
             </h2>
             <p className="text-center text-muted-foreground mb-12 max-w-xl mx-auto">
-              Envoyez-nous quelques photos, on s'occupe du reste.
+              Simple, rapide et sans engagement.
             </p>
             
             <div className="max-w-4xl mx-auto grid sm:grid-cols-3 gap-6">
               {[
                 { step: "1", title: "Contactez-nous", desc: "Par téléphone ou mail, décrivez la situation. On vous écoute et on vous conseille." },
-                { step: "2", title: "Quelques photos suffisent", desc: "Pas de déplacement pour l'évaluation. Envoyez-nous des photos, on établit un devis précis." },
+                { step: "2", title: "Quelques infos & photos", desc: "Envoyez-nous quelques photos et décrivez la situation. On établit un devis précis." },
                 { step: "3", title: "On intervient", desc: "Désinfection, traitement, remise en état. Votre logement retrouve un environnement sain." },
               ].map((item, i) => (
                 <Card key={i} className="p-6 sm:p-8 border-border/50 text-center">

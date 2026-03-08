@@ -71,7 +71,7 @@ const LandingReviews = memo(({ serviceKey }: LandingReviewsProps) => {
         </div>
 
         <div className="max-w-xl mx-auto">
-          <Card className="border-border/50 pointer-events-none select-none">
+          <Card className="border-border/50" style={{ touchAction: 'pan-y' }}>
             <CardContent className="p-6 sm:p-8">
               <div className="flex items-center gap-1 mb-4">
                 {[...Array(5)].map((_, i) => (
