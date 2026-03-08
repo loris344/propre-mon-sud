@@ -56,7 +56,7 @@ const CustomerReviews = memo(() => {
   // Défilement automatique des avis
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % reviews.length);
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % REVIEWS.length);
     }, 4000); // Change d'avis toutes les 4 secondes
 
     return () => clearInterval(interval);
