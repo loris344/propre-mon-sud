@@ -26,7 +26,7 @@ const NettoyageApresDecesMarseille: React.FC = () => {
           <div className="container mx-auto px-6 text-center relative z-10">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">Nettoyage après décès à Marseille</h1>
             <p className="text-xl mb-8 max-w-4xl mx-auto">
-              Faire soi-même ou confier à des spécialistes — le guide clair, utile et actionnable pour agir correctement sans faux pas
+              Faire soi-même ou confier à des spécialistes : le guide clair, utile et actionnable pour agir correctement sans faux pas
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href="tel:0605310199" className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
