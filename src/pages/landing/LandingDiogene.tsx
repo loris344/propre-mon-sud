@@ -1,4 +1,4 @@
-import { Phone, Mail, CheckCircle, Shield, Heart, Clock, ArrowRight, Star } from "lucide-react";
+import { Phone, Shield, Heart, CheckCircle, ArrowRight, Star, Clock, MapPin, Users, Award, Eye } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import SEOHead from "@/components/SEOHead";
@@ -19,112 +19,184 @@ const LandingDiogene = () => {
         noIndex={true}
       />
       <main className="min-h-screen">
-        {/* Hero */}
-        <section className="relative bg-gradient-to-br from-primary/10 via-background to-accent/10 pt-24 sm:pt-32 pb-16 sm:pb-24">
-          <div className="container mx-auto px-4 sm:px-6">
-            <div className="max-w-4xl mx-auto text-center space-y-6">
-              <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium">
-                <Shield className="w-4 h-4" />
-                Intervention discrète & respectueuse
+        {/* Hero — Urgence + Empathie */}
+        <section className="relative overflow-hidden pt-20 sm:pt-28 pb-16 sm:pb-24">
+          <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-accent/5" />
+          <div className="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+          
+          <div className="container mx-auto px-4 sm:px-6 relative">
+            <div className="max-w-4xl mx-auto">
+              {/* Trust badge */}
+              <div className="flex justify-center mb-6">
+                <div className="inline-flex items-center gap-2 bg-accent/10 border border-accent/20 text-foreground px-5 py-2.5 rounded-full text-sm font-medium">
+                  <Shield className="w-4 h-4 text-accent" />
+                  Intervention discrète — Sans jugement
+                </div>
               </div>
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground leading-tight">
-                Nettoyage <span className="text-primary">Syndrome de Diogène</span>
+
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-foreground leading-[1.1] text-center">
+                Votre proche souffre du{" "}
+                <span className="text-primary">syndrome de Diogène</span> ?
               </h1>
-              <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto">
-                Intervention spécialisée dans les situations d'accumulation compulsive avec respect et discrétion totale.
+              
+              <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto text-center mt-6 leading-relaxed">
+                Nous aidons les familles et les mandataires à retrouver un logement sain. 
+                Intervention humaine, respectueuse et confidentielle.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-                <Button variant="hero" size="lg" onClick={scrollToContact} className="text-lg px-8 py-6">
-                  Devis Gratuit
+
+              {/* CTA */}
+              <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
+                <Button variant="hero" size="lg" onClick={scrollToContact} className="text-lg px-8 py-6 shadow-lg">
+                  Obtenir un Devis Gratuit
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </Button>
                 <a href="tel:+33605310199">
-                  <Button variant="outline" size="lg" className="text-lg px-8 py-6 w-full">
+                  <Button variant="outline" size="lg" className="text-lg px-8 py-6 w-full border-2">
                     <Phone className="w-5 h-5 mr-2" />
                     06 05 31 01 99
                   </Button>
                 </a>
               </div>
-              <div className="flex items-center justify-center gap-1 pt-2">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
-                ))}
-                <span className="ml-2 text-sm text-muted-foreground">4.9/5 — Avis vérifiés</span>
+
+              {/* Social proof */}
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 mt-8 text-sm text-muted-foreground">
+                <div className="flex items-center gap-1.5">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
+                  ))}
+                  <span className="ml-1 font-medium">4.9/5</span>
+                </div>
+                <span className="hidden sm:block text-border">|</span>
+                <span className="flex items-center gap-1.5"><Clock className="w-4 h-4" /> Disponible 7j/7</span>
+                <span className="hidden sm:block text-border">|</span>
+                <span className="flex items-center gap-1.5"><MapPin className="w-4 h-4" /> Sud de la France</span>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Avantages */}
-        <section className="py-16 sm:py-24 bg-card">
+        {/* Comprendre la situation */}
+        <section className="py-16 sm:py-20 bg-card border-y border-border/50">
           <div className="container mx-auto px-4 sm:px-6">
-            <h2 className="text-2xl sm:text-3xl font-bold text-center text-foreground mb-12">
-              Pourquoi nous choisir ?
-            </h2>
-            <div className="grid sm:grid-cols-3 gap-8 max-w-4xl mx-auto">
+            <div className="max-w-3xl mx-auto text-center mb-12">
+              <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-4">
+                Vous n'êtes pas seul face à cette situation
+              </h2>
+              <p className="text-muted-foreground text-lg leading-relaxed">
+                Le syndrome de Diogène touche des milliers de personnes. En tant que famille, mandataire judiciaire 
+                ou bailleur, vous avez besoin d'une équipe qui comprend la complexité de ces situations.
+              </p>
+            </div>
+            
+            <div className="grid sm:grid-cols-3 gap-6 max-w-5xl mx-auto">
               {[
-                { icon: Phone, title: "Évaluation gratuite", desc: "Évaluation gratuite par téléphone pour estimer vos besoins et vous proposer un plan adapté." },
-                { icon: Heart, title: "Respect de la dignité", desc: "Notre équipe est formée pour intervenir avec empathie, respect et sans jugement." },
-                { icon: CheckCircle, title: "Plan personnalisé", desc: "Chaque situation est unique. Nous établissons un plan d'intervention sur mesure." },
+                { 
+                  icon: Heart, 
+                  title: "Approche bienveillante", 
+                  desc: "Notre équipe est formée pour intervenir avec empathie. Nous respectons la personne concernée et son histoire, sans jamais porter de jugement." 
+                },
+                { 
+                  icon: Eye, 
+                  title: "Discrétion totale", 
+                  desc: "Véhicules banalisés, intervention confidentielle, respect du voisinage. Personne ne saura pourquoi nous sommes là." 
+                },
+                { 
+                  icon: Award, 
+                  title: "Expertise reconnue", 
+                  desc: "Des centaines d'interventions réalisées. Nous savons gérer les cas les plus complexes avec méthode et professionnalisme." 
+                },
               ].map((item, i) => (
-                <Card key={i} className="p-6 text-center space-y-4 border-border/50">
-                  <div className="w-14 h-14 mx-auto rounded-full bg-primary/10 flex items-center justify-center">
-                    <item.icon className="w-7 h-7 text-primary" />
+                <Card key={i} className="p-6 sm:p-8 border-border/50 hover:shadow-lg transition-shadow duration-300">
+                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-5">
+                    <item.icon className="w-6 h-6 text-primary" />
                   </div>
-                  <h3 className="text-lg font-semibold text-foreground">{item.title}</h3>
-                  <p className="text-muted-foreground text-sm">{item.desc}</p>
+                  <h3 className="text-lg font-bold text-foreground mb-3">{item.title}</h3>
+                  <p className="text-muted-foreground text-sm leading-relaxed">{item.desc}</p>
                 </Card>
               ))}
             </div>
           </div>
         </section>
 
-        {/* Processus */}
-        <section className="py-16 sm:py-24">
+        {/* Comment ça se passe */}
+        <section className="py-16 sm:py-20">
           <div className="container mx-auto px-4 sm:px-6">
-            <h2 className="text-2xl sm:text-3xl font-bold text-center text-foreground mb-12">
-              Notre processus en 4 étapes
+            <h2 className="text-2xl sm:text-3xl font-bold text-center text-foreground mb-4">
+              Comment se déroule l'intervention ?
             </h2>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
+            <p className="text-center text-muted-foreground mb-12 max-w-xl mx-auto">
+              Un processus simple et transparent pour vous accompagner du premier appel à la remise des clés.
+            </p>
+            
+            <div className="max-w-4xl mx-auto">
               {[
-                { step: "1", title: "Appel gratuit", desc: "Évaluation de votre situation par téléphone" },
-                { step: "2", title: "Visite & devis", desc: "Déplacement gratuit et devis détaillé" },
-                { step: "3", title: "Intervention", desc: "Nettoyage complet par notre équipe formée" },
-                { step: "4", title: "Suivi", desc: "Vérification et garantie de satisfaction" },
+                { step: "01", title: "Appel confidentiel", desc: "Échangez librement sur votre situation. Nous évaluons vos besoins sans engagement." },
+                { step: "02", title: "Visite & devis gratuit", desc: "Nous nous déplaçons gratuitement pour évaluer la situation et vous remettre un devis détaillé." },
+                { step: "03", title: "Intervention sur-mesure", desc: "Tri, nettoyage, désinfection, évacuation. Tout est pris en charge par notre équipe." },
+                { step: "04", title: "Remise en état & suivi", desc: "Le logement est rendu propre et habitable. Nous assurons un suivi de satisfaction." },
               ].map((item, i) => (
-                <div key={i} className="text-center space-y-3">
-                  <div className="w-12 h-12 mx-auto rounded-full bg-primary text-primary-foreground flex items-center justify-center text-xl font-bold">
-                    {item.step}
+                <div key={i} className="flex gap-5 sm:gap-8 mb-8 last:mb-0">
+                  <div className="flex-shrink-0">
+                    <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-primary text-primary-foreground flex items-center justify-center text-lg font-bold">
+                      {item.step}
+                    </div>
                   </div>
-                  <h3 className="font-semibold text-foreground">{item.title}</h3>
-                  <p className="text-sm text-muted-foreground">{item.desc}</p>
+                  <div className="pt-1">
+                    <h3 className="text-lg font-bold text-foreground mb-1">{item.title}</h3>
+                    <p className="text-muted-foreground leading-relaxed">{item.desc}</p>
+                  </div>
                 </div>
               ))}
             </div>
           </div>
         </section>
 
-        {/* Réassurance */}
-        <section className="py-16 sm:py-24 bg-primary/5">
-          <div className="container mx-auto px-4 sm:px-6 text-center space-y-8">
-            <h2 className="text-2xl sm:text-3xl font-bold text-foreground">
-              Intervention dans tout le Sud de la France
+        {/* Pour qui ? */}
+        <section className="py-16 sm:py-20 bg-card border-y border-border/50">
+          <div className="container mx-auto px-4 sm:px-6">
+            <h2 className="text-2xl sm:text-3xl font-bold text-center text-foreground mb-12">
+              Nous accompagnons
             </h2>
-            <div className="flex flex-wrap justify-center gap-3">
-              {["Montpellier", "Marseille", "Nîmes", "Béziers", "Sète", "Perpignan", "Aix-en-Provence", "Toulon"].map(city => (
-                <span key={city} className="bg-card border border-border/50 px-4 py-2 rounded-full text-sm text-foreground font-medium">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
+              {[
+                "Familles et proches aidants",
+                "Mandataires judiciaires (MJPM)",
+                "Bailleurs sociaux et privés",
+                "Agences immobilières",
+                "Services sociaux et ARS",
+                "Syndics de copropriété",
+              ].map((item, i) => (
+                <div key={i} className="flex items-center gap-3 p-4 sm:p-5 bg-background rounded-xl border border-border/50">
+                  <div className="w-8 h-8 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
+                    <CheckCircle className="w-4 h-4 text-accent" />
+                  </div>
+                  <span className="text-foreground font-medium">{item}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Zone + CTA final */}
+        <section className="py-16 sm:py-20 bg-gradient-to-b from-primary/5 to-primary/10">
+          <div className="container mx-auto px-4 sm:px-6 text-center">
+            <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-6">
+              Intervention rapide dans tout le Sud de la France
+            </h2>
+            <div className="flex flex-wrap justify-center gap-2 sm:gap-3 mb-10 max-w-2xl mx-auto">
+              {["Montpellier", "Marseille", "Nîmes", "Béziers", "Sète", "Perpignan", "Aix-en-Provence", "Toulon", "Toulouse", "Bordeaux"].map(city => (
+                <span key={city} className="bg-background border border-border/50 px-4 py-2 rounded-full text-sm text-foreground font-medium shadow-sm">
                   {city}
                 </span>
               ))}
             </div>
-            <Button variant="hero" size="lg" onClick={scrollToContact} className="text-lg px-8 py-6">
+            <Button variant="hero" size="lg" onClick={scrollToContact} className="text-lg px-10 py-6 shadow-lg">
               Demander un Devis Gratuit
               <ArrowRight className="w-5 h-5 ml-2" />
             </Button>
           </div>
         </section>
 
-        {/* Contact */}
         <Contact />
         <Footer />
       </main>
