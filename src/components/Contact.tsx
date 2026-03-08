@@ -204,7 +204,7 @@ const Contact = () => {
                       className={`text-base sm:text-lg py-3 sm:py-4 ${errors.email ? "border-red-500" : ""}`}
                     />
                     {errors.email && (
-                      <p className="text-sm sm:text-base text-red-500 flex items-center gap-2">
+                      <p className="text-sm sm:text-base text-destructive flex items-center gap-2">
                         <AlertCircle className="w-4 h-4 sm:w-5 sm:h-5" />
                         {errors.email}
                       </p>
