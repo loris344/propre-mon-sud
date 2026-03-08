@@ -30,7 +30,7 @@ const LandingDiogene = () => {
               <div>
                 <div className="inline-flex items-center gap-2 bg-accent/10 border border-accent/20 text-foreground px-5 py-2.5 rounded-full text-sm font-medium mb-6">
                   <Shield className="w-4 h-4 text-accent" />
-                  Intervention discrète — Sans jugement
+                  Intervention discrète, sans jugement
                 </div>
 
                 <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground leading-[1.1]">
