@@ -32,16 +32,16 @@ const Index = () => {
         <section id="accueil" aria-labelledby="hero-title">
           <Hero />
         </section>
-        <section id="services" aria-labelledby="services-title">
+        <section id="services" aria-labelledby="services-title" className="scroll-mt-24">
           <Services />
         </section>
-        <section id="exemples" aria-labelledby="exemples-title">
+        <section id="exemples" aria-labelledby="exemples-title" className="scroll-mt-24">
           <ExamplesGallery />
         </section>
-        <section id="avis" aria-labelledby="avis-title">
+        <section id="avis" aria-labelledby="avis-title" className="scroll-mt-24">
           <CustomerReviews />
         </section>
-        <section id="contact" aria-labelledby="contact-title">
+        <section id="contact" aria-labelledby="contact-title" className="scroll-mt-24">
           <Contact />
         </section>
       </main>
