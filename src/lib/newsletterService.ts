@@ -1,64 +1,43 @@
 /**
- * Service pour gérer les inscriptions à la newsletter
+ * Service pour gérer les inscriptions à la newsletter via Formspree
  */
-import { sendNewsletterNotification } from './telegramService';
+
+const FORMSPREE_NEWSLETTER_ENDPOINT = 'https://formspree.io/f/xandgpjv';
 
 /**
- * Interface pour les données d'inscription à la newsletter
- */
-export interface NewsletterData {
-  email: string;
-}
-
-/**
- * Enregistre un email dans la newsletter et envoie une notification Telegram
- * @param email - L'email à enregistrer
- * @returns Promise<boolean> - true si l'inscription a réussi, false sinon
+ * Enregistre un email dans la newsletter via Formspree
  */
 export const subscribeToNewsletter = async (email: string): Promise<boolean> => {
   try {
-    // Validation de l'email
     if (!email || !isValidEmail(email)) {
       throw new Error('Email invalide');
     }
 
-    // Ici vous pourriez sauvegarder l'email dans une base de données
-    // Pour l'instant, on simule juste l'enregistrement
-    console.log('Email enregistré dans la newsletter:', email);
+    const response = await fetch(FORMSPREE_NEWSLETTER_ENDPOINT, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        email,
+        message: `Nouvelle inscription newsletter : ${email}`,
+        _subject: `Newsletter - Nouvelle inscription : ${email}`,
+        _format: 'plain',
+      }),
+    });
 
-    // Envoi de la notification Telegram
-    const telegramSent = await sendNewsletterNotification(email);
-    
-    if (!telegramSent) {
-      console.warn('Email enregistré mais notification Telegram échouée');
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
     }
 
+    console.log('✅ Inscription newsletter envoyée via Formspree');
     return true;
-
   } catch (error) {
     console.error('Erreur lors de l\'inscription à la newsletter:', error);
     return false;
   }
 };
 
-/**
- * Valide le format d'un email
- * @param email - L'email à valider
- * @returns boolean - true si l'email est valide, false sinon
- */
 const isValidEmail = (email: string): boolean => {
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   return emailRegex.test(email);
-};
-
-/**
- * Vérifie si un email est déjà inscrit (simulation)
- * @param email - L'email à vérifier
- * @returns Promise<boolean> - true si l'email est déjà inscrit, false sinon
- */
-export const isEmailSubscribed = async (email: string): Promise<boolean> => {
-  // Simulation - dans un vrai projet, vous vérifieriez en base de données
-  // ou dans votre service d'email marketing (Mailchimp, Sendinblue, etc.)
-  return false;
 };
 
