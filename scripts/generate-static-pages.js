@@ -38,185 +38,197 @@ function getActualFilenames() {
   return { jsFile, cssFile };
 }
 
-// Meta tags par page (importé depuis seo-config.ts)
+// Meta tags par page — titres <60 chars, descriptions <160 chars, PAS de keywords
 const pagesMeta = {
   '/': {
-    title: "SOS Nettoyage Diogène | Nettoyage Professionnel & Débarras Spécialisé | Montpellier, Sète, Béziers, Nîmes, Perpignan, Marseille, Nice, Toulouse",
-    description: "Société spécialisée dans le nettoyage et débarras syndrome de Diogène, insalubrité, nettoyage après décès et gros volumes. Intervention discrète, professionnelle et respectueuse à Montpellier, Sète, Béziers, Nîmes, Perpignan, Marseille, Nice, Toulouse et tout le Sud de la France.",
-    keywords: "nettoyage professionnel, débarras, syndrome diogène, insalubrité, désinfection, nettoyage après décès, montpellier, sete, beziers, nimes, perpignan, marseille, nice, toulouse, herault, gard, pyrenees-orientales, bouches-du-rhone, alpes-maritimes, haute-garonne, sud france, nettoyage spécialisé",
+    title: "SOS Nettoyage Diogène | Nettoyage & Débarras Sud France",
+    description: "Société spécialisée dans le nettoyage syndrome de Diogène, débarras, insalubrité et nettoyage après décès. Intervention discrète à Montpellier, Marseille et tout le Sud de la France.",
     canonical: "/"
   },
   '/blog': {
-    title: "Blog Expert | Syndrome de Diogène, Débarras, Désinfection | SOS Nettoyage Diogène | Montpellier, Sète, Béziers, Nîmes, Perpignan, Marseille, Nice, Toulouse",
-    description: "4 guides experts : syndrome de Diogène, débarras après décès, protocoles de désinfection, prévention de l'insalubrité. Conseils professionnels 2025 pour Montpellier, Sète, Béziers, Nîmes, Perpignan, Marseille, Nice, Toulouse et tout le Sud de la France.",
-    keywords: "syndrome diogène guide, débarras après décès, protocoles désinfection, prévention insalubrité, conseils experts, blog nettoyage, montpellier, sete, beziers, nimes, perpignan, marseille, nice, toulouse, herault, gard, pyrenees-orientales, bouches-du-rhone, alpes-maritimes, haute-garonne",
+    title: "Blog Expert | Syndrome de Diogène & Nettoyage",
+    description: "Guides experts : syndrome de Diogène, débarras après décès, protocoles de désinfection, prévention de l'insalubrité. Conseils professionnels 2025.",
     canonical: "/blog"
   },
   '/blog/syndrome-diogene-identifier-gerer': {
-    title: "Syndrome de Diogène : Guide Complet d'Identification et de Gestion | SOS Nettoyage Diogène | Montpellier, Sète, Béziers, Nîmes, Perpignan",
-    description: "Découvrez les 8 signes d'alerte du syndrome de Diogène, les statistiques en France et notre protocole d'intervention professionnel. Guide expert 2025 pour Montpellier, Sète, Béziers, Nîmes, Perpignan et tout le Sud de la France.",
-    keywords: "syndrome diogène, identification, gestion, accompagnement, nettoyage, débarras, statistiques, protocole, France, 2025, montpellier, sete, beziers, nimes, perpignan, herault, gard, pyrenees-orientales",
+    title: "Syndrome de Diogène : Guide Complet 2025",
+    description: "Découvrez les 8 signes d'alerte du syndrome de Diogène, les statistiques en France et notre protocole d'intervention professionnel.",
     canonical: "/blog/syndrome-diogene-identifier-gerer"
   },
   '/blog/debarras-apres-deces-accompagnement': {
-    title: "Débarras après décès : Guide Complet 2025 | Accompagnement Respectueux et Professionnel | SOS Nettoyage Diogène | Montpellier, Sète, Béziers, Nîmes, Perpignan",
-    description: "Découvrez notre protocole de débarras après décès : délais légaux, étapes et accompagnement psychologique. Service 24h/24 avec équipes formées à Montpellier, Sète, Béziers, Nîmes, Perpignan et tout le Sud de la France.",
-    keywords: "débarras après décès, accompagnement, respect, discrétion, nettoyage, professionnel, délais légaux, protocole, 2025, montpellier, sete, beziers, nimes, perpignan, herault, gard, pyrenees-orientales",
+    title: "Débarras Après Décès : Guide Complet 2025",
+    description: "Protocole de débarras après décès : délais légaux, étapes et accompagnement psychologique. Service 24h/24 dans le Sud de la France.",
     canonical: "/blog/debarras-apres-deces-accompagnement"
   },
   '/blog/desinfection-assainissement-protocoles': {
-    title: "Désinfection et Assainissement : Protocoles Professionnels 2025 | Guide Complet | SOS Nettoyage Diogène | Montpellier, Sète, Béziers, Nîmes, Perpignan",
-    description: "Découvrez nos protocoles de désinfection certifiés, produits homologués et techniques professionnelles. Garantie 99,9% d'efficacité contre virus et bactéries à Montpellier, Sète, Béziers, Nîmes, Perpignan et tout le Sud de la France.",
-    keywords: "désinfection, assainissement, protocoles, bonnes pratiques, nettoyage, environnement sain, virus, bactéries, certification, 2025, montpellier, sete, beziers, nimes, perpignan, herault, gard, pyrenees-orientales",
+    title: "Désinfection & Assainissement : Protocoles 2025",
+    description: "Protocoles de désinfection certifiés, produits homologués et techniques professionnelles. Garantie 99,9% d'efficacité.",
     canonical: "/blog/desinfection-assainissement-protocoles"
   },
   '/blog/prevention-insalubrite-conseils': {
-    title: "Prévention de l'Insalubrité : Guide Complet 2025 | Conseils d'Experts pour un Logement Sain | SOS Nettoyage Diogène | Montpellier, Sète, Béziers, Nîmes, Perpignan",
-    description: "Découvrez 15 conseils d'experts pour prévenir l'insalubrité : entretien, organisation, signes d'alerte. Guide pratique avec checklist gratuite et audit préventif pour Montpellier, Sète, Béziers, Nîmes, Perpignan et tout le Sud de la France.",
-    keywords: "prévention insalubrité, conseils, logement sain, environnement, maintenance, prévention, checklist, audit, 2025, montpellier, sete, beziers, nimes, perpignan, herault, gard, pyrenees-orientales",
+    title: "Prévention Insalubrité : 15 Conseils d'Experts",
+    description: "15 conseils d'experts pour prévenir l'insalubrité : entretien, organisation, signes d'alerte. Guide pratique avec checklist gratuite.",
     canonical: "/blog/prevention-insalubrite-conseils"
   },
   '/nettoyage-apres-deces': {
-    title: "Nettoyage Après Décès | Service Respectueux et Discret | SOS Nettoyage Diogène | Montpellier, Sète, Béziers, Nîmes, Perpignan, Marseille, Nice, Toulouse",
-    description: "Service spécialisé de nettoyage et remise en état après décès à Montpellier, Sète, Béziers, Nîmes, Perpignan, Marseille, Nice, Toulouse et tout le Sud de la France. Intervention respectueuse, discrète et professionnelle avec protocoles sanitaires stricts. Devis gratuit 7j/7.",
-    keywords: "nettoyage après décès, nettoyage décès, remise en état décès, nettoyage post décès, désinfection décès, nettoyage respectueux, service discret, protocoles sanitaires, montpellier, sete, beziers, nimes, perpignan, marseille, nice, toulouse, herault, gard, pyrenees-orientales, bouches-du-rhone, alpes-maritimes, haute-garonne",
+    title: "Nettoyage Après Décès | Service Discret 7j/7",
+    description: "Service spécialisé de nettoyage après décès. Intervention respectueuse et discrète avec protocoles sanitaires stricts dans tout le Sud de la France. Devis gratuit.",
     canonical: "/nettoyage-apres-deces"
   },
   '/nettoyage-appartement-apres-deces': {
-    title: "Nettoyage Appartement Après Décès - Service Professionnel et Discret | SOS Nettoyage Diogène",
-    description: "Service spécialisé de nettoyage d'appartement après décès. Bio-nettoyage, désinfection et remise en état avec protocoles sanitaires stricts. Intervention rapide et discrète dans tout le Sud de la France.",
-    keywords: "nettoyage appartement après décès, bio-nettoyage, désinfection après décès, remise en état, protocoles sanitaires, intervention discrète, montpellier, sete, beziers, nimes, perpignan, marseille, nice, toulouse, herault, gard, pyrenees-orientales, bouches-du-rhone, alpes-maritimes, haute-garonne",
+    title: "Nettoyage Appartement Après Décès | Pro & Discret",
+    description: "Service de nettoyage d'appartement après décès. Bio-nettoyage, désinfection et remise en état avec protocoles sanitaires stricts.",
     canonical: "/nettoyage-appartement-apres-deces"
   },
   '/debarras-gros-volumes': {
-    title: "Débarras Gros Volumes | Évacuation Professionnelle | SOS Nettoyage Diogène | Montpellier, Sète, Béziers, Nîmes, Perpignan, Marseille, Nice, Toulouse",
-    description: "Service professionnel de débarras et évacuation gros volumes à Montpellier, Sète, Béziers, Nîmes, Perpignan, Marseille, Nice, Toulouse et tout le Sud de la France. Greniers, caves, garages, déménagements, successions. Tri et recyclage respectueux de l'environnement. Devis gratuit 7j/7.",
-    keywords: "débarras gros volumes, évacuation déchets, tri sélectif, recyclage, greniers caves, déménagements, successions, nettoyage professionnel, montpellier, sete, beziers, nimes, perpignan, marseille, nice, toulouse, herault, gard, pyrenees-orientales, bouches-du-rhone, alpes-maritimes, haute-garonne",
+    title: "Débarras Gros Volumes | Évacuation Pro Sud France",
+    description: "Débarras et évacuation gros volumes : greniers, caves, garages, successions. Tri et recyclage respectueux de l'environnement. Devis gratuit 7j/7.",
     canonical: "/debarras-gros-volumes"
   },
   '/desinfection-insalubrite': {
-    title: "Désinfection & Insalubrité | Service Professionnel de Remise en État | SOS Nettoyage Diogène | Montpellier, Sète, Béziers, Nîmes, Perpignan, Marseille, Nice, Toulouse",
-    description: "Service spécialisé de désinfection et remise en état de logements insalubres à Montpellier, Sète, Béziers, Nîmes, Perpignan, Marseille, Nice, Toulouse et tout le Sud de la France. Intervention professionnelle avec protocoles sanitaires stricts et respect des normes. Devis gratuit 7j/7.",
-    keywords: "désinfection insalubrité, nettoyage logement insalubre, syndrome diogène, désinfection professionnelle, remise en état, protocoles sanitaires, santé publique, montpellier, sete, beziers, nimes, perpignan, marseille, nice, toulouse, herault, gard, pyrenees-orientales, bouches-du-rhone, alpes-maritimes, haute-garonne",
+    title: "Désinfection & Insalubrité | Remise en État Pro",
+    description: "Désinfection et remise en état de logements insalubres. Intervention professionnelle avec protocoles sanitaires stricts. Devis gratuit 7j/7.",
     canonical: "/desinfection-insalubrite"
   },
   '/partenariat-mjpm': {
-    title: "Partenariat MJPM | -20% de réduction | SOS Nettoyage Diogène | Montpellier, Sète, Béziers, Nîmes, Perpignan, Marseille, Nice, Toulouse",
-    description: "Rejoignez notre réseau de partenaires MJPM. -20% de réduction sur nos services de nettoyage spécialisé pour vos protégés à Montpellier, Sète, Béziers, Nîmes, Perpignan, Marseille, Nice, Toulouse et tout le Sud de la France. Intervention prioritaire et formation spécialisée.",
-    keywords: "partenariat MJPM, réduction, nettoyage spécialisé, protégés, associations, mesure de protection, montpellier, sete, beziers, nimes, perpignan, marseille, nice, toulouse, herault, gard, pyrenees-orientales, bouches-du-rhone, alpes-maritimes, haute-garonne",
+    title: "Partenariat MJPM | -20% Nettoyage Spécialisé",
+    description: "Rejoignez notre réseau partenaire MJPM. -20% sur nos services de nettoyage pour vos protégés. Intervention prioritaire dans le Sud de la France.",
     canonical: "/partenariat-mjpm"
   },
   '/partenariat-maisons-retraite': {
-    title: "Partenariat Maisons de Retraite | -20% de réduction | SOS Nettoyage Diogène | Montpellier, Sète, Béziers, Nîmes, Perpignan, Marseille, Nice, Toulouse",
-    description: "Rejoignez notre réseau de partenaires maisons de retraite. -20% de réduction sur nos services de nettoyage spécialisé pour vos résidents à Montpellier, Sète, Béziers, Nîmes, Perpignan, Marseille, Nice, Toulouse et tout le Sud de la France. Intervention prioritaire et formation spécialisée.",
-    keywords: "partenariat maisons de retraite, réduction, nettoyage spécialisé, résidents, EHPAD, établissements, montpellier, sete, beziers, nimes, perpignan, marseille, nice, toulouse, herault, gard, pyrenees-orientales, bouches-du-rhone, alpes-maritimes, haute-garonne",
+    title: "Partenariat EHPAD | -20% Nettoyage Spécialisé",
+    description: "Partenariat maisons de retraite et EHPAD. -20% sur nos services de nettoyage pour vos résidents. Intervention prioritaire.",
     canonical: "/partenariat-maisons-retraite"
   },
-  '/404': {
-    title: "Page Non Trouvée | SOS Nettoyage Diogène | Montpellier, Sète, Béziers, Nîmes, Perpignan, Marseille, Nice, Toulouse",
-    description: "La page que vous recherchez n'existe pas. Retournez à l'accueil pour découvrir nos services de nettoyage et débarras spécialisé à Montpellier, Sète, Béziers, Nîmes, Perpignan, Marseille, Nice, Toulouse et tout le Sud de la France.",
-    keywords: "page non trouvée, 404, erreur, nettoyage, débarras, services, montpellier, sete, beziers, nimes, perpignan, marseille, nice, toulouse, herault, gard, pyrenees-orientales, bouches-du-rhone, alpes-maritimes, haute-garonne",
-    canonical: "/404"
-  },
-  // Pages dynamiques ville/service
   '/nettoyage-syndrome-diogene-montpellier': {
-    title: "Nettoyage Syndrome de Diogène à Montpellier | Service Professionnel | SOS Nettoyage Diogène",
-    description: "Service spécialisé de nettoyage syndrome de Diogène à Montpellier, Hérault. Intervention discrète, professionnelle et respectueuse. Équipe formée et équipée. Devis gratuit 7j/7.",
-    keywords: "nettoyage syndrome diogène, montpellier, herault, nettoyage spécialisé, débarras, intervention discrète, professionnel, montpellier, sete, beziers, nimes, perpignan, marseille, nice, toulouse, herault, gard, pyrenees-orientales, bouches-du-rhone, alpes-maritimes, haute-garonne",
+    title: "Nettoyage Diogène Montpellier | Expert & Discret",
+    description: "Service spécialisé de nettoyage syndrome de Diogène à Montpellier (Hérault). Équipe formée, intervention discrète. Devis gratuit 7j/7.",
     canonical: "/nettoyage-syndrome-diogene-montpellier"
   },
   '/nettoyage-syndrome-diogene-sete': {
-    title: "Nettoyage Syndrome de Diogène à Sète | Service Professionnel | SOS Nettoyage Diogène",
-    description: "Service spécialisé de nettoyage syndrome de Diogène à Sète, Hérault. Intervention discrète, professionnelle et respectueuse. Équipe formée et équipée. Devis gratuit 7j/7.",
-    keywords: "nettoyage syndrome diogène, sete, herault, nettoyage spécialisé, débarras, intervention discrète, professionnel, montpellier, sete, beziers, nimes, perpignan, marseille, nice, toulouse, herault, gard, pyrenees-orientales, bouches-du-rhone, alpes-maritimes, haute-garonne",
+    title: "Nettoyage Diogène Sète | Intervention Pro",
+    description: "Service expert de nettoyage syndrome de Diogène à Sète (Hérault). Spécialisé logements côtiers, intervention 24h/24.",
     canonical: "/nettoyage-syndrome-diogene-sete"
   },
   '/nettoyage-syndrome-diogene-beziers': {
-    title: "Nettoyage Syndrome de Diogène à Béziers | Service Professionnel | SOS Nettoyage Diogène",
-    description: "Service spécialisé de nettoyage syndrome de Diogène à Béziers, Hérault. Intervention discrète, professionnelle et respectueuse. Équipe formée et équipée. Devis gratuit 7j/7.",
-    keywords: "nettoyage syndrome diogène, beziers, herault, nettoyage spécialisé, débarras, intervention discrète, professionnel, montpellier, sete, beziers, nimes, perpignan, marseille, nice, toulouse, herault, gard, pyrenees-orientales, bouches-du-rhone, alpes-maritimes, haute-garonne",
+    title: "Nettoyage Diogène Béziers | Service Expert",
+    description: "Service professionnel de nettoyage syndrome de Diogène à Béziers (Hérault). Expertise logements historiques. Devis gratuit.",
     canonical: "/nettoyage-syndrome-diogene-beziers"
   },
   '/nettoyage-syndrome-diogene-nimes': {
-    title: "Nettoyage Syndrome de Diogène à Nîmes | Service Professionnel | SOS Nettoyage Diogène",
-    description: "Service spécialisé de nettoyage syndrome de Diogène à Nîmes, Gard. Intervention discrète, professionnelle et respectueuse. Équipe formée et équipée. Devis gratuit 7j/7.",
-    keywords: "nettoyage syndrome diogène, nimes, gard, nettoyage spécialisé, débarras, intervention discrète, professionnel, montpellier, sete, beziers, nimes, perpignan, marseille, nice, toulouse, herault, gard, pyrenees-orientales, bouches-du-rhone, alpes-maritimes, haute-garonne",
+    title: "Nettoyage Diogène Nîmes | Service Gardois Expert",
+    description: "Service spécialisé de nettoyage syndrome de Diogène à Nîmes (Gard). Intervention rapide dans tout le Gard. Devis gratuit.",
     canonical: "/nettoyage-syndrome-diogene-nimes"
   },
   '/nettoyage-syndrome-diogene-perpignan': {
-    title: "Nettoyage Syndrome de Diogène à Perpignan | Service Professionnel | SOS Nettoyage Diogène",
-    description: "Service spécialisé de nettoyage syndrome de Diogène à Perpignan, Pyrénées-Orientales. Intervention discrète, professionnelle et respectueuse. Équipe formée et équipée. Devis gratuit 7j/7.",
-    keywords: "nettoyage syndrome diogène, perpignan, pyrenees-orientales, nettoyage spécialisé, débarras, intervention discrète, professionnel, montpellier, sete, beziers, nimes, perpignan, marseille, nice, toulouse, herault, gard, pyrenees-orientales, bouches-du-rhone, alpes-maritimes, haute-garonne",
+    title: "Nettoyage Diogène Perpignan | Expert P-O",
+    description: "Service expert de nettoyage syndrome de Diogène à Perpignan (Pyrénées-Orientales). Intervention dans tout le Roussillon.",
     canonical: "/nettoyage-syndrome-diogene-perpignan"
   },
   '/nettoyage-syndrome-diogene-marseille': {
-    title: "Nettoyage syndrome de Diogène à Marseille | Débarras & Désinfection – SOS Nettoyage Diogène",
-    description: "Intervention discrète 7j/7 à Marseille: débarras gros volumes, tri, désinfection et remise en état pour syndrome de Diogène. Devis gratuit et confidentiel. Équipe formée au risque biologique et au nettoyage de l'extrême.",
-    keywords: "syndrome de Diogène Marseille, nettoyage Diogène Marseille, débarras insalubrité Marseille, nettoyage extrême Marseille, débarras gros volumes 13, désinfection appartement Marseille, nettoyage spécialisé Marseille, bouches-du-rhone, métropole aix-marseille-provence",
+    title: "Nettoyage Diogène Marseille | Débarras & Désinfection",
+    description: "Intervention discrète 7j/7 à Marseille : débarras gros volumes, tri, désinfection et remise en état pour syndrome de Diogène. Devis gratuit.",
     canonical: "/nettoyage-syndrome-diogene-marseille"
   },
   '/nettoyage-apres-deces-marseille': {
-    title: "Nettoyage après décès à Marseille: faire soi-même ou confier à des spécialistes | Guide Complet 2025",
-    description: "Guide complet pour le nettoyage après décès à Marseille: faire soi-même ou déléguer à des spécialistes. Protocoles sanitaires, délais, coûts, prise en charge assurance. Intervention 24h/24.",
-    keywords: "nettoyage après décès Marseille, nettoyage décès 13, décontamination décès Marseille, nettoyage post décès, désinfection décès, nettoyage respectueux Marseille, protocoles sanitaires décès, assurance habitation décès, bouches-du-rhone",
+    title: "Nettoyage Après Décès Marseille | Guide 2025",
+    description: "Guide complet nettoyage après décès à Marseille : protocoles sanitaires, délais, coûts. Intervention 24h/24.",
     canonical: "/nettoyage-apres-deces-marseille"
   },
   '/tous-nos-services': {
-    title: "Tous nos Services | SOS Nettoyage Diogène | Montpellier, Sète, Béziers, Nîmes, Perpignan, Marseille, Nice, Toulouse",
-    description: "Découvrez tous nos services de nettoyage spécialisé : syndrome de Diogène, nettoyage après décès, débarras gros volumes, désinfection. Intervention professionnelle dans tout le Sud de la France.",
-    keywords: "tous nos services, nettoyage spécialisé, syndrome diogène, nettoyage après décès, débarras, désinfection, montpellier, sete, beziers, nimes, perpignan, marseille, nice, toulouse",
+    title: "Tous Nos Services | SOS Nettoyage Diogène",
+    description: "Découvrez tous nos services : syndrome de Diogène, nettoyage après décès, débarras gros volumes, désinfection. Intervention dans le Sud de la France.",
     canonical: "/tous-nos-services"
   },
   '/entreprise-nettoyage-montpellier': {
-    title: "Entreprise de Nettoyage Montpellier | Services Professionnels & Spécialisés | SOS Nettoyage Diogène",
-    description: "Entreprise de nettoyage professionnel à Montpellier. Services spécialisés : syndrome de Diogène, nettoyage après décès, débarras, désinfection. Équipe certifiée, intervention 7j/7. Devis gratuit.",
-    keywords: "entreprise nettoyage Montpellier, nettoyage professionnel Montpellier, société nettoyage Hérault, nettoyage spécialisé Montpellier, syndrome diogène Montpellier, nettoyage après décès Montpellier, débarras Montpellier, désinfection Montpellier",
+    title: "Entreprise Nettoyage Montpellier | SOS Diogène",
+    description: "Entreprise de nettoyage professionnel à Montpellier. Syndrome de Diogène, nettoyage après décès, débarras, désinfection. Devis gratuit 7j/7.",
     canonical: "/entreprise-nettoyage-montpellier"
   },
   '/entreprise-nettoyage-marseille': {
-    title: "Entreprise de Nettoyage Marseille | Services Professionnels & Spécialisés | SOS Nettoyage Diogène",
-    description: "Entreprise de nettoyage professionnel à Marseille. Services spécialisés : syndrome de Diogène, nettoyage après décès, débarras, désinfection. Équipe certifiée, intervention 7j/7. Devis gratuit.",
-    keywords: "entreprise nettoyage Marseille, nettoyage professionnel Marseille, société nettoyage Bouches-du-Rhône, nettoyage spécialisé Marseille, syndrome diogène Marseille, nettoyage après décès Marseille, débarras Marseille, désinfection Marseille",
+    title: "Entreprise Nettoyage Marseille | SOS Diogène",
+    description: "Entreprise de nettoyage professionnel à Marseille. Syndrome de Diogène, nettoyage après décès, débarras, désinfection. Devis gratuit 7j/7.",
     canonical: "/entreprise-nettoyage-marseille"
   },
   '/meilleures-societes-nettoyage-montpellier': {
-    title: "Les 10 Meilleures Sociétés de Nettoyage à Montpellier : Votre Guide Complet 2025",
-    description: "Découvrez notre classement des meilleures entreprises de nettoyage à Montpellier. SOS Nettoyage Diogène, Au'clean, Nova Clean et plus. Services spécialisés et expertise reconnue dans l'Hérault.",
-    keywords: "société de nettoyage, Montpellier, nettoyage professionnel, entreprise nettoyage, Hérault, SOS Nettoyage Diogène, Au'clean, Nova Clean, nettoyage bureaux, nettoyage industriel",
+    title: "Top 10 Sociétés Nettoyage Montpellier 2025",
+    description: "Classement des meilleures entreprises de nettoyage à Montpellier. SOS Nettoyage Diogène, Au'clean, Nova Clean et plus.",
     canonical: "/meilleures-societes-nettoyage-montpellier"
   },
   '/prix-diogene': {
-    title: "Prix Diogène : L'Expertise de SOS Nettoyage Diogène pour les Interventions Extrêmes",
-    description: "Découvrez nos tarifs pour le nettoyage syndrome de Diogène. Devis gratuit et transparent pour interventions spécialisées. SOS Nettoyage Diogène : expertise, discrétion et approche humaine dans tout le Sud de la France.",
-    keywords: "prix diogène, tarif nettoyage syndrome diogène, devis nettoyage insalubrité, coût intervention diogène, prix nettoyage extrême, SOS nettoyage diogène, montpellier, sete, beziers, nimes, perpignan, marseille, herault, gard, pyrenees-orientales",
+    title: "Prix Nettoyage Diogène | Tarifs & Devis Gratuit",
+    description: "Tarifs nettoyage syndrome de Diogène. Devis gratuit et transparent. Expertise, discrétion et approche humaine dans le Sud de la France.",
     canonical: "/prix-diogene"
+  },
+  '/mentions-legales': {
+    title: "Mentions Légales | SOS Nettoyage Diogène",
+    description: "Mentions légales du site SOS Nettoyage Diogène. Informations sur l'éditeur, l'hébergeur et les conditions d'utilisation.",
+    canonical: "/mentions-legales"
+  },
+  '/politique-confidentialite': {
+    title: "Politique de Confidentialité | SOS Nettoyage Diogène",
+    description: "Politique de confidentialité et protection des données personnelles de SOS Nettoyage Diogène.",
+    canonical: "/politique-confidentialite"
+  },
+  // Pages services par ville
+  '/debarras-gros-volumes-montpellier': {
+    title: "Débarras Gros Volumes Montpellier | Pro 7j/7",
+    description: "Service de débarras gros volumes à Montpellier. Évacuation rapide, tri et recyclage. Devis gratuit 7j/7.",
+    canonical: "/debarras-gros-volumes-montpellier"
+  },
+  '/desinfection-insalubrite-montpellier': {
+    title: "Désinfection Insalubrité Montpellier | Expert",
+    description: "Désinfection et remise en état de logements insalubres à Montpellier. Protocoles sanitaires stricts. Devis gratuit.",
+    canonical: "/desinfection-insalubrite-montpellier"
+  },
+  '/nettoyage-apres-deces-montpellier': {
+    title: "Nettoyage Après Décès Montpellier | Discret",
+    description: "Service de nettoyage après décès à Montpellier. Intervention respectueuse et discrète. Devis gratuit 7j/7.",
+    canonical: "/nettoyage-apres-deces-montpellier"
+  },
+  '/nettoyage-apres-deces-nimes': {
+    title: "Nettoyage Après Décès Nîmes | Service Discret",
+    description: "Service de nettoyage après décès à Nîmes. Intervention respectueuse et discrète dans le Gard. Devis gratuit 7j/7.",
+    canonical: "/nettoyage-apres-deces-nimes"
+  },
+  '/nettoyage-insalubre-montpellier': {
+    title: "Nettoyage Insalubre Montpellier | Expert 7j/7",
+    description: "Nettoyage de logement insalubre à Montpellier. Intervention professionnelle et discrète. Devis gratuit.",
+    canonical: "/nettoyage-insalubre-montpellier"
+  },
+  '/nettoyage-insalubre-nimes': {
+    title: "Nettoyage Insalubre Nîmes | Expert Gardois",
+    description: "Nettoyage de logement insalubre à Nîmes et dans le Gard. Intervention professionnelle et discrète. Devis gratuit.",
+    canonical: "/nettoyage-insalubre-nimes"
+  },
+  '/404': {
+    title: "Page Non Trouvée | SOS Nettoyage Diogène",
+    description: "La page que vous recherchez n'existe pas. Retournez à l'accueil pour découvrir nos services.",
+    canonical: "/404",
+    noIndex: true
   },
   // Landing pages Google Ads (noindex)
   '/landing/nettoyage-syndrome-diogene': {
-    title: "Nettoyage Syndrome de Diogène | Intervention Discrète 7j/7 | SOS Nettoyage Diogène",
-    description: "Service spécialisé nettoyage syndrome de Diogène. Intervention discrète, professionnelle et respectueuse dans tout le Sud de la France. Devis gratuit.",
-    keywords: "nettoyage syndrome diogène, intervention discrète, débarras, insalubrité, sud france",
+    title: "Nettoyage Syndrome de Diogène | Devis Gratuit 7j/7",
+    description: "Intervention spécialisée syndrome de Diogène. Équipe formée, discrétion totale, devis gratuit. Montpellier, Marseille et Sud de la France.",
     canonical: "/landing/nettoyage-syndrome-diogene",
     noIndex: true
   },
   '/landing/debarras-gros-volumes': {
-    title: "Débarras Gros Volumes | Évacuation Rapide | SOS Nettoyage Diogène",
+    title: "Débarras Gros Volumes | Évacuation Rapide",
     description: "Débarras et évacuation gros volumes : maison, appartement, cave, grenier. Tri, recyclage et évacuation rapide dans tout le Sud de la France.",
-    keywords: "débarras gros volumes, évacuation, tri, recyclage, sud france",
     canonical: "/landing/debarras-gros-volumes",
     noIndex: true
   },
   '/landing/desinfection-insalubrite': {
-    title: "Désinfection & Insalubrité | Intervention Urgente | SOS Nettoyage Diogène",
+    title: "Désinfection & Insalubrité | Intervention Urgente",
     description: "Désinfection et remise en état de logements insalubres. Intervention professionnelle avec protocoles sanitaires stricts. Devis gratuit 7j/7.",
-    keywords: "désinfection, insalubrité, nettoyage, protocoles sanitaires, sud france",
     canonical: "/landing/desinfection-insalubrite",
     noIndex: true
   },
   '/landing/nettoyage-apres-deces': {
-    title: "Nettoyage de Logement Après Décès | Service Respectueux | SOS Nettoyage Diogène",
+    title: "Nettoyage Après Décès | Service Respectueux",
     description: "Nettoyage de logement après décès. Intervention respectueuse, discrète et professionnelle dans tout le Sud de la France. Devis gratuit 7j/7.",
-    keywords: "nettoyage après décès, nettoyage logement décès, désinfection, sud france",
     canonical: "/landing/nettoyage-apres-deces",
     noIndex: true
   },
@@ -287,20 +299,16 @@ function getBaseHTML() {
 </html>`;
 }
 
-// Générer une page avec les meta tags
+// Générer une page avec les meta tags (sans meta keywords)
 function generatePage(route, meta) {
   const html = getBaseHTML();
   
-  // Insérer les meta tags dans le head
   const metaTags = `
     <!-- SEO Meta Tags -->
     <title>${meta.title}</title>
     <meta name="description" content="${meta.description}" />
-    <meta name="keywords" content="${meta.keywords}" />
-    <meta name="author" content="SOS Nettoyage Diogène - Nettoyage Professionnel" />
+    <meta name="author" content="SOS Nettoyage Diogène" />
     <meta name="robots" content="${meta.noIndex ? 'noindex, nofollow' : 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'}" />
-    <meta name="googlebot" content="${meta.noIndex ? 'noindex, nofollow' : 'index, follow'}" />
-    <meta name="bingbot" content="${meta.noIndex ? 'noindex, nofollow' : 'index, follow'}" />
     
     <!-- Canonical URL -->
     <link rel="canonical" href="${SITE_URL}${route}" />
@@ -328,18 +336,15 @@ function generatePage(route, meta) {
 function generateStaticPages() {
   console.log('🚀 Génération des pages statiques avec meta tags...');
   
-  // Créer le dossier dist s'il n'existe pas
   if (!fs.existsSync(BUILD_DIR)) {
     fs.mkdirSync(BUILD_DIR, { recursive: true });
   }
   
-  // Générer chaque page
   Object.entries(pagesMeta).forEach(([route, meta]) => {
     const html = generatePage(route, meta);
     const filePath = route === '/' ? 'index.html' : `${route.slice(1)}/index.html`;
     const fullPath = path.join(BUILD_DIR, filePath);
     
-    // Créer le dossier si nécessaire
     const dir = path.dirname(fullPath);
     if (!fs.existsSync(dir)) {
       fs.mkdirSync(dir, { recursive: true });

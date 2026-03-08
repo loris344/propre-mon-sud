@@ -6,7 +6,7 @@ import { useState, useEffect, useCallback, memo } from "react";
 
 const CITIES = [
   "Montpellier", "Sète", "Béziers", "Nîmes", "Perpignan", "Marseille",
-  "Toulouse", "Nice", "Aix-en-Provence", "Toulon", "Avignon", "Bordeaux"
+  "Toulouse", "Narbonne", "Aix-en-Provence", "Toulon", "Avignon", "Carcassonne"
 ];
 
 const Hero = () => {
@@ -81,10 +81,10 @@ const Hero = () => {
                   {[1, 2, 3, 4, 5].map((star) => (
                     <svg
                       key={star}
-                      className={`w-4 h-4 ${
+                    className={`w-4 h-4 ${
                         star <= 4 
-                          ? 'text-yellow-400 fill-yellow-400' 
-                          : 'text-yellow-400 fill-yellow-400 opacity-70'
+                          ? 'text-amber-400 fill-amber-400' 
+                          : 'text-amber-400 fill-amber-400 opacity-70'
                       }`}
                       viewBox="0 0 24 24"
                     >

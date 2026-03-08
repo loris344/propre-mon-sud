@@ -151,8 +151,8 @@ const Contact = () => {
             <CardContent>
               {isSubmitted ? (
                 <div className="text-center py-8 space-y-4">
-                  <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto">
-                    <CheckCircle className="w-8 h-8 text-green-600" />
+                  <div className="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mx-auto">
+                    <CheckCircle className="w-8 h-8 text-accent" />
                   </div>
                   <h3 className="text-xl font-semibold text-foreground">Demande envoyée !</h3>
                   <p className="text-muted-foreground">
@@ -168,10 +168,10 @@ const Contact = () => {
                         placeholder="Votre prénom" 
                         value={formData.firstName}
                         onChange={(e) => handleInputChange('firstName', e.target.value)}
-                        className={`text-base sm:text-lg py-3 sm:py-4 ${errors.firstName ? "border-red-500" : ""}`}
+                        className={`text-base sm:text-lg py-3 sm:py-4 ${errors.firstName ? "border-destructive" : ""}`}
                       />
                       {errors.firstName && (
-                        <p className="text-sm sm:text-base text-red-500 flex items-center gap-2">
+                        <p className="text-sm sm:text-base text-destructive flex items-center gap-2">
                           <AlertCircle className="w-4 h-4 sm:w-5 sm:h-5" />
                           {errors.firstName}
                         </p>
@@ -183,10 +183,10 @@ const Contact = () => {
                         placeholder="06 00 00 00 00" 
                         value={formData.phone}
                         onChange={(e) => handleInputChange('phone', e.target.value)}
-                        className={`text-base sm:text-lg py-3 sm:py-4 ${errors.phone ? "border-red-500" : ""}`}
+                        className={`text-base sm:text-lg py-3 sm:py-4 ${errors.phone ? "border-destructive" : ""}`}
                       />
                       {errors.phone && (
-                        <p className="text-sm sm:text-base text-red-500 flex items-center gap-2">
+                        <p className="text-sm sm:text-base text-destructive flex items-center gap-2">
                           <AlertCircle className="w-4 h-4 sm:w-5 sm:h-5" />
                           {errors.phone}
                         </p>
@@ -201,10 +201,10 @@ const Contact = () => {
                       placeholder="votre.email@exemple.fr" 
                       value={formData.email}
                       onChange={(e) => handleInputChange('email', e.target.value)}
-                      className={`text-base sm:text-lg py-3 sm:py-4 ${errors.email ? "border-red-500" : ""}`}
+                      className={`text-base sm:text-lg py-3 sm:py-4 ${errors.email ? "border-destructive" : ""}`}
                     />
                     {errors.email && (
-                      <p className="text-sm sm:text-base text-red-500 flex items-center gap-2">
+                      <p className="text-sm sm:text-base text-destructive flex items-center gap-2">
                         <AlertCircle className="w-4 h-4 sm:w-5 sm:h-5" />
                         {errors.email}
                       </p>

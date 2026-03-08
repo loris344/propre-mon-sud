@@ -67,7 +67,7 @@ const CustomerReviews = memo(() => {
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground">
+          <h2 id="avis-title" className="text-3xl md:text-4xl font-bold text-foreground">
             Avis Clients Vérifiés
           </h2>
           <p className="text-lg text-muted-foreground">
@@ -79,7 +79,7 @@ const CustomerReviews = memo(() => {
             <div className="flex items-center gap-2">
               <div className="flex">
                 {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
+                  <Star key={i} className="w-5 h-5 fill-amber-400 text-amber-400" />
                 ))}
               </div>
               <span className="text-2xl font-bold text-foreground">4,7</span>
@@ -113,9 +113,9 @@ const CustomerReviews = memo(() => {
                             <Star 
                               key={i} 
                               className={`w-4 h-4 ${
-                                i < review.rating 
-                                  ? 'fill-yellow-400 text-yellow-400' 
-                                  : 'text-gray-300'
+                              i < review.rating 
+                                ? 'fill-amber-400 text-amber-400' 
+                                : 'text-muted-foreground/30'
                               }`} 
                             />
                           ))}

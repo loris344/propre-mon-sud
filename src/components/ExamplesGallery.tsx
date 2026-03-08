@@ -9,7 +9,7 @@ const ExamplesGallery = () => {
             <Sparkles className="w-3 h-3" />
             Nos réalisations
           </div>
-          <h2 className="text-lg sm:text-xl font-bold text-foreground mb-2">
+          <h2 id="exemples-title" className="text-lg sm:text-xl font-bold text-foreground mb-2">
             Exemples de <span className="text-primary">transformations</span>
           </h2>
           <p className="text-xs sm:text-sm text-muted-foreground">
@@ -28,6 +28,7 @@ const ExamplesGallery = () => {
                     alt="Exemple de transformation 1"
                     className="w-full h-48 sm:h-56 object-cover"
                     draggable="false"
+                    loading="lazy"
                     style={{ objectPosition: 'center top' }}
                   />
                 </div>
@@ -47,6 +48,7 @@ const ExamplesGallery = () => {
                     alt="Exemple de transformation 2"
                     className="w-full h-48 sm:h-56 object-cover"
                     draggable="false"
+                    loading="lazy"
                     style={{ objectPosition: 'center top' }}
                   />
                 </div>
@@ -64,6 +66,7 @@ const ExamplesGallery = () => {
                   <img
                     src="/images/logos/p1.png"
                     alt="Équipe professionnelle de nettoyage spécialisé"
+                    loading="lazy"
                     className="w-full h-48 sm:h-56 object-cover"
                     draggable="false"
                     style={{ objectPosition: 'center top' }}

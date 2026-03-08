@@ -11,10 +11,10 @@ const ReviewsDisplay = () => {
             key={star}
             className={`w-3 h-3 ${
               star <= 4 
-                ? 'text-yellow-400 fill-yellow-400' 
+                ? 'text-amber-400 fill-amber-400' 
                 : star === 5 
-                  ? 'text-yellow-400 fill-yellow-400 opacity-70' 
-                  : 'text-gray-300'
+                  ? 'text-amber-400 fill-amber-400 opacity-70' 
+                  : 'text-muted-foreground/30'
             }`}
           />
         ))}

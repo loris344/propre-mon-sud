@@ -13,9 +13,8 @@ const Header = () => {
   const routerLocation = useRouterLocation();
   
   const cities = [
-    "Carcassonne", "Rodez", "Marseille", "Nîmes", "Montpellier", 
-    "Narbonne", "Millau", "Aix-en-Provence", "Alès", "Sète",
-    "Limoux", "Villefranche-de-Rouergue", "Toulon", "Béziers", "Lodève"
+    "Montpellier", "Sète", "Béziers", "Nîmes", "Perpignan", "Marseille",
+    "Toulouse", "Narbonne", "Aix-en-Provence", "Toulon", "Avignon", "Carcassonne"
   ];
 
   useEffect(() => {
