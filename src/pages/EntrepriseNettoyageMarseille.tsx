@@ -20,10 +20,9 @@ const EntrepriseNettoyageMarseille: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Entreprise de Nettoyage Marseille | Services Professionnels & Spécialisés | SOS Nettoyage Diogène</title>
-        <meta name="description" content="Entreprise de nettoyage professionnel à Marseille. Services spécialisés : syndrome de Diogène, nettoyage après décès, débarras, désinfection. Équipe certifiée, intervention 7j/7. Devis gratuit." />
-        <meta name="keywords" content="entreprise nettoyage Marseille, nettoyage professionnel Marseille, société nettoyage Bouches-du-Rhône, nettoyage spécialisé Marseille, syndrome diogène Marseille, nettoyage après décès Marseille, débarras Marseille, désinfection Marseille" />
-        <link rel="canonical" href="/entreprise-nettoyage-marseille" />
+        <title>Entreprise Nettoyage Marseille | SOS Diogène</title>
+        <meta name="description" content="Entreprise de nettoyage professionnel à Marseille. Syndrome de Diogène, nettoyage après décès, débarras, désinfection. Devis gratuit 7j/7." />
+        <link rel="canonical" href="https://sosnettoyagediogene.fr/entreprise-nettoyage-marseille" />
       </Helmet>
 
       <div className="min-h-screen bg-gray-50">

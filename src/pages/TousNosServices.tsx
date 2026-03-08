@@ -106,10 +106,9 @@ const TousNosServices: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Tous nos Services | SOS Nettoyage Diogène | Montpellier, Sète, Béziers, Nîmes, Perpignan, Marseille, Nice, Toulouse</title>
-        <meta name="description" content="Découvrez tous nos services de nettoyage spécialisé : syndrome de Diogène, nettoyage après décès, débarras gros volumes, désinfection. Intervention professionnelle dans tout le Sud de la France." />
-        <meta name="keywords" content="tous nos services, nettoyage spécialisé, syndrome diogène, nettoyage après décès, débarras, désinfection, montpellier, sete, beziers, nimes, perpignan, marseille, nice, toulouse" />
-        <link rel="canonical" href="/tous-nos-services" />
+        <title>Tous Nos Services | SOS Nettoyage Diogène</title>
+        <meta name="description" content="Découvrez tous nos services : syndrome de Diogène, nettoyage après décès, débarras gros volumes, désinfection. Intervention dans le Sud de la France." />
+        <link rel="canonical" href="https://sosnettoyagediogene.fr/tous-nos-services" />
       </Helmet>
 
       <div className="min-h-screen bg-gray-50">

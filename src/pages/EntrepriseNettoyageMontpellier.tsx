@@ -20,10 +20,9 @@ const EntrepriseNettoyageMontpellier: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Entreprise de Nettoyage Montpellier | Services Professionnels & Spécialisés | SOS Nettoyage Diogène</title>
-        <meta name="description" content="Entreprise de nettoyage professionnel à Montpellier. Services spécialisés : syndrome de Diogène, nettoyage après décès, débarras, désinfection. Équipe certifiée, intervention 7j/7. Devis gratuit." />
-        <meta name="keywords" content="entreprise nettoyage Montpellier, nettoyage professionnel Montpellier, société nettoyage Hérault, nettoyage spécialisé Montpellier, syndrome diogène Montpellier, nettoyage après décès Montpellier, débarras Montpellier, désinfection Montpellier" />
-        <link rel="canonical" href="/entreprise-nettoyage-montpellier" />
+        <title>Entreprise Nettoyage Montpellier | SOS Diogène</title>
+        <meta name="description" content="Entreprise de nettoyage professionnel à Montpellier. Syndrome de Diogène, nettoyage après décès, débarras, désinfection. Devis gratuit 7j/7." />
+        <link rel="canonical" href="https://sosnettoyagediogene.fr/entreprise-nettoyage-montpellier" />
       </Helmet>
 
       <div className="min-h-screen bg-gray-50">
