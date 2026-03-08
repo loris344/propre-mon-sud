@@ -39,7 +39,7 @@ const LandingDebarras = () => {
                 </h1>
                 
                 <p className="text-lg text-muted-foreground mt-5 leading-relaxed">
-                  Maison, appartement, cave, grenier, local pro — nous vidons, trions et évacuons 
+                  Maison, appartement, cave, grenier, local pro : nous vidons, trions et évacuons 
                   vos encombrants rapidement et proprement.
                 </p>
 
