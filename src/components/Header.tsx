@@ -63,11 +63,11 @@ const Header = () => {
                    className="flex items-center space-x-2 sm:space-x-3 flex-shrink-0 cursor-pointer"
                    onClick={handleLogoClick}
                  >
-            <ResponsiveImage
-              src="/images/logos/logo.png"
-              mobileSrc="/images/logos/logo-mobile.png"
+            <img
+              src="/images/logos/logo-transparent.png"
               alt="SOS Nettoyage Diogène Logo"
-              className="w-16 h-16 sm:w-12 sm:h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 object-contain mix-blend-multiply"
+              className="w-16 h-16 sm:w-12 sm:h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 object-contain"
+              loading="eager"
             />
             <div className="min-w-0 flex-1">
               <div className="font-bold text-foreground text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl leading-tight">SOS Nettoyage Diogène</div>
