@@ -13,11 +13,11 @@ const Footer = () => {
           {/* Logo et description */}
           <div className="sm:col-span-2 lg:col-span-1 space-y-4">
             <div className="flex items-center space-x-3">
-              <ResponsiveImage
-                src="/images/logos/logo.png"
-                mobileSrc="/images/logos/logo-mobile.png"
+              <img
+                src="/images/logos/logo-transparent.png"
                 alt="SOS Nettoyage Diogène Logo"
                 className="w-12 h-12 sm:w-16 sm:h-16 object-contain"
+                loading="lazy"
               />
               <div>
                 <div className="font-bold text-foreground text-lg sm:text-xl">SOS Nettoyage Diogène</div>
