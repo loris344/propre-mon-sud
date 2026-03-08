@@ -20,53 +20,57 @@ const LandingDesinfection = () => {
       />
       <main className="min-h-screen">
         {/* Hero */}
-        <section className="relative overflow-hidden pt-20 sm:pt-28 pb-16 sm:pb-24">
+        <section className="relative overflow-hidden pt-32 sm:pt-40 pb-16 sm:pb-24">
           <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-secondary/10" />
-          <div className="absolute top-0 left-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl -translate-y-1/2 -translate-x-1/3" />
           
           <div className="container mx-auto px-4 sm:px-6 relative">
-            <div className="max-w-4xl mx-auto">
-              <div className="flex justify-center mb-6">
-                <div className="inline-flex items-center gap-2 bg-destructive/10 border border-destructive/20 text-foreground px-5 py-2.5 rounded-full text-sm font-medium">
+            <div className="grid lg:grid-cols-2 gap-10 items-center">
+              <div>
+                <div className="inline-flex items-center gap-2 bg-destructive/10 border border-destructive/20 text-foreground px-5 py-2.5 rounded-full text-sm font-medium mb-6">
                   <AlertTriangle className="w-4 h-4 text-destructive" />
                   Urgence insalubrité — Intervention rapide
                 </div>
-              </div>
 
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-foreground leading-[1.1] text-center">
-                Logement insalubre ?<br />
-                <span className="text-primary">On assainit tout.</span>
-              </h1>
-              
-              <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto text-center mt-6 leading-relaxed">
-                Désinfection professionnelle, traitement anti-nuisibles et remise en état complète 
-                des logements contaminés. Protocoles certifiés, résultats garantis.
-              </p>
+                <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground leading-[1.1]">
+                  Logement insalubre ?<br />
+                  <span className="text-primary">On assainit tout.</span>
+                </h1>
+                
+                <p className="text-lg text-muted-foreground mt-5 leading-relaxed">
+                  Désinfection professionnelle, traitement anti-nuisibles et remise en état complète 
+                  des logements contaminés. Protocoles certifiés.
+                </p>
 
-              <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
-                <Button variant="hero" size="lg" onClick={scrollToContact} className="text-lg px-8 py-6 shadow-lg">
-                  Devis Gratuit Urgent
-                  <ArrowRight className="w-5 h-5 ml-2" />
-                </Button>
-                <a href="tel:+33605310199">
-                  <Button variant="outline" size="lg" className="text-lg px-8 py-6 w-full border-2">
-                    <Phone className="w-5 h-5 mr-2" />
-                    06 05 31 01 99
+                <div className="flex flex-col sm:flex-row gap-4 mt-8">
+                  <Button variant="hero" size="lg" onClick={scrollToContact} className="text-lg px-8 py-6 shadow-lg">
+                    Devis Gratuit
+                    <ArrowRight className="w-5 h-5 ml-2" />
                   </Button>
-                </a>
+                  <a href="tel:+33605310199">
+                    <Button variant="outline" size="lg" className="text-lg px-8 py-6 w-full border-2">
+                      <Phone className="w-5 h-5 mr-2" />
+                      06 05 31 01 99
+                    </Button>
+                  </a>
+                </div>
+
+                <div className="flex flex-wrap items-center gap-4 sm:gap-6 mt-6 text-sm text-muted-foreground">
+                  <div className="flex items-center gap-1.5">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
+                    ))}
+                    <span className="ml-1 font-medium">4.9/5</span>
+                  </div>
+                  <span className="flex items-center gap-1.5"><ShieldCheck className="w-4 h-4" /> Protocoles certifiés</span>
+                  <span className="flex items-center gap-1.5"><Clock className="w-4 h-4" /> 7j/7</span>
+                </div>
               </div>
 
-              <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 mt-8 text-sm text-muted-foreground">
-                <div className="flex items-center gap-1.5">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
-                  ))}
-                  <span className="ml-1 font-medium">4.9/5</span>
-                </div>
-                <span className="hidden sm:block text-border">|</span>
-                <span className="flex items-center gap-1.5"><ShieldCheck className="w-4 h-4" /> Protocoles certifiés</span>
-                <span className="hidden sm:block text-border">|</span>
-                <span className="flex items-center gap-1.5"><Clock className="w-4 h-4" /> 7j/7 — Urgences</span>
+              {/* Images */}
+              <div className="grid grid-cols-2 gap-3">
+                <img src="/images/services/Désinfection.jpg" alt="Désinfection professionnelle d'un logement" className="rounded-xl object-cover w-full h-48 sm:h-56 col-span-2" loading="lazy" />
+                <img src="/images/examples/nettoyage4.webp" alt="Nettoyage insalubrité" className="rounded-xl object-cover w-full h-48 sm:h-56" loading="lazy" />
+                <img src="/images/examples/ex1.png" alt="Remise en état après désinfection" className="rounded-xl object-cover w-full h-48 sm:h-56" loading="lazy" />
               </div>
             </div>
           </div>
@@ -84,7 +88,7 @@ const LandingDesinfection = () => {
             
             <div className="grid sm:grid-cols-3 gap-6 max-w-5xl mx-auto">
               {[
-                { icon: Sparkles, title: "Désinfection totale", desc: "Élimination de 99,9% des bactéries et virus. Produits professionnels homologués, techniques de nébulisation et pulvérisation." },
+                { icon: Sparkles, title: "Désinfection totale", desc: "Élimination des bactéries et virus avec des produits professionnels homologués. Techniques de nébulisation et pulvérisation." },
                 { icon: Bug, title: "Traitement anti-nuisibles", desc: "Cafards, punaises de lit, rongeurs, mites. Diagnostic précis et traitement ciblé pour une élimination durable." },
                 { icon: Droplets, title: "Remise en état complète", desc: "Nettoyage en profondeur, désodorisation, traitement des surfaces. Le logement retrouve un état habitable." },
               ].map((item, i) => (
@@ -100,10 +104,10 @@ const LandingDesinfection = () => {
           </div>
         </section>
 
-        {/* Situations d'urgence */}
+        {/* Situations */}
         <section className="py-16 sm:py-20">
           <div className="container mx-auto px-4 sm:px-6">
-            <div className="max-w-4xl mx-auto grid sm:grid-cols-2 gap-8 items-center">
+            <div className="max-w-4xl mx-auto grid sm:grid-cols-2 gap-8 items-start">
               <div>
                 <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-4">
                   Quand faut-il intervenir ?
@@ -144,28 +148,6 @@ const LandingDesinfection = () => {
                   </Button>
                 </a>
               </Card>
-            </div>
-          </div>
-        </section>
-
-        {/* Garanties */}
-        <section className="py-16 sm:py-20 bg-card border-y border-border/50">
-          <div className="container mx-auto px-4 sm:px-6">
-            <h2 className="text-2xl sm:text-3xl font-bold text-center text-foreground mb-12">
-              Nos garanties
-            </h2>
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-3xl mx-auto">
-              {[
-                { value: "99,9%", label: "Bactéries éliminées" },
-                { value: "7j/7", label: "Disponibilité" },
-                { value: "100%", label: "Confidentiel" },
-                { value: "0€", label: "Devis gratuit" },
-              ].map((stat, i) => (
-                <div key={i} className="text-center p-5 bg-background rounded-xl border border-border/50">
-                  <div className="text-2xl sm:text-3xl font-bold text-primary">{stat.value}</div>
-                  <div className="text-sm text-muted-foreground mt-1">{stat.label}</div>
-                </div>
-              ))}
             </div>
           </div>
         </section>
