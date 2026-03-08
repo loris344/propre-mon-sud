@@ -36,15 +36,7 @@ const NettoyageAppartementApresDeces = () => {
     }
   }, [location.hash]);
 
-  const seoConfig = useSEO({
-    title: "Nettoyage Appartement Après Décès - Service Professionnel et Discret",
-    description: "Service spécialisé de nettoyage d'appartement après décès. Bio-nettoyage, désinfection et remise en état avec protocoles sanitaires stricts. Intervention rapide et discrète dans tout le Sud de la France.",
-    keywords: "nettoyage appartement après décès, bio-nettoyage, désinfection après décès, remise en état, protocoles sanitaires, intervention discrète",
-    canonical: "https://sosnettoyagediogene.fr/nettoyage-appartement-apres-deces",
-    ogTitle: "Nettoyage Appartement Après Décès - Service Professionnel",
-    ogDescription: "Service spécialisé de nettoyage d'appartement après décès avec protocoles sanitaires stricts. Intervention discrète et respectueuse dans tout le Sud de la France.",
-    ogImage: "https://sosnettoyagediogene.fr/images/examples/décès1.avif"
-  });
+  const seoConfig = useSEO();
 
   return (
     <>
