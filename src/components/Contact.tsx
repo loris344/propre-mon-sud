@@ -168,7 +168,7 @@ const Contact = () => {
                         placeholder="Votre prénom" 
                         value={formData.firstName}
                         onChange={(e) => handleInputChange('firstName', e.target.value)}
-                        className={`text-base sm:text-lg py-3 sm:py-4 ${errors.firstName ? "border-red-500" : ""}`}
+                        className={`text-base sm:text-lg py-3 sm:py-4 ${errors.firstName ? "border-destructive" : ""}`}
                       />
                       {errors.firstName && (
                         <p className="text-sm sm:text-base text-destructive flex items-center gap-2">
