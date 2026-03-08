@@ -67,7 +67,7 @@ const Header = () => {
               src="/images/logos/logo.png"
               mobileSrc="/images/logos/logo-mobile.png"
               alt="SOS Nettoyage Diogène Logo"
-              className="w-16 h-16 sm:w-12 sm:h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 object-contain"
+              className="w-16 h-16 sm:w-12 sm:h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 object-contain mix-blend-multiply dark:mix-blend-screen"
             />
             <div className="min-w-0 flex-1">
               <div className="font-bold text-foreground text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl leading-tight">SOS Nettoyage Diogène</div>
