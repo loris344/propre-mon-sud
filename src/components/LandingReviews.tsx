@@ -53,6 +53,8 @@ const LandingReviews = memo(({ serviceKey }: LandingReviewsProps) => {
 
   if (reviews.length === 0) return null;
 
+  const review = reviews[currentIndex];
+
   return (
     <section className="py-16 sm:py-20">
       <div className="container mx-auto px-4 sm:px-6">
@@ -69,40 +71,29 @@ const LandingReviews = memo(({ serviceKey }: LandingReviewsProps) => {
         </div>
 
         <div className="max-w-xl mx-auto">
-          <div className="relative overflow-hidden">
-            <div
-              className="flex transition-transform duration-500 ease-in-out"
-              style={{ transform: `translateX(-${currentIndex * 100}%)` }}
-            >
-              {reviews.map((review, index) => (
-                <div key={index} className="w-full flex-shrink-0 px-2">
-                  <Card className="border-border/50">
-                    <CardContent className="p-6 sm:p-8">
-                      <div className="flex items-center gap-1 mb-4">
-                        {[...Array(5)].map((_, i) => (
-                          <Star
-                            key={i}
-                            className={`w-4 h-4 ${
-                              i < review.rating
-                                ? "fill-yellow-400 text-yellow-400"
-                                : "text-muted-foreground/30"
-                            }`}
-                          />
-                        ))}
-                      </div>
-                      <p className="text-foreground leading-relaxed mb-5 italic">
-                        "{review.text}"
-                      </p>
-                      <div>
-                        <p className="font-semibold text-foreground text-sm">{review.name}</p>
-                        <p className="text-muted-foreground text-xs">{review.location}</p>
-                      </div>
-                    </CardContent>
-                  </Card>
-                </div>
-              ))}
-            </div>
-          </div>
+          <Card className="border-border/50">
+            <CardContent className="p-6 sm:p-8">
+              <div className="flex items-center gap-1 mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <Star
+                    key={i}
+                    className={`w-4 h-4 ${
+                      i < review.rating
+                        ? "fill-yellow-400 text-yellow-400"
+                        : "text-muted-foreground/30"
+                    }`}
+                  />
+                ))}
+              </div>
+              <p className="text-foreground leading-relaxed mb-5 italic">
+                "{review.text}"
+              </p>
+              <div>
+                <p className="font-semibold text-foreground text-sm">{review.name}</p>
+                <p className="text-muted-foreground text-xs">{review.location}</p>
+              </div>
+            </CardContent>
+          </Card>
 
           {/* Dots */}
           <div className="flex justify-center mt-5 gap-2">
