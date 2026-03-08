@@ -29,6 +29,12 @@ const EntrepriseNettoyageMarseille = lazy(() => import("./pages/EntrepriseNettoy
 const MeilleuresSocietesNettoyageMontpellier = lazy(() => import("./pages/MeilleuresSocietesNettoyageMontpellier"));
 const PrixDiogene = lazy(() => import("./pages/PrixDiogene"));
 const SyndromeDiogeneCity = lazy(() => import("./pages/SyndromeDiogeneCity"));
+const MentionsLegales = lazy(() => import("./pages/MentionsLegales"));
+const PolitiqueConfidentialite = lazy(() => import("./pages/PolitiqueConfidentialite"));
+const LandingDiogene = lazy(() => import("./pages/landing/LandingDiogene"));
+const LandingDebarras = lazy(() => import("./pages/landing/LandingDebarras"));
+const LandingDesinfection = lazy(() => import("./pages/landing/LandingDesinfection"));
+const LandingApresDeces = lazy(() => import("./pages/landing/LandingApresDeces"));
 
 const PageLoader = () => (
   <div className="min-h-screen flex items-center justify-center bg-background">
