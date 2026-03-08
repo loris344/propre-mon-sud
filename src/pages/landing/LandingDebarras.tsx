@@ -70,9 +70,9 @@ const LandingDebarras = () => {
 
               {/* Images */}
               <div className="grid grid-cols-2 gap-3">
-                <img src="/images/examples/nettoyage1.jpg" alt="Débarras gros volumes - évacuation" className="rounded-xl object-cover w-full h-48 sm:h-56" loading="lazy" />
-                <img src="/images/examples/nettoyage2.jpg" alt="Débarras - tri et recyclage" className="rounded-xl object-cover w-full h-48 sm:h-56" loading="lazy" />
-                <img src="/images/examples/nettoyage3.jpg" alt="Évacuation d'encombrants" className="rounded-xl object-cover w-full h-48 sm:h-56 col-span-2" loading="lazy" />
+                <img src="/images/examples/debarras1.png" alt="Débarras gros volumes - meubles et encombrants à évacuer" className="rounded-xl object-cover w-full h-48 sm:h-56" loading="lazy" />
+                <img src="/images/examples/debarras2.png" alt="Débarras - local encombré avant intervention" className="rounded-xl object-cover w-full h-48 sm:h-56" loading="lazy" />
+                <img src="/images/examples/debarras3.png" alt="Équipe de débarras en action - évacuation" className="rounded-xl object-cover w-full h-48 sm:h-56 col-span-2" loading="lazy" />
               </div>
             </div>
           </div>
