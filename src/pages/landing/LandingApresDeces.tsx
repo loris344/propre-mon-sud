@@ -33,8 +33,8 @@ const LandingApresDeces = () => {
                 </div>
 
                 <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground leading-[1.1]">
-                  Nous prenons en charge le{" "}
-                  <span className="text-primary">nettoyage après décès</span>
+                  Nettoyage de logement{" "}
+                  <span className="text-primary">après décès</span>
                 </h1>
                 
                 <p className="text-lg text-muted-foreground mt-5 leading-relaxed">
