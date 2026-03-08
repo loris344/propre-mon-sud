@@ -1,4 +1,4 @@
-import { Phone, Shield, Heart, CheckCircle, ArrowRight, Star, Clock, Eye, Award, Users, MapPin } from "lucide-react";
+import { Phone, Shield, Heart, CheckCircle, ArrowRight, Star, Clock, Eye, Award, Users, MapPin, Camera, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import SEOHead from "@/components/SEOHead";
@@ -33,13 +33,13 @@ const LandingDiogene = () => {
                 </div>
 
                 <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground leading-[1.1]">
-                  Votre proche souffre du{" "}
+                  Vous vivez une situation de{" "}
                   <span className="text-primary">syndrome de Diogène</span> ?
                 </h1>
                 
                 <p className="text-lg text-muted-foreground mt-5 leading-relaxed">
-                  Nous aidons les familles et les mandataires à retrouver un logement sain. 
-                  Intervention humaine, respectueuse et confidentielle.
+                  Que vous soyez directement concerné, un proche, un mandataire ou un notaire — 
+                  nous intervenons avec humanité, discrétion et professionnalisme pour retrouver un logement sain.
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4 mt-8">
@@ -85,8 +85,8 @@ const LandingDiogene = () => {
                 Vous n'êtes pas seul face à cette situation
               </h2>
               <p className="text-muted-foreground text-lg leading-relaxed">
-                Le syndrome de Diogène touche des milliers de personnes. En tant que famille, mandataire judiciaire 
-                ou bailleur, vous avez besoin d'une équipe qui comprend la complexité de ces situations.
+                Le syndrome de Diogène touche des milliers de personnes. Que vous soyez vous-même concerné 
+                ou que vous accompagniez un proche, nous comprenons la complexité de ces situations.
               </p>
             </div>
             
@@ -115,15 +115,15 @@ const LandingDiogene = () => {
               Comment se déroule l'intervention ?
             </h2>
             <p className="text-center text-muted-foreground mb-12 max-w-xl mx-auto">
-              Un processus simple et transparent pour vous accompagner du premier appel à la remise des clés.
+              Un processus simple et rapide, sans déplacement inutile pour l'évaluation.
             </p>
             
             <div className="max-w-4xl mx-auto">
               {[
-                { step: "01", title: "Appel confidentiel", desc: "Échangez librement sur votre situation. Nous évaluons vos besoins sans engagement." },
-                { step: "02", title: "Visite & devis gratuit", desc: "Nous nous déplaçons gratuitement pour évaluer la situation et vous remettre un devis détaillé." },
-                { step: "03", title: "Intervention sur-mesure", desc: "Tri, nettoyage, désinfection, évacuation. Tout est pris en charge par notre équipe." },
-                { step: "04", title: "Remise en état & suivi", desc: "Le logement est rendu propre et habitable. Nous assurons un suivi de satisfaction." },
+                { step: "01", title: "Échange téléphonique ou par mail", desc: "Vous nous décrivez la situation librement. On écoute, on comprend, sans engagement.", icon: MessageCircle },
+                { step: "02", title: "Envoyez-nous quelques photos", desc: "Pas besoin de se déplacer pour évaluer. Quelques photos du logement nous suffisent pour établir un devis précis.", icon: Camera },
+                { step: "03", title: "Devis gratuit & intervention sur-mesure", desc: "On vous envoie un devis clair et détaillé. Puis notre équipe intervient : tri, nettoyage, désinfection, évacuation.", icon: CheckCircle },
+                { step: "04", title: "Remise en état & suivi", desc: "Le logement est rendu propre et habitable. Nous assurons un suivi de satisfaction.", icon: Award },
               ].map((item, i) => (
                 <div key={i} className="flex gap-5 sm:gap-8 mb-8 last:mb-0">
                   <div className="flex-shrink-0">
@@ -141,22 +141,59 @@ const LandingDiogene = () => {
           </div>
         </section>
 
-        {/* Pour qui */}
+        {/* Photo équipe + réassurance */}
         <section className="py-16 sm:py-20 bg-card border-y border-border/50">
+          <div className="container mx-auto px-4 sm:px-6">
+            <div className="max-w-5xl mx-auto grid sm:grid-cols-2 gap-10 items-center">
+              <img 
+                src="/images/team/equipe-intervention.jpeg" 
+                alt="Notre équipe en tenue lors d'une intervention" 
+                className="rounded-2xl object-cover w-full h-72 sm:h-96 shadow-lg"
+                loading="lazy"
+              />
+              <div>
+                <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-4">
+                  Une vraie équipe, sur le terrain
+                </h2>
+                <p className="text-muted-foreground leading-relaxed mb-6">
+                  Nous ne sommes pas un call center. Derrière SOS Nettoyage Diogène, il y a une équipe 
+                  de terrain qui intervient en tenue professionnelle, avec le matériel adapté à chaque situation.
+                </p>
+                <div className="space-y-3">
+                  {[
+                    "Équipe formée aux situations sensibles",
+                    "Matériel professionnel & tenues de protection",
+                    "Intervention discrète et respectueuse",
+                  ].map((item, i) => (
+                    <div key={i} className="flex items-start gap-3">
+                      <CheckCircle className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                      <span className="text-foreground font-medium">{item}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Pour qui */}
+        <section className="py-16 sm:py-20">
           <div className="container mx-auto px-4 sm:px-6">
             <h2 className="text-2xl sm:text-3xl font-bold text-center text-foreground mb-12">
               Nous accompagnons
             </h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
               {[
+                "Personnes directement concernées",
                 "Familles et proches aidants",
                 "Mandataires judiciaires (MJPM)",
+                "Notaires & études notariales",
                 "Bailleurs sociaux et privés",
                 "Agences immobilières",
                 "Services sociaux et ARS",
                 "Syndics de copropriété",
               ].map((item, i) => (
-                <div key={i} className="flex items-center gap-3 p-4 sm:p-5 bg-background rounded-xl border border-border/50">
+                <div key={i} className="flex items-center gap-3 p-4 sm:p-5 bg-card rounded-xl border border-border/50">
                   <div className="w-8 h-8 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
                     <CheckCircle className="w-4 h-4 text-accent" />
                   </div>
