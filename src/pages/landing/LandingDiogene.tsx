@@ -4,6 +4,7 @@ import { Card } from "@/components/ui/card";
 import SEOHead from "@/components/SEOHead";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import LandingReviews from "@/components/LandingReviews";
 
 const LandingDiogene = () => {
   const scrollToContact = () => {
@@ -120,10 +121,10 @@ const LandingDiogene = () => {
             
             <div className="max-w-4xl mx-auto">
               {[
-                { step: "01", title: "Échange téléphonique ou par mail", desc: "Vous nous décrivez la situation librement. On écoute, on comprend, sans engagement.", icon: MessageCircle },
-                { step: "02", title: "Envoyez-nous quelques photos", desc: "Pas besoin de se déplacer pour évaluer. Quelques photos du logement nous suffisent pour établir un devis précis.", icon: Camera },
-                { step: "03", title: "Devis gratuit & intervention sur-mesure", desc: "On vous envoie un devis clair et détaillé. Puis notre équipe intervient : tri, nettoyage, désinfection, évacuation.", icon: CheckCircle },
-                { step: "04", title: "Remise en état & suivi", desc: "Le logement est rendu propre et habitable. Nous assurons un suivi de satisfaction.", icon: Award },
+                { step: "01", title: "Échange téléphonique ou par mail", desc: "Vous nous décrivez la situation librement. On écoute, on comprend, sans engagement." },
+                { step: "02", title: "Envoyez-nous quelques photos", desc: "Pas besoin de se déplacer pour évaluer. Quelques photos du logement nous suffisent pour établir un devis précis." },
+                { step: "03", title: "Devis gratuit & intervention sur-mesure", desc: "On vous envoie un devis clair et détaillé. Puis notre équipe intervient : tri, nettoyage, désinfection, évacuation." },
+                { step: "04", title: "Remise en état & suivi", desc: "Le logement est rendu propre et habitable. Nous assurons un suivi de satisfaction." },
               ].map((item, i) => (
                 <div key={i} className="flex gap-5 sm:gap-8 mb-8 last:mb-0">
                   <div className="flex-shrink-0">
@@ -145,19 +146,27 @@ const LandingDiogene = () => {
         <section className="py-16 sm:py-20 bg-card border-y border-border/50">
           <div className="container mx-auto px-4 sm:px-6">
             <div className="max-w-5xl mx-auto grid sm:grid-cols-2 gap-10 items-center">
-              <img 
-                src="/images/team/equipe-intervention.jpeg" 
-                alt="Notre équipe en tenue lors d'une intervention" 
-                className="rounded-2xl object-cover w-full h-72 sm:h-96 shadow-lg"
-                loading="lazy"
-              />
+              <div className="grid grid-cols-2 gap-3">
+                <img 
+                  src="/images/team/equipe-intervention.jpeg" 
+                  alt="Notre équipe en tenue lors d'une intervention" 
+                  className="rounded-2xl object-cover w-full h-52 sm:h-72 shadow-lg"
+                  loading="lazy"
+                />
+                <img 
+                  src="/images/logos/p1.png" 
+                  alt="L'équipe SOS Nettoyage Diogène au complet" 
+                  className="rounded-2xl object-cover w-full h-52 sm:h-72 shadow-lg"
+                  loading="lazy"
+                />
+              </div>
               <div>
                 <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-4">
-                  Une vraie équipe, sur le terrain
+                  Nous intervenons nous-mêmes
                 </h2>
                 <p className="text-muted-foreground leading-relaxed mb-6">
-                  Nous ne sommes pas un call center. Derrière SOS Nettoyage Diogène, il y a une équipe 
-                  de terrain qui intervient en tenue professionnelle, avec le matériel adapté à chaque situation.
+                  Pas de sous-traitance, pas d'intermédiaire. C'est notre équipe qui se déplace, 
+                  en tenue de protection, avec le matériel adapté à chaque situation.
                 </p>
                 <div className="space-y-3">
                   {[
@@ -176,8 +185,11 @@ const LandingDiogene = () => {
           </div>
         </section>
 
+        {/* Avis clients */}
+        <LandingReviews serviceKey="diogene" />
+
         {/* Pour qui */}
-        <section className="py-16 sm:py-20">
+        <section className="py-16 sm:py-20 bg-card border-y border-border/50">
           <div className="container mx-auto px-4 sm:px-6">
             <h2 className="text-2xl sm:text-3xl font-bold text-center text-foreground mb-12">
               Nous accompagnons
@@ -193,7 +205,7 @@ const LandingDiogene = () => {
                 "Services sociaux et ARS",
                 "Syndics de copropriété",
               ].map((item, i) => (
-                <div key={i} className="flex items-center gap-3 p-4 sm:p-5 bg-card rounded-xl border border-border/50">
+                <div key={i} className="flex items-center gap-3 p-4 sm:p-5 bg-background rounded-xl border border-border/50">
                   <div className="w-8 h-8 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
                     <CheckCircle className="w-4 h-4 text-accent" />
                   </div>

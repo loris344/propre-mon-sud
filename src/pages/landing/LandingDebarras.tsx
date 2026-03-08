@@ -4,6 +4,7 @@ import { Card } from "@/components/ui/card";
 import SEOHead from "@/components/SEOHead";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import LandingReviews from "@/components/LandingReviews";
 
 const LandingDebarras = () => {
   const scrollToContact = () => {
@@ -89,9 +90,9 @@ const LandingDebarras = () => {
             
             <div className="max-w-4xl mx-auto grid sm:grid-cols-3 gap-6">
               {[
-                { icon: MessageCircle, step: "1", title: "Appelez ou écrivez-nous", desc: "Décrivez votre situation par téléphone ou par mail. On vous guide." },
-                { icon: Camera, step: "2", title: "Envoyez quelques photos", desc: "Quelques photos du lieu suffisent pour qu'on établisse un devis précis, sans déplacement." },
-                { icon: Truck, step: "3", title: "On intervient", desc: "Notre équipe vide, trie et évacue tout. Vous n'avez rien à faire." },
+                { step: "1", title: "Appelez ou écrivez-nous", desc: "Décrivez votre situation par téléphone ou par mail. On vous guide." },
+                { step: "2", title: "Envoyez quelques photos", desc: "Quelques photos du lieu suffisent pour qu'on établisse un devis précis, sans déplacement." },
+                { step: "3", title: "On intervient", desc: "Notre équipe vide, trie et évacue tout. Vous n'avez rien à faire." },
               ].map((item, i) => (
                 <Card key={i} className="p-6 sm:p-8 border-border/50 text-center">
                   <div className="w-14 h-14 rounded-2xl bg-primary text-primary-foreground flex items-center justify-center text-xl font-bold mx-auto mb-5">
@@ -137,19 +138,27 @@ const LandingDebarras = () => {
         <section className="py-16 sm:py-20 bg-card border-y border-border/50">
           <div className="container mx-auto px-4 sm:px-6">
             <div className="max-w-5xl mx-auto grid sm:grid-cols-2 gap-10 items-center">
-              <img 
-                src="/images/team/equipe-intervention.jpeg" 
-                alt="Notre équipe en tenue lors d'une intervention de débarras" 
-                className="rounded-2xl object-cover w-full h-72 sm:h-96 shadow-lg"
-                loading="lazy"
-              />
+              <div className="grid grid-cols-2 gap-3">
+                <img 
+                  src="/images/team/equipe-intervention.jpeg" 
+                  alt="Notre équipe en tenue lors d'une intervention de débarras" 
+                  className="rounded-2xl object-cover w-full h-52 sm:h-72 shadow-lg"
+                  loading="lazy"
+                />
+                <img 
+                  src="/images/logos/p1.png" 
+                  alt="L'équipe SOS Nettoyage Diogène au complet" 
+                  className="rounded-2xl object-cover w-full h-52 sm:h-72 shadow-lg"
+                  loading="lazy"
+                />
+              </div>
               <div>
                 <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-4">
-                  Une équipe de terrain, pas un intermédiaire
+                  Nous intervenons nous-mêmes
                 </h2>
                 <p className="text-muted-foreground leading-relaxed mb-6">
-                  C'est nous qui intervenons directement. Pas de sous-traitance, pas de surprise. 
-                  Une équipe équipée, formée et motivée pour chaque chantier.
+                  Pas de sous-traitance, pas d'intermédiaire. C'est notre équipe qui se déplace 
+                  avec le matériel adapté à chaque chantier.
                 </p>
                 <div className="space-y-3">
                   {[
@@ -168,8 +177,11 @@ const LandingDebarras = () => {
           </div>
         </section>
 
+        {/* Avis clients */}
+        <LandingReviews serviceKey="debarras" />
+
         {/* Situations */}
-        <section className="py-16 sm:py-20">
+        <section className="py-16 sm:py-20 bg-card border-y border-border/50">
           <div className="container mx-auto px-4 sm:px-6">
             <h2 className="text-2xl sm:text-3xl font-bold text-center text-foreground mb-12">
               Dans quelles situations intervient-on ?
@@ -183,7 +195,7 @@ const LandingDebarras = () => {
                 "Décès d'un proche",
                 "Liquidation de local pro",
               ].map((item, i) => (
-                <div key={i} className="flex items-center gap-3 p-4 sm:p-5 bg-card rounded-xl border border-border/50">
+                <div key={i} className="flex items-center gap-3 p-4 sm:p-5 bg-background rounded-xl border border-border/50">
                   <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
                     <CheckCircle className="w-4 h-4 text-primary" />
                   </div>

@@ -4,6 +4,7 @@ import { Card } from "@/components/ui/card";
 import SEOHead from "@/components/SEOHead";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import LandingReviews from "@/components/LandingReviews";
 
 const LandingDesinfection = () => {
   const scrollToContact = () => {
@@ -88,9 +89,9 @@ const LandingDesinfection = () => {
             
             <div className="max-w-4xl mx-auto grid sm:grid-cols-3 gap-6">
               {[
-                { icon: MessageCircle, step: "1", title: "Contactez-nous", desc: "Par téléphone ou mail, décrivez la situation. On vous écoute et on vous conseille." },
-                { icon: Camera, step: "2", title: "Quelques photos suffisent", desc: "Pas de déplacement pour l'évaluation. Envoyez-nous des photos, on établit un devis précis." },
-                { icon: Sparkles, step: "3", title: "On intervient", desc: "Désinfection, traitement, remise en état. Votre logement retrouve un environnement sain." },
+                { step: "1", title: "Contactez-nous", desc: "Par téléphone ou mail, décrivez la situation. On vous écoute et on vous conseille." },
+                { step: "2", title: "Quelques photos suffisent", desc: "Pas de déplacement pour l'évaluation. Envoyez-nous des photos, on établit un devis précis." },
+                { step: "3", title: "On intervient", desc: "Désinfection, traitement, remise en état. Votre logement retrouve un environnement sain." },
               ].map((item, i) => (
                 <Card key={i} className="p-6 sm:p-8 border-border/50 text-center">
                   <div className="w-14 h-14 rounded-2xl bg-primary text-primary-foreground flex items-center justify-center text-xl font-bold mx-auto mb-5">
@@ -132,22 +133,22 @@ const LandingDesinfection = () => {
           </div>
         </section>
 
-        {/* Photo équipe + réassurance */}
+        {/* Photo équipe */}
         <section className="py-16 sm:py-20 bg-card border-y border-border/50">
           <div className="container mx-auto px-4 sm:px-6">
             <div className="max-w-5xl mx-auto grid sm:grid-cols-2 gap-10 items-center">
               <div>
                 <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-4">
-                  Une équipe équipée et formée
+                  Nous intervenons nous-mêmes
                 </h2>
                 <p className="text-muted-foreground leading-relaxed mb-6">
-                  Nous intervenons nous-mêmes, en tenue de protection, avec du matériel professionnel adapté 
-                  à chaque situation. Pas de sous-traitance.
+                  Pas de sous-traitance. C'est notre équipe qui intervient directement, en tenue de protection, 
+                  avec du matériel professionnel adapté à chaque situation.
                 </p>
                 <div className="space-y-3">
                   {[
                     "Logement insalubre ou contaminé",
-                    "Syndrome de Diogène — accumulation",
+                    "Syndrome de Diogène",
                     "Infestation de nuisibles persistante",
                     "Après un sinistre (incendie, inondation)",
                     "Logement vacant à remettre en location",
@@ -159,18 +160,29 @@ const LandingDesinfection = () => {
                   ))}
                 </div>
               </div>
-              <img 
-                src="/images/team/equipe-intervention.jpeg" 
-                alt="Notre équipe en tenue de protection lors d'une désinfection" 
-                className="rounded-2xl object-cover w-full h-72 sm:h-96 shadow-lg"
-                loading="lazy"
-              />
+              <div className="grid grid-cols-2 gap-3">
+                <img 
+                  src="/images/team/equipe-intervention.jpeg" 
+                  alt="Notre équipe en tenue de protection lors d'une désinfection" 
+                  className="rounded-2xl object-cover w-full h-52 sm:h-72 shadow-lg"
+                  loading="lazy"
+                />
+                <img 
+                  src="/images/logos/p1.png" 
+                  alt="L'équipe SOS Nettoyage Diogène" 
+                  className="rounded-2xl object-cover w-full h-52 sm:h-72 shadow-lg"
+                  loading="lazy"
+                />
+              </div>
             </div>
           </div>
         </section>
 
+        {/* Avis clients */}
+        <LandingReviews serviceKey="desinfection" />
+
         {/* Urgence */}
-        <section className="py-16 sm:py-20">
+        <section className="py-16 sm:py-20 bg-card border-y border-border/50">
           <div className="container mx-auto px-4 sm:px-6">
             <div className="max-w-2xl mx-auto">
               <Card className="p-8 sm:p-10 bg-gradient-to-br from-destructive/5 to-destructive/10 border-destructive/20 text-center">
