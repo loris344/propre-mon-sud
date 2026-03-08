@@ -227,6 +227,19 @@
       ]
     }
     </script>
+    <!-- Redirection GitHub Pages SPA - MUST run before React -->
+    <script>
+      (function(l) {
+        if (l.search[1] === '/' ) {
+          var decoded = l.search.slice(1).split('&').map(function(s) { 
+            return s.replace(/~and~/g, '&')
+          }).join('?');
+          window.history.replaceState(null, null,
+              l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      }(window.location))
+    </script>
     <meta property="og:title" content="SOS Nettoyage Diogène | Nettoyage &amp; Débarras Sud France">
   <meta name="twitter:title" content="SOS Nettoyage Diogène | Nettoyage &amp; Débarras Sud France">
   <meta property="og:description" content="Société spécialisée dans le nettoyage syndrome de Diogène, débarras, insalubrité et nettoyage après décès. Intervention discrète à Montpellier, Marseille et tout le Sud de la France.">
@@ -240,19 +253,6 @@
     
     <div id="root"></div>
     
-    <!-- Redirection GitHub Pages SPA -->
-    <script>
-      (function(l) {
-        if (l.search[1] === '/' ) {
-          var decoded = l.search.slice(1).split('&').map(function(s) { 
-            return s.replace(/~and~/g, '&')
-          }).join('?');
-          window.history.replaceState(null, null,
-              l.pathname.slice(0, -1) + decoded + l.hash
-          );
-        }
-      }(window.location))
-    </script>
     
     <script type="module" src="/src/main.tsx"></script>
     <link rel="stylesheet" href="/src/index.css">
