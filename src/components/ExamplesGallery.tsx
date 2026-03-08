@@ -48,6 +48,7 @@ const ExamplesGallery = () => {
                     alt="Exemple de transformation 2"
                     className="w-full h-48 sm:h-56 object-cover"
                     draggable="false"
+                    loading="lazy"
                     style={{ objectPosition: 'center top' }}
                   />
                 </div>
