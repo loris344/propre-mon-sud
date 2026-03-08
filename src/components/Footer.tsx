@@ -129,7 +129,7 @@ const Footer = () => {
         <div className="border-t border-border/50 pt-6 sm:pt-8">
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
             <div className="text-sm text-muted-foreground text-center sm:text-left">
-              © 2024 SOS Nettoyage Diogène. Tous droits réservés.
+              © {new Date().getFullYear()} SOS Nettoyage Diogène. Tous droits réservés.
             </div>
             <div className="flex flex-wrap items-center justify-center gap-4 text-sm text-muted-foreground text-center sm:text-right">
               <span>Société spécialisée dans le nettoyage et débarras professionnel</span>

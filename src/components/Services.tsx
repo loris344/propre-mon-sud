@@ -1,58 +1,53 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { 
-  Home, 
-  Trash2, 
-  ShieldCheck, 
-  Clock, 
-  Users, 
-  Award,
-  Phone,
-  CheckCircle,
-  Heart
+  Home, Trash2, ShieldCheck, Clock, Users, Award, Phone, CheckCircle, Heart
 } from "lucide-react";
 import { useCallback, memo } from "react";
 
-const Services = () => {
-  const services = [
-    {
-      icon: Home,
-      title: "Nettoyage Syndrome de Diogène",
-      description: "Intervention spécialisée dans les situations d'accumulation compulsive avec respect et discrétion totale.",
-      features: ["Évaluation gratuite par téléphone", "Plan d'intervention personnalisé", "Respect de la dignité"]
-    },
-    {
-      icon: Trash2,
-      title: "Débarras Gros Volumes",
-      description: "Évacuation et tri de tous types d'objets, meubles et déchets en respectant l'environnement.",
-      features: ["Tri sélectif", "Recyclage maximal", "Évacuation complète"]
-    },
-    {
-      icon: ShieldCheck,
-      title: "Désinfection & Insalubrité",
-      description: "Traitement des environnements insalubres avec des produits professionnels et techniques adaptées.",
-      features: ["Désinfection totale", "Traitement anti-nuisibles", "Remise en état"]
-    },
-    {
-      icon: Heart,
-      title: "Nettoyage Après Décès",
-      description: "Service spécialisé de nettoyage et remise en état après décès. Intervention respectueuse, discrète et professionnelle.",
-      features: ["Approche bienveillante", "Discrétion absolue", "Remise en état complète"]
-    }
-  ];
+const SERVICES = [
+  {
+    icon: Home,
+    title: "Nettoyage Syndrome de Diogène",
+    description: "Intervention spécialisée dans les situations d'accumulation compulsive avec respect et discrétion totale.",
+    features: ["Évaluation gratuite par téléphone", "Plan d'intervention personnalisé", "Respect de la dignité"]
+  },
+  {
+    icon: Trash2,
+    title: "Débarras Gros Volumes",
+    description: "Évacuation et tri de tous types d'objets, meubles et déchets en respectant l'environnement.",
+    features: ["Tri sélectif", "Recyclage maximal", "Évacuation complète"]
+  },
+  {
+    icon: ShieldCheck,
+    title: "Désinfection & Insalubrité",
+    description: "Traitement des environnements insalubres avec des produits professionnels et techniques adaptées.",
+    features: ["Désinfection totale", "Traitement anti-nuisibles", "Remise en état"]
+  },
+  {
+    icon: Heart,
+    title: "Nettoyage Après Décès",
+    description: "Service spécialisé de nettoyage et remise en état après décès. Intervention respectueuse, discrète et professionnelle.",
+    features: ["Approche bienveillante", "Discrétion absolue", "Remise en état complète"]
+  }
+];
 
-  const advantages = [
-    { icon: Clock, title: "Disponibilité 7j/7", desc: "Intervention rapide et flexible" },
-    { icon: Users, title: "Équipe experte", desc: "Professionnels formés et équipés" },
-    { icon: Award, title: "Discrétion assurée", desc: "Confidentialité et respect total" },
-    { icon: ShieldCheck, title: "Assurance complète", desc: "Intervention sécurisée et assurée" }
-  ];
+const ADVANTAGES = [
+  { icon: Clock, title: "Disponibilité 7j/7", desc: "Intervention rapide et flexible" },
+  { icon: Users, title: "Équipe experte", desc: "Professionnels formés et équipés" },
+  { icon: Award, title: "Discrétion assurée", desc: "Confidentialité et respect total" },
+  { icon: ShieldCheck, title: "Assurance complète", desc: "Intervention sécurisée et assurée" }
+];
+
+const Services = () => {
+  const scrollToContact = useCallback(() => {
+    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+  }, []);
 
   return (
     <section className="py-16 sm:py-20 bg-gradient-to-b from-background to-secondary/20">
       <div className="container mx-auto px-4 sm:px-6">
         
-        {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16 space-y-4">
           <h2 id="services-title" className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">
             Nos Services Spécialisés
@@ -63,9 +58,8 @@ const Services = () => {
           </p>
         </div>
 
-        {/* Services Grid */}
         <div className="grid sm:grid-cols-2 gap-6 sm:gap-8 mb-16 sm:mb-20">
-          {services.map((service, index) => {
+          {SERVICES.map((service, index) => {
             const Icon = service.icon;
             return (
               <Card key={index} className="group hover:shadow-xl transition-all duration-300 border-border/50 hover:border-primary/30">
@@ -95,14 +89,13 @@ const Services = () => {
           })}
         </div>
 
-        {/* Advantages */}
         <div className="bg-card rounded-2xl p-6 sm:p-8 shadow-lg border border-border/50">
           <h3 className="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-10 text-foreground">
             Pourquoi Nous Choisir ?
           </h3>
           
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mb-8 sm:mb-10">
-            {advantages.map((advantage, index) => {
+            {ADVANTAGES.map((advantage, index) => {
               const Icon = advantage.icon;
               return (
                 <div key={index} className="text-center space-y-3 sm:space-y-4">
@@ -123,12 +116,7 @@ const Services = () => {
               variant="hero" 
               size="lg" 
               className="px-6 sm:px-8 text-sm sm:text-base"
-              onClick={useCallback(() => {
-                const element = document.getElementById('contact');
-                if (element) {
-                  element.scrollIntoView({ behavior: 'smooth' });
-                }
-              }, [])}
+              onClick={scrollToContact}
             >
               <Phone className="w-4 h-4 sm:w-5 sm:h-5" />
               Demander un devis gratuit
