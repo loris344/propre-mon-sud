@@ -12,51 +12,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
-    <!-- SEO Meta Tags - Gérés dynamiquement par React -->
-    <title>SOS Nettoyage Diogène | Nettoyage Professionnel & Débarras Spécialisé</title>
-    <meta name="description" content="Société spécialisée dans le nettoyage et débarras syndrome de Diogène, insalubrité, nettoyage après décès et gros volumes. Intervention discrète, professionnelle et respectueuse dans le Sud de la France." />
-    <meta name="keywords" content="nettoyage professionnel, débarras, syndrome diogène, insalubrité, désinfection, nettoyage après décès, montpellier, sete, beziers, nimes, perpignan, marseille, nice, toulouse, herault, gard, pyrenees-orientales, bouches-du-rhone, alpes-maritimes, haute-garonne, sud france, nettoyage spécialisé" />
-    <meta name="author" content="SOS Nettoyage Diogène - Nettoyage Professionnel" />
+    <!-- SEO Meta Tags - Gérés dynamiquement par React Helmet -->
+    <title>SOS Nettoyage Diogène | Nettoyage & Débarras Sud France</title>
+    <meta name="description" content="Société spécialisée dans le nettoyage syndrome de Diogène, débarras, insalubrité et nettoyage après décès. Intervention discrète à Montpellier, Marseille et tout le Sud de la France." />
+    <meta name="author" content="SOS Nettoyage Diogène" />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-    <meta name="googlebot" content="index, follow" />
-    <meta name="bingbot" content="index, follow" />
-    
-    <!-- Language and Geo Tags -->
-    <meta name="language" content="fr" />
-    <meta name="geo.region" content="FR-34" />
-    <meta name="geo.placename" content="Montpellier" />
-    <meta name="geo.position" content="43.611;3.8767" />
-    <meta name="ICBM" content="43.611, 3.8767" />
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://sosnettoyagediogene.fr" />
-    <meta property="og:title" content="SOS Nettoyage Diogène Montpellier | Débarras Professionnel" />
-    <meta property="og:description" content="SOS Nettoyage Diogène - Société spécialisée dans le nettoyage et débarras syndrome de Diogène à Montpellier. Intervention discrète, professionnelle et respectueuse. Devis gratuit 7j/7." />
-    <meta property="og:image" content="https://sosnettoyagediogene.fr/hero-cleaning.jpg" />
+    <meta property="og:title" content="SOS Nettoyage Diogène | Nettoyage & Débarras Sud France" />
+    <meta property="og:description" content="Société spécialisée dans le nettoyage syndrome de Diogène, débarras et insalubrité. Intervention discrète et professionnelle dans le Sud de la France." />
+    <meta property="og:image" content="https://sosnettoyagediogene.fr/images/logos/p1.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="Équipe professionnelle de nettoyage spécialisé syndrome de Diogène" />
+    <meta property="og:image:alt" content="SOS Nettoyage Diogène - Nettoyage professionnel" />
     <meta property="og:site_name" content="SOS Nettoyage Diogène" />
     <meta property="og:locale" content="fr_FR" />
     
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:url" content="https://sosnettoyagediogene.fr" />
-    <meta name="twitter:title" content="SOS Nettoyage Diogène Montpellier | Débarras Professionnel" />
-    <meta name="twitter:description" content="SOS Nettoyage Diogène - Société spécialisée dans le nettoyage et débarras syndrome de Diogène à Montpellier. Intervention discrète, professionnelle et respectueuse. Devis gratuit 7j/7." />
-    <meta name="twitter:image" content="https://sosnettoyagediogene.fr/hero-cleaning.jpg" />
-    <meta name="twitter:image:alt" content="Équipe professionnelle de nettoyage spécialisé syndrome de Diogène" />
+    <meta name="twitter:title" content="SOS Nettoyage Diogène | Nettoyage & Débarras Sud France" />
+    <meta name="twitter:description" content="Société spécialisée dans le nettoyage syndrome de Diogène. Intervention discrète et professionnelle dans le Sud de la France." />
+    <meta name="twitter:image" content="https://sosnettoyagediogene.fr/images/logos/p1.png" />
+    <meta name="twitter:image:alt" content="SOS Nettoyage Diogène - Nettoyage professionnel" />
     
-    <!-- Business/Local SEO -->
-    <meta name="business:contact_data:phone_number" content="+33767135458" />
-    <meta name="business:contact_data:country_name" content="France" />
-    <meta name="business:contact_data:locality" content="Montpellier" />
-    <meta name="business:contact_data:region" content="Hérault" />
-    
-    <!-- Additional SEO -->
+    <!-- Theme & App -->
     <meta name="theme-color" content="#1e40af" />
-    <meta name="msapplication-TileColor" content="#1e40af" />
+    <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="default" />
     <meta name="apple-mobile-web-app-title" content="SOS Nettoyage Diogène" />
@@ -64,9 +47,6 @@
     <!-- Preconnect for performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    
-    <!-- DNS Prefetch for external resources -->
-    <link rel="dns-prefetch" href="//www.google-analytics.com" />
     <link rel="dns-prefetch" href="//www.googletagmanager.com" />
     
     <!-- Hotjar / ContentSquare -->
@@ -78,147 +58,26 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-VDZL4FT7QQ');
       gtag('config', 'AW-17579670391');
     </script>
     
-    <!-- Resource hints -->
-    <!-- <link rel="preload" href="/hero-cleaning.jpg" as="image" type="image/jpeg" /> -->
-    
-    <!-- Performance optimizations -->
-    <meta name="format-detection" content="telephone=no" />
-    <meta name="mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-    
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png" />
-    <link rel="icon" type="image/png" sizes="512x512" href="/favicon-512x512.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    
-    <!-- CSS Critique intégré pour éviter le blocage -->
-    <style>
-      /* CSS Critique pour le Hero - styles essentiels */
-      :root {
-        --background: 0 0% 100%;
-        --foreground: 215 25% 27%;
-        --primary: 210 75% 35%;
-        --primary-foreground: 0 0% 100%;
-        --secondary: 210 20% 96%;
-        --muted-foreground: 215 15% 45%;
-      }
-
-      * {
-        box-sizing: border-box;
-      }
-
-      body {
-        margin: 0;
-        font-family: system-ui, -apple-system, sans-serif;
-        background-color: hsl(var(--background));
-        color: hsl(var(--foreground));
-      }
-
-      /* Styles critiques pour le Hero */
-      .hero-section {
-        position: relative;
-        min-height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: linear-gradient(135deg, hsl(var(--background)), hsl(var(--secondary) / 0.3), hsl(var(--background)));
-      }
-
-      .hero-container {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 0 1rem;
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 2rem;
-        align-items: center;
-      }
-
-      .hero-content {
-        text-align: center;
-        z-index: 10;
-      }
-
-      .hero-title {
-        font-size: 2.5rem;
-        font-weight: 800;
-        line-height: 1.1;
-        margin-bottom: 1rem;
-        color: hsl(var(--foreground));
-      }
-
-      .hero-subtitle {
-        font-size: 1.25rem;
-        color: hsl(var(--muted-foreground));
-        margin-bottom: 2rem;
-        line-height: 1.6;
-      }
-
-      .hero-image {
-        width: 100%;
-        height: 300px;
-        object-fit: cover;
-        border-radius: 1rem;
-      }
-
-      /* Responsive */
-      @media (min-width: 640px) {
-        .hero-image {
-          height: 400px;
-        }
-      }
-
-      @media (min-width: 1024px) {
-        .hero-container {
-          grid-template-columns: 1fr 1fr;
-          gap: 4rem;
-        }
-        
-        .hero-content {
-          text-align: left;
-        }
-        
-        .hero-image {
-          height: 500px;
-        }
-      }
-
-      /* Styles pour éviter le CLS */
-      .w-full { width: 100%; }
-      .h-\\[300px\\] { height: 300px; }
-      .sm\\:h-\\[400px\\] { height: 300px; }
-      .lg\\:h-\\[500px\\] { height: 300px; }
-      .object-cover { object-fit: cover; }
-      
-      @media (min-width: 640px) {
-        .sm\\:h-\\[400px\\] { height: 400px; }
-      }
-      
-      @media (min-width: 1024px) {
-        .lg\\:h-\\[500px\\] { height: 500px; }
-      }
-    </style>
     <link rel="manifest" href="/site.webmanifest" />
     
-    <!-- Structured Data JSON-LD -->
+    <!-- Structured Data JSON-LD : LocalBusiness -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
       "name": "SOS Nettoyage Diogène",
       "alternateName": "SOS Nettoyage Diogène Montpellier",
-      "description": "SOS Nettoyage Diogène - Société spécialisée dans le nettoyage et débarras syndrome de Diogène à Montpellier. Intervention discrète, professionnelle et respectueuse.",
+      "description": "Société spécialisée dans le nettoyage syndrome de Diogène, débarras et insalubrité. Intervention discrète et professionnelle dans le Sud de la France.",
       "url": "https://sosnettoyagediogene.fr",
-      "telephone": "+33767135458",
+      "telephone": "+33605310199",
       "email": "contact@sosnettoyagediogene.fr",
       "address": {
         "@type": "PostalAddress",
@@ -233,33 +92,18 @@
         "longitude": "3.8767"
       },
       "areaServed": [
-        {
-          "@type": "City",
-          "name": "Montpellier"
-        },
-        {
-          "@type": "City", 
-          "name": "Sète"
-        },
-        {
-          "@type": "City",
-          "name": "Béziers"
-        },
-        {
-          "@type": "City",
-          "name": "Nîmes"
-        },
-        {
-          "@type": "City",
-          "name": "Perpignan"
-        }
+        { "@type": "City", "name": "Montpellier" },
+        { "@type": "City", "name": "Sète" },
+        { "@type": "City", "name": "Béziers" },
+        { "@type": "City", "name": "Nîmes" },
+        { "@type": "City", "name": "Perpignan" },
+        { "@type": "City", "name": "Marseille" }
       ],
       "serviceType": [
         "Nettoyage Syndrome de Diogène",
-        "Débarras Gros Volumes", 
+        "Débarras Gros Volumes",
         "Désinfection et Insalubrité",
-        "Nettoyage Extrême",
-        "Évacuation Déchets"
+        "Nettoyage Après Décès"
       ],
       "openingHours": "Mo-Su 08:00-20:00",
       "priceRange": "€€",
@@ -278,7 +122,7 @@
             }
           },
           {
-            "@type": "Offer", 
+            "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
               "name": "Débarras Gros Volumes",
@@ -288,9 +132,17 @@
           {
             "@type": "Offer",
             "itemOffered": {
-              "@type": "Service", 
+              "@type": "Service",
               "name": "Désinfection et Insalubrité",
               "description": "Traitement des environnements insalubres avec des produits professionnels et techniques adaptées"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Nettoyage Après Décès",
+              "description": "Service spécialisé de nettoyage et remise en état après décès, intervention respectueuse et discrète"
             }
           }
         ]
@@ -298,73 +150,24 @@
       "review": [
         {
           "@type": "Review",
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "author": {
-            "@type": "Person",
-            "name": "Marie L."
-          },
-          "reviewBody": "Service exceptionnel ! Équipe très professionnelle et discrète. Intervention rapide et efficace. Je recommande vivement.",
-          "datePublished": "2024-01-15"
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+          "author": { "@type": "Person", "name": "Marie L." },
+          "reviewBody": "Service exceptionnel ! Équipe très professionnelle et discrète. Intervention rapide et efficace.",
+          "datePublished": "2024-11-15"
         },
         {
           "@type": "Review",
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "author": {
-            "@type": "Person",
-            "name": "Jean-Pierre M."
-          },
-          "reviewBody": "Très satisfait du service. Respect total de la situation et intervention dans les délais. Prix correct pour la qualité.",
-          "datePublished": "2024-01-10"
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+          "author": { "@type": "Person", "name": "Jean-Pierre M." },
+          "reviewBody": "Très satisfait du service. Respect total de la situation et intervention dans les délais.",
+          "datePublished": "2024-08-22"
         },
         {
           "@type": "Review",
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "author": {
-            "@type": "Person",
-            "name": "Michel R."
-          },
-          "reviewBody": "Excellent service ! L'équipe a su comprendre notre situation et nous accompagner avec bienveillance. Le résultat dépasse nos attentes.",
-          "datePublished": "2024-01-05"
-        },
-        {
-          "@type": "Review",
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "author": {
-            "@type": "Person",
-            "name": "Catherine B."
-          },
-          "reviewBody": "Service professionnel et humain. L'équipe a su gérer une situation complexe avec beaucoup de délicatesse. Je recommande sans hésitation.",
-          "datePublished": "2024-01-02"
-        },
-        {
-          "@type": "Review",
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "author": {
-            "@type": "Person",
-            "name": "Alain T."
-          },
-          "reviewBody": "Très bon service, équipe compétente et discrète. Le nettoyage a été fait dans les règles de l'art. Merci pour votre professionnalisme.",
-          "datePublished": "2023-12-28"
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+          "author": { "@type": "Person", "name": "Michel R." },
+          "reviewBody": "Excellent service ! L'équipe a su comprendre notre situation avec bienveillance.",
+          "datePublished": "2024-03-10"
         }
       ],
       "aggregateRating": {
@@ -378,12 +181,12 @@
         "https://www.facebook.com/propremonsud",
         "https://www.linkedin.com/company/propre-mon-sud"
       ],
-      "image": "https://sosnettoyagediogene.fr/hero-cleaning.jpg",
-      "logo": "https://sosnettoyagediogene.fr/logo.png"
+      "image": "https://sosnettoyagediogene.fr/images/logos/p1.png",
+      "logo": "https://sosnettoyagediogene.fr/images/logos/logo.png"
     }
     </script>
     
-    <!-- FAQ Structured Data -->
+    <!-- FAQ Structured Data — page d'accueil uniquement, géré par React pour les autres pages -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -398,7 +201,7 @@
           }
         },
         {
-          "@type": "Question", 
+          "@type": "Question",
           "name": "Intervenez-vous 7 jours sur 7 ?",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -407,17 +210,17 @@
         },
         {
           "@type": "Question",
-          "name": "Dans quelles villes intervenez-vous ?", 
+          "name": "Dans quelles villes intervenez-vous ?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Nous intervenons à Montpellier, Sète, Béziers, Nîmes, Perpignan et dans toute la région Occitanie."
+            "text": "Nous intervenons à Montpellier, Sète, Béziers, Nîmes, Perpignan, Marseille et dans tout le Sud de la France."
           }
         },
         {
           "@type": "Question",
           "name": "Le devis est-il vraiment gratuit ?",
           "acceptedAnswer": {
-            "@type": "Answer", 
+            "@type": "Answer",
             "text": "Oui, nous proposons un devis gratuit et sans engagement pour tous nos services de nettoyage et débarras."
           }
         }
@@ -430,13 +233,11 @@
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T2V8JRGG"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
     
     <div id="root"></div>
     
-    <!-- Script de redirection pour GitHub Pages -->
+    <!-- Redirection GitHub Pages SPA -->
     <script>
-      // Gestion de la redirection depuis 404.html pour le routage côté client
       (function(l) {
         if (l.search[1] === '/' ) {
           var decoded = l.search.slice(1).split('&').map(function(s) { 
