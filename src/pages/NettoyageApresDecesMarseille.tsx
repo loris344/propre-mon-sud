@@ -4,9 +4,8 @@ import { Link } from 'react-router-dom';
 
 const NettoyageApresDecesMarseille: React.FC = () => {
   const seoConfig = {
-    title: "Nettoyage après décès à Marseille: faire soi-même ou confier à des spécialistes | Guide Complet 2025",
-    description: "Guide complet pour le nettoyage après décès à Marseille: faire soi-même ou déléguer à des spécialistes. Protocoles sanitaires, délais, coûts, prise en charge assurance. Intervention 24h/24.",
-    keywords: "nettoyage après décès Marseille, nettoyage décès 13, décontamination décès Marseille, nettoyage post décès, désinfection décès, nettoyage respectueux Marseille, protocoles sanitaires décès, assurance habitation décès",
+    title: "Nettoyage Après Décès Marseille | Guide 2025",
+    description: "Guide complet nettoyage après décès à Marseille : protocoles sanitaires, délais, coûts. Intervention 24h/24.",
     canonical: "/nettoyage-apres-deces-marseille"
   };
 

@@ -28,9 +28,8 @@ export default function MeilleuresSocietesNettoyageMontpellier() {
   return (
     <>
       <SEOHead
-        title="Les 10 Meilleures Sociétés de Nettoyage à Montpellier : Votre Guide Complet 2025"
-        description="Découvrez notre classement des meilleures entreprises de nettoyage à Montpellier. SOS Nettoyage Diogène, Au'clean, Nova Clean et plus. Services spécialisés et expertise reconnue dans l'Hérault."
-        keywords="société de nettoyage, Montpellier, nettoyage professionnel, entreprise nettoyage, Hérault, SOS Nettoyage Diogène, Au'clean, Nova Clean, nettoyage bureaux, nettoyage industriel"
+        title="Top 10 Sociétés Nettoyage Montpellier 2025"
+        description="Classement des meilleures entreprises de nettoyage à Montpellier. SOS Nettoyage Diogène, Au'clean, Nova Clean et plus."
         canonical="/meilleures-societes-nettoyage-montpellier"
       />
       

@@ -23,9 +23,8 @@ export default function PrixDiogene() {
   return (
     <>
       <SEOHead
-        title="Prix Diogène : L'Expertise de SOS Nettoyage Diogène pour les Interventions Extrêmes"
-        description="Découvrez nos tarifs pour le nettoyage syndrome de Diogène. Devis gratuit et transparent pour interventions spécialisées. SOS Nettoyage Diogène : expertise, discrétion et approche humaine dans tout le Sud de la France."
-        keywords="prix diogène, tarif nettoyage syndrome diogène, devis nettoyage insalubrité, coût intervention diogène, prix nettoyage extrême, SOS nettoyage diogène, montpellier, sete, beziers, nimes, perpignan, marseille, herault, gard, pyrenees-orientales"
+        title="Prix Nettoyage Diogène | Tarifs & Devis Gratuit"
+        description="Tarifs nettoyage syndrome de Diogène. Devis gratuit et transparent. Expertise, discrétion et approche humaine dans le Sud de la France."
         canonical="/prix-diogene"
       />
       
