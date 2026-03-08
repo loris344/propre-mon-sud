@@ -6,7 +6,7 @@ import { useState, useEffect, useCallback, memo } from "react";
 
 const CITIES = [
   "Montpellier", "Sète", "Béziers", "Nîmes", "Perpignan", "Marseille",
-  "Toulouse", "Nice", "Aix-en-Provence", "Toulon", "Avignon", "Bordeaux"
+  "Toulouse", "Narbonne", "Aix-en-Provence", "Toulon", "Avignon", "Carcassonne"
 ];
 
 const Hero = () => {
