@@ -131,7 +131,7 @@ const NettoyageApresDecesMarseille: React.FC = () => {
 
           {/* Option 2 - Professionnel */}
           <div className="bg-white p-8 rounded-lg shadow-lg mb-8">
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">Option 2 — Faire intervenir une société spécialisée</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-6">Option 2 : Faire intervenir une société spécialisée</h2>
             <div className="bg-blue-50 border border-blue-200 rounded-lg p-6 mb-6">
               <h3 className="text-lg font-semibold text-blue-800 mb-3">🎯 Quand faire appel à un professionnel</h3>
               <p className="text-blue-700">

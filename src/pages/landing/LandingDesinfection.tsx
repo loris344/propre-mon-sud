@@ -29,7 +29,7 @@ const LandingDesinfection = () => {
               <div>
                 <div className="inline-flex items-center gap-2 bg-destructive/10 border border-destructive/20 text-foreground px-5 py-2.5 rounded-full text-sm font-medium mb-6">
                   <AlertTriangle className="w-4 h-4 text-destructive" />
-                  Urgence insalubrité — Intervention rapide
+                  Urgence insalubrité · Intervention rapide
                 </div>
 
                 <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground leading-[1.1]">
