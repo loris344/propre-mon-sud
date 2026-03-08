@@ -4,23 +4,23 @@ import AvailabilityIndicator from "./AvailabilityIndicator";
 import { ResponsiveImage } from "./ResponsiveImage";
 import { useState, useEffect, useCallback, memo } from "react";
 
+const CITIES = [
+  "Montpellier", "Sète", "Béziers", "Nîmes", "Perpignan", "Marseille",
+  "Toulouse", "Nice", "Aix-en-Provence", "Toulon", "Avignon", "Bordeaux"
+];
+
 const Hero = () => {
   const [currentCityIndex, setCurrentCityIndex] = useState(0);
-  
-  const cities = [
-    "Montpellier", "Sète", "Béziers", "Nîmes", "Perpignan", "Marseille",
-    "Toulouse", "Nice", "Aix-en-Provence", 
-    "Toulon", "Avignon", "Bordeaux"
-  ];
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentCityIndex((prevIndex) => 
-        prevIndex === cities.length - 1 ? 0 : prevIndex + 1
-      );
+      setCurrentCityIndex((prev) => (prev + 1) % CITIES.length);
     }, 2000);
-
     return () => clearInterval(interval);
+  }, []);
+
+  const scrollToContact = useCallback(() => {
+    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
   }, []);
 
   return (
@@ -46,7 +46,7 @@ const Hero = () => {
                     key={currentCityIndex}
                     className="inline-block animate-fade-in text-primary font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent"
                   >
-                    {cities[currentCityIndex]}
+                    {CITIES[currentCityIndex]}
                   </span>
                 </span>
               </p>
@@ -58,12 +58,7 @@ const Hero = () => {
                 variant="hero" 
                 size="lg" 
                 className="text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6"
-                onClick={useCallback(() => {
-                  const element = document.getElementById('contact');
-                  if (element) {
-                    element.scrollIntoView({ behavior: 'smooth' });
-                  }
-                }, [])}
+                onClick={scrollToContact}
               >
                 <Phone className="w-4 h-4 sm:w-5 sm:h-5" />
                 Devis Gratuit
@@ -72,12 +67,7 @@ const Hero = () => {
                 variant="accent" 
                 size="lg" 
                 className="text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6"
-                onClick={useCallback(() => {
-                  const element = document.getElementById('contact');
-                  if (element) {
-                    element.scrollIntoView({ behavior: 'smooth' });
-                  }
-                }, [])}
+                onClick={scrollToContact}
               >
                 <Mail className="w-4 h-4 sm:w-5 sm:h-5" />
                 Contact Discret
@@ -94,9 +84,7 @@ const Hero = () => {
                       className={`w-4 h-4 ${
                         star <= 4 
                           ? 'text-yellow-400 fill-yellow-400' 
-                          : star === 5 
-                            ? 'text-yellow-400 fill-yellow-400 opacity-70' 
-                            : 'text-gray-300'
+                          : 'text-yellow-400 fill-yellow-400 opacity-70'
                       }`}
                       viewBox="0 0 24 24"
                     >
@@ -118,11 +106,13 @@ const Hero = () => {
                   src="/logos/RF-removebg-preview.png" 
                   alt="République Française" 
                   className="h-12 sm:h-16 w-auto object-contain"
+                  loading="lazy"
                 />
                 <img 
                   src="/logos/ARS-removebg-preview.png" 
                   alt="Agence Régionale de Santé" 
                   className="h-12 sm:h-16 w-auto object-contain"
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -141,10 +131,9 @@ const Hero = () => {
             </div>
           </div>
           
-          {/* Images d'exemples de transformations */}
+          {/* Images */}
           <div className="relative order-last lg:order-last">
-            <div className="flex flex-col gap-2 rounded-2xl overflow-hidden shadow-2xl bg-white p-2">
-              {/* Image 1 - ex1.png */}
+            <div className="flex flex-col gap-2 rounded-2xl overflow-hidden shadow-2xl bg-card p-2">
               <div className="relative">
                 <img
                   src="/images/examples/ex1.png"
@@ -153,15 +142,14 @@ const Hero = () => {
                   loading="eager"
                   fetchPriority="high"
                 />
-                <div className="absolute bottom-2 left-2 bg-primary/90 text-white text-xs px-2 py-1 rounded">
+                <div className="absolute bottom-2 left-2 bg-primary/90 text-primary-foreground text-xs px-2 py-1 rounded">
                   Avant
                 </div>
-                <div className="absolute bottom-2 right-2 bg-accent/90 text-white text-xs px-2 py-1 rounded">
+                <div className="absolute bottom-2 right-2 bg-accent/90 text-accent-foreground text-xs px-2 py-1 rounded">
                   Après
                 </div>
               </div>
               
-              {/* Image 2 - ex2.jpg */}
               <div className="relative">
                 <img
                   src="/images/examples/ex2.jpg"
@@ -170,7 +158,7 @@ const Hero = () => {
                   loading="eager"
                   fetchPriority="high"
                 />
-                <div className="absolute bottom-2 right-2 bg-accent/90 text-white text-xs px-2 py-1 rounded">
+                <div className="absolute bottom-2 right-2 bg-accent/90 text-accent-foreground text-xs px-2 py-1 rounded">
                   Après
                 </div>
               </div>
