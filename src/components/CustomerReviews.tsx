@@ -67,7 +67,7 @@ const CustomerReviews = memo(() => {
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground">
+          <h2 id="avis-title" className="text-3xl md:text-4xl font-bold text-foreground">
             Avis Clients Vérifiés
           </h2>
           <p className="text-lg text-muted-foreground">
