@@ -145,7 +145,7 @@ const CustomerReviews = memo(() => {
 
           {/* Indicateurs de progression */}
           <div className="flex justify-center mt-4 gap-2">
-            {reviews.map((_, index) => (
+            {REVIEWS.map((_, index) => (
               <button
                 key={index}
                 onClick={() => setCurrentIndex(index)}
