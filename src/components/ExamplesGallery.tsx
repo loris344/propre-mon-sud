@@ -9,7 +9,7 @@ const ExamplesGallery = () => {
             <Sparkles className="w-3 h-3" />
             Nos réalisations
           </div>
-          <h2 className="text-lg sm:text-xl font-bold text-foreground mb-2">
+          <h2 id="exemples-title" className="text-lg sm:text-xl font-bold text-foreground mb-2">
             Exemples de <span className="text-primary">transformations</span>
           </h2>
           <p className="text-xs sm:text-sm text-muted-foreground">
