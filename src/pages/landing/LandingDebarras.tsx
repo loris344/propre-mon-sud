@@ -1,4 +1,4 @@
-import { Phone, Recycle, CheckCircle, ArrowRight, Star, Truck, Clock, Home, Building2, Warehouse } from "lucide-react";
+import { Phone, Recycle, CheckCircle, ArrowRight, Star, Truck, Clock, Home, Building2, Warehouse, Camera, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import SEOHead from "@/components/SEOHead";
@@ -28,7 +28,7 @@ const LandingDebarras = () => {
               <div>
                 <div className="inline-flex items-center gap-2 bg-accent/10 border border-accent/20 text-foreground px-5 py-2.5 rounded-full text-sm font-medium mb-6">
                   <Truck className="w-4 h-4 text-accent" />
-                  Évacuation complète & recyclage
+                  Évacuation complète & tri sélectif
                 </div>
 
                 <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground leading-[1.1]">
@@ -38,8 +38,8 @@ const LandingDebarras = () => {
                 </h1>
                 
                 <p className="text-lg text-muted-foreground mt-5 leading-relaxed">
-                  Maison, appartement, cave, grenier, local pro — nous vidons, trions et recyclons 
-                  vos encombrants rapidement et dans le respect de l'environnement.
+                  Maison, appartement, cave, grenier, local pro — nous vidons, trions et évacuons 
+                  vos encombrants rapidement et proprement.
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4 mt-8">
@@ -77,8 +77,36 @@ const LandingDebarras = () => {
           </div>
         </section>
 
-        {/* Ce qu'on débarrasse */}
+        {/* Comment ça marche */}
         <section className="py-16 sm:py-20 bg-card border-y border-border/50">
+          <div className="container mx-auto px-4 sm:px-6">
+            <h2 className="text-2xl sm:text-3xl font-bold text-center text-foreground mb-4">
+              Comment ça marche ?
+            </h2>
+            <p className="text-center text-muted-foreground mb-12 max-w-xl mx-auto">
+              Pas besoin de se déplacer pour évaluer. Quelques photos suffisent.
+            </p>
+            
+            <div className="max-w-4xl mx-auto grid sm:grid-cols-3 gap-6">
+              {[
+                { icon: MessageCircle, step: "1", title: "Appelez ou écrivez-nous", desc: "Décrivez votre situation par téléphone ou par mail. On vous guide." },
+                { icon: Camera, step: "2", title: "Envoyez quelques photos", desc: "Quelques photos du lieu suffisent pour qu'on établisse un devis précis, sans déplacement." },
+                { icon: Truck, step: "3", title: "On intervient", desc: "Notre équipe vide, trie et évacue tout. Vous n'avez rien à faire." },
+              ].map((item, i) => (
+                <Card key={i} className="p-6 sm:p-8 border-border/50 text-center">
+                  <div className="w-14 h-14 rounded-2xl bg-primary text-primary-foreground flex items-center justify-center text-xl font-bold mx-auto mb-5">
+                    {item.step}
+                  </div>
+                  <h3 className="text-lg font-bold text-foreground mb-3">{item.title}</h3>
+                  <p className="text-muted-foreground text-sm leading-relaxed">{item.desc}</p>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Ce qu'on débarrasse */}
+        <section className="py-16 sm:py-20">
           <div className="container mx-auto px-4 sm:px-6">
             <h2 className="text-2xl sm:text-3xl font-bold text-center text-foreground mb-4">
               On débarrasse tout, partout
@@ -105,36 +133,43 @@ const LandingDebarras = () => {
           </div>
         </section>
 
-        {/* Engagement éco */}
-        <section className="py-16 sm:py-20">
+        {/* Photo équipe */}
+        <section className="py-16 sm:py-20 bg-card border-y border-border/50">
           <div className="container mx-auto px-4 sm:px-6">
-            <div className="max-w-3xl mx-auto">
-              <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-4">
-                Un débarras responsable
-              </h2>
-              <p className="text-muted-foreground leading-relaxed mb-6">
-                Nous ne jetons pas tout en décharge. Chaque objet est trié : ce qui peut être recyclé, 
-                donné ou valorisé l'est systématiquement.
-              </p>
-              <div className="space-y-3">
-                {[
-                  "Tri sélectif sur place par notre équipe",
-                  "Partenariats avec des filières de recyclage",
-                  "Dons aux associations locales quand possible",
-                  "Évacuation conforme à la réglementation",
-                ].map((item, i) => (
-                  <div key={i} className="flex items-start gap-3">
-                    <CheckCircle className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
-                    <span className="text-foreground">{item}</span>
-                  </div>
-                ))}
+            <div className="max-w-5xl mx-auto grid sm:grid-cols-2 gap-10 items-center">
+              <img 
+                src="/images/team/equipe-intervention.jpeg" 
+                alt="Notre équipe en tenue lors d'une intervention de débarras" 
+                className="rounded-2xl object-cover w-full h-72 sm:h-96 shadow-lg"
+                loading="lazy"
+              />
+              <div>
+                <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-4">
+                  Une équipe de terrain, pas un intermédiaire
+                </h2>
+                <p className="text-muted-foreground leading-relaxed mb-6">
+                  C'est nous qui intervenons directement. Pas de sous-traitance, pas de surprise. 
+                  Une équipe équipée, formée et motivée pour chaque chantier.
+                </p>
+                <div className="space-y-3">
+                  {[
+                    "Tri sélectif sur place par notre équipe",
+                    "Dons aux associations locales quand possible",
+                    "Évacuation conforme à la réglementation",
+                  ].map((item, i) => (
+                    <div key={i} className="flex items-start gap-3">
+                      <CheckCircle className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                      <span className="text-foreground font-medium">{item}</span>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
         </section>
 
         {/* Situations */}
-        <section className="py-16 sm:py-20 bg-card border-y border-border/50">
+        <section className="py-16 sm:py-20">
           <div className="container mx-auto px-4 sm:px-6">
             <h2 className="text-2xl sm:text-3xl font-bold text-center text-foreground mb-12">
               Dans quelles situations intervient-on ?
@@ -148,7 +183,7 @@ const LandingDebarras = () => {
                 "Décès d'un proche",
                 "Liquidation de local pro",
               ].map((item, i) => (
-                <div key={i} className="flex items-center gap-3 p-4 sm:p-5 bg-background rounded-xl border border-border/50">
+                <div key={i} className="flex items-center gap-3 p-4 sm:p-5 bg-card rounded-xl border border-border/50">
                   <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
                     <CheckCircle className="w-4 h-4 text-primary" />
                   </div>
@@ -166,7 +201,7 @@ const LandingDebarras = () => {
               Prêt à libérer votre espace ?
             </h2>
             <p className="text-muted-foreground max-w-xl mx-auto mb-8 text-lg">
-              Devis gratuit et sans engagement. Intervention rapide dans tout le Sud de la France.
+              Devis gratuit et sans engagement. Envoyez-nous quelques photos et on vous répond rapidement.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button variant="hero" size="lg" onClick={scrollToContact} className="text-lg px-10 py-6 shadow-lg">

@@ -1,4 +1,4 @@
-import { Phone, Heart, CheckCircle, ArrowRight, Star, Clock, Eye, Shield, MapPin, Users } from "lucide-react";
+import { Phone, Heart, CheckCircle, ArrowRight, Star, Clock, Eye, Shield, MapPin, Users, Camera, MessageCircle, Scale } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import SEOHead from "@/components/SEOHead";
@@ -76,8 +76,36 @@ const LandingApresDeces = () => {
           </div>
         </section>
 
-        {/* Engagements */}
+        {/* Comment ça marche */}
         <section className="py-16 sm:py-20 bg-card border-y border-border/50">
+          <div className="container mx-auto px-4 sm:px-6">
+            <h2 className="text-2xl sm:text-3xl font-bold text-center text-foreground mb-4">
+              Comment ça se passe ?
+            </h2>
+            <p className="text-center text-muted-foreground mb-12 max-w-xl mx-auto">
+              Un processus simple et humain. Pas besoin de se déplacer pour l'évaluation.
+            </p>
+            
+            <div className="max-w-4xl mx-auto grid sm:grid-cols-3 gap-6">
+              {[
+                { icon: MessageCircle, step: "1", title: "Échangeons ensemble", desc: "Appelez-nous ou écrivez-nous. On vous écoute avec bienveillance, sans engagement." },
+                { icon: Camera, step: "2", title: "Envoyez quelques photos", desc: "Quelques photos du logement suffisent pour établir un devis précis. Pas de déplacement nécessaire." },
+                { icon: Heart, step: "3", title: "On s'occupe de tout", desc: "Bio-nettoyage, désinfection, évacuation. Vous n'avez rien à gérer, on prend tout en charge." },
+              ].map((item, i) => (
+                <Card key={i} className="p-6 sm:p-8 border-border/50 text-center">
+                  <div className="w-14 h-14 rounded-2xl bg-primary text-primary-foreground flex items-center justify-center text-xl font-bold mx-auto mb-5">
+                    {item.step}
+                  </div>
+                  <h3 className="text-lg font-bold text-foreground mb-3">{item.title}</h3>
+                  <p className="text-muted-foreground text-sm leading-relaxed">{item.desc}</p>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Engagements */}
+        <section className="py-16 sm:py-20">
           <div className="container mx-auto px-4 sm:px-6">
             <div className="max-w-3xl mx-auto text-center mb-12">
               <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-4">
@@ -107,55 +135,66 @@ const LandingApresDeces = () => {
           </div>
         </section>
 
-        {/* Ce qu'on fait */}
-        <section className="py-16 sm:py-20">
+        {/* Photo équipe + qui nous contacte */}
+        <section className="py-16 sm:py-20 bg-card border-y border-border/50">
           <div className="container mx-auto px-4 sm:px-6">
-            <div className="max-w-4xl mx-auto grid sm:grid-cols-2 gap-8 items-start">
+            <div className="max-w-5xl mx-auto grid sm:grid-cols-2 gap-10 items-center">
+              <img 
+                src="/images/team/equipe-intervention.jpeg" 
+                alt="Notre équipe en tenue lors d'une intervention" 
+                className="rounded-2xl object-cover w-full h-72 sm:h-96 shadow-lg"
+                loading="lazy"
+              />
               <div>
-                <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-4">
-                  Ce que comprend notre intervention
+                <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-6">
+                  Qui fait appel à nous ?
                 </h2>
-                <p className="text-muted-foreground leading-relaxed mb-6">
-                  Chaque situation est unique. Nous adaptons notre intervention à vos besoins 
-                  et à l'état du logement.
-                </p>
-                <div className="space-y-3">
+                <div className="space-y-4">
                   {[
-                    "Bio-nettoyage complet certifié",
-                    "Désinfection & désodorisation",
-                    "Traitement des fluides corporels",
-                    "Évacuation des déchets spéciaux",
-                    "Tri respectueux des effets personnels",
-                    "Remise en état des sols et murs",
-                    "Traitement anti-nuisibles si nécessaire",
+                    { icon: Users, title: "Familles endeuillées", desc: "Nous vous épargnons cette étape douloureuse." },
+                    { icon: Scale, title: "Notaires & études notariales", desc: "Remise en état avant succession ou vente." },
+                    { icon: Shield, title: "Mandataires judiciaires (MJPM)", desc: "Intervention rapide sur demande du mandataire." },
+                    { icon: MapPin, title: "Bailleurs & agences", desc: "Logement prêt à relouer rapidement." },
                   ].map((item, i) => (
-                    <div key={i} className="flex items-start gap-3">
-                      <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                      <span className="text-foreground">{item}</span>
-                    </div>
+                    <Card key={i} className="p-4 border-border/50">
+                      <div className="flex items-start gap-4">
+                        <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
+                          <item.icon className="w-5 h-5 text-accent" />
+                        </div>
+                        <div>
+                          <h4 className="font-bold text-foreground">{item.title}</h4>
+                          <p className="text-sm text-muted-foreground">{item.desc}</p>
+                        </div>
+                      </div>
+                    </Card>
                   ))}
                 </div>
               </div>
-              
-              {/* Qui nous contacte */}
-              <div className="space-y-4">
-                <h3 className="text-xl font-bold text-foreground mb-2">Qui fait appel à nous ?</h3>
+            </div>
+          </div>
+        </section>
+
+        {/* Ce qu'on fait */}
+        <section className="py-16 sm:py-20">
+          <div className="container mx-auto px-4 sm:px-6">
+            <div className="max-w-3xl mx-auto">
+              <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-6">
+                Ce que comprend notre intervention
+              </h2>
+              <div className="grid sm:grid-cols-2 gap-3">
                 {[
-                  { icon: Users, title: "Familles endeuillées", desc: "Nous vous épargnons cette étape douloureuse." },
-                  { icon: Shield, title: "Notaires & mandataires", desc: "Remise en état avant succession ou revente." },
-                  { icon: MapPin, title: "Bailleurs & agences", desc: "Logement prêt à relouer rapidement." },
+                  "Bio-nettoyage complet",
+                  "Désinfection & désodorisation",
+                  "Traitement des fluides corporels",
+                  "Évacuation des déchets spéciaux",
+                  "Tri respectueux des effets personnels",
+                  "Remise en état des sols et murs",
+                  "Traitement anti-nuisibles si nécessaire",
                 ].map((item, i) => (
-                  <Card key={i} className="p-5 border-border/50">
-                    <div className="flex items-start gap-4">
-                      <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
-                        <item.icon className="w-5 h-5 text-accent" />
-                      </div>
-                      <div>
-                        <h4 className="font-bold text-foreground">{item.title}</h4>
-                        <p className="text-sm text-muted-foreground">{item.desc}</p>
-                      </div>
-                    </div>
-                  </Card>
+                  <div key={i} className="flex items-start gap-3 p-3">
+                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                    <span className="text-foreground">{item}</span>
+                  </div>
                 ))}
               </div>
             </div>
