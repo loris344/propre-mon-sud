@@ -79,7 +79,7 @@ const LandingReviews = memo(({ serviceKey }: LandingReviewsProps) => {
                     key={i}
                     className={`w-4 h-4 ${
                       i < review.rating
-                        ? "fill-yellow-400 text-yellow-400"
+                        ? "fill-amber-400 text-amber-400"
                         : "text-muted-foreground/30"
                     }`}
                   />

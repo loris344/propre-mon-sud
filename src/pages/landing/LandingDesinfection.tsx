@@ -58,7 +58,7 @@ const LandingDesinfection = () => {
                 <div className="flex flex-wrap items-center gap-4 sm:gap-6 mt-6 text-sm text-muted-foreground">
                   <div className="flex items-center gap-1.5">
                     {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
+                      <Star key={i} className="w-4 h-4 fill-amber-400 text-amber-400" />
                     ))}
                     <span className="ml-1 font-medium">4.9/5</span>
                   </div>
