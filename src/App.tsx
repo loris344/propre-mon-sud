@@ -90,6 +90,16 @@ const App = () => (
             <Route path="/partenariat-mjpm" element={<MJPMPartnership />} />
             <Route path="/partenariat-maisons-retraite" element={<NursingHomePartnership />} />
 
+            {/* Pages légales */}
+            <Route path="/mentions-legales" element={<MentionsLegales />} />
+            <Route path="/politique-confidentialite" element={<PolitiqueConfidentialite />} />
+
+            {/* Landing pages Google Ads (noindex) */}
+            <Route path="/landing/nettoyage-syndrome-diogene" element={<LandingDiogene />} />
+            <Route path="/landing/debarras-gros-volumes" element={<LandingDebarras />} />
+            <Route path="/landing/desinfection-insalubrite" element={<LandingDesinfection />} />
+            <Route path="/landing/nettoyage-apres-deces" element={<LandingApresDeces />} />
+
             {/* 404 */}
             <Route path="*" element={<NotFound />} />
           </Routes>
