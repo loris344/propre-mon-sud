@@ -60,7 +60,7 @@ const CustomerReviews = memo(() => {
     }, 4000); // Change d'avis toutes les 4 secondes
 
     return () => clearInterval(interval);
-  }, [reviews.length]);
+  }, []);
 
   return (
     <section className="py-20 bg-gradient-to-b from-secondary/20 to-background">
