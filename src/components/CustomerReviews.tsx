@@ -113,9 +113,9 @@ const CustomerReviews = memo(() => {
                             <Star 
                               key={i} 
                               className={`w-4 h-4 ${
-                                i < review.rating 
-                                  ? 'fill-yellow-400 text-yellow-400' 
-                                  : 'text-gray-300'
+                              i < review.rating 
+                                ? 'fill-amber-400 text-amber-400' 
+                                : 'text-muted-foreground/30'
                               }`} 
                             />
                           ))}
