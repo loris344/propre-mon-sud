@@ -298,9 +298,9 @@ function generatePage(route, meta) {
     <meta name="description" content="${meta.description}" />
     <meta name="keywords" content="${meta.keywords}" />
     <meta name="author" content="SOS Nettoyage Diogène - Nettoyage Professionnel" />
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-    <meta name="googlebot" content="index, follow" />
-    <meta name="bingbot" content="index, follow" />
+    <meta name="robots" content="${meta.noIndex ? 'noindex, nofollow' : 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'}" />
+    <meta name="googlebot" content="${meta.noIndex ? 'noindex, nofollow' : 'index, follow'}" />
+    <meta name="bingbot" content="${meta.noIndex ? 'noindex, nofollow' : 'index, follow'}" />
     
     <!-- Canonical URL -->
     <link rel="canonical" href="${SITE_URL}${route}" />
