@@ -64,7 +64,7 @@ const LandingReviews = memo(({ serviceKey }: LandingReviewsProps) => {
           </h2>
           <div className="flex items-center justify-center gap-1.5 mt-3">
             {[...Array(5)].map((_, i) => (
-              <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
+              <Star key={i} className="w-5 h-5 fill-amber-400 text-amber-400" />
             ))}
             <span className="ml-2 text-foreground font-semibold">4.9/5</span>
           </div>
