@@ -1,4 +1,4 @@
-import { Phone, Shield, Heart, CheckCircle, ArrowRight, Star, Clock, MapPin, Users, Award, Eye } from "lucide-react";
+import { Phone, Shield, Heart, CheckCircle, ArrowRight, Star, Clock, Eye, Award, Users, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import SEOHead from "@/components/SEOHead";
@@ -19,57 +19,59 @@ const LandingDiogene = () => {
         noIndex={true}
       />
       <main className="min-h-screen">
-        {/* Hero — Urgence + Empathie */}
-        <section className="relative overflow-hidden pt-20 sm:pt-28 pb-16 sm:pb-24">
+        {/* Hero */}
+        <section className="relative overflow-hidden pt-32 sm:pt-40 pb-16 sm:pb-24">
           <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-accent/5" />
           <div className="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
           
           <div className="container mx-auto px-4 sm:px-6 relative">
-            <div className="max-w-4xl mx-auto">
-              {/* Trust badge */}
-              <div className="flex justify-center mb-6">
-                <div className="inline-flex items-center gap-2 bg-accent/10 border border-accent/20 text-foreground px-5 py-2.5 rounded-full text-sm font-medium">
+            <div className="grid lg:grid-cols-2 gap-10 items-center">
+              <div>
+                <div className="inline-flex items-center gap-2 bg-accent/10 border border-accent/20 text-foreground px-5 py-2.5 rounded-full text-sm font-medium mb-6">
                   <Shield className="w-4 h-4 text-accent" />
                   Intervention discrète — Sans jugement
                 </div>
-              </div>
 
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-foreground leading-[1.1] text-center">
-                Votre proche souffre du{" "}
-                <span className="text-primary">syndrome de Diogène</span> ?
-              </h1>
-              
-              <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto text-center mt-6 leading-relaxed">
-                Nous aidons les familles et les mandataires à retrouver un logement sain. 
-                Intervention humaine, respectueuse et confidentielle.
-              </p>
+                <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground leading-[1.1]">
+                  Votre proche souffre du{" "}
+                  <span className="text-primary">syndrome de Diogène</span> ?
+                </h1>
+                
+                <p className="text-lg text-muted-foreground mt-5 leading-relaxed">
+                  Nous aidons les familles et les mandataires à retrouver un logement sain. 
+                  Intervention humaine, respectueuse et confidentielle.
+                </p>
 
-              {/* CTA */}
-              <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
-                <Button variant="hero" size="lg" onClick={scrollToContact} className="text-lg px-8 py-6 shadow-lg">
-                  Obtenir un Devis Gratuit
-                  <ArrowRight className="w-5 h-5 ml-2" />
-                </Button>
-                <a href="tel:+33605310199">
-                  <Button variant="outline" size="lg" className="text-lg px-8 py-6 w-full border-2">
-                    <Phone className="w-5 h-5 mr-2" />
-                    06 05 31 01 99
+                <div className="flex flex-col sm:flex-row gap-4 mt-8">
+                  <Button variant="hero" size="lg" onClick={scrollToContact} className="text-lg px-8 py-6 shadow-lg">
+                    Obtenir un Devis Gratuit
+                    <ArrowRight className="w-5 h-5 ml-2" />
                   </Button>
-                </a>
+                  <a href="tel:+33605310199">
+                    <Button variant="outline" size="lg" className="text-lg px-8 py-6 w-full border-2">
+                      <Phone className="w-5 h-5 mr-2" />
+                      06 05 31 01 99
+                    </Button>
+                  </a>
+                </div>
+
+                <div className="flex flex-wrap items-center gap-4 sm:gap-6 mt-6 text-sm text-muted-foreground">
+                  <div className="flex items-center gap-1.5">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
+                    ))}
+                    <span className="ml-1 font-medium">4.9/5</span>
+                  </div>
+                  <span className="flex items-center gap-1.5"><Clock className="w-4 h-4" /> 7j/7</span>
+                  <span className="flex items-center gap-1.5"><MapPin className="w-4 h-4" /> Sud de la France</span>
+                </div>
               </div>
 
-              {/* Social proof */}
-              <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 mt-8 text-sm text-muted-foreground">
-                <div className="flex items-center gap-1.5">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
-                  ))}
-                  <span className="ml-1 font-medium">4.9/5</span>
-                </div>
-                <span className="hidden sm:block text-border">|</span>
-                <span className="flex items-center gap-1.5"><Clock className="w-4 h-4" /> Disponible 7j/7</span>
-                <span className="hidden sm:block text-border">|</span>
-                <span className="flex items-center gap-1.5"><MapPin className="w-4 h-4" /> Sud de la France</span>
+              {/* Images */}
+              <div className="grid grid-cols-2 gap-3">
+                <img src="/images/examples/cl1.jpg" alt="Nettoyage syndrome de Diogène - avant intervention" className="rounded-xl object-cover w-full h-48 sm:h-56" loading="lazy" />
+                <img src="/images/examples/cl2.webp" alt="Nettoyage syndrome de Diogène - résultat" className="rounded-xl object-cover w-full h-48 sm:h-56" loading="lazy" />
+                <img src="/images/examples/cl3.jpg" alt="Intervention Diogène - débarras complet" className="rounded-xl object-cover w-full h-48 sm:h-56 col-span-2" loading="lazy" />
               </div>
             </div>
           </div>
@@ -90,21 +92,9 @@ const LandingDiogene = () => {
             
             <div className="grid sm:grid-cols-3 gap-6 max-w-5xl mx-auto">
               {[
-                { 
-                  icon: Heart, 
-                  title: "Approche bienveillante", 
-                  desc: "Notre équipe est formée pour intervenir avec empathie. Nous respectons la personne concernée et son histoire, sans jamais porter de jugement." 
-                },
-                { 
-                  icon: Eye, 
-                  title: "Discrétion totale", 
-                  desc: "Véhicules banalisés, intervention confidentielle, respect du voisinage. Personne ne saura pourquoi nous sommes là." 
-                },
-                { 
-                  icon: Award, 
-                  title: "Expertise reconnue", 
-                  desc: "Des centaines d'interventions réalisées. Nous savons gérer les cas les plus complexes avec méthode et professionnalisme." 
-                },
+                { icon: Heart, title: "Approche bienveillante", desc: "Notre équipe est formée pour intervenir avec empathie. Nous respectons la personne concernée et son histoire, sans jamais porter de jugement." },
+                { icon: Eye, title: "Discrétion totale", desc: "Véhicules banalisés, intervention confidentielle, respect du voisinage. Personne ne saura pourquoi nous sommes là." },
+                { icon: Award, title: "Expertise reconnue", desc: "Nous savons gérer les cas les plus complexes avec méthode et professionnalisme. Chaque intervention est unique." },
               ].map((item, i) => (
                 <Card key={i} className="p-6 sm:p-8 border-border/50 hover:shadow-lg transition-shadow duration-300">
                   <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-5">
@@ -151,7 +141,7 @@ const LandingDiogene = () => {
           </div>
         </section>
 
-        {/* Pour qui ? */}
+        {/* Pour qui */}
         <section className="py-16 sm:py-20 bg-card border-y border-border/50">
           <div className="container mx-auto px-4 sm:px-6">
             <h2 className="text-2xl sm:text-3xl font-bold text-center text-foreground mb-12">
@@ -177,11 +167,11 @@ const LandingDiogene = () => {
           </div>
         </section>
 
-        {/* Zone + CTA final */}
+        {/* Zone + CTA */}
         <section className="py-16 sm:py-20 bg-gradient-to-b from-primary/5 to-primary/10">
           <div className="container mx-auto px-4 sm:px-6 text-center">
             <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-6">
-              Intervention rapide dans tout le Sud de la France
+              Intervention dans tout le Sud de la France
             </h2>
             <div className="flex flex-wrap justify-center gap-2 sm:gap-3 mb-10 max-w-2xl mx-auto">
               {["Montpellier", "Marseille", "Nîmes", "Béziers", "Sète", "Perpignan", "Aix-en-Provence", "Toulon", "Toulouse", "Bordeaux"].map(city => (

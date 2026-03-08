@@ -19,54 +19,58 @@ const LandingApresDeces = () => {
         noIndex={true}
       />
       <main className="min-h-screen">
-        {/* Hero — Ton empathique */}
-        <section className="relative overflow-hidden pt-20 sm:pt-28 pb-16 sm:pb-24">
+        {/* Hero */}
+        <section className="relative overflow-hidden pt-32 sm:pt-40 pb-16 sm:pb-24">
           <div className="absolute inset-0 bg-gradient-to-br from-secondary/10 via-background to-primary/5" />
-          <div className="absolute bottom-0 right-0 w-80 h-80 bg-secondary/10 rounded-full blur-3xl translate-y-1/3 translate-x-1/4" />
           
           <div className="container mx-auto px-4 sm:px-6 relative">
-            <div className="max-w-4xl mx-auto">
-              <div className="flex justify-center mb-6">
-                <div className="inline-flex items-center gap-2 bg-secondary/20 border border-secondary text-foreground px-5 py-2.5 rounded-full text-sm font-medium">
+            <div className="grid lg:grid-cols-2 gap-10 items-center">
+              <div>
+                <div className="inline-flex items-center gap-2 bg-secondary/20 border border-secondary text-foreground px-5 py-2.5 rounded-full text-sm font-medium mb-6">
                   <Heart className="w-4 h-4 text-primary" />
                   Service bienveillant & confidentiel
                 </div>
-              </div>
 
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-foreground leading-[1.1] text-center">
-                Nous prenons en charge le{" "}
-                <span className="text-primary">nettoyage après décès</span>
-              </h1>
-              
-              <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto text-center mt-6 leading-relaxed">
-                Dans ces moments difficiles, vous ne devriez pas avoir à gérer ça seul. 
-                Notre équipe intervient avec humanité, discrétion et professionnalisme.
-              </p>
+                <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground leading-[1.1]">
+                  Nous prenons en charge le{" "}
+                  <span className="text-primary">nettoyage après décès</span>
+                </h1>
+                
+                <p className="text-lg text-muted-foreground mt-5 leading-relaxed">
+                  Dans ces moments difficiles, vous ne devriez pas avoir à gérer ça seul. 
+                  Notre équipe intervient avec humanité, discrétion et professionnalisme.
+                </p>
 
-              <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
-                <Button variant="hero" size="lg" onClick={scrollToContact} className="text-lg px-8 py-6 shadow-lg">
-                  Nous Contacter
-                  <ArrowRight className="w-5 h-5 ml-2" />
-                </Button>
-                <a href="tel:+33605310199">
-                  <Button variant="outline" size="lg" className="text-lg px-8 py-6 w-full border-2">
-                    <Phone className="w-5 h-5 mr-2" />
-                    06 05 31 01 99
+                <div className="flex flex-col sm:flex-row gap-4 mt-8">
+                  <Button variant="hero" size="lg" onClick={scrollToContact} className="text-lg px-8 py-6 shadow-lg">
+                    Nous Contacter
+                    <ArrowRight className="w-5 h-5 ml-2" />
                   </Button>
-                </a>
+                  <a href="tel:+33605310199">
+                    <Button variant="outline" size="lg" className="text-lg px-8 py-6 w-full border-2">
+                      <Phone className="w-5 h-5 mr-2" />
+                      06 05 31 01 99
+                    </Button>
+                  </a>
+                </div>
+
+                <div className="flex flex-wrap items-center gap-4 sm:gap-6 mt-6 text-sm text-muted-foreground">
+                  <div className="flex items-center gap-1.5">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
+                    ))}
+                    <span className="ml-1 font-medium">4.9/5</span>
+                  </div>
+                  <span className="flex items-center gap-1.5"><Eye className="w-4 h-4" /> Discrétion absolue</span>
+                  <span className="flex items-center gap-1.5"><Clock className="w-4 h-4" /> 7j/7</span>
+                </div>
               </div>
 
-              <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 mt-8 text-sm text-muted-foreground">
-                <div className="flex items-center gap-1.5">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
-                  ))}
-                  <span className="ml-1 font-medium">4.9/5</span>
-                </div>
-                <span className="hidden sm:block text-border">|</span>
-                <span className="flex items-center gap-1.5"><Eye className="w-4 h-4" /> Discrétion absolue</span>
-                <span className="hidden sm:block text-border">|</span>
-                <span className="flex items-center gap-1.5"><Clock className="w-4 h-4" /> Intervention 7j/7</span>
+              {/* Images */}
+              <div className="grid grid-cols-2 gap-3">
+                <img src="/images/examples/décès1.avif" alt="Nettoyage après décès - intervention professionnelle" className="rounded-xl object-cover w-full h-48 sm:h-56" loading="lazy" />
+                <img src="/images/examples/décès2.webp" alt="Bio-nettoyage après décès" className="rounded-xl object-cover w-full h-48 sm:h-56" loading="lazy" />
+                <img src="/images/examples/décès3.jpg" alt="Remise en état après décès" className="rounded-xl object-cover w-full h-48 sm:h-56 col-span-2" loading="lazy" />
               </div>
             </div>
           </div>
@@ -158,7 +162,7 @@ const LandingApresDeces = () => {
           </div>
         </section>
 
-        {/* CTA final — ton doux */}
+        {/* CTA final */}
         <section className="py-16 sm:py-20 bg-gradient-to-b from-secondary/10 to-secondary/20">
           <div className="container mx-auto px-4 sm:px-6 text-center">
             <Heart className="w-10 h-10 text-primary mx-auto mb-6" />
