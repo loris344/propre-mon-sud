@@ -62,6 +62,35 @@
       gtag('config', 'AW-17579670391');
     </script>
     
+    <!-- Google Ads Call Conversion Snippet -->
+    <script>
+      function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof(url) != 'undefined') {
+            window.location = url;
+          }
+        };
+        gtag('event', 'conversion', {
+          'send_to': 'AW-17579670391/zvbkCPPiqIocEPf20b5B',
+          'value': 1.0,
+          'currency': 'EUR',
+          'event_callback': callback
+        });
+        return false;
+      }
+
+      // Auto-track all tel: links
+      window.addEventListener('load', function () {
+        document.body.addEventListener('click', function(e) {
+          var link = e.target.closest('a[href^="tel:"]');
+          if (link) {
+            e.preventDefault();
+            gtag_report_conversion(link.getAttribute('href'));
+          }
+        });
+      });
+    </script>
+    
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
