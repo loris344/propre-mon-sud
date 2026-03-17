@@ -204,10 +204,10 @@ const TousNosServices: React.FC = () => {
                   <h3 className="text-lg font-semibold mb-2">Appelez-nous</h3>
                   <p className="text-gray-600 mb-4">Disponible 7j/7</p>
                   <a 
-                    href="tel:0605310199"
+                    href="tel:0767135458"
                     className="text-blue-600 font-semibold hover:underline"
                   >
-                    06 05 31 01 99
+                    07 67 13 54 58
                   </a>
                 </div>
                 

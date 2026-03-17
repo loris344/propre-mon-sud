@@ -22,7 +22,7 @@ const PolitiqueConfidentialite = () => {
                 Le responsable du traitement des données personnelles est :<br />
                 <strong>SOS Nettoyage Diogène</strong><br />
                 Email : contact@sosnettoyagediogene.fr<br />
-                Téléphone : <a href="tel:+33605310199" className="text-primary hover:underline">06 05 31 01 99</a>
+                Téléphone : <a href="tel:+33767135458" className="text-primary hover:underline">07 67 13 54 58</a>
               </p>
             </section>
 

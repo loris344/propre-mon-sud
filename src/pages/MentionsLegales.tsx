@@ -21,7 +21,7 @@ const MentionsLegales = () => {
                 <strong>SOS Nettoyage Diogène</strong><br />
                 Société spécialisée dans le nettoyage et débarras professionnel<br />
                 Siège social : Sud de la France<br />
-                Téléphone : <a href="tel:+33605310199" className="text-primary hover:underline">06 05 31 01 99</a><br />
+                Téléphone : <a href="tel:+33767135458" className="text-primary hover:underline">07 67 13 54 58</a><br />
                 Email : contact@sosnettoyagediogene.fr
               </p>
             </section>

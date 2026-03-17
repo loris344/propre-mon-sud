@@ -75,7 +75,7 @@ const NettoyageAppartementApresDeces = () => {
                 className="text-lg px-6 py-4"
               >
                 <Phone className="w-5 h-5" />
-                Devis Gratuit - 06 05 31 01 99
+                Devis Gratuit - 07 67 13 54 58
               </Button>
             </div>
           </div>
@@ -425,7 +425,7 @@ const NettoyageAppartementApresDeces = () => {
                         className="text-lg px-8 py-4"
                       >
                         <Phone className="w-5 h-5 mr-2" />
-                        06 05 31 01 99
+                        07 67 13 54 58
                       </Button>
                     </div>
                   </div>
