@@ -47,7 +47,7 @@ const LandingDesinfection = () => {
                     Devis Gratuit
                     <ArrowRight className="w-5 h-5 ml-2" />
                   </Button>
-                  <a href="tel:+33767135458">
+                  <a href="tel:+33767135458" onClick={() => gtag_report_conversion()}>
                     <Button variant="outline" size="lg" className="text-lg px-8 py-6 w-full border-2">
                       <Phone className="w-5 h-5 mr-2" />
                       07 67 13 54 58
@@ -192,7 +192,7 @@ const LandingDesinfection = () => {
                   En cas de risque sanitaire immédiat, nous intervenons en urgence 7j/7. 
                   Appelez-nous directement.
                 </p>
-                <a href="tel:+33767135458">
+                <a href="tel:+33767135458" onClick={() => gtag_report_conversion()}>
                   <Button variant="hero" size="lg" className="text-lg py-6 px-8">
                     <Phone className="w-5 h-5 mr-2" />
                     07 67 13 54 58

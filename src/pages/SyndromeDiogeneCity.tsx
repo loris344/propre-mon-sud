@@ -45,6 +45,7 @@ const SyndromeDiogeneCity: React.FC = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="tel:0767135458"
+                onClick={() => gtag_report_conversion()}
                 className="inline-flex items-center justify-center gap-2 bg-card text-primary px-8 py-3 rounded-lg font-semibold hover:bg-card/90 transition-colors"
               >
                 <Phone className="w-5 h-5" />

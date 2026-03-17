@@ -37,7 +37,7 @@ const Footer = () => {
               <div className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-primary flex-shrink-0" />
                 <div>
-                  <a href="tel:0767135458" className="font-medium text-foreground hover:text-primary transition-colors">
+                  <a href="tel:0767135458" onClick={() => gtag_report_conversion()} className="font-medium text-foreground hover:text-primary transition-colors">
                     07 67 13 54 58
                   </a>
                   <div className="text-sm text-muted-foreground">Disponible 7j/7</div>
