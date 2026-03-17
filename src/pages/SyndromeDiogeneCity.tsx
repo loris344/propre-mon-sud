@@ -44,11 +44,11 @@ const SyndromeDiogeneCity: React.FC = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="tel:0605310199"
+                href="tel:0767135458"
                 className="inline-flex items-center justify-center gap-2 bg-card text-primary px-8 py-3 rounded-lg font-semibold hover:bg-card/90 transition-colors"
               >
                 <Phone className="w-5 h-5" />
-                06 05 31 01 99
+                07 67 13 54 58
               </a>
               <Link
                 to="/#contact"
