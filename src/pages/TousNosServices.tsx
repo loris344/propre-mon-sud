@@ -205,6 +205,7 @@ const TousNosServices: React.FC = () => {
                   <p className="text-gray-600 mb-4">Disponible 7j/7</p>
                   <a 
                     href="tel:0767135458"
+                    onClick={() => gtag_report_conversion()}
                     className="text-blue-600 font-semibold hover:underline"
                   >
                     07 67 13 54 58
