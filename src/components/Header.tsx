@@ -120,11 +120,11 @@ const Header = () => {
             <AvailabilityIndicator />
             <ReviewsDisplay />
             <a 
-              href="tel:0605310199"
+              href="tel:0767135458"
               className="text-primary font-semibold hover:underline text-sm whitespace-nowrap flex items-center gap-1"
             >
               <Phone className="w-4 h-4" />
-              06 05 31 01 99
+              07 67 13 54 58
             </a>
             <Button 
               variant="hero" 
