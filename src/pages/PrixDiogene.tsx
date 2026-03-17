@@ -270,10 +270,10 @@ export default function PrixDiogene() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <a 
-                href="tel:0605310199"
+                href="tel:0767135458"
                 className="inline-block bg-primary text-primary-foreground px-6 py-3 rounded-lg font-bold hover:bg-primary/90 transition-colors duration-300"
               >
-                📞 06 05 31 01 99
+                📞 07 67 13 54 58
               </a>
               <a 
                 href="/#contact-title" 

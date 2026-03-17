@@ -200,11 +200,11 @@ const Header = () => {
                   <ReviewsDisplay />
                 </div>
                 <a 
-                  href="tel:0605310199"
+                  href="tel:0767135458"
                   className="block w-full text-center bg-primary text-primary-foreground px-6 py-4 rounded-lg font-bold text-lg hover:bg-primary/90 transition-colors"
                 >
                   <Phone className="w-5 h-5 inline-block mr-2" />
-                  06 05 31 01 99
+                  07 67 13 54 58
                 </a>
                 <Button 
                   variant="hero" 

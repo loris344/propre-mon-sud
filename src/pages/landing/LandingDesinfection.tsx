@@ -192,10 +192,10 @@ const LandingDesinfection = () => {
                   En cas de risque sanitaire immédiat, nous intervenons en urgence 7j/7. 
                   Appelez-nous directement.
                 </p>
-                <a href="tel:+33605310199">
+                <a href="tel:+33767135458">
                   <Button variant="hero" size="lg" className="text-lg py-6 px-8">
                     <Phone className="w-5 h-5 mr-2" />
-                    06 05 31 01 99
+                    07 67 13 54 58
                   </Button>
                 </a>
               </Card>

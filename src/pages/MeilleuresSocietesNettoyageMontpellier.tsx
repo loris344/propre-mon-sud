@@ -362,10 +362,10 @@ export default function MeilleuresSocietesNettoyageMontpellier() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <a 
-                href="tel:0605310199"
+                href="tel:0767135458"
                 className="inline-block bg-gray-800 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-900 transition-colors duration-300 shadow-md hover:shadow-lg"
               >
-                📞 06 05 31 01 99
+                📞 07 67 13 54 58
               </a>
               <a 
                 href="https://sosnettoyagediogene.fr" 

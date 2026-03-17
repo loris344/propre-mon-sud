@@ -229,10 +229,10 @@ const DesinfectionArticle = () => {
                     Demander un devis
                   </button>
                   <a 
-                    href="tel:0605310199"
+                    href="tel:0767135458"
                     className="bg-green-600 text-white px-6 py-2 rounded-md hover:bg-green-700 transition-colors font-medium text-center"
                   >
-                    📞 06 05 31 01 99
+                    📞 07 67 13 54 58
                   </a>
                 </div>
               </div>
