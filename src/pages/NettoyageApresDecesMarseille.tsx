@@ -29,7 +29,7 @@ const NettoyageApresDecesMarseille: React.FC = () => {
               Faire soi-même ou confier à des spécialistes : le guide clair, utile et actionnable pour agir correctement sans faux pas
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="tel:0767135458" className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+              <a href="tel:0767135458" onClick={() => gtag_report_conversion()} className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
                 📞 07 67 13 54 58
               </a>
               <Link to="/#contact" className="bg-blue-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-400 transition-colors">
