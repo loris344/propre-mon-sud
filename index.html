@@ -240,6 +240,17 @@
         }
       }(window.location))
     </script>
+    <!-- Google Ads Call Tracking -->
+    <script>
+      document.addEventListener('click', function(e) {
+        const link = e.target.closest('a[href^="tel:"]');
+        if (link && window.gtag) {
+          gtag('event', 'conversion', {
+            send_to: 'AW-17579670391/N2aJCN_Jv6obEPf20b5B'
+          });
+        }
+      });
+    </script>
 
 </head>
 
