@@ -62,24 +62,6 @@
       gtag('config', 'AW-17579670391');
     </script>
     
-    <!-- Google Ads Call Conversion -->
-    <script>
-      function gtag_report_conversion(url) {
-        var callback = function () {
-          if (typeof(url) != 'undefined') {
-            window.location = url;
-          }
-        };
-        gtag('event', 'conversion', {
-          'send_to': 'AW-17579670391/zvbkCPPiqIocEPf20b5B',
-          'value': 1.0,
-          'currency': 'EUR',
-          'event_callback': callback
-        });
-        return false;
-      }
-    </script>
-    
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
