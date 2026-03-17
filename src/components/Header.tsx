@@ -202,6 +202,7 @@ const Header = () => {
                 </div>
                 <a 
                   href="tel:0767135458"
+                  onClick={() => gtag_report_conversion()}
                   className="block w-full text-center bg-primary text-primary-foreground px-6 py-4 rounded-lg font-bold text-lg hover:bg-primary/90 transition-colors"
                 >
                   <Phone className="w-5 h-5 inline-block mr-2" />

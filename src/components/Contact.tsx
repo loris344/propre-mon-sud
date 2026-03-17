@@ -272,7 +272,7 @@ const Contact = () => {
               <CardContent className="p-6 sm:p-8 text-center">
                 <Phone className="w-10 h-10 sm:w-12 sm:h-12 mx-auto mb-4" />
                 <h3 className="text-xl sm:text-2xl font-bold mb-2">Urgence 7j/7</h3>
-                <a href="tel:0767135458" className="text-2xl sm:text-3xl font-bold mb-3 block hover:underline">
+                <a href="tel:0767135458" onClick={() => gtag_report_conversion()} className="text-2xl sm:text-3xl font-bold mb-3 block hover:underline">
                   07 67 13 54 58
                 </a>
                 <p className="text-primary-foreground/90 text-sm sm:text-base">
