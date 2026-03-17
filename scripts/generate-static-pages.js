@@ -289,6 +289,11 @@ function getBaseHTML() {
     </script>
   </head>
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T2V8JRGG"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    
     <!-- React App -->
     <div id="root"></div>
     <script type="module" src="/js/${jsFile}"></script>
