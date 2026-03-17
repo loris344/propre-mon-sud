@@ -121,6 +121,7 @@ const Header = () => {
             <ReviewsDisplay />
             <a 
               href="tel:0767135458"
+              onClick={() => gtag_report_conversion()}
               className="text-primary font-semibold hover:underline text-sm whitespace-nowrap flex items-center gap-1"
             >
               <Phone className="w-4 h-4" />
