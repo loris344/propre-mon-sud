@@ -242,13 +242,21 @@
     </script>
     <!-- Google Ads Call Tracking -->
     <script>
-      document.addEventListener('click', function(e) {
-        const link = e.target.closest('a[href^="tel:"]');
-        if (link && window.gtag) {
-          gtag('event', 'conversion', {
-            send_to: 'AW-17579670391/N2aJCN_Jv6obEPf20b5B'
-          });
-        }
+      window.addEventListener('load', function () {
+        document.body.addEventListener('click', function(e) {
+          const link = e.target.closest('a[href^="tel:"]');
+          if (link) {
+            console.log('CLICK TEL DETECTÉ');
+            if (window.gtag) {
+              gtag('event', 'conversion', {
+                send_to: 'AW-17579670391/N2aJCN_Jv6obEPf20b5B'
+              });
+              console.log('CONVERSION ENVOYÉE');
+            } else {
+              console.log('GTAG PAS TROUVÉ');
+            }
+          }
+        });
       });
     </script>
 
