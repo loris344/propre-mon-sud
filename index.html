@@ -240,33 +240,7 @@
         }
       }(window.location))
     </script>
-    <!-- Google Ads Call Tracking -->
-    <script>
-      window.addEventListener('load', function () {
-        document.body.addEventListener('click', function(e) {
-          const link = e.target.closest('a[href^="tel:"]');
-          if (link) {
-            const phoneNumber = link.getAttribute('href');
-            console.log('CLICK TEL DETECTÉ pour :', phoneNumber);
-            if (window.gtag) {
-              e.preventDefault();
-              gtag('event', 'conversion', {
-                'send_to': 'AW-17579670391/N2aJCN_Jv6obEPf20b5B',
-                'event_callback': function() {
-                  console.log('CONVERSION ENVOYÉE - Lancement de l appel');
-                  window.location.href = phoneNumber;
-                }
-              });
-              setTimeout(function() {
-                window.location.href = phoneNumber;
-              }, 500);
-            } else {
-              console.log('GTAG PAS TROUVÉ - Appel direct');
-            }
-          }
-        });
-      });
-    </script>
+
 
 </head>
 
