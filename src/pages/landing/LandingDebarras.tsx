@@ -123,7 +123,7 @@ const LandingDebarras = () => {
               On débarrasse tout, partout
             </h2>
             <p className="text-center text-muted-foreground mb-12 max-w-xl mx-auto">
-              Quel que soit le volume ou le type de bien, notre équipe gère l'intégralité de l'évacuation.
+              Quel que soit le volume ou le type de bien, l'intégralité de l'évacuation est prise en charge.
             </p>
             
             <div className="grid sm:grid-cols-3 gap-6 max-w-5xl mx-auto">
