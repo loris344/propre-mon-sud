@@ -158,7 +158,7 @@ const LandingDiogene = () => {
               <div className="grid grid-cols-2 gap-3">
                 <img 
                   src="/images/team/equipe-intervention.jpeg" 
-                  alt="Notre équipe en tenue lors d'une intervention" 
+                  alt="Équipe en tenue lors d'une intervention" 
                   className="rounded-2xl object-cover w-full h-52 sm:h-72 shadow-lg"
                   loading="lazy"
                 />

@@ -199,7 +199,7 @@ const LandingDesinfection = () => {
                 <AlertTriangle className="w-10 h-10 text-destructive mx-auto mb-4" />
                 <h3 className="text-xl font-bold text-foreground mb-3">Situation urgente ?</h3>
                 <p className="text-muted-foreground mb-6 leading-relaxed">
-                  En cas de risque sanitaire immédiat, nous intervenons en urgence 7j/7. 
+                  En cas de risque sanitaire immédiat, une intervention en urgence 7j/7 est possible. 
                   Appelez-nous directement.
                 </p>
                 <a href="tel:+33767135458" onClick={() => gtag_report_conversion()}>

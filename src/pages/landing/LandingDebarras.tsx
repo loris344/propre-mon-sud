@@ -172,7 +172,7 @@ const LandingDebarras = () => {
                 </p>
                 <div className="space-y-3">
                   {[
-                    "Tri sélectif sur place par notre équipe",
+                    "Tri sélectif sur place",
                     "Dons aux associations locales quand possible",
                     "Évacuation conforme à la réglementation",
                   ].map((item, i) => (
