@@ -79,9 +79,9 @@ const LandingDesinfection = () => {
 
               {/* Images */}
               <div className="grid grid-cols-2 gap-3">
-                <img src="/images/services/Désinfection.jpg" alt="Désinfection professionnelle d'un logement" className="rounded-xl object-cover w-full h-48 sm:h-56 col-span-2" loading="lazy" />
-                <img src="/images/examples/nettoyage4.webp" alt="Nettoyage insalubrité" className="rounded-xl object-cover w-full h-48 sm:h-56" loading="lazy" />
-                <img src="/images/examples/ex1.png" alt="Remise en état après désinfection" className="rounded-xl object-cover w-full h-48 sm:h-56" loading="lazy" />
+                <img src="/images/examples/insalubrite1.jpg" alt="Cuisine insalubre avant intervention" className="rounded-xl object-cover w-full h-48 sm:h-56" loading="lazy" />
+                <img src="/images/examples/insalubrite2.jpg" alt="Logement insalubre avant nettoyage" className="rounded-xl object-cover w-full h-48 sm:h-56" loading="lazy" />
+                <img src="/images/examples/insalubrite3.jpg" alt="Remise en état après désinfection" className="rounded-xl object-cover w-full h-48 sm:h-56 col-span-2" loading="lazy" />
               </div>
             </div>
           </div>
