@@ -164,11 +164,11 @@ const LandingDebarras = () => {
               </div>
               <div>
                 <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-4">
-                  Nous intervenons nous-mêmes
+                  Une équipe dédiée à votre projet
                 </h2>
                 <p className="text-muted-foreground leading-relaxed mb-6">
-                  Pas de sous-traitance, pas d'intermédiaire. C'est notre équipe qui se déplace 
-                  avec le matériel adapté à chaque chantier.
+                  Chaque chantier est pris en charge par des professionnels équipés 
+                  du matériel adapté à votre situation.
                 </p>
                 <div className="space-y-3">
                   {[

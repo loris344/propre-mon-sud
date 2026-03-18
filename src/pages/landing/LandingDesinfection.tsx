@@ -149,11 +149,11 @@ const LandingDesinfection = () => {
             <div className="max-w-5xl mx-auto grid sm:grid-cols-2 gap-10 items-center">
               <div>
                 <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-4">
-                  Nous intervenons nous-mêmes
+                  Une équipe dédiée à votre projet
                 </h2>
                 <p className="text-muted-foreground leading-relaxed mb-6">
-                  Pas de sous-traitance. C'est notre équipe qui intervient directement, en tenue de protection, 
-                  avec du matériel professionnel adapté à chaque situation.
+                  Chaque intervention est réalisée par des professionnels formés, en tenue de protection, 
+                  avec du matériel adapté à chaque situation.
                 </p>
                 <div className="space-y-3">
                   {[

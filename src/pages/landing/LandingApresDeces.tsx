@@ -39,7 +39,7 @@ const LandingApresDeces = () => {
                 
                 <p className="text-lg text-muted-foreground mt-5 leading-relaxed">
                   Dans ces moments difficiles, vous ne devriez pas avoir à gérer ça seul. 
-                  Notre équipe intervient avec humanité, discrétion et professionnalisme.
+                  Une intervention avec humanité, discrétion et professionnalisme.
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4 mt-8">
