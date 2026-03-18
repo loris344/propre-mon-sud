@@ -39,7 +39,7 @@ const LandingDiogene = () => {
                 </h1>
                 
                 <p className="text-lg text-muted-foreground mt-5 leading-relaxed">
-                  Une intervention avec humanité, discrétion et professionnalisme pour retrouver un logement sain.
+                  Nettoyage, débarras et désinfection de logements touchés par le syndrome de Diogène. Intervention rapide, discrète et respectueuse pour remettre votre habitat en état.
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4 mt-8">
