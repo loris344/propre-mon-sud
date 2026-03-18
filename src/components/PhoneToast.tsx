@@ -10,46 +10,28 @@ const PhoneToast = () => {
   return (
     <a
       href="tel:0767135458"
+      aria-label="Appeler le 07 67 13 54 58"
       onClick={() => gtag_report_conversion()}
-      className="fixed bottom-4 left-4 z-50 group"
+      className="fixed bottom-3 left-3 z-50 flex items-center gap-2 rounded-full bg-primary px-2.5 py-2 text-primary-foreground shadow-lg transition-all duration-300 hover:scale-[1.02] hover:shadow-xl"
     >
-      {/* Floating avatars orbiting around the phone button */}
-      <div className="relative w-14 h-14 md:w-16 md:h-16">
-        {/* Main phone button */}
-        <div className="absolute inset-0 rounded-full bg-primary shadow-[0_4px_20px_-2px_hsl(var(--primary)/0.5)] group-hover:shadow-[0_6px_28px_-2px_hsl(var(--primary)/0.6)] transition-all duration-300 group-hover:scale-105 flex items-center justify-center">
-          <Phone className="w-5 h-5 md:w-6 md:h-6 text-primary-foreground" />
-        </div>
-
-        {/* Orbiting team photos */}
-        {teamMembers.map((member, i) => {
-          const angle = -30 + i * 55; // spread from top-right
-          const rad = (angle * Math.PI) / 180;
-          const radius = 32;
-          const x = Math.cos(rad) * radius;
-          const y = Math.sin(rad) * radius;
-
-          return (
+      <div className="flex shrink-0 items-center rounded-full bg-primary-foreground/15 px-1.5 py-1 motion-reduce:animate-none animate-[float_6s_ease-in-out_infinite]">
+        <div className="flex -space-x-2.5">
+          {teamMembers.map((member) => (
             <img
               key={member.alt}
               src={member.src}
               alt={member.alt}
-              className="absolute w-7 h-7 rounded-full border-2 border-primary object-cover object-top shadow-md animate-[float_4s_ease-in-out_infinite]"
-              style={{
-                top: `50%`,
-                left: `50%`,
-                transform: `translate(calc(-50% + ${x}px), calc(-50% + ${y}px))`,
-                animationDelay: `${i * 0.5}s`,
-              }}
+              className="h-7 w-7 rounded-full object-cover object-top ring-2 ring-primary"
             />
-          );
-        })}
-
-        {/* Online indicator */}
-        <span className="absolute top-0 right-0 w-3 h-3 bg-green-500 rounded-full border-2 border-background animate-pulse z-10" />
+          ))}
+        </div>
       </div>
 
-      {/* Phone number on desktop */}
-      <span className="hidden md:block absolute left-full top-1/2 -translate-y-1/2 ml-2 bg-primary text-primary-foreground text-sm font-bold px-3 py-1.5 rounded-lg shadow-md whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+      <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-primary-foreground/15">
+        <Phone className="h-4 w-4" />
+      </div>
+
+      <span className="whitespace-nowrap pr-1 text-[13px] font-semibold leading-none sm:text-sm">
         07 67 13 54 58
       </span>
     </a>
