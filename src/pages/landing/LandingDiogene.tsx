@@ -102,9 +102,9 @@ const LandingDiogene = () => {
             
             <div className="grid sm:grid-cols-3 gap-6 max-w-5xl mx-auto">
               {[
-                { icon: Heart, title: "Approche bienveillante", desc: "Notre équipe est formée pour intervenir avec empathie. Nous respectons la personne concernée et son histoire, sans jamais porter de jugement." },
-                { icon: Eye, title: "Discrétion totale", desc: "Véhicules banalisés, intervention confidentielle, respect du voisinage. Personne ne saura pourquoi nous sommes là." },
-                { icon: Award, title: "Expertise reconnue", desc: "Nous savons gérer les cas les plus complexes avec méthode et professionnalisme. Chaque intervention est unique." },
+                { icon: Heart, title: "Approche bienveillante", desc: "Les intervenants sont formés pour agir avec empathie. La personne concernée et son histoire sont respectées, sans jamais porter de jugement." },
+                { icon: Eye, title: "Discrétion totale", desc: "Véhicules banalisés, intervention confidentielle, respect du voisinage. Personne ne saura pourquoi on est là." },
+                { icon: Award, title: "Expertise reconnue", desc: "Les cas les plus complexes sont gérés avec méthode et professionnalisme. Chaque intervention est unique." },
               ].map((item, i) => (
                 <Card key={i} className="p-6 sm:p-8 border-border/50 hover:shadow-lg transition-shadow duration-300">
                   <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-5">
