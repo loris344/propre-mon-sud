@@ -39,7 +39,7 @@ const LandingDiogene = () => {
                 </h1>
                 
                 <p className="text-lg text-muted-foreground mt-5 leading-relaxed">
-                  Nous intervenons avec humanité, discrétion et professionnalisme pour retrouver un logement sain.
+                  Une intervention avec humanité, discrétion et professionnalisme pour retrouver un logement sain.
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4 mt-8">
