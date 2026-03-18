@@ -60,7 +60,7 @@ const LandingApresDeces = () => {
                     {[...Array(5)].map((_, i) => (
                       <Star key={i} className="w-4 h-4 fill-amber-400 text-amber-400" />
                     ))}
-                    <span className="ml-1 font-medium">4.9/5</span>
+                    <span className="ml-1 font-medium">4.7/5</span>
                   </div>
                   <span className="flex items-center gap-1.5"><Eye className="w-4 h-4" /> Discrétion absolue</span>
                   <span className="flex items-center gap-1.5"><Clock className="w-4 h-4" /> 7j/7</span>
