@@ -171,10 +171,10 @@ const LandingDiogene = () => {
               </div>
               <div>
                 <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-4">
-                  Nous intervenons nous-mêmes
+                  Une équipe dédiée à votre projet
                 </h2>
                 <p className="text-muted-foreground leading-relaxed mb-6">
-                  Pas de sous-traitance, pas d'intermédiaire. C'est notre équipe qui se déplace, 
+                  Chaque intervention est réalisée par des professionnels formés, 
                   en tenue de protection, avec le matériel adapté à chaque situation.
                 </p>
                 <div className="space-y-3">
