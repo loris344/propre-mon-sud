@@ -102,7 +102,7 @@ const LandingDebarras = () => {
               {[
                 { step: "1", title: "Appelez ou écrivez-nous", desc: "Décrivez votre situation par téléphone ou par mail. On vous guide." },
                 { step: "2", title: "Quelques infos & photos", desc: "Envoyez-nous quelques photos du lieu et décrivez la situation. On établit un devis précis." },
-                { step: "3", title: "On intervient", desc: "Notre équipe vide, trie et évacue tout. Vous n'avez rien à faire." },
+                { step: "3", title: "On intervient", desc: "Le lieu est vidé, trié et évacué. Vous n'avez rien à faire." },
               ].map((item, i) => (
                 <Card key={i} className="p-6 sm:p-8 border-border/50 text-center">
                   <div className="w-14 h-14 rounded-2xl bg-primary text-primary-foreground flex items-center justify-center text-xl font-bold mx-auto mb-5">
