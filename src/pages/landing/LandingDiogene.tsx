@@ -39,7 +39,7 @@ const LandingDiogene = () => {
                 </h1>
                 
                 <p className="text-lg text-muted-foreground mt-5 leading-relaxed">
-                  Nous intervenons avec humanité, discrétion et professionnalisme pour retrouver un logement sain.
+                  Une intervention avec humanité, discrétion et professionnalisme pour retrouver un logement sain.
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4 mt-8">
@@ -102,9 +102,9 @@ const LandingDiogene = () => {
             
             <div className="grid sm:grid-cols-3 gap-6 max-w-5xl mx-auto">
               {[
-                { icon: Heart, title: "Approche bienveillante", desc: "Notre équipe est formée pour intervenir avec empathie. Nous respectons la personne concernée et son histoire, sans jamais porter de jugement." },
-                { icon: Eye, title: "Discrétion totale", desc: "Véhicules banalisés, intervention confidentielle, respect du voisinage. Personne ne saura pourquoi nous sommes là." },
-                { icon: Award, title: "Expertise reconnue", desc: "Nous savons gérer les cas les plus complexes avec méthode et professionnalisme. Chaque intervention est unique." },
+                { icon: Heart, title: "Approche bienveillante", desc: "Les intervenants sont formés pour agir avec empathie. La personne concernée et son histoire sont respectées, sans jamais porter de jugement." },
+                { icon: Eye, title: "Discrétion totale", desc: "Véhicules banalisés, intervention confidentielle, respect du voisinage. Personne ne saura pourquoi on est là." },
+                { icon: Award, title: "Expertise reconnue", desc: "Les cas les plus complexes sont gérés avec méthode et professionnalisme. Chaque intervention est unique." },
               ].map((item, i) => (
                 <Card key={i} className="p-6 sm:p-8 border-border/50 hover:shadow-lg transition-shadow duration-300">
                   <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-5">
@@ -132,7 +132,7 @@ const LandingDiogene = () => {
               {[
                 { step: "01", title: "Échange téléphonique ou par mail", desc: "Vous nous décrivez la situation librement. On écoute, on comprend, sans engagement." },
                 { step: "02", title: "Quelques infos & photos", desc: "Envoyez-nous quelques photos du logement et décrivez la situation. On établit un devis précis." },
-                { step: "03", title: "Devis gratuit & intervention sur-mesure", desc: "On vous envoie un devis clair et détaillé. Puis notre équipe intervient : tri, nettoyage, désinfection, évacuation." },
+                { step: "03", title: "Devis gratuit & intervention sur-mesure", desc: "On vous envoie un devis clair et détaillé. Puis l'intervention est lancée : tri, nettoyage, désinfection, évacuation." },
                 { step: "04", title: "Remise en état & suivi", desc: "Le logement est rendu propre et habitable. Nous assurons un suivi de satisfaction." },
               ].map((item, i) => (
                 <div key={i} className="flex gap-5 sm:gap-8 mb-8 last:mb-0">
@@ -158,7 +158,7 @@ const LandingDiogene = () => {
               <div className="grid grid-cols-2 gap-3">
                 <img 
                   src="/images/team/equipe-intervention.jpeg" 
-                  alt="Notre équipe en tenue lors d'une intervention" 
+                  alt="Équipe en tenue lors d'une intervention" 
                   className="rounded-2xl object-cover w-full h-52 sm:h-72 shadow-lg"
                   loading="lazy"
                 />
@@ -171,10 +171,10 @@ const LandingDiogene = () => {
               </div>
               <div>
                 <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-4">
-                  Nous intervenons nous-mêmes
+                  Une équipe dédiée à votre projet
                 </h2>
                 <p className="text-muted-foreground leading-relaxed mb-6">
-                  Pas de sous-traitance, pas d'intermédiaire. C'est notre équipe qui se déplace, 
+                  Chaque intervention est réalisée par des professionnels formés, 
                   en tenue de protection, avec le matériel adapté à chaque situation.
                 </p>
                 <div className="space-y-3">

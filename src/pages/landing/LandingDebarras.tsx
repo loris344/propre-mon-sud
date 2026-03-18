@@ -102,7 +102,7 @@ const LandingDebarras = () => {
               {[
                 { step: "1", title: "Appelez ou écrivez-nous", desc: "Décrivez votre situation par téléphone ou par mail. On vous guide." },
                 { step: "2", title: "Quelques infos & photos", desc: "Envoyez-nous quelques photos du lieu et décrivez la situation. On établit un devis précis." },
-                { step: "3", title: "On intervient", desc: "Notre équipe vide, trie et évacue tout. Vous n'avez rien à faire." },
+                { step: "3", title: "On intervient", desc: "Le lieu est vidé, trié et évacué. Vous n'avez rien à faire." },
               ].map((item, i) => (
                 <Card key={i} className="p-6 sm:p-8 border-border/50 text-center">
                   <div className="w-14 h-14 rounded-2xl bg-primary text-primary-foreground flex items-center justify-center text-xl font-bold mx-auto mb-5">
@@ -123,7 +123,7 @@ const LandingDebarras = () => {
               On débarrasse tout, partout
             </h2>
             <p className="text-center text-muted-foreground mb-12 max-w-xl mx-auto">
-              Quel que soit le volume ou le type de bien, notre équipe gère l'intégralité de l'évacuation.
+              Quel que soit le volume ou le type de bien, l'intégralité de l'évacuation est prise en charge.
             </p>
             
             <div className="grid sm:grid-cols-3 gap-6 max-w-5xl mx-auto">
@@ -151,7 +151,7 @@ const LandingDebarras = () => {
               <div className="grid grid-cols-2 gap-3">
                 <img 
                   src="/images/team/equipe-intervention.jpeg" 
-                  alt="Notre équipe en tenue lors d'une intervention de débarras" 
+                  alt="Équipe en tenue lors d'une intervention de débarras" 
                   className="rounded-2xl object-cover w-full h-52 sm:h-72 shadow-lg"
                   loading="lazy"
                 />
@@ -164,15 +164,15 @@ const LandingDebarras = () => {
               </div>
               <div>
                 <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-4">
-                  Nous intervenons nous-mêmes
+                  Une équipe dédiée à votre projet
                 </h2>
                 <p className="text-muted-foreground leading-relaxed mb-6">
-                  Pas de sous-traitance, pas d'intermédiaire. C'est notre équipe qui se déplace 
-                  avec le matériel adapté à chaque chantier.
+                  Chaque chantier est pris en charge par des professionnels équipés 
+                  du matériel adapté à votre situation.
                 </p>
                 <div className="space-y-3">
                   {[
-                    "Tri sélectif sur place par notre équipe",
+                    "Tri sélectif sur place",
                     "Dons aux associations locales quand possible",
                     "Évacuation conforme à la réglementation",
                   ].map((item, i) => (

@@ -149,11 +149,11 @@ const LandingDesinfection = () => {
             <div className="max-w-5xl mx-auto grid sm:grid-cols-2 gap-10 items-center">
               <div>
                 <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-4">
-                  Nous intervenons nous-mêmes
+                  Une équipe dédiée à votre projet
                 </h2>
                 <p className="text-muted-foreground leading-relaxed mb-6">
-                  Pas de sous-traitance. C'est notre équipe qui intervient directement, en tenue de protection, 
-                  avec du matériel professionnel adapté à chaque situation.
+                  Chaque intervention est réalisée par des professionnels formés, en tenue de protection, 
+                  avec du matériel adapté à chaque situation.
                 </p>
                 <div className="space-y-3">
                   {[
@@ -173,7 +173,7 @@ const LandingDesinfection = () => {
               <div className="grid grid-cols-2 gap-3">
                 <img 
                   src="/images/team/equipe-intervention.jpeg" 
-                  alt="Notre équipe en tenue de protection lors d'une désinfection" 
+                  alt="Équipe en tenue de protection lors d'une désinfection" 
                   className="rounded-2xl object-cover w-full h-52 sm:h-72 shadow-lg"
                   loading="lazy"
                 />
@@ -199,7 +199,7 @@ const LandingDesinfection = () => {
                 <AlertTriangle className="w-10 h-10 text-destructive mx-auto mb-4" />
                 <h3 className="text-xl font-bold text-foreground mb-3">Situation urgente ?</h3>
                 <p className="text-muted-foreground mb-6 leading-relaxed">
-                  En cas de risque sanitaire immédiat, nous intervenons en urgence 7j/7. 
+                  En cas de risque sanitaire immédiat, une intervention en urgence 7j/7 est possible. 
                   Appelez-nous directement.
                 </p>
                 <a href="tel:+33767135458" onClick={() => gtag_report_conversion()}>

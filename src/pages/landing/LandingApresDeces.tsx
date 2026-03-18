@@ -39,7 +39,7 @@ const LandingApresDeces = () => {
                 
                 <p className="text-lg text-muted-foreground mt-5 leading-relaxed">
                   Dans ces moments difficiles, vous ne devriez pas avoir à gérer ça seul. 
-                  Notre équipe intervient avec humanité, discrétion et professionnalisme.
+                  Une intervention avec humanité, discrétion et professionnalisme.
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4 mt-8">
@@ -130,7 +130,7 @@ const LandingApresDeces = () => {
             
             <div className="grid sm:grid-cols-3 gap-6 max-w-5xl mx-auto">
               {[
-                { icon: Heart, title: "Humanité avant tout", desc: "Notre équipe est spécialement formée à ces situations sensibles. Nous intervenons avec empathie, patience et sans jamais brusquer." },
+                { icon: Heart, title: "Humanité avant tout", desc: "L'intervention est assurée par des professionnels spécialement formés à ces situations sensibles. Avec empathie, patience et sans jamais brusquer." },
                 { icon: Eye, title: "Discrétion absolue", desc: "Véhicules banalisés, pas de marquage visible. Le voisinage n'a pas à savoir. Votre vie privée est notre priorité." },
                 { icon: Shield, title: "Prise en charge totale", desc: "Bio-nettoyage, désinfection, désodorisation, évacuation. Vous n'avez rien à faire, on gère tout de A à Z." },
               ].map((item, i) => (
@@ -153,7 +153,7 @@ const LandingApresDeces = () => {
               <div className="grid grid-cols-2 gap-3">
                 <img 
                   src="/images/team/equipe-intervention.jpeg" 
-                  alt="Notre équipe en tenue lors d'une intervention" 
+                  alt="Équipe en tenue lors d'une intervention" 
                   className="rounded-2xl object-cover w-full h-52 sm:h-72 shadow-lg"
                   loading="lazy"
                 />
