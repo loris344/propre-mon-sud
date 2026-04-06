@@ -242,18 +242,18 @@ const ServicePage = () => {
               <div className="max-w-4xl mx-auto text-center">
                 <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16 space-y-4">
                   <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">
-                    Zone d'Intervention - Sud de la France
+                    Zone d'Intervention - Occitanie & PACA
                   </h2>
                   <p className="text-base sm:text-lg text-muted-foreground">
-                    Nous intervenons dans tout le Sud de la France avec la même qualité de service.
+                    Nous intervenons dans tous les départements des régions Occitanie et PACA.
                   </p>
                 </div>
                 
                 <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4 mb-8 sm:mb-12">
-                  {Object.values(CITIES).map((cityItem, index) => (
+                  {["Hérault (34)", "Gard (30)", "Aude (11)", "Pyrénées-Orientales (66)", "Bouches-du-Rhône (13)", "Var (83)", "Vaucluse (84)", "Alpes-Maritimes (06)", "Haute-Garonne (31)", "Tarn (81)", "Aveyron (12)", "Lozère (48)"].map((dept, index) => (
                     <div key={index} className="flex items-center gap-2 text-muted-foreground p-2 rounded-lg hover:bg-card/50 transition-colors duration-300">
                       <MapPin className="w-3 h-3 sm:w-4 sm:h-4 text-accent flex-shrink-0" />
-                      <span className="text-xs sm:text-sm">{cityItem.name}</span>
+                      <span className="text-xs sm:text-sm">{dept}</span>
                     </div>
                   ))}
                 </div>

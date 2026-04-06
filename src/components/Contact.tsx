@@ -290,7 +290,7 @@ const Contact = () => {
                 <div>
                   <h4 className="font-semibold text-foreground mb-1 text-sm sm:text-base">Zone d'intervention</h4>
                   <p className="text-muted-foreground text-sm sm:text-base">
-                    Montpellier, Sète, Béziers, Nîmes, Perpignan, Toulouse, Marseille, Nice, Bordeaux et tout le Sud de la France
+                    Hérault, Gard, Aude, Bouches-du-Rhône, Var, Vaucluse, Pyrénées-Orientales, Haute-Garonne et toute la région Occitanie & PACA
                   </p>
                 </div>
               </div>

@@ -64,28 +64,14 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="font-semibold text-foreground text-lg">Zones d'intervention</h3>
             <div className="space-y-2">
-              <div className="flex items-center gap-2">
-                <MapPin className="w-4 h-4 text-accent flex-shrink-0" />
-                <span className="text-sm text-muted-foreground">Montpellier</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <MapPin className="w-4 h-4 text-accent flex-shrink-0" />
-                <span className="text-sm text-muted-foreground">Sète</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <MapPin className="w-4 h-4 text-accent flex-shrink-0" />
-                <span className="text-sm text-muted-foreground">Béziers</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <MapPin className="w-4 h-4 text-accent flex-shrink-0" />
-                <span className="text-sm text-muted-foreground">Nîmes</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <MapPin className="w-4 h-4 text-accent flex-shrink-0" />
-                <span className="text-sm text-muted-foreground">Perpignan</span>
-              </div>
+              {["Hérault (34)", "Gard (30)", "Aude (11)", "Bouches-du-Rhône (13)", "Var (83)", "Vaucluse (84)"].map((dept) => (
+                <div key={dept} className="flex items-center gap-2">
+                  <MapPin className="w-4 h-4 text-accent flex-shrink-0" />
+                  <span className="text-sm text-muted-foreground">{dept}</span>
+                </div>
+              ))}
               <div className="text-sm text-muted-foreground font-medium">
-                + Tout le Sud de la France
+                + Toute l'Occitanie & PACA
               </div>
             </div>
           </div>
