@@ -79,7 +79,7 @@ const LandingDiogene = () => {
 
               {/* Images */}
               <div className="grid grid-cols-2 gap-3">
-                <img src="/images/examples/cl1.jpg" alt="Nettoyage syndrome de Diogène - avant intervention" className="rounded-xl object-cover w-full h-48 sm:h-56" loading="lazy" />
+                <img src="/images/examples/cl1.webp" alt="Nettoyage syndrome de Diogène - avant intervention" className="rounded-xl object-cover w-full h-48 sm:h-56" loading="lazy" />
                 <img src="/images/examples/cl2.webp" alt="Nettoyage syndrome de Diogène - résultat" className="rounded-xl object-cover w-full h-48 sm:h-56" loading="lazy" />
                 <img src="/images/examples/cl3.jpg" alt="Intervention Diogène - débarras complet" className="rounded-xl object-cover w-full h-48 sm:h-56 col-span-2" loading="lazy" />
               </div>
@@ -157,13 +157,13 @@ const LandingDiogene = () => {
             <div className="max-w-5xl mx-auto grid sm:grid-cols-2 gap-10 items-center">
               <div className="grid grid-cols-2 gap-3">
                 <img 
-                  src="/images/team/equipe-intervention.jpeg" 
+                  src="/images/team/equipe-intervention.webp" 
                   alt="Équipe en tenue lors d'une intervention" 
                   className="rounded-2xl object-cover w-full h-52 sm:h-72 shadow-lg"
                   loading="lazy"
                 />
                 <img 
-                  src="/images/logos/p1.png" 
+                  src="/images/logos/p1.webp" 
                   alt="L'équipe SOS Nettoyage Diogène au complet" 
                   className="rounded-2xl object-cover w-full h-52 sm:h-72 shadow-lg"
                   loading="lazy"

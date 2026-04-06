@@ -61,8 +61,8 @@ export const optimizeImageUrl = (url: string, width?: number, quality?: number):
 export const preloadCriticalResources = () => {
   const criticalImages = [
     '/images/logos/logo.png',
-    '/images/logos/p1.png',
-    '/images/examples/ex1.png',
+    '/images/logos/p1.webp',
+    '/images/examples/ex1.webp',
     '/images/examples/ex2.jpg'
   ];
   

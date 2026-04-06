@@ -4,7 +4,7 @@ import SEOHead from '../components/SEOHead';
 export default function PrixDiogene() {
   const images = [
     {
-      src: '/images/examples/cl1.jpg',
+      src: '/images/examples/cl1.webp',
       alt: 'Intervention nettoyage syndrome de Diogène - SOS Nettoyage Diogène',
       caption: 'Intervention professionnelle syndrome de Diogène'
     },

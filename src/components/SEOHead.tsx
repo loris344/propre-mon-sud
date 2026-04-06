@@ -11,7 +11,7 @@ const SEOHead = ({
   title,
   description,
   canonical,
-  ogImage = "https://sosnettoyagediogene.fr/images/logos/p1.png",
+  ogImage = "https://sosnettoyagediogene.fr/images/logos/p1.webp",
   structuredData,
   noIndex = false,
   customTitle,
