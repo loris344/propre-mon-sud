@@ -123,11 +123,7 @@ All colors MUST be HSL.
     font-display: swap;
   }
 
-  /* Optimisations de performance */
-  img {
-    content-visibility: auto;
-    contain-intrinsic-size: 300px 200px;
-  }
+  /* Optimisations de performance - content-visibility retiré pour éviter le flash au scroll mobile */
 
 }
 
