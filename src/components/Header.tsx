@@ -8,24 +8,8 @@ import { ResponsiveImage } from "./ResponsiveImage";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [currentCityIndex, setCurrentCityIndex] = useState(0);
   const navigate = useNavigate();
   const routerLocation = useRouterLocation();
-  
-  const cities = [
-    "Montpellier", "Sète", "Béziers", "Nîmes", "Perpignan", "Marseille",
-    "Toulouse", "Narbonne", "Aix-en-Provence", "Toulon", "Avignon", "Carcassonne"
-  ];
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentCityIndex((prevIndex) => 
-        prevIndex === cities.length - 1 ? 0 : prevIndex + 1
-      );
-    }, 2000);
-
-    return () => clearInterval(interval);
-  }, []);
 
   const scrollToSection = useCallback((id: string) => {
     const element = document.getElementById(id);
@@ -71,11 +55,8 @@ const Header = () => {
             <div className="min-w-0 flex-1">
               <div className="font-bold text-foreground text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl leading-tight">SOS Nettoyage Diogène</div>
               <div className="text-xs sm:text-xs md:text-sm lg:text-base text-muted-foreground truncate">
-                <span 
-                  key={currentCityIndex}
-                  className="animate-fade-in bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent font-bold"
-                >
-                  {cities[currentCityIndex]}
+                <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent font-bold">
+                  Occitanie & PACA
                 </span>
               </div>
             </div>
