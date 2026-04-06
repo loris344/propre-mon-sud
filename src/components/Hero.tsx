@@ -4,20 +4,8 @@ import AvailabilityIndicator from "./AvailabilityIndicator";
 import { ResponsiveImage } from "./ResponsiveImage";
 import { useState, useEffect, useCallback, memo } from "react";
 
-const CITIES = [
-  "Montpellier", "Sète", "Béziers", "Nîmes", "Perpignan", "Marseille",
-  "Toulouse", "Narbonne", "Aix-en-Provence", "Toulon", "Avignon", "Carcassonne"
-];
 
 const Hero = () => {
-  const [currentCityIndex, setCurrentCityIndex] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentCityIndex((prev) => (prev + 1) % CITIES.length);
-    }, 2000);
-    return () => clearInterval(interval);
-  }, []);
 
   const scrollToContact = useCallback(() => {
     document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
@@ -41,12 +29,9 @@ const Hero = () => {
               <p className="text-base sm:text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl">
                 Société spécialisée dans le débarras et nettoyage de l'extrême, insalubrité et gros volumes. 
                 <span className="block mt-2 font-medium text-foreground">
-                  Intervention discrète et professionnelle à{" "}
-                  <span 
-                    key={currentCityIndex}
-                    className="inline-block animate-fade-in text-primary font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent"
-                  >
-                    {CITIES[currentCityIndex]}
+                  Intervention en{" "}
+                  <span className="text-primary font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+                    Région Occitanie et PACA
                   </span>
                 </span>
               </p>
