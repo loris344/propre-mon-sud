@@ -121,7 +121,7 @@ const Hero = () => {
             <div className="flex flex-col gap-2 rounded-2xl overflow-hidden shadow-2xl bg-card p-2">
               <div className="relative">
                 <img
-                  src="/images/examples/ex1.png"
+                  src="/images/examples/ex1.webp"
                   alt="Exemple de transformation - Avant/Après nettoyage syndrome de Diogène"
                   className="w-full h-[200px] sm:h-[250px] lg:h-[300px] object-cover rounded-lg"
                   loading="eager"

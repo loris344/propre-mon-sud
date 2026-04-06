@@ -18,9 +18,9 @@ export const SITE_CONFIG = {
   
   // Images par défaut
   defaultImages: {
-    hero: "/images/logos/p1.png",
+    hero: "/images/logos/p1.webp",
     logo: "/images/logos/logo.png",
-    ogImage: "/images/logos/p1.png"
+    ogImage: "/images/logos/p1.webp"
   },
   
   // Images des villes
@@ -235,7 +235,7 @@ export const CITIES = {
       hero: "/images/cities/montpellier.jpg",
       gallery: [
         "/images/cities/montpellier.jpg",
-        "/images/examples/ex1.png",
+        "/images/examples/ex1.webp",
         "/images/examples/ex2.jpg"
       ]
     }
@@ -250,7 +250,7 @@ export const CITIES = {
       hero: "/images/cities/sete.jpg",
       gallery: [
         "/images/cities/sete.jpg",
-        "/images/examples/ex1.png",
+        "/images/examples/ex1.webp",
         "/images/examples/ex2.jpg"
       ]
     }
@@ -265,7 +265,7 @@ export const CITIES = {
       hero: "/images/cities/bézier.webp",
       gallery: [
         "/images/cities/bézier.webp",
-        "/images/examples/ex1.png",
+        "/images/examples/ex1.webp",
         "/images/examples/ex2.jpg"
       ]
     }
@@ -280,7 +280,7 @@ export const CITIES = {
       hero: "/images/cities/nimes.webp",
       gallery: [
         "/images/cities/nimes.webp",
-        "/images/examples/ex1.png",
+        "/images/examples/ex1.webp",
         "/images/examples/ex2.jpg"
       ]
     }
@@ -295,7 +295,7 @@ export const CITIES = {
       hero: "/images/cities/perpignan.jpeg",
       gallery: [
         "/images/cities/perpignan.jpeg",
-        "/images/examples/ex1.png",
+        "/images/examples/ex1.webp",
         "/images/examples/ex2.jpg"
       ]
     }

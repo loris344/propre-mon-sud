@@ -79,9 +79,9 @@ const LandingDesinfection = () => {
 
               {/* Images */}
               <div className="grid grid-cols-2 gap-3">
-                <img src="/images/examples/insalubrite1.jpg" alt="Cuisine insalubre avant intervention" className="rounded-xl object-cover w-full h-48 sm:h-56" loading="lazy" />
-                <img src="/images/examples/insalubrite2.jpg" alt="Logement insalubre avant nettoyage" className="rounded-xl object-cover w-full h-48 sm:h-56" loading="lazy" />
-                <img src="/images/examples/insalubrite3.jpg" alt="Remise en état après désinfection" className="rounded-xl object-cover w-full h-48 sm:h-56 col-span-2" loading="lazy" />
+                <img src="/images/examples/insalubrite1.webp" alt="Cuisine insalubre avant intervention" className="rounded-xl object-cover w-full h-48 sm:h-56" loading="lazy" />
+                <img src="/images/examples/insalubrite2.webp" alt="Logement insalubre avant nettoyage" className="rounded-xl object-cover w-full h-48 sm:h-56" loading="lazy" />
+                <img src="/images/examples/insalubrite3.webp" alt="Remise en état après désinfection" className="rounded-xl object-cover w-full h-48 sm:h-56 col-span-2" loading="lazy" />
               </div>
             </div>
           </div>
@@ -172,13 +172,13 @@ const LandingDesinfection = () => {
               </div>
               <div className="grid grid-cols-2 gap-3">
                 <img 
-                  src="/images/team/equipe-intervention.jpeg" 
+                  src="/images/team/equipe-intervention.webp" 
                   alt="Équipe en tenue de protection lors d'une désinfection" 
                   className="rounded-2xl object-cover w-full h-52 sm:h-72 shadow-lg"
                   loading="lazy"
                 />
                 <img 
-                  src="/images/logos/p1.png" 
+                  src="/images/logos/p1.webp" 
                   alt="L'équipe SOS Nettoyage Diogène" 
                   className="rounded-2xl object-cover w-full h-52 sm:h-72 shadow-lg"
                   loading="lazy"

@@ -14,7 +14,7 @@ export default function MeilleuresSocietesNettoyageMontpellier() {
       caption: 'Nettoyage de locaux professionnels'
     },
     {
-      src: '/images/examples/nettoyage3.jpg',
+      src: '/images/examples/nettoyage3.webp',
       alt: 'Services de débarras et nettoyage extrême',
       caption: 'Intervention spécialisée en nettoyage extrême'
     },

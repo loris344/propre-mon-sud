@@ -24,7 +24,7 @@ const ExamplesGallery = () => {
               <div className="relative bg-card rounded-xl p-3 pb-4 border border-border/50 shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <div className="rounded-lg">
                   <img
-                    src="/images/examples/ex1.png"
+                    src="/images/examples/ex1.webp"
                     alt="Exemple de transformation 1"
                     className="w-full h-48 sm:h-56 object-cover"
                     draggable="false"
@@ -64,7 +64,7 @@ const ExamplesGallery = () => {
               <div className="relative bg-card rounded-xl p-3 pb-4 border border-border/50 shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <div className="rounded-lg">
                   <img
-                    src="/images/logos/p1.png"
+                    src="/images/logos/p1.webp"
                     alt="Équipe professionnelle de nettoyage spécialisé"
                     loading="lazy"
                     className="w-full h-48 sm:h-56 object-cover"

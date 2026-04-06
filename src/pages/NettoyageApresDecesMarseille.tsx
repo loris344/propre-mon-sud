@@ -331,7 +331,7 @@ const NettoyageApresDecesMarseille: React.FC = () => {
             <div className="grid md:grid-cols-2 gap-6">
               <div className="text-center">
                 <img
-                  src="/images/examples/ex1.png"
+                  src="/images/examples/ex1.webp"
                   alt="Intervention nettoyage après décès Marseille - Avant"
                   className="w-full h-48 object-cover rounded-lg mb-3"
                 />

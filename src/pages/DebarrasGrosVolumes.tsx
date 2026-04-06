@@ -53,7 +53,7 @@ const DebarrasGrosVolumes = () => {
       <main role="main">
         {/* Hero Section spécialisé */}
         <section id="accueil" className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-background via-secondary/30 to-background overflow-hidden">
-          <div className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20" style={{ backgroundImage: `url('/images/examples/ex1.png')` }}></div>
+          <div className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20" style={{ backgroundImage: `url('/images/examples/ex1.webp')` }}></div>
           <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-accent/10"></div>
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-4xl mx-auto text-center space-y-8">
