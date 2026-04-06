@@ -233,18 +233,18 @@ const DebarrasGrosVolumes = () => {
             <div className="max-w-4xl mx-auto text-center">
               <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
                 <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-                  Zone d'Intervention - Sud de la France
+                  Zone d'Intervention - Occitanie & PACA
                 </h2>
                 <p className="text-lg text-muted-foreground">
-                  Nous intervenons dans tout le Sud de la France avec la même qualité de service.
+                  Nous intervenons dans tous les départements des régions Occitanie et PACA.
                 </p>
               </div>
               
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
-                {["Montpellier", "Sète", "Béziers", "Nîmes", "Perpignan", "Carcassonne", "Marseille", "Aix-en-Provence"].map((city, index) => (
+                {["Hérault (34)", "Gard (30)", "Aude (11)", "Pyrénées-Orientales (66)", "Bouches-du-Rhône (13)", "Var (83)", "Vaucluse (84)", "Haute-Garonne (31)"].map((dept, index) => (
                   <div key={index} className="flex items-center gap-2 text-muted-foreground p-3 rounded-lg hover:bg-background/50 transition-colors duration-300">
                     <MapPin className="w-4 h-4 text-accent flex-shrink-0" />
-                    <span className="text-sm">{city}</span>
+                    <span className="text-sm">{dept}</span>
                   </div>
                 ))}
               </div>
