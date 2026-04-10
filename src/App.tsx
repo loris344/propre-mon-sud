@@ -7,9 +7,9 @@ import { HelmetProvider } from "react-helmet-async";
 import Header from "./components/Header";
 import PhoneToast from "./components/PhoneToast";
 
-// Lazy-loaded pages
-const Index = lazy(() => import("./pages/Index"));
-const NotFound = lazy(() => import("./pages/NotFound"));
+// Pages critiques chargées directement (pas de Suspense = DOM toujours monté pour ContentSquare)
+import Index from "./pages/Index";
+import NotFound from "./pages/NotFound";
 const Blog = lazy(() => import("./pages/Blog"));
 const SyndromeDiogeneArticle = lazy(() => import("./pages/articles/SyndromeDiogeneArticle"));
 const DebarrasApresDecesArticle = lazy(() => import("./pages/articles/DebarrasApresDecesArticle"));
