@@ -57,22 +57,10 @@ export const optimizeImageUrl = (url: string, width?: number, quality?: number):
   return `${url}${separator}${params.toString()}`;
 };
 
-// Fonction pour précharger les ressources critiques
+// Fonction pour précharger les ressources critiques (via link preload dans index.html plutôt qu'en JS)
 export const preloadCriticalResources = () => {
-  const criticalImages = [
-    '/images/logos/logo.png',
-    '/images/logos/p1.webp',
-    '/images/examples/ex1.webp',
-    '/images/examples/ex2.jpg'
-  ];
-  
-  criticalImages.forEach(src => {
-    const link = document.createElement('link');
-    link.rel = 'preload';
-    link.as = 'image';
-    link.href = src;
-    document.head.appendChild(link);
-  });
+  // Les images critiques du hero utilisent déjà fetchPriority="high" + loading="eager"
+  // Pas besoin de preload JS supplémentaire qui ralentit le rendu initial
 };
 
 // Fonction pour optimiser les performances de scroll
