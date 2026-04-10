@@ -10,13 +10,19 @@ if (!rootElement) {
   // Rendu immédiat sans attendre PostHog
   root.render(<App />);
 
-  // Charger PostHog de manière asynchrone après le rendu initial
-  requestIdleCallback(() => {
+  // Charger PostHog après le rendu initial (setTimeout comme fallback pour Safari/iOS)
+  const schedulePostHog = () => {
     import("posthog-js").then(({ default: posthog }) => {
       posthog.init("phc_yfy5hw92dKEGdcfSC98cTGzNK8nxgJvwunnLFTSznXNc", {
         api_host: "https://eu.i.posthog.com",
         loaded: (ph) => ph.capture("$pageview"),
       });
     });
-  });
+  };
+
+  if (typeof requestIdleCallback === "function") {
+    requestIdleCallback(schedulePostHog);
+  } else {
+    setTimeout(schedulePostHog, 1000);
+  }
 }
