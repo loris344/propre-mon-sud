@@ -91,13 +91,17 @@ const Hero = () => {
                   src="/logos/RF-removebg-preview.png" 
                   alt="République Française" 
                   className="h-12 sm:h-16 w-auto object-contain"
-                  loading="lazy"
+                  loading="eager"
+                  width={64}
+                  height={64}
                 />
                 <img 
                   src="/logos/ARS-removebg-preview.png" 
                   alt="Agence Régionale de Santé" 
                   className="h-12 sm:h-16 w-auto object-contain"
-                  loading="lazy"
+                  loading="eager"
+                  width={64}
+                  height={64}
                 />
               </div>
             </div>
