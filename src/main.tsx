@@ -1,4 +1,5 @@
 import { createRoot } from "react-dom/client";
+import { PostHogProvider } from "posthog-js/react";
 import App from "./App.tsx";
 import { preloadCriticalResources } from "./lib/performance.ts";
 
@@ -19,5 +20,12 @@ if (!rootElement) {
   document.body.innerHTML = "<h1>ERREUR: Élément root non trouvé!</h1>";
 } else {
   const root = createRoot(rootElement);
-  root.render(<App />);
+  root.render(
+    <PostHogProvider
+      apiKey="phc_yfy5hw92dKEGdcfSC98cTGzNK8nxgJvwunnLFTSznXNc"
+      options={{ api_host: "https://eu.i.posthog.com" }}
+    >
+      <App />
+    </PostHogProvider>
+  );
 }
