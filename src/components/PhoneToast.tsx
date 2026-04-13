@@ -1,9 +1,9 @@
 import { Phone } from "lucide-react";
 
 const teamMembers = [
-  { src: "/images/loris-photo.png", alt: "Loris" },
-  { src: "/images/team/paul.png", alt: "Paul" },
-  { src: "/images/team/aymeric.png", alt: "Aymeric" },
+  { src: "/images/loris-photo.webp", alt: "Loris" },
+  { src: "/images/team/paul.webp", alt: "Paul" },
+  { src: "/images/team/aymeric.webp", alt: "Aymeric" },
 ];
 
 const PhoneToast = () => {

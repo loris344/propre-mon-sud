@@ -47,7 +47,7 @@ const Header = () => {
                    onClick={handleLogoClick}
                  >
             <img
-              src="/images/logos/logo-transparent.png"
+              src="/images/logos/logo-transparent.webp"
               alt="SOS Nettoyage Diogène Logo"
               className="w-16 h-16 sm:w-12 sm:h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 object-contain"
               loading="eager"

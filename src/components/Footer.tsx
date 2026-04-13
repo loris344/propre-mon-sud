@@ -14,7 +14,7 @@ const Footer = () => {
           <div className="sm:col-span-2 lg:col-span-1 space-y-4">
             <div className="flex items-center space-x-3">
               <img
-                src="/images/logos/logo-transparent.png"
+                src="/images/logos/logo-transparent.webp"
                 alt="SOS Nettoyage Diogène Logo"
                 className="w-12 h-12 sm:w-16 sm:h-16 object-contain"
                 loading="lazy"
