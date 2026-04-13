@@ -50,7 +50,7 @@ const Hero = () => {
                   type="button"
                 >
                   <Phone className="w-4 h-4 sm:w-5 sm:h-5" />
-                  Devis Gratuit en 1 heure
+                  Devis Gratuit en 5 minutes
                 </Button>
               </a>
               <Button 
