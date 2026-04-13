@@ -33,11 +33,11 @@ const Index = () => {
         <section id="accueil" aria-labelledby="hero-title">
           <Hero />
         </section>
-        <section id="services" aria-labelledby="services-title" className="scroll-mt-24">
-          <Services />
-        </section>
         <section id="exemples" aria-labelledby="exemples-title" className="scroll-mt-24">
           <ExamplesGallery />
+        </section>
+        <section id="services" aria-labelledby="services-title" className="scroll-mt-24">
+          <Services />
         </section>
         <WhyChooseUs />
         

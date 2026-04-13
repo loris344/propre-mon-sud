@@ -2,22 +2,22 @@ import { Sparkles } from "lucide-react";
 
 const ExamplesGallery = () => {
   return (
-    <section className="py-8 sm:py-12 bg-background">
+    <section className="py-12 sm:py-20 bg-background">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="text-center mb-6 sm:mb-8">
           <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-3 py-1 rounded-full text-xs font-medium mb-3">
             <Sparkles className="w-3 h-3" />
             Nos réalisations
           </div>
-          <h2 id="exemples-title" className="text-lg sm:text-xl font-bold text-foreground mb-2">
+          <h2 id="exemples-title" className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-3">
             Exemples de <span className="text-primary">transformations</span>
           </h2>
-          <p className="text-xs sm:text-sm text-muted-foreground">
+          <p className="text-sm sm:text-base text-muted-foreground">
             Découvrez la qualité de nos interventions
           </p>
         </div>
 
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-7xl mx-auto">
           {/* Row 1: 3 avant/après photos */}
           <div className="grid md:grid-cols-3 gap-4 sm:gap-6 mb-4 sm:mb-6">
             <div className="group relative">
