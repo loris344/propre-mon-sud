@@ -18,6 +18,8 @@ const Footer = () => {
                 alt="SOS Nettoyage Diogène Logo"
                 className="w-12 h-12 sm:w-16 sm:h-16 object-contain"
                 loading="lazy"
+                width={160}
+                height={160}
               />
               <div>
                 <div className="font-bold text-foreground text-lg sm:text-xl">SOS Nettoyage Diogène</div>
