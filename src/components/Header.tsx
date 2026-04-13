@@ -120,6 +120,7 @@ const Header = () => {
 
           {/* Mobile CTA Elements */}
           <div className="lg:hidden flex items-center space-x-2 flex-shrink-0">
+            <ReviewsDisplay />
             <AvailabilityIndicator />
             <button
               className="p-2 sm:p-3"
