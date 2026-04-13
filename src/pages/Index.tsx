@@ -1,6 +1,7 @@
 import Hero from "../components/Hero";
 import Services from "../components/Services";
 import ExamplesGallery from "../components/ExamplesGallery";
+import WhyChooseUs from "../components/WhyChooseUs";
 import CustomerReviews from "../components/CustomerReviews";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
