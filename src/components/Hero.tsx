@@ -127,7 +127,7 @@ const Hero = () => {
                 <img
                   src="/images/examples/ex1.webp"
                   alt="Exemple de transformation - Avant/Après nettoyage syndrome de Diogène"
-                  className="w-full h-[200px] sm:h-[250px] lg:h-[300px] object-cover rounded-lg"
+                  className="w-full h-auto rounded-lg"
                   loading="eager"
                   fetchPriority="high"
                 />
@@ -143,7 +143,7 @@ const Hero = () => {
                 <img
                   src="/images/examples/ex2.jpg"
                   alt="Exemple de transformation - Résultat après intervention professionnelle"
-                  className="w-full h-[200px] sm:h-[250px] lg:h-[300px] object-cover rounded-lg"
+                  className="w-full h-auto rounded-lg"
                   loading="eager"
                   fetchPriority="high"
                 />
