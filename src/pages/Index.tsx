@@ -39,6 +39,7 @@ const Index = () => {
         <section id="exemples" aria-labelledby="exemples-title" className="scroll-mt-24">
           <ExamplesGallery />
         </section>
+        <WhyChooseUs />
         
         <section id="avis" aria-labelledby="avis-title" className="scroll-mt-24">
           <CustomerReviews />
