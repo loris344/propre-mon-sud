@@ -86,20 +86,20 @@ const Hero = () => {
               </span>
               <div className="flex items-center gap-3">
                 <img 
-                  src="/logos/RF-removebg-preview.png" 
+                  src="/logos/RF.webp" 
                   alt="République Française" 
                   className="h-12 sm:h-16 w-auto object-contain"
                   loading="eager"
-                  width={64}
-                  height={64}
+                  width={128}
+                  height={116}
                 />
                 <img 
-                  src="/logos/ARS-removebg-preview.png" 
+                  src="/logos/ARS.webp" 
                   alt="Agence Régionale de Santé" 
                   className="h-12 sm:h-16 w-auto object-contain"
                   loading="eager"
-                  width={64}
-                  height={64}
+                  width={128}
+                  height={74}
                 />
               </div>
             </div>
@@ -128,6 +128,8 @@ const Hero = () => {
                   className="w-full h-auto rounded-lg"
                   loading="eager"
                   fetchPriority="high"
+                  width={800}
+                  height={600}
                 />
                 <div className="absolute bottom-2 left-2 bg-primary/90 text-primary-foreground text-xs px-2 py-1 rounded">
                   Avant
@@ -144,6 +146,8 @@ const Hero = () => {
                   className="w-full h-auto rounded-lg"
                   loading="eager"
                   fetchPriority="high"
+                  width={800}
+                  height={600}
                 />
                 <div className="absolute bottom-2 right-2 bg-accent/90 text-accent-foreground text-xs px-2 py-1 rounded">
                   Après

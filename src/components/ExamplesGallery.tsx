@@ -27,6 +27,8 @@ const ExamplesGallery = () => {
                     src="/images/examples/toulouse1.webp"
                     alt="Avant/Après nettoyage salon - Syndrome de Diogène"
                     className="w-full h-auto rounded-lg"
+                    width={800}
+                    height={600}
                     draggable="false"
                     loading="lazy"
                   />
@@ -45,6 +47,8 @@ const ExamplesGallery = () => {
                     src="/images/examples/toulouse2.webp"
                     alt="Avant/Après nettoyage sanitaires"
                     className="w-full h-auto rounded-lg"
+                    width={800}
+                    height={600}
                     draggable="false"
                     loading="lazy"
                   />
@@ -63,6 +67,8 @@ const ExamplesGallery = () => {
                     src="/images/examples/toulouse3.webp"
                     alt="Avant/Après nettoyage salle de bain"
                     className="w-full h-auto rounded-lg"
+                    width={800}
+                    height={600}
                     draggable="false"
                     loading="lazy"
                   />
@@ -81,9 +87,11 @@ const ExamplesGallery = () => {
               <div className="relative bg-card rounded-xl p-3 pb-4 border border-border/50 shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <div className="rounded-lg overflow-hidden">
                   <img
-                    src="/images/examples/nettoyeurs.png"
+                    src="/images/examples/nettoyeurs.webp"
                     alt="Équipe de nettoyage en intervention"
                     className="w-full h-auto rounded-lg"
+                    width={1200}
+                    height={829}
                     draggable="false"
                     loading="lazy"
                   />
@@ -102,6 +110,8 @@ const ExamplesGallery = () => {
                     src="/images/examples/nettoyeur.webp"
                     alt="Professionnel de nettoyage spécialisé"
                     className="w-full h-auto rounded-lg"
+                    width={800}
+                    height={600}
                     draggable="false"
                     loading="lazy"
                   />

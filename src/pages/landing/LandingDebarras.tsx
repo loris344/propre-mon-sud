@@ -72,8 +72,8 @@ const LandingDebarras = () => {
                     En collaboration avec l'ARS
                   </span>
                   <div className="flex items-center gap-3">
-                    <img src="/logos/RF-removebg-preview.png" alt="République Française" className="h-12 sm:h-16 w-auto object-contain" loading="lazy" />
-                    <img src="/logos/ARS-removebg-preview.png" alt="Agence Régionale de Santé" className="h-12 sm:h-16 w-auto object-contain" loading="lazy" />
+                    <img src="/logos/RF.webp" alt="République Française" className="h-12 sm:h-16 w-auto object-contain" width={128} height={116} loading="lazy" />
+                    <img src="/logos/ARS.webp" alt="Agence Régionale de Santé" className="h-12 sm:h-16 w-auto object-contain" width={128} height={74} loading="lazy" />
                   </div>
                 </div>
               </div>

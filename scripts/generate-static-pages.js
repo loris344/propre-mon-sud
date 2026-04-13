@@ -272,8 +272,6 @@ function getBaseHTML() {
     })(window,document,'script','dataLayer','GTM-T2V8JRGG');</script>
     <!-- End Google Tag Manager -->
     
-    <!-- Hotjar / ContentSquare -->
-    <script src="https://t.contentsquare.net/uxa/80397b4929793.js"></script>
     <!-- Redirection GitHub Pages SPA -->
     <script>
       (function(l) {

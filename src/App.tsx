@@ -7,7 +7,7 @@ import { HelmetProvider } from "react-helmet-async";
 import Header from "./components/Header";
 import PhoneToast from "./components/PhoneToast";
 
-// Pages critiques chargées directement (pas de Suspense = DOM toujours monté pour ContentSquare)
+// Pages critiques chargées directement (pas de Suspense)
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 const Blog = lazy(() => import("./pages/Blog"));
