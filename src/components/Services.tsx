@@ -1,9 +1,9 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { 
-  Home, Trash2, ShieldCheck, Clock, Users, Award, Phone, CheckCircle, Heart
+  Home, Trash2, ShieldCheck, Heart, CheckCircle
 } from "lucide-react";
-import { useCallback, memo } from "react";
+import { memo } from "react";
 
 const SERVICES = [
   {
