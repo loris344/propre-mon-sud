@@ -119,15 +119,10 @@ const Header = () => {
           </div>
 
           <div className="flex flex-shrink-0 items-center gap-2 lg:hidden">
-            <div
-              className="flex h-10 items-center justify-center rounded-full border border-border/60 bg-card/90 px-3 shadow-sm"
-              aria-label="Disponibilité actuelle"
-            >
-              <AvailabilityIndicator />
-            </div>
+            <AvailabilityIndicator />
             <button
               type="button"
-              className="inline-flex h-10 w-10 items-center justify-center rounded-md border border-border/60 bg-card/90 text-foreground shadow-sm transition-colors hover:bg-accent/50"
+              className="p-2"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               aria-label={isMenuOpen ? "Fermer le menu" : "Ouvrir le menu"}
               aria-expanded={isMenuOpen}
