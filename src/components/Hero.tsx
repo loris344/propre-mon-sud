@@ -39,15 +39,7 @@ const Hero = () => {
             
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
-              <Button 
-                variant="hero" 
-                size="lg" 
-                className="text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6"
-                onClick={scrollToContact}
-              >
-                <Phone className="w-4 h-4 sm:w-5 sm:h-5" />
-                Devis Gratuit
-              </Button>
+              
               <Button 
                 variant="accent" 
                 size="lg" 
