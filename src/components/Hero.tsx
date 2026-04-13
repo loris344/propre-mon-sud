@@ -39,7 +39,20 @@ const Hero = () => {
             
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
-              
+              <a
+                href="tel:0767135458"
+                onClick={() => typeof gtag_report_conversion === 'function' && gtag_report_conversion()}
+              >
+                <Button 
+                  variant="hero" 
+                  size="lg" 
+                  className="text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 w-full"
+                  type="button"
+                >
+                  <Phone className="w-4 h-4 sm:w-5 sm:h-5" />
+                  Devis Gratuit en 1 heure
+                </Button>
+              </a>
               <Button 
                 variant="accent" 
                 size="lg" 
