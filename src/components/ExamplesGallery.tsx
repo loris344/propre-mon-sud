@@ -18,63 +18,97 @@ const ExamplesGallery = () => {
         </div>
 
         <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-3 gap-4 sm:gap-6 pb-4">
-            {/* Image 1 - ex1.png */}
+          {/* Row 1: 3 avant/après photos */}
+          <div className="grid md:grid-cols-3 gap-4 sm:gap-6 mb-4 sm:mb-6">
             <div className="group relative">
               <div className="relative bg-card rounded-xl p-3 pb-4 border border-border/50 shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <div className="rounded-lg">
+                <div className="rounded-lg overflow-hidden">
                   <img
-                    src="/images/examples/ex1.webp"
-                    alt="Exemple de transformation 1"
-                    className="w-full h-48 sm:h-56 object-cover"
+                    src="/images/examples/toulouse1.webp"
+                    alt="Avant/Après nettoyage salon - Syndrome de Diogène"
+                    className="w-full h-auto rounded-lg"
                     draggable="false"
                     loading="lazy"
-                    style={{ objectPosition: 'center top' }}
                   />
                 </div>
                 <div className="mt-3 flex items-center gap-2">
                   <div className="w-2 h-2 bg-primary rounded-full"></div>
-                  <span className="text-xs font-medium text-foreground">Intervention professionnelle</span>
+                  <span className="text-xs font-medium text-foreground">Avant / Après - Salon</span>
                 </div>
               </div>
             </div>
 
-            {/* Image 2 - ex2.jpg */}
             <div className="group relative">
               <div className="relative bg-card rounded-xl p-3 pb-4 border border-border/50 shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <div className="rounded-lg">
+                <div className="rounded-lg overflow-hidden">
                   <img
-                    src="/images/examples/ex2.jpg"
-                    alt="Exemple de transformation 2"
-                    className="w-full h-48 sm:h-56 object-cover"
+                    src="/images/examples/toulouse2.webp"
+                    alt="Avant/Après nettoyage sanitaires"
+                    className="w-full h-auto rounded-lg"
                     draggable="false"
                     loading="lazy"
-                    style={{ objectPosition: 'center top' }}
                   />
                 </div>
                 <div className="mt-3 flex items-center gap-2">
                   <div className="w-2 h-2 bg-accent rounded-full"></div>
-                  <span className="text-xs font-medium text-foreground">Résultat exceptionnel</span>
+                  <span className="text-xs font-medium text-foreground">Avant / Après - Sanitaires</span>
                 </div>
               </div>
             </div>
 
-            {/* Image 3 - p1.png */}
             <div className="group relative">
               <div className="relative bg-card rounded-xl p-3 pb-4 border border-border/50 shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <div className="rounded-lg">
+                <div className="rounded-lg overflow-hidden">
                   <img
-                    src="/images/logos/p1.webp"
-                    alt="Équipe professionnelle de nettoyage spécialisé"
-                    loading="lazy"
-                    className="w-full h-48 sm:h-56 object-cover"
+                    src="/images/examples/toulouse3.webp"
+                    alt="Avant/Après nettoyage salle de bain"
+                    className="w-full h-auto rounded-lg"
                     draggable="false"
-                    style={{ objectPosition: 'center top' }}
+                    loading="lazy"
                   />
                 </div>
                 <div className="mt-3 flex items-center gap-2">
                   <div className="w-2 h-2 bg-primary rounded-full"></div>
-                  <span className="text-xs font-medium text-foreground">Équipe experte</span>
+                  <span className="text-xs font-medium text-foreground">Avant / Après - Salle de bain</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Row 2: 2 photos équipe */}
+          <div className="grid md:grid-cols-2 gap-4 sm:gap-6">
+            <div className="group relative">
+              <div className="relative bg-card rounded-xl p-3 pb-4 border border-border/50 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <div className="rounded-lg overflow-hidden">
+                  <img
+                    src="/images/examples/nettoyeurs.png"
+                    alt="Équipe de nettoyage en intervention"
+                    className="w-full h-auto rounded-lg"
+                    draggable="false"
+                    loading="lazy"
+                  />
+                </div>
+                <div className="mt-3 flex items-center gap-2">
+                  <div className="w-2 h-2 bg-primary rounded-full"></div>
+                  <span className="text-xs font-medium text-foreground">Notre équipe en intervention</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="group relative">
+              <div className="relative bg-card rounded-xl p-3 pb-4 border border-border/50 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <div className="rounded-lg overflow-hidden">
+                  <img
+                    src="/images/examples/nettoyeur.webp"
+                    alt="Professionnel de nettoyage spécialisé"
+                    className="w-full h-auto rounded-lg"
+                    draggable="false"
+                    loading="lazy"
+                  />
+                </div>
+                <div className="mt-3 flex items-center gap-2">
+                  <div className="w-2 h-2 bg-accent rounded-full"></div>
+                  <span className="text-xs font-medium text-foreground">Intervention professionnelle</span>
                 </div>
               </div>
             </div>

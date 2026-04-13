@@ -1,6 +1,7 @@
 import Hero from "../components/Hero";
 import Services from "../components/Services";
 import ExamplesGallery from "../components/ExamplesGallery";
+import WhyChooseUs from "../components/WhyChooseUs";
 import CustomerReviews from "../components/CustomerReviews";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
@@ -38,6 +39,8 @@ const Index = () => {
         <section id="exemples" aria-labelledby="exemples-title" className="scroll-mt-24">
           <ExamplesGallery />
         </section>
+        <WhyChooseUs />
+        
         <section id="avis" aria-labelledby="avis-title" className="scroll-mt-24">
           <CustomerReviews />
         </section>
