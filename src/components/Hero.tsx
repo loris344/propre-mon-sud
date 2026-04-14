@@ -22,7 +22,7 @@ const Hero = () => {
           <div className="space-y-8">
             <div className="space-y-4">
               <h1 id="hero-title" className="text-4xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-foreground leading-tight">
-                Nettoyage et Débarras
+                Entreprise de Nettoyage et Débarras
                 <span className="block text-primary">Syndrome de Diogène</span>
               </h1>
               
