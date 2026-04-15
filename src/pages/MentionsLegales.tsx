@@ -19,8 +19,9 @@ const MentionsLegales = () => {
               <p>
                 Le site <strong>sosnettoyagediogene.fr</strong> est édité par :<br />
                 <strong>SOS Nettoyage Diogène</strong><br />
+                SIRET : 939 452 215 00014<br />
                 Société spécialisée dans le nettoyage et débarras professionnel<br />
-                Siège social : Sud de la France<br />
+                Siège social : L'ESPERADE, CHEMIN DU PLANET, 83520 ROQUEBRUNE-SUR-ARGENS<br />
                 Téléphone : <a href="tel:+33767135458" className="text-primary hover:underline">07 67 13 54 58</a><br />
                 Email : contact@sosnettoyagediogene.fr
               </p>
