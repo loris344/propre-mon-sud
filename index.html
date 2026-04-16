@@ -9,10 +9,28 @@
     })(window,document,'script','dataLayer','GTM-T2V8JRGG');</script>
     <!-- End Google Tag Manager -->
     
-    <!-- Google Ads Phone Conversion Tracking -->
+    <!-- Google Ads & Analytics with Dynamic Phone Replacement -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VDZL4FT7QQ"></script>
     <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-VDZL4FT7QQ');
+      gtag('config', 'AW-17579670391');
+
+      // FONCTION DE REMPLACEMENT FORCE
+      function google_callback(formatted_number, mobile_number) {
+        var phoneLinks = document.querySelectorAll('a[href^="tel:0767135458"]');
+        phoneLinks.forEach(function(link) {
+          link.href = "tel:" + mobile_number;
+          link.innerHTML = formatted_number;
+        });
+      }
+
       gtag('config', 'AW-17579670391/3pIgCNTTmJ0cEPf20b5B', {
-        'phone_conversion_number': '07 67 13 54 58'
+        'phone_conversion_number': '07 67 13 54 58',
+        'phone_conversion_callback': google_callback
       });
     </script>
     <!-- End Google Ads Phone Conversion Tracking -->
