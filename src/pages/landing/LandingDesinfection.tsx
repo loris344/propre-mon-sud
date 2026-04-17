@@ -78,10 +78,25 @@ const LandingDesinfection = () => {
               </div>
 
               {/* Images */}
-              <div className="grid grid-cols-2 gap-3">
-                <img src="/images/examples/insalubrite1.webp" alt="Cuisine insalubre avant intervention" className="rounded-xl object-contain w-full h-48 sm:h-56 bg-card" loading="lazy" />
-                <img src="/images/examples/insalubrite2.webp" alt="Logement insalubre avant nettoyage" className="rounded-xl object-contain w-full h-48 sm:h-56 bg-card" loading="lazy" />
-                <img src="/images/examples/insalubrite3.webp" alt="Remise en état après désinfection" className="rounded-xl object-contain w-full h-48 sm:h-56 col-span-2 bg-card" loading="lazy" />
+              <div className="grid grid-cols-3 gap-3">
+                <div className="relative aspect-[3/4] rounded-2xl overflow-hidden shadow-lg group">
+                  <img src="/images/examples/insalubrite1.webp" alt="Cuisine insalubre avant intervention" className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
+                  <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent p-3">
+                    <span className="text-xs font-medium text-white">Cuisine</span>
+                  </div>
+                </div>
+                <div className="relative aspect-[3/4] rounded-2xl overflow-hidden shadow-lg group mt-6">
+                  <img src="/images/examples/insalubrite2.webp" alt="Logement insalubre avant nettoyage" className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
+                  <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent p-3">
+                    <span className="text-xs font-medium text-white">Salon</span>
+                  </div>
+                </div>
+                <div className="relative aspect-[3/4] rounded-2xl overflow-hidden shadow-lg group">
+                  <img src="/images/examples/insalubrite3.webp" alt="Remise en état après désinfection" className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
+                  <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent p-3">
+                    <span className="text-xs font-medium text-white">Après</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
