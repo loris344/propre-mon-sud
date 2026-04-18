@@ -50,7 +50,7 @@ const Hero = () => {
                   type="button"
                 >
                   <Phone className="w-4 h-4 sm:w-5 sm:h-5" />
-                  Devis Gratuit en 5 minutes
+                  07 67 13 54 58
                 </Button>
               </a>
               <Button 
