@@ -14,7 +14,7 @@ export interface SEOConfig {
 export const SEO_CONFIGS: Record<string, SEOConfig> = {
   '/': {
     title: "SOS Nettoyage Diogène | Nettoyage & Débarras Sud France",
-    description: "Société spécialisée dans le nettoyage syndrome de Diogène, débarras, insalubrité et nettoyage après décès. Intervention discrète à Montpellier, Marseille et tout le Sud de la France.",
+    description: "Nettoyage syndrome de Diogène, débarras, insalubrité et après décès. Intervention discrète à Montpellier, Marseille et Sud France.",
     canonical: "/"
   },
 
@@ -50,7 +50,7 @@ export const SEO_CONFIGS: Record<string, SEOConfig> = {
 
   '/nettoyage-apres-deces': {
     title: "Nettoyage Après Décès | Service Discret 7j/7",
-    description: "Service spécialisé de nettoyage après décès. Intervention respectueuse et discrète avec protocoles sanitaires stricts dans tout le Sud de la France. Devis gratuit.",
+    description: "Nettoyage après décès discret et respectueux. Protocoles sanitaires stricts, intervention 7j/7 dans le Sud de la France. Devis gratuit.",
     canonical: "/nettoyage-apres-deces"
   },
 
@@ -209,6 +209,34 @@ export const SEO_CONFIGS: Record<string, SEOConfig> = {
     title: "Nettoyage Insalubre Nîmes | Expert Gardois",
     description: "Nettoyage de logement insalubre à Nîmes et dans le Gard. Intervention professionnelle et discrète. Devis gratuit.",
     canonical: "/nettoyage-insalubre-nimes"
+  },
+
+  '/landing/nettoyage-syndrome-diogene': {
+    title: "Nettoyage Syndrome de Diogène | Devis Gratuit 7j/7",
+    description: "Intervention spécialisée syndrome de Diogène. Équipe dédiée, discrétion totale, devis gratuit. Occitanie, PACA et Sud France.",
+    canonical: "/landing/nettoyage-syndrome-diogene",
+    noIndex: true
+  },
+
+  '/landing/debarras-gros-volumes': {
+    title: "Débarras Gros Volumes | Évacuation Rapide",
+    description: "Débarras gros volumes : maison, appartement, cave, grenier. Tri, recyclage et évacuation rapide dans tout le Sud de la France.",
+    canonical: "/landing/debarras-gros-volumes",
+    noIndex: true
+  },
+
+  '/landing/desinfection-insalubrite': {
+    title: "Désinfection & Insalubrité | Intervention Urgente",
+    description: "Désinfection et remise en état de logements insalubres avec protocoles sanitaires stricts. Intervention 7j/7, devis gratuit.",
+    canonical: "/landing/desinfection-insalubrite",
+    noIndex: true
+  },
+
+  '/landing/nettoyage-apres-deces': {
+    title: "Nettoyage Après Décès | Service Respectueux",
+    description: "Nettoyage après décès discret et respectueux. Intervention professionnelle dans le Sud de la France, devis gratuit 7j/7.",
+    canonical: "/landing/nettoyage-apres-deces",
+    noIndex: true
   }
 };
 
