@@ -1,4 +1,4 @@
-const CACHE_NAME = 'sos-diogene-v1';
+const CACHE_NAME = 'sos-diogene-v2';
 const CACHE_DURATION = 30 * 24 * 60 * 60 * 1000; // 30 days
 
 self.addEventListener('install', () => self.skipWaiting());
@@ -15,6 +15,11 @@ self.addEventListener('fetch', (e) => {
   // Only cache same-origin static assets
   if (url.origin !== location.origin) return;
   if (!/\.(webp|png|jpg|jpeg|svg|js|css|woff2?)$/i.test(url.pathname)) return;
+
+  if (/\.(js|css)$/i.test(url.pathname)) {
+    e.respondWith(fetch(e.request).catch(() => caches.match(e.request)));
+    return;
+  }
 
   e.respondWith(
     caches.open(CACHE_NAME).then(async (cache) => {
