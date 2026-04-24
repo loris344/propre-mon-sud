@@ -42,7 +42,7 @@ function getActualFilenames() {
 const pagesMeta = {
   '/': {
     title: "SOS Nettoyage Diogène | Nettoyage & Débarras Sud France",
-    description: "Société spécialisée dans le nettoyage syndrome de Diogène, débarras, insalubrité et nettoyage après décès. Intervention discrète à Montpellier, Marseille et tout le Sud de la France.",
+    description: "Nettoyage syndrome de Diogène, débarras, insalubrité et après décès. Intervention discrète à Montpellier, Marseille et Sud France.",
     canonical: "/"
   },
   '/blog': {
@@ -72,7 +72,7 @@ const pagesMeta = {
   },
   '/nettoyage-apres-deces': {
     title: "Nettoyage Après Décès | Service Discret 7j/7",
-    description: "Service spécialisé de nettoyage après décès. Intervention respectueuse et discrète avec protocoles sanitaires stricts dans tout le Sud de la France. Devis gratuit.",
+    description: "Nettoyage après décès discret et respectueux. Protocoles sanitaires stricts, intervention 7j/7 dans le Sud de la France. Devis gratuit.",
     canonical: "/nettoyage-apres-deces"
   },
   '/nettoyage-appartement-apres-deces': {
