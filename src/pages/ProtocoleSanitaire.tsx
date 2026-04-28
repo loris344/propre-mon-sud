@@ -21,17 +21,31 @@ const ProtocoleSanitaire = () => {
       <main className="min-h-screen bg-background">
         {/* En-tête document */}
         <section className="pt-32 sm:pt-40 pb-12 border-b border-border">
-          <div className="container mx-auto px-4 sm:px-6 max-w-4xl">
-            <div className="inline-flex items-center gap-2 bg-primary/10 border border-primary/20 text-primary px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wider mb-5">
-              <FileText className="w-3.5 h-3.5" />
-              Document de référence
+          <div className="container mx-auto px-4 sm:px-6 max-w-5xl">
+            <div className="grid lg:grid-cols-[1fr_auto] gap-10 items-center">
+              <div>
+                <div className="inline-flex items-center gap-2 bg-primary/10 border border-primary/20 text-primary px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wider mb-5">
+                  <FileText className="w-3.5 h-3.5" />
+                  Document de référence
+                </div>
+                <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground leading-tight">
+                  Fiche Protocole Sanitaire
+                </h1>
+                <p className="text-lg text-muted-foreground mt-4 leading-relaxed">
+                  Protocole d'intervention en logement insalubre, syndrome de Diogène et après décès. Document destiné aux CCAS, MJPM, services sociaux et autorités préfectorales pour annexer aux rapports d'évaluation ou aux procédures d'insalubrité.
+                </p>
+              </div>
+              <div className="relative w-full lg:w-80 shrink-0">
+                <img
+                  src="/images/examples/nettoyeurs.webp"
+                  alt="Équipe d'intervention équipée d'EPI sur un chantier insalubre"
+                  width="320"
+                  height="240"
+                  loading="eager"
+                  className="w-full h-56 lg:h-64 object-cover rounded-xl shadow-lg border border-border"
+                />
+              </div>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground leading-tight">
-              Fiche Protocole Sanitaire
-            </h1>
-            <p className="text-lg text-muted-foreground mt-4 leading-relaxed">
-              Protocole d'intervention en logement insalubre, syndrome de Diogène et après décès. Document destiné aux CCAS, MJPM, services sociaux et autorités préfectorales pour annexer aux rapports d'évaluation ou aux procédures d'insalubrité.
-            </p>
             <div className="grid sm:grid-cols-3 gap-3 mt-8 text-sm">
               <div className="flex items-center gap-2 text-muted-foreground">
                 <CheckCircle2 className="w-4 h-4 text-primary shrink-0" />
@@ -52,6 +66,18 @@ const ProtocoleSanitaire = () => {
         {/* Section 1 : Évaluation */}
         <section className="py-12">
           <div className="container mx-auto px-4 sm:px-6 max-w-4xl space-y-10">
+            {/* Avant / Après illustratif */}
+            <div className="grid sm:grid-cols-2 gap-4">
+              <figure className="relative">
+                <img src="/images/examples/insalubrite1.webp" alt="Logement avant intervention : encombrement et insalubrité" width="600" height="400" loading="lazy" className="w-full h-56 object-cover rounded-xl border border-border" />
+                <figcaption className="absolute top-3 left-3 bg-destructive/90 text-destructive-foreground text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full">Avant</figcaption>
+              </figure>
+              <figure className="relative">
+                <img src="/images/examples/nettoyage3.webp" alt="Logement après intervention : assaini et désinfecté" width="600" height="400" loading="lazy" className="w-full h-56 object-cover rounded-xl border border-border" />
+                <figcaption className="absolute top-3 left-3 bg-primary text-primary-foreground text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full">Après</figcaption>
+              </figure>
+            </div>
+
             <div>
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
@@ -79,16 +105,19 @@ const ProtocoleSanitaire = () => {
                 </div>
                 <h2 className="text-2xl font-bold text-foreground">2. Sécurisation du chantier et équipements de protection</h2>
               </div>
-              <Card className="p-6 space-y-3">
-                <p className="text-muted-foreground leading-relaxed">
-                  Chaque intervenant est équipé d'EPI conformes à la norme EN 14126 (protection contre les agents infectieux) afin de garantir sa propre sécurité et celle du voisinage.
-                </p>
-                <ul className="space-y-2 pt-2">
+              <Card className="p-6 grid md:grid-cols-[1fr_220px] gap-6 items-start">
+                <div className="space-y-3">
+                  <p className="text-muted-foreground leading-relaxed">
+                    Chaque intervenant est équipé d'EPI conformes à la norme EN 14126 (protection contre les agents infectieux) afin de garantir sa propre sécurité et celle du voisinage.
+                  </p>
+                  <ul className="space-y-2 pt-2">
                   <li className="flex gap-3"><CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-0.5" /><span>Combinaison jetable type 5/6, gants nitrile double épaisseur, surchaussures</span></li>
                   <li className="flex gap-3"><CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-0.5" /><span>Demi-masque FFP3 ou masque complet à cartouche A2P3 selon contexte</span></li>
                   <li className="flex gap-3"><CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-0.5" /><span>Balisage de la zone, protection des parties communes (films plastiques, tapis de propreté)</span></li>
                   <li className="flex gap-3"><CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-0.5" /><span>Mise en dépression du logement si nécessaire pour limiter la diffusion d'odeurs</span></li>
-                </ul>
+                  </ul>
+                </div>
+                <img src="/images/examples/nettoyeur.webp" alt="Intervenant en combinaison de protection EPI" width="220" height="280" loading="lazy" className="w-full h-56 md:h-full object-cover rounded-lg border border-border" />
               </Card>
             </div>
 
@@ -121,16 +150,19 @@ const ProtocoleSanitaire = () => {
                 </div>
                 <h2 className="text-2xl font-bold text-foreground">4. Gestion des risques biologiques</h2>
               </div>
-              <Card className="p-6 space-y-3">
-                <p className="text-muted-foreground leading-relaxed">
-                  Les fluides biologiques, déjections animales, denrées putréfiées et nuisibles représentent un risque infectieux réel. Notre protocole respecte les recommandations de l'INRS et de l'ARS.
-                </p>
-                <ul className="space-y-2 pt-2">
+              <Card className="p-6 grid md:grid-cols-[220px_1fr] gap-6 items-start">
+                <img src="/images/examples/insalubrite2.webp" alt="Zone à risque biologique avant traitement" width="220" height="280" loading="lazy" className="w-full h-56 md:h-full object-cover rounded-lg border border-border" />
+                <div className="space-y-3">
+                  <p className="text-muted-foreground leading-relaxed">
+                    Les fluides biologiques, déjections animales, denrées putréfiées et nuisibles représentent un risque infectieux réel. Notre protocole respecte les recommandations de l'INRS et de l'ARS.
+                  </p>
+                  <ul className="space-y-2 pt-2">
                   <li className="flex gap-3"><CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-0.5" /><span>Pré-désinfection à la pulvérisation avant manipulation (peroxyde d'hydrogène 5%)</span></li>
                   <li className="flex gap-3"><CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-0.5" /><span>Conditionnement des déchets souillés en sacs DASRI jaunes, double emballage normé NF X30-501</span></li>
                   <li className="flex gap-3"><CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-0.5" /><span>Élimination via filière agréée avec bordereau de suivi (BSDA / CERFA 11352)</span></li>
                   <li className="flex gap-3"><CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-0.5" /><span>Traitement des nuisibles en partenariat avec entreprise certifiée Certibiocide</span></li>
-                </ul>
+                  </ul>
+                </div>
               </Card>
             </div>
 
@@ -142,16 +174,19 @@ const ProtocoleSanitaire = () => {
                 </div>
                 <h2 className="text-2xl font-bold text-foreground">5. Désinfection et traitement des odeurs</h2>
               </div>
-              <Card className="p-6 space-y-3">
-                <p className="text-muted-foreground leading-relaxed">
-                  Une fois le logement vidé et nettoyé, nous procédons à une désinfection complète des surfaces et de l'air ambiant. Le traitement olfactif est indispensable pour permettre la remise en location ou le retour de l'occupant.
-                </p>
-                <ul className="space-y-2 pt-2">
+              <Card className="p-6 grid md:grid-cols-[1fr_220px] gap-6 items-start">
+                <div className="space-y-3">
+                  <p className="text-muted-foreground leading-relaxed">
+                    Une fois le logement vidé et nettoyé, nous procédons à une désinfection complète des surfaces et de l'air ambiant. Le traitement olfactif est indispensable pour permettre la remise en location ou le retour de l'occupant.
+                  </p>
+                  <ul className="space-y-2 pt-2">
                   <li className="flex gap-3"><Droplets className="w-5 h-5 text-primary shrink-0 mt-0.5" /><span>Nettoyage haute pression des surfaces lessivables avec détergent désinfectant virucide (norme EN 14476)</span></li>
                   <li className="flex gap-3"><Droplets className="w-5 h-5 text-primary shrink-0 mt-0.5" /><span>Désinfection par voie aérienne (DSVA) au peroxyde d'hydrogène pour les zones inaccessibles</span></li>
                   <li className="flex gap-3"><Droplets className="w-5 h-5 text-primary shrink-0 mt-0.5" /><span>Traitement anti-odeurs par générateur d'ozone et neutralisateurs moléculaires</span></li>
                   <li className="flex gap-3"><Droplets className="w-5 h-5 text-primary shrink-0 mt-0.5" /><span>Si nécessaire : dépose des revêtements imprégnés (moquettes, parquet, plâtre bas de mur)</span></li>
-                </ul>
+                  </ul>
+                </div>
+                <img src="/images/services/Désinfection.jpg" alt="Désinfection professionnelle par pulvérisation" width="220" height="280" loading="lazy" className="w-full h-56 md:h-full object-cover rounded-lg border border-border" />
               </Card>
             </div>
 
