@@ -36,6 +36,18 @@ const LandingDebarras = lazy(() => import("./pages/landing/LandingDebarras"));
 const LandingDesinfection = lazy(() => import("./pages/landing/LandingDesinfection"));
 const LandingApresDeces = lazy(() => import("./pages/landing/LandingApresDeces"));
 
+// Admin / CMS
+import { AdminAuthProvider } from "./admin/AdminAuthContext";
+const AdminLayout = lazy(() => import("./admin/AdminLayout"));
+const AdminLogin = lazy(() => import("./admin/pages/AdminLogin"));
+const AdminDashboard = lazy(() => import("./admin/pages/AdminDashboard"));
+const ArticlesList = lazy(() => import("./admin/pages/ArticlesList"));
+const ArticleEdit = lazy(() => import("./admin/pages/ArticleEdit"));
+const ReviewsAdmin = lazy(() => import("./admin/pages/ReviewsAdmin"));
+const GalleryAdmin = lazy(() => import("./admin/pages/GalleryAdmin"));
+const PagesAdmin = lazy(() => import("./admin/pages/PagesAdmin"));
+const ArticleDynamic = lazy(() => import("./pages/ArticleDynamic"));
+
 const PageLoader = () => (
   <div className="fixed inset-0 z-50 flex items-center justify-center bg-background/80 backdrop-blur-sm" style={{ opacity: 1 }}>
     <div className="w-8 h-8 border-4 border-primary border-t-transparent rounded-full animate-spin" />
@@ -48,6 +60,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <AdminAuthProvider>
         <PhoneToast />
         <Header />
         <Suspense fallback={<PageLoader />}>
@@ -60,6 +73,9 @@ const App = () => (
             <Route path="/blog/debarras-apres-deces-accompagnement" element={<DebarrasApresDecesArticle />} />
             <Route path="/blog/desinfection-assainissement-protocoles" element={<DesinfectionArticle />} />
             <Route path="/blog/prevention-insalubrite-conseils" element={<PreventionInsalubriteArticle />} />
+
+            {/* Articles dynamiques (CMS) — match en dernier après les routes statiques */}
+            <Route path="/blog/:slug" element={<ArticleDynamic />} />
 
             {/* Pages de services */}
             <Route path="/debarras-gros-volumes" element={<DebarrasGrosVolumes />} />
@@ -100,10 +116,23 @@ const App = () => (
             <Route path="/landing/desinfection-insalubrite" element={<LandingDesinfection />} />
             <Route path="/landing/nettoyage-apres-deces" element={<LandingApresDeces />} />
 
+            {/* CMS Admin */}
+            <Route path="/admin/login" element={<AdminLogin />} />
+            <Route path="/admin" element={<AdminLayout />}>
+              <Route index element={<AdminDashboard />} />
+              <Route path="articles" element={<ArticlesList />} />
+              <Route path="articles/new" element={<ArticleEdit />} />
+              <Route path="articles/:id" element={<ArticleEdit />} />
+              <Route path="reviews" element={<ReviewsAdmin />} />
+              <Route path="gallery" element={<GalleryAdmin />} />
+              <Route path="pages" element={<PagesAdmin />} />
+            </Route>
+
             {/* 404 */}
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>
+        </AdminAuthProvider>
       </BrowserRouter>
     </TooltipProvider>
   </HelmetProvider>
