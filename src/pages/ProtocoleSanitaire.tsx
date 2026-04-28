@@ -69,11 +69,11 @@ const ProtocoleSanitaire = () => {
             {/* Avant / Après illustratif */}
             <div className="grid sm:grid-cols-2 gap-4">
               <figure className="relative">
-                <img src="/images/examples/avant-protocole.webp" alt="Logement avant intervention : insalubrité, matelas souillé et déchets au sol" width="600" height="400" loading="lazy" className="w-full h-56 object-cover rounded-xl border border-border" />
+                <img src="/images/examples/insalubrite1.webp" alt="Logement avant intervention : encombrement et insalubrité" width="600" height="400" loading="lazy" className="w-full h-56 object-cover rounded-xl border border-border" />
                 <figcaption className="absolute top-3 left-3 bg-destructive/90 text-destructive-foreground text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full">Avant</figcaption>
               </figure>
               <figure className="relative">
-                <img src="/images/examples/nettoyage3.webp" alt="Logement après intervention : assaini et désinfecté" width="600" height="400" loading="lazy" className="w-full h-56 object-cover rounded-xl border border-border" />
+                <img src="/images/examples/avant-protocole.webp" alt="Logement après intervention : assaini et désinfecté" width="600" height="400" loading="lazy" className="w-full h-56 object-cover rounded-xl border border-border" />
                 <figcaption className="absolute top-3 left-3 bg-primary text-primary-foreground text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full">Après</figcaption>
               </figure>
             </div>
