@@ -237,6 +237,13 @@ export const SEO_CONFIGS: Record<string, SEOConfig> = {
     description: "Nettoyage après décès discret et respectueux. Intervention professionnelle dans le Sud de la France, devis gratuit 7j/7.",
     canonical: "/landing/nettoyage-apres-deces",
     noIndex: true
+  },
+
+  '/protocole-sanitaire': {
+    title: "Fiche Protocole Sanitaire | SOS Nettoyage Diogène",
+    description: "Protocole sanitaire d'intervention en logement insalubre : odeurs, risques biologiques, tri des documents. Document à joindre aux rapports CCAS, MJPM et préfecture.",
+    canonical: "/protocole-sanitaire",
+    noIndex: true
   }
 };
 
