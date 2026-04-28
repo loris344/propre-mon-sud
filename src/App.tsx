@@ -2,7 +2,7 @@ import { lazy, Suspense } from "react";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import Header from "./components/Header";
 import PhoneToast from "./components/PhoneToast";
@@ -54,6 +54,17 @@ const PageLoader = () => (
   </div>
 );
 
+const SiteChrome = () => {
+  const location = useLocation();
+  if (location.pathname.startsWith("/admin")) return null;
+  return (
+    <>
+      <PhoneToast />
+      <Header />
+    </>
+  );
+};
+
 const App = () => (
   <HelmetProvider>
     <TooltipProvider>
@@ -61,8 +72,7 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <AdminAuthProvider>
-        <PhoneToast />
-        <Header />
+        <SiteChrome />
         <Suspense fallback={<PageLoader />}>
           <Routes>
             <Route path="/" element={<Index />} />
