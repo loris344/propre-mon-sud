@@ -67,14 +67,30 @@ const ProtocoleSanitaire = () => {
         <section className="py-12">
           <div className="container mx-auto px-4 sm:px-6 max-w-4xl space-y-10">
             {/* Avant / Après illustratif */}
-            <div className="grid sm:grid-cols-2 gap-4">
-              <figure className="relative">
-                <img src="/images/examples/insalubrite1.webp" alt="Logement avant intervention : encombrement et insalubrité" width="600" height="400" loading="lazy" className="w-full h-56 object-cover rounded-xl border border-border" />
-                <figcaption className="absolute top-3 left-3 bg-destructive/90 text-destructive-foreground text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full">Avant</figcaption>
+            <div className="grid md:grid-cols-3 gap-4 sm:gap-6">
+              <figure className="bg-card rounded-xl p-3 pb-4 border border-border/50 shadow-lg">
+                <div className="rounded-lg overflow-hidden">
+                  <img src="/images/examples/toulouse1.webp" alt="Avant/Après nettoyage salon - Syndrome de Diogène" width={800} height={600} loading="lazy" className="w-full h-auto rounded-lg" />
+                </div>
+                <figcaption className="mt-3 flex items-center gap-2 text-xs font-medium text-foreground">
+                  <span className="w-2 h-2 bg-primary rounded-full" /> Avant / Après - Salon
+                </figcaption>
               </figure>
-              <figure className="relative">
-                <img src="/images/examples/avant-protocole.webp" alt="Logement après intervention : assaini et désinfecté" width="600" height="400" loading="lazy" className="w-full h-56 object-cover rounded-xl border border-border" />
-                <figcaption className="absolute top-3 left-3 bg-primary text-primary-foreground text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full">Après</figcaption>
+              <figure className="bg-card rounded-xl p-3 pb-4 border border-border/50 shadow-lg">
+                <div className="rounded-lg overflow-hidden">
+                  <img src="/images/examples/toulouse2.webp" alt="Avant/Après nettoyage sanitaires" width={800} height={600} loading="lazy" className="w-full h-auto rounded-lg" />
+                </div>
+                <figcaption className="mt-3 flex items-center gap-2 text-xs font-medium text-foreground">
+                  <span className="w-2 h-2 bg-accent rounded-full" /> Avant / Après - Sanitaires
+                </figcaption>
+              </figure>
+              <figure className="bg-card rounded-xl p-3 pb-4 border border-border/50 shadow-lg">
+                <div className="rounded-lg overflow-hidden">
+                  <img src="/images/examples/toulouse3.webp" alt="Avant/Après nettoyage salle de bain" width={800} height={600} loading="lazy" className="w-full h-auto rounded-lg" />
+                </div>
+                <figcaption className="mt-3 flex items-center gap-2 text-xs font-medium text-foreground">
+                  <span className="w-2 h-2 bg-primary rounded-full" /> Avant / Après - Salle de bain
+                </figcaption>
               </figure>
             </div>
 
