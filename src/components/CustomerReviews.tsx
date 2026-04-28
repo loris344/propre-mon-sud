@@ -1,8 +1,9 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Star, Quote } from "lucide-react";
 import { memo, useState, useEffect } from "react";
+import { supabase } from "@/lib/supabase";
 
-const REVIEWS = [
+const FALLBACK_REVIEWS = [
   {
     id: 1,
     name: "Marie L.",
@@ -52,15 +53,40 @@ const REVIEWS = [
 
 const CustomerReviews = memo(() => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [reviews, setReviews] = useState(FALLBACK_REVIEWS);
+
+  // Charge les avis depuis le CMS (s'il y en a au moins un publié)
+  useEffect(() => {
+    let active = true;
+    (async () => {
+      const { data } = await supabase
+        .from("reviews")
+        .select("id, author_name, location, rating, text, service, date")
+        .eq("published", true)
+        .order("display_order", { ascending: true })
+        .order("created_at", { ascending: false });
+      if (!active || !data || data.length === 0) return;
+      setReviews(data.map((r: any) => ({
+        id: r.id,
+        name: r.author_name,
+        location: r.location ?? "",
+        rating: r.rating,
+        date: r.date ?? "",
+        text: r.text,
+        service: r.service ?? "",
+      })));
+    })();
+    return () => { active = false; };
+  }, []);
 
   // Défilement automatique des avis
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % REVIEWS.length);
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % reviews.length);
     }, 4000); // Change d'avis toutes les 4 secondes
 
     return () => clearInterval(interval);
-  }, []);
+  }, [reviews.length]);
 
   return (
     <section className="py-20 bg-gradient-to-b from-secondary/20 to-background">
@@ -103,7 +129,7 @@ const CustomerReviews = memo(() => {
               className="flex transition-transform duration-500 ease-in-out"
               style={{ transform: `translateX(-${currentIndex * 100}%)` }}
             >
-              {REVIEWS.map((review, index) => (
+              {reviews.map((review) => (
                 <div key={review.id} className="w-full flex-shrink-0">
                   <Card className="shadow-lg border-border/50">
                     <CardContent className="p-6">
@@ -151,7 +177,7 @@ const CustomerReviews = memo(() => {
 
           {/* Indicateurs de progression */}
           <div className="flex justify-center mt-4 gap-2">
-            {REVIEWS.map((_, index) => (
+            {reviews.map((_, index) => (
               <button
                 key={index}
                 onClick={() => setCurrentIndex(index)}

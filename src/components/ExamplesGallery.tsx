@@ -1,6 +1,24 @@
 import { Sparkles } from "lucide-react";
+import { useEffect, useState } from "react";
+import { supabase, publicMediaUrl } from "@/lib/supabase";
 
 const ExamplesGallery = () => {
+  const [cmsItems, setCmsItems] = useState<Array<{ src: string; alt: string; caption: string | null }>>([]);
+
+  useEffect(() => {
+    let active = true;
+    (async () => {
+      const { data } = await supabase
+        .from("gallery_items")
+        .select("image_path, alt_text, caption, display_order")
+        .eq("published", true)
+        .order("display_order", { ascending: true });
+      if (!active || !data) return;
+      setCmsItems(data.map((g: any) => ({ src: publicMediaUrl(g.image_path), alt: g.alt_text, caption: g.caption })));
+    })();
+    return () => { active = false; };
+  }, []);
+
   return (
     <section className="py-12 sm:py-20 bg-background">
       <div className="container mx-auto px-4 sm:px-6">
@@ -18,6 +36,25 @@ const ExamplesGallery = () => {
         </div>
 
         <div className="max-w-7xl mx-auto">
+          {cmsItems.length > 0 && (
+            <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 mb-4 sm:mb-6">
+              {cmsItems.map((it, idx) => (
+                <div key={idx} className="group relative">
+                  <div className="relative bg-card rounded-xl p-3 pb-4 border border-border/50 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div className="rounded-lg overflow-hidden">
+                      <img src={it.src} alt={it.alt} className="w-full h-auto rounded-lg" loading="lazy" />
+                    </div>
+                    {it.caption && (
+                      <div className="mt-3 flex items-center gap-2">
+                        <div className="w-2 h-2 bg-primary rounded-full"></div>
+                        <span className="text-xs font-medium text-foreground">{it.caption}</span>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
+          )}
           {/* Row 1: 3 avant/après photos */}
           <div className="grid md:grid-cols-3 gap-4 sm:gap-6 mb-4 sm:mb-6">
             <div className="group relative">
