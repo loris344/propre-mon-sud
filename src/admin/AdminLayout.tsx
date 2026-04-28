@@ -38,9 +38,9 @@ export default function AdminLayout() {
     }`;
 
   return (
-    <div className="min-h-screen bg-muted/30 pt-20 lg:pt-24">
-      <div className="flex min-h-[calc(100vh-6rem)] flex-col lg:flex-row">
-        <aside className="border-b border-border bg-card p-4 lg:sticky lg:top-24 lg:h-[calc(100vh-6rem)] lg:w-64 lg:flex-shrink-0 lg:border-b-0 lg:border-r lg:flex lg:flex-col">
+    <div className="min-h-screen bg-muted/30">
+      <div className="flex min-h-screen flex-col lg:flex-row">
+        <aside className="border-b border-border bg-card p-4 lg:sticky lg:top-0 lg:h-screen lg:w-64 lg:flex-shrink-0 lg:border-b-0 lg:border-r lg:flex lg:flex-col">
           <div className="mb-6">
             <h2 className="text-lg font-bold">CMS Admin</h2>
             <p className="text-xs text-muted-foreground truncate">{user.email}</p>
