@@ -1,11 +1,12 @@
-import { NavLink, Outlet, useNavigate, Navigate } from "react-router-dom";
+import { NavLink, Outlet, useNavigate, Navigate, useLocation } from "react-router-dom";
 import { useAdminAuth } from "./AdminAuthContext";
 import { Button } from "@/components/ui/button";
-import { LayoutDashboard, FileText, Star, Image as ImageIcon, FileEdit, LogOut, Loader2 } from "lucide-react";
+import { LayoutDashboard, FileText, Star, Image as ImageIcon, FileEdit, LogOut, Loader2, ExternalLink } from "lucide-react";
 
 export default function AdminLayout() {
   const { user, isAdmin, loading, signOut } = useAdminAuth();
   const navigate = useNavigate();
+  const location = useLocation();
 
   if (loading) {
     return (
@@ -38,24 +39,31 @@ export default function AdminLayout() {
 
   return (
     <div className="min-h-screen bg-muted/30">
-      <div className="flex">
-        <aside className="w-60 min-h-screen bg-card border-r border-border p-4 flex flex-col">
+      <div className="flex min-h-screen flex-col lg:flex-row">
+        <aside className="border-b border-border bg-card p-4 lg:sticky lg:top-0 lg:h-screen lg:w-64 lg:flex-shrink-0 lg:border-b-0 lg:border-r lg:flex lg:flex-col">
           <div className="mb-6">
             <h2 className="text-lg font-bold">CMS Admin</h2>
             <p className="text-xs text-muted-foreground truncate">{user.email}</p>
           </div>
-          <nav className="space-y-1 flex-1">
+          <nav className="grid grid-cols-2 gap-2 lg:block lg:flex-1 lg:space-y-1">
             <NavLink to="/admin" end className={linkClass}><LayoutDashboard className="w-4 h-4" /> Tableau de bord</NavLink>
             <NavLink to="/admin/articles" className={linkClass}><FileText className="w-4 h-4" /> Articles</NavLink>
             <NavLink to="/admin/reviews" className={linkClass}><Star className="w-4 h-4" /> Avis clients</NavLink>
             <NavLink to="/admin/gallery" className={linkClass}><ImageIcon className="w-4 h-4" /> Galerie</NavLink>
-            <NavLink to="/admin/pages" className={linkClass}><FileEdit className="w-4 h-4" /> Pages</NavLink>
+            <NavLink to="/admin/pages" className={linkClass}><FileEdit className="w-4 h-4" /> Pages & cocon</NavLink>
           </nav>
-          <Button variant="outline" size="sm" onClick={async () => { await signOut(); navigate("/admin/login"); }}>
-            <LogOut className="w-4 h-4 mr-2" /> Déconnexion
-          </Button>
+          <div className="mt-4 grid grid-cols-2 gap-2 lg:block lg:space-y-2">
+            <Button variant="outline" size="sm" asChild>
+              <a href={location.pathname.startsWith("/admin") ? "/" : location.pathname} target="_blank" rel="noreferrer">
+                <ExternalLink className="w-4 h-4 mr-2" /> Voir le site
+              </a>
+            </Button>
+            <Button variant="outline" size="sm" onClick={async () => { await signOut(); navigate("/admin/login"); }}>
+              <LogOut className="w-4 h-4 mr-2" /> Déconnexion
+            </Button>
+          </div>
         </aside>
-        <main className="flex-1 p-6 max-w-5xl">
+        <main className="w-full flex-1 p-4 sm:p-6 lg:max-w-none lg:p-8">
           <Outlet />
         </main>
       </div>
