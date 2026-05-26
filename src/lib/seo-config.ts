@@ -244,6 +244,13 @@ export const SEO_CONFIGS: Record<string, SEOConfig> = {
     description: "Protocole sanitaire d'intervention en logement insalubre : odeurs, risques biologiques, tri des documents. Document à joindre aux rapports CCAS, MJPM et préfecture.",
     canonical: "/protocole-sanitaire",
     noIndex: true
+  },
+
+  '/notaires-succession': {
+    title: "Remise en état d'un bien en succession | Fiche notaires",
+    description: "Protocole de remise en état d'un logement insalubre ou Diogène en succession : valorisation, attestation d'assainissement, délais compatibles calendrier successoral.",
+    canonical: "/notaires-succession",
+    noIndex: true
   }
 };
 

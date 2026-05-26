@@ -36,6 +36,7 @@ const LandingDebarras = lazy(() => import("./pages/landing/LandingDebarras"));
 const LandingDesinfection = lazy(() => import("./pages/landing/LandingDesinfection"));
 const LandingApresDeces = lazy(() => import("./pages/landing/LandingApresDeces"));
 const ProtocoleSanitaire = lazy(() => import("./pages/ProtocoleSanitaire"));
+const NotairesSuccession = lazy(() => import("./pages/NotairesSuccession"));
 
 // Admin / CMS
 import { AdminAuthProvider } from "./admin/AdminAuthContext";
@@ -129,6 +130,7 @@ const App = () => (
 
             {/* Documents pro (noindex) */}
             <Route path="/protocole-sanitaire" element={<ProtocoleSanitaire />} />
+            <Route path="/notaires-succession" element={<NotairesSuccession />} />
 
             {/* CMS Admin */}
             <Route path="/admin/login" element={<AdminLogin />} />
