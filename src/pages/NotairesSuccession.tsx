@@ -74,7 +74,7 @@ const NotairesSuccession = () => {
             <div className="grid sm:grid-cols-3 gap-3 mt-8 text-sm">
               <div className="flex items-center gap-2 text-muted-foreground">
                 <CheckCircle2 className="w-4 h-4 text-primary shrink-0" />
-                Devis sous 24h à distance
+                Devis remis sous 24h
               </div>
               <div className="flex items-center gap-2 text-muted-foreground">
                 <CheckCircle2 className="w-4 h-4 text-primary shrink-0" />
@@ -138,11 +138,11 @@ const NotairesSuccession = () => {
                 <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
                   <ClipboardCheck className="w-5 h-5 text-primary" />
                 </div>
-                <h2 className="text-2xl font-bold text-foreground">1. Diagnostic à distance et devis chiffré</h2>
+                <h2 className="text-2xl font-bold text-foreground">1. Diagnostic et devis chiffré sous 24h</h2>
               </div>
               <Card className="p-6 space-y-3 text-foreground">
                 <p className="text-muted-foreground leading-relaxed">
-                  Nous évaluons l'intégralité du dossier sans déplacement, à partir de photos transmises par l'étude, l'héritier ou le mandataire successoral. Un devis détaillé est remis sous 24h, utilisable directement par le notaire pour informer les héritiers et provisionner les frais de succession.
+                  Nous évaluons l'intégralité du dossier à partir des photos transmises par l'étude, l'héritier ou le mandataire successoral. Le devis détaillé est remis sous 24h, utilisable directement par le notaire pour informer les héritiers et provisionner les frais de succession.
                 </p>
                 <ul className="space-y-2 pt-2">
                   <li className="flex gap-3"><CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-0.5" /><span>Évaluation du volume à débarrasser et de la nature des déchets (encombrants, DASRI, mobilier)</span></li>
