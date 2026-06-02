@@ -238,6 +238,12 @@ const pagesMeta = {
     canonical: "/protocole-sanitaire",
     noIndex: true
   },
+  '/notaires-succession': {
+    title: "Remise en état d'un bien en succession | Fiche notaires",
+    description: "Fiche pratique à l'attention des notaires : débarras, nettoyage extrême et remise en état d'un bien en succession. Devis sous 24h, Occitanie et PACA.",
+    canonical: "/notaires-succession",
+    noIndex: true
+  },
 };
 
 // Template HTML de base
