@@ -232,6 +232,12 @@ const pagesMeta = {
     canonical: "/landing/nettoyage-apres-deces",
     noIndex: true
   },
+  '/landing/traitement-odeurs-nuisibles': {
+    title: "Traitement Odeurs & Nuisibles | Intervention 7j/7",
+    description: "Traitement des mauvaises odeurs et des nuisibles (cafards, punaises, rongeurs, mites). Intervention pro dans le Sud de la France. Devis gratuit.",
+    canonical: "/landing/traitement-odeurs-nuisibles",
+    noIndex: true
+  },
   '/protocole-sanitaire': {
     title: "Fiche Protocole Sanitaire | SOS Nettoyage Diogène",
     description: "Protocole sanitaire d'intervention en logement insalubre : odeurs, risques biologiques, tri des documents. Document à joindre aux rapports CCAS, MJPM et préfecture.",

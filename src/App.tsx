@@ -35,6 +35,7 @@ const LandingDiogene = lazy(() => import("./pages/landing/LandingDiogene"));
 const LandingDebarras = lazy(() => import("./pages/landing/LandingDebarras"));
 const LandingDesinfection = lazy(() => import("./pages/landing/LandingDesinfection"));
 const LandingApresDeces = lazy(() => import("./pages/landing/LandingApresDeces"));
+const LandingOdeursNuisibles = lazy(() => import("./pages/landing/LandingOdeursNuisibles"));
 const ProtocoleSanitaire = lazy(() => import("./pages/ProtocoleSanitaire"));
 const NotairesSuccession = lazy(() => import("./pages/NotairesSuccession"));
 
@@ -127,6 +128,7 @@ const App = () => (
             <Route path="/landing/debarras-gros-volumes" element={<LandingDebarras />} />
             <Route path="/landing/desinfection-insalubrite" element={<LandingDesinfection />} />
             <Route path="/landing/nettoyage-apres-deces" element={<LandingApresDeces />} />
+            <Route path="/landing/traitement-odeurs-nuisibles" element={<LandingOdeursNuisibles />} />
 
             {/* Documents pro (noindex) */}
             <Route path="/protocole-sanitaire" element={<ProtocoleSanitaire />} />
