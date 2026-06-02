@@ -66,7 +66,7 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="font-semibold text-foreground text-lg">Zones d'intervention</h3>
             <div className="space-y-2">
-              {["Hérault (34)", "Gard (30)", "Aude (11)", "Bouches-du-Rhône (13)", "Var (83)", "Vaucluse (84)"].map((dept) => (
+              {["Hérault (34)", "Bouches-du-Rhône (13)", "Haute-Garonne (31)", "Alpes-Maritimes (06)", "Var (83)", "Gard (30)", "Vaucluse (84)", "Pyrénées-Orientales (66)", "Tarn (81)", "Aude (11)", "Aveyron (12)"].map((dept) => (
                 <div key={dept} className="flex items-center gap-2">
                   <MapPin className="w-4 h-4 text-accent flex-shrink-0" />
                   <span className="text-sm text-muted-foreground">{dept}</span>
