@@ -95,13 +95,6 @@ export const SITE_PAGES: SitePageEntry[] = [
   makePage("/debarras-gros-volumes", "Services principaux", "Page service", "Blocs éditables", "/tous-nos-services", ["/debarras-gros-volumes-montpellier", "/nettoyage-apres-deces", "/desinfection-insalubrite"]),
   makePage("/desinfection-insalubrite", "Services principaux", "Page service", "Blocs éditables", "/tous-nos-services", ["/desinfection-insalubrite-montpellier", "/nettoyage-insalubre-montpellier", "/nettoyage-insalubre-nimes"]),
 
-  makePage("/nettoyage-syndrome-diogene-montpellier", "Pages locales Diogène", "Page ville", "Statique", "/", ["/entreprise-nettoyage-montpellier", "/debarras-gros-volumes-montpellier", "/nettoyage-insalubre-montpellier"]),
-  makePage("/nettoyage-syndrome-diogene-sete", "Pages locales Diogène", "Page ville", "Statique", "/", ["/nettoyage-syndrome-diogene-montpellier", "/nettoyage-syndrome-diogene-beziers"]),
-  makePage("/nettoyage-syndrome-diogene-beziers", "Pages locales Diogène", "Page ville", "Statique", "/", ["/nettoyage-syndrome-diogene-sete", "/nettoyage-syndrome-diogene-montpellier"]),
-  makePage("/nettoyage-syndrome-diogene-nimes", "Pages locales Diogène", "Page ville", "Statique", "/", ["/nettoyage-insalubre-nimes", "/nettoyage-apres-deces-nimes"]),
-  makePage("/nettoyage-syndrome-diogene-perpignan", "Pages locales Diogène", "Page ville", "Statique", "/", ["/nettoyage-syndrome-diogene-beziers", "/desinfection-insalubrite"]),
-  makePage("/nettoyage-syndrome-diogene-marseille", "Pages locales Diogène", "Page ville", "Statique", "/", ["/entreprise-nettoyage-marseille", "/nettoyage-apres-deces-marseille"]),
-
   makePage("/nettoyage-apres-deces-marseille", "Services locaux", "Service local", "Statique", "/nettoyage-apres-deces", ["/entreprise-nettoyage-marseille", "/nettoyage-syndrome-diogene-marseille"]),
   makePage("/debarras-gros-volumes-montpellier", "Services locaux", "Service local", "Statique", "/debarras-gros-volumes", ["/entreprise-nettoyage-montpellier", "/nettoyage-syndrome-diogene-montpellier"]),
   makePage("/desinfection-insalubrite-montpellier", "Services locaux", "Service local", "Statique", "/desinfection-insalubrite", ["/nettoyage-insalubre-montpellier", "/entreprise-nettoyage-montpellier"]),
