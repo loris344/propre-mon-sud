@@ -117,6 +117,7 @@ export const SITE_PAGES: SitePageEntry[] = [
   makePage("/landing/debarras-gros-volumes", "Landing Ads", "Landing Google Ads", "NoIndex", "/", []),
   makePage("/landing/desinfection-insalubrite", "Landing Ads", "Landing Google Ads", "NoIndex", "/", []),
   makePage("/landing/nettoyage-apres-deces", "Landing Ads", "Landing Google Ads", "NoIndex", "/", []),
+  makePage("/landing/traitement-odeurs-nuisibles", "Landing Ads", "Landing Google Ads", "NoIndex", "/", []),
 
   makePage("/protocole-sanitaire", "Documents pro", "Fiche protocole CCAS / MJPM", "NoIndex", "/", ["/desinfection-insalubrite", "/nettoyage-apres-deces"]),
 
