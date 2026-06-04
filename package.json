@@ -15,7 +15,8 @@
     "deploy:build": "npm run predeploy && npm run deploy",
     "sitemap": "node scripts/build-simple.js",
     "llms": "node scripts/build-simple.js",
-    "generate-static": "node scripts/generate-static-pages.js && node scripts/update-sitemap.js"
+    "generate-static": "node scripts/generate-static-pages.js && node scripts/update-sitemap.js",
+    "verify:seo": "node scripts/verify-seo-output.js"
   },
   "dependencies": {
     "@posthog/react": "^1.9.0",

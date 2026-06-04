@@ -15,29 +15,6 @@ const __dirname = path.dirname(__filename);
 const SITE_URL = 'https://sosnettoyagediogene.fr';
 const BUILD_DIR = path.join(__dirname, '../dist');
 
-// Fonction pour détecter les vrais noms de fichiers générés par Vite
-function getActualFilenames() {
-  const jsDir = path.join(BUILD_DIR, 'js');
-  const cssDir = path.join(BUILD_DIR, 'css');
-  
-  let jsFile = 'index-DaGo9SF1.js'; // fallback
-  let cssFile = 'index-BM_9ip7p.css'; // fallback
-  
-  if (fs.existsSync(jsDir)) {
-    const jsFiles = fs.readdirSync(jsDir);
-    const indexJsFile = jsFiles.find(file => file.startsWith('index-') && file.endsWith('.js'));
-    if (indexJsFile) jsFile = indexJsFile;
-  }
-  
-  if (fs.existsSync(cssDir)) {
-    const cssFiles = fs.readdirSync(cssDir);
-    const indexCssFile = cssFiles.find(file => file.startsWith('index-') && file.endsWith('.css'));
-    if (indexCssFile) cssFile = indexCssFile;
-  }
-  
-  return { jsFile, cssFile };
-}
-
 // Meta tags par page — titres <60 chars, descriptions <160 chars, PAS de keywords
 const pagesMeta = {
   '/': {
@@ -252,75 +229,50 @@ const pagesMeta = {
   },
 };
 
-// Template HTML de base
+// Template HTML de base: on repart du vrai dist/index.html généré par Vite
 function getBaseHTML() {
-  const { jsFile, cssFile } = getActualFilenames();
-  
-  return `<!doctype html>
-<html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <!-- Language and Geo Tags -->
-    <meta name="language" content="fr" />
-    <meta name="geo.region" content="FR-34" />
-    <meta name="geo.placename" content="Montpellier" />
-    <meta name="geo.position" content="43.611;3.8767" />
-    <meta name="ICBM" content="43.611, 3.8767" />
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-16x16.png" />
-    <link rel="manifest" href="/site.webmanifest" />
-    
-    <!-- Preload critical resources -->
-    <link rel="preload" href="/js/${jsFile}" as="script" />
-    <link rel="preload" href="/css/${cssFile}" as="style" />
-    
-    <!-- Styles -->
-    <link rel="stylesheet" href="/css/${cssFile}" />
-    
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-T2V8JRGG');</script>
-    <!-- End Google Tag Manager -->
-    
-    <!-- Redirection GitHub Pages SPA -->
-    <script>
-      (function(l) {
-        if (l.search[1] === '/' ) {
-          var decoded = l.search.slice(1).split('&').map(function(s) { 
-            return s.replace(/~and~/g, '&')
-          }).join('?');
-          window.history.replaceState(null, null,
-              l.pathname.slice(0, -1) + decoded + l.hash
-          );
-        }
-      }(window.location))
-    </script>
-  </head>
-  <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T2V8JRGG"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    
-    <!-- React App -->
-    <div id="root"></div>
-    <script type="module" src="/js/${jsFile}"></script>
-    <noscript>Vous devez activer JavaScript pour utiliser cette application.</noscript>
-  </body>
-</html>`;
+  const indexPath = path.join(BUILD_DIR, 'index.html');
+  if (!fs.existsSync(indexPath)) {
+    throw new Error('dist/index.html introuvable: lancez vite build avant la génération statique');
+  }
+
+  const html = fs.readFileSync(indexPath, 'utf8');
+  const jsPath = html.match(/<script[^>]+type="module"[^>]+src="(\/js\/[^\"]+\.js)"[^>]*><\/script>/i)?.[1];
+  const cssPath = html.match(/<link[^>]+rel="stylesheet"[^>]+href="(\/css\/[^\"]+\.css)"[^>]*>/i)?.[1];
+
+  if (!jsPath) {
+    throw new Error('dist/index.html ne référence pas le fichier JS Vite final');
+  }
+
+  if (!cssPath) {
+    throw new Error('dist/index.html ne référence pas le fichier CSS Vite final');
+  }
+
+  if (!fs.existsSync(path.join(BUILD_DIR, jsPath.slice(1)))) {
+    throw new Error(`fichier JS Vite absent: ${jsPath}`);
+  }
+
+  if (!fs.existsSync(path.join(BUILD_DIR, cssPath.slice(1)))) {
+    throw new Error(`fichier CSS Vite absent: ${cssPath}`);
+  }
+
+  return html;
 }
 
 // Générer une page avec les meta tags (sans meta keywords)
 function generatePage(route, meta) {
-  const html = getBaseHTML();
+  let html = getBaseHTML();
+  html = html
+    .replace(/\s*<title>[\s\S]*?<\/title>/i, '')
+    .replace(/\s*<meta\s+name="description"[^>]*>/i, '')
+    .replace(/\s*<meta\s+name="author"[^>]*>/i, '')
+    .replace(/\s*<meta\s+name="robots"[^>]*>/i, '')
+    .replace(/\s*<link\s+rel="canonical"[^>]*>/i, '')
+    .replace(/\s*<meta\s+property="og:title"[^>]*>/i, '')
+    .replace(/\s*<meta\s+property="og:description"[^>]*>/i, '')
+    .replace(/\s*<meta\s+property="og:url"[^>]*>/i, '')
+    .replace(/\s*<meta\s+name="twitter:title"[^>]*>/i, '')
+    .replace(/\s*<meta\s+name="twitter:description"[^>]*>/i, '');
   
   const metaTags = `
     <!-- SEO Meta Tags -->
@@ -348,7 +300,7 @@ function generatePage(route, meta) {
     <meta name="twitter:image" content="${SITE_URL}/images/logos/p1.png" />
   `;
   
-  return html.replace('<!-- Language and Geo Tags -->', metaTags + '\n    <!-- Language and Geo Tags -->');
+  return html.replace('</head>', `${metaTags}\n  </head>`);
 }
 
 // Fonction principale
