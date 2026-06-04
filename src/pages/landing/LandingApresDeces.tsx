@@ -224,6 +224,18 @@ const LandingApresDeces = () => {
           </div>
         </section>
 
+        {/* FAQ */}
+        <LandingFAQ
+          items={[
+            { question: "Le service est-il vraiment discret ?", answer: "Oui. Véhicules banalisés, pas de marquage visible. Le voisinage n'a pas à savoir pourquoi on est là. Votre vie privée est respectée." },
+            { question: "Qui peut faire appel à vous ?", answer: "Familles endeuillées, notaires, mandataires judiciaires, bailleurs, agences immobilières. N'importe qui qui a besoin d'un nettoyage après décès." },
+            { question: "Combien de temps dure l'intervention ?", answer: "Ça dépend de la surface et de l'état du logement. En général de quelques heures à une journée. On vous précise lors du devis." },
+            { question: "Faut-il que je sois présent ?", answer: "Non. Vous pouvez nous confier les clés ou être accompagné d'un proche. On fait un compte-rendu photos à la fin." },
+            { question: "Le devis est-il vraiment gratuit ?", answer: "Oui, totalement gratuit et sans engagement. Envoyez-nous quelques photos du logement, on vous répond rapidement." },
+            { question: "Intervenez-vous 7j/7 ?", answer: "Oui, tous les jours de la semaine. Appelez-nous au 07 67 13 54 58, on vous écoute avec bienveillance." },
+          ]}
+        />
+
         {/* CTA final */}
         <section className="py-16 sm:py-20 bg-gradient-to-b from-secondary/10 to-secondary/20">
           <div className="container mx-auto px-4 sm:px-6 text-center">

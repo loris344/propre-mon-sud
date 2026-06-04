@@ -211,6 +211,18 @@ const LandingOdeursNuisibles = () => {
           </div>
         </section>
 
+        {/* FAQ */}
+        <LandingFAQ
+          items={[
+            { question: "Quels types d'odeurs traitez-vous ?", answer: "Odeurs de tabac, animaux, humidité, moisissure, déchets, après décès. On intervient sur toute odeur persistante dans un logement." },
+            { question: "Quels nuisibles éliminez-vous ?", answer: "Cafards, punaises de lit, rongeurs, mites et autres insectes. On fait d'abord un diagnostic, puis on traite de façon ciblée jusqu'à élimination." },
+            { question: "Le traitement est-il dangereux pour les habitants ?", answer: "Non. On utilise des produits professionnels en respectant les temps de sécurité. Les habitants peuvent rentrer après aération, selon le produit utilisé." },
+            { question: "Combien de temps dure une intervention ?", answer: "Ça dépend de la surface et du problème. Une désodorisation peut prendre 2 à 4 heures. Un traitement anti-nuisibles peut nécessiter plusieurs passages. On vous précise tout dans le devis." },
+            { question: "Intervenez-vous en urgence ?", answer: "Oui, 7j/7. Si l'odeur est invivable ou l'infestation avancée, appelez-nous directement au 07 67 13 54 58." },
+            { question: "Comment obtenir un devis ?", answer: "Envoyez-nous quelques photos et décrivez la situation par téléphone ou mail. On vous répond rapidement avec un devis gratuit et sans engagement." },
+          ]}
+        />
+
         {/* CTA final */}
         <section className="py-16 sm:py-20 bg-gradient-to-b from-primary/5 to-primary/10">
           <div className="container mx-auto px-4 sm:px-6 text-center">
