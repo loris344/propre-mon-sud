@@ -232,12 +232,12 @@ const LandingDesinfection = () => {
         {/* FAQ */}
         <LandingFAQ
           items={[
-            { question: "Qu'est-ce qu'un logement insalubre ?", answer: "C'est un logement présentant des risques sanitaires : accumulation de déchets, infestations, moisissures, odeurs persistantes. On intervient pour le remettre en état." },
+            { question: "Qu'est-ce qu'un logement insalubre ?", answer: "C'est un logement présentant des risques sanitaires : accumulation de déchets, infestations, moisissures, odeurs persistantes. On intervient pour le débarras complet et la remise en état du logement." },
             { question: "Quels produits utilisez-vous ?", answer: "Des produits professionnels homologués, adaptés à chaque type de contamination. On respecte les dosages et les temps de sécurité." },
             { question: "Combien de temps faut-il attendre avant de réoccuper le logement ?", answer: "Ça dépend du traitement. Pour une désinfection standard, quelques heures d'aération suffisent. On vous précise les délais sur place." },
-            { question: "Traitez-vous aussi les nuisibles ?", answer: "Oui. Cafards, punaises de lit, rongeurs, mites. On fait un diagnostic puis un traitement ciblé pour une élimination durable." },
+            { question: "Traitez-vous aussi les nuisibles ?", answer: "Oui. Cafards, punaises de lit, rongeurs, mites. On fait un diagnostic puis un traitement ciblé pour une élimination durable, avec débarras des nids et déchets contaminés." },
             { question: "Intervenez-vous en urgence ?", answer: "Oui, 7j/7. En cas de risque sanitaire immédiat, appelez-nous directement au 07 67 13 54 58." },
-            { question: "Comment obtenir un devis ?", answer: "Envoyez-nous quelques photos et décrivez la situation par téléphone ou mail. On vous répond avec un devis gratuit et sans engagement." },
+            { question: "Comment obtenir un devis ?", answer: "Envoyez-nous quelques photos et vidéos en décrivant la situation. On vous répond avec un devis gratuit et sans engagement." },
           ]}
         />
 
