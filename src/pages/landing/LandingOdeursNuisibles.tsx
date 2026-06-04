@@ -5,6 +5,7 @@ import SEOHead from "@/components/SEOHead";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import LandingReviews from "@/components/LandingReviews";
+import LandingFAQ from "@/components/LandingFAQ";
 
 const LandingOdeursNuisibles = () => {
   const scrollToContact = () => {
