@@ -78,11 +78,11 @@ Disallow: /
 User-agent: MajesticSEO
 Disallow: /
 
-# Bloquer l'accès aux fichiers techniques
-Disallow: /assets/
-Disallow: /*.json$
-Disallow: /*.js$
-Disallow: /*.css$
+# Les fichiers CSS, JS, JSON et assets restent accessibles aux moteurs de recherche
+Allow: /assets/
+Allow: /*.json$
+Allow: /*.js$
+Allow: /*.css$
 `;
 }
 
