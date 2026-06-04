@@ -14,6 +14,7 @@ const __dirname = path.dirname(__filename);
 // Configuration
 const SITE_URL = 'https://sosnettoyagediogene.fr';
 const BUILD_DIR = path.join(__dirname, '../dist');
+let baseHTML = null;
 
 // Meta tags par page — titres <60 chars, descriptions <160 chars, PAS de keywords
 const pagesMeta = {
@@ -231,6 +232,8 @@ const pagesMeta = {
 
 // Template HTML de base: on repart du vrai dist/index.html généré par Vite
 function getBaseHTML() {
+  if (baseHTML) return baseHTML;
+
   const indexPath = path.join(BUILD_DIR, 'index.html');
   if (!fs.existsSync(indexPath)) {
     throw new Error('dist/index.html introuvable: lancez vite build avant la génération statique');
@@ -256,7 +259,8 @@ function getBaseHTML() {
     throw new Error(`fichier CSS Vite absent: ${cssPath}`);
   }
 
-  return html;
+  baseHTML = html;
+  return baseHTML;
 }
 
 // Générer une page avec les meta tags (sans meta keywords)
@@ -270,9 +274,19 @@ function generatePage(route, meta) {
     .replace(/\s*<link\s+rel="canonical"[^>]*>/i, '')
     .replace(/\s*<meta\s+property="og:title"[^>]*>/i, '')
     .replace(/\s*<meta\s+property="og:description"[^>]*>/i, '')
+    .replace(/\s*<meta\s+property="og:type"[^>]*>/i, '')
     .replace(/\s*<meta\s+property="og:url"[^>]*>/i, '')
+    .replace(/\s*<meta\s+property="og:image"[^>]*>/i, '')
+    .replace(/\s*<meta\s+property="og:image:width"[^>]*>/i, '')
+    .replace(/\s*<meta\s+property="og:image:height"[^>]*>/i, '')
+    .replace(/\s*<meta\s+property="og:image:alt"[^>]*>/i, '')
+    .replace(/\s*<meta\s+property="og:site_name"[^>]*>/i, '')
+    .replace(/\s*<meta\s+property="og:locale"[^>]*>/i, '')
+    .replace(/\s*<meta\s+name="twitter:card"[^>]*>/i, '')
     .replace(/\s*<meta\s+name="twitter:title"[^>]*>/i, '')
-    .replace(/\s*<meta\s+name="twitter:description"[^>]*>/i, '');
+    .replace(/\s*<meta\s+name="twitter:description"[^>]*>/i, '')
+    .replace(/\s*<meta\s+name="twitter:image"[^>]*>/i, '')
+    .replace(/\s*<meta\s+name="twitter:image:alt"[^>]*>/i, '');
   
   const metaTags = `
     <!-- SEO Meta Tags -->
