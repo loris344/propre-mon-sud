@@ -214,7 +214,7 @@ const Contact = () => {
                   <div className="space-y-3">
                     <label className="text-base sm:text-lg font-medium text-foreground">Ville ou village d'intervention</label>
                     <Input 
-                      placeholder="Montpellier, Sète, Béziers..." 
+                      placeholder="Montpellier, Marseille, Toulouse..." 
                       value={formData.city}
                       onChange={(e) => handleInputChange('city', e.target.value)}
                       className="text-base sm:text-lg py-3 sm:py-4"
