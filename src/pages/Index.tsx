@@ -6,6 +6,7 @@ import CustomerReviews from "../components/CustomerReviews";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import SEOHead from "../components/SEOHead";
+import LandingFAQ from "../components/LandingFAQ";
 import { useSEO } from "../hooks/useSEO";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
