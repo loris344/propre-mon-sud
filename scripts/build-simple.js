@@ -8,126 +8,48 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { verifySeoOutput } from './verify-seo-output.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// Configuration
-const SITE_URL = 'https://sosnettoyagediogene.fr';
 const BUILD_DIR = path.join(__dirname, '../dist');
 
-// Copie du sitemap depuis public/ vers dist/ avec mise à jour des dates
+// Copie du sitemap depuis public/ vers dist/ sans réécriture automatique
 function copySitemap() {
   const publicSitemap = path.join(__dirname, '../public/sitemap.xml');
   const distSitemap = path.join(BUILD_DIR, 'sitemap.xml');
   
   if (fs.existsSync(publicSitemap)) {
-    // Mettre à jour la date de dernière modification
-    let sitemapContent = fs.readFileSync(publicSitemap, 'utf8');
-    const today = new Date().toISOString().split('T')[0];
-    
-    // Remplacer toutes les dates lastmod par la date d'aujourd'hui
-    sitemapContent = sitemapContent.replace(/<lastmod>\d{4}-\d{2}-\d{2}<\/lastmod>/g, `<lastmod>${today}</lastmod>`);
-    
-    fs.writeFileSync(distSitemap, sitemapContent);
+    fs.copyFileSync(publicSitemap, distSitemap);
     return true;
   }
   return false;
 }
 
-// Génération du robots.txt
-function generateRobotsTxt() {
-  return `# Robots.txt pour SOS Nettoyage Diogène
-# https://www.robotstxt.org/robotstxt.html
+// Copie du robots.txt source vers dist/ sans le réécrire dans le script
+function copyRobotsTxt() {
+  const publicRobots = path.join(__dirname, '../public/robots.txt');
+  const distRobots = path.join(BUILD_DIR, 'robots.txt');
 
-User-agent: *
-Allow: /
+  if (fs.existsSync(publicRobots)) {
+    fs.copyFileSync(publicRobots, distRobots);
+    return true;
+  }
 
-# Sitemap
-Sitemap: ${SITE_URL}/sitemap.xml
-
-# Crawl-delay pour éviter la surcharge
-Crawl-delay: 1
-
-# Autoriser les moteurs de recherche principaux
-User-agent: Googlebot
-Allow: /
-Crawl-delay: 0
-
-User-agent: Bingbot
-Allow: /
-Crawl-delay: 0
-
-User-agent: YandexBot
-Allow: /
-Crawl-delay: 0
-
-# Bloquer les bots indésirables
-User-agent: AhrefsBot
-Disallow: /
-
-User-agent: MJ12bot
-Disallow: /
-
-User-agent: DotBot
-Disallow: /
-
-User-agent: SemrushBot
-Disallow: /
-
-User-agent: MajesticSEO
-Disallow: /
-
-# Les fichiers CSS, JS, JSON et assets restent accessibles aux moteurs de recherche
-Allow: /assets/
-Allow: /*.json$
-Allow: /*.js$
-Allow: /*.css$
-`;
+  return false;
 }
 
-// Génération du llms.txt
-function generateLlmsTxt() {
-  return `# SOS Nettoyage Diogène
+function copyLlmsTxt() {
+  const publicLlms = path.join(__dirname, '../public/llms.txt');
+  const distLlms = path.join(BUILD_DIR, 'llms.txt');
 
-> Société spécialisée dans le nettoyage et débarras syndrome de Diogène, insalubrité et gros volumes. Intervention discrète, professionnelle et respectueuse dans le Sud de la France. Disponible 7j/7 pour des interventions d'urgence.
+  if (fs.existsSync(publicLlms)) {
+    fs.copyFileSync(publicLlms, distLlms);
+    return true;
+  }
 
-## Services Principaux
-
-- **Nettoyage Syndrome de Diogène** : Intervention spécialisée et respectueuse pour les situations d'accumulation compulsive avec respect et discrétion totale.
-
-- **Débarras Gros Volumes** : Évacuation et tri de tous types d'objets, meubles et déchets en respectant l'environnement.
-
-- **Désinfection & Insalubrité** : Traitement des environnements insalubres avec des produits professionnels et techniques adaptées.
-
-- **Nettoyage Après Décès** : Service spécialisé de nettoyage et remise en état après décès. Intervention respectueuse, discrète et professionnelle.
-
-- **Nettoyage Insalubre** : Service spécialisé de nettoyage et remise en état d'environnements insalubres avec protocoles professionnels.
-
-## Informations de Contact
-
-- **Email** : contact@sosnettoyagediogene.fr
-- **Disponibilité** : 7j/7 de 8h00 à 20h00
-- **Urgences** : Intervention rapide acceptée en soirée
-
-## Zone d'Intervention
-
-Intervention dans tout le Sud de la France :
-- **Occitanie** : Montpellier, Sète, Béziers, Nîmes, Perpignan
-- **PACA** : Marseille, Nice, Aix-en-Provence, Toulon, Avignon
-- **Nouvelle-Aquitaine** : Bordeaux
-
-## Avantages et Garanties
-
-- **Discrétion totale** : Confidentialité et respect absolu de la vie privée
-- **Équipe experte** : Professionnels formés et équipés
-- **Disponibilité 7j/7** : Intervention rapide et flexible
-- **Assurance complète** : Intervention sécurisée et assurée
-- **Devis gratuit** : Évaluation gratuite et sans engagement
-
----
-
-*SOS Nettoyage Diogène - Votre partenaire de confiance pour des interventions discrètes et professionnelles*`;
+  return false;
 }
 
 // Fonction principale
@@ -141,20 +63,24 @@ function build() {
   
   // Copier le sitemap depuis public/ vers dist/
   if (copySitemap()) {
-    console.log('✅ Sitemap copié et mis à jour');
+    console.log('✅ Sitemap copié depuis public/');
   } else {
     console.log('❌ Erreur: sitemap.xml non trouvé dans public/');
   }
   
-  // Générer le robots.txt
-  const robotsTxt = generateRobotsTxt();
-  fs.writeFileSync(path.join(BUILD_DIR, 'robots.txt'), robotsTxt);
-  console.log('✅ Robots.txt généré');
+  // Copier le robots.txt depuis public/ vers dist/ pour éviter toute divergence entre le repo et la version publiée
+  if (copyRobotsTxt()) {
+    console.log('✅ Robots.txt copié depuis public/');
+  } else {
+    console.log('❌ Erreur: robots.txt non trouvé dans public/');
+  }
   
-  // Générer le llms.txt
-  const llmsTxt = generateLlmsTxt();
-  fs.writeFileSync(path.join(BUILD_DIR, 'llms.txt'), llmsTxt);
-  console.log('✅ llms.txt généré');
+  // Copier le llms.txt depuis public/ pour éviter toute divergence entre le repo et la version publiée
+  if (copyLlmsTxt()) {
+    console.log('✅ llms.txt copié depuis public/');
+  } else {
+    console.log('❌ Erreur: llms.txt non trouvé dans public/');
+  }
   
   // Nettoyer les images dupliquées copiées par Vite
   const duplicateDirs = ['cities', 'examples', 'services'];
@@ -175,6 +101,8 @@ build();
 // Générer les pages statiques avec meta tags
 import('./generate-static-pages.js').then(() => {
   console.log('✅ Pages statiques générées');
+  verifySeoOutput();
 }).catch(err => {
   console.error('❌ Erreur génération pages statiques:', err);
+  process.exit(1);
 });
