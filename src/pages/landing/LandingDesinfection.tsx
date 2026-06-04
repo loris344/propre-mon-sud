@@ -5,6 +5,7 @@ import SEOHead from "@/components/SEOHead";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import LandingReviews from "@/components/LandingReviews";
+import LandingFAQ from "@/components/LandingFAQ";
 
 const LandingDesinfection = () => {
   const scrollToContact = () => {
@@ -227,6 +228,18 @@ const LandingDesinfection = () => {
             </div>
           </div>
         </section>
+
+        {/* FAQ */}
+        <LandingFAQ
+          items={[
+            { question: "Qu'est-ce qu'un logement insalubre ?", answer: "C'est un logement présentant des risques sanitaires : accumulation de déchets, infestations, moisissures, odeurs persistantes. On intervient pour le remettre en état." },
+            { question: "Quels produits utilisez-vous ?", answer: "Des produits professionnels homologués, adaptés à chaque type de contamination. On respecte les dosages et les temps de sécurité." },
+            { question: "Combien de temps faut-il attendre avant de réoccuper le logement ?", answer: "Ça dépend du traitement. Pour une désinfection standard, quelques heures d'aération suffisent. On vous précise les délais sur place." },
+            { question: "Traitez-vous aussi les nuisibles ?", answer: "Oui. Cafards, punaises de lit, rongeurs, mites. On fait un diagnostic puis un traitement ciblé pour une élimination durable." },
+            { question: "Intervenez-vous en urgence ?", answer: "Oui, 7j/7. En cas de risque sanitaire immédiat, appelez-nous directement au 07 67 13 54 58." },
+            { question: "Comment obtenir un devis ?", answer: "Envoyez-nous quelques photos et décrivez la situation par téléphone ou mail. On vous répond avec un devis gratuit et sans engagement." },
+          ]}
+        />
 
         {/* CTA final */}
         <section className="py-16 sm:py-20 bg-gradient-to-b from-primary/5 to-primary/10">

@@ -5,6 +5,7 @@ import SEOHead from "@/components/SEOHead";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import LandingReviews from "@/components/LandingReviews";
+import LandingFAQ from "@/components/LandingFAQ";
 
 const LandingDebarras = () => {
   const scrollToContact = () => {
@@ -215,6 +216,18 @@ const LandingDebarras = () => {
             </div>
           </div>
         </section>
+
+        {/* FAQ */}
+        <LandingFAQ
+          items={[
+            { question: "Quels types de biens débarrassez-vous ?", answer: "Maisons, appartements, caves, greniers, garages, box de stockage, bureaux et commerces. On vide tout, peu importe le volume." },
+            { question: "Faites-vous du tri sélectif ?", answer: "Oui. On trie sur place et on oriente vers le recyclage, la déchetterie ou les associations quand c'est possible." },
+            { question: "Dois-je être présent pendant le débarras ?", answer: "Non, vous n'êtes pas obligé. Beaucoup de clients nous confient les clés, notamment pour des successions ou des expulsions. On fait un compte-rendu photos à la fin." },
+            { question: "Combien coûte un débarras ?", answer: "Le prix dépend du volume, de l'accessibilité et du temps nécessaire. Envoyez-nous quelques photos, on vous établit un devis gratuit et précis." },
+            { question: "Intervenez-vous en urgence ?", answer: "Oui, 7j/7. Pour une expulsion imminente ou une succession urgente, appelez-nous au 07 67 13 54 58." },
+            { question: "Comment obtenir un devis ?", answer: "Par téléphone ou mail, avec quelques photos du lieu. On vous répond rapidement avec un devis gratuit et sans engagement." },
+          ]}
+        />
 
         {/* CTA final */}
         <section className="py-16 sm:py-20 bg-gradient-to-b from-primary/5 to-primary/10">
