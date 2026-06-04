@@ -246,6 +246,18 @@ const LandingDiogene = () => {
           </div>
         </section>
 
+        {/* FAQ */}
+        <LandingFAQ
+          items={[
+            { question: "Qu'est-ce que le syndrome de Diogène ?", answer: "C'est une accumulation excessive d'objets et de déchets dans un logement, souvent accompagnée d'un délaissement de l'hygiène. C'est une situation de santé publique reconnue." },
+            { question: "L'intervention est-elle discrète ?", answer: "Totalement. Véhicules banalisés, pas de marquage, pas d'uniforme voyant. On intervient comme des ouvriers classiques pour préserver votre vie privée." },
+            { question: "La personne concernée doit-elle partir pendant l'intervention ?", answer: "Non, elle peut rester si elle le souhaite. Notre équipe est formée pour intervenir avec bienveillance et sans jugement. On respecte les décisions de la personne sur ses affaires." },
+            { question: "Combien de temps dure une intervention ?", answer: "De quelques heures à plusieurs jours selon le volume et la surface. On vous donne une estimation précise lors du devis." },
+            { question: "Qui peut contacter vos services ?", answer: "La personne elle-même, sa famille, un proche aidant, un mandataire judiciaire, un notaire, un bailleur ou les services sociaux." },
+            { question: "Comment obtenir un devis ?", answer: "Envoyez-nous quelques photos du logement et décrivez la situation par téléphone ou mail. On vous répond rapidement avec un devis gratuit et sans engagement." },
+          ]}
+        />
+
         <Contact />
         <Footer />
       </main>
