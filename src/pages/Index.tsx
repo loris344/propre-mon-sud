@@ -52,7 +52,7 @@ const Index = () => {
             items={[
               {
                 question: "Quel est le prix d'une intervention et comment est-il calculé ?",
-                answer: "Pour une intervention complète en lieu insalubre ou syndrome de Diogène (débarras + nettoyage + désinfection), le tarif varie de 1 500 € à 5 000 € en moyenne. Pour un simple débarras (sans insalubrité, sans désinfection), les tarifs sont nettement inférieurs et calculés au volume. L'évaluation se fait gratuitement sur description, photos et vidéos. Le prix est calculé selon : le volume d'encombrants à débarrasser et à évacuer (m³), les frais de déchetterie professionnelle, la superficie, le niveau d'insalubrité (besoin de désinfection/désinsectisation) et l'accessibilité du logement."
+                answer: "Pour une intervention complète en lieu insalubre ou syndrome de Diogène (débarras + nettoyage + désinfection), le tarif varie de 1 500 € à 5 000 € en moyenne. Pour un simple débarras (sans insalubrité, sans désinfection), les tarifs sont différents et calculés au volume. L'évaluation se fait gratuitement sur description, photos et vidéos. Le prix est calculé selon : le volume d'encombrants à débarrasser et à évacuer (m³), les frais de déchetterie professionnelle, la superficie, le niveau d'insalubrité (besoin de désinfection/désinsectisation) et l'accessibilité du logement."
               },
               {
                 question: "Comment se déroule le tri des papiers importants et des objets de valeur ?",
