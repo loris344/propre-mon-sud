@@ -66,6 +66,10 @@ function listHtmlFiles(dir, files = []) {
   return files;
 }
 
+function countMatches(html, pattern) {
+  return [...html.matchAll(pattern)].length;
+}
+
 export function verifySeoOutput() {
   const robotsPath = path.join(BUILD_DIR, 'robots.txt');
   const sourceRobotsPath = path.join(PUBLIC_DIR, 'robots.txt');
@@ -141,8 +145,14 @@ export function verifySeoOutput() {
     const html = fs.readFileSync(htmlPath, 'utf8');
     if (/name="robots"\s+content="noindex/i.test(html)) continue;
 
+    const relativePath = path.relative(BUILD_DIR, htmlPath);
+    if (countMatches(html, /<title>[\s\S]*?<\/title>/gi) !== 1) fail(`nombre de title invalide: ${relativePath}`);
+    if (countMatches(html, /<meta\s+name="description"[^>]*>/gi) !== 1) fail(`nombre de meta description invalide: ${relativePath}`);
+    if (countMatches(html, /<meta\s+name="robots"[^>]*>/gi) !== 1) fail(`nombre de meta robots invalide: ${relativePath}`);
+    if (countMatches(html, /<link\s+rel="canonical"[^>]*>/gi) !== 1) fail(`nombre de canonical invalide: ${relativePath}`);
+
     const canonical = html.match(/<link\s+rel="canonical"\s+href="(https:\/\/sosnettoyagediogene\.fr[^"]+)"/i)?.[1];
-    if (!canonical) fail(`page indexable sans canonical: ${path.relative(BUILD_DIR, htmlPath)}`);
+    if (!canonical) fail(`page indexable sans canonical: ${relativePath}`);
 
     const route = new URL(canonical).pathname === '/' ? '/' : new URL(canonical).pathname.replace(/\/$/, '');
     if (!sitemapRouteSet.has(route)) {
