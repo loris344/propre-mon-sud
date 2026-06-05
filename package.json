@@ -5,7 +5,9 @@
   "type": "module",
   "homepage": "https://sosnettoyagediogene.fr",
   "scripts": {
+    "predev": "node scripts/update-sitemap.js",
     "dev": "vite",
+    "prebuild": "node scripts/update-sitemap.js",
     "build": "vite build && node scripts/build-simple.js",
     "build:dev": "vite build --mode development && node scripts/build-simple.js",
     "lint": "eslint .",
