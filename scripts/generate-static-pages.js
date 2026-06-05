@@ -217,7 +217,7 @@ function generatePage(route, meta) {
 }
 
 // Fonction principale
-function generateStaticPages() {
+export function generateStaticPages() {
   console.log('🚀 Génération des pages statiques avec meta tags...');
   
   if (!fs.existsSync(BUILD_DIR)) {
