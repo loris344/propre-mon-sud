@@ -15,11 +15,11 @@ const __dirname = path.dirname(__filename);
 
 const BUILD_DIR = path.join(__dirname, '../dist');
 
-// Copie du sitemap depuis public/ vers dist/ sans réécriture automatique
-function copySitemap() {
+// Régénère le sitemap depuis pagesMeta (source unique de vérité) puis copie vers dist.
+async function regenerateSitemap() {
+  await import('./update-sitemap.js');
   const publicSitemap = path.join(__dirname, '../public/sitemap.xml');
   const distSitemap = path.join(BUILD_DIR, 'sitemap.xml');
-  
   if (fs.existsSync(publicSitemap)) {
     fs.copyFileSync(publicSitemap, distSitemap);
     return true;
@@ -53,7 +53,7 @@ function copyLlmsTxt() {
 }
 
 // Fonction principale
-function build() {
+async function build() {
   console.log('🚀 Build simplifié de SOS Nettoyage Diogène...');
   
   // Créer le dossier dist s'il n'existe pas
@@ -61,11 +61,11 @@ function build() {
     fs.mkdirSync(BUILD_DIR, { recursive: true });
   }
   
-  // Copier le sitemap depuis public/ vers dist/
-  if (copySitemap()) {
-    console.log('✅ Sitemap copié depuis public/');
+  // Régénérer le sitemap depuis pagesMeta puis copier
+  if (await regenerateSitemap()) {
+    console.log('✅ Sitemap régénéré et copié dans dist/');
   } else {
-    console.log('❌ Erreur: sitemap.xml non trouvé dans public/');
+    console.log('❌ Erreur: sitemap.xml introuvable après génération');
   }
   
   // Copier le robots.txt depuis public/ vers dist/ pour éviter toute divergence entre le repo et la version publiée
@@ -96,20 +96,19 @@ function build() {
 }
 
 // Exécuter le build
-build();
-
-const indexPath = path.join(BUILD_DIR, 'index.html');
-
-if (!fs.existsSync(indexPath)) {
-  console.log('ℹ️ Pages statiques ignorées: dist/index.html absent, sitemap/robots/llms seulement copiés');
-  process.exit(0);
-}
-
-// Générer les pages statiques avec meta tags uniquement après un vrai vite build
-import('./generate-static-pages.js').then(() => {
+build().then(async () => {
+  const indexPath = path.join(BUILD_DIR, 'index.html');
+  if (!fs.existsSync(indexPath)) {
+    console.log('ℹ️ Pages statiques ignorées: dist/index.html absent');
+    return;
+  }
+  const mod = await import('./generate-static-pages.js');
+  if (typeof mod.generateStaticPages === 'function') {
+    mod.generateStaticPages();
+  }
   console.log('✅ Pages statiques générées');
   verifySeoOutput();
 }).catch(err => {
-  console.error('❌ Erreur génération pages statiques:', err);
+  console.error('❌ Erreur build:', err);
   process.exit(1);
 });
