@@ -58,18 +58,6 @@ export const pagesMeta = {
     description: "Partenariat maisons de retraite et EHPAD. -20% sur nos services de nettoyage pour vos résidents. Intervention prioritaire.",
     canonical: "/partenariat-maisons-retraite"
   },
-  '/tous-nos-services': {
-    title: "Tous Nos Services | SOS Nettoyage Diogène",
-    description: "Découvrez tous nos services : syndrome de Diogène, nettoyage après décès, débarras gros volumes, désinfection. Intervention dans le Sud de la France.",
-    canonical: "/tous-nos-services",
-    noIndex: true
-  },
-  '/prix-diogene': {
-    title: "Prix Nettoyage Diogène | Tarifs & Devis Gratuit",
-    description: "Tarifs nettoyage syndrome de Diogène. Devis gratuit et transparent. Expertise, discrétion et approche humaine dans le Sud de la France.",
-    canonical: "/prix-diogene",
-    noIndex: true
-  },
   '/mentions-legales': {
     title: "Mentions Légales | SOS Nettoyage Diogène",
     description: "Mentions légales du site SOS Nettoyage Diogène. Informations sur l'éditeur, l'hébergeur et les conditions d'utilisation.",
