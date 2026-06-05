@@ -204,9 +204,6 @@ const SyndromeDiogeneCity: React.FC = () => {
           <div className="bg-card p-8 rounded-lg shadow-lg border border-border/50">
             <h2 className="text-2xl font-bold text-foreground mb-6">Nos Autres Services</h2>
             <ul className="space-y-2">
-              <li><Link to="/nettoyage-apres-deces" className="text-primary hover:underline">Nettoyage après décès</Link></li>
-              <li><Link to="/desinfection-insalubrite" className="text-primary hover:underline">Désinfection insalubrité</Link></li>
-              <li><Link to="/debarras-gros-volumes" className="text-primary hover:underline">Débarras gros volumes</Link></li>
             </ul>
           </div>
 

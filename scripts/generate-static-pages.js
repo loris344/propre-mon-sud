@@ -48,26 +48,6 @@ const pagesMeta = {
     description: "15 conseils d'experts pour prévenir l'insalubrité : entretien, organisation, signes d'alerte. Guide pratique avec checklist gratuite.",
     canonical: "/blog/prevention-insalubrite-conseils"
   },
-  '/nettoyage-apres-deces': {
-    title: "Nettoyage Après Décès | Service Discret 7j/7",
-    description: "Nettoyage après décès discret et respectueux. Protocoles sanitaires stricts, intervention 7j/7 dans le Sud de la France. Devis gratuit.",
-    canonical: "/nettoyage-apres-deces"
-  },
-  '/nettoyage-appartement-apres-deces': {
-    title: "Nettoyage Appartement Après Décès | Pro & Discret",
-    description: "Service de nettoyage d'appartement après décès. Bio-nettoyage, désinfection et remise en état avec protocoles sanitaires stricts.",
-    canonical: "/nettoyage-appartement-apres-deces"
-  },
-  '/debarras-gros-volumes': {
-    title: "Débarras Gros Volumes | Évacuation Pro Sud France",
-    description: "Débarras et évacuation gros volumes : greniers, caves, garages, successions. Tri et recyclage respectueux de l'environnement. Devis gratuit 7j/7.",
-    canonical: "/debarras-gros-volumes"
-  },
-  '/desinfection-insalubrite': {
-    title: "Désinfection & Insalubrité | Remise en État Pro",
-    description: "Désinfection et remise en état de logements insalubres. Intervention professionnelle avec protocoles sanitaires stricts. Devis gratuit 7j/7.",
-    canonical: "/desinfection-insalubrite"
-  },
   '/partenariat-mjpm': {
     title: "Partenariat MJPM | -20% Nettoyage Spécialisé",
     description: "Rejoignez notre réseau partenaire MJPM. -20% sur nos services de nettoyage pour vos protégés. Intervention prioritaire dans le Sud de la France.",
