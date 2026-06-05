@@ -18,8 +18,6 @@ const PreventionInsalubriteArticle = lazy(() => import("./pages/articles/Prevent
 const ServicePage = lazy(() => import("./components/ServicePage"));
 const MJPMPartnership = lazy(() => import("./pages/MJPMPartnership"));
 const NursingHomePartnership = lazy(() => import("./pages/NursingHomePartnership"));
-const TousNosServices = lazy(() => import("./pages/TousNosServices"));
-const PrixDiogene = lazy(() => import("./pages/PrixDiogene"));
 const SyndromeDiogeneCity = lazy(() => import("./pages/SyndromeDiogeneCity"));
 const MentionsLegales = lazy(() => import("./pages/MentionsLegales"));
 const PolitiqueConfidentialite = lazy(() => import("./pages/PolitiqueConfidentialite"));
@@ -82,12 +80,8 @@ const App = () => (
             {/* Articles dynamiques (CMS) — match en dernier après les routes statiques */}
             <Route path="/blog/:slug" element={<ArticleDynamic />} />
 
-            {/* Pages de services */}
-            <Route path="/tous-nos-services" element={<TousNosServices />} />
-
             {/* Pages ville dynamiques */}
             <Route path="/nettoyage-syndrome-diogene-:ville" element={<SyndromeDiogeneCity />} />
-            <Route path="/prix-diogene" element={<PrixDiogene />} />
 
             {/* Services génériques */}
 
