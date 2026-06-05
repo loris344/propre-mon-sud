@@ -17,7 +17,7 @@ const BUILD_DIR = path.join(__dirname, '../dist');
 let baseHTML = null;
 
 // Meta tags par page — titres <60 chars, descriptions <160 chars, PAS de keywords
-const pagesMeta = {
+export const pagesMeta = {
   '/': {
     title: "SOS Nettoyage Diogène | Nettoyage & Débarras Sud France",
     description: "Nettoyage syndrome de Diogène, débarras, insalubrité et après décès. Intervention discrète à Montpellier, Marseille et Sud France.",
@@ -249,5 +249,8 @@ function generateStaticPages() {
   console.log('🎉 Génération terminée !');
 }
 
-// Exécuter
-generateStaticPages();
+// Exécuter uniquement si lancé directement (pas lors d'un import pour réutiliser pagesMeta)
+const isMain = process.argv[1] && fileURLToPath(import.meta.url) === path.resolve(process.argv[1]);
+if (isMain) {
+  generateStaticPages();
+}
