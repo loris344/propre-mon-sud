@@ -90,22 +90,11 @@ export const SITE_PAGES: SitePageEntry[] = [
   makePage("/tous-nos-services", "Hub principal", "Hub services", "Statique", "/", ["/nettoyage-apres-deces", "/debarras-gros-volumes", "/desinfection-insalubrite"]),
   makePage("/blog", "Hub principal", "Hub éditorial", "Statique", "/", STATIC_ARTICLES.map((article) => article.path)),
 
-  makePage("/nettoyage-apres-deces", "Services principaux", "Page service", "Blocs éditables", "/tous-nos-services", ["/nettoyage-appartement-apres-deces", "/nettoyage-apres-deces-marseille", "/nettoyage-apres-deces-montpellier", "/nettoyage-apres-deces-nimes"]),
+  makePage("/nettoyage-apres-deces", "Services principaux", "Page service", "Blocs éditables", "/tous-nos-services", ["/nettoyage-appartement-apres-deces"]),
   makePage("/nettoyage-appartement-apres-deces", "Services principaux", "Page service", "Statique", "/nettoyage-apres-deces", ["/nettoyage-apres-deces", "/desinfection-insalubrite"]),
-  makePage("/debarras-gros-volumes", "Services principaux", "Page service", "Blocs éditables", "/tous-nos-services", ["/debarras-gros-volumes-montpellier", "/nettoyage-apres-deces", "/desinfection-insalubrite"]),
-  makePage("/desinfection-insalubrite", "Services principaux", "Page service", "Blocs éditables", "/tous-nos-services", ["/desinfection-insalubrite-montpellier", "/nettoyage-insalubre-montpellier", "/nettoyage-insalubre-nimes"]),
+  makePage("/debarras-gros-volumes", "Services principaux", "Page service", "Blocs éditables", "/tous-nos-services", ["/nettoyage-apres-deces", "/desinfection-insalubrite"]),
+  makePage("/desinfection-insalubrite", "Services principaux", "Page service", "Blocs éditables", "/tous-nos-services", ["/nettoyage-apres-deces", "/debarras-gros-volumes"]),
 
-  makePage("/nettoyage-apres-deces-marseille", "Services locaux", "Service local", "Statique", "/nettoyage-apres-deces", ["/entreprise-nettoyage-marseille", "/nettoyage-syndrome-diogene-marseille"]),
-  makePage("/debarras-gros-volumes-montpellier", "Services locaux", "Service local", "Statique", "/debarras-gros-volumes", ["/entreprise-nettoyage-montpellier", "/nettoyage-syndrome-diogene-montpellier"]),
-  makePage("/desinfection-insalubrite-montpellier", "Services locaux", "Service local", "Statique", "/desinfection-insalubrite", ["/nettoyage-insalubre-montpellier", "/entreprise-nettoyage-montpellier"]),
-  makePage("/nettoyage-apres-deces-montpellier", "Services locaux", "Service local", "Statique", "/nettoyage-apres-deces", ["/entreprise-nettoyage-montpellier", "/desinfection-insalubrite-montpellier"]),
-  makePage("/nettoyage-apres-deces-nimes", "Services locaux", "Service local", "Statique", "/nettoyage-apres-deces", ["/nettoyage-syndrome-diogene-nimes", "/nettoyage-insalubre-nimes"]),
-  makePage("/nettoyage-insalubre-montpellier", "Services locaux", "Service local", "Statique", "/desinfection-insalubrite", ["/desinfection-insalubrite-montpellier", "/nettoyage-syndrome-diogene-montpellier"]),
-  makePage("/nettoyage-insalubre-nimes", "Services locaux", "Service local", "Statique", "/desinfection-insalubrite", ["/nettoyage-syndrome-diogene-nimes", "/nettoyage-apres-deces-nimes"]),
-
-  makePage("/entreprise-nettoyage-montpellier", "Autorité locale", "Page entreprise", "Statique", "/", ["/nettoyage-syndrome-diogene-montpellier", "/meilleures-societes-nettoyage-montpellier", "/prix-diogene"]),
-  makePage("/entreprise-nettoyage-marseille", "Autorité locale", "Page entreprise", "Statique", "/", ["/nettoyage-syndrome-diogene-marseille", "/nettoyage-apres-deces-marseille", "/prix-diogene"]),
-  makePage("/meilleures-societes-nettoyage-montpellier", "Autorité locale", "Comparatif", "Statique", "/entreprise-nettoyage-montpellier", ["/entreprise-nettoyage-montpellier", "/prix-diogene"]),
   makePage("/prix-diogene", "Autorité locale", "Tarifs", "Statique", "/", ["/nettoyage-syndrome-diogene-montpellier", "/nettoyage-syndrome-diogene-marseille"]),
 
   ...STATIC_ARTICLES.map((article) => makePage(article.path, "Articles statiques", "Article blog", "Statique", "/blog", ["/blog", "/tous-nos-services"])),

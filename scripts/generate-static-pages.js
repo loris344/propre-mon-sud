@@ -108,30 +108,10 @@ const pagesMeta = {
     description: "Intervention discrète 7j/7 à Marseille : débarras gros volumes, tri, désinfection et remise en état pour syndrome de Diogène. Devis gratuit.",
     canonical: "/nettoyage-syndrome-diogene-marseille"
   },
-  '/nettoyage-apres-deces-marseille': {
-    title: "Nettoyage Après Décès Marseille | Guide 2025",
-    description: "Guide complet nettoyage après décès à Marseille : protocoles sanitaires, délais, coûts. Intervention 24h/24.",
-    canonical: "/nettoyage-apres-deces-marseille"
-  },
   '/tous-nos-services': {
     title: "Tous Nos Services | SOS Nettoyage Diogène",
     description: "Découvrez tous nos services : syndrome de Diogène, nettoyage après décès, débarras gros volumes, désinfection. Intervention dans le Sud de la France.",
     canonical: "/tous-nos-services"
-  },
-  '/entreprise-nettoyage-montpellier': {
-    title: "Entreprise Nettoyage Montpellier | SOS Diogène",
-    description: "Entreprise de nettoyage professionnel à Montpellier. Syndrome de Diogène, nettoyage après décès, débarras, désinfection. Devis gratuit 7j/7.",
-    canonical: "/entreprise-nettoyage-montpellier"
-  },
-  '/entreprise-nettoyage-marseille': {
-    title: "Entreprise Nettoyage Marseille | SOS Diogène",
-    description: "Entreprise de nettoyage professionnel à Marseille. Syndrome de Diogène, nettoyage après décès, débarras, désinfection. Devis gratuit 7j/7.",
-    canonical: "/entreprise-nettoyage-marseille"
-  },
-  '/meilleures-societes-nettoyage-montpellier': {
-    title: "Top 10 Sociétés Nettoyage Montpellier 2025",
-    description: "Classement des meilleures entreprises de nettoyage à Montpellier. SOS Nettoyage Diogène, Au'clean, Nova Clean et plus.",
-    canonical: "/meilleures-societes-nettoyage-montpellier"
   },
   '/prix-diogene': {
     title: "Prix Nettoyage Diogène | Tarifs & Devis Gratuit",
@@ -147,37 +127,6 @@ const pagesMeta = {
     title: "Politique de Confidentialité | SOS Nettoyage Diogène",
     description: "Politique de confidentialité et protection des données personnelles de SOS Nettoyage Diogène.",
     canonical: "/politique-confidentialite"
-  },
-  // Pages services par ville
-  '/debarras-gros-volumes-montpellier': {
-    title: "Débarras Gros Volumes Montpellier | Pro 7j/7",
-    description: "Service de débarras gros volumes à Montpellier. Évacuation rapide, tri et recyclage. Devis gratuit 7j/7.",
-    canonical: "/debarras-gros-volumes-montpellier"
-  },
-  '/desinfection-insalubrite-montpellier': {
-    title: "Désinfection Insalubrité Montpellier | Expert",
-    description: "Désinfection et remise en état de logements insalubres à Montpellier. Protocoles sanitaires stricts. Devis gratuit.",
-    canonical: "/desinfection-insalubrite-montpellier"
-  },
-  '/nettoyage-apres-deces-montpellier': {
-    title: "Nettoyage Après Décès Montpellier | Discret",
-    description: "Service de nettoyage après décès à Montpellier. Intervention respectueuse et discrète. Devis gratuit 7j/7.",
-    canonical: "/nettoyage-apres-deces-montpellier"
-  },
-  '/nettoyage-apres-deces-nimes': {
-    title: "Nettoyage Après Décès Nîmes | Service Discret",
-    description: "Service de nettoyage après décès à Nîmes. Intervention respectueuse et discrète dans le Gard. Devis gratuit 7j/7.",
-    canonical: "/nettoyage-apres-deces-nimes"
-  },
-  '/nettoyage-insalubre-montpellier': {
-    title: "Nettoyage Insalubre Montpellier | Expert 7j/7",
-    description: "Nettoyage de logement insalubre à Montpellier. Intervention professionnelle et discrète. Devis gratuit.",
-    canonical: "/nettoyage-insalubre-montpellier"
-  },
-  '/nettoyage-insalubre-nimes': {
-    title: "Nettoyage Insalubre Nîmes | Expert Gardois",
-    description: "Nettoyage de logement insalubre à Nîmes et dans le Gard. Intervention professionnelle et discrète. Devis gratuit.",
-    canonical: "/nettoyage-insalubre-nimes"
   },
   '/404': {
     title: "Page Non Trouvée | SOS Nettoyage Diogène",

@@ -22,11 +22,7 @@ const DebarrasGrosVolumes = lazy(() => import("./pages/DebarrasGrosVolumes"));
 const NettoyageApresDeces = lazy(() => import("./pages/NettoyageApresDeces"));
 const NettoyageAppartementApresDeces = lazy(() => import("./pages/NettoyageAppartementApresDeces"));
 const DesinfectionInsalubrite = lazy(() => import("./pages/DesinfectionInsalubrite"));
-const NettoyageApresDecesMarseille = lazy(() => import("./pages/NettoyageApresDecesMarseille"));
 const TousNosServices = lazy(() => import("./pages/TousNosServices"));
-const EntrepriseNettoyageMontpellier = lazy(() => import("./pages/EntrepriseNettoyageMontpellier"));
-const EntrepriseNettoyageMarseille = lazy(() => import("./pages/EntrepriseNettoyageMarseille"));
-const MeilleuresSocietesNettoyageMontpellier = lazy(() => import("./pages/MeilleuresSocietesNettoyageMontpellier"));
 const PrixDiogene = lazy(() => import("./pages/PrixDiogene"));
 const SyndromeDiogeneCity = lazy(() => import("./pages/SyndromeDiogeneCity"));
 const MentionsLegales = lazy(() => import("./pages/MentionsLegales"));
@@ -99,21 +95,9 @@ const App = () => (
 
             {/* Pages ville dynamiques */}
             <Route path="/nettoyage-syndrome-diogene-:ville" element={<SyndromeDiogeneCity />} />
-            <Route path="/nettoyage-apres-deces-marseille" element={<NettoyageApresDecesMarseille />} />
-
-            {/* Pages entreprise */}
-            <Route path="/entreprise-nettoyage-montpellier" element={<EntrepriseNettoyageMontpellier />} />
-            <Route path="/entreprise-nettoyage-marseille" element={<EntrepriseNettoyageMarseille />} />
-            <Route path="/meilleures-societes-nettoyage-montpellier" element={<MeilleuresSocietesNettoyageMontpellier />} />
             <Route path="/prix-diogene" element={<PrixDiogene />} />
 
             {/* Services génériques */}
-            <Route path="/debarras-gros-volumes-montpellier" element={<ServicePage />} />
-            <Route path="/desinfection-insalubrite-montpellier" element={<ServicePage />} />
-            <Route path="/nettoyage-apres-deces-montpellier" element={<ServicePage />} />
-            <Route path="/nettoyage-apres-deces-nimes" element={<ServicePage />} />
-            <Route path="/nettoyage-insalubre-montpellier" element={<ServicePage />} />
-            <Route path="/nettoyage-insalubre-nimes" element={<ServicePage />} />
 
             {/* Partenariats */}
             <Route path="/partenariat-mjpm" element={<MJPMPartnership />} />
