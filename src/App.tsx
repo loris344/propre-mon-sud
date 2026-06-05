@@ -18,10 +18,6 @@ const PreventionInsalubriteArticle = lazy(() => import("./pages/articles/Prevent
 const ServicePage = lazy(() => import("./components/ServicePage"));
 const MJPMPartnership = lazy(() => import("./pages/MJPMPartnership"));
 const NursingHomePartnership = lazy(() => import("./pages/NursingHomePartnership"));
-const DebarrasGrosVolumes = lazy(() => import("./pages/DebarrasGrosVolumes"));
-const NettoyageApresDeces = lazy(() => import("./pages/NettoyageApresDeces"));
-const NettoyageAppartementApresDeces = lazy(() => import("./pages/NettoyageAppartementApresDeces"));
-const DesinfectionInsalubrite = lazy(() => import("./pages/DesinfectionInsalubrite"));
 const TousNosServices = lazy(() => import("./pages/TousNosServices"));
 const PrixDiogene = lazy(() => import("./pages/PrixDiogene"));
 const SyndromeDiogeneCity = lazy(() => import("./pages/SyndromeDiogeneCity"));
@@ -87,10 +83,6 @@ const App = () => (
             <Route path="/blog/:slug" element={<ArticleDynamic />} />
 
             {/* Pages de services */}
-            <Route path="/debarras-gros-volumes" element={<DebarrasGrosVolumes />} />
-            <Route path="/nettoyage-apres-deces" element={<NettoyageApresDeces />} />
-            <Route path="/nettoyage-appartement-apres-deces" element={<NettoyageAppartementApresDeces />} />
-            <Route path="/desinfection-insalubrite" element={<DesinfectionInsalubrite />} />
             <Route path="/tous-nos-services" element={<TousNosServices />} />
 
             {/* Pages ville dynamiques */}

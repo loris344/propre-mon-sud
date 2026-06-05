@@ -132,24 +132,6 @@ const Footer = () => {
               >
                 Politique de confidentialité
               </Link>
-              <Link 
-                to="/debarras-gros-volumes"
-                className="text-primary hover:text-primary/80 transition-colors"
-              >
-                Débarras
-              </Link>
-              <Link 
-                to="/nettoyage-apres-deces"
-                className="text-primary hover:text-primary/80 transition-colors"
-              >
-                Après Décès
-              </Link>
-              <Link 
-                to="/desinfection-insalubrite"
-                className="text-primary hover:text-primary/80 transition-colors"
-              >
-                Désinfection
-              </Link>
             </div>
           </div>
         </div>

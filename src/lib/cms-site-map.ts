@@ -86,21 +86,16 @@ export const STATIC_ARTICLES: StaticArticleEntry[] = [
 ];
 
 export const SITE_PAGES: SitePageEntry[] = [
-  makePage("/", "Hub principal", "Accueil", "Blocs éditables", undefined, ["/tous-nos-services", "/blog", "/nettoyage-apres-deces", "/debarras-gros-volumes", "/desinfection-insalubrite"]),
-  makePage("/tous-nos-services", "Hub principal", "Hub services", "Statique", "/", ["/nettoyage-apres-deces", "/debarras-gros-volumes", "/desinfection-insalubrite"]),
+  makePage("/", "Hub principal", "Accueil", "Blocs éditables", undefined, ["/tous-nos-services", "/blog"]),
+  makePage("/tous-nos-services", "Hub principal", "Hub services", "Statique", "/", []),
   makePage("/blog", "Hub principal", "Hub éditorial", "Statique", "/", STATIC_ARTICLES.map((article) => article.path)),
-
-  makePage("/nettoyage-apres-deces", "Services principaux", "Page service", "Blocs éditables", "/tous-nos-services", ["/nettoyage-appartement-apres-deces"]),
-  makePage("/nettoyage-appartement-apres-deces", "Services principaux", "Page service", "Statique", "/nettoyage-apres-deces", ["/nettoyage-apres-deces", "/desinfection-insalubrite"]),
-  makePage("/debarras-gros-volumes", "Services principaux", "Page service", "Blocs éditables", "/tous-nos-services", ["/nettoyage-apres-deces", "/desinfection-insalubrite"]),
-  makePage("/desinfection-insalubrite", "Services principaux", "Page service", "Blocs éditables", "/tous-nos-services", ["/nettoyage-apres-deces", "/debarras-gros-volumes"]),
 
   makePage("/prix-diogene", "Autorité locale", "Tarifs", "Statique", "/", ["/nettoyage-syndrome-diogene-montpellier", "/nettoyage-syndrome-diogene-marseille"]),
 
   ...STATIC_ARTICLES.map((article) => makePage(article.path, "Articles statiques", "Article blog", "Statique", "/blog", ["/blog", "/tous-nos-services"])),
 
-  makePage("/partenariat-mjpm", "Partenariats", "Page B2B", "Statique", "/", ["/tous-nos-services", "/nettoyage-apres-deces"]),
-  makePage("/partenariat-maisons-retraite", "Partenariats", "Page B2B", "Statique", "/", ["/tous-nos-services", "/nettoyage-apres-deces"]),
+  makePage("/partenariat-mjpm", "Partenariats", "Page B2B", "Statique", "/", ["/tous-nos-services"]),
+  makePage("/partenariat-maisons-retraite", "Partenariats", "Page B2B", "Statique", "/", ["/tous-nos-services"]),
 
   makePage("/landing/nettoyage-syndrome-diogene", "Landing Ads", "Landing Google Ads", "NoIndex", "/", []),
   makePage("/landing/debarras-gros-volumes", "Landing Ads", "Landing Google Ads", "NoIndex", "/", []),
@@ -108,7 +103,7 @@ export const SITE_PAGES: SitePageEntry[] = [
   makePage("/landing/nettoyage-apres-deces", "Landing Ads", "Landing Google Ads", "NoIndex", "/", []),
   makePage("/landing/traitement-odeurs-nuisibles", "Landing Ads", "Landing Google Ads", "NoIndex", "/", []),
 
-  makePage("/protocole-sanitaire", "Documents pro", "Fiche protocole CCAS / MJPM", "NoIndex", "/", ["/desinfection-insalubrite", "/nettoyage-apres-deces"]),
+  makePage("/protocole-sanitaire", "Documents pro", "Fiche protocole CCAS / MJPM", "NoIndex", "/", []),
 
   makePage("/mentions-legales", "Technique", "Page légale", "Statique", "/", []),
   makePage("/politique-confidentialite", "Technique", "Page légale", "Statique", "/", []),
