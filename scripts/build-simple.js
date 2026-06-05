@@ -98,7 +98,14 @@ function build() {
 // Exécuter le build
 build();
 
-// Générer les pages statiques avec meta tags
+const indexPath = path.join(BUILD_DIR, 'index.html');
+
+if (!fs.existsSync(indexPath)) {
+  console.log('ℹ️ Pages statiques ignorées: dist/index.html absent, sitemap/robots/llms seulement copiés');
+  process.exit(0);
+}
+
+// Générer les pages statiques avec meta tags uniquement après un vrai vite build
 import('./generate-static-pages.js').then(() => {
   console.log('✅ Pages statiques générées');
   verifySeoOutput();
