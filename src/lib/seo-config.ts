@@ -96,18 +96,6 @@ export const SEO_CONFIGS: Record<string, SEOConfig> = {
     canonical: "/nettoyage-syndrome-diogene-marseille"
   },
 
-  '/tous-nos-services': {
-    title: "Tous Nos Services | SOS Nettoyage Diogène",
-    description: "Découvrez tous nos services : syndrome de Diogène, nettoyage après décès, débarras gros volumes, désinfection. Intervention dans le Sud de la France.",
-    canonical: "/tous-nos-services"
-  },
-
-  '/prix-diogene': {
-    title: "Prix Nettoyage Diogène | Tarifs & Devis Gratuit",
-    description: "Tarifs nettoyage syndrome de Diogène. Devis gratuit et transparent. Expertise, discrétion et approche humaine dans le Sud de la France.",
-    canonical: "/prix-diogene"
-  },
-
   '/404': {
     title: "Page Non Trouvée | SOS Nettoyage Diogène",
     description: "La page que vous recherchez n'existe pas. Retournez à l'accueil pour découvrir nos services.",

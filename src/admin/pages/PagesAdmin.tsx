@@ -63,7 +63,7 @@ export default function PagesAdmin() {
     kind: "Article blog CMS",
     status: "Éditable CMS",
     parent: "/blog",
-    links: ["/blog", "/tous-nos-services"],
+    links: ["/blog"],
   })), [articles]);
 
   const sitePages = useMemo(() => [...SITE_PAGES, ...cmsArticlePages], [cmsArticlePages]);
