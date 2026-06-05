@@ -86,16 +86,13 @@ export const STATIC_ARTICLES: StaticArticleEntry[] = [
 ];
 
 export const SITE_PAGES: SitePageEntry[] = [
-  makePage("/", "Hub principal", "Accueil", "Blocs éditables", undefined, ["/tous-nos-services", "/blog"]),
-  makePage("/tous-nos-services", "Hub principal", "Hub services", "Statique", "/", []),
+  makePage("/", "Hub principal", "Accueil", "Blocs éditables", undefined, ["/blog"]),
   makePage("/blog", "Hub principal", "Hub éditorial", "Statique", "/", STATIC_ARTICLES.map((article) => article.path)),
 
-  makePage("/prix-diogene", "Autorité locale", "Tarifs", "Statique", "/", ["/nettoyage-syndrome-diogene-montpellier", "/nettoyage-syndrome-diogene-marseille"]),
+  ...STATIC_ARTICLES.map((article) => makePage(article.path, "Articles statiques", "Article blog", "Statique", "/blog", ["/blog"])),
 
-  ...STATIC_ARTICLES.map((article) => makePage(article.path, "Articles statiques", "Article blog", "Statique", "/blog", ["/blog", "/tous-nos-services"])),
-
-  makePage("/partenariat-mjpm", "Partenariats", "Page B2B", "Statique", "/", ["/tous-nos-services"]),
-  makePage("/partenariat-maisons-retraite", "Partenariats", "Page B2B", "Statique", "/", ["/tous-nos-services"]),
+  makePage("/partenariat-mjpm", "Partenariats", "Page B2B", "Statique", "/", []),
+  makePage("/partenariat-maisons-retraite", "Partenariats", "Page B2B", "Statique", "/", []),
 
   makePage("/landing/nettoyage-syndrome-diogene", "Landing Ads", "Landing Google Ads", "NoIndex", "/", []),
   makePage("/landing/debarras-gros-volumes", "Landing Ads", "Landing Google Ads", "NoIndex", "/", []),
