@@ -1,40 +1,10 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 111,
-  "remaining": 679,
+  "done": 116,
+  "remaining": 674,
   "late": 0,
   "nextBatch": [
-    {
-      "url": "/nettoyage-diogene/gard/nimes/",
-      "slug": "nettoyage-diogene--gard--nimes",
-      "publishAt": "2026-07-01",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-diogene/haute-garonne/toulouse/",
-      "slug": "nettoyage-diogene--haute-garonne--toulouse",
-      "publishAt": "2026-07-01",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-diogene/herault/agde/",
-      "slug": "nettoyage-diogene--herault--agde",
-      "publishAt": "2026-07-01",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-diogene/herault/beziers/",
-      "slug": "nettoyage-diogene--herault--beziers",
-      "publishAt": "2026-07-01",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-diogene/herault/castelnau-le-lez/",
-      "slug": "nettoyage-diogene--herault--castelnau-le-lez",
-      "publishAt": "2026-07-01",
-      "needsUniqueDesc": false
-    },
     {
       "url": "/nettoyage-diogene/herault/clermont-l-herault/",
       "slug": "nettoyage-diogene--herault--clermont-l-herault",
@@ -63,6 +33,36 @@
       "url": "/nettoyage-diogene/herault/lattes/",
       "slug": "nettoyage-diogene--herault--lattes",
       "publishAt": "2026-07-02",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-diogene/herault/lodeve/",
+      "slug": "nettoyage-diogene--herault--lodeve",
+      "publishAt": "2026-07-02",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-diogene/herault/lunel/",
+      "slug": "nettoyage-diogene--herault--lunel",
+      "publishAt": "2026-07-02",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-diogene/herault/mauguio/",
+      "slug": "nettoyage-diogene--herault--mauguio",
+      "publishAt": "2026-07-02",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-diogene/herault/pezenas/",
+      "slug": "nettoyage-diogene--herault--pezenas",
+      "publishAt": "2026-07-03",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-diogene/herault/saint-jean-de-vedas/",
+      "slug": "nettoyage-diogene--herault--saint-jean-de-vedas",
+      "publishAt": "2026-07-03",
       "needsUniqueDesc": false
     }
   ],
@@ -1026,45 +1026,45 @@
       "slug": "nettoyage-diogene--gard--nimes",
       "type": "Page ville service",
       "publishAt": "2026-07-01",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 697
     },
     {
       "url": "/nettoyage-diogene/haute-garonne/toulouse/",
       "slug": "nettoyage-diogene--haute-garonne--toulouse",
       "type": "Page ville service",
       "publishAt": "2026-07-01",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 707
     },
     {
       "url": "/nettoyage-diogene/herault/agde/",
       "slug": "nettoyage-diogene--herault--agde",
       "type": "Page ville service",
       "publishAt": "2026-07-01",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 690
     },
     {
       "url": "/nettoyage-diogene/herault/beziers/",
       "slug": "nettoyage-diogene--herault--beziers",
       "type": "Page ville service",
       "publishAt": "2026-07-01",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 684
     },
     {
       "url": "/nettoyage-diogene/herault/castelnau-le-lez/",
       "slug": "nettoyage-diogene--herault--castelnau-le-lez",
       "type": "Page ville service",
       "publishAt": "2026-07-01",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 686
     },
     {
       "url": "/nettoyage-diogene/herault/clermont-l-herault/",
