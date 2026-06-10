@@ -1,40 +1,10 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 82,
-  "remaining": 708,
+  "done": 87,
+  "remaining": 703,
   "late": 0,
   "nextBatch": [
-    {
-      "url": "/nettoyage-apres-sinistre/herault/agde/",
-      "slug": "nettoyage-apres-sinistre--herault--agde",
-      "publishAt": "2026-06-27",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/nettoyage-apres-sinistre/herault/beziers/",
-      "slug": "nettoyage-apres-sinistre--herault--beziers",
-      "publishAt": "2026-06-27",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/nettoyage-apres-sinistre/herault/lunel/",
-      "slug": "nettoyage-apres-sinistre--herault--lunel",
-      "publishAt": "2026-06-27",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/nettoyage-apres-sinistre/herault/sete/",
-      "slug": "nettoyage-apres-sinistre--herault--sete",
-      "publishAt": "2026-06-27",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/nettoyage-apres-squat/bouches-du-rhone/aix-en-provence/",
-      "slug": "nettoyage-apres-squat--bouches-du-rhone--aix-en-provence",
-      "publishAt": "2026-06-27",
-      "needsUniqueDesc": false
-    },
     {
       "url": "/nettoyage-apres-squat/bouches-du-rhone/marseille/",
       "slug": "nettoyage-apres-squat--bouches-du-rhone--marseille",
@@ -63,6 +33,36 @@
       "url": "/nettoyage-apres-squat/herault/agde/",
       "slug": "nettoyage-apres-squat--herault--agde",
       "publishAt": "2026-06-28",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-squat/herault/beziers/",
+      "slug": "nettoyage-apres-squat--herault--beziers",
+      "publishAt": "2026-06-28",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-squat/herault/castelnau-le-lez/",
+      "slug": "nettoyage-apres-squat--herault--castelnau-le-lez",
+      "publishAt": "2026-06-28",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-squat/herault/clermont-l-herault/",
+      "slug": "nettoyage-apres-squat--herault--clermont-l-herault",
+      "publishAt": "2026-06-28",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-squat/herault/frontignan/",
+      "slug": "nettoyage-apres-squat--herault--frontignan",
+      "publishAt": "2026-06-28",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-squat/herault/gignac/",
+      "slug": "nettoyage-apres-squat--herault--gignac",
+      "publishAt": "2026-06-29",
       "needsUniqueDesc": false
     }
   ],
@@ -765,45 +765,45 @@
       "slug": "nettoyage-apres-sinistre--herault--agde",
       "type": "Page ville service",
       "publishAt": "2026-06-27",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 661
     },
     {
       "url": "/nettoyage-apres-sinistre/herault/beziers/",
       "slug": "nettoyage-apres-sinistre--herault--beziers",
       "type": "Page ville service",
       "publishAt": "2026-06-27",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 635
     },
     {
       "url": "/nettoyage-apres-sinistre/herault/lunel/",
       "slug": "nettoyage-apres-sinistre--herault--lunel",
       "type": "Page ville service",
       "publishAt": "2026-06-27",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 630
     },
     {
       "url": "/nettoyage-apres-sinistre/herault/sete/",
       "slug": "nettoyage-apres-sinistre--herault--sete",
       "type": "Page ville service",
       "publishAt": "2026-06-27",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 636
     },
     {
       "url": "/nettoyage-apres-squat/bouches-du-rhone/aix-en-provence/",
       "slug": "nettoyage-apres-squat--bouches-du-rhone--aix-en-provence",
       "type": "Page ville service",
       "publishAt": "2026-06-27",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 669
     },
     {
       "url": "/nettoyage-apres-squat/bouches-du-rhone/marseille/",
