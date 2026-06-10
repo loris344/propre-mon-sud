@@ -1,34 +1,10 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 126,
-  "remaining": 664,
+  "done": 130,
+  "remaining": 660,
   "late": 0,
   "nextBatch": [
-    {
-      "url": "/nettoyage-diogene/herault/serignan/",
-      "slug": "nettoyage-diogene--herault--serignan",
-      "publishAt": "2026-07-03",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-diogene/herault/sete/",
-      "slug": "nettoyage-diogene--herault--sete",
-      "publishAt": "2026-07-03",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-diogene/herault/valras-plage/",
-      "slug": "nettoyage-diogene--herault--valras-plage",
-      "publishAt": "2026-07-03",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-diogene/herault/vias/",
-      "slug": "nettoyage-diogene--herault--vias",
-      "publishAt": "2026-07-03",
-      "needsUniqueDesc": false
-    },
     {
       "url": "/nettoyage-insalubre/herault/agde/",
       "slug": "nettoyage-insalubre--herault--agde",
@@ -62,6 +38,30 @@
     {
       "url": "/nettoyage-insalubre/herault/bessan/",
       "slug": "nettoyage-insalubre--herault--bessan",
+      "publishAt": "2026-07-05",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/herault/beziers/",
+      "slug": "nettoyage-insalubre--herault--beziers",
+      "publishAt": "2026-07-05",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/nettoyage-insalubre/herault/boujan-sur-libron/",
+      "slug": "nettoyage-insalubre--herault--boujan-sur-libron",
+      "publishAt": "2026-07-05",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/herault/canet/",
+      "slug": "nettoyage-insalubre--herault--canet",
+      "publishAt": "2026-07-05",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/herault/capestang/",
+      "slug": "nettoyage-insalubre--herault--capestang",
       "publishAt": "2026-07-05",
       "needsUniqueDesc": false
     }
@@ -1161,36 +1161,36 @@
       "slug": "nettoyage-diogene--herault--serignan",
       "type": "Page ville service",
       "publishAt": "2026-07-03",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 698
     },
     {
       "url": "/nettoyage-diogene/herault/sete/",
       "slug": "nettoyage-diogene--herault--sete",
       "type": "Page ville service",
       "publishAt": "2026-07-03",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 708
     },
     {
       "url": "/nettoyage-diogene/herault/valras-plage/",
       "slug": "nettoyage-diogene--herault--valras-plage",
       "type": "Page ville service",
       "publishAt": "2026-07-03",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 694
     },
     {
       "url": "/nettoyage-diogene/herault/vias/",
       "slug": "nettoyage-diogene--herault--vias",
       "type": "Page ville service",
       "publishAt": "2026-07-03",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 688
     },
     {
       "url": "/nettoyage-insalubre/bouches-du-rhone/aix-en-provence/",
