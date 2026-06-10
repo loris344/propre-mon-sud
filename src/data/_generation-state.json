@@ -1,34 +1,10 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 140,
-  "remaining": 650,
+  "done": 144,
+  "remaining": 646,
   "late": 0,
   "nextBatch": [
-    {
-      "url": "/nettoyage-insalubre/herault/castelnau-le-lez/",
-      "slug": "nettoyage-insalubre--herault--castelnau-le-lez",
-      "publishAt": "2026-07-06",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-insalubre/herault/castries/",
-      "slug": "nettoyage-insalubre--herault--castries",
-      "publishAt": "2026-07-06",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-insalubre/herault/clapiers/",
-      "slug": "nettoyage-insalubre--herault--clapiers",
-      "publishAt": "2026-07-06",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-insalubre/herault/clermont-l-herault/",
-      "slug": "nettoyage-insalubre--herault--clermont-l-herault",
-      "publishAt": "2026-07-06",
-      "needsUniqueDesc": false
-    },
     {
       "url": "/nettoyage-insalubre/herault/colombiers/",
       "slug": "nettoyage-insalubre--herault--colombiers",
@@ -62,6 +38,30 @@
     {
       "url": "/nettoyage-insalubre/herault/gignac/",
       "slug": "nettoyage-insalubre--herault--gignac",
+      "publishAt": "2026-07-07",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/herault/grabels/",
+      "slug": "nettoyage-insalubre--herault--grabels",
+      "publishAt": "2026-07-07",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/herault/jacou/",
+      "slug": "nettoyage-insalubre--herault--jacou",
+      "publishAt": "2026-07-07",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/herault/juvignac/",
+      "slug": "nettoyage-insalubre--herault--juvignac",
+      "publishAt": "2026-07-07",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/herault/la-grande-motte/",
+      "slug": "nettoyage-insalubre--herault--la-grande-motte",
       "publishAt": "2026-07-07",
       "needsUniqueDesc": false
     }
@@ -1332,36 +1332,36 @@
       "slug": "nettoyage-insalubre--herault--castelnau-le-lez",
       "type": "Page ville service",
       "publishAt": "2026-07-06",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 724
     },
     {
       "url": "/nettoyage-insalubre/herault/castries/",
       "slug": "nettoyage-insalubre--herault--castries",
       "type": "Page ville service",
       "publishAt": "2026-07-06",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 719
     },
     {
       "url": "/nettoyage-insalubre/herault/clapiers/",
       "slug": "nettoyage-insalubre--herault--clapiers",
       "type": "Page ville service",
       "publishAt": "2026-07-06",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 722
     },
     {
       "url": "/nettoyage-insalubre/herault/clermont-l-herault/",
       "slug": "nettoyage-insalubre--herault--clermont-l-herault",
       "type": "Page ville service",
       "publishAt": "2026-07-06",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 707
     },
     {
       "url": "/nettoyage-insalubre/herault/colombiers/",
