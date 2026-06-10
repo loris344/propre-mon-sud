@@ -1,34 +1,10 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 87,
-  "remaining": 703,
+  "done": 91,
+  "remaining": 699,
   "late": 0,
   "nextBatch": [
-    {
-      "url": "/nettoyage-apres-squat/bouches-du-rhone/marseille/",
-      "slug": "nettoyage-apres-squat--bouches-du-rhone--marseille",
-      "publishAt": "2026-06-27",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-apres-squat/gard/ales/",
-      "slug": "nettoyage-apres-squat--gard--ales",
-      "publishAt": "2026-06-27",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-apres-squat/gard/nimes/",
-      "slug": "nettoyage-apres-squat--gard--nimes",
-      "publishAt": "2026-06-28",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-apres-squat/haute-garonne/toulouse/",
-      "slug": "nettoyage-apres-squat--haute-garonne--toulouse",
-      "publishAt": "2026-06-28",
-      "needsUniqueDesc": false
-    },
     {
       "url": "/nettoyage-apres-squat/herault/agde/",
       "slug": "nettoyage-apres-squat--herault--agde",
@@ -62,6 +38,30 @@
     {
       "url": "/nettoyage-apres-squat/herault/gignac/",
       "slug": "nettoyage-apres-squat--herault--gignac",
+      "publishAt": "2026-06-29",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-squat/herault/juvignac/",
+      "slug": "nettoyage-apres-squat--herault--juvignac",
+      "publishAt": "2026-06-29",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-squat/herault/lattes/",
+      "slug": "nettoyage-apres-squat--herault--lattes",
+      "publishAt": "2026-06-29",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-squat/herault/lodeve/",
+      "slug": "nettoyage-apres-squat--herault--lodeve",
+      "publishAt": "2026-06-29",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-squat/herault/lunel/",
+      "slug": "nettoyage-apres-squat--herault--lunel",
       "publishAt": "2026-06-29",
       "needsUniqueDesc": false
     }
@@ -810,36 +810,36 @@
       "slug": "nettoyage-apres-squat--bouches-du-rhone--marseille",
       "type": "Page ville service",
       "publishAt": "2026-06-27",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 638
     },
     {
       "url": "/nettoyage-apres-squat/gard/ales/",
       "slug": "nettoyage-apres-squat--gard--ales",
       "type": "Page ville service",
       "publishAt": "2026-06-27",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 620
     },
     {
       "url": "/nettoyage-apres-squat/gard/nimes/",
       "slug": "nettoyage-apres-squat--gard--nimes",
       "type": "Page ville service",
       "publishAt": "2026-06-28",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 609
     },
     {
       "url": "/nettoyage-apres-squat/haute-garonne/toulouse/",
       "slug": "nettoyage-apres-squat--haute-garonne--toulouse",
       "type": "Page ville service",
       "publishAt": "2026-06-28",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 661
     },
     {
       "url": "/nettoyage-apres-squat/herault/agde/",
