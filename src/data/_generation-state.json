@@ -1,34 +1,10 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 52,
-  "remaining": 738,
+  "done": 56,
+  "remaining": 734,
   "late": 0,
   "nextBatch": [
-    {
-      "url": "/nettoyage-apres-deces/gard/ales/",
-      "slug": "nettoyage-apres-deces--gard--ales",
-      "publishAt": "2026-06-23",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-apres-deces/gard/nimes/",
-      "slug": "nettoyage-apres-deces--gard--nimes",
-      "publishAt": "2026-06-23",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-apres-deces/haute-garonne/toulouse/",
-      "slug": "nettoyage-apres-deces--haute-garonne--toulouse",
-      "publishAt": "2026-06-23",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-apres-deces/herault/agde/",
-      "slug": "nettoyage-apres-deces--herault--agde",
-      "publishAt": "2026-06-23",
-      "needsUniqueDesc": false
-    },
     {
       "url": "/nettoyage-apres-deces/herault/beziers/",
       "slug": "nettoyage-apres-deces--herault--beziers",
@@ -63,6 +39,30 @@
       "url": "/nettoyage-apres-deces/herault/juvignac/",
       "slug": "nettoyage-apres-deces--herault--juvignac",
       "publishAt": "2026-06-24",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-deces/herault/lattes/",
+      "slug": "nettoyage-apres-deces--herault--lattes",
+      "publishAt": "2026-06-24",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-deces/herault/lodeve/",
+      "slug": "nettoyage-apres-deces--herault--lodeve",
+      "publishAt": "2026-06-25",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-deces/herault/lunel/",
+      "slug": "nettoyage-apres-deces--herault--lunel",
+      "publishAt": "2026-06-25",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-deces/herault/mauguio/",
+      "slug": "nettoyage-apres-deces--herault--mauguio",
+      "publishAt": "2026-06-25",
       "needsUniqueDesc": false
     }
   ],
@@ -540,36 +540,36 @@
       "slug": "nettoyage-apres-deces--gard--ales",
       "type": "Page ville service",
       "publishAt": "2026-06-23",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 607
     },
     {
       "url": "/nettoyage-apres-deces/gard/nimes/",
       "slug": "nettoyage-apres-deces--gard--nimes",
       "type": "Page ville service",
       "publishAt": "2026-06-23",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 617
     },
     {
       "url": "/nettoyage-apres-deces/haute-garonne/toulouse/",
       "slug": "nettoyage-apres-deces--haute-garonne--toulouse",
       "type": "Page ville service",
       "publishAt": "2026-06-23",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 607
     },
     {
       "url": "/nettoyage-apres-deces/herault/agde/",
       "slug": "nettoyage-apres-deces--herault--agde",
       "type": "Page ville service",
       "publishAt": "2026-06-23",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 614
     },
     {
       "url": "/nettoyage-apres-deces/herault/beziers/",
