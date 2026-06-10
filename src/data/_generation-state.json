@@ -1,34 +1,10 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 48,
-  "remaining": 742,
+  "done": 52,
+  "remaining": 738,
   "late": 0,
   "nextBatch": [
-    {
-      "url": "/desinfection-logement/herault/valras-plage/",
-      "slug": "desinfection-logement--herault--valras-plage",
-      "publishAt": "2026-06-22",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/desinfection-logement/herault/vias/",
-      "slug": "desinfection-logement--herault--vias",
-      "publishAt": "2026-06-22",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-apres-deces/bouches-du-rhone/aix-en-provence/",
-      "slug": "nettoyage-apres-deces--bouches-du-rhone--aix-en-provence",
-      "publishAt": "2026-06-22",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-apres-deces/bouches-du-rhone/marseille/",
-      "slug": "nettoyage-apres-deces--bouches-du-rhone--marseille",
-      "publishAt": "2026-06-22",
-      "needsUniqueDesc": false
-    },
     {
       "url": "/nettoyage-apres-deces/gard/ales/",
       "slug": "nettoyage-apres-deces--gard--ales",
@@ -62,6 +38,30 @@
     {
       "url": "/nettoyage-apres-deces/herault/castelnau-le-lez/",
       "slug": "nettoyage-apres-deces--herault--castelnau-le-lez",
+      "publishAt": "2026-06-24",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-deces/herault/clermont-l-herault/",
+      "slug": "nettoyage-apres-deces--herault--clermont-l-herault",
+      "publishAt": "2026-06-24",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-deces/herault/frontignan/",
+      "slug": "nettoyage-apres-deces--herault--frontignan",
+      "publishAt": "2026-06-24",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-deces/herault/gignac/",
+      "slug": "nettoyage-apres-deces--herault--gignac",
+      "publishAt": "2026-06-24",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-deces/herault/juvignac/",
+      "slug": "nettoyage-apres-deces--herault--juvignac",
       "publishAt": "2026-06-24",
       "needsUniqueDesc": false
     }
@@ -504,36 +504,36 @@
       "slug": "desinfection-logement--herault--valras-plage",
       "type": "Page ville service",
       "publishAt": "2026-06-22",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 608
     },
     {
       "url": "/desinfection-logement/herault/vias/",
       "slug": "desinfection-logement--herault--vias",
       "type": "Page ville service",
       "publishAt": "2026-06-22",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 606
     },
     {
       "url": "/nettoyage-apres-deces/bouches-du-rhone/aix-en-provence/",
       "slug": "nettoyage-apres-deces--bouches-du-rhone--aix-en-provence",
       "type": "Page ville service",
       "publishAt": "2026-06-22",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 614
     },
     {
       "url": "/nettoyage-apres-deces/bouches-du-rhone/marseille/",
       "slug": "nettoyage-apres-deces--bouches-du-rhone--marseille",
       "type": "Page ville service",
       "publishAt": "2026-06-22",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 622
     },
     {
       "url": "/nettoyage-apres-deces/gard/ales/",
