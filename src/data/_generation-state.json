@@ -1,40 +1,10 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 91,
-  "remaining": 699,
+  "done": 96,
+  "remaining": 694,
   "late": 0,
   "nextBatch": [
-    {
-      "url": "/nettoyage-apres-squat/herault/agde/",
-      "slug": "nettoyage-apres-squat--herault--agde",
-      "publishAt": "2026-06-28",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-apres-squat/herault/beziers/",
-      "slug": "nettoyage-apres-squat--herault--beziers",
-      "publishAt": "2026-06-28",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-apres-squat/herault/castelnau-le-lez/",
-      "slug": "nettoyage-apres-squat--herault--castelnau-le-lez",
-      "publishAt": "2026-06-28",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-apres-squat/herault/clermont-l-herault/",
-      "slug": "nettoyage-apres-squat--herault--clermont-l-herault",
-      "publishAt": "2026-06-28",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-apres-squat/herault/frontignan/",
-      "slug": "nettoyage-apres-squat--herault--frontignan",
-      "publishAt": "2026-06-28",
-      "needsUniqueDesc": false
-    },
     {
       "url": "/nettoyage-apres-squat/herault/gignac/",
       "slug": "nettoyage-apres-squat--herault--gignac",
@@ -63,6 +33,36 @@
       "url": "/nettoyage-apres-squat/herault/lunel/",
       "slug": "nettoyage-apres-squat--herault--lunel",
       "publishAt": "2026-06-29",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-squat/herault/mauguio/",
+      "slug": "nettoyage-apres-squat--herault--mauguio",
+      "publishAt": "2026-06-29",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-squat/herault/pezenas/",
+      "slug": "nettoyage-apres-squat--herault--pezenas",
+      "publishAt": "2026-06-29",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-squat/herault/saint-jean-de-vedas/",
+      "slug": "nettoyage-apres-squat--herault--saint-jean-de-vedas",
+      "publishAt": "2026-06-30",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-squat/herault/serignan/",
+      "slug": "nettoyage-apres-squat--herault--serignan",
+      "publishAt": "2026-06-30",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-squat/herault/sete/",
+      "slug": "nettoyage-apres-squat--herault--sete",
+      "publishAt": "2026-06-30",
       "needsUniqueDesc": false
     }
   ],
@@ -846,45 +846,45 @@
       "slug": "nettoyage-apres-squat--herault--agde",
       "type": "Page ville service",
       "publishAt": "2026-06-28",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 623
     },
     {
       "url": "/nettoyage-apres-squat/herault/beziers/",
       "slug": "nettoyage-apres-squat--herault--beziers",
       "type": "Page ville service",
       "publishAt": "2026-06-28",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 614
     },
     {
       "url": "/nettoyage-apres-squat/herault/castelnau-le-lez/",
       "slug": "nettoyage-apres-squat--herault--castelnau-le-lez",
       "type": "Page ville service",
       "publishAt": "2026-06-28",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 650
     },
     {
       "url": "/nettoyage-apres-squat/herault/clermont-l-herault/",
       "slug": "nettoyage-apres-squat--herault--clermont-l-herault",
       "type": "Page ville service",
       "publishAt": "2026-06-28",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 624
     },
     {
       "url": "/nettoyage-apres-squat/herault/frontignan/",
       "slug": "nettoyage-apres-squat--herault--frontignan",
       "type": "Page ville service",
       "publishAt": "2026-06-28",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 625
     },
     {
       "url": "/nettoyage-apres-squat/herault/gignac/",
