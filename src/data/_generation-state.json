@@ -1,40 +1,10 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 101,
-  "remaining": 689,
+  "done": 106,
+  "remaining": 684,
   "late": 0,
   "nextBatch": [
-    {
-      "url": "/nettoyage-apres-squat/herault/mauguio/",
-      "slug": "nettoyage-apres-squat--herault--mauguio",
-      "publishAt": "2026-06-29",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-apres-squat/herault/pezenas/",
-      "slug": "nettoyage-apres-squat--herault--pezenas",
-      "publishAt": "2026-06-29",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-apres-squat/herault/saint-jean-de-vedas/",
-      "slug": "nettoyage-apres-squat--herault--saint-jean-de-vedas",
-      "publishAt": "2026-06-30",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-apres-squat/herault/serignan/",
-      "slug": "nettoyage-apres-squat--herault--serignan",
-      "publishAt": "2026-06-30",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-apres-squat/herault/sete/",
-      "slug": "nettoyage-apres-squat--herault--sete",
-      "publishAt": "2026-06-30",
-      "needsUniqueDesc": false
-    },
     {
       "url": "/nettoyage-apres-squat/herault/valras-plage/",
       "slug": "nettoyage-apres-squat--herault--valras-plage",
@@ -62,6 +32,36 @@
     {
       "url": "/nettoyage-diogene/gard/ales/",
       "slug": "nettoyage-diogene--gard--ales",
+      "publishAt": "2026-07-01",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-diogene/gard/nimes/",
+      "slug": "nettoyage-diogene--gard--nimes",
+      "publishAt": "2026-07-01",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-diogene/haute-garonne/toulouse/",
+      "slug": "nettoyage-diogene--haute-garonne--toulouse",
+      "publishAt": "2026-07-01",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-diogene/herault/agde/",
+      "slug": "nettoyage-diogene--herault--agde",
+      "publishAt": "2026-07-01",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-diogene/herault/beziers/",
+      "slug": "nettoyage-diogene--herault--beziers",
+      "publishAt": "2026-07-01",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-diogene/herault/castelnau-le-lez/",
+      "slug": "nettoyage-diogene--herault--castelnau-le-lez",
       "publishAt": "2026-07-01",
       "needsUniqueDesc": false
     }
@@ -936,45 +936,45 @@
       "slug": "nettoyage-apres-squat--herault--mauguio",
       "type": "Page ville service",
       "publishAt": "2026-06-29",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 612
     },
     {
       "url": "/nettoyage-apres-squat/herault/pezenas/",
       "slug": "nettoyage-apres-squat--herault--pezenas",
       "type": "Page ville service",
       "publishAt": "2026-06-29",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 638
     },
     {
       "url": "/nettoyage-apres-squat/herault/saint-jean-de-vedas/",
       "slug": "nettoyage-apres-squat--herault--saint-jean-de-vedas",
       "type": "Page ville service",
       "publishAt": "2026-06-30",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 667
     },
     {
       "url": "/nettoyage-apres-squat/herault/serignan/",
       "slug": "nettoyage-apres-squat--herault--serignan",
       "type": "Page ville service",
       "publishAt": "2026-06-30",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 614
     },
     {
       "url": "/nettoyage-apres-squat/herault/sete/",
       "slug": "nettoyage-apres-squat--herault--sete",
       "type": "Page ville service",
       "publishAt": "2026-06-30",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 648
     },
     {
       "url": "/nettoyage-apres-squat/herault/valras-plage/",
