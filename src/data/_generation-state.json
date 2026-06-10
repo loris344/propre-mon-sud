@@ -1,68 +1,68 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 16,
-  "remaining": 774,
+  "done": 28,
+  "remaining": 762,
   "late": 0,
   "nextBatch": [
     {
-      "url": "/debarras/cave/herault/montpellier/",
-      "slug": "debarras--cave--herault--montpellier",
-      "publishAt": "2026-06-14",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/garage/herault/montpellier/",
-      "slug": "debarras--garage--herault--montpellier",
-      "publishAt": "2026-06-14",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/grenier/herault/montpellier/",
-      "slug": "debarras--grenier--herault--montpellier",
-      "publishAt": "2026-06-14",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/maison/herault/montpellier/",
-      "slug": "debarras--maison--herault--montpellier",
-      "publishAt": "2026-06-14",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/succession/herault/montpellier/",
-      "slug": "debarras--succession--herault--montpellier",
-      "publishAt": "2026-06-15",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/desinfection-logement/herault/",
-      "slug": "desinfection-logement--herault",
-      "publishAt": "2026-06-15",
+      "url": "/desinfection-logement/bouches-du-rhone/aix-en-provence/",
+      "slug": "desinfection-logement--bouches-du-rhone--aix-en-provence",
+      "publishAt": "2026-06-17",
       "needsUniqueDesc": false
     },
     {
-      "url": "/nettoyage-apres-deces/herault/",
-      "slug": "nettoyage-apres-deces--herault",
-      "publishAt": "2026-06-15",
+      "url": "/desinfection-logement/bouches-du-rhone/marseille/",
+      "slug": "desinfection-logement--bouches-du-rhone--marseille",
+      "publishAt": "2026-06-17",
       "needsUniqueDesc": false
     },
     {
-      "url": "/nettoyage-apres-sinistre/herault/",
-      "slug": "nettoyage-apres-sinistre--herault",
-      "publishAt": "2026-06-15",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/nettoyage-apres-squat/herault/",
-      "slug": "nettoyage-apres-squat--herault",
-      "publishAt": "2026-06-16",
+      "url": "/desinfection-logement/gard/ales/",
+      "slug": "desinfection-logement--gard--ales",
+      "publishAt": "2026-06-17",
       "needsUniqueDesc": false
     },
     {
-      "url": "/nettoyage-diogene/herault/",
-      "slug": "nettoyage-diogene--herault",
-      "publishAt": "2026-06-16",
+      "url": "/desinfection-logement/gard/nimes/",
+      "slug": "desinfection-logement--gard--nimes",
+      "publishAt": "2026-06-17",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/desinfection-logement/haute-garonne/toulouse/",
+      "slug": "desinfection-logement--haute-garonne--toulouse",
+      "publishAt": "2026-06-18",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/desinfection-logement/herault/agde/",
+      "slug": "desinfection-logement--herault--agde",
+      "publishAt": "2026-06-18",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/desinfection-logement/herault/beziers/",
+      "slug": "desinfection-logement--herault--beziers",
+      "publishAt": "2026-06-18",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/desinfection-logement/herault/castelnau-le-lez/",
+      "slug": "desinfection-logement--herault--castelnau-le-lez",
+      "publishAt": "2026-06-18",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/desinfection-logement/herault/clermont-l-herault/",
+      "slug": "desinfection-logement--herault--clermont-l-herault",
+      "publishAt": "2026-06-19",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/desinfection-logement/herault/frontignan/",
+      "slug": "desinfection-logement--herault--frontignan",
+      "publishAt": "2026-06-19",
       "needsUniqueDesc": false
     }
   ],
@@ -182,7 +182,7 @@
       "publishAt": "2026-06-13",
       "written": true,
       "draft": false,
-      "words": 613
+      "words": 612
     },
     {
       "url": "/remise-en-etat-logement/herault/montpellier/",
@@ -216,108 +216,108 @@
       "slug": "debarras--cave--herault--montpellier",
       "type": "Page ville débarras type",
       "publishAt": "2026-06-14",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 616
     },
     {
       "url": "/debarras/garage/herault/montpellier/",
       "slug": "debarras--garage--herault--montpellier",
       "type": "Page ville débarras type",
       "publishAt": "2026-06-14",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 613
     },
     {
       "url": "/debarras/grenier/herault/montpellier/",
       "slug": "debarras--grenier--herault--montpellier",
       "type": "Page ville débarras type",
       "publishAt": "2026-06-14",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 608
     },
     {
       "url": "/debarras/maison/herault/montpellier/",
       "slug": "debarras--maison--herault--montpellier",
       "type": "Page ville débarras type",
       "publishAt": "2026-06-14",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 601
     },
     {
       "url": "/debarras/succession/herault/montpellier/",
       "slug": "debarras--succession--herault--montpellier",
       "type": "Page ville débarras type",
       "publishAt": "2026-06-15",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 632
     },
     {
       "url": "/desinfection-logement/herault/",
       "slug": "desinfection-logement--herault",
       "type": "Page département service",
       "publishAt": "2026-06-15",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 638
     },
     {
       "url": "/nettoyage-apres-deces/herault/",
       "slug": "nettoyage-apres-deces--herault",
       "type": "Page département service",
       "publishAt": "2026-06-15",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 626
     },
     {
       "url": "/nettoyage-apres-sinistre/herault/",
       "slug": "nettoyage-apres-sinistre--herault",
       "type": "Page département service",
       "publishAt": "2026-06-15",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 603
     },
     {
       "url": "/nettoyage-apres-squat/herault/",
       "slug": "nettoyage-apres-squat--herault",
       "type": "Page département service",
       "publishAt": "2026-06-16",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 554
     },
     {
       "url": "/nettoyage-diogene/herault/",
       "slug": "nettoyage-diogene--herault",
       "type": "Page département service",
       "publishAt": "2026-06-16",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 591
     },
     {
       "url": "/nettoyage-insalubre/herault/",
       "slug": "nettoyage-insalubre--herault",
       "type": "Page département service",
       "publishAt": "2026-06-16",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 584
     },
     {
       "url": "/remise-en-etat-logement/herault/",
       "slug": "remise-en-etat-logement--herault",
       "type": "Page département service",
       "publishAt": "2026-06-16",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 580
     },
     {
       "url": "/desinfection-logement/bouches-du-rhone/aix-en-provence/",
