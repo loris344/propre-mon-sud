@@ -1,22 +1,10 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 70,
-  "remaining": 720,
+  "done": 77,
+  "remaining": 713,
   "late": 0,
   "nextBatch": [
-    {
-      "url": "/nettoyage-apres-deces/herault/valras-plage/",
-      "slug": "nettoyage-apres-deces--herault--valras-plage",
-      "publishAt": "2026-06-26",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-apres-deces/herault/vias/",
-      "slug": "nettoyage-apres-deces--herault--vias",
-      "publishAt": "2026-06-26",
-      "needsUniqueDesc": false
-    },
     {
       "url": "/nettoyage-apres-sinistre/bouches-du-rhone/aix-en-provence/",
       "slug": "nettoyage-apres-sinistre--bouches-du-rhone--aix-en-provence",
@@ -64,6 +52,18 @@
       "slug": "nettoyage-apres-sinistre--herault--lunel",
       "publishAt": "2026-06-27",
       "needsUniqueDesc": true
+    },
+    {
+      "url": "/nettoyage-apres-sinistre/herault/sete/",
+      "slug": "nettoyage-apres-sinistre--herault--sete",
+      "publishAt": "2026-06-27",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/nettoyage-apres-squat/bouches-du-rhone/aix-en-provence/",
+      "slug": "nettoyage-apres-squat--bouches-du-rhone--aix-en-provence",
+      "publishAt": "2026-06-27",
+      "needsUniqueDesc": false
     }
   ],
   "pages": [
@@ -702,18 +702,18 @@
       "slug": "nettoyage-apres-deces--herault--valras-plage",
       "type": "Page ville service",
       "publishAt": "2026-06-26",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 609
     },
     {
       "url": "/nettoyage-apres-deces/herault/vias/",
       "slug": "nettoyage-apres-deces--herault--vias",
       "type": "Page ville service",
       "publishAt": "2026-06-26",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 605
     },
     {
       "url": "/nettoyage-apres-sinistre/bouches-du-rhone/aix-en-provence/",
@@ -1197,45 +1197,45 @@
       "slug": "nettoyage-insalubre--bouches-du-rhone--aix-en-provence",
       "type": "Page ville service",
       "publishAt": "2026-07-03",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 601
     },
     {
       "url": "/nettoyage-insalubre/bouches-du-rhone/marseille/",
       "slug": "nettoyage-insalubre--bouches-du-rhone--marseille",
       "type": "Page ville service",
       "publishAt": "2026-07-04",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 600
     },
     {
       "url": "/nettoyage-insalubre/gard/ales/",
       "slug": "nettoyage-insalubre--gard--ales",
       "type": "Page ville service",
       "publishAt": "2026-07-04",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 601
     },
     {
       "url": "/nettoyage-insalubre/gard/nimes/",
       "slug": "nettoyage-insalubre--gard--nimes",
       "type": "Page ville service",
       "publishAt": "2026-07-04",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 603
     },
     {
       "url": "/nettoyage-insalubre/haute-garonne/toulouse/",
       "slug": "nettoyage-insalubre--haute-garonne--toulouse",
       "type": "Page ville service",
       "publishAt": "2026-07-04",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 603
     },
     {
       "url": "/nettoyage-insalubre/herault/agde/",

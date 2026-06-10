@@ -1,5 +1,28 @@
 # CLAUDE.md — Règles & garde-fous du projet
 
+## ⏩ REPRISE DE LA PRODUCTION SEO — à lire en premier (nouvelle session)
+
+La mission en cours = rédiger les 790 pages SEO locales, une par une, en goutte-à-goutte.
+Le **GO client est permanent** : continue sans redemander « je continue ? ». Pour reprendre :
+
+1. `npm run seo:status` → donne l'avancement (X/790) et **les prochaines pages à rédiger dans l'ordre**.
+2. Pour chaque page (1 à la fois) : lire le brief dans `src/data/seo-pages.json` (kw, H2 imposés, FAQ),
+   faire 1-2 **recherches web locales** si la ville est nouvelle (sinon réutiliser les faits déjà connus),
+   écrire `content/seo/<slug>.mdx` selon les règles ci-dessous.
+3. **Garde-fou absolu** : `npm run build` (validation incluse) doit passer AVANT chaque commit.
+   Vérifier la sortie. Committer chaque lot validé en local (PAS de push ; le client merge vers main).
+4. Si coupure (tokens) : rien de cassé, le dernier commit est sain ; relancer `seo:status` et continuer.
+
+**Les 6 erreurs à NE JAMAIS commettre** (détaillées plus bas) : page sous le minimum de mots
+(≈720 mots de corps visé car la FAQ ne compte pas) · 2 pages trop similaires (varier les faits
+locaux par ville) · tiret cadratin « — » dans le texte · meta description non unique · committer
+un build rouge · inventer un fait local non vérifié.
+
+État au dernier point connu : voir `seo:status` (≈77/790 au 2026-06-26). Voir aussi les mémoires
+[[seo-mission]], [[style-redaction]], [[seo-etat-de-lart-2026]].
+
+---
+
 > Source de vérité **humaine** des règles SEO. Le code (`scripts/validate-seo.mjs`,
 > `src/lib/seo-pages.ts`) les *applique* ; ce fichier explique le *quoi* et le *pourquoi*.
 > En cas de doute sur un seuil chiffré, le code fait foi (les valeurs ci-dessous y renvoient).
