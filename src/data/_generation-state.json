@@ -1,52 +1,10 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 63,
-  "remaining": 727,
+  "done": 70,
+  "remaining": 720,
   "late": 0,
   "nextBatch": [
-    {
-      "url": "/nettoyage-apres-deces/herault/lodeve/",
-      "slug": "nettoyage-apres-deces--herault--lodeve",
-      "publishAt": "2026-06-25",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-apres-deces/herault/lunel/",
-      "slug": "nettoyage-apres-deces--herault--lunel",
-      "publishAt": "2026-06-25",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-apres-deces/herault/mauguio/",
-      "slug": "nettoyage-apres-deces--herault--mauguio",
-      "publishAt": "2026-06-25",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-apres-deces/herault/pezenas/",
-      "slug": "nettoyage-apres-deces--herault--pezenas",
-      "publishAt": "2026-06-25",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-apres-deces/herault/saint-jean-de-vedas/",
-      "slug": "nettoyage-apres-deces--herault--saint-jean-de-vedas",
-      "publishAt": "2026-06-25",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-apres-deces/herault/serignan/",
-      "slug": "nettoyage-apres-deces--herault--serignan",
-      "publishAt": "2026-06-25",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-apres-deces/herault/sete/",
-      "slug": "nettoyage-apres-deces--herault--sete",
-      "publishAt": "2026-06-25",
-      "needsUniqueDesc": false
-    },
     {
       "url": "/nettoyage-apres-deces/herault/valras-plage/",
       "slug": "nettoyage-apres-deces--herault--valras-plage",
@@ -63,6 +21,48 @@
       "url": "/nettoyage-apres-sinistre/bouches-du-rhone/aix-en-provence/",
       "slug": "nettoyage-apres-sinistre--bouches-du-rhone--aix-en-provence",
       "publishAt": "2026-06-26",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/nettoyage-apres-sinistre/bouches-du-rhone/marseille/",
+      "slug": "nettoyage-apres-sinistre--bouches-du-rhone--marseille",
+      "publishAt": "2026-06-26",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/nettoyage-apres-sinistre/gard/ales/",
+      "slug": "nettoyage-apres-sinistre--gard--ales",
+      "publishAt": "2026-06-26",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/nettoyage-apres-sinistre/gard/nimes/",
+      "slug": "nettoyage-apres-sinistre--gard--nimes",
+      "publishAt": "2026-06-26",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/nettoyage-apres-sinistre/haute-garonne/toulouse/",
+      "slug": "nettoyage-apres-sinistre--haute-garonne--toulouse",
+      "publishAt": "2026-06-26",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/nettoyage-apres-sinistre/herault/agde/",
+      "slug": "nettoyage-apres-sinistre--herault--agde",
+      "publishAt": "2026-06-27",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/nettoyage-apres-sinistre/herault/beziers/",
+      "slug": "nettoyage-apres-sinistre--herault--beziers",
+      "publishAt": "2026-06-27",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/nettoyage-apres-sinistre/herault/lunel/",
+      "slug": "nettoyage-apres-sinistre--herault--lunel",
+      "publishAt": "2026-06-27",
       "needsUniqueDesc": true
     }
   ],
@@ -639,63 +639,63 @@
       "slug": "nettoyage-apres-deces--herault--lodeve",
       "type": "Page ville service",
       "publishAt": "2026-06-25",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 619
     },
     {
       "url": "/nettoyage-apres-deces/herault/lunel/",
       "slug": "nettoyage-apres-deces--herault--lunel",
       "type": "Page ville service",
       "publishAt": "2026-06-25",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 607
     },
     {
       "url": "/nettoyage-apres-deces/herault/mauguio/",
       "slug": "nettoyage-apres-deces--herault--mauguio",
       "type": "Page ville service",
       "publishAt": "2026-06-25",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 607
     },
     {
       "url": "/nettoyage-apres-deces/herault/pezenas/",
       "slug": "nettoyage-apres-deces--herault--pezenas",
       "type": "Page ville service",
       "publishAt": "2026-06-25",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 611
     },
     {
       "url": "/nettoyage-apres-deces/herault/saint-jean-de-vedas/",
       "slug": "nettoyage-apres-deces--herault--saint-jean-de-vedas",
       "type": "Page ville service",
       "publishAt": "2026-06-25",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 607
     },
     {
       "url": "/nettoyage-apres-deces/herault/serignan/",
       "slug": "nettoyage-apres-deces--herault--serignan",
       "type": "Page ville service",
       "publishAt": "2026-06-25",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 603
     },
     {
       "url": "/nettoyage-apres-deces/herault/sete/",
       "slug": "nettoyage-apres-deces--herault--sete",
       "type": "Page ville service",
       "publishAt": "2026-06-25",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 617
     },
     {
       "url": "/nettoyage-apres-deces/herault/valras-plage/",
