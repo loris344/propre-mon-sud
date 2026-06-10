@@ -1,34 +1,10 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 40,
-  "remaining": 750,
+  "done": 44,
+  "remaining": 746,
   "late": 0,
   "nextBatch": [
-    {
-      "url": "/desinfection-logement/herault/lattes/",
-      "slug": "desinfection-logement--herault--lattes",
-      "publishAt": "2026-06-20",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/desinfection-logement/herault/lodeve/",
-      "slug": "desinfection-logement--herault--lodeve",
-      "publishAt": "2026-06-20",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/desinfection-logement/herault/lunel/",
-      "slug": "desinfection-logement--herault--lunel",
-      "publishAt": "2026-06-20",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/desinfection-logement/herault/mauguio/",
-      "slug": "desinfection-logement--herault--mauguio",
-      "publishAt": "2026-06-20",
-      "needsUniqueDesc": false
-    },
     {
       "url": "/desinfection-logement/herault/pezenas/",
       "slug": "desinfection-logement--herault--pezenas",
@@ -63,6 +39,30 @@
       "url": "/desinfection-logement/herault/vias/",
       "slug": "desinfection-logement--herault--vias",
       "publishAt": "2026-06-22",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-deces/bouches-du-rhone/aix-en-provence/",
+      "slug": "nettoyage-apres-deces--bouches-du-rhone--aix-en-provence",
+      "publishAt": "2026-06-22",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-deces/bouches-du-rhone/marseille/",
+      "slug": "nettoyage-apres-deces--bouches-du-rhone--marseille",
+      "publishAt": "2026-06-22",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-deces/gard/ales/",
+      "slug": "nettoyage-apres-deces--gard--ales",
+      "publishAt": "2026-06-23",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-deces/gard/nimes/",
+      "slug": "nettoyage-apres-deces--gard--nimes",
+      "publishAt": "2026-06-23",
       "needsUniqueDesc": false
     }
   ],
@@ -432,36 +432,36 @@
       "slug": "desinfection-logement--herault--lattes",
       "type": "Page ville service",
       "publishAt": "2026-06-20",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 606
     },
     {
       "url": "/desinfection-logement/herault/lodeve/",
       "slug": "desinfection-logement--herault--lodeve",
       "type": "Page ville service",
       "publishAt": "2026-06-20",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 607
     },
     {
       "url": "/desinfection-logement/herault/lunel/",
       "slug": "desinfection-logement--herault--lunel",
       "type": "Page ville service",
       "publishAt": "2026-06-20",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 604
     },
     {
       "url": "/desinfection-logement/herault/mauguio/",
       "slug": "desinfection-logement--herault--mauguio",
       "type": "Page ville service",
       "publishAt": "2026-06-20",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 605
     },
     {
       "url": "/desinfection-logement/herault/pezenas/",
