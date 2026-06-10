@@ -1,40 +1,10 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 77,
-  "remaining": 713,
+  "done": 82,
+  "remaining": 708,
   "late": 0,
   "nextBatch": [
-    {
-      "url": "/nettoyage-apres-sinistre/bouches-du-rhone/aix-en-provence/",
-      "slug": "nettoyage-apres-sinistre--bouches-du-rhone--aix-en-provence",
-      "publishAt": "2026-06-26",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/nettoyage-apres-sinistre/bouches-du-rhone/marseille/",
-      "slug": "nettoyage-apres-sinistre--bouches-du-rhone--marseille",
-      "publishAt": "2026-06-26",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/nettoyage-apres-sinistre/gard/ales/",
-      "slug": "nettoyage-apres-sinistre--gard--ales",
-      "publishAt": "2026-06-26",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/nettoyage-apres-sinistre/gard/nimes/",
-      "slug": "nettoyage-apres-sinistre--gard--nimes",
-      "publishAt": "2026-06-26",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/nettoyage-apres-sinistre/haute-garonne/toulouse/",
-      "slug": "nettoyage-apres-sinistre--haute-garonne--toulouse",
-      "publishAt": "2026-06-26",
-      "needsUniqueDesc": true
-    },
     {
       "url": "/nettoyage-apres-sinistre/herault/agde/",
       "slug": "nettoyage-apres-sinistre--herault--agde",
@@ -63,6 +33,36 @@
       "url": "/nettoyage-apres-squat/bouches-du-rhone/aix-en-provence/",
       "slug": "nettoyage-apres-squat--bouches-du-rhone--aix-en-provence",
       "publishAt": "2026-06-27",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-squat/bouches-du-rhone/marseille/",
+      "slug": "nettoyage-apres-squat--bouches-du-rhone--marseille",
+      "publishAt": "2026-06-27",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-squat/gard/ales/",
+      "slug": "nettoyage-apres-squat--gard--ales",
+      "publishAt": "2026-06-27",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-squat/gard/nimes/",
+      "slug": "nettoyage-apres-squat--gard--nimes",
+      "publishAt": "2026-06-28",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-squat/haute-garonne/toulouse/",
+      "slug": "nettoyage-apres-squat--haute-garonne--toulouse",
+      "publishAt": "2026-06-28",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-squat/herault/agde/",
+      "slug": "nettoyage-apres-squat--herault--agde",
+      "publishAt": "2026-06-28",
       "needsUniqueDesc": false
     }
   ],
@@ -720,45 +720,45 @@
       "slug": "nettoyage-apres-sinistre--bouches-du-rhone--aix-en-provence",
       "type": "Page ville service",
       "publishAt": "2026-06-26",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 642
     },
     {
       "url": "/nettoyage-apres-sinistre/bouches-du-rhone/marseille/",
       "slug": "nettoyage-apres-sinistre--bouches-du-rhone--marseille",
       "type": "Page ville service",
       "publishAt": "2026-06-26",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 608
     },
     {
       "url": "/nettoyage-apres-sinistre/gard/ales/",
       "slug": "nettoyage-apres-sinistre--gard--ales",
       "type": "Page ville service",
       "publishAt": "2026-06-26",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 624
     },
     {
       "url": "/nettoyage-apres-sinistre/gard/nimes/",
       "slug": "nettoyage-apres-sinistre--gard--nimes",
       "type": "Page ville service",
       "publishAt": "2026-06-26",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 630
     },
     {
       "url": "/nettoyage-apres-sinistre/haute-garonne/toulouse/",
       "slug": "nettoyage-apres-sinistre--haute-garonne--toulouse",
       "type": "Page ville service",
       "publishAt": "2026-06-26",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 617
     },
     {
       "url": "/nettoyage-apres-sinistre/herault/agde/",
