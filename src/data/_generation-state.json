@@ -1,40 +1,10 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 116,
-  "remaining": 674,
+  "done": 121,
+  "remaining": 669,
   "late": 0,
   "nextBatch": [
-    {
-      "url": "/nettoyage-diogene/herault/clermont-l-herault/",
-      "slug": "nettoyage-diogene--herault--clermont-l-herault",
-      "publishAt": "2026-07-01",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-diogene/herault/frontignan/",
-      "slug": "nettoyage-diogene--herault--frontignan",
-      "publishAt": "2026-07-02",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-diogene/herault/gignac/",
-      "slug": "nettoyage-diogene--herault--gignac",
-      "publishAt": "2026-07-02",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-diogene/herault/juvignac/",
-      "slug": "nettoyage-diogene--herault--juvignac",
-      "publishAt": "2026-07-02",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-diogene/herault/lattes/",
-      "slug": "nettoyage-diogene--herault--lattes",
-      "publishAt": "2026-07-02",
-      "needsUniqueDesc": false
-    },
     {
       "url": "/nettoyage-diogene/herault/lodeve/",
       "slug": "nettoyage-diogene--herault--lodeve",
@@ -64,6 +34,36 @@
       "slug": "nettoyage-diogene--herault--saint-jean-de-vedas",
       "publishAt": "2026-07-03",
       "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-diogene/herault/serignan/",
+      "slug": "nettoyage-diogene--herault--serignan",
+      "publishAt": "2026-07-03",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-diogene/herault/sete/",
+      "slug": "nettoyage-diogene--herault--sete",
+      "publishAt": "2026-07-03",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-diogene/herault/valras-plage/",
+      "slug": "nettoyage-diogene--herault--valras-plage",
+      "publishAt": "2026-07-03",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-diogene/herault/vias/",
+      "slug": "nettoyage-diogene--herault--vias",
+      "publishAt": "2026-07-03",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/herault/agde/",
+      "slug": "nettoyage-insalubre--herault--agde",
+      "publishAt": "2026-07-04",
+      "needsUniqueDesc": true
     }
   ],
   "pages": [
@@ -1071,45 +1071,45 @@
       "slug": "nettoyage-diogene--herault--clermont-l-herault",
       "type": "Page ville service",
       "publishAt": "2026-07-01",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 711
     },
     {
       "url": "/nettoyage-diogene/herault/frontignan/",
       "slug": "nettoyage-diogene--herault--frontignan",
       "type": "Page ville service",
       "publishAt": "2026-07-02",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 708
     },
     {
       "url": "/nettoyage-diogene/herault/gignac/",
       "slug": "nettoyage-diogene--herault--gignac",
       "type": "Page ville service",
       "publishAt": "2026-07-02",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 705
     },
     {
       "url": "/nettoyage-diogene/herault/juvignac/",
       "slug": "nettoyage-diogene--herault--juvignac",
       "type": "Page ville service",
       "publishAt": "2026-07-02",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 722
     },
     {
       "url": "/nettoyage-diogene/herault/lattes/",
       "slug": "nettoyage-diogene--herault--lattes",
       "type": "Page ville service",
       "publishAt": "2026-07-02",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 706
     },
     {
       "url": "/nettoyage-diogene/herault/lodeve/",
