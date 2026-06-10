@@ -102,8 +102,11 @@ Le client a donné le **GO permanent** : dérouler la rédaction des 790 pages s
    de cassé, rien de bancal. Tout commit est un point de reprise sain.
 5. **Reprise** : `npm run seo:status` donne l'avancement et les prochaines pages. La présence du
    MDX = page faite. On reprend dans l'ordre du planning, jamais de zéro.
-6. Viser **680-720 mots dès le 1er jet** sur les pages à H2 courts (département, débarras-type)
-   pour éviter les allers-retours de validation qui gaspillent des tokens.
+6. **Calibration longueur (leçon vécue) :** le validateur ne compte QUE le corps markdown,
+   PAS le frontmatter (donc la FAQ ne compte pas). Un brouillon « qui semble long » tombe
+   souvent à ~500 mots de corps. Pour passer 600 du 1er coup, viser **~720 mots de corps
+   VISIBLE** : intro nourrie (~110) + chaque section H2 à ~110-120 mots + un paragraphe de
+   contexte local supplémentaire (~110). Vérifier avec un comptage avant `npm run build`.
 
 ## Barème qualité validé (client, 2026-06-10)
 
