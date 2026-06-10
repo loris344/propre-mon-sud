@@ -1,40 +1,10 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 106,
-  "remaining": 684,
+  "done": 111,
+  "remaining": 679,
   "late": 0,
   "nextBatch": [
-    {
-      "url": "/nettoyage-apres-squat/herault/valras-plage/",
-      "slug": "nettoyage-apres-squat--herault--valras-plage",
-      "publishAt": "2026-06-30",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-apres-squat/herault/vias/",
-      "slug": "nettoyage-apres-squat--herault--vias",
-      "publishAt": "2026-06-30",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-diogene/bouches-du-rhone/aix-en-provence/",
-      "slug": "nettoyage-diogene--bouches-du-rhone--aix-en-provence",
-      "publishAt": "2026-06-30",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-diogene/bouches-du-rhone/marseille/",
-      "slug": "nettoyage-diogene--bouches-du-rhone--marseille",
-      "publishAt": "2026-06-30",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-diogene/gard/ales/",
-      "slug": "nettoyage-diogene--gard--ales",
-      "publishAt": "2026-07-01",
-      "needsUniqueDesc": false
-    },
     {
       "url": "/nettoyage-diogene/gard/nimes/",
       "slug": "nettoyage-diogene--gard--nimes",
@@ -63,6 +33,36 @@
       "url": "/nettoyage-diogene/herault/castelnau-le-lez/",
       "slug": "nettoyage-diogene--herault--castelnau-le-lez",
       "publishAt": "2026-07-01",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-diogene/herault/clermont-l-herault/",
+      "slug": "nettoyage-diogene--herault--clermont-l-herault",
+      "publishAt": "2026-07-01",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-diogene/herault/frontignan/",
+      "slug": "nettoyage-diogene--herault--frontignan",
+      "publishAt": "2026-07-02",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-diogene/herault/gignac/",
+      "slug": "nettoyage-diogene--herault--gignac",
+      "publishAt": "2026-07-02",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-diogene/herault/juvignac/",
+      "slug": "nettoyage-diogene--herault--juvignac",
+      "publishAt": "2026-07-02",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-diogene/herault/lattes/",
+      "slug": "nettoyage-diogene--herault--lattes",
+      "publishAt": "2026-07-02",
       "needsUniqueDesc": false
     }
   ],
@@ -981,45 +981,45 @@
       "slug": "nettoyage-apres-squat--herault--valras-plage",
       "type": "Page ville service",
       "publishAt": "2026-06-30",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 753
     },
     {
       "url": "/nettoyage-apres-squat/herault/vias/",
       "slug": "nettoyage-apres-squat--herault--vias",
       "type": "Page ville service",
       "publishAt": "2026-06-30",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 684
     },
     {
       "url": "/nettoyage-diogene/bouches-du-rhone/aix-en-provence/",
       "slug": "nettoyage-diogene--bouches-du-rhone--aix-en-provence",
       "type": "Page ville service",
       "publishAt": "2026-06-30",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 696
     },
     {
       "url": "/nettoyage-diogene/bouches-du-rhone/marseille/",
       "slug": "nettoyage-diogene--bouches-du-rhone--marseille",
       "type": "Page ville service",
       "publishAt": "2026-06-30",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 715
     },
     {
       "url": "/nettoyage-diogene/gard/ales/",
       "slug": "nettoyage-diogene--gard--ales",
       "type": "Page ville service",
       "publishAt": "2026-07-01",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 680
     },
     {
       "url": "/nettoyage-diogene/gard/nimes/",
