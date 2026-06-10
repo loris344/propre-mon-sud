@@ -1,34 +1,10 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 44,
-  "remaining": 746,
+  "done": 48,
+  "remaining": 742,
   "late": 0,
   "nextBatch": [
-    {
-      "url": "/desinfection-logement/herault/pezenas/",
-      "slug": "desinfection-logement--herault--pezenas",
-      "publishAt": "2026-06-21",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/desinfection-logement/herault/saint-jean-de-vedas/",
-      "slug": "desinfection-logement--herault--saint-jean-de-vedas",
-      "publishAt": "2026-06-21",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/desinfection-logement/herault/serignan/",
-      "slug": "desinfection-logement--herault--serignan",
-      "publishAt": "2026-06-21",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/desinfection-logement/herault/sete/",
-      "slug": "desinfection-logement--herault--sete",
-      "publishAt": "2026-06-21",
-      "needsUniqueDesc": false
-    },
     {
       "url": "/desinfection-logement/herault/valras-plage/",
       "slug": "desinfection-logement--herault--valras-plage",
@@ -63,6 +39,30 @@
       "url": "/nettoyage-apres-deces/gard/nimes/",
       "slug": "nettoyage-apres-deces--gard--nimes",
       "publishAt": "2026-06-23",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-deces/haute-garonne/toulouse/",
+      "slug": "nettoyage-apres-deces--haute-garonne--toulouse",
+      "publishAt": "2026-06-23",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-deces/herault/agde/",
+      "slug": "nettoyage-apres-deces--herault--agde",
+      "publishAt": "2026-06-23",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-deces/herault/beziers/",
+      "slug": "nettoyage-apres-deces--herault--beziers",
+      "publishAt": "2026-06-24",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-deces/herault/castelnau-le-lez/",
+      "slug": "nettoyage-apres-deces--herault--castelnau-le-lez",
+      "publishAt": "2026-06-24",
       "needsUniqueDesc": false
     }
   ],
@@ -468,36 +468,36 @@
       "slug": "desinfection-logement--herault--pezenas",
       "type": "Page ville service",
       "publishAt": "2026-06-21",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 604
     },
     {
       "url": "/desinfection-logement/herault/saint-jean-de-vedas/",
       "slug": "desinfection-logement--herault--saint-jean-de-vedas",
       "type": "Page ville service",
       "publishAt": "2026-06-21",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 604
     },
     {
       "url": "/desinfection-logement/herault/serignan/",
       "slug": "desinfection-logement--herault--serignan",
       "type": "Page ville service",
       "publishAt": "2026-06-21",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 612
     },
     {
       "url": "/desinfection-logement/herault/sete/",
       "slug": "desinfection-logement--herault--sete",
       "type": "Page ville service",
       "publishAt": "2026-06-21",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 604
     },
     {
       "url": "/desinfection-logement/herault/valras-plage/",
