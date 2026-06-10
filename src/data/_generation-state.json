@@ -1,40 +1,10 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 135,
-  "remaining": 655,
+  "done": 140,
+  "remaining": 650,
   "late": 0,
   "nextBatch": [
-    {
-      "url": "/nettoyage-insalubre/herault/bessan/",
-      "slug": "nettoyage-insalubre--herault--bessan",
-      "publishAt": "2026-07-05",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-insalubre/herault/beziers/",
-      "slug": "nettoyage-insalubre--herault--beziers",
-      "publishAt": "2026-07-05",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/nettoyage-insalubre/herault/boujan-sur-libron/",
-      "slug": "nettoyage-insalubre--herault--boujan-sur-libron",
-      "publishAt": "2026-07-05",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-insalubre/herault/canet/",
-      "slug": "nettoyage-insalubre--herault--canet",
-      "publishAt": "2026-07-05",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-insalubre/herault/capestang/",
-      "slug": "nettoyage-insalubre--herault--capestang",
-      "publishAt": "2026-07-05",
-      "needsUniqueDesc": false
-    },
     {
       "url": "/nettoyage-insalubre/herault/castelnau-le-lez/",
       "slug": "nettoyage-insalubre--herault--castelnau-le-lez",
@@ -63,6 +33,36 @@
       "url": "/nettoyage-insalubre/herault/colombiers/",
       "slug": "nettoyage-insalubre--herault--colombiers",
       "publishAt": "2026-07-06",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/herault/fabregues/",
+      "slug": "nettoyage-insalubre--herault--fabregues",
+      "publishAt": "2026-07-06",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/herault/florensac/",
+      "slug": "nettoyage-insalubre--herault--florensac",
+      "publishAt": "2026-07-06",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/herault/frontignan/",
+      "slug": "nettoyage-insalubre--herault--frontignan",
+      "publishAt": "2026-07-07",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/herault/gigean/",
+      "slug": "nettoyage-insalubre--herault--gigean",
+      "publishAt": "2026-07-07",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/herault/gignac/",
+      "slug": "nettoyage-insalubre--herault--gignac",
+      "publishAt": "2026-07-07",
       "needsUniqueDesc": false
     }
   ],
@@ -1287,45 +1287,45 @@
       "slug": "nettoyage-insalubre--herault--bessan",
       "type": "Page ville service",
       "publishAt": "2026-07-05",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 705
     },
     {
       "url": "/nettoyage-insalubre/herault/beziers/",
       "slug": "nettoyage-insalubre--herault--beziers",
       "type": "Page ville service",
       "publishAt": "2026-07-05",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 703
     },
     {
       "url": "/nettoyage-insalubre/herault/boujan-sur-libron/",
       "slug": "nettoyage-insalubre--herault--boujan-sur-libron",
       "type": "Page ville service",
       "publishAt": "2026-07-05",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 715
     },
     {
       "url": "/nettoyage-insalubre/herault/canet/",
       "slug": "nettoyage-insalubre--herault--canet",
       "type": "Page ville service",
       "publishAt": "2026-07-05",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 714
     },
     {
       "url": "/nettoyage-insalubre/herault/capestang/",
       "slug": "nettoyage-insalubre--herault--capestang",
       "type": "Page ville service",
       "publishAt": "2026-07-05",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 697
     },
     {
       "url": "/nettoyage-insalubre/herault/castelnau-le-lez/",
