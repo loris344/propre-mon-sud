@@ -1,40 +1,10 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 130,
-  "remaining": 660,
+  "done": 135,
+  "remaining": 655,
   "late": 0,
   "nextBatch": [
-    {
-      "url": "/nettoyage-insalubre/herault/agde/",
-      "slug": "nettoyage-insalubre--herault--agde",
-      "publishAt": "2026-07-04",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/nettoyage-insalubre/herault/aniane/",
-      "slug": "nettoyage-insalubre--herault--aniane",
-      "publishAt": "2026-07-04",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-insalubre/herault/baillargues/",
-      "slug": "nettoyage-insalubre--herault--baillargues",
-      "publishAt": "2026-07-04",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-insalubre/herault/balaruc-le-vieux/",
-      "slug": "nettoyage-insalubre--herault--balaruc-le-vieux",
-      "publishAt": "2026-07-05",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-insalubre/herault/balaruc-les-bains/",
-      "slug": "nettoyage-insalubre--herault--balaruc-les-bains",
-      "publishAt": "2026-07-05",
-      "needsUniqueDesc": false
-    },
     {
       "url": "/nettoyage-insalubre/herault/bessan/",
       "slug": "nettoyage-insalubre--herault--bessan",
@@ -63,6 +33,36 @@
       "url": "/nettoyage-insalubre/herault/capestang/",
       "slug": "nettoyage-insalubre--herault--capestang",
       "publishAt": "2026-07-05",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/herault/castelnau-le-lez/",
+      "slug": "nettoyage-insalubre--herault--castelnau-le-lez",
+      "publishAt": "2026-07-06",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/herault/castries/",
+      "slug": "nettoyage-insalubre--herault--castries",
+      "publishAt": "2026-07-06",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/herault/clapiers/",
+      "slug": "nettoyage-insalubre--herault--clapiers",
+      "publishAt": "2026-07-06",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/herault/clermont-l-herault/",
+      "slug": "nettoyage-insalubre--herault--clermont-l-herault",
+      "publishAt": "2026-07-06",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/herault/colombiers/",
+      "slug": "nettoyage-insalubre--herault--colombiers",
+      "publishAt": "2026-07-06",
       "needsUniqueDesc": false
     }
   ],
@@ -1242,45 +1242,45 @@
       "slug": "nettoyage-insalubre--herault--agde",
       "type": "Page ville service",
       "publishAt": "2026-07-04",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 726
     },
     {
       "url": "/nettoyage-insalubre/herault/aniane/",
       "slug": "nettoyage-insalubre--herault--aniane",
       "type": "Page ville service",
       "publishAt": "2026-07-04",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 697
     },
     {
       "url": "/nettoyage-insalubre/herault/baillargues/",
       "slug": "nettoyage-insalubre--herault--baillargues",
       "type": "Page ville service",
       "publishAt": "2026-07-04",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 728
     },
     {
       "url": "/nettoyage-insalubre/herault/balaruc-le-vieux/",
       "slug": "nettoyage-insalubre--herault--balaruc-le-vieux",
       "type": "Page ville service",
       "publishAt": "2026-07-05",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 719
     },
     {
       "url": "/nettoyage-insalubre/herault/balaruc-les-bains/",
       "slug": "nettoyage-insalubre--herault--balaruc-les-bains",
       "type": "Page ville service",
       "publishAt": "2026-07-05",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 720
     },
     {
       "url": "/nettoyage-insalubre/herault/bessan/",
