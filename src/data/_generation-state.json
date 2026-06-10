@@ -1,40 +1,10 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 96,
-  "remaining": 694,
+  "done": 101,
+  "remaining": 689,
   "late": 0,
   "nextBatch": [
-    {
-      "url": "/nettoyage-apres-squat/herault/gignac/",
-      "slug": "nettoyage-apres-squat--herault--gignac",
-      "publishAt": "2026-06-29",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-apres-squat/herault/juvignac/",
-      "slug": "nettoyage-apres-squat--herault--juvignac",
-      "publishAt": "2026-06-29",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-apres-squat/herault/lattes/",
-      "slug": "nettoyage-apres-squat--herault--lattes",
-      "publishAt": "2026-06-29",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-apres-squat/herault/lodeve/",
-      "slug": "nettoyage-apres-squat--herault--lodeve",
-      "publishAt": "2026-06-29",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-apres-squat/herault/lunel/",
-      "slug": "nettoyage-apres-squat--herault--lunel",
-      "publishAt": "2026-06-29",
-      "needsUniqueDesc": false
-    },
     {
       "url": "/nettoyage-apres-squat/herault/mauguio/",
       "slug": "nettoyage-apres-squat--herault--mauguio",
@@ -63,6 +33,36 @@
       "url": "/nettoyage-apres-squat/herault/sete/",
       "slug": "nettoyage-apres-squat--herault--sete",
       "publishAt": "2026-06-30",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-squat/herault/valras-plage/",
+      "slug": "nettoyage-apres-squat--herault--valras-plage",
+      "publishAt": "2026-06-30",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-squat/herault/vias/",
+      "slug": "nettoyage-apres-squat--herault--vias",
+      "publishAt": "2026-06-30",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-diogene/bouches-du-rhone/aix-en-provence/",
+      "slug": "nettoyage-diogene--bouches-du-rhone--aix-en-provence",
+      "publishAt": "2026-06-30",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-diogene/bouches-du-rhone/marseille/",
+      "slug": "nettoyage-diogene--bouches-du-rhone--marseille",
+      "publishAt": "2026-06-30",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-diogene/gard/ales/",
+      "slug": "nettoyage-diogene--gard--ales",
+      "publishAt": "2026-07-01",
       "needsUniqueDesc": false
     }
   ],
@@ -891,45 +891,45 @@
       "slug": "nettoyage-apres-squat--herault--gignac",
       "type": "Page ville service",
       "publishAt": "2026-06-29",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 625
     },
     {
       "url": "/nettoyage-apres-squat/herault/juvignac/",
       "slug": "nettoyage-apres-squat--herault--juvignac",
       "type": "Page ville service",
       "publishAt": "2026-06-29",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 638
     },
     {
       "url": "/nettoyage-apres-squat/herault/lattes/",
       "slug": "nettoyage-apres-squat--herault--lattes",
       "type": "Page ville service",
       "publishAt": "2026-06-29",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 638
     },
     {
       "url": "/nettoyage-apres-squat/herault/lodeve/",
       "slug": "nettoyage-apres-squat--herault--lodeve",
       "type": "Page ville service",
       "publishAt": "2026-06-29",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 633
     },
     {
       "url": "/nettoyage-apres-squat/herault/lunel/",
       "slug": "nettoyage-apres-squat--herault--lunel",
       "type": "Page ville service",
       "publishAt": "2026-06-29",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 637
     },
     {
       "url": "/nettoyage-apres-squat/herault/mauguio/",
