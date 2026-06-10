@@ -1,34 +1,10 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 28,
-  "remaining": 762,
+  "done": 32,
+  "remaining": 758,
   "late": 0,
   "nextBatch": [
-    {
-      "url": "/desinfection-logement/bouches-du-rhone/aix-en-provence/",
-      "slug": "desinfection-logement--bouches-du-rhone--aix-en-provence",
-      "publishAt": "2026-06-17",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/desinfection-logement/bouches-du-rhone/marseille/",
-      "slug": "desinfection-logement--bouches-du-rhone--marseille",
-      "publishAt": "2026-06-17",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/desinfection-logement/gard/ales/",
-      "slug": "desinfection-logement--gard--ales",
-      "publishAt": "2026-06-17",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/desinfection-logement/gard/nimes/",
-      "slug": "desinfection-logement--gard--nimes",
-      "publishAt": "2026-06-17",
-      "needsUniqueDesc": false
-    },
     {
       "url": "/desinfection-logement/haute-garonne/toulouse/",
       "slug": "desinfection-logement--haute-garonne--toulouse",
@@ -63,6 +39,30 @@
       "url": "/desinfection-logement/herault/frontignan/",
       "slug": "desinfection-logement--herault--frontignan",
       "publishAt": "2026-06-19",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/desinfection-logement/herault/gignac/",
+      "slug": "desinfection-logement--herault--gignac",
+      "publishAt": "2026-06-19",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/desinfection-logement/herault/juvignac/",
+      "slug": "desinfection-logement--herault--juvignac",
+      "publishAt": "2026-06-19",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/desinfection-logement/herault/lattes/",
+      "slug": "desinfection-logement--herault--lattes",
+      "publishAt": "2026-06-20",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/desinfection-logement/herault/lodeve/",
+      "slug": "desinfection-logement--herault--lodeve",
+      "publishAt": "2026-06-20",
       "needsUniqueDesc": false
     }
   ],
@@ -290,7 +290,7 @@
       "publishAt": "2026-06-16",
       "written": true,
       "draft": false,
-      "words": 554
+      "words": 608
     },
     {
       "url": "/nettoyage-diogene/herault/",
@@ -299,7 +299,7 @@
       "publishAt": "2026-06-16",
       "written": true,
       "draft": false,
-      "words": 591
+      "words": 617
     },
     {
       "url": "/nettoyage-insalubre/herault/",
@@ -308,7 +308,7 @@
       "publishAt": "2026-06-16",
       "written": true,
       "draft": false,
-      "words": 584
+      "words": 610
     },
     {
       "url": "/remise-en-etat-logement/herault/",
@@ -317,43 +317,43 @@
       "publishAt": "2026-06-16",
       "written": true,
       "draft": false,
-      "words": 580
+      "words": 611
     },
     {
       "url": "/desinfection-logement/bouches-du-rhone/aix-en-provence/",
       "slug": "desinfection-logement--bouches-du-rhone--aix-en-provence",
       "type": "Page ville service",
       "publishAt": "2026-06-17",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 616
     },
     {
       "url": "/desinfection-logement/bouches-du-rhone/marseille/",
       "slug": "desinfection-logement--bouches-du-rhone--marseille",
       "type": "Page ville service",
       "publishAt": "2026-06-17",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 633
     },
     {
       "url": "/desinfection-logement/gard/ales/",
       "slug": "desinfection-logement--gard--ales",
       "type": "Page ville service",
       "publishAt": "2026-06-17",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 589
     },
     {
       "url": "/desinfection-logement/gard/nimes/",
       "slug": "desinfection-logement--gard--nimes",
       "type": "Page ville service",
       "publishAt": "2026-06-17",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 590
     },
     {
       "url": "/desinfection-logement/haute-garonne/toulouse/",

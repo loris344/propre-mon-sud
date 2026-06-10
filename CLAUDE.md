@@ -88,8 +88,22 @@ une croissance éditoriale organique.
 - ❌ Annoncer un schema **`FAQPage` sans Q/R réellement visibles** sur la page.
 - ❌ Faire indexer les pages volontairement en **`noindex`** : les 5 `/landing/*`,
   `/notaires-succession`, `/protocole-sanitaire` (voir `src/app/robots.ts`).
-- ❌ **Lancer la production de masse sans le GO explicite du client.** Le client (Loris) donne
-  le top départ après validation des correctifs ; en attendant, préparation uniquement.
+## Production autonome (mandat client donné le 2026-06-10)
+
+Le client a donné le **GO permanent** : dérouler la rédaction des 790 pages sans redemander
+« je continue ? ». C'est la mission. Faire le maximum à chaque session.
+
+**Protocole anti-coupure (tokens limités → l'agent peut s'arrêter net et reprendre ~5 h plus tard) :**
+1. Travailler par **petits lots** (≈ 5-8 pages), une page à la fois.
+2. **Ne JAMAIS committer du contenu invalide** : `npm run build` (donc validate) doit passer AVANT
+   chaque `git commit`. Vérifier la sortie, pas seulement lancer la commande.
+3. **Committer chaque lot validé** (repo local, pas de push ; le client merge vers main lui-même).
+4. Conséquence : une coupure en plein lot ne perd au pire qu'une page non encore écrite — rien
+   de cassé, rien de bancal. Tout commit est un point de reprise sain.
+5. **Reprise** : `npm run seo:status` donne l'avancement et les prochaines pages. La présence du
+   MDX = page faite. On reprend dans l'ordre du planning, jamais de zéro.
+6. Viser **680-720 mots dès le 1er jet** sur les pages à H2 courts (département, débarras-type)
+   pour éviter les allers-retours de validation qui gaspillent des tokens.
 
 ## Barème qualité validé (client, 2026-06-10)
 
