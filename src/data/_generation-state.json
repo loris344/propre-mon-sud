@@ -1,58 +1,10 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 32,
-  "remaining": 758,
+  "done": 40,
+  "remaining": 750,
   "late": 0,
   "nextBatch": [
-    {
-      "url": "/desinfection-logement/haute-garonne/toulouse/",
-      "slug": "desinfection-logement--haute-garonne--toulouse",
-      "publishAt": "2026-06-18",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/desinfection-logement/herault/agde/",
-      "slug": "desinfection-logement--herault--agde",
-      "publishAt": "2026-06-18",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/desinfection-logement/herault/beziers/",
-      "slug": "desinfection-logement--herault--beziers",
-      "publishAt": "2026-06-18",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/desinfection-logement/herault/castelnau-le-lez/",
-      "slug": "desinfection-logement--herault--castelnau-le-lez",
-      "publishAt": "2026-06-18",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/desinfection-logement/herault/clermont-l-herault/",
-      "slug": "desinfection-logement--herault--clermont-l-herault",
-      "publishAt": "2026-06-19",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/desinfection-logement/herault/frontignan/",
-      "slug": "desinfection-logement--herault--frontignan",
-      "publishAt": "2026-06-19",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/desinfection-logement/herault/gignac/",
-      "slug": "desinfection-logement--herault--gignac",
-      "publishAt": "2026-06-19",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/desinfection-logement/herault/juvignac/",
-      "slug": "desinfection-logement--herault--juvignac",
-      "publishAt": "2026-06-19",
-      "needsUniqueDesc": false
-    },
     {
       "url": "/desinfection-logement/herault/lattes/",
       "slug": "desinfection-logement--herault--lattes",
@@ -63,6 +15,54 @@
       "url": "/desinfection-logement/herault/lodeve/",
       "slug": "desinfection-logement--herault--lodeve",
       "publishAt": "2026-06-20",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/desinfection-logement/herault/lunel/",
+      "slug": "desinfection-logement--herault--lunel",
+      "publishAt": "2026-06-20",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/desinfection-logement/herault/mauguio/",
+      "slug": "desinfection-logement--herault--mauguio",
+      "publishAt": "2026-06-20",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/desinfection-logement/herault/pezenas/",
+      "slug": "desinfection-logement--herault--pezenas",
+      "publishAt": "2026-06-21",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/desinfection-logement/herault/saint-jean-de-vedas/",
+      "slug": "desinfection-logement--herault--saint-jean-de-vedas",
+      "publishAt": "2026-06-21",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/desinfection-logement/herault/serignan/",
+      "slug": "desinfection-logement--herault--serignan",
+      "publishAt": "2026-06-21",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/desinfection-logement/herault/sete/",
+      "slug": "desinfection-logement--herault--sete",
+      "publishAt": "2026-06-21",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/desinfection-logement/herault/valras-plage/",
+      "slug": "desinfection-logement--herault--valras-plage",
+      "publishAt": "2026-06-22",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/desinfection-logement/herault/vias/",
+      "slug": "desinfection-logement--herault--vias",
+      "publishAt": "2026-06-22",
       "needsUniqueDesc": false
     }
   ],
@@ -344,7 +344,7 @@
       "publishAt": "2026-06-17",
       "written": true,
       "draft": false,
-      "words": 589
+      "words": 600
     },
     {
       "url": "/desinfection-logement/gard/nimes/",
@@ -353,79 +353,79 @@
       "publishAt": "2026-06-17",
       "written": true,
       "draft": false,
-      "words": 590
+      "words": 605
     },
     {
       "url": "/desinfection-logement/haute-garonne/toulouse/",
       "slug": "desinfection-logement--haute-garonne--toulouse",
       "type": "Page ville service",
       "publishAt": "2026-06-18",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 621
     },
     {
       "url": "/desinfection-logement/herault/agde/",
       "slug": "desinfection-logement--herault--agde",
       "type": "Page ville service",
       "publishAt": "2026-06-18",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 604
     },
     {
       "url": "/desinfection-logement/herault/beziers/",
       "slug": "desinfection-logement--herault--beziers",
       "type": "Page ville service",
       "publishAt": "2026-06-18",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 600
     },
     {
       "url": "/desinfection-logement/herault/castelnau-le-lez/",
       "slug": "desinfection-logement--herault--castelnau-le-lez",
       "type": "Page ville service",
       "publishAt": "2026-06-18",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 605
     },
     {
       "url": "/desinfection-logement/herault/clermont-l-herault/",
       "slug": "desinfection-logement--herault--clermont-l-herault",
       "type": "Page ville service",
       "publishAt": "2026-06-19",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 620
     },
     {
       "url": "/desinfection-logement/herault/frontignan/",
       "slug": "desinfection-logement--herault--frontignan",
       "type": "Page ville service",
       "publishAt": "2026-06-19",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 613
     },
     {
       "url": "/desinfection-logement/herault/gignac/",
       "slug": "desinfection-logement--herault--gignac",
       "type": "Page ville service",
       "publishAt": "2026-06-19",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 601
     },
     {
       "url": "/desinfection-logement/herault/juvignac/",
       "slug": "desinfection-logement--herault--juvignac",
       "type": "Page ville service",
       "publishAt": "2026-06-19",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 603
     },
     {
       "url": "/desinfection-logement/herault/lattes/",
