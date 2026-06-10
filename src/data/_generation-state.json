@@ -1,40 +1,10 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 121,
-  "remaining": 669,
+  "done": 126,
+  "remaining": 664,
   "late": 0,
   "nextBatch": [
-    {
-      "url": "/nettoyage-diogene/herault/lodeve/",
-      "slug": "nettoyage-diogene--herault--lodeve",
-      "publishAt": "2026-07-02",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-diogene/herault/lunel/",
-      "slug": "nettoyage-diogene--herault--lunel",
-      "publishAt": "2026-07-02",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-diogene/herault/mauguio/",
-      "slug": "nettoyage-diogene--herault--mauguio",
-      "publishAt": "2026-07-02",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-diogene/herault/pezenas/",
-      "slug": "nettoyage-diogene--herault--pezenas",
-      "publishAt": "2026-07-03",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-diogene/herault/saint-jean-de-vedas/",
-      "slug": "nettoyage-diogene--herault--saint-jean-de-vedas",
-      "publishAt": "2026-07-03",
-      "needsUniqueDesc": false
-    },
     {
       "url": "/nettoyage-diogene/herault/serignan/",
       "slug": "nettoyage-diogene--herault--serignan",
@@ -64,6 +34,36 @@
       "slug": "nettoyage-insalubre--herault--agde",
       "publishAt": "2026-07-04",
       "needsUniqueDesc": true
+    },
+    {
+      "url": "/nettoyage-insalubre/herault/aniane/",
+      "slug": "nettoyage-insalubre--herault--aniane",
+      "publishAt": "2026-07-04",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/herault/baillargues/",
+      "slug": "nettoyage-insalubre--herault--baillargues",
+      "publishAt": "2026-07-04",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/herault/balaruc-le-vieux/",
+      "slug": "nettoyage-insalubre--herault--balaruc-le-vieux",
+      "publishAt": "2026-07-05",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/herault/balaruc-les-bains/",
+      "slug": "nettoyage-insalubre--herault--balaruc-les-bains",
+      "publishAt": "2026-07-05",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/herault/bessan/",
+      "slug": "nettoyage-insalubre--herault--bessan",
+      "publishAt": "2026-07-05",
+      "needsUniqueDesc": false
     }
   ],
   "pages": [
@@ -1116,45 +1116,45 @@
       "slug": "nettoyage-diogene--herault--lodeve",
       "type": "Page ville service",
       "publishAt": "2026-07-02",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 733
     },
     {
       "url": "/nettoyage-diogene/herault/lunel/",
       "slug": "nettoyage-diogene--herault--lunel",
       "type": "Page ville service",
       "publishAt": "2026-07-02",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 704
     },
     {
       "url": "/nettoyage-diogene/herault/mauguio/",
       "slug": "nettoyage-diogene--herault--mauguio",
       "type": "Page ville service",
       "publishAt": "2026-07-02",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 707
     },
     {
       "url": "/nettoyage-diogene/herault/pezenas/",
       "slug": "nettoyage-diogene--herault--pezenas",
       "type": "Page ville service",
       "publishAt": "2026-07-03",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 686
     },
     {
       "url": "/nettoyage-diogene/herault/saint-jean-de-vedas/",
       "slug": "nettoyage-diogene--herault--saint-jean-de-vedas",
       "type": "Page ville service",
       "publishAt": "2026-07-03",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 707
     },
     {
       "url": "/nettoyage-diogene/herault/serignan/",
