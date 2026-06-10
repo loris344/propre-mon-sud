@@ -1,8 +1,0 @@
-# Robots.txt pour SOS Nettoyage Diogène
-# https://www.robotstxt.org/robotstxt.html
-
-User-agent: *
-Allow: /
-
-# Sitemap
-Sitemap: https://sosnettoyagediogene.fr/sitemap.xml

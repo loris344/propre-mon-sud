@@ -1,8 +1,11 @@
+"use client";
+
 import { Phone, Mail, MapPin, Clock, Shield, Heart, Building2 } from "lucide-react";
 import { ResponsiveImage } from "./ResponsiveImage";
-import { Link } from "react-router-dom";
+import Link from "next/link";
+import type { NavLink } from "@/lib/seo-pages";
 
-const Footer = () => {
+const Footer = ({ services = [] }: { services?: NavLink[] }) => {
   return (
     <footer className="bg-gradient-to-b from-background to-secondary/30 border-t border-border/50">
       <div className="container mx-auto px-4 sm:px-6 py-12 sm:py-16">
@@ -78,15 +81,29 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Services */}
+          {/* Services — vrais liens crawlables vers les pages mères publiées */}
           <div className="space-y-4">
             <h3 className="font-semibold text-foreground text-lg">Nos Services</h3>
             <div className="space-y-2">
-              <div className="text-sm text-muted-foreground">• Nettoyage Syndrome de Diogène</div>
-              <div className="text-sm text-muted-foreground">• Débarras Gros Volumes</div>
-              <div className="text-sm text-muted-foreground">• Désinfection & Insalubrité</div>
-              <div className="text-sm text-muted-foreground">• Nettoyage Extrême</div>
-              <div className="text-sm text-muted-foreground">• Évacuation Déchets</div>
+              {services.length > 0 ? (
+                services.map((s) => (
+                  <Link
+                    key={s.url}
+                    href={s.url}
+                    className="block text-sm text-muted-foreground transition-colors hover:text-primary"
+                  >
+                    {s.label}
+                  </Link>
+                ))
+              ) : (
+                <>
+                  <div className="text-sm text-muted-foreground">• Nettoyage Syndrome de Diogène</div>
+                  <div className="text-sm text-muted-foreground">• Débarras Gros Volumes</div>
+                  <div className="text-sm text-muted-foreground">• Désinfection & Insalubrité</div>
+                  <div className="text-sm text-muted-foreground">• Nettoyage Extrême</div>
+                  <div className="text-sm text-muted-foreground">• Évacuation Déchets</div>
+                </>
+              )}
             </div>
           </div>
         </div>
@@ -120,14 +137,14 @@ const Footer = () => {
               © {new Date().getFullYear()} SOS Nettoyage Diogène. Tous droits réservés.
             </div>
             <div className="flex flex-wrap items-center justify-center gap-4 text-sm text-muted-foreground">
-              <Link 
-                to="/mentions-legales"
+              <Link
+                href="/mentions-legales"
                 className="hover:text-foreground transition-colors"
               >
                 Mentions légales
               </Link>
-              <Link 
-                to="/politique-confidentialite"
+              <Link
+                href="/politique-confidentialite"
                 className="hover:text-foreground transition-colors"
               >
                 Politique de confidentialité

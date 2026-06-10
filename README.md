@@ -1,133 +1,64 @@
-# SOS Nettoyage Diogène - Site Web Professionnel
+# SOS Nettoyage Diogène — site web
 
-Site web professionnel pour SOS Nettoyage Diogène, société spécialisée dans le nettoyage et débarras syndrome de Diogène à Montpellier et dans toute la région Occitanie.
+Site professionnel de **SOS Nettoyage Diogène** (nettoyage extrême, débarras, désinfection,
+syndrome de Diogène) à Montpellier et dans le Sud de la France.
 
-## 🌐 Site Web
+- **Production** : https://sosnettoyagediogene.fr
+- **Stack** : Next.js 15 (App Router) en **export statique**, TypeScript, Tailwind + shadcn/ui
+- **Hébergement** : GitHub Pages, déploiement auto via GitHub Actions à chaque push sur `main`
 
-**URL de production** : https://sosnettoyagediogene.fr
+> 📖 **Les règles SEO, garde-fous et la procédure de rédaction des pages sont dans
+> [`CLAUDE.md`](./CLAUDE.md).** À lire avant toute intervention sur le contenu SEO.
 
-## 🚀 Fonctionnalités
+## Principe
 
-- **Site responsive** optimisé pour mobile et desktop
-- **SEO optimisé** avec meta tags, structured data et sitemap
-- **Google Analytics** intégré pour le suivi des performances
-- **Pages de services** spécialisées :
-  - Nettoyage Syndrome de Diogène
-  - Débarras Gros Volumes
-  - Désinfection et Insalubrité
-- **Formulaire de contact** avec validation
-- **Performance optimisée** avec lazy loading et code splitting
+Le site est une fabrique de **pages SEO programmatiques** : le plan complet (metas, H1/H2,
+FAQ, planning, maillage) vit dans `src/data/seo-pages.json` ; seul le **corps unique** de
+chaque page se rédige, dans `content/seo/<slug>.mdx`. Les pages sont publiées en
+**goutte-à-goutte** par date (`publishAt`), via un rebuild quotidien. Sitemap et robots sont
+générés automatiquement depuis les pages réellement publiées.
 
-## 🛠️ Technologies Utilisées
-
-- **Frontend** : React 18 + TypeScript
-- **Build Tool** : Vite
-- **Styling** : Tailwind CSS + shadcn/ui
-- **Routing** : React Router DOM
-- **SEO** : React Helmet Async
-- **Analytics** : Google Tag Manager
-- **Déploiement** : GitHub Pages
-
-## 📦 Installation et Développement
-
-### Prérequis
-- Node.js (version 18 ou supérieure)
-- npm ou yarn
-
-### Installation
+## Installation
 
 ```bash
-# Cloner le repository
 git clone https://github.com/loris344/propre-mon-sud.git
-
-# Naviguer vers le dossier
 cd propre-mon-sud
-
-# Installer les dépendances
 npm install
-
-# Démarrer le serveur de développement
-npm run dev
+npm run dev        # http://localhost:3000
 ```
 
-### Scripts Disponibles
+## Scripts
 
 ```bash
-# Développement
-npm run dev          # Serveur de développement (port 8080)
+npm run dev            # serveur de dev (localhost:3000)
+npm run build          # validation SEO (prebuild) puis export statique → out/
+npm run start          # sert le build
+npm run lint           # ESLint (next lint)
+npm run serve          # sert le dossier out/ en local
 
-# Build
-npm run build        # Build de production
-npm run build:dev    # Build de développement
-
-# Déploiement
-npm run deploy       # Déploiement sur GitHub Pages
-npm run deploy:build # Build + déploiement
-
-# Utilitaires
-npm run lint         # Linter ESLint
-npm run preview      # Aperçu du build
-npm run sitemap      # Génération du sitemap
+npm run seo:status     # avancement de la rédaction + prochaines pages à écrire
+npm run seo:validate   # validation SEO bloquante (metas uniques, similarité, liens…)
+npm run seo:images     # optimise les photos sources → WebP 1600×900
+npm run seo:import     # régénère seo-pages.json depuis Bondash.xlsx
 ```
 
-## 📁 Structure du Projet
+## Structure
 
 ```
-src/
-├── components/          # Composants React réutilisables
-│   ├── ui/             # Composants UI (shadcn/ui)
-│   ├── Header.tsx      # En-tête du site
-│   ├── Hero.tsx        # Section héro
-│   ├── Services.tsx    # Section services
-│   ├── Contact.tsx     # Formulaire de contact
-│   └── SEOHead.tsx     # Gestion SEO dynamique
-├── pages/              # Pages de l'application
-│   ├── Index.tsx       # Page d'accueil
-│   ├── ServiceDiogene.tsx
-│   ├── ServiceDebarras.tsx
-│   └── ServiceDesinfection.tsx
-├── hooks/              # Hooks React personnalisés
-├── lib/                # Utilitaires et helpers
-└── assets/             # Images et ressources statiques
+content/seo/         # corps MDX des pages SEO programmatiques
+content/articles/    # articles de blog (MDX)
+src/app/             # routes Next.js (App Router) — dont [...slug] (catch-all SEO)
+src/data/            # seo-pages.json, internal-links.json (plan + maillage)
+src/lib/             # accès données, metadata, JSON-LD
+scripts/             # validation SEO, import Excel, optimisation images, audit maillage
+out/                 # export statique généré (déployé sur GitHub Pages)
 ```
 
-## 🎯 SEO et Performance
-
-- **Meta tags** optimisés pour chaque page
-- **Structured data** (JSON-LD) pour les moteurs de recherche
-- **Sitemap XML** généré automatiquement
-- **Robots.txt** configuré
-- **Core Web Vitals** optimisés
-- **Lazy loading** des images
-- **Code splitting** pour un chargement rapide
-
-## 📊 Analytics
-
-- **Google Tag Manager** intégré (ID: G-VDZL4FT7QQ)
-- **Suivi des événements** personnalisés
-- **Métriques de performance** automatiques
-
-## 🚀 Déploiement
-
-Le site est déployé automatiquement sur GitHub Pages à chaque push sur la branche `main`.
-
-### Déploiement Manuel
-
-```bash
-npm run deploy:build
-```
-
-## 📞 Contact
+## Contact
 
 - **Email** : contact@sosnettoyagediogene.fr
 - **Site** : https://sosnettoyagediogene.fr
 
-## 📄 Licence
+## Licence
 
-Ce projet est privé et propriété de SOS Nettoyage Diogène.
-
----
-
-**Développé avec ❤️ pour SOS Nettoyage Diogène**# Build Thu Sep 18 16:57:12 CEST 2025
-# Fix 404 redirect Thu Sep 18 17:01:19 CEST 2025
-# Trigger GitHub Actions Thu Sep 18 17:23:56 CEST 2025
+Projet privé, propriété de SOS Nettoyage Diogène.

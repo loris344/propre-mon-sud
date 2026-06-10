@@ -3,6 +3,14 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [ main ]
+  # Rebuild quotidien : fait passer en ligne les pages dont la date de
+  # publication (publishAt) est atteinte, sans aucune édition manuelle.
+  # 05:00 UTC ≈ 06:00/07:00 Paris. La validation SEO (prebuild) bloque le
+  # déploiement en cas d'erreur.
+  schedule:
+    - cron: '0 5 * * *'
+  # Permet aussi un déclenchement manuel depuis l'onglet Actions.
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -18,12 +26,12 @@ jobs:
     - name: Setup Node.js
       uses: actions/setup-node@v4
       with:
-        node-version: '18'
+        node-version: '20'
         cache: 'npm'
-        
+
     - name: Install dependencies
       run: npm install --include=optional --legacy-peer-deps
-        
+
     - name: Build
       run: npm run build
 
@@ -31,4 +39,5 @@ jobs:
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./dist
+        publish_dir: ./out
+        enable_jekyll: false

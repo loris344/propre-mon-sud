@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>La machine de production SEO : workflow complet + spécification</title>
+<style>
+  :root{
+    --ink:#1e293b; --muted:#64748b; --bg:#f1f5f9;
+    --yellow:#fef9c3; --yellow-b:#eab308;
+    --blue:#dbeafe;   --blue-b:#3b82f6;
+    --green:#dcfce7;  --green-b:#22c55e;
+    --pink:#fce7f3;   --pink-b:#ec4899;
+    --red:#fee2e2;    --red-b:#ef4444;
+    --gray:#f1f5f9;   --gray-b:#94a3b8;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--ink);padding:32px 24px 80px;line-height:1.45}
+  .board{max-width:1180px;margin:0 auto}
+  h1{font-size:30px;margin-bottom:6px}
+  .sub{color:var(--muted);margin-bottom:20px;font-size:15px}
+  .legend{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:36px}
+  .chip{display:flex;align-items:center;gap:7px;background:#fff;border-radius:99px;padding:6px 14px;font-size:13px;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+  .dot{width:14px;height:14px;border-radius:4px}
+
+  .phase{background:#fff;border-radius:16px;padding:24px 26px;box-shadow:0 2px 8px rgba(0,0,0,.07)}
+  .phase-head{display:flex;align-items:baseline;gap:12px;margin-bottom:6px;flex-wrap:wrap}
+  .num{background:var(--ink);color:#fff;border-radius:8px;font-weight:700;font-size:14px;padding:4px 10px}
+  .phase-head h2{font-size:20px}
+  .who{font-size:12px;font-weight:700;border-radius:99px;padding:3px 10px;letter-spacing:.3px}
+  .who.auto{background:var(--blue);color:#1d4ed8}
+  .who.claude{background:var(--green);color:#15803d}
+  .who.loris{background:var(--pink);color:#be185d}
+  .who.both{background:var(--yellow);color:#a16207}
+  .phase-desc{color:var(--muted);font-size:14px;margin-bottom:16px}
+
+  .cards{display:flex;flex-wrap:wrap;gap:14px;align-items:stretch}
+  .card{border-radius:12px;padding:14px 16px;flex:1 1 220px;min-width:210px;border-left:5px solid;box-shadow:0 1px 4px rgba(0,0,0,.06);font-size:14px}
+  .card h3{font-size:14.5px;margin-bottom:6px}
+  .card ul{padding-left:17px;display:grid;gap:4px}
+  .card li{font-size:13px}
+  .file{font-family:ui-monospace,Menlo,monospace;font-size:12px;background:rgba(148,163,184,.18);border-radius:5px;padding:1px 6px;white-space:nowrap}
+  .c-yellow{background:var(--yellow);border-color:var(--yellow-b)}
+  .c-blue{background:var(--blue);border-color:var(--blue-b)}
+  .c-green{background:var(--green);border-color:var(--green-b)}
+  .c-pink{background:var(--pink);border-color:var(--pink-b)}
+  .c-red{background:var(--red);border-color:var(--red-b)}
+  .c-gray{background:var(--gray);border-color:var(--gray-b)}
+
+  .arrow{display:flex;flex-direction:column;align-items:center;padding:14px 0;color:var(--muted)}
+  .arrow .line{width:3px;height:26px;background:var(--gray-b);border-radius:2px}
+  .arrow .tip{font-size:20px;line-height:.6;color:var(--gray-b)}
+  .arrow .lbl{background:#fff;border:1.5px dashed var(--gray-b);border-radius:99px;padding:5px 16px;font-size:13px;margin-top:8px;color:var(--ink);text-align:center;max-width:560px}
+
+  .steps{display:flex;flex-wrap:wrap;gap:0;align-items:stretch}
+  .step{display:flex;align-items:stretch}
+  .step .card{min-width:185px;flex:1}
+  .step-arrow{align-self:center;font-size:22px;color:var(--gray-b);padding:0 7px}
+
+  .decision{background:#fff;border:2.5px solid var(--blue-b);border-radius:14px;padding:14px 18px;text-align:center;font-weight:600;max-width:520px;margin:0 auto;font-size:14.5px}
+  .branches{display:flex;gap:18px;justify-content:center;flex-wrap:wrap;margin-top:14px}
+  .branch{flex:1 1 300px;max-width:440px}
+  .branch .tag{display:block;text-align:center;font-weight:800;font-size:13px;margin-bottom:8px}
+  .ok{color:#15803d}.ko{color:#b91c1c}
+
+  .mock{border:2px solid var(--gray-b);border-radius:12px;background:#fff;max-width:640px;margin:6px auto 0}
+  .mock .zone{border-bottom:1.5px dashed #e2e8f0;padding:9px 16px;font-size:13px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+  .mock .zone:last-child{border-bottom:none}
+  .mock b{font-size:13px}
+  .mock .note{color:var(--muted);font-size:12px;text-align:right}
+  .loop{border:2.5px dashed var(--green-b);border-radius:16px;padding:14px 20px;margin-top:26px;background:#f0fdf4;font-size:14px;text-align:center}
+  .small{font-size:12.5px;color:var(--muted)}
+  .kpi{font-weight:800}
+
+  /* ----- niveau chirurgical : blocs dépliants ----- */
+  details.spec{margin-top:14px;border:1.5px solid #cbd5e1;border-radius:10px;background:#f8fafc;overflow:hidden}
+  details.spec summary{cursor:pointer;padding:10px 14px;font-weight:700;font-size:13.5px;color:#334155;background:#e2e8f0;list-style:none;display:flex;align-items:center;gap:8px}
+  details.spec summary::before{content:"▸";transition:transform .15s}
+  details.spec[open] summary::before{transform:rotate(90deg)}
+  details.spec .inner{padding:14px 16px;font-size:13px;display:grid;gap:12px}
+  details.spec h4{font-size:13px;margin-bottom:2px;color:#0f172a}
+  details.spec table{border-collapse:collapse;width:100%;font-size:12.5px;background:#fff}
+  details.spec th,details.spec td{border:1px solid #e2e8f0;padding:6px 9px;text-align:left;vertical-align:top}
+  details.spec th{background:#f1f5f9;font-size:12px}
+  details.spec pre{background:#0f172a;color:#e2e8f0;border-radius:8px;padding:12px 14px;font-size:12px;overflow-x:auto;line-height:1.55;font-family:ui-monospace,Menlo,monospace}
+  details.spec ul{padding-left:18px;display:grid;gap:4px}
+  details.spec li{font-size:12.8px}
+  .warn{background:#fff7ed;border-left:4px solid #f97316;padding:8px 12px;border-radius:6px;font-size:12.8px}
+</style>
+</head>
+<body>
+<div class="board">
+
+  <h1>🏭 La machine de production SEO, de l'Excel à Google</h1>
+  <div class="sub">sosnettoyagediogene.fr · 790 pages locales + 47 pages blog · publication automatique du 10/06/2026 au 08/10/2026.<br>
+  Document à double niveau : <b>la vue board</b> (cartes) pour comprendre, <b>les blocs « 🔬 Détail »</b> (dépliants) pour opérer. Une IA qui lit l'intégralité des blocs 🔬 + <span class="file">CLAUDE.md</span> à la racine du repo peut reprendre la production sans autre contexte.</div>
+
+  <div class="legend">
+    <span class="chip"><span class="dot" style="background:var(--yellow-b)"></span> Données / fichiers (inputs &amp; outputs)</span>
+    <span class="chip"><span class="dot" style="background:var(--blue-b)"></span> Automatique (scripts, robot)</span>
+    <span class="chip"><span class="dot" style="background:var(--green-b)"></span> Claude / IA (rédaction)</span>
+    <span class="chip"><span class="dot" style="background:var(--pink-b)"></span> Loris (client)</span>
+    <span class="chip"><span class="dot" style="background:var(--red-b)"></span> Garde-fou bloquant</span>
+  </div>
+
+  <!-- ================= PHASE 0 ================= -->
+  <section class="phase">
+    <div class="phase-head"><span class="num">0</span><h2>Les sources (tout part de là)</h2><span class="who both">LORIS + IA</span></div>
+    <div class="phase-desc">Quatre inputs alimentent la machine. Si l'un change, tout le reste suit automatiquement.</div>
+    <div class="cards">
+      <div class="card c-yellow"><h3>📊 Le plan : <span class="file">Bondash.xlsx</span></h3>
+        <ul><li><b>839 pages</b> : URL, mots-clés, metas, H2 imposés, FAQ, schema, canonical, priorité</li>
+        <li><b>10 128 liens</b> de maillage typés avec leur ancre</li>
+        <li>Le planning de sortie de chaque page</li></ul></div>
+      <div class="card c-pink"><h3>📷 Les photos client</h3>
+        <ul><li>Déposées dans <span class="file">public/images/seo/source/&lt;service&gt;/</span></li>
+        <li>6 dossiers services, ~100 photos actuellement</li></ul></div>
+      <div class="card c-yellow"><h3>📜 Les règles : <span class="file">CLAUDE.md</span></h3>
+        <ul><li>Barème qualité, interdits, décisions client datées</li>
+        <li>Source de vérité des règles. Relu à chaque session.</li></ul></div>
+      <div class="card c-green"><h3>🌍 Recherche web locale</h3>
+        <ul><li>Obligatoire avant chaque page ville</li>
+        <li>Faits vérifiés uniquement, sources conservées</li></ul></div>
+    </div>
+
+    <details class="spec"><summary>🔬 Détail : structure exacte de l'Excel et conventions</summary><div class="inner">
+      <h4>Onglet « Pages SEO » : colonnes lues par l'import (noms exacts)</h4>
+      <pre>ID · URL finale · Titre page · Type de page · Template utilisé · Service · Département · Ville · Région
+Priorité · Date de publication prévue · Auteur · Relecteur · Mot-clé principal · Mots-clés secondaires («|» séparateur)
+Intention de recherche · Page mère URL · Pages enfants URLs · Liens internes obligatoires · Liens internes suggérés
+Besoin image · Image obligatoire · Type image attendue · Alt image proposé · Meta title · Meta description · H1
+H2 proposés («|») · FAQ prévue («|») · Schema type · Canonical · Noindex avant publication · Notes</pre>
+      <h4>Onglet « Maillage » : colonnes</h4>
+      <pre>Page source · Page cible · Ancre conseillée · Type de lien · Priorité
+Types de lien rencontrés : "Même ville" | "Enfant" / "Ville enfant" | "Parent" | "Maillage obligatoire" | "Lien suggéré"</pre>
+      <h4>Conventions</h4>
+      <ul>
+        <li><b>slug</b> = URL sans les «/» de bord, «/» internes → «--». Ex : <span class="file">/desinfection-logement/herault/montpellier/</span> → <span class="file">desinfection-logement--herault--montpellier</span>. La home → slug <span class="file">accueil</span>.</li>
+        <li><b>handledBy</b> calculé à l'import : <span class="file">existing</span> pour «/» et «/blog/» (routes en dur), <span class="file">blog</span> pour tout «/blog/*» (phase blog dédiée, non implémentée), <span class="file">catchall</span> pour le reste (790 pages, route <span class="file">src/app/[...slug]/page.tsx</span>).</li>
+        <li><b>Répartition des 839</b> : 469 « Page ville service », 141 « Page ville débarras type », 67 « Page ville débarras », 42 « Page département service », 39 « Article blog », 11 « Page type débarras », 9 « Réalisation catégorie », 8 « Catégorie blog », 7 « Page persona », + mères/hubs/régionales. Priorités : P1=21, P2=257, P3=364, P4=153, P5=43.</li>
+        <li><b>Intentions</b> : 677 « Transactionnelle locale », 54 départementale, 27 service, 39 « Informationnelle avec conversion » (blog), etc.</li>
+        <li><b>Schema annoncé par le plan</b> : 767 pages « LocalBusiness + Service + FAQPage ». L'implémentation N'ÉMET PAS LocalBusiness/FAQPage par page (voir phase 5, décision du 10/06/2026), le champ sert au validateur (présence) et à la règle « FAQ rédigée obligatoire ».</li>
+        <li><b>Entreprise</b> : nom exact « SOS Nettoyage Diogène » · tél +33 7 67 13 54 58 · contact@sosnettoyagediogene.fr · adresse réelle unique : Montpellier (34000) · 7j/7 8h-20h · fourchette publiée 1 500-5 000 € pour intervention complète · T2/T3 : 1-2 jours, maison : 3-4 jours. Ce sont les SEULS chiffres utilisables dans le contenu (jamais d'autres stats inventées).</li>
+      </ul>
+    </div></details>
+  </section>
+
+  <div class="arrow"><div class="line"></div><div class="tip">▼</div><div class="lbl">Import : lancé 1 fois, à relancer <b>seulement si l'Excel change</b> (<span class="file">npm run seo:import</span>)</div></div>
+
+  <!-- ================= PHASE 1 ================= -->
+  <section class="phase">
+    <div class="phase-head"><span class="num">1</span><h2>Import &amp; préparation</h2><span class="who auto">AUTOMATIQUE</span></div>
+    <div class="phase-desc">L'Excel et les photos sont convertis en fichiers que le site sait lire. Tout est versionné dans Git : le repo est la source de vérité.</div>
+    <div class="cards">
+      <div class="card c-blue"><h3>⚙️ <span class="file">scripts/excel-to-seo.py</span></h3>
+        <ul><li>Excel → <span class="file">src/data/seo-pages.json</span> + <span class="file">internal-links.json</span></li>
+        <li>Recalcule le planning : 4/jour pendant 14 jours puis 7/jour</li>
+        <li>Ne touche JAMAIS aux MDX rédigés</li></ul></div>
+      <div class="card c-blue"><h3>🖼️ <span class="file">scripts/optimize-images.mjs</span></h3>
+        <ul><li>Photos → WebP 1600×900 (Sharp, recadrage « attention »)</li>
+        <li>Alimente le pool par service <span class="file">image-fallbacks.json</span></li></ul></div>
+      <div class="card c-yellow"><h3>📌 <span class="file">src/data/image-map.json</span></h3>
+        <ul><li>Épinglage manuel « URL → photo précise », prioritaire sur le pool</li></ul></div>
+    </div>
+
+    <details class="spec"><summary>🔬 Détail : algorithme du planning, fichiers générés, résolution d'images</summary><div class="inner">
+      <h4>Recalcul du planning (excel-to-seo.py)</h4>
+      <pre>Constantes : START_DATE = 2026-06-10 · RAMP_DAYS = 14 · RAMP_PER_DAY = 4 · CRUISE_PER_DAY = 7
+Ordre de la file = tri par (Date de publication prévue de l'Excel, puis Priorité, puis ordre de ligne)
+position p dans la file → date :
+  si p &lt; 14×4 (=56)  : jour = p // 4
+  sinon               : jour = 14 + (p-56) // 7
+publishAt = START_DATE + jour.  Étalement réel : 10/06/2026 → 08/10/2026 (790 pages datées).</pre>
+      <h4>Format de seo-pages.json</h4>
+      <pre>{ "meta": { "generatedFrom": "Bondash.xlsx",
+            "schedule": { "startDate": "2026-06-10", "rampDays": 14, "rampPerDay": 4, "cruisePerDay": 7 },
+            "counts": { "total": 839, "catchall": 790, "blog": 47, "existing": 2 } },
+  "pages": [ { id, slug, url, title, type, template, service, departement, ville, region,
+               priority, originalPublishAt, publishAt, author, reviewer, keyword,
+               secondaryKeywords[], intent, parentUrl, childrenUrls[], requiredLinks[],
+               suggestedLinks[], needsImage, imageRequired, imageType, altProposed,
+               metaTitle, metaDescription, h1, h2[], faq[], schemaType, canonical,
+               noindexBeforePublish, notes, handledBy } ] }
+internal-links.json : { "&lt;url source&gt;": [ { target, anchor, type, priority } ] }</pre>
+      <h4>Résolution de l'image d'une page (src/lib/seo-images.ts, ordre strict)</h4>
+      <ul>
+        <li>1. <b>Image exacte</b> : <span class="file">image-map.json[page.url]</span> si présente.</li>
+        <li>2. <b>Pool du service</b> : <span class="file">image-fallbacks.json[page.service]</span>, choix déterministe <span class="file">hash(page.url) % pool.length</span> (même page = même image, villes voisines = images différentes).</li>
+        <li>3. Aucun pool → la page se publie <b>sans</b> image. Frontmatter <span class="file">noImage: true</span> force l'absence (cas exceptionnel uniquement, décision client : une image par page).</li>
+        <li><b>alt</b> : <span class="file">altProposed</span> de l'Excel sinon construit depuis H1 + lieu. Unique par page.</li>
+        <li>Rapprochement dossier photo → service : par tokens normalisés (tolère accents, parenthèses, fautes). Égalité parfaite de score = dossier ignoré avec warning (on n'invente pas).</li>
+      </ul>
+      <h4>Commandes</h4>
+      <pre>npm run seo:import     # ré-importe l'Excel (UNIQUEMENT si Bondash.xlsx change)
+npm run seo:images     # convertit les nouvelles photos (idempotent, ne reconvertit pas)
+npm run seo:status     # avancement + 10 prochaines pages + retards + collisions ✍︎ → écrit src/data/_generation-state.json
+npm run seo:validate   # validation bloquante (identique au prebuild)
+npm run dev            # localhost:3000, TOUT ce qui est rédigé est visible (le filtre de date ne joue qu'en prod)
+npm run build          # prebuild (validate) puis export statique → out/
+npm run serve          # sert out/ en local
+node scripts/crawl-depth.mjs   # audit profondeur de clics sur out/ (après build)</pre>
+    </div></details>
+  </section>
+
+  <div class="arrow"><div class="line"></div><div class="tip">▼</div><div class="lbl">Rédaction : <b>une page à la fois</b>, dans l'ordre du planning, jamais en parallèle</div></div>
+
+  <!-- ================= PHASE 2 ================= -->
+  <section class="phase">
+    <div class="phase-head"><span class="num">2</span><h2>Rédaction d'une page (la boucle répétée ~780 fois)</h2><span class="who claude">IA RÉDACTRICE</span></div>
+    <div class="phase-desc">Le plan fournit le squelette (metas, H2, FAQ, liens). La rédaction produit le seul élément manquant : <b>le corps unique</b>.</div>
+    <div class="steps">
+      <div class="step"><div class="card c-green"><h3>1. Où en est-on ?</h3><ul><li><span class="file">npm run seo:status</span></li><li>Prochaine page = la 1ʳᵉ de la liste, jamais au hasard</li></ul></div><div class="step-arrow">→</div></div>
+      <div class="step"><div class="card c-green"><h3>2. Lire le brief</h3><ul><li>Fiche de la page dans <span class="file">seo-pages.json</span></li><li>kw principal + secondaires, H2, FAQ, schema</li></ul></div><div class="step-arrow">→</div></div>
+      <div class="step"><div class="card c-green"><h3>3. Recherche locale</h3><ul><li>1-2 recherches web si page ville/département</li><li>≥ 1 fait local vérifié par section H2</li></ul></div><div class="step-arrow">→</div></div>
+      <div class="step"><div class="card c-green"><h3>4. Écrire le MDX</h3><ul><li>≥ 600 mots (locale), ≥ 800 (mère/hub)</li><li>Metas uniques écrites à la main</li><li>FAQ rédigée, liens contextuels</li></ul></div><div class="step-arrow">→</div></div>
+      <div class="step"><div class="card c-green"><h3>5. Vérifier + livrer</h3><ul><li><span class="file">npm run seo:validate</span></li><li>Commit + push sur main</li></ul></div></div>
+    </div>
+    <div class="cards" style="margin-top:14px">
+      <div class="card c-red"><h3>⛔ Interdits absolus</h3>
+        <ul><li>Inventer un fait, avis, stat, quartier, certification</li><li>AggregateRating / LocalBusiness par ville</li><li>Templater les meta descriptions</li><li>Tirets cadratins « — » dans le contenu</li><li>Bourrage de mots-clés</li><li>Rédiger plusieurs pages en parallèle</li><li>Lancer la production de masse sans GO client</li></ul></div>
+      <div class="card c-gray"><h3>📄 Résultat : <span class="file">content/seo/&lt;slug&gt;.mdx</span></h3>
+        <ul><li>Présence du fichier = page rédigée (compteur d'avancement fiable)</li><li><span class="file">draft: true</span> = visible en dev, invisible en prod</li></ul></div>
+    </div>
+
+    <details class="spec"><summary>🔬 Détail : schéma du frontmatter, règles d'écriture complètes, procédure de reprise pour une IA</summary><div class="inner">
+      <h4>Frontmatter MDX (champs et rôles)</h4>
+      <pre>---
+id: desinfection-logement-herault-montpellier   # informatif
+url: /desinfection-logement/herault/montpellier/ # informatif (la liaison réelle = slug du fichier)
+draft: false                # true = invisible en prod, visible en dev
+metaTitle: "..."            # OVERRIDE optionnel : prime sur le plan Excel (≤ 65 car. conseillé)
+metaDescription: "..."      # OVERRIDE : OBLIGATOIRE pour les 331 pages en collision (flag ✍︎ de seo:status)
+h1: "..."                   # OVERRIDE optionnel
+noImage: true               # optionnel, retire l'image (exception rare)
+minWords: 350               # optionnel, abaisse le plancher (à justifier, ex. hub de navigation)
+sources:                    # URLs de la recherche locale (traçabilité ; non affichées à ce jour)
+  - "https://..."
+faq:                        # alimente la section FAQ VISIBLE de la page
+  - q: "Question du plan ?"
+    a: "Réponse complète rédigée (2-4 phrases)."
+---
+Corps en markdown. Liens internes : [ancre descriptive](/url-cible/) avec slash final.</pre>
+      <h4>Règles d'écriture (toutes vérifiées ou bloquées par le validateur quand c'est possible)</h4>
+      <table>
+        <tr><th>Règle</th><th>Valeur</th><th>Contrôle</th></tr>
+        <tr><td>Longueur corps page locale (ville/département)</td><td>≥ 600 mots</td><td>bloquant</td></tr>
+        <tr><td>Longueur corps page mère/hub (type contenant « mère » ou « hub »)</td><td>≥ 800 mots</td><td>bloquant</td></tr>
+        <tr><td>H2 du corps</td><td>exactement ceux du plan (pas d'ajout, le H2 « FAQ » est rendu à part)</td><td>manuel</td></tr>
+        <tr><td>Meta title / description</td><td>uniques sur tout le site ; description 120-160 car.</td><td>bloquant / warning</td></tr>
+        <tr><td>Similarité entre 2 corps (Jaccard 5-grammes)</td><td>&lt; 0.70 ; viser ≥ 40-50 % de contenu non partagé entre pages sœurs</td><td>bloquant</td></tr>
+        <tr><td>Faits locaux (pages villes)</td><td>≥ 1 par section H2, vérifié par recherche web, source en frontmatter</td><td>manuel</td></tr>
+        <tr><td>Transparence d'implantation</td><td>chaque page ville dit « intervention à X depuis Montpellier » (anti-doorway)</td><td>manuel</td></tr>
+        <tr><td>Liens contextuels dans le corps</td><td>3-6, ancres VARIÉES (exacte + partielle + naturelle), slash final</td><td>cible connue : bloquant</td></tr>
+        <tr><td>FAQ</td><td>questions du plan, réponses complètes rédigées</td><td>bloquant si schema l'annonce</td></tr>
+        <tr><td>Style</td><td>zéro « — », pas de bourrage, intro qui répond direct, paragraphes courts, ton digne (sujets sensibles)</td><td>manuel (grep "—" avant commit)</td></tr>
+        <tr><td>Dates affichées</td><td>jj/mm/aaaa (les données restent ISO)</td><td>manuel</td></tr>
+        <tr><td>Angles par service (anti-similarité)</td><td>extrême=hub global · débarras=logistique/valorisation · désinfection=technique/sanitaire · décès=familles/dignité · squat=propriétaires/bailleurs · diogène=humain/accompagnement · insalubre=risque/procédures</td><td>manuel</td></tr>
+      </table>
+      <h4>Procédure de reprise EXACTE pour une nouvelle IA (session vierge)</h4>
+      <pre>1. Lire CLAUDE.md (racine du repo) : règles + décisions client. Il PRIME en cas de conflit avec ce document.
+2. npm run seo:status  → avancement, retards, prochaine page (et flag ✍︎ description à écrire à la main)
+3. Extraire le brief : node -e "const P=require('./src/data/seo-pages.json').pages;
+   console.log(JSON.stringify(P.find(p=>p.slug==='&lt;slug&gt;'),null,2))"
+4. Si page locale : 1-2 recherches web sur la ville (quartiers, bâti, SCHS/ARS, climat, risques, parc logement).
+   Ne JAMAIS écrire un fait local non vérifié. Garder les URLs → frontmatter sources.
+5. Écrire content/seo/&lt;slug&gt;.mdx (schéma ci-dessus, règles du tableau, angle du service).
+   Varier les faits locaux entre pages d'une même ville (ne pas réutiliser les mêmes 3 anecdotes partout).
+6. npm run seo:validate → corriger jusqu'à zéro erreur (les warnings « lien dormant » sont normaux).
+7. Relecture rendue possible : npm run dev → localhost:3000/&lt;url&gt;.
+8. Commit + push main. Lots de 10-15 pages max entre checkpoints. JAMAIS deux pages écrites en parallèle.</pre>
+    </div></details>
+  </section>
+
+  <div class="arrow"><div class="line"></div><div class="tip">▼</div><div class="lbl">À chaque build, <b>avant</b> toute mise en ligne : le portique de sécurité</div></div>
+
+  <!-- ================= PHASE 3 ================= -->
+  <section class="phase">
+    <div class="phase-head"><span class="num">3</span><h2>Validation bloquante (le garde-fou)</h2><span class="who auto">AUTOMATIQUE</span></div>
+    <div class="phase-desc"><span class="file">scripts/validate-seo.mjs</span> contrôle <b>toutes</b> les pages rédigées non-draft. Une règle violée = le déploiement échoue, rien ne part en ligne.</div>
+    <div class="cards">
+      <div class="card c-red"><h3>Unicité</h3><ul><li>Meta title unique</li><li>Meta description unique</li><li>Similarité corps &lt; 70 %</li></ul></div>
+      <div class="card c-red"><h3>Complétude</h3><ul><li>H1, canonical https absolu, schema</li><li>FAQ rédigée, mots minimum</li><li>Image exacte si exigée</li></ul></div>
+      <div class="card c-red"><h3>Maillage</h3><ul><li>Liens du corps vers cibles connues</li><li>Liens « dormants » signalés (tolérés)</li></ul></div>
+    </div>
+    <div class="branches">
+      <div class="branch"><span class="tag ko">✗ ERREUR → build interrompu, rien ne se publie</span></div>
+      <div class="branch"><span class="tag ok">✓ OK → la machine continue</span></div>
+    </div>
+
+    <details class="spec"><summary>🔬 Détail : les 12 contrôles, seuils exacts et sévérité</summary><div class="inner">
+      <table>
+        <tr><th>#</th><th>Contrôle</th><th>Seuil / règle</th><th>Sévérité</th></tr>
+        <tr><td>1</td><td>MDX sans entrée dans le plan (slug inconnu)</td><td>présence dans seo-pages.json requise</td><td>ERREUR</td></tr>
+        <tr><td>2</td><td>Meta title (effective = override sinon plan)</td><td>présent + unique site-wide ; &gt; 65 car.</td><td>ERREUR / warning</td></tr>
+        <tr><td>3</td><td>Meta description</td><td>présente + unique ; hors 70-165 car. (viser 120-160)</td><td>ERREUR / warning</td></tr>
+        <tr><td>4</td><td>H1</td><td>présent (override sinon plan)</td><td>ERREUR</td></tr>
+        <tr><td>5</td><td>Canonical</td><td>présent, absolu https://</td><td>ERREUR</td></tr>
+        <tr><td>6</td><td>Schema type du plan</td><td>renseigné</td><td>ERREUR</td></tr>
+        <tr><td>7</td><td>FAQ</td><td>si schemaType contient « faqpage » → ≥ 1 paire q/a rédigée dans le frontmatter</td><td>ERREUR</td></tr>
+        <tr><td>8</td><td>Image obligatoire</td><td>page.imageRequired=true → entrée exacte dans image-map.json</td><td>ERREUR</td></tr>
+        <tr><td>9</td><td>Mots du corps</td><td>≥ 800 si type ~ /mère|hub/i, sinon ≥ 600 ; frontmatter minWords peut abaisser (à justifier)</td><td>ERREUR</td></tr>
+        <tr><td>10</td><td>Liens « Obligatoire » du plan</td><td>cible existante dans le plan ou routes publiques connues</td><td>ERREUR</td></tr>
+        <tr><td>11</td><td>Liens internes du CORPS (regex sur ](/...))</td><td>cible ∈ plan ∪ routes publiques ∪ articles blog non-draft → sinon ERREUR. Cible publiée APRÈS la page → warning « dormant N j » (le rendu auto-active, voir phase 4)</td><td>ERREUR / warning</td></tr>
+        <tr><td>12</td><td>Similarité inter-pages</td><td>Jaccard de shingles de 5 mots (normalisés : minuscules, sans accents) ≥ 0.70 entre deux corps</td><td>ERREUR</td></tr>
+      </table>
+      <ul>
+        <li>Routes publiques « en dur » connues du validateur et du runtime (EXISTING_PUBLIC) : <span class="file">/ · /blog/ · /mentions-legales/ · /politique-confidentialite/ · /partenariat-mjpm/ · /partenariat-maisons-retraite/</span></li>
+        <li>Exécution : <span class="file">npm run seo:validate</span> à la main, et automatiquement en <b>prebuild</b> de <span class="file">npm run build</span> (donc à chaque déploiement, local ou CI). Code de sortie 1 = échec.</li>
+      </ul>
+    </div></details>
+  </section>
+
+  <div class="arrow"><div class="line"></div><div class="tip">▼</div><div class="lbl">🤖 Tous les jours à <b>~7h00 (heure de Paris)</b> + à chaque push sur main</div></div>
+
+  <!-- ================= PHASE 4 ================= -->
+  <section class="phase">
+    <div class="phase-head"><span class="num">4</span><h2>Publication automatique quotidienne</h2><span class="who auto">AUTOMATIQUE · GitHub Actions</span></div>
+    <div class="phase-desc">Le robot reconstruit <b>la totalité du site</b> chaque nuit. C'est ce rebuild complet qui fait vivre le maillage sans intervention.</div>
+    <div class="decision">Pour chacune des 790 pages :<br>date de sortie atteinte ? + texte rédigé ? + pas en brouillon ?</div>
+    <div class="branches">
+      <div class="branch"><span class="tag ok">✓ OUI → la page EXISTE</span>
+        <div class="card c-blue"><ul>
+          <li>HTML généré et en ligne, dans le sitemap</li>
+          <li>Tout le site se remaille vers elle cette nuit-là</li></ul></div></div>
+      <div class="branch"><span class="tag ko">✗ NON → la page N'EXISTE PAS</span>
+        <div class="card c-gray"><ul>
+          <li>Vrai 404, hors sitemap, aucun lien entrant</li>
+          <li>Date passée sans texte = ne sort pas, silencieusement → alerte rouge /admin</li></ul></div></div>
+    </div>
+    <div class="cards" style="margin-top:16px">
+      <div class="card c-blue"><h3>🔗 Le maillage se met à jour partout, seul</h3>
+        <ul><li>Blocs « voir aussi » : gagnent les liens vers les nouvelles sorties</li>
+        <li>Liens des textes : auto-activants (texte → vrai lien)</li>
+        <li>Fil d'Ariane : se complète quand le parent sort</li></ul></div>
+      <div class="card c-blue"><h3>🚀 Déploiement</h3>
+        <ul><li>Export statique → <span class="file">out/</span> → GitHub Pages</li>
+        <li>sitemap.xml + robots.txt toujours synchrones</li></ul></div>
+    </div>
+
+    <details class="spec"><summary>🔬 Détail : CI, logique de publication exacte, mécanique du maillage dynamique</summary><div class="inner">
+      <h4>CI : <span class="file">.github/workflows/deploy.yml</span></h4>
+      <pre>Déclencheurs : push sur main · cron "0 5 * * *" (05:00 UTC ≈ 07:00 Paris) · workflow_dispatch (manuel)
+Étapes : checkout → Node 20 → npm install --include=optional --legacy-peer-deps → npm run build
+         (prebuild = validate-seo.mjs : s'il échoue, AUCUN déploiement)
+         → peaceiris/actions-gh-pages@v3 : publish_dir ./out, enable_jekyll false
+Hébergement : GitHub Pages, domaine via public/CNAME, .nojekyll présent. PAS de redirections 301 serveur possibles.</pre>
+      <h4>Logique de publication (src/lib/seo-pages.ts)</h4>
+      <pre>buildDate()        = SEO_BUILD_DATE (env, format YYYY-MM-DD, pour tester un jour J) sinon date du jour
+publicationDate()  = max(buildDate(), meta.schedule.startDate)   // plancher au 10/06/2026
+isPublished(page)  = page.handledBy === "catchall"
+                     ET le MDX existe ET draft !== true
+                     ET (en dev : toujours vrai | en prod : page.publishAt ≤ publicationDate())
+generateStaticParams() ne génère QUE les pages publiées · dynamicParams = false → tout le reste = vrai 404
+(out/404.html existe : GitHub Pages le sert avec un statut HTTP 404, pas de soft-404)</pre>
+      <h4>Maillage dynamique (tout est recalculé à CHAQUE build)</h4>
+      <pre>publicUrlSet = EXISTING_PUBLIC ∪ pages catchall publiées ∪ articles blog publiés (/blog/&lt;slug&gt;/)
+
+1. BLOCS DE MAILLAGE (getMaillage) : liens du plan groupés par type
+   "même ville"→sameCity · "enfant"→children · "sugg"→suggested · reste→related · "parent"→EXCLU (fil d'Ariane)
+   Filtres : auto-référence retirée, cible non publiée retirée, doublons retirés, ancre vide → titre de la cible.
+   Rendu : sections "À &lt;ville&gt;, voir aussi" / "Nos services spécialisés" (mère/hub) ou "Pages associées" /
+   "Prestations et zones liées" / "À consulter aussi".
+2. LIENS DU CORPS (composant MdLink) : href interne commençant par "/" →
+   isUrlPublished(href) ? &lt;Link&gt; : &lt;span&gt; (texte simple, AUCUN 404 possible).
+   Le rebuild suivant la publication de la cible transforme le span en lien. Slash final normalisé.
+   href externe → target="_blank" rel="noopener noreferrer".
+3. FIL D'ARIANE (buildBreadcrumb) : remonte parentUrl en ne gardant que les ancêtres PUBLIÉS
+   (166 pages ont un parent qui sort après elles : il apparaît à sa sortie). Garde anti-boucle.
+4. NAVIGATION GLOBALE (getServiceHubs) : header + footer = pages publiées priority=1 à un seul segment
+   d'URL (/debarras/, /nettoyage-diogene/...). La liste croît seule au fil des sorties.</pre>
+      <h4>Sitemap &amp; robots (générés par le build)</h4>
+      <pre>src/app/sitemap.ts : routes statiques + articles blog publiés + pages SEO publiées uniquement.
+  lastModified = publishAt · priority 1.0 home / 0.8 P1 / 0.6-0.7 le reste · URLs avec slash final.
+src/app/robots.ts : Allow / (AUCUN disallow : les pages privées sont en noindex meta, il faut que
+  Google puisse les crawler pour voir le noindex).
+Pages en noindex (via metadata) : /landing/* (5 pages Ads) · /notaires-succession · /protocole-sanitaire
+  · /admin · /404. Tout le reste est indexable.</pre>
+    </div></details>
+  </section>
+
+  <div class="arrow"><div class="line"></div><div class="tip">▼</div><div class="lbl">Ce que Google et les visiteurs voient</div></div>
+
+  <!-- ================= PHASE 5 ================= -->
+  <section class="phase">
+    <div class="phase-head"><span class="num">5</span><h2>Anatomie d'une page en ligne</h2><span class="who auto">RENDU</span></div>
+    <div class="mock">
+      <div class="zone"><b>Fil d'Ariane</b> Accueil › Désinfection › Hérault › Montpellier <span class="note">+ schema BreadcrumbList</span></div>
+      <div class="zone"><b>H1</b> + chapeau qui répond tout de suite <span class="note">mot-clé naturel</span></div>
+      <div class="zone"><b>Image WebP 16:9</b> <span class="note">alt unique, width/height fixés (zéro CLS), loading eager (LCP)</span></div>
+      <div class="zone"><b>Corps unique</b> : H2 du plan, faits locaux, liens contextuels <span class="note">liens auto-activants</span></div>
+      <div class="zone"><b>FAQ visible</b> (accordéons) <span class="note">visiteurs + extraits IA</span></div>
+      <div class="zone"><b>CTA</b> appel / devis gratuit <span class="note">conversion (gtag_report_conversion)</span></div>
+      <div class="zone"><b>Blocs maillage</b> même ville · sous-pages · prestations liées <span class="note">silo local + vertical</span></div>
+      <div class="zone"><b>Invisible</b> : canonical, OG + Twitter cards, JSON-LD <span class="note">zéro schema trompeur</span></div>
+    </div>
+
+    <details class="spec"><summary>🔬 Détail : balisage exact, JSON-LD émis, stack technique</summary><div class="inner">
+      <h4>Balises &lt;head&gt; d'une page SEO (générées par generateMetadata)</h4>
+      <pre>title = metaTitle effectif · description = metaDescription effective
+keywords = keyword + secondaires (ceux commençant par "/" sont filtrés)
+alternates.canonical = canonical du plan, normalisé avec slash final (trailingSlash: true du site)
+robots = index,follow · openGraph (title, desc, url, siteName, locale fr_FR, type website, image si présente)
+twitter:card / :title / :description / :image / :image:alt (hérités d'OG) · metadataBase = https://sosnettoyagediogene.fr</pre>
+      <h4>JSON-LD émis (décisions du 10/06/2026, état de l'art vérifié)</h4>
+      <pre>PAGE D'ACCUEIL UNIQUEMENT :
+  LocalBusiness { "@id": "https://sosnettoyagediogene.fr/#business", adresse RÉELLE Montpellier 34000,
+                  geo, telephone, email, openingHours Mo-Su 08:00-20:00, priceRange "€€",
+                  areaServed: [AdministrativeArea Occitanie, AdministrativeArea PACA], hasOfferCatalog (4 services) }
+  ⚠️ JAMAIS d'aggregateRating/review : self-serving = inéligible aux étoiles depuis 2019 + risque action manuelle.
+CHAQUE PAGE SEO :
+  Service { name=H1, serviceType, url, areaServed: City|AdministrativeArea selon la page,
+            provider: { "@id": "...#business" }  ← référence, jamais de copie }
+  BreadcrumbList (positions, items absolus)
+  ⚠️ PAS de FAQPage (rich results FAQ supprimés par Google le 07/05/2026, la FAQ reste en HTML visible)
+  ⚠️ PAS de LocalBusiness par ville (adresse fabriquée = signal doorway)
+ARTICLES BLOG : BlogPosting { author: Organization "SOS Nettoyage Diogène", publisher + logo }</pre>
+      <h4>Stack &amp; perf</h4>
+      <ul>
+        <li>Next.js 15 App Router · <span class="file">output: "export"</span> · <span class="file">trailingSlash: true</span> · images non optimisées par Next (WebP pré-optimisées par script).</li>
+        <li>Rendu markdown : <span class="file">react-markdown</span> + remark-gfm (PAS next-mdx-remote : incompatible Next 15 + React 18).</li>
+        <li>~103 kB JS partagé · pas de webfont (stack système = zéro latence) · HTML complet sans JS (statique).</li>
+        <li>Analytics : GTM (GTM-T2V8JRGG, afterInteractive) + PostHog. <span class="file">gtag_report_conversion()</span> global (global.d.ts) ; tout composant avec onClick doit être <span class="file">"use client"</span>.</li>
+        <li>Avis affichés sur la home : <span class="file">src/data/reviews.ts</span> (statique). ⚠️ Contient 5 avis placeholder : voir « écarts connus ».</li>
+      </ul>
+    </div></details>
+  </section>
+
+  <div class="arrow"><div class="line"></div><div class="tip">▼</div><div class="lbl">Et pendant que ça tourne...</div></div>
+
+  <!-- ================= PHASE 6 ================= -->
+  <section class="phase">
+    <div class="phase-head"><span class="num">6</span><h2>Surveillance &amp; pilotage</h2><span class="who loris">LORIS</span><span class="who claude">+ IA</span></div>
+    <div class="cards">
+      <div class="card c-pink"><h3>📅 Chaque semaine (~15 min)</h3>
+        <ul><li><b>/admin → Suivi</b> : zéro « en retard » + planning 14 jours</li>
+        <li><b>GSC → Indexation</b> : « Explorée, actuellement non indexée »</li>
+        <li>GSC Performances (tendance) + Actions manuelles (vide)</li>
+        <li>1-2 avis Google demandés aux clients de la semaine</li></ul></div>
+      <div class="card c-pink"><h3>🚦 LE jalon décisif</h3>
+        <ul><li>Vers <span class="kpi">50-80 pages publiées</span> (fin juin 2026)</li>
+        <li>Si <span class="kpi">&lt; 50 % indexées à 30 jours</span> → GELER la cadence, diagnostiquer</li></ul></div>
+      <div class="card c-green"><h3>🗓️ Mensuel / trimestriel (IA)</h3>
+        <ul><li>crawl-depth (≤ 3 clics), CWV, 404</li>
+        <li>Trimestre : élagage 0-impression → consolidation département</li>
+        <li>Rafraîchissement des contenus &gt; 12 mois</li></ul></div>
+    </div>
+
+    <details class="spec"><summary>🔬 Détail : le dashboard /admin, états d'une page, élagage</summary><div class="inner">
+      <h4>/admin (statique, noindex, mot de passe côté client = simple masquage, env NEXT_PUBLIC_ADMIN_PASSWORD)</h4>
+      <pre>Statuts calculés par page (getSeoPagesAsPlanned) :
+  pas de MDX                          → "planifie"   (à rédiger)
+  MDX en draft:true                   → "redaction"  (brouillon)
+  MDX prêt, publishAt &gt; aujourd'hui   → "relecture"  (prête, sortira à sa date)
+  MDX prêt, publishAt ≤ aujourd'hui   → "publie"     (en ligne)
+4 vues : Suivi (défaut) · Arborescence · Tableau · Calendrier. Dates affichées jj/mm/aaaa (ISO en interne).
+Vue Suivi : alerte rouge = publishDate ≤ aujourd'hui ET statut planifie/redaction (= ne sortira pas) ·
+planning 14 jours avec badges (✓ prête / brouillon / à rédiger / en ligne) · barre de progression rédigées/total.
+Édition : calque localStorage par-dessus la baseline versionnée (content/page-plan.json) ; export JSON à recommiter.</pre>
+      <h4>Élagage trimestriel (stratégie actée, pas encore exécutée)</h4>
+      <pre>Cible : pages à 0 impression GSC après 4-6 mois (purge Google documentée vers 90-130 jours pour les pages 0-clic).
+Contrainte : GitHub Pages ne fait PAS de 301. Méthode : transformer la page en stub
+&lt;meta http-equiv="refresh" content="0;url=/page-departement/"&gt; + canonical vers la cible (équivalent 301 pour Google),
+ou enrichir la page si elle a un potentiel. Décision page par page sur export GSC.</pre>
+      <h4>Indicateurs de référence (recherche vérifiée 10/06/2026)</h4>
+      <ul>
+        <li>Indexation réaliste domaine à faible autorité : 40-70 % à 6 mois. Ne pas paniquer sous 100 %.</li>
+        <li>Google Business Profile ≈ 32 % du classement local pack : actif n°1 hors site.</li>
+        <li>AI Overviews : ~15 % des requêtes transactionnelles locales (pages villes protégées), 92-97 % de l'informationnel (le blog doit être « extractible » : réponse directe sous chaque H2).</li>
+        <li>FAQ rich results : supprimés par Google pour tous le 07/05/2026 (d'où : FAQ visibles, pas de markup).</li>
+      </ul>
+    </div></details>
+  </section>
+
+  <div class="arrow"><div class="line"></div><div class="tip">▼</div><div class="lbl">Pour une IA qui reprend le projet : l'état exact et ce qui reste ouvert</div></div>
+
+  <!-- ================= PHASE 7 ================= -->
+  <section class="phase">
+    <div class="phase-head"><span class="num">7</span><h2>État du projet &amp; registre des écarts connus</h2><span class="who both">RÉFÉRENCE</span></div>
+    <div class="phase-desc">Photographie au 10/06/2026. Une IA qui reprend doit lire ce bloc pour ne pas refaire ou défaire ce qui a été décidé.</div>
+
+    <details class="spec" open><summary>🔬 État d'avancement &amp; décisions verrouillées</summary><div class="inner">
+      <h4>Avancement</h4>
+      <ul>
+        <li><b>10/790 pages rédigées</b> : 7 mères/hub (nettoyage-extreme, debarras, desinfection-logement, nettoyage-apres-deces, nettoyage-apres-squat, nettoyage-diogene, nettoyage-insalubre) + 3 villes Montpellier (désinfection, après-décès, après-sinistre). Toutes au barème (800+/600+ mots, 0 tiret, metas uniques).</li>
+        <li>Jour J du planning = 10/06/2026. Le GO de production de masse appartient au client.</li>
+        <li>Branche de travail : <span class="file">test-modifs</span> ; la prod se déploie depuis <span class="file">main</span>.</li>
+      </ul>
+      <h4>Décisions client VERROUILLÉES (ne pas rediscuter, source : CLAUDE.md)</h4>
+      <ul>
+        <li>Rédaction séquentielle 1 page à la fois · cadence 4/j puis 7/j pilotée par date · jamais d'édition manuelle quotidienne.</li>
+        <li>Jamais de faux avis ni d'AggregateRating (même avec de vrais avis : self-serving inéligible). Étoiles = GBP.</li>
+        <li>Un seul LocalBusiness (home, @id) ; pages villes = Service + areaServed + provider @id.</li>
+        <li>Meta descriptions en collision (331) : écrites à la main à la rédaction, jamais de template.</li>
+        <li>Zéro tiret cadratin dans le contenu · dates jj/mm/aaaa · nom exact « SOS Nettoyage Diogène » · une image par page.</li>
+        <li>Pas de page « Qui sommes-nous » pour le moment (choix client, à reproposer plus tard pour l'E-E-A-T).</li>
+        <li>FAQ : conservées VISIBLES sur chaque page (utiles aux gens), sans markup FAQPage.</li>
+      </ul>
+      <h4>Registre des écarts ouverts (par priorité)</h4>
+      <table>
+        <tr><th>#</th><th>Écart</th><th>Action prévue</th><th>Porteur</th></tr>
+        <tr><td>1</td><td>5 avis placeholder affichés sur la home (reviews.ts) : risque DGCCRF</td><td>retirer la section OU remplacer par de vrais avis GBP : décision client attendue</td><td>Loris → IA</td></tr>
+        <tr><td>2</td><td>Search Console non confirmée (propriété + sitemap)</td><td>créer la propriété, soumettre https://sosnettoyagediogene.fr/sitemap.xml</td><td>Loris</td></tr>
+        <tr><td>3</td><td>Google Business Profile à créer/optimiser + flux d'avis</td><td>fiche complète, catégories, photos, avis récents réguliers</td><td>Loris</td></tr>
+        <tr><td>4</td><td>Blog : titres datés « 2025 » (seo-config + 3 articles), articles 2024 sans refresh, zéro lien interne, pas de date de mise à jour visible, 8 catégories + 39 articles non implémentés, pagination absente</td><td>phase blog dédiée : refresh + maillage topic-cluster + catégories éditorialisées + format extractible</td><td>IA</td></tr>
+        <tr><td>5</td><td>Sources (frontmatter) non affichées sur les pages</td><td>option : bloc « Sources » discret en bas de page ville (E-E-A-T) ; décision à prendre</td><td>Loris → IA</td></tr>
+        <tr><td>6</td><td>Liens sameAs (facebook/linkedin « propremonsud ») non vérifiés</td><td>confirmer l'existence réelle, sinon retirer du schema</td><td>Loris → IA</td></tr>
+        <tr><td>7</td><td>1 paire de mots-clés en doublon dans le plan : « remise en état après sinistre » (/nettoyage-apres-sinistre/remise-en-etat/ et /remise-en-etat-logement/apres-sinistre/)</td><td>différencier l'angle des 2 pages à leur rédaction</td><td>IA</td></tr>
+        <tr><td>8</td><td>Ancres du plan : 1 seule ancre par cible (839/839)</td><td>compensé par les ancres variées des liens du corps (règle de rédaction) ; pas de retouche des blocs</td><td>IA (continu)</td></tr>
+        <tr><td>9</td><td>alt d'image générée contient un tiret cadratin (seo-images.ts, altFor)</td><td>micro-fix cosmétique à glisser dans un prochain lot</td><td>IA</td></tr>
+        <tr><td>10</td><td>DNS www → apex non vérifié</td><td>vérifier la redirection www une fois en prod</td><td>Loris</td></tr>
+        <tr><td>11</td><td>Core Web Vitals réels jamais mesurés en prod</td><td>PageSpeed Insights sur 2-3 URLs après mise en ligne + test Rich Results</td><td>Loris/IA</td></tr>
+      </table>
+      <h4>Fichiers de référence du repo (carte rapide)</h4>
+      <pre>CLAUDE.md                      règles + décisions (PRIORITAIRE sur tout autre doc)
+docs/workflow-machine-seo.html ce document
+Bondash.xlsx                   plan source (ne pas éditer sans relancer seo:import)
+src/data/seo-pages.json        839 fiches (généré)        src/data/internal-links.json   maillage (généré)
+src/data/image-map.json        épinglages (manuel)        src/data/image-fallbacks.json  pools (généré)
+content/seo/*.mdx              corps rédigés (10)         content/articles/*.mdx         blog (4 legacy)
+src/lib/seo-pages.ts           publication+maillage       src/lib/seo-images.ts          résolution images
+src/app/[...slug]/page.tsx     rendu page SEO             src/app/sitemap.ts / robots.ts auto-générés
+scripts/validate-seo.mjs       garde-fou                  scripts/seo-status.mjs         reprise/avancement
+scripts/excel-to-seo.py        import Excel               scripts/crawl-depth.mjs        audit ≤3 clics
+src/components/admin/AdminDashboard.tsx   dashboard /admin (vue Suivi)
+.github/workflows/deploy.yml   build quotidien 05:00 UTC + déploiement GitHub Pages</pre>
+    </div></details>
+  </section>
+
+  <div class="loop">🔁 <b>La boucle :</b> chaque jour, l'IA rédige les pages du planning (phase 2) · chaque nuit, le robot valide puis publie ce qui est dû et remaille tout le site (phases 3-4) · chaque semaine, Loris contrôle 4 indicateurs (phase 6). Dernière sortie planifiée : <b>08/10/2026</b>.<br>
+  <span class="small">Le portique de validation (phase 3) est la garantie « zéro retouche » : une page qui le passe respecte mécaniquement toutes les règles vérifiables du projet. En cas de doute ou de conflit entre documents : <b>CLAUDE.md fait foi, puis le code</b>.</span></div>
+
+</div>
+</body>
+</html>

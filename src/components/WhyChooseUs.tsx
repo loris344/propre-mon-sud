@@ -1,3 +1,5 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import { Clock, Users, Award, ShieldCheck, Phone } from "lucide-react";
 import { useCallback, memo } from "react";

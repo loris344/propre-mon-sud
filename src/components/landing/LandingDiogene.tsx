@@ -1,0 +1,263 @@
+"use client";
+
+import { Phone, Shield, Heart, CheckCircle, ArrowRight, Star, Clock, Eye, Award, Users, MapPin, Camera, MessageCircle } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
+import LandingReviews from "@/components/LandingReviews";
+import LandingFAQ from "@/components/LandingFAQ";
+
+const LandingDiogene = () => {
+  const scrollToContact = () => {
+    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  return (
+    <>
+      <main className="min-h-screen">
+        {/* Hero */}
+        <section className="relative overflow-hidden pt-32 sm:pt-40 pb-16 sm:pb-24">
+          <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-accent/5" />
+          <div className="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+
+          <div className="container mx-auto px-4 sm:px-6 relative">
+            <div className="grid lg:grid-cols-2 gap-10 items-center">
+              <div>
+                <div className="inline-flex items-center gap-2 bg-accent/10 border border-accent/20 text-foreground px-5 py-2.5 rounded-full text-sm font-medium mb-6">
+                  <Shield className="w-4 h-4 text-accent" />
+                  Intervention discrète, sans jugement
+                </div>
+
+                <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground leading-[1.1]">
+                  Vous vivez une situation de{" "}
+                  <span className="text-primary">syndrome de Diogène</span> ?
+                </h1>
+
+                <p className="text-lg text-muted-foreground mt-5 leading-relaxed">
+                  Nettoyage, débarras et désinfection de logements touchés par le syndrome de Diogène, ou lieu insalubre. Intervention rapide, discrète et respectueuse pour remettre votre habitat en état.
+                </p>
+
+                <div className="flex flex-col sm:flex-row gap-4 mt-8">
+                  <Button variant="hero" size="lg" onClick={scrollToContact} className="text-lg px-8 py-6 shadow-lg">
+                    Obtenir un Devis Gratuit
+                    <ArrowRight className="w-5 h-5 ml-2" />
+                  </Button>
+                  <a href="tel:+33767135458" onClick={() => gtag_report_conversion()}>
+                    <Button variant="outline" size="lg" className="text-lg px-8 py-6 w-full border-2">
+                      <Phone className="w-5 h-5 mr-2" />
+                      07 67 13 54 58
+                    </Button>
+                  </a>
+                </div>
+
+                <div className="flex flex-wrap items-center gap-4 sm:gap-6 mt-6 text-sm text-muted-foreground">
+                  <div className="flex items-center gap-1.5">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} className="w-4 h-4 fill-amber-400 text-amber-400" />
+                    ))}
+                    <span className="ml-1 font-medium">4.7/5</span>
+                  </div>
+                  <span className="flex items-center gap-1.5"><Clock className="w-4 h-4" /> 7j/7</span>
+                  <span className="flex items-center gap-1.5"><MapPin className="w-4 h-4" /> Sud de la France</span>
+                </div>
+
+                <div className="flex items-center gap-4 mt-3">
+                  <span className="text-sm sm:text-base text-muted-foreground font-medium">
+                    En collaboration avec l'ARS
+                  </span>
+                  <div className="flex items-center gap-3">
+                    <img src="/logos/RF.webp" alt="République Française" className="h-12 sm:h-16 w-auto object-contain" width={128} height={116} loading="lazy" />
+                    <img src="/logos/ARS.webp" alt="Agence Régionale de Santé" className="h-12 sm:h-16 w-auto object-contain" width={128} height={74} loading="lazy" />
+                  </div>
+                </div>
+              </div>
+
+              {/* Images */}
+              <div className="grid grid-cols-2 gap-3">
+                <img src="/images/examples/cl1.webp" alt="Nettoyage syndrome de Diogène - avant intervention" className="rounded-xl object-cover w-full h-48 sm:h-56" loading="lazy" />
+                <img src="/images/examples/cl2.webp" alt="Nettoyage syndrome de Diogène - résultat" className="rounded-xl object-cover w-full h-48 sm:h-56" loading="lazy" />
+                <img src="/images/examples/cl3.jpg" alt="Intervention Diogène - débarras complet" className="rounded-xl object-cover w-full h-48 sm:h-56 col-span-2" loading="lazy" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Comprendre la situation */}
+        <section className="py-16 sm:py-20 bg-card border-y border-border/50">
+          <div className="container mx-auto px-4 sm:px-6">
+            <div className="max-w-3xl mx-auto text-center mb-12">
+              <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-4">
+                Vous n'êtes pas seul face à cette situation
+              </h2>
+              <p className="text-muted-foreground text-lg leading-relaxed">
+                Le syndrome de Diogène touche des milliers de personnes. Que vous soyez vous-même concerné
+                ou que vous accompagniez un proche, nous comprenons la complexité de ces situations.
+              </p>
+            </div>
+
+            <div className="grid sm:grid-cols-3 gap-6 max-w-5xl mx-auto">
+              {[
+                { icon: Heart, title: "Approche bienveillante", desc: "Les intervenants sont formés pour agir avec empathie. La personne concernée et son histoire sont respectées, sans jamais porter de jugement." },
+                { icon: Eye, title: "Discrétion totale", desc: "Véhicules banalisés, intervention confidentielle, respect du voisinage. Personne ne saura pourquoi on est là." },
+                { icon: Award, title: "Expertise reconnue", desc: "Les cas les plus complexes sont gérés avec méthode et professionnalisme. Chaque intervention est unique." },
+              ].map((item, i) => (
+                <Card key={i} className="p-6 sm:p-8 border-border/50 hover:shadow-lg transition-shadow duration-300">
+                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-5">
+                    <item.icon className="w-6 h-6 text-primary" />
+                  </div>
+                  <h3 className="text-lg font-bold text-foreground mb-3">{item.title}</h3>
+                  <p className="text-muted-foreground text-sm leading-relaxed">{item.desc}</p>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Comment ça se passe */}
+        <section className="py-16 sm:py-20">
+          <div className="container mx-auto px-4 sm:px-6">
+            <h2 className="text-2xl sm:text-3xl font-bold text-center text-foreground mb-4">
+              Comment se déroule l'intervention ?
+            </h2>
+            <p className="text-center text-muted-foreground mb-12 max-w-xl mx-auto">
+              Un processus simple et rapide.
+            </p>
+
+            <div className="max-w-4xl mx-auto">
+              {[
+                { step: "01", title: "Échange téléphonique ou par mail", desc: "Vous nous décrivez la situation librement. On écoute, on comprend, sans engagement." },
+                { step: "02", title: "Quelques infos & photos", desc: "Envoyez-nous quelques photos du logement et décrivez la situation. On établit un devis précis." },
+                { step: "03", title: "Devis gratuit & intervention sur-mesure", desc: "On vous envoie un devis clair et détaillé. Puis l'intervention est lancée : tri, nettoyage, désinfection, évacuation." },
+                { step: "04", title: "Remise en état & suivi", desc: "Le logement est rendu propre et habitable. Nous assurons un suivi de satisfaction." },
+              ].map((item, i) => (
+                <div key={i} className="flex gap-5 sm:gap-8 mb-8 last:mb-0">
+                  <div className="flex-shrink-0">
+                    <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-primary text-primary-foreground flex items-center justify-center text-lg font-bold">
+                      {item.step}
+                    </div>
+                  </div>
+                  <div className="pt-1">
+                    <h3 className="text-lg font-bold text-foreground mb-1">{item.title}</h3>
+                    <p className="text-muted-foreground leading-relaxed">{item.desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Photo équipe + réassurance */}
+        <section className="py-16 sm:py-20 bg-card border-y border-border/50">
+          <div className="container mx-auto px-4 sm:px-6">
+            <div className="max-w-5xl mx-auto grid sm:grid-cols-2 gap-10 items-center">
+              <div className="grid grid-cols-2 gap-3">
+                <img
+                  src="/images/team/equipe-intervention.webp"
+                  alt="Équipe en tenue lors d'une intervention"
+                  className="rounded-2xl object-cover w-full h-52 sm:h-72 shadow-lg"
+                  loading="lazy"
+                />
+                <img
+                  src="/images/logos/p1.webp"
+                  alt="L'équipe SOS Nettoyage Diogène au complet"
+                  className="rounded-2xl object-cover w-full h-52 sm:h-72 shadow-lg"
+                  loading="lazy"
+                />
+              </div>
+              <div>
+                <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-4">
+                  Une équipe dédiée à votre projet
+                </h2>
+                <p className="text-muted-foreground leading-relaxed mb-6">
+                  Chaque intervention est réalisée par des professionnels formés,
+                  en tenue de protection, avec le matériel adapté à chaque situation.
+                </p>
+                <div className="space-y-3">
+                  {[
+                    "Équipe formée aux situations sensibles",
+                    "Matériel professionnel & tenues de protection",
+                    "Intervention discrète et respectueuse",
+                  ].map((item, i) => (
+                    <div key={i} className="flex items-start gap-3">
+                      <CheckCircle className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                      <span className="text-foreground font-medium">{item}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Avis clients */}
+        <LandingReviews serviceKey="diogene" />
+
+        {/* Pour qui */}
+        <section className="py-16 sm:py-20 bg-card border-y border-border/50">
+          <div className="container mx-auto px-4 sm:px-6">
+            <h2 className="text-2xl sm:text-3xl font-bold text-center text-foreground mb-12">
+              Nous accompagnons
+            </h2>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
+              {[
+                "Personnes directement concernées",
+                "Familles et proches aidants",
+                "Mandataires judiciaires (MJPM)",
+                "Notaires & études notariales",
+                "Bailleurs sociaux et privés",
+                "Agences immobilières",
+                "Services sociaux et ARS",
+                "Syndics de copropriété",
+              ].map((item, i) => (
+                <div key={i} className="flex items-center gap-3 p-4 sm:p-5 bg-background rounded-xl border border-border/50">
+                  <div className="w-8 h-8 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
+                    <CheckCircle className="w-4 h-4 text-accent" />
+                  </div>
+                  <span className="text-foreground font-medium">{item}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Zone + CTA */}
+        <section className="py-16 sm:py-20 bg-gradient-to-b from-primary/5 to-primary/10">
+          <div className="container mx-auto px-4 sm:px-6 text-center">
+            <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-6">
+              Intervention dans tout le Sud de la France
+            </h2>
+            <div className="flex flex-wrap justify-center gap-2 sm:gap-3 mb-10 max-w-2xl mx-auto">
+              {["Montpellier", "Marseille", "Nîmes", "Béziers", "Sète", "Perpignan", "Aix-en-Provence", "Toulon", "Toulouse", "Bordeaux"].map(city => (
+                <span key={city} className="bg-background border border-border/50 px-4 py-2 rounded-full text-sm text-foreground font-medium shadow-sm">
+                  {city}
+                </span>
+              ))}
+            </div>
+            <Button variant="hero" size="lg" onClick={scrollToContact} className="text-lg px-10 py-6 shadow-lg">
+              Demander un Devis Gratuit
+              <ArrowRight className="w-5 h-5 ml-2" />
+            </Button>
+          </div>
+        </section>
+
+        {/* FAQ */}
+        <LandingFAQ
+          items={[
+            { question: "Qu'est-ce que le syndrome de Diogène ?", answer: "C'est une accumulation excessive d'objets et de déchets dans un logement, souvent accompagnée d'un délaissement de l'hygiène. C'est une situation de santé publique reconnue qui nécessite un débarras complet et professionnel." },
+            { question: "L'intervention est-elle discrète ?", answer: "Totalement. Véhicules banalisés, pas de marquage, pas d'uniforme voyant. On intervient comme des ouvriers classiques pour préserver votre vie privée pendant le débarras." },
+            { question: "La personne concernée doit-elle partir pendant l'intervention ?", answer: "Non, elle peut rester si elle le souhaite. Notre équipe est formée pour intervenir avec bienveillance et sans jugement. On respecte les décisions de la personne sur ses affaires lors du tri et du débarras." },
+            { question: "Combien de temps dure une intervention ?", answer: "De quelques heures à plusieurs jours selon le volume à débarrasser et la surface. On vous donne une estimation précise lors du devis." },
+            { question: "Qui peut contacter vos services ?", answer: "La personne elle-même, sa famille, un proche aidant, un mandataire judiciaire, un notaire, un bailleur ou les services sociaux." },
+            { question: "Comment obtenir un devis ?", answer: "Envoyez-nous quelques photos et vidéos du logement en décrivant la situation. On vous répond rapidement avec un devis gratuit et sans engagement." },
+          ]}
+        />
+
+        <Contact />
+        <Footer />
+      </main>
+    </>
+  );
+};
+
+export default LandingDiogene;

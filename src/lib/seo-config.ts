@@ -60,42 +60,6 @@ export const SEO_CONFIGS: Record<string, SEOConfig> = {
     canonical: "/partenariat-maisons-retraite"
   },
 
-  '/nettoyage-syndrome-diogene-montpellier': {
-    title: "Nettoyage Diogène Montpellier | Expert & Discret",
-    description: "Service spécialisé de nettoyage syndrome de Diogène à Montpellier (Hérault). Équipe formée, intervention discrète. Devis gratuit 7j/7.",
-    canonical: "/nettoyage-syndrome-diogene-montpellier"
-  },
-
-  '/nettoyage-syndrome-diogene-sete': {
-    title: "Nettoyage Diogène Sète | Intervention Pro",
-    description: "Service expert de nettoyage syndrome de Diogène à Sète (Hérault). Spécialisé logements côtiers, intervention 24h/24.",
-    canonical: "/nettoyage-syndrome-diogene-sete"
-  },
-
-  '/nettoyage-syndrome-diogene-beziers': {
-    title: "Nettoyage Diogène Béziers | Service Expert",
-    description: "Service professionnel de nettoyage syndrome de Diogène à Béziers (Hérault). Expertise logements historiques. Devis gratuit.",
-    canonical: "/nettoyage-syndrome-diogene-beziers"
-  },
-
-  '/nettoyage-syndrome-diogene-nimes': {
-    title: "Nettoyage Diogène Nîmes | Service Gardois Expert",
-    description: "Service spécialisé de nettoyage syndrome de Diogène à Nîmes (Gard). Intervention rapide dans tout le Gard. Devis gratuit.",
-    canonical: "/nettoyage-syndrome-diogene-nimes"
-  },
-
-  '/nettoyage-syndrome-diogene-perpignan': {
-    title: "Nettoyage Diogène Perpignan | Expert P-O",
-    description: "Service expert de nettoyage syndrome de Diogène à Perpignan (Pyrénées-Orientales). Intervention dans tout le Roussillon.",
-    canonical: "/nettoyage-syndrome-diogene-perpignan"
-  },
-
-  '/nettoyage-syndrome-diogene-marseille': {
-    title: "Nettoyage Diogène Marseille | Débarras & Désinfection",
-    description: "Intervention discrète 7j/7 à Marseille : débarras gros volumes, tri, désinfection et remise en état pour syndrome de Diogène. Devis gratuit.",
-    canonical: "/nettoyage-syndrome-diogene-marseille"
-  },
-
   '/404': {
     title: "Page Non Trouvée | SOS Nettoyage Diogène",
     description: "La page que vous recherchez n'existe pas. Retournez à l'accueil pour découvrir nos services.",
@@ -161,6 +125,14 @@ export const SEO_CONFIGS: Record<string, SEOConfig> = {
     title: "Remise en état d'un bien en succession | Fiche notaires",
     description: "Protocole de remise en état d'un logement insalubre ou Diogène en succession : valorisation, attestation d'assainissement, délais compatibles calendrier successoral.",
     canonical: "/notaires-succession",
+    noIndex: true
+  },
+
+  // Espace privé de planification éditoriale — jamais indexé.
+  '/admin': {
+    title: "Espace privé",
+    description: "Espace privé.",
+    canonical: "/admin",
     noIndex: true
   }
 };

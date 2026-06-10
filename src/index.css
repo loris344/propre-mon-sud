@@ -186,10 +186,11 @@ All colors MUST be HSL.
     }
   }
   
-  /* Prévention du débordement horizontal */
+  /* Prévention du débordement horizontal (géré au niveau html/body ;
+     PAS sur .container, sinon overflow-x:hidden force overflow-y:auto et
+     clippe les menus déroulants/tooltips qui débordent — ex. menu Services). */
   .container {
     max-width: 100%;
-    overflow-x: hidden;
   }
   
   /* Améliorations spécifiques pour mobile */

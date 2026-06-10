@@ -1,14 +1,33 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
-import { Phone, Menu, X } from "lucide-react";
-import { useState, useCallback, memo } from "react";
-import { useNavigate, useLocation as useRouterLocation } from "react-router-dom";
+import { Phone, Menu, X, ChevronDown } from "lucide-react";
+import { useState, useCallback, useRef, useEffect, memo } from "react";
+import { useRouter, usePathname } from "next/navigation";
+import Link from "next/link";
+import type { NavLink } from "@/lib/seo-pages";
 import AvailabilityIndicator from "./AvailabilityIndicator";
 import ReviewsDisplay from "./ReviewsDisplay";
 
-const Header = () => {
+const Header = ({ services = [] }: { services?: NavLink[] }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const navigate = useNavigate();
-  const routerLocation = useRouterLocation();
+  const [isServicesOpen, setIsServicesOpen] = useState(false); // sous-menu mobile
+  const [isDeskServicesOpen, setIsDeskServicesOpen] = useState(false); // dropdown desktop
+  const servicesRef = useRef<HTMLDivElement>(null);
+  const router = useRouter();
+  const pathname = usePathname();
+
+  // Ferme le menu Services desktop au clic en dehors.
+  useEffect(() => {
+    if (!isDeskServicesOpen) return;
+    const onDown = (e: MouseEvent) => {
+      if (servicesRef.current && !servicesRef.current.contains(e.target as Node)) {
+        setIsDeskServicesOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", onDown);
+    return () => document.removeEventListener("mousedown", onDown);
+  }, [isDeskServicesOpen]);
 
   const scrollToSection = useCallback((id: string) => {
     const element = document.getElementById(id);
@@ -22,19 +41,19 @@ const Header = () => {
     (section: string) => {
       setIsMenuOpen(false);
 
-      if (routerLocation.pathname === "/") {
+      if (pathname === "/") {
         scrollToSection(section);
       } else {
-        navigate(`/#${section}`);
+        router.push(`/#${section}`);
       }
     },
-    [routerLocation.pathname, navigate, scrollToSection],
+    [pathname, router, scrollToSection],
   );
 
   const handleLogoClick = useCallback(() => {
     setIsMenuOpen(false);
-    navigate("/");
-  }, [navigate]);
+    router.push("/");
+  }, [router]);
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 border-b border-border/50 bg-background/95 shadow-sm backdrop-blur-sm">
@@ -71,24 +90,52 @@ const Header = () => {
             >
               Accueil
             </button>
-            <button
-              onClick={() => handleNavigation("services")}
-              className="font-medium text-foreground transition-colors hover:text-primary"
-            >
-              Services
-            </button>
+            {/* Services : menu déroulant au clic. Les vrais liens restent dans
+                le HTML même fermé (masqués en CSS) → toujours crawlables. */}
+            <div className="relative" ref={servicesRef}>
+              <button
+                type="button"
+                onClick={() => setIsDeskServicesOpen((v) => !v)}
+                className="flex items-center gap-1 font-medium text-foreground transition-colors hover:text-primary"
+                aria-haspopup="true"
+                aria-expanded={isDeskServicesOpen}
+              >
+                Services
+                <ChevronDown
+                  className={`h-4 w-4 transition-transform ${isDeskServicesOpen ? "rotate-180" : ""}`}
+                />
+              </button>
+              {services.length > 0 && (
+                <div
+                  className={`absolute left-0 top-full z-[60] w-64 pt-3 ${isDeskServicesOpen ? "block" : "hidden"}`}
+                >
+                  <div className="rounded-lg border border-border/50 bg-card p-2 shadow-lg">
+                    {services.map((s) => (
+                      <Link
+                        key={s.url}
+                        href={s.url}
+                        onClick={() => setIsDeskServicesOpen(false)}
+                        className="block rounded px-3 py-2 text-sm text-foreground transition-colors hover:bg-secondary hover:text-primary"
+                      >
+                        {s.label}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
             <button
               onClick={() => handleNavigation("avis")}
               className="font-medium text-foreground transition-colors hover:text-primary"
             >
               Avis
             </button>
-            <button
-              onClick={() => navigate("/blog")}
+            <Link
+              href="/blog"
               className="font-medium text-foreground transition-colors hover:text-primary"
             >
               Blog
-            </button>
+            </Link>
             <button
               onClick={() => handleNavigation("contact")}
               className="font-medium text-foreground transition-colors hover:text-primary"
@@ -145,27 +192,45 @@ const Header = () => {
               >
                 Accueil
               </button>
-              <button
-                onClick={() => handleNavigation("services")}
-                className="block w-full py-3 text-left text-base font-medium text-foreground transition-colors hover:text-primary sm:py-4 sm:text-lg"
-              >
-                Services
-              </button>
+              <div>
+                <button
+                  onClick={() => setIsServicesOpen((v) => !v)}
+                  className="flex w-full items-center justify-between py-3 text-left text-base font-medium text-foreground transition-colors hover:text-primary sm:py-4 sm:text-lg"
+                  aria-expanded={isServicesOpen}
+                >
+                  Services
+                  <ChevronDown
+                    className={`h-5 w-5 transition-transform ${isServicesOpen ? "rotate-180" : ""}`}
+                  />
+                </button>
+                {isServicesOpen && services.length > 0 && (
+                  <div className="ml-3 space-y-1 border-l border-border/50 pl-3">
+                    {services.map((s) => (
+                      <Link
+                        key={s.url}
+                        href={s.url}
+                        onClick={() => setIsMenuOpen(false)}
+                        className="block py-2 text-sm text-muted-foreground transition-colors hover:text-primary"
+                      >
+                        {s.label}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
               <button
                 onClick={() => handleNavigation("avis")}
                 className="block w-full py-3 text-left text-base font-medium text-foreground transition-colors hover:text-primary sm:py-4 sm:text-lg"
               >
                 Avis
               </button>
-              <button
-                onClick={() => {
-                  navigate("/blog");
-                  setIsMenuOpen(false);
-                }}
+              <Link
+                href="/blog"
+                onClick={() => setIsMenuOpen(false)}
                 className="block w-full py-3 text-left text-base font-medium text-foreground transition-colors hover:text-primary sm:py-4 sm:text-lg"
               >
                 Blog
-              </button>
+              </Link>
               <button
                 onClick={() => handleNavigation("contact")}
                 className="block w-full py-3 text-left text-base font-medium text-foreground transition-colors hover:text-primary sm:py-4 sm:text-lg"
