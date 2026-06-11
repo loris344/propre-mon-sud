@@ -1,46 +1,10 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 281,
-  "remaining": 509,
+  "done": 287,
+  "remaining": 503,
   "late": 0,
   "nextBatch": [
-    {
-      "url": "/nettoyage-apres-deces/bouches-du-rhone/",
-      "slug": "nettoyage-apres-deces--bouches-du-rhone",
-      "publishAt": "2026-07-26",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-apres-deces/gard/",
-      "slug": "nettoyage-apres-deces--gard",
-      "publishAt": "2026-07-26",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-apres-deces/haute-garonne/",
-      "slug": "nettoyage-apres-deces--haute-garonne",
-      "publishAt": "2026-07-26",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-apres-sinistre/bouches-du-rhone/",
-      "slug": "nettoyage-apres-sinistre--bouches-du-rhone",
-      "publishAt": "2026-07-26",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/nettoyage-apres-sinistre/gard/",
-      "slug": "nettoyage-apres-sinistre--gard",
-      "publishAt": "2026-07-26",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/nettoyage-apres-sinistre/haute-garonne/",
-      "slug": "nettoyage-apres-sinistre--haute-garonne",
-      "publishAt": "2026-07-26",
-      "needsUniqueDesc": true
-    },
     {
       "url": "/nettoyage-apres-squat/bouches-du-rhone/",
       "slug": "nettoyage-apres-squat--bouches-du-rhone",
@@ -64,6 +28,42 @@
       "slug": "nettoyage-diogene--bouches-du-rhone",
       "publishAt": "2026-07-27",
       "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-diogene/gard/",
+      "slug": "nettoyage-diogene--gard",
+      "publishAt": "2026-07-27",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-diogene/haute-garonne/",
+      "slug": "nettoyage-diogene--haute-garonne",
+      "publishAt": "2026-07-27",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/bouches-du-rhone/",
+      "slug": "nettoyage-insalubre--bouches-du-rhone",
+      "publishAt": "2026-07-27",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/nettoyage-insalubre/gard/",
+      "slug": "nettoyage-insalubre--gard",
+      "publishAt": "2026-07-28",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/nettoyage-insalubre/haute-garonne/",
+      "slug": "nettoyage-insalubre--haute-garonne",
+      "publishAt": "2026-07-28",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/remise-en-etat-logement/bouches-du-rhone/",
+      "slug": "remise-en-etat-logement--bouches-du-rhone",
+      "publishAt": "2026-07-28",
+      "needsUniqueDesc": true
     }
   ],
   "pages": [
@@ -2601,54 +2601,54 @@
       "slug": "nettoyage-apres-deces--bouches-du-rhone",
       "type": "Page département service",
       "publishAt": "2026-07-26",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 618
     },
     {
       "url": "/nettoyage-apres-deces/gard/",
       "slug": "nettoyage-apres-deces--gard",
       "type": "Page département service",
       "publishAt": "2026-07-26",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 615
     },
     {
       "url": "/nettoyage-apres-deces/haute-garonne/",
       "slug": "nettoyage-apres-deces--haute-garonne",
       "type": "Page département service",
       "publishAt": "2026-07-26",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 614
     },
     {
       "url": "/nettoyage-apres-sinistre/bouches-du-rhone/",
       "slug": "nettoyage-apres-sinistre--bouches-du-rhone",
       "type": "Page département service",
       "publishAt": "2026-07-26",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 609
     },
     {
       "url": "/nettoyage-apres-sinistre/gard/",
       "slug": "nettoyage-apres-sinistre--gard",
       "type": "Page département service",
       "publishAt": "2026-07-26",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 616
     },
     {
       "url": "/nettoyage-apres-sinistre/haute-garonne/",
       "slug": "nettoyage-apres-sinistre--haute-garonne",
       "type": "Page département service",
       "publishAt": "2026-07-26",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 606
     },
     {
       "url": "/nettoyage-apres-squat/bouches-du-rhone/",
