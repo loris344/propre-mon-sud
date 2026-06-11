@@ -1,69 +1,69 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 287,
-  "remaining": 503,
+  "done": 296,
+  "remaining": 494,
   "late": 0,
   "nextBatch": [
-    {
-      "url": "/nettoyage-apres-squat/bouches-du-rhone/",
-      "slug": "nettoyage-apres-squat--bouches-du-rhone",
-      "publishAt": "2026-07-27",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-apres-squat/gard/",
-      "slug": "nettoyage-apres-squat--gard",
-      "publishAt": "2026-07-27",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-apres-squat/haute-garonne/",
-      "slug": "nettoyage-apres-squat--haute-garonne",
-      "publishAt": "2026-07-27",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-diogene/bouches-du-rhone/",
-      "slug": "nettoyage-diogene--bouches-du-rhone",
-      "publishAt": "2026-07-27",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-diogene/gard/",
-      "slug": "nettoyage-diogene--gard",
-      "publishAt": "2026-07-27",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-diogene/haute-garonne/",
-      "slug": "nettoyage-diogene--haute-garonne",
-      "publishAt": "2026-07-27",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-insalubre/bouches-du-rhone/",
-      "slug": "nettoyage-insalubre--bouches-du-rhone",
-      "publishAt": "2026-07-27",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/nettoyage-insalubre/gard/",
-      "slug": "nettoyage-insalubre--gard",
-      "publishAt": "2026-07-28",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/nettoyage-insalubre/haute-garonne/",
-      "slug": "nettoyage-insalubre--haute-garonne",
-      "publishAt": "2026-07-28",
-      "needsUniqueDesc": true
-    },
     {
       "url": "/remise-en-etat-logement/bouches-du-rhone/",
       "slug": "remise-en-etat-logement--bouches-du-rhone",
       "publishAt": "2026-07-28",
       "needsUniqueDesc": true
+    },
+    {
+      "url": "/remise-en-etat-logement/gard/",
+      "slug": "remise-en-etat-logement--gard",
+      "publishAt": "2026-07-28",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/remise-en-etat-logement/haute-garonne/",
+      "slug": "remise-en-etat-logement--haute-garonne",
+      "publishAt": "2026-07-28",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/desinfection-logement/bouches-du-rhone/allauch/",
+      "slug": "desinfection-logement--bouches-du-rhone--allauch",
+      "publishAt": "2026-07-28",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/desinfection-logement/bouches-du-rhone/arles/",
+      "slug": "desinfection-logement--bouches-du-rhone--arles",
+      "publishAt": "2026-07-28",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/desinfection-logement/bouches-du-rhone/aubagne/",
+      "slug": "desinfection-logement--bouches-du-rhone--aubagne",
+      "publishAt": "2026-07-29",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/desinfection-logement/bouches-du-rhone/chateaurenard/",
+      "slug": "desinfection-logement--bouches-du-rhone--chateaurenard",
+      "publishAt": "2026-07-29",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/desinfection-logement/bouches-du-rhone/istres/",
+      "slug": "desinfection-logement--bouches-du-rhone--istres",
+      "publishAt": "2026-07-29",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/desinfection-logement/bouches-du-rhone/la-ciotat/",
+      "slug": "desinfection-logement--bouches-du-rhone--la-ciotat",
+      "publishAt": "2026-07-29",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/desinfection-logement/bouches-du-rhone/marignane/",
+      "slug": "desinfection-logement--bouches-du-rhone--marignane",
+      "publishAt": "2026-07-29",
+      "needsUniqueDesc": false
     }
   ],
   "pages": [
@@ -2655,81 +2655,81 @@
       "slug": "nettoyage-apres-squat--bouches-du-rhone",
       "type": "Page département service",
       "publishAt": "2026-07-27",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 618
     },
     {
       "url": "/nettoyage-apres-squat/gard/",
       "slug": "nettoyage-apres-squat--gard",
       "type": "Page département service",
       "publishAt": "2026-07-27",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 615
     },
     {
       "url": "/nettoyage-apres-squat/haute-garonne/",
       "slug": "nettoyage-apres-squat--haute-garonne",
       "type": "Page département service",
       "publishAt": "2026-07-27",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 607
     },
     {
       "url": "/nettoyage-diogene/bouches-du-rhone/",
       "slug": "nettoyage-diogene--bouches-du-rhone",
       "type": "Page département service",
       "publishAt": "2026-07-27",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 614
     },
     {
       "url": "/nettoyage-diogene/gard/",
       "slug": "nettoyage-diogene--gard",
       "type": "Page département service",
       "publishAt": "2026-07-27",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 613
     },
     {
       "url": "/nettoyage-diogene/haute-garonne/",
       "slug": "nettoyage-diogene--haute-garonne",
       "type": "Page département service",
       "publishAt": "2026-07-27",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 615
     },
     {
       "url": "/nettoyage-insalubre/bouches-du-rhone/",
       "slug": "nettoyage-insalubre--bouches-du-rhone",
       "type": "Page département service",
       "publishAt": "2026-07-27",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 661
     },
     {
       "url": "/nettoyage-insalubre/gard/",
       "slug": "nettoyage-insalubre--gard",
       "type": "Page département service",
       "publishAt": "2026-07-28",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 605
     },
     {
       "url": "/nettoyage-insalubre/haute-garonne/",
       "slug": "nettoyage-insalubre--haute-garonne",
       "type": "Page département service",
       "publishAt": "2026-07-28",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 608
     },
     {
       "url": "/remise-en-etat-logement/bouches-du-rhone/",
