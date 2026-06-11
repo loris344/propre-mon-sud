@@ -1,68 +1,68 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 387,
-  "remaining": 403,
+  "done": 397,
+  "remaining": 393,
   "late": 0,
   "nextBatch": [
     {
-      "url": "/nettoyage-apres-squat/haute-garonne/balma/",
-      "slug": "nettoyage-apres-squat--haute-garonne--balma",
-      "publishAt": "2026-08-10",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-apres-squat/haute-garonne/blagnac/",
-      "slug": "nettoyage-apres-squat--haute-garonne--blagnac",
-      "publishAt": "2026-08-10",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-apres-squat/haute-garonne/colomiers/",
-      "slug": "nettoyage-apres-squat--haute-garonne--colomiers",
-      "publishAt": "2026-08-10",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-apres-squat/haute-garonne/cugnaux/",
-      "slug": "nettoyage-apres-squat--haute-garonne--cugnaux",
-      "publishAt": "2026-08-10",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-apres-squat/haute-garonne/l-union/",
-      "slug": "nettoyage-apres-squat--haute-garonne--l-union",
-      "publishAt": "2026-08-10",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-apres-squat/haute-garonne/muret/",
-      "slug": "nettoyage-apres-squat--haute-garonne--muret",
+      "url": "/nettoyage-diogene/bouches-du-rhone/allauch/",
+      "slug": "nettoyage-diogene--bouches-du-rhone--allauch",
       "publishAt": "2026-08-11",
       "needsUniqueDesc": false
     },
     {
-      "url": "/nettoyage-apres-squat/haute-garonne/revel/",
-      "slug": "nettoyage-apres-squat--haute-garonne--revel",
+      "url": "/nettoyage-diogene/bouches-du-rhone/arles/",
+      "slug": "nettoyage-diogene--bouches-du-rhone--arles",
       "publishAt": "2026-08-11",
       "needsUniqueDesc": false
     },
     {
-      "url": "/nettoyage-apres-squat/haute-garonne/saint-gaudens/",
-      "slug": "nettoyage-apres-squat--haute-garonne--saint-gaudens",
-      "publishAt": "2026-08-11",
+      "url": "/nettoyage-diogene/bouches-du-rhone/aubagne/",
+      "slug": "nettoyage-diogene--bouches-du-rhone--aubagne",
+      "publishAt": "2026-08-12",
       "needsUniqueDesc": false
     },
     {
-      "url": "/nettoyage-apres-squat/haute-garonne/saint-jean/",
-      "slug": "nettoyage-apres-squat--haute-garonne--saint-jean",
-      "publishAt": "2026-08-11",
+      "url": "/nettoyage-diogene/bouches-du-rhone/chateaurenard/",
+      "slug": "nettoyage-diogene--bouches-du-rhone--chateaurenard",
+      "publishAt": "2026-08-12",
       "needsUniqueDesc": false
     },
     {
-      "url": "/nettoyage-apres-squat/haute-garonne/tournefeuille/",
-      "slug": "nettoyage-apres-squat--haute-garonne--tournefeuille",
-      "publishAt": "2026-08-11",
+      "url": "/nettoyage-diogene/bouches-du-rhone/istres/",
+      "slug": "nettoyage-diogene--bouches-du-rhone--istres",
+      "publishAt": "2026-08-12",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-diogene/bouches-du-rhone/la-ciotat/",
+      "slug": "nettoyage-diogene--bouches-du-rhone--la-ciotat",
+      "publishAt": "2026-08-12",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-diogene/bouches-du-rhone/marignane/",
+      "slug": "nettoyage-diogene--bouches-du-rhone--marignane",
+      "publishAt": "2026-08-12",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-diogene/bouches-du-rhone/martigues/",
+      "slug": "nettoyage-diogene--bouches-du-rhone--martigues",
+      "publishAt": "2026-08-12",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-diogene/bouches-du-rhone/saint-remy-de-provence/",
+      "slug": "nettoyage-diogene--bouches-du-rhone--saint-remy-de-provence",
+      "publishAt": "2026-08-12",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-diogene/bouches-du-rhone/salon-de-provence/",
+      "slug": "nettoyage-diogene--bouches-du-rhone--salon-de-provence",
+      "publishAt": "2026-08-13",
       "needsUniqueDesc": false
     }
   ],
@@ -3548,97 +3548,97 @@
       "publishAt": "2026-08-10",
       "written": true,
       "draft": false,
-      "words": 579
+      "words": 605
     },
     {
       "url": "/nettoyage-apres-squat/haute-garonne/balma/",
       "slug": "nettoyage-apres-squat--haute-garonne--balma",
       "type": "Page ville service",
       "publishAt": "2026-08-10",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 604
     },
     {
       "url": "/nettoyage-apres-squat/haute-garonne/blagnac/",
       "slug": "nettoyage-apres-squat--haute-garonne--blagnac",
       "type": "Page ville service",
       "publishAt": "2026-08-10",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 601
     },
     {
       "url": "/nettoyage-apres-squat/haute-garonne/colomiers/",
       "slug": "nettoyage-apres-squat--haute-garonne--colomiers",
       "type": "Page ville service",
       "publishAt": "2026-08-10",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 611
     },
     {
       "url": "/nettoyage-apres-squat/haute-garonne/cugnaux/",
       "slug": "nettoyage-apres-squat--haute-garonne--cugnaux",
       "type": "Page ville service",
       "publishAt": "2026-08-10",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 603
     },
     {
       "url": "/nettoyage-apres-squat/haute-garonne/l-union/",
       "slug": "nettoyage-apres-squat--haute-garonne--l-union",
       "type": "Page ville service",
       "publishAt": "2026-08-10",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 613
     },
     {
       "url": "/nettoyage-apres-squat/haute-garonne/muret/",
       "slug": "nettoyage-apres-squat--haute-garonne--muret",
       "type": "Page ville service",
       "publishAt": "2026-08-11",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 613
     },
     {
       "url": "/nettoyage-apres-squat/haute-garonne/revel/",
       "slug": "nettoyage-apres-squat--haute-garonne--revel",
       "type": "Page ville service",
       "publishAt": "2026-08-11",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 619
     },
     {
       "url": "/nettoyage-apres-squat/haute-garonne/saint-gaudens/",
       "slug": "nettoyage-apres-squat--haute-garonne--saint-gaudens",
       "type": "Page ville service",
       "publishAt": "2026-08-11",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 615
     },
     {
       "url": "/nettoyage-apres-squat/haute-garonne/saint-jean/",
       "slug": "nettoyage-apres-squat--haute-garonne--saint-jean",
       "type": "Page ville service",
       "publishAt": "2026-08-11",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 601
     },
     {
       "url": "/nettoyage-apres-squat/haute-garonne/tournefeuille/",
       "slug": "nettoyage-apres-squat--haute-garonne--tournefeuille",
       "type": "Page ville service",
       "publishAt": "2026-08-11",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 611
     },
     {
       "url": "/nettoyage-diogene/bouches-du-rhone/allauch/",
