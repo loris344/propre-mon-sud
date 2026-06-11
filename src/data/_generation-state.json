@@ -1,40 +1,10 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 154,
-  "remaining": 636,
+  "done": 159,
+  "remaining": 631,
   "late": 0,
   "nextBatch": [
-    {
-      "url": "/nettoyage-insalubre/herault/lattes/",
-      "slug": "nettoyage-insalubre--herault--lattes",
-      "publishAt": "2026-07-08",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-insalubre/herault/le-cres/",
-      "slug": "nettoyage-insalubre--herault--le-cres",
-      "publishAt": "2026-07-08",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-insalubre/herault/lodeve/",
-      "slug": "nettoyage-insalubre--herault--lodeve",
-      "publishAt": "2026-07-08",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-insalubre/herault/lunel-viel/",
-      "slug": "nettoyage-insalubre--herault--lunel-viel",
-      "publishAt": "2026-07-08",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-insalubre/herault/lunel/",
-      "slug": "nettoyage-insalubre--herault--lunel",
-      "publishAt": "2026-07-08",
-      "needsUniqueDesc": true
-    },
     {
       "url": "/nettoyage-insalubre/herault/maraussan/",
       "slug": "nettoyage-insalubre--herault--maraussan",
@@ -63,6 +33,36 @@
       "url": "/nettoyage-insalubre/herault/meze/",
       "slug": "nettoyage-insalubre--herault--meze",
       "publishAt": "2026-07-09",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/herault/montagnac/",
+      "slug": "nettoyage-insalubre--herault--montagnac",
+      "publishAt": "2026-07-09",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/herault/nissan-lez-enserune/",
+      "slug": "nettoyage-insalubre--herault--nissan-lez-enserune",
+      "publishAt": "2026-07-09",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/herault/palavas-les-flots/",
+      "slug": "nettoyage-insalubre--herault--palavas-les-flots",
+      "publishAt": "2026-07-09",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/herault/perols/",
+      "slug": "nettoyage-insalubre--herault--perols",
+      "publishAt": "2026-07-09",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/herault/pezenas/",
+      "slug": "nettoyage-insalubre--herault--pezenas",
+      "publishAt": "2026-07-10",
       "needsUniqueDesc": false
     }
   ],
@@ -1458,45 +1458,45 @@
       "slug": "nettoyage-insalubre--herault--lattes",
       "type": "Page ville service",
       "publishAt": "2026-07-08",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 757
     },
     {
       "url": "/nettoyage-insalubre/herault/le-cres/",
       "slug": "nettoyage-insalubre--herault--le-cres",
       "type": "Page ville service",
       "publishAt": "2026-07-08",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 757
     },
     {
       "url": "/nettoyage-insalubre/herault/lodeve/",
       "slug": "nettoyage-insalubre--herault--lodeve",
       "type": "Page ville service",
       "publishAt": "2026-07-08",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 753
     },
     {
       "url": "/nettoyage-insalubre/herault/lunel-viel/",
       "slug": "nettoyage-insalubre--herault--lunel-viel",
       "type": "Page ville service",
       "publishAt": "2026-07-08",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 746
     },
     {
       "url": "/nettoyage-insalubre/herault/lunel/",
       "slug": "nettoyage-insalubre--herault--lunel",
       "type": "Page ville service",
       "publishAt": "2026-07-08",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 747
     },
     {
       "url": "/nettoyage-insalubre/herault/maraussan/",
