@@ -1,52 +1,10 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 462,
-  "remaining": 328,
+  "done": 469,
+  "remaining": 321,
   "late": 0,
   "nextBatch": [
-    {
-      "url": "/nettoyage-insalubre/gard/la-grand-combe/",
-      "slug": "nettoyage-insalubre--gard--la-grand-combe",
-      "publishAt": "2026-08-21",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-insalubre/gard/le-grau-du-roi/",
-      "slug": "nettoyage-insalubre--gard--le-grau-du-roi",
-      "publishAt": "2026-08-21",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-insalubre/gard/les-angles/",
-      "slug": "nettoyage-insalubre--gard--les-angles",
-      "publishAt": "2026-08-21",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-insalubre/gard/manduel/",
-      "slug": "nettoyage-insalubre--gard--manduel",
-      "publishAt": "2026-08-21",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-insalubre/gard/marguerittes/",
-      "slug": "nettoyage-insalubre--gard--marguerittes",
-      "publishAt": "2026-08-21",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-insalubre/gard/milhaud/",
-      "slug": "nettoyage-insalubre--gard--milhaud",
-      "publishAt": "2026-08-21",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-insalubre/gard/pont-saint-esprit/",
-      "slug": "nettoyage-insalubre--gard--pont-saint-esprit",
-      "publishAt": "2026-08-21",
-      "needsUniqueDesc": false
-    },
     {
       "url": "/nettoyage-insalubre/gard/quissac/",
       "slug": "nettoyage-insalubre--gard--quissac",
@@ -63,6 +21,48 @@
       "url": "/nettoyage-insalubre/gard/rodilhan/",
       "slug": "nettoyage-insalubre--gard--rodilhan",
       "publishAt": "2026-08-22",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/gard/roquemaure/",
+      "slug": "nettoyage-insalubre--gard--roquemaure",
+      "publishAt": "2026-08-22",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/gard/saint-christol-les-ales/",
+      "slug": "nettoyage-insalubre--gard--saint-christol-les-ales",
+      "publishAt": "2026-08-22",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/gard/saint-gilles/",
+      "slug": "nettoyage-insalubre--gard--saint-gilles",
+      "publishAt": "2026-08-22",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/gard/saint-hilaire-de-brethmas/",
+      "slug": "nettoyage-insalubre--gard--saint-hilaire-de-brethmas",
+      "publishAt": "2026-08-22",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/gard/sommieres/",
+      "slug": "nettoyage-insalubre--gard--sommieres",
+      "publishAt": "2026-08-23",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/gard/uzes/",
+      "slug": "nettoyage-insalubre--gard--uzes",
+      "publishAt": "2026-08-23",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/gard/vauvert/",
+      "slug": "nettoyage-insalubre--gard--vauvert",
+      "publishAt": "2026-08-23",
       "needsUniqueDesc": false
     }
   ],
@@ -4230,63 +4230,63 @@
       "slug": "nettoyage-insalubre--gard--la-grand-combe",
       "type": "Page ville service",
       "publishAt": "2026-08-21",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 614
     },
     {
       "url": "/nettoyage-insalubre/gard/le-grau-du-roi/",
       "slug": "nettoyage-insalubre--gard--le-grau-du-roi",
       "type": "Page ville service",
       "publishAt": "2026-08-21",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 625
     },
     {
       "url": "/nettoyage-insalubre/gard/les-angles/",
       "slug": "nettoyage-insalubre--gard--les-angles",
       "type": "Page ville service",
       "publishAt": "2026-08-21",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 633
     },
     {
       "url": "/nettoyage-insalubre/gard/manduel/",
       "slug": "nettoyage-insalubre--gard--manduel",
       "type": "Page ville service",
       "publishAt": "2026-08-21",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 611
     },
     {
       "url": "/nettoyage-insalubre/gard/marguerittes/",
       "slug": "nettoyage-insalubre--gard--marguerittes",
       "type": "Page ville service",
       "publishAt": "2026-08-21",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 615
     },
     {
       "url": "/nettoyage-insalubre/gard/milhaud/",
       "slug": "nettoyage-insalubre--gard--milhaud",
       "type": "Page ville service",
       "publishAt": "2026-08-21",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 608
     },
     {
       "url": "/nettoyage-insalubre/gard/pont-saint-esprit/",
       "slug": "nettoyage-insalubre--gard--pont-saint-esprit",
       "type": "Page ville service",
       "publishAt": "2026-08-21",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 624
     },
     {
       "url": "/nettoyage-insalubre/gard/quissac/",
