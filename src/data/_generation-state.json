@@ -1,52 +1,10 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 557,
-  "remaining": 233,
+  "done": 564,
+  "remaining": 226,
   "late": 0,
   "nextBatch": [
-    {
-      "url": "/debarras/cave/haute-garonne/colomiers/",
-      "slug": "debarras--cave--haute-garonne--colomiers",
-      "publishAt": "2026-09-03",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/garage/haute-garonne/colomiers/",
-      "slug": "debarras--garage--haute-garonne--colomiers",
-      "publishAt": "2026-09-03",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/grenier/haute-garonne/colomiers/",
-      "slug": "debarras--grenier--haute-garonne--colomiers",
-      "publishAt": "2026-09-03",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/maison/bouches-du-rhone/allauch/",
-      "slug": "debarras--maison--bouches-du-rhone--allauch",
-      "publishAt": "2026-09-04",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/maison/bouches-du-rhone/arles/",
-      "slug": "debarras--maison--bouches-du-rhone--arles",
-      "publishAt": "2026-09-04",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/maison/bouches-du-rhone/aubagne/",
-      "slug": "debarras--maison--bouches-du-rhone--aubagne",
-      "publishAt": "2026-09-04",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/maison/bouches-du-rhone/chateaurenard/",
-      "slug": "debarras--maison--bouches-du-rhone--chateaurenard",
-      "publishAt": "2026-09-04",
-      "needsUniqueDesc": true
-    },
     {
       "url": "/debarras/maison/bouches-du-rhone/istres/",
       "slug": "debarras--maison--bouches-du-rhone--istres",
@@ -63,6 +21,48 @@
       "url": "/debarras/maison/bouches-du-rhone/marignane/",
       "slug": "debarras--maison--bouches-du-rhone--marignane",
       "publishAt": "2026-09-04",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/maison/bouches-du-rhone/martigues/",
+      "slug": "debarras--maison--bouches-du-rhone--martigues",
+      "publishAt": "2026-09-05",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/maison/bouches-du-rhone/saint-remy-de-provence/",
+      "slug": "debarras--maison--bouches-du-rhone--saint-remy-de-provence",
+      "publishAt": "2026-09-05",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/maison/bouches-du-rhone/salon-de-provence/",
+      "slug": "debarras--maison--bouches-du-rhone--salon-de-provence",
+      "publishAt": "2026-09-05",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/maison/bouches-du-rhone/vitrolles/",
+      "slug": "debarras--maison--bouches-du-rhone--vitrolles",
+      "publishAt": "2026-09-05",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/maison/gard/aigues-mortes/",
+      "slug": "debarras--maison--gard--aigues-mortes",
+      "publishAt": "2026-09-05",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/maison/gard/bagnols-sur-ceze/",
+      "slug": "debarras--maison--gard--bagnols-sur-ceze",
+      "publishAt": "2026-09-05",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/maison/gard/beaucaire/",
+      "slug": "debarras--maison--gard--beaucaire",
+      "publishAt": "2026-09-05",
       "needsUniqueDesc": true
     }
   ],
@@ -5085,63 +5085,63 @@
       "slug": "debarras--cave--haute-garonne--colomiers",
       "type": "Page ville débarras type",
       "publishAt": "2026-09-03",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 605
     },
     {
       "url": "/debarras/garage/haute-garonne/colomiers/",
       "slug": "debarras--garage--haute-garonne--colomiers",
       "type": "Page ville débarras type",
       "publishAt": "2026-09-03",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 603
     },
     {
       "url": "/debarras/grenier/haute-garonne/colomiers/",
       "slug": "debarras--grenier--haute-garonne--colomiers",
       "type": "Page ville débarras type",
       "publishAt": "2026-09-03",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 608
     },
     {
       "url": "/debarras/maison/bouches-du-rhone/allauch/",
       "slug": "debarras--maison--bouches-du-rhone--allauch",
       "type": "Page ville débarras type",
       "publishAt": "2026-09-04",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 605
     },
     {
       "url": "/debarras/maison/bouches-du-rhone/arles/",
       "slug": "debarras--maison--bouches-du-rhone--arles",
       "type": "Page ville débarras type",
       "publishAt": "2026-09-04",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 604
     },
     {
       "url": "/debarras/maison/bouches-du-rhone/aubagne/",
       "slug": "debarras--maison--bouches-du-rhone--aubagne",
       "type": "Page ville débarras type",
       "publishAt": "2026-09-04",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 604
     },
     {
       "url": "/debarras/maison/bouches-du-rhone/chateaurenard/",
       "slug": "debarras--maison--bouches-du-rhone--chateaurenard",
       "type": "Page ville débarras type",
       "publishAt": "2026-09-04",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 602
     },
     {
       "url": "/debarras/maison/bouches-du-rhone/istres/",
