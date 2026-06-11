@@ -1,68 +1,68 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 339,
-  "remaining": 451,
+  "done": 351,
+  "remaining": 439,
   "late": 0,
   "nextBatch": [
     {
-      "url": "/nettoyage-apres-deces/bouches-du-rhone/salon-de-provence/",
-      "slug": "nettoyage-apres-deces--bouches-du-rhone--salon-de-provence",
-      "publishAt": "2026-08-03",
+      "url": "/nettoyage-apres-deces/haute-garonne/balma/",
+      "slug": "nettoyage-apres-deces--haute-garonne--balma",
+      "publishAt": "2026-08-05",
       "needsUniqueDesc": false
     },
     {
-      "url": "/nettoyage-apres-deces/bouches-du-rhone/vitrolles/",
-      "slug": "nettoyage-apres-deces--bouches-du-rhone--vitrolles",
-      "publishAt": "2026-08-03",
+      "url": "/nettoyage-apres-deces/haute-garonne/blagnac/",
+      "slug": "nettoyage-apres-deces--haute-garonne--blagnac",
+      "publishAt": "2026-08-05",
       "needsUniqueDesc": false
     },
     {
-      "url": "/nettoyage-apres-deces/gard/aigues-mortes/",
-      "slug": "nettoyage-apres-deces--gard--aigues-mortes",
-      "publishAt": "2026-08-03",
+      "url": "/nettoyage-apres-deces/haute-garonne/colomiers/",
+      "slug": "nettoyage-apres-deces--haute-garonne--colomiers",
+      "publishAt": "2026-08-05",
       "needsUniqueDesc": false
     },
     {
-      "url": "/nettoyage-apres-deces/gard/bagnols-sur-ceze/",
-      "slug": "nettoyage-apres-deces--gard--bagnols-sur-ceze",
-      "publishAt": "2026-08-03",
+      "url": "/nettoyage-apres-deces/haute-garonne/cugnaux/",
+      "slug": "nettoyage-apres-deces--haute-garonne--cugnaux",
+      "publishAt": "2026-08-05",
       "needsUniqueDesc": false
     },
     {
-      "url": "/nettoyage-apres-deces/gard/beaucaire/",
-      "slug": "nettoyage-apres-deces--gard--beaucaire",
-      "publishAt": "2026-08-04",
+      "url": "/nettoyage-apres-deces/haute-garonne/l-union/",
+      "slug": "nettoyage-apres-deces--haute-garonne--l-union",
+      "publishAt": "2026-08-05",
       "needsUniqueDesc": false
     },
     {
-      "url": "/nettoyage-apres-deces/gard/le-grau-du-roi/",
-      "slug": "nettoyage-apres-deces--gard--le-grau-du-roi",
-      "publishAt": "2026-08-04",
+      "url": "/nettoyage-apres-deces/haute-garonne/muret/",
+      "slug": "nettoyage-apres-deces--haute-garonne--muret",
+      "publishAt": "2026-08-05",
       "needsUniqueDesc": false
     },
     {
-      "url": "/nettoyage-apres-deces/gard/les-angles/",
-      "slug": "nettoyage-apres-deces--gard--les-angles",
-      "publishAt": "2026-08-04",
+      "url": "/nettoyage-apres-deces/haute-garonne/revel/",
+      "slug": "nettoyage-apres-deces--haute-garonne--revel",
+      "publishAt": "2026-08-06",
       "needsUniqueDesc": false
     },
     {
-      "url": "/nettoyage-apres-deces/gard/marguerittes/",
-      "slug": "nettoyage-apres-deces--gard--marguerittes",
-      "publishAt": "2026-08-04",
+      "url": "/nettoyage-apres-deces/haute-garonne/saint-gaudens/",
+      "slug": "nettoyage-apres-deces--haute-garonne--saint-gaudens",
+      "publishAt": "2026-08-06",
       "needsUniqueDesc": false
     },
     {
-      "url": "/nettoyage-apres-deces/gard/pont-saint-esprit/",
-      "slug": "nettoyage-apres-deces--gard--pont-saint-esprit",
-      "publishAt": "2026-08-04",
+      "url": "/nettoyage-apres-deces/haute-garonne/saint-jean/",
+      "slug": "nettoyage-apres-deces--haute-garonne--saint-jean",
+      "publishAt": "2026-08-06",
       "needsUniqueDesc": false
     },
     {
-      "url": "/nettoyage-apres-deces/gard/saint-gilles/",
-      "slug": "nettoyage-apres-deces--gard--saint-gilles",
-      "publishAt": "2026-08-04",
+      "url": "/nettoyage-apres-deces/haute-garonne/tournefeuille/",
+      "slug": "nettoyage-apres-deces--haute-garonne--tournefeuille",
+      "publishAt": "2026-08-06",
       "needsUniqueDesc": false
     }
   ],
@@ -3123,108 +3123,108 @@
       "slug": "nettoyage-apres-deces--bouches-du-rhone--salon-de-provence",
       "type": "Page ville service",
       "publishAt": "2026-08-03",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 682
     },
     {
       "url": "/nettoyage-apres-deces/bouches-du-rhone/vitrolles/",
       "slug": "nettoyage-apres-deces--bouches-du-rhone--vitrolles",
       "type": "Page ville service",
       "publishAt": "2026-08-03",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 692
     },
     {
       "url": "/nettoyage-apres-deces/gard/aigues-mortes/",
       "slug": "nettoyage-apres-deces--gard--aigues-mortes",
       "type": "Page ville service",
       "publishAt": "2026-08-03",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 671
     },
     {
       "url": "/nettoyage-apres-deces/gard/bagnols-sur-ceze/",
       "slug": "nettoyage-apres-deces--gard--bagnols-sur-ceze",
       "type": "Page ville service",
       "publishAt": "2026-08-03",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 666
     },
     {
       "url": "/nettoyage-apres-deces/gard/beaucaire/",
       "slug": "nettoyage-apres-deces--gard--beaucaire",
       "type": "Page ville service",
       "publishAt": "2026-08-04",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 671
     },
     {
       "url": "/nettoyage-apres-deces/gard/le-grau-du-roi/",
       "slug": "nettoyage-apres-deces--gard--le-grau-du-roi",
       "type": "Page ville service",
       "publishAt": "2026-08-04",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 690
     },
     {
       "url": "/nettoyage-apres-deces/gard/les-angles/",
       "slug": "nettoyage-apres-deces--gard--les-angles",
       "type": "Page ville service",
       "publishAt": "2026-08-04",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 674
     },
     {
       "url": "/nettoyage-apres-deces/gard/marguerittes/",
       "slug": "nettoyage-apres-deces--gard--marguerittes",
       "type": "Page ville service",
       "publishAt": "2026-08-04",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 676
     },
     {
       "url": "/nettoyage-apres-deces/gard/pont-saint-esprit/",
       "slug": "nettoyage-apres-deces--gard--pont-saint-esprit",
       "type": "Page ville service",
       "publishAt": "2026-08-04",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 659
     },
     {
       "url": "/nettoyage-apres-deces/gard/saint-gilles/",
       "slug": "nettoyage-apres-deces--gard--saint-gilles",
       "type": "Page ville service",
       "publishAt": "2026-08-04",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 654
     },
     {
       "url": "/nettoyage-apres-deces/gard/uzes/",
       "slug": "nettoyage-apres-deces--gard--uzes",
       "type": "Page ville service",
       "publishAt": "2026-08-04",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 684
     },
     {
       "url": "/nettoyage-apres-deces/gard/villeneuve-les-avignon/",
       "slug": "nettoyage-apres-deces--gard--villeneuve-les-avignon",
       "type": "Page ville service",
       "publishAt": "2026-08-05",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 673
     },
     {
       "url": "/nettoyage-apres-deces/haute-garonne/balma/",
