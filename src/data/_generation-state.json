@@ -1,52 +1,10 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 481,
-  "remaining": 309,
+  "done": 488,
+  "remaining": 302,
   "late": 0,
   "nextBatch": [
-    {
-      "url": "/nettoyage-insalubre/haute-garonne/auterive/",
-      "slug": "nettoyage-insalubre--haute-garonne--auterive",
-      "publishAt": "2026-08-23",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-insalubre/haute-garonne/balma/",
-      "slug": "nettoyage-insalubre--haute-garonne--balma",
-      "publishAt": "2026-08-23",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-insalubre/haute-garonne/blagnac/",
-      "slug": "nettoyage-insalubre--haute-garonne--blagnac",
-      "publishAt": "2026-08-24",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-insalubre/haute-garonne/carbonne/",
-      "slug": "nettoyage-insalubre--haute-garonne--carbonne",
-      "publishAt": "2026-08-24",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-insalubre/haute-garonne/castanet-tolosan/",
-      "slug": "nettoyage-insalubre--haute-garonne--castanet-tolosan",
-      "publishAt": "2026-08-24",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-insalubre/haute-garonne/colomiers/",
-      "slug": "nettoyage-insalubre--haute-garonne--colomiers",
-      "publishAt": "2026-08-24",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/nettoyage-insalubre/haute-garonne/cugnaux/",
-      "slug": "nettoyage-insalubre--haute-garonne--cugnaux",
-      "publishAt": "2026-08-24",
-      "needsUniqueDesc": false
-    },
     {
       "url": "/nettoyage-insalubre/haute-garonne/fonsorbes/",
       "slug": "nettoyage-insalubre--haute-garonne--fonsorbes",
@@ -63,6 +21,48 @@
       "url": "/nettoyage-insalubre/haute-garonne/grenade/",
       "slug": "nettoyage-insalubre--haute-garonne--grenade",
       "publishAt": "2026-08-25",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/haute-garonne/l-union/",
+      "slug": "nettoyage-insalubre--haute-garonne--l-union",
+      "publishAt": "2026-08-25",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/haute-garonne/muret/",
+      "slug": "nettoyage-insalubre--haute-garonne--muret",
+      "publishAt": "2026-08-25",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/nettoyage-insalubre/haute-garonne/plaisance-du-touch/",
+      "slug": "nettoyage-insalubre--haute-garonne--plaisance-du-touch",
+      "publishAt": "2026-08-25",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/haute-garonne/portet-sur-garonne/",
+      "slug": "nettoyage-insalubre--haute-garonne--portet-sur-garonne",
+      "publishAt": "2026-08-25",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/haute-garonne/ramonville-saint-agne/",
+      "slug": "nettoyage-insalubre--haute-garonne--ramonville-saint-agne",
+      "publishAt": "2026-08-25",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/haute-garonne/revel/",
+      "slug": "nettoyage-insalubre--haute-garonne--revel",
+      "publishAt": "2026-08-25",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/haute-garonne/saint-gaudens/",
+      "slug": "nettoyage-insalubre--haute-garonne--saint-gaudens",
+      "publishAt": "2026-08-26",
       "needsUniqueDesc": false
     }
   ],
@@ -4401,63 +4401,63 @@
       "slug": "nettoyage-insalubre--haute-garonne--auterive",
       "type": "Page ville service",
       "publishAt": "2026-08-23",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 616
     },
     {
       "url": "/nettoyage-insalubre/haute-garonne/balma/",
       "slug": "nettoyage-insalubre--haute-garonne--balma",
       "type": "Page ville service",
       "publishAt": "2026-08-23",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 610
     },
     {
       "url": "/nettoyage-insalubre/haute-garonne/blagnac/",
       "slug": "nettoyage-insalubre--haute-garonne--blagnac",
       "type": "Page ville service",
       "publishAt": "2026-08-24",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 601
     },
     {
       "url": "/nettoyage-insalubre/haute-garonne/carbonne/",
       "slug": "nettoyage-insalubre--haute-garonne--carbonne",
       "type": "Page ville service",
       "publishAt": "2026-08-24",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 612
     },
     {
       "url": "/nettoyage-insalubre/haute-garonne/castanet-tolosan/",
       "slug": "nettoyage-insalubre--haute-garonne--castanet-tolosan",
       "type": "Page ville service",
       "publishAt": "2026-08-24",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 602
     },
     {
       "url": "/nettoyage-insalubre/haute-garonne/colomiers/",
       "slug": "nettoyage-insalubre--haute-garonne--colomiers",
       "type": "Page ville service",
       "publishAt": "2026-08-24",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 610
     },
     {
       "url": "/nettoyage-insalubre/haute-garonne/cugnaux/",
       "slug": "nettoyage-insalubre--haute-garonne--cugnaux",
       "type": "Page ville service",
       "publishAt": "2026-08-24",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 603
     },
     {
       "url": "/nettoyage-insalubre/haute-garonne/fonsorbes/",
