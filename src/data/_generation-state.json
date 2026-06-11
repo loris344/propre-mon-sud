@@ -1,22 +1,10 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 231,
-  "remaining": 559,
+  "done": 233,
+  "remaining": 557,
   "late": 0,
   "nextBatch": [
-    {
-      "url": "/debarras/cave/haute-garonne/toulouse/",
-      "slug": "debarras--cave--haute-garonne--toulouse",
-      "publishAt": "2026-07-19",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/cave/herault/beziers/",
-      "slug": "debarras--cave--herault--beziers",
-      "publishAt": "2026-07-19",
-      "needsUniqueDesc": true
-    },
     {
       "url": "/debarras/garage/bouches-du-rhone/aix-en-provence/",
       "slug": "debarras--garage--bouches-du-rhone--aix-en-provence",
@@ -62,6 +50,18 @@
     {
       "url": "/debarras/grenier/bouches-du-rhone/marseille/",
       "slug": "debarras--grenier--bouches-du-rhone--marseille",
+      "publishAt": "2026-07-20",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/grenier/gard/ales/",
+      "slug": "debarras--grenier--gard--ales",
+      "publishAt": "2026-07-20",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/grenier/gard/nimes/",
+      "slug": "debarras--grenier--gard--nimes",
       "publishAt": "2026-07-20",
       "needsUniqueDesc": true
     }
@@ -2151,18 +2151,18 @@
       "slug": "debarras--cave--haute-garonne--toulouse",
       "type": "Page ville débarras type",
       "publishAt": "2026-07-19",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 593
     },
     {
       "url": "/debarras/cave/herault/beziers/",
       "slug": "debarras--cave--herault--beziers",
       "type": "Page ville débarras type",
       "publishAt": "2026-07-19",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 610
     },
     {
       "url": "/debarras/garage/bouches-du-rhone/aix-en-provence/",
