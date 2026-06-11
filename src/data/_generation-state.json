@@ -1,52 +1,10 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 210,
-  "remaining": 580,
+  "done": 217,
+  "remaining": 573,
   "late": 0,
   "nextBatch": [
-    {
-      "url": "/debarras/herault/lunel/",
-      "slug": "debarras--herault--lunel",
-      "publishAt": "2026-07-16",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/herault/mauguio/",
-      "slug": "debarras--herault--mauguio",
-      "publishAt": "2026-07-16",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/herault/pezenas/",
-      "slug": "debarras--herault--pezenas",
-      "publishAt": "2026-07-16",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/herault/saint-jean-de-vedas/",
-      "slug": "debarras--herault--saint-jean-de-vedas",
-      "publishAt": "2026-07-16",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/herault/serignan/",
-      "slug": "debarras--herault--serignan",
-      "publishAt": "2026-07-16",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/herault/sete/",
-      "slug": "debarras--herault--sete",
-      "publishAt": "2026-07-16",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/herault/valras-plage/",
-      "slug": "debarras--herault--valras-plage",
-      "publishAt": "2026-07-16",
-      "needsUniqueDesc": true
-    },
     {
       "url": "/debarras/herault/vias/",
       "slug": "debarras--herault--vias",
@@ -63,6 +21,48 @@
       "url": "/debarras/appartement/bouches-du-rhone/marseille/",
       "slug": "debarras--appartement--bouches-du-rhone--marseille",
       "publishAt": "2026-07-17",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/appartement/gard/ales/",
+      "slug": "debarras--appartement--gard--ales",
+      "publishAt": "2026-07-17",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/appartement/gard/nimes/",
+      "slug": "debarras--appartement--gard--nimes",
+      "publishAt": "2026-07-17",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/appartement/haute-garonne/toulouse/",
+      "slug": "debarras--appartement--haute-garonne--toulouse",
+      "publishAt": "2026-07-17",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/appartement/herault/agde/",
+      "slug": "debarras--appartement--herault--agde",
+      "publishAt": "2026-07-17",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/appartement/herault/beziers/",
+      "slug": "debarras--appartement--herault--beziers",
+      "publishAt": "2026-07-18",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/appartement/herault/lunel/",
+      "slug": "debarras--appartement--herault--lunel",
+      "publishAt": "2026-07-18",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/appartement/herault/sete/",
+      "slug": "debarras--appartement--herault--sete",
+      "publishAt": "2026-07-18",
       "needsUniqueDesc": true
     }
   ],
@@ -1962,63 +1962,63 @@
       "slug": "debarras--herault--lunel",
       "type": "Page ville débarras",
       "publishAt": "2026-07-16",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 624
     },
     {
       "url": "/debarras/herault/mauguio/",
       "slug": "debarras--herault--mauguio",
       "type": "Page ville débarras",
       "publishAt": "2026-07-16",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 619
     },
     {
       "url": "/debarras/herault/pezenas/",
       "slug": "debarras--herault--pezenas",
       "type": "Page ville débarras",
       "publishAt": "2026-07-16",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 609
     },
     {
       "url": "/debarras/herault/saint-jean-de-vedas/",
       "slug": "debarras--herault--saint-jean-de-vedas",
       "type": "Page ville débarras",
       "publishAt": "2026-07-16",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 611
     },
     {
       "url": "/debarras/herault/serignan/",
       "slug": "debarras--herault--serignan",
       "type": "Page ville débarras",
       "publishAt": "2026-07-16",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 621
     },
     {
       "url": "/debarras/herault/sete/",
       "slug": "debarras--herault--sete",
       "type": "Page ville débarras",
       "publishAt": "2026-07-16",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 602
     },
     {
       "url": "/debarras/herault/valras-plage/",
       "slug": "debarras--herault--valras-plage",
       "type": "Page ville débarras",
       "publishAt": "2026-07-16",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 601
     },
     {
       "url": "/debarras/herault/vias/",
