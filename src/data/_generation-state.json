@@ -1,52 +1,10 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 683,
-  "remaining": 107,
+  "done": 690,
+  "remaining": 100,
   "late": 0,
   "nextBatch": [
-    {
-      "url": "/nettoyage-apres-squat/tarn/albi/",
-      "slug": "nettoyage-apres-squat--tarn--albi",
-      "publishAt": "2026-09-22",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-apres-squat/tarn/carmaux/",
-      "slug": "nettoyage-apres-squat--tarn--carmaux",
-      "publishAt": "2026-09-23",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-apres-squat/tarn/castres/",
-      "slug": "nettoyage-apres-squat--tarn--castres",
-      "publishAt": "2026-09-23",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-apres-squat/tarn/gaillac/",
-      "slug": "nettoyage-apres-squat--tarn--gaillac",
-      "publishAt": "2026-09-23",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-apres-squat/tarn/graulhet/",
-      "slug": "nettoyage-apres-squat--tarn--graulhet",
-      "publishAt": "2026-09-23",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-apres-squat/tarn/lavaur/",
-      "slug": "nettoyage-apres-squat--tarn--lavaur",
-      "publishAt": "2026-09-23",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-apres-squat/tarn/mazamet/",
-      "slug": "nettoyage-apres-squat--tarn--mazamet",
-      "publishAt": "2026-09-23",
-      "needsUniqueDesc": false
-    },
     {
       "url": "/nettoyage-diogene/aveyron/decazeville/",
       "slug": "nettoyage-diogene--aveyron--decazeville",
@@ -63,6 +21,48 @@
       "url": "/nettoyage-diogene/aveyron/onet-le-chateau/",
       "slug": "nettoyage-diogene--aveyron--onet-le-chateau",
       "publishAt": "2026-09-24",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-diogene/aveyron/rodez/",
+      "slug": "nettoyage-diogene--aveyron--rodez",
+      "publishAt": "2026-09-24",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-diogene/aveyron/saint-affrique/",
+      "slug": "nettoyage-diogene--aveyron--saint-affrique",
+      "publishAt": "2026-09-24",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-diogene/aveyron/villefranche-de-rouergue/",
+      "slug": "nettoyage-diogene--aveyron--villefranche-de-rouergue",
+      "publishAt": "2026-09-24",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-diogene/tarn/albi/",
+      "slug": "nettoyage-diogene--tarn--albi",
+      "publishAt": "2026-09-24",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-diogene/tarn/carmaux/",
+      "slug": "nettoyage-diogene--tarn--carmaux",
+      "publishAt": "2026-09-24",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-diogene/tarn/castres/",
+      "slug": "nettoyage-diogene--tarn--castres",
+      "publishAt": "2026-09-25",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-diogene/tarn/gaillac/",
+      "slug": "nettoyage-diogene--tarn--gaillac",
+      "publishAt": "2026-09-25",
       "needsUniqueDesc": false
     }
   ],
@@ -6219,63 +6219,63 @@
       "slug": "nettoyage-apres-squat--tarn--albi",
       "type": "Page ville service",
       "publishAt": "2026-09-22",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 600
     },
     {
       "url": "/nettoyage-apres-squat/tarn/carmaux/",
       "slug": "nettoyage-apres-squat--tarn--carmaux",
       "type": "Page ville service",
       "publishAt": "2026-09-23",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 606
     },
     {
       "url": "/nettoyage-apres-squat/tarn/castres/",
       "slug": "nettoyage-apres-squat--tarn--castres",
       "type": "Page ville service",
       "publishAt": "2026-09-23",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 603
     },
     {
       "url": "/nettoyage-apres-squat/tarn/gaillac/",
       "slug": "nettoyage-apres-squat--tarn--gaillac",
       "type": "Page ville service",
       "publishAt": "2026-09-23",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 604
     },
     {
       "url": "/nettoyage-apres-squat/tarn/graulhet/",
       "slug": "nettoyage-apres-squat--tarn--graulhet",
       "type": "Page ville service",
       "publishAt": "2026-09-23",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 614
     },
     {
       "url": "/nettoyage-apres-squat/tarn/lavaur/",
       "slug": "nettoyage-apres-squat--tarn--lavaur",
       "type": "Page ville service",
       "publishAt": "2026-09-23",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 609
     },
     {
       "url": "/nettoyage-apres-squat/tarn/mazamet/",
       "slug": "nettoyage-apres-squat--tarn--mazamet",
       "type": "Page ville service",
       "publishAt": "2026-09-23",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 607
     },
     {
       "url": "/nettoyage-diogene/aveyron/decazeville/",
