@@ -1,52 +1,10 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 521,
-  "remaining": 269,
+  "done": 528,
+  "remaining": 262,
   "late": 0,
   "nextBatch": [
-    {
-      "url": "/debarras/gard/aigues-mortes/",
-      "slug": "debarras--gard--aigues-mortes",
-      "publishAt": "2026-08-29",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/gard/bagnols-sur-ceze/",
-      "slug": "debarras--gard--bagnols-sur-ceze",
-      "publishAt": "2026-08-29",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/gard/beaucaire/",
-      "slug": "debarras--gard--beaucaire",
-      "publishAt": "2026-08-29",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/gard/le-grau-du-roi/",
-      "slug": "debarras--gard--le-grau-du-roi",
-      "publishAt": "2026-08-29",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/gard/les-angles/",
-      "slug": "debarras--gard--les-angles",
-      "publishAt": "2026-08-30",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/gard/marguerittes/",
-      "slug": "debarras--gard--marguerittes",
-      "publishAt": "2026-08-30",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/gard/pont-saint-esprit/",
-      "slug": "debarras--gard--pont-saint-esprit",
-      "publishAt": "2026-08-30",
-      "needsUniqueDesc": true
-    },
     {
       "url": "/debarras/gard/saint-gilles/",
       "slug": "debarras--gard--saint-gilles",
@@ -63,6 +21,48 @@
       "url": "/debarras/gard/villeneuve-les-avignon/",
       "slug": "debarras--gard--villeneuve-les-avignon",
       "publishAt": "2026-08-30",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/haute-garonne/balma/",
+      "slug": "debarras--haute-garonne--balma",
+      "publishAt": "2026-08-30",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/haute-garonne/blagnac/",
+      "slug": "debarras--haute-garonne--blagnac",
+      "publishAt": "2026-08-31",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/haute-garonne/colomiers/",
+      "slug": "debarras--haute-garonne--colomiers",
+      "publishAt": "2026-08-31",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/haute-garonne/cugnaux/",
+      "slug": "debarras--haute-garonne--cugnaux",
+      "publishAt": "2026-08-31",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/haute-garonne/l-union/",
+      "slug": "debarras--haute-garonne--l-union",
+      "publishAt": "2026-08-31",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/haute-garonne/muret/",
+      "slug": "debarras--haute-garonne--muret",
+      "publishAt": "2026-08-31",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/haute-garonne/revel/",
+      "slug": "debarras--haute-garonne--revel",
+      "publishAt": "2026-08-31",
       "needsUniqueDesc": true
     }
   ],
@@ -4761,63 +4761,63 @@
       "slug": "debarras--gard--aigues-mortes",
       "type": "Page ville débarras",
       "publishAt": "2026-08-29",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 604
     },
     {
       "url": "/debarras/gard/bagnols-sur-ceze/",
       "slug": "debarras--gard--bagnols-sur-ceze",
       "type": "Page ville débarras",
       "publishAt": "2026-08-29",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 602
     },
     {
       "url": "/debarras/gard/beaucaire/",
       "slug": "debarras--gard--beaucaire",
       "type": "Page ville débarras",
       "publishAt": "2026-08-29",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 602
     },
     {
       "url": "/debarras/gard/le-grau-du-roi/",
       "slug": "debarras--gard--le-grau-du-roi",
       "type": "Page ville débarras",
       "publishAt": "2026-08-29",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 606
     },
     {
       "url": "/debarras/gard/les-angles/",
       "slug": "debarras--gard--les-angles",
       "type": "Page ville débarras",
       "publishAt": "2026-08-30",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 602
     },
     {
       "url": "/debarras/gard/marguerittes/",
       "slug": "debarras--gard--marguerittes",
       "type": "Page ville débarras",
       "publishAt": "2026-08-30",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 600
     },
     {
       "url": "/debarras/gard/pont-saint-esprit/",
       "slug": "debarras--gard--pont-saint-esprit",
       "type": "Page ville débarras",
       "publishAt": "2026-08-30",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 606
     },
     {
       "url": "/debarras/gard/saint-gilles/",
