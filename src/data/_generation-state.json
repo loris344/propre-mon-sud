@@ -1,34 +1,10 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 548,
-  "remaining": 242,
+  "done": 552,
+  "remaining": 238,
   "late": 0,
   "nextBatch": [
-    {
-      "url": "/debarras/grenier/",
-      "slug": "debarras--grenier",
-      "publishAt": "2026-09-02",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/logement-insalubre/",
-      "slug": "debarras--logement-insalubre",
-      "publishAt": "2026-09-02",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/maison/",
-      "slug": "debarras--maison",
-      "publishAt": "2026-09-02",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/succession/",
-      "slug": "debarras--succession",
-      "publishAt": "2026-09-02",
-      "needsUniqueDesc": true
-    },
     {
       "url": "/debarras/appartement/bouches-du-rhone/arles/",
       "slug": "debarras--appartement--bouches-du-rhone--arles",
@@ -63,6 +39,30 @@
       "url": "/debarras/cave/haute-garonne/colomiers/",
       "slug": "debarras--cave--haute-garonne--colomiers",
       "publishAt": "2026-09-03",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/garage/haute-garonne/colomiers/",
+      "slug": "debarras--garage--haute-garonne--colomiers",
+      "publishAt": "2026-09-03",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/grenier/haute-garonne/colomiers/",
+      "slug": "debarras--grenier--haute-garonne--colomiers",
+      "publishAt": "2026-09-03",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/maison/bouches-du-rhone/allauch/",
+      "slug": "debarras--maison--bouches-du-rhone--allauch",
+      "publishAt": "2026-09-04",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/maison/bouches-du-rhone/arles/",
+      "slug": "debarras--maison--bouches-du-rhone--arles",
+      "publishAt": "2026-09-04",
       "needsUniqueDesc": true
     }
   ],
@@ -5004,36 +5004,36 @@
       "slug": "debarras--grenier",
       "type": "Page type débarras",
       "publishAt": "2026-09-02",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 601
     },
     {
       "url": "/debarras/logement-insalubre/",
       "slug": "debarras--logement-insalubre",
       "type": "Page type débarras",
       "publishAt": "2026-09-02",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 612
     },
     {
       "url": "/debarras/maison/",
       "slug": "debarras--maison",
       "type": "Page type débarras",
       "publishAt": "2026-09-02",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 603
     },
     {
       "url": "/debarras/succession/",
       "slug": "debarras--succession",
       "type": "Page type débarras",
       "publishAt": "2026-09-02",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 602
     },
     {
       "url": "/debarras/appartement/bouches-du-rhone/arles/",
