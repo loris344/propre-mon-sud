@@ -1,69 +1,69 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 408,
-  "remaining": 382,
+  "done": 421,
+  "remaining": 369,
   "late": 0,
   "nextBatch": [
     {
-      "url": "/nettoyage-diogene/gard/aigues-mortes/",
-      "slug": "nettoyage-diogene--gard--aigues-mortes",
-      "publishAt": "2026-08-13",
+      "url": "/nettoyage-diogene/haute-garonne/cugnaux/",
+      "slug": "nettoyage-diogene--haute-garonne--cugnaux",
+      "publishAt": "2026-08-15",
       "needsUniqueDesc": false
     },
     {
-      "url": "/nettoyage-diogene/gard/bagnols-sur-ceze/",
-      "slug": "nettoyage-diogene--gard--bagnols-sur-ceze",
-      "publishAt": "2026-08-13",
+      "url": "/nettoyage-diogene/haute-garonne/l-union/",
+      "slug": "nettoyage-diogene--haute-garonne--l-union",
+      "publishAt": "2026-08-15",
       "needsUniqueDesc": false
     },
     {
-      "url": "/nettoyage-diogene/gard/beaucaire/",
-      "slug": "nettoyage-diogene--gard--beaucaire",
-      "publishAt": "2026-08-13",
+      "url": "/nettoyage-diogene/haute-garonne/muret/",
+      "slug": "nettoyage-diogene--haute-garonne--muret",
+      "publishAt": "2026-08-15",
       "needsUniqueDesc": false
     },
     {
-      "url": "/nettoyage-diogene/gard/le-grau-du-roi/",
-      "slug": "nettoyage-diogene--gard--le-grau-du-roi",
-      "publishAt": "2026-08-13",
+      "url": "/nettoyage-diogene/haute-garonne/revel/",
+      "slug": "nettoyage-diogene--haute-garonne--revel",
+      "publishAt": "2026-08-15",
       "needsUniqueDesc": false
     },
     {
-      "url": "/nettoyage-diogene/gard/les-angles/",
-      "slug": "nettoyage-diogene--gard--les-angles",
-      "publishAt": "2026-08-13",
+      "url": "/nettoyage-diogene/haute-garonne/saint-gaudens/",
+      "slug": "nettoyage-diogene--haute-garonne--saint-gaudens",
+      "publishAt": "2026-08-15",
       "needsUniqueDesc": false
     },
     {
-      "url": "/nettoyage-diogene/gard/marguerittes/",
-      "slug": "nettoyage-diogene--gard--marguerittes",
-      "publishAt": "2026-08-14",
+      "url": "/nettoyage-diogene/haute-garonne/saint-jean/",
+      "slug": "nettoyage-diogene--haute-garonne--saint-jean",
+      "publishAt": "2026-08-15",
       "needsUniqueDesc": false
     },
     {
-      "url": "/nettoyage-diogene/gard/pont-saint-esprit/",
-      "slug": "nettoyage-diogene--gard--pont-saint-esprit",
-      "publishAt": "2026-08-14",
+      "url": "/nettoyage-diogene/haute-garonne/tournefeuille/",
+      "slug": "nettoyage-diogene--haute-garonne--tournefeuille",
+      "publishAt": "2026-08-16",
       "needsUniqueDesc": false
     },
     {
-      "url": "/nettoyage-diogene/gard/saint-gilles/",
-      "slug": "nettoyage-diogene--gard--saint-gilles",
-      "publishAt": "2026-08-14",
+      "url": "/nettoyage-insalubre/bouches-du-rhone/allauch/",
+      "slug": "nettoyage-insalubre--bouches-du-rhone--allauch",
+      "publishAt": "2026-08-16",
       "needsUniqueDesc": false
     },
     {
-      "url": "/nettoyage-diogene/gard/uzes/",
-      "slug": "nettoyage-diogene--gard--uzes",
-      "publishAt": "2026-08-14",
-      "needsUniqueDesc": false
+      "url": "/nettoyage-insalubre/bouches-du-rhone/arles/",
+      "slug": "nettoyage-insalubre--bouches-du-rhone--arles",
+      "publishAt": "2026-08-16",
+      "needsUniqueDesc": true
     },
     {
-      "url": "/nettoyage-diogene/gard/villeneuve-les-avignon/",
-      "slug": "nettoyage-diogene--gard--villeneuve-les-avignon",
-      "publishAt": "2026-08-14",
-      "needsUniqueDesc": false
+      "url": "/nettoyage-insalubre/bouches-du-rhone/aubagne/",
+      "slug": "nettoyage-insalubre--bouches-du-rhone--aubagne",
+      "publishAt": "2026-08-16",
+      "needsUniqueDesc": true
     }
   ],
   "pages": [
@@ -3744,117 +3744,117 @@
       "slug": "nettoyage-diogene--gard--aigues-mortes",
       "type": "Page ville service",
       "publishAt": "2026-08-13",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 606
     },
     {
       "url": "/nettoyage-diogene/gard/bagnols-sur-ceze/",
       "slug": "nettoyage-diogene--gard--bagnols-sur-ceze",
       "type": "Page ville service",
       "publishAt": "2026-08-13",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 601
     },
     {
       "url": "/nettoyage-diogene/gard/beaucaire/",
       "slug": "nettoyage-diogene--gard--beaucaire",
       "type": "Page ville service",
       "publishAt": "2026-08-13",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 610
     },
     {
       "url": "/nettoyage-diogene/gard/le-grau-du-roi/",
       "slug": "nettoyage-diogene--gard--le-grau-du-roi",
       "type": "Page ville service",
       "publishAt": "2026-08-13",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 602
     },
     {
       "url": "/nettoyage-diogene/gard/les-angles/",
       "slug": "nettoyage-diogene--gard--les-angles",
       "type": "Page ville service",
       "publishAt": "2026-08-13",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 603
     },
     {
       "url": "/nettoyage-diogene/gard/marguerittes/",
       "slug": "nettoyage-diogene--gard--marguerittes",
       "type": "Page ville service",
       "publishAt": "2026-08-14",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 604
     },
     {
       "url": "/nettoyage-diogene/gard/pont-saint-esprit/",
       "slug": "nettoyage-diogene--gard--pont-saint-esprit",
       "type": "Page ville service",
       "publishAt": "2026-08-14",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 600
     },
     {
       "url": "/nettoyage-diogene/gard/saint-gilles/",
       "slug": "nettoyage-diogene--gard--saint-gilles",
       "type": "Page ville service",
       "publishAt": "2026-08-14",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 614
     },
     {
       "url": "/nettoyage-diogene/gard/uzes/",
       "slug": "nettoyage-diogene--gard--uzes",
       "type": "Page ville service",
       "publishAt": "2026-08-14",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 604
     },
     {
       "url": "/nettoyage-diogene/gard/villeneuve-les-avignon/",
       "slug": "nettoyage-diogene--gard--villeneuve-les-avignon",
       "type": "Page ville service",
       "publishAt": "2026-08-14",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 613
     },
     {
       "url": "/nettoyage-diogene/haute-garonne/balma/",
       "slug": "nettoyage-diogene--haute-garonne--balma",
       "type": "Page ville service",
       "publishAt": "2026-08-14",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 604
     },
     {
       "url": "/nettoyage-diogene/haute-garonne/blagnac/",
       "slug": "nettoyage-diogene--haute-garonne--blagnac",
       "type": "Page ville service",
       "publishAt": "2026-08-14",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 605
     },
     {
       "url": "/nettoyage-diogene/haute-garonne/colomiers/",
       "slug": "nettoyage-diogene--haute-garonne--colomiers",
       "type": "Page ville service",
       "publishAt": "2026-08-15",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 610
     },
     {
       "url": "/nettoyage-diogene/haute-garonne/cugnaux/",
