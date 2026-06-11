@@ -1,34 +1,10 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 660,
-  "remaining": 130,
+  "done": 664,
+  "remaining": 126,
   "late": 0,
   "nextBatch": [
-    {
-      "url": "/nettoyage-apres-deces/aveyron/decazeville/",
-      "slug": "nettoyage-apres-deces--aveyron--decazeville",
-      "publishAt": "2026-09-19",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-apres-deces/aveyron/millau/",
-      "slug": "nettoyage-apres-deces--aveyron--millau",
-      "publishAt": "2026-09-19",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-apres-deces/aveyron/onet-le-chateau/",
-      "slug": "nettoyage-apres-deces--aveyron--onet-le-chateau",
-      "publishAt": "2026-09-19",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-apres-deces/aveyron/rodez/",
-      "slug": "nettoyage-apres-deces--aveyron--rodez",
-      "publishAt": "2026-09-20",
-      "needsUniqueDesc": false
-    },
     {
       "url": "/nettoyage-apres-deces/aveyron/saint-affrique/",
       "slug": "nettoyage-apres-deces--aveyron--saint-affrique",
@@ -64,6 +40,30 @@
       "slug": "nettoyage-apres-deces--tarn--gaillac",
       "publishAt": "2026-09-20",
       "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-deces/tarn/graulhet/",
+      "slug": "nettoyage-apres-deces--tarn--graulhet",
+      "publishAt": "2026-09-21",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-deces/tarn/lavaur/",
+      "slug": "nettoyage-apres-deces--tarn--lavaur",
+      "publishAt": "2026-09-21",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-deces/tarn/mazamet/",
+      "slug": "nettoyage-apres-deces--tarn--mazamet",
+      "publishAt": "2026-09-21",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-sinistre/aveyron/millau/",
+      "slug": "nettoyage-apres-sinistre--aveyron--millau",
+      "publishAt": "2026-09-21",
+      "needsUniqueDesc": true
     }
   ],
   "pages": [
@@ -6012,36 +6012,36 @@
       "slug": "nettoyage-apres-deces--aveyron--decazeville",
       "type": "Page ville service",
       "publishAt": "2026-09-19",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 629
     },
     {
       "url": "/nettoyage-apres-deces/aveyron/millau/",
       "slug": "nettoyage-apres-deces--aveyron--millau",
       "type": "Page ville service",
       "publishAt": "2026-09-19",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 677
     },
     {
       "url": "/nettoyage-apres-deces/aveyron/onet-le-chateau/",
       "slug": "nettoyage-apres-deces--aveyron--onet-le-chateau",
       "type": "Page ville service",
       "publishAt": "2026-09-19",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 633
     },
     {
       "url": "/nettoyage-apres-deces/aveyron/rodez/",
       "slug": "nettoyage-apres-deces--aveyron--rodez",
       "type": "Page ville service",
       "publishAt": "2026-09-20",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 659
     },
     {
       "url": "/nettoyage-apres-deces/aveyron/saint-affrique/",
