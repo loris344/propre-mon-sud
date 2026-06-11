@@ -1,52 +1,10 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 217,
-  "remaining": 573,
+  "done": 224,
+  "remaining": 566,
   "late": 0,
   "nextBatch": [
-    {
-      "url": "/debarras/herault/vias/",
-      "slug": "debarras--herault--vias",
-      "publishAt": "2026-07-17",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/appartement/bouches-du-rhone/aix-en-provence/",
-      "slug": "debarras--appartement--bouches-du-rhone--aix-en-provence",
-      "publishAt": "2026-07-17",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/appartement/bouches-du-rhone/marseille/",
-      "slug": "debarras--appartement--bouches-du-rhone--marseille",
-      "publishAt": "2026-07-17",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/appartement/gard/ales/",
-      "slug": "debarras--appartement--gard--ales",
-      "publishAt": "2026-07-17",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/appartement/gard/nimes/",
-      "slug": "debarras--appartement--gard--nimes",
-      "publishAt": "2026-07-17",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/appartement/haute-garonne/toulouse/",
-      "slug": "debarras--appartement--haute-garonne--toulouse",
-      "publishAt": "2026-07-17",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/appartement/herault/agde/",
-      "slug": "debarras--appartement--herault--agde",
-      "publishAt": "2026-07-17",
-      "needsUniqueDesc": true
-    },
     {
       "url": "/debarras/appartement/herault/beziers/",
       "slug": "debarras--appartement--herault--beziers",
@@ -63,6 +21,48 @@
       "url": "/debarras/appartement/herault/sete/",
       "slug": "debarras--appartement--herault--sete",
       "publishAt": "2026-07-18",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/cave/bouches-du-rhone/aix-en-provence/",
+      "slug": "debarras--cave--bouches-du-rhone--aix-en-provence",
+      "publishAt": "2026-07-18",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/cave/bouches-du-rhone/marseille/",
+      "slug": "debarras--cave--bouches-du-rhone--marseille",
+      "publishAt": "2026-07-18",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/cave/gard/ales/",
+      "slug": "debarras--cave--gard--ales",
+      "publishAt": "2026-07-18",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/cave/gard/nimes/",
+      "slug": "debarras--cave--gard--nimes",
+      "publishAt": "2026-07-18",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/cave/haute-garonne/toulouse/",
+      "slug": "debarras--cave--haute-garonne--toulouse",
+      "publishAt": "2026-07-19",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/cave/herault/beziers/",
+      "slug": "debarras--cave--herault--beziers",
+      "publishAt": "2026-07-19",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/garage/bouches-du-rhone/aix-en-provence/",
+      "slug": "debarras--garage--bouches-du-rhone--aix-en-provence",
+      "publishAt": "2026-07-19",
       "needsUniqueDesc": true
     }
   ],
@@ -2025,63 +2025,63 @@
       "slug": "debarras--herault--vias",
       "type": "Page ville débarras",
       "publishAt": "2026-07-17",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 620
     },
     {
       "url": "/debarras/appartement/bouches-du-rhone/aix-en-provence/",
       "slug": "debarras--appartement--bouches-du-rhone--aix-en-provence",
       "type": "Page ville débarras type",
       "publishAt": "2026-07-17",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 616
     },
     {
       "url": "/debarras/appartement/bouches-du-rhone/marseille/",
       "slug": "debarras--appartement--bouches-du-rhone--marseille",
       "type": "Page ville débarras type",
       "publishAt": "2026-07-17",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 619
     },
     {
       "url": "/debarras/appartement/gard/ales/",
       "slug": "debarras--appartement--gard--ales",
       "type": "Page ville débarras type",
       "publishAt": "2026-07-17",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 616
     },
     {
       "url": "/debarras/appartement/gard/nimes/",
       "slug": "debarras--appartement--gard--nimes",
       "type": "Page ville débarras type",
       "publishAt": "2026-07-17",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 614
     },
     {
       "url": "/debarras/appartement/haute-garonne/toulouse/",
       "slug": "debarras--appartement--haute-garonne--toulouse",
       "type": "Page ville débarras type",
       "publishAt": "2026-07-17",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 611
     },
     {
       "url": "/debarras/appartement/herault/agde/",
       "slug": "debarras--appartement--herault--agde",
       "type": "Page ville débarras type",
       "publishAt": "2026-07-17",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 615
     },
     {
       "url": "/debarras/appartement/herault/beziers/",
