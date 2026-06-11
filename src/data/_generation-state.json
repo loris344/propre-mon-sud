@@ -1,68 +1,68 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 366,
-  "remaining": 424,
+  "done": 377,
+  "remaining": 413,
   "late": 0,
   "nextBatch": [
     {
-      "url": "/nettoyage-apres-squat/bouches-du-rhone/allauch/",
-      "slug": "nettoyage-apres-squat--bouches-du-rhone--allauch",
-      "publishAt": "2026-08-07",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-apres-squat/bouches-du-rhone/arles/",
-      "slug": "nettoyage-apres-squat--bouches-du-rhone--arles",
-      "publishAt": "2026-08-07",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-apres-squat/bouches-du-rhone/aubagne/",
-      "slug": "nettoyage-apres-squat--bouches-du-rhone--aubagne",
-      "publishAt": "2026-08-07",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-apres-squat/bouches-du-rhone/chateaurenard/",
-      "slug": "nettoyage-apres-squat--bouches-du-rhone--chateaurenard",
-      "publishAt": "2026-08-07",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-apres-squat/bouches-du-rhone/istres/",
-      "slug": "nettoyage-apres-squat--bouches-du-rhone--istres",
-      "publishAt": "2026-08-07",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-apres-squat/bouches-du-rhone/la-ciotat/",
-      "slug": "nettoyage-apres-squat--bouches-du-rhone--la-ciotat",
+      "url": "/nettoyage-apres-squat/gard/aigues-mortes/",
+      "slug": "nettoyage-apres-squat--gard--aigues-mortes",
       "publishAt": "2026-08-08",
       "needsUniqueDesc": false
     },
     {
-      "url": "/nettoyage-apres-squat/bouches-du-rhone/marignane/",
-      "slug": "nettoyage-apres-squat--bouches-du-rhone--marignane",
-      "publishAt": "2026-08-08",
+      "url": "/nettoyage-apres-squat/gard/bagnols-sur-ceze/",
+      "slug": "nettoyage-apres-squat--gard--bagnols-sur-ceze",
+      "publishAt": "2026-08-09",
       "needsUniqueDesc": false
     },
     {
-      "url": "/nettoyage-apres-squat/bouches-du-rhone/martigues/",
-      "slug": "nettoyage-apres-squat--bouches-du-rhone--martigues",
-      "publishAt": "2026-08-08",
+      "url": "/nettoyage-apres-squat/gard/beaucaire/",
+      "slug": "nettoyage-apres-squat--gard--beaucaire",
+      "publishAt": "2026-08-09",
       "needsUniqueDesc": false
     },
     {
-      "url": "/nettoyage-apres-squat/bouches-du-rhone/saint-remy-de-provence/",
-      "slug": "nettoyage-apres-squat--bouches-du-rhone--saint-remy-de-provence",
-      "publishAt": "2026-08-08",
+      "url": "/nettoyage-apres-squat/gard/le-grau-du-roi/",
+      "slug": "nettoyage-apres-squat--gard--le-grau-du-roi",
+      "publishAt": "2026-08-09",
       "needsUniqueDesc": false
     },
     {
-      "url": "/nettoyage-apres-squat/bouches-du-rhone/salon-de-provence/",
-      "slug": "nettoyage-apres-squat--bouches-du-rhone--salon-de-provence",
-      "publishAt": "2026-08-08",
+      "url": "/nettoyage-apres-squat/gard/les-angles/",
+      "slug": "nettoyage-apres-squat--gard--les-angles",
+      "publishAt": "2026-08-09",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-squat/gard/marguerittes/",
+      "slug": "nettoyage-apres-squat--gard--marguerittes",
+      "publishAt": "2026-08-09",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-squat/gard/pont-saint-esprit/",
+      "slug": "nettoyage-apres-squat--gard--pont-saint-esprit",
+      "publishAt": "2026-08-09",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-squat/gard/saint-gilles/",
+      "slug": "nettoyage-apres-squat--gard--saint-gilles",
+      "publishAt": "2026-08-09",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-squat/gard/uzes/",
+      "slug": "nettoyage-apres-squat--gard--uzes",
+      "publishAt": "2026-08-10",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-squat/gard/villeneuve-les-avignon/",
+      "slug": "nettoyage-apres-squat--gard--villeneuve-les-avignon",
+      "publishAt": "2026-08-10",
       "needsUniqueDesc": false
     }
   ],
@@ -3366,99 +3366,99 @@
       "slug": "nettoyage-apres-squat--bouches-du-rhone--allauch",
       "type": "Page ville service",
       "publishAt": "2026-08-07",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 600
     },
     {
       "url": "/nettoyage-apres-squat/bouches-du-rhone/arles/",
       "slug": "nettoyage-apres-squat--bouches-du-rhone--arles",
       "type": "Page ville service",
       "publishAt": "2026-08-07",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 606
     },
     {
       "url": "/nettoyage-apres-squat/bouches-du-rhone/aubagne/",
       "slug": "nettoyage-apres-squat--bouches-du-rhone--aubagne",
       "type": "Page ville service",
       "publishAt": "2026-08-07",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 603
     },
     {
       "url": "/nettoyage-apres-squat/bouches-du-rhone/chateaurenard/",
       "slug": "nettoyage-apres-squat--bouches-du-rhone--chateaurenard",
       "type": "Page ville service",
       "publishAt": "2026-08-07",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 605
     },
     {
       "url": "/nettoyage-apres-squat/bouches-du-rhone/istres/",
       "slug": "nettoyage-apres-squat--bouches-du-rhone--istres",
       "type": "Page ville service",
       "publishAt": "2026-08-07",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 603
     },
     {
       "url": "/nettoyage-apres-squat/bouches-du-rhone/la-ciotat/",
       "slug": "nettoyage-apres-squat--bouches-du-rhone--la-ciotat",
       "type": "Page ville service",
       "publishAt": "2026-08-08",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 607
     },
     {
       "url": "/nettoyage-apres-squat/bouches-du-rhone/marignane/",
       "slug": "nettoyage-apres-squat--bouches-du-rhone--marignane",
       "type": "Page ville service",
       "publishAt": "2026-08-08",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 613
     },
     {
       "url": "/nettoyage-apres-squat/bouches-du-rhone/martigues/",
       "slug": "nettoyage-apres-squat--bouches-du-rhone--martigues",
       "type": "Page ville service",
       "publishAt": "2026-08-08",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 608
     },
     {
       "url": "/nettoyage-apres-squat/bouches-du-rhone/saint-remy-de-provence/",
       "slug": "nettoyage-apres-squat--bouches-du-rhone--saint-remy-de-provence",
       "type": "Page ville service",
       "publishAt": "2026-08-08",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 609
     },
     {
       "url": "/nettoyage-apres-squat/bouches-du-rhone/salon-de-provence/",
       "slug": "nettoyage-apres-squat--bouches-du-rhone--salon-de-provence",
       "type": "Page ville service",
       "publishAt": "2026-08-08",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 606
     },
     {
       "url": "/nettoyage-apres-squat/bouches-du-rhone/vitrolles/",
       "slug": "nettoyage-apres-squat--bouches-du-rhone--vitrolles",
       "type": "Page ville service",
       "publishAt": "2026-08-08",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 616
     },
     {
       "url": "/nettoyage-apres-squat/gard/aigues-mortes/",
