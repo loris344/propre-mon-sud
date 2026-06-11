@@ -1,68 +1,68 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 329,
-  "remaining": 461,
+  "done": 339,
+  "remaining": 451,
   "late": 0,
   "nextBatch": [
     {
-      "url": "/desinfection-logement/haute-garonne/saint-jean/",
-      "slug": "desinfection-logement--haute-garonne--saint-jean",
-      "publishAt": "2026-08-01",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-apres-deces/bouches-du-rhone/allauch/",
-      "slug": "nettoyage-apres-deces--bouches-du-rhone--allauch",
-      "publishAt": "2026-08-02",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-apres-deces/bouches-du-rhone/arles/",
-      "slug": "nettoyage-apres-deces--bouches-du-rhone--arles",
-      "publishAt": "2026-08-02",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-apres-deces/bouches-du-rhone/aubagne/",
-      "slug": "nettoyage-apres-deces--bouches-du-rhone--aubagne",
-      "publishAt": "2026-08-02",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-apres-deces/bouches-du-rhone/chateaurenard/",
-      "slug": "nettoyage-apres-deces--bouches-du-rhone--chateaurenard",
-      "publishAt": "2026-08-02",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-apres-deces/bouches-du-rhone/istres/",
-      "slug": "nettoyage-apres-deces--bouches-du-rhone--istres",
-      "publishAt": "2026-08-02",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-apres-deces/bouches-du-rhone/la-ciotat/",
-      "slug": "nettoyage-apres-deces--bouches-du-rhone--la-ciotat",
-      "publishAt": "2026-08-02",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-apres-deces/bouches-du-rhone/marignane/",
-      "slug": "nettoyage-apres-deces--bouches-du-rhone--marignane",
+      "url": "/nettoyage-apres-deces/bouches-du-rhone/salon-de-provence/",
+      "slug": "nettoyage-apres-deces--bouches-du-rhone--salon-de-provence",
       "publishAt": "2026-08-03",
       "needsUniqueDesc": false
     },
     {
-      "url": "/nettoyage-apres-deces/bouches-du-rhone/martigues/",
-      "slug": "nettoyage-apres-deces--bouches-du-rhone--martigues",
+      "url": "/nettoyage-apres-deces/bouches-du-rhone/vitrolles/",
+      "slug": "nettoyage-apres-deces--bouches-du-rhone--vitrolles",
       "publishAt": "2026-08-03",
       "needsUniqueDesc": false
     },
     {
-      "url": "/nettoyage-apres-deces/bouches-du-rhone/saint-remy-de-provence/",
-      "slug": "nettoyage-apres-deces--bouches-du-rhone--saint-remy-de-provence",
+      "url": "/nettoyage-apres-deces/gard/aigues-mortes/",
+      "slug": "nettoyage-apres-deces--gard--aigues-mortes",
       "publishAt": "2026-08-03",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-deces/gard/bagnols-sur-ceze/",
+      "slug": "nettoyage-apres-deces--gard--bagnols-sur-ceze",
+      "publishAt": "2026-08-03",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-deces/gard/beaucaire/",
+      "slug": "nettoyage-apres-deces--gard--beaucaire",
+      "publishAt": "2026-08-04",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-deces/gard/le-grau-du-roi/",
+      "slug": "nettoyage-apres-deces--gard--le-grau-du-roi",
+      "publishAt": "2026-08-04",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-deces/gard/les-angles/",
+      "slug": "nettoyage-apres-deces--gard--les-angles",
+      "publishAt": "2026-08-04",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-deces/gard/marguerittes/",
+      "slug": "nettoyage-apres-deces--gard--marguerittes",
+      "publishAt": "2026-08-04",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-deces/gard/pont-saint-esprit/",
+      "slug": "nettoyage-apres-deces--gard--pont-saint-esprit",
+      "publishAt": "2026-08-04",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-deces/gard/saint-gilles/",
+      "slug": "nettoyage-apres-deces--gard--saint-gilles",
+      "publishAt": "2026-08-04",
       "needsUniqueDesc": false
     }
   ],
@@ -3024,9 +3024,9 @@
       "slug": "desinfection-logement--haute-garonne--saint-jean",
       "type": "Page ville service",
       "publishAt": "2026-08-01",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 605
     },
     {
       "url": "/desinfection-logement/haute-garonne/tournefeuille/",
@@ -3042,81 +3042,81 @@
       "slug": "nettoyage-apres-deces--bouches-du-rhone--allauch",
       "type": "Page ville service",
       "publishAt": "2026-08-02",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 694
     },
     {
       "url": "/nettoyage-apres-deces/bouches-du-rhone/arles/",
       "slug": "nettoyage-apres-deces--bouches-du-rhone--arles",
       "type": "Page ville service",
       "publishAt": "2026-08-02",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 709
     },
     {
       "url": "/nettoyage-apres-deces/bouches-du-rhone/aubagne/",
       "slug": "nettoyage-apres-deces--bouches-du-rhone--aubagne",
       "type": "Page ville service",
       "publishAt": "2026-08-02",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 678
     },
     {
       "url": "/nettoyage-apres-deces/bouches-du-rhone/chateaurenard/",
       "slug": "nettoyage-apres-deces--bouches-du-rhone--chateaurenard",
       "type": "Page ville service",
       "publishAt": "2026-08-02",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 689
     },
     {
       "url": "/nettoyage-apres-deces/bouches-du-rhone/istres/",
       "slug": "nettoyage-apres-deces--bouches-du-rhone--istres",
       "type": "Page ville service",
       "publishAt": "2026-08-02",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 698
     },
     {
       "url": "/nettoyage-apres-deces/bouches-du-rhone/la-ciotat/",
       "slug": "nettoyage-apres-deces--bouches-du-rhone--la-ciotat",
       "type": "Page ville service",
       "publishAt": "2026-08-02",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 689
     },
     {
       "url": "/nettoyage-apres-deces/bouches-du-rhone/marignane/",
       "slug": "nettoyage-apres-deces--bouches-du-rhone--marignane",
       "type": "Page ville service",
       "publishAt": "2026-08-03",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 671
     },
     {
       "url": "/nettoyage-apres-deces/bouches-du-rhone/martigues/",
       "slug": "nettoyage-apres-deces--bouches-du-rhone--martigues",
       "type": "Page ville service",
       "publishAt": "2026-08-03",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 702
     },
     {
       "url": "/nettoyage-apres-deces/bouches-du-rhone/saint-remy-de-provence/",
       "slug": "nettoyage-apres-deces--bouches-du-rhone--saint-remy-de-provence",
       "type": "Page ville service",
       "publishAt": "2026-08-03",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 697
     },
     {
       "url": "/nettoyage-apres-deces/bouches-du-rhone/salon-de-provence/",
