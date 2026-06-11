@@ -1,28 +1,10 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 200,
-  "remaining": 590,
+  "done": 203,
+  "remaining": 587,
   "late": 0,
   "nextBatch": [
-    {
-      "url": "/debarras/haute-garonne/toulouse/",
-      "slug": "debarras--haute-garonne--toulouse",
-      "publishAt": "2026-07-14",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/herault/agde/",
-      "slug": "debarras--herault--agde",
-      "publishAt": "2026-07-14",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/herault/beziers/",
-      "slug": "debarras--herault--beziers",
-      "publishAt": "2026-07-14",
-      "needsUniqueDesc": true
-    },
     {
       "url": "/debarras/herault/castelnau-le-lez/",
       "slug": "debarras--herault--castelnau-le-lez",
@@ -63,6 +45,24 @@
       "url": "/debarras/herault/lodeve/",
       "slug": "debarras--herault--lodeve",
       "publishAt": "2026-07-15",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/herault/lunel/",
+      "slug": "debarras--herault--lunel",
+      "publishAt": "2026-07-16",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/herault/mauguio/",
+      "slug": "debarras--herault--mauguio",
+      "publishAt": "2026-07-16",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/herault/pezenas/",
+      "slug": "debarras--herault--pezenas",
+      "publishAt": "2026-07-16",
       "needsUniqueDesc": true
     }
   ],
@@ -1872,27 +1872,27 @@
       "slug": "debarras--haute-garonne--toulouse",
       "type": "Page ville débarras",
       "publishAt": "2026-07-14",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 621
     },
     {
       "url": "/debarras/herault/agde/",
       "slug": "debarras--herault--agde",
       "type": "Page ville débarras",
       "publishAt": "2026-07-14",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 610
     },
     {
       "url": "/debarras/herault/beziers/",
       "slug": "debarras--herault--beziers",
       "type": "Page ville débarras",
       "publishAt": "2026-07-14",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 620
     },
     {
       "url": "/debarras/herault/castelnau-le-lez/",
