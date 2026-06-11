@@ -19,7 +19,7 @@ let baseHTML = null;
 // Meta tags par page — titres <60 chars, descriptions <160 chars, PAS de keywords
 export const pagesMeta = {
   '/': {
-    title: "SOS Nettoyage Diogène | Nettoyage & Débarras Sud France",
+    title: "SOS Nettoyage Diogène & Débarras | Nettoyage & Débarras Sud France",
     description: "Nettoyage syndrome de Diogène, débarras, insalubrité et après décès. Intervention discrète à Montpellier, Marseille et Sud France.",
     canonical: "/"
   },
@@ -60,17 +60,17 @@ export const pagesMeta = {
     canonical: "/partenariat-maisons-retraite"
   },
   '/mentions-legales': {
-    title: "Mentions Légales | SOS Nettoyage Diogène",
-    description: "Mentions légales du site SOS Nettoyage Diogène. Informations sur l'éditeur, l'hébergeur et les conditions d'utilisation.",
+    title: "Mentions Légales | SOS Nettoyage Diogène & Débarras",
+    description: "Mentions légales du site SOS Nettoyage Diogène & Débarras. Informations sur l'éditeur, l'hébergeur et les conditions d'utilisation.",
     canonical: "/mentions-legales"
   },
   '/politique-confidentialite': {
-    title: "Politique de Confidentialité | SOS Nettoyage Diogène",
-    description: "Politique de confidentialité et protection des données personnelles de SOS Nettoyage Diogène.",
+    title: "Politique de Confidentialité | SOS Nettoyage Diogène & Débarras",
+    description: "Politique de confidentialité et protection des données personnelles de SOS Nettoyage Diogène & Débarras.",
     canonical: "/politique-confidentialite"
   },
   '/404': {
-    title: "Page Non Trouvée | SOS Nettoyage Diogène",
+    title: "Page Non Trouvée | SOS Nettoyage Diogène & Débarras",
     description: "La page que vous recherchez n'existe pas. Retournez à l'accueil pour découvrir nos services.",
     canonical: "/404",
     noIndex: true
@@ -107,7 +107,7 @@ export const pagesMeta = {
     noIndex: true
   },
   '/protocole-sanitaire': {
-    title: "Fiche Protocole Sanitaire | SOS Nettoyage Diogène",
+    title: "Fiche Protocole Sanitaire | SOS Nettoyage Diogène & Débarras",
     description: "Protocole sanitaire d'intervention en logement insalubre : odeurs, risques biologiques, tri des documents. Document à joindre aux rapports CCAS, MJPM et préfecture.",
     canonical: "/protocole-sanitaire",
     noIndex: true
@@ -182,7 +182,7 @@ function generatePage(route, meta) {
     <!-- SEO Meta Tags -->
     <title>${meta.title}</title>
     <meta name="description" content="${meta.description}" />
-    <meta name="author" content="SOS Nettoyage Diogène" />
+    <meta name="author" content="SOS Nettoyage Diogène & Débarras" />
     <meta name="robots" content="${meta.noIndex ? 'noindex, nofollow' : 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'}" />
     
     <!-- Canonical URL -->
@@ -194,7 +194,7 @@ function generatePage(route, meta) {
     <meta property="og:type" content="website" />
     <meta property="og:url" content="${SITE_URL}${route}" />
     <meta property="og:image" content="${SITE_URL}/images/logos/p1.png" />
-    <meta property="og:site_name" content="SOS Nettoyage Diogène" />
+    <meta property="og:site_name" content="SOS Nettoyage Diogène & Débarras" />
     <meta property="og:locale" content="fr_FR" />
     
     <!-- Twitter Cards -->

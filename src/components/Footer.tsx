@@ -15,14 +15,14 @@ const Footer = () => {
             <div className="flex items-center space-x-3">
               <img
                 src="/images/logos/logo-transparent.webp"
-                alt="SOS Nettoyage Diogène Logo"
+                alt="SOS Nettoyage Diogène & Débarras Logo"
                 className="w-12 h-12 sm:w-16 sm:h-16 object-contain"
                 loading="lazy"
                 width={160}
                 height={160}
               />
               <div>
-                <div className="font-bold text-foreground text-lg sm:text-xl">SOS Nettoyage Diogène</div>
+                <div className="font-bold text-foreground text-lg sm:text-xl">SOS Nettoyage Diogène & Débarras</div>
                 <div className="text-sm text-muted-foreground">Nettoyage professionnel</div>
               </div>
             </div>
@@ -117,7 +117,7 @@ const Footer = () => {
         <div className="border-t border-border/50 pt-6 sm:pt-8">
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
             <div className="text-sm text-muted-foreground text-center sm:text-left">
-              © {new Date().getFullYear()} SOS Nettoyage Diogène. Tous droits réservés.
+              © {new Date().getFullYear()} SOS Nettoyage Diogène & Débarras. Tous droits réservés.
             </div>
             <div className="flex flex-wrap items-center justify-center gap-4 text-sm text-muted-foreground">
               <Link 

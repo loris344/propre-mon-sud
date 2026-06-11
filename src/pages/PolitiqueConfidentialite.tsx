@@ -5,8 +5,8 @@ const PolitiqueConfidentialite = () => {
   return (
     <>
       <SEOHead
-        title="Politique de Confidentialité | SOS Nettoyage Diogène"
-        description="Politique de confidentialité et protection des données personnelles (RGPD) du site SOS Nettoyage Diogène."
+        title="Politique de Confidentialité | SOS Nettoyage Diogène & Débarras"
+        description="Politique de confidentialité et protection des données personnelles (RGPD) du site SOS Nettoyage Diogène & Débarras."
         canonical="/politique-confidentialite"
       />
       <main className="min-h-screen pt-24 sm:pt-32 pb-16">
@@ -20,7 +20,7 @@ const PolitiqueConfidentialite = () => {
               <h2 className="text-xl font-semibold text-foreground">1. Responsable du traitement</h2>
               <p>
                 Le responsable du traitement des données personnelles est :<br />
-                <strong>SOS Nettoyage Diogène</strong><br />
+                <strong>SOS Nettoyage Diogène & Débarras</strong><br />
                 Email : contact@sosnettoyagediogene.fr<br />
                 Téléphone : <a href="tel:+33767135458" onClick={() => gtag_report_conversion()} className="text-primary hover:underline">07 67 13 54 58</a>
               </p>

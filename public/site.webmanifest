@@ -1,7 +1,7 @@
 {
-  "name": "SOS Nettoyage Diogène",
-  "short_name": "SOS Nettoyage Diogène",
-  "description": "SOS Nettoyage Diogène - Société spécialisée dans le nettoyage et débarras syndrome de Diogène à Montpellier. Intervention discrète, professionnelle et respectueuse.",
+  "name": "SOS Nettoyage Diogène & Débarras",
+  "short_name": "SOS Nettoyage Diogène & Débarras",
+  "description": "SOS Nettoyage Diogène & Débarras - Société spécialisée dans le nettoyage et débarras syndrome de Diogène à Montpellier. Intervention discrète, professionnelle et respectueuse.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",

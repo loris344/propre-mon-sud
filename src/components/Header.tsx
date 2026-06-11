@@ -46,7 +46,7 @@ const Header = () => {
           >
             <img
               src="/images/logos/logo-transparent.webp"
-              alt="SOS Nettoyage Diogène Logo"
+              alt="SOS Nettoyage Diogène & Débarras Logo"
               className="h-16 w-16 flex-shrink-0 object-contain sm:h-12 sm:w-12 md:h-16 md:w-16 lg:h-20 lg:w-20"
               loading="eager"
               width={160}
@@ -54,7 +54,7 @@ const Header = () => {
             />
             <div className="min-w-0 flex-1">
               <div className="pr-1 text-[11px] font-bold leading-tight text-foreground sm:text-sm md:text-base lg:text-lg xl:text-xl">
-                SOS Nettoyage Diogène
+                SOS Nettoyage Diogène & Débarras
               </div>
               <div className="truncate text-xs text-muted-foreground sm:text-xs md:text-sm lg:text-base">
                 <span className="bg-gradient-to-r from-primary to-accent bg-clip-text font-bold text-transparent">

@@ -203,7 +203,7 @@ const DebarrasApresDecesArticle = () => {
               <div className="bg-primary/5 rounded-lg p-6 border border-primary/20">
                 <h3 className="text-xl font-bold text-foreground mb-3">💙 Besoin d'aide professionnelle ?</h3>
                 <p className="text-muted-foreground mb-4">
-                  Si vous devez faire face à cette situation difficile, des professionnels spécialisés peuvent vous accompagner avec respect et discrétion. SOS Nettoyage Diogène propose des interventions bienveillantes.
+                  Si vous devez faire face à cette situation difficile, des professionnels spécialisés peuvent vous accompagner avec respect et discrétion. SOS Nettoyage Diogène & Débarras propose des interventions bienveillantes.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3">
                   <button 
