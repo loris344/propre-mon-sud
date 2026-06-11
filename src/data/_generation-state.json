@@ -1,46 +1,10 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 233,
-  "remaining": 557,
+  "done": 239,
+  "remaining": 551,
   "late": 0,
   "nextBatch": [
-    {
-      "url": "/debarras/garage/bouches-du-rhone/aix-en-provence/",
-      "slug": "debarras--garage--bouches-du-rhone--aix-en-provence",
-      "publishAt": "2026-07-19",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/garage/bouches-du-rhone/marseille/",
-      "slug": "debarras--garage--bouches-du-rhone--marseille",
-      "publishAt": "2026-07-19",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/garage/gard/ales/",
-      "slug": "debarras--garage--gard--ales",
-      "publishAt": "2026-07-19",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/garage/gard/nimes/",
-      "slug": "debarras--garage--gard--nimes",
-      "publishAt": "2026-07-19",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/garage/haute-garonne/toulouse/",
-      "slug": "debarras--garage--haute-garonne--toulouse",
-      "publishAt": "2026-07-19",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/garage/herault/beziers/",
-      "slug": "debarras--garage--herault--beziers",
-      "publishAt": "2026-07-20",
-      "needsUniqueDesc": true
-    },
     {
       "url": "/debarras/grenier/bouches-du-rhone/aix-en-provence/",
       "slug": "debarras--grenier--bouches-du-rhone--aix-en-provence",
@@ -63,6 +27,42 @@
       "url": "/debarras/grenier/gard/nimes/",
       "slug": "debarras--grenier--gard--nimes",
       "publishAt": "2026-07-20",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/grenier/haute-garonne/toulouse/",
+      "slug": "debarras--grenier--haute-garonne--toulouse",
+      "publishAt": "2026-07-20",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/grenier/herault/beziers/",
+      "slug": "debarras--grenier--herault--beziers",
+      "publishAt": "2026-07-20",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/maison/bouches-du-rhone/aix-en-provence/",
+      "slug": "debarras--maison--bouches-du-rhone--aix-en-provence",
+      "publishAt": "2026-07-21",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/maison/bouches-du-rhone/marseille/",
+      "slug": "debarras--maison--bouches-du-rhone--marseille",
+      "publishAt": "2026-07-21",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/maison/gard/ales/",
+      "slug": "debarras--maison--gard--ales",
+      "publishAt": "2026-07-21",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/maison/gard/nimes/",
+      "slug": "debarras--maison--gard--nimes",
+      "publishAt": "2026-07-21",
       "needsUniqueDesc": true
     }
   ],
@@ -2153,7 +2153,7 @@
       "publishAt": "2026-07-19",
       "written": true,
       "draft": false,
-      "words": 593
+      "words": 612
     },
     {
       "url": "/debarras/cave/herault/beziers/",
@@ -2169,54 +2169,54 @@
       "slug": "debarras--garage--bouches-du-rhone--aix-en-provence",
       "type": "Page ville débarras type",
       "publishAt": "2026-07-19",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 638
     },
     {
       "url": "/debarras/garage/bouches-du-rhone/marseille/",
       "slug": "debarras--garage--bouches-du-rhone--marseille",
       "type": "Page ville débarras type",
       "publishAt": "2026-07-19",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 616
     },
     {
       "url": "/debarras/garage/gard/ales/",
       "slug": "debarras--garage--gard--ales",
       "type": "Page ville débarras type",
       "publishAt": "2026-07-19",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 609
     },
     {
       "url": "/debarras/garage/gard/nimes/",
       "slug": "debarras--garage--gard--nimes",
       "type": "Page ville débarras type",
       "publishAt": "2026-07-19",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 607
     },
     {
       "url": "/debarras/garage/haute-garonne/toulouse/",
       "slug": "debarras--garage--haute-garonne--toulouse",
       "type": "Page ville débarras type",
       "publishAt": "2026-07-19",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 611
     },
     {
       "url": "/debarras/garage/herault/beziers/",
       "slug": "debarras--garage--herault--beziers",
       "type": "Page ville débarras type",
       "publishAt": "2026-07-20",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 620
     },
     {
       "url": "/debarras/grenier/bouches-du-rhone/aix-en-provence/",
