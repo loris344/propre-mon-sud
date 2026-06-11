@@ -1,28 +1,10 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 192,
-  "remaining": 598,
+  "done": 195,
+  "remaining": 595,
   "late": 0,
   "nextBatch": [
-    {
-      "url": "/remise-en-etat-logement/herault/beziers/",
-      "slug": "remise-en-etat-logement--herault--beziers",
-      "publishAt": "2026-07-13",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/remise-en-etat-logement/herault/lunel/",
-      "slug": "remise-en-etat-logement--herault--lunel",
-      "publishAt": "2026-07-13",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/remise-en-etat-logement/herault/sete/",
-      "slug": "remise-en-etat-logement--herault--sete",
-      "publishAt": "2026-07-13",
-      "needsUniqueDesc": true
-    },
     {
       "url": "/debarras/herault/",
       "slug": "debarras--herault",
@@ -63,6 +45,24 @@
       "url": "/debarras/herault/agde/",
       "slug": "debarras--herault--agde",
       "publishAt": "2026-07-14",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/herault/beziers/",
+      "slug": "debarras--herault--beziers",
+      "publishAt": "2026-07-14",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/herault/castelnau-le-lez/",
+      "slug": "debarras--herault--castelnau-le-lez",
+      "publishAt": "2026-07-15",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/herault/clermont-l-herault/",
+      "slug": "debarras--herault--clermont-l-herault",
+      "publishAt": "2026-07-15",
       "needsUniqueDesc": true
     }
   ],
@@ -1800,27 +1800,27 @@
       "slug": "remise-en-etat-logement--herault--beziers",
       "type": "Page ville service",
       "publishAt": "2026-07-13",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 629
     },
     {
       "url": "/remise-en-etat-logement/herault/lunel/",
       "slug": "remise-en-etat-logement--herault--lunel",
       "type": "Page ville service",
       "publishAt": "2026-07-13",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 615
     },
     {
       "url": "/remise-en-etat-logement/herault/sete/",
       "slug": "remise-en-etat-logement--herault--sete",
       "type": "Page ville service",
       "publishAt": "2026-07-13",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 614
     },
     {
       "url": "/debarras/herault/",
