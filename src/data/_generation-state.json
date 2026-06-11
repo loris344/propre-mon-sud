@@ -1,52 +1,10 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 495,
-  "remaining": 295,
+  "done": 502,
+  "remaining": 288,
   "late": 0,
   "nextBatch": [
-    {
-      "url": "/nettoyage-insalubre/haute-garonne/ramonville-saint-agne/",
-      "slug": "nettoyage-insalubre--haute-garonne--ramonville-saint-agne",
-      "publishAt": "2026-08-25",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-insalubre/haute-garonne/revel/",
-      "slug": "nettoyage-insalubre--haute-garonne--revel",
-      "publishAt": "2026-08-25",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-insalubre/haute-garonne/saint-gaudens/",
-      "slug": "nettoyage-insalubre--haute-garonne--saint-gaudens",
-      "publishAt": "2026-08-26",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-insalubre/haute-garonne/saint-jean/",
-      "slug": "nettoyage-insalubre--haute-garonne--saint-jean",
-      "publishAt": "2026-08-26",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-insalubre/haute-garonne/saint-orens-de-gameville/",
-      "slug": "nettoyage-insalubre--haute-garonne--saint-orens-de-gameville",
-      "publishAt": "2026-08-26",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-insalubre/haute-garonne/tournefeuille/",
-      "slug": "nettoyage-insalubre--haute-garonne--tournefeuille",
-      "publishAt": "2026-08-26",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-insalubre/haute-garonne/villefranche-de-lauragais/",
-      "slug": "nettoyage-insalubre--haute-garonne--villefranche-de-lauragais",
-      "publishAt": "2026-08-26",
-      "needsUniqueDesc": false
-    },
     {
       "url": "/remise-en-etat-logement/bouches-du-rhone/arles/",
       "slug": "remise-en-etat-logement--bouches-du-rhone--arles",
@@ -63,6 +21,48 @@
       "url": "/remise-en-etat-logement/gard/bagnols-sur-ceze/",
       "slug": "remise-en-etat-logement--gard--bagnols-sur-ceze",
       "publishAt": "2026-08-27",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/remise-en-etat-logement/haute-garonne/colomiers/",
+      "slug": "remise-en-etat-logement--haute-garonne--colomiers",
+      "publishAt": "2026-08-27",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/remise-en-etat-logement/haute-garonne/muret/",
+      "slug": "remise-en-etat-logement--haute-garonne--muret",
+      "publishAt": "2026-08-27",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/bouches-du-rhone/",
+      "slug": "debarras--bouches-du-rhone",
+      "publishAt": "2026-08-27",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/gard/",
+      "slug": "debarras--gard",
+      "publishAt": "2026-08-27",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/haute-garonne/",
+      "slug": "debarras--haute-garonne",
+      "publishAt": "2026-08-27",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/bouches-du-rhone/allauch/",
+      "slug": "debarras--bouches-du-rhone--allauch",
+      "publishAt": "2026-08-27",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/bouches-du-rhone/arles/",
+      "slug": "debarras--bouches-du-rhone--arles",
+      "publishAt": "2026-08-28",
       "needsUniqueDesc": true
     }
   ],
@@ -4527,63 +4527,63 @@
       "slug": "nettoyage-insalubre--haute-garonne--ramonville-saint-agne",
       "type": "Page ville service",
       "publishAt": "2026-08-25",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 613
     },
     {
       "url": "/nettoyage-insalubre/haute-garonne/revel/",
       "slug": "nettoyage-insalubre--haute-garonne--revel",
       "type": "Page ville service",
       "publishAt": "2026-08-25",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 621
     },
     {
       "url": "/nettoyage-insalubre/haute-garonne/saint-gaudens/",
       "slug": "nettoyage-insalubre--haute-garonne--saint-gaudens",
       "type": "Page ville service",
       "publishAt": "2026-08-26",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 613
     },
     {
       "url": "/nettoyage-insalubre/haute-garonne/saint-jean/",
       "slug": "nettoyage-insalubre--haute-garonne--saint-jean",
       "type": "Page ville service",
       "publishAt": "2026-08-26",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 602
     },
     {
       "url": "/nettoyage-insalubre/haute-garonne/saint-orens-de-gameville/",
       "slug": "nettoyage-insalubre--haute-garonne--saint-orens-de-gameville",
       "type": "Page ville service",
       "publishAt": "2026-08-26",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 623
     },
     {
       "url": "/nettoyage-insalubre/haute-garonne/tournefeuille/",
       "slug": "nettoyage-insalubre--haute-garonne--tournefeuille",
       "type": "Page ville service",
       "publishAt": "2026-08-26",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 618
     },
     {
       "url": "/nettoyage-insalubre/haute-garonne/villefranche-de-lauragais/",
       "slug": "nettoyage-insalubre--haute-garonne--villefranche-de-lauragais",
       "type": "Page ville service",
       "publishAt": "2026-08-26",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 603
     },
     {
       "url": "/remise-en-etat-logement/bouches-du-rhone/arles/",
