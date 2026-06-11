@@ -1,52 +1,10 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 434,
-  "remaining": 356,
+  "done": 441,
+  "remaining": 349,
   "late": 0,
   "nextBatch": [
-    {
-      "url": "/nettoyage-insalubre/bouches-du-rhone/chateaurenard/",
-      "slug": "nettoyage-insalubre--bouches-du-rhone--chateaurenard",
-      "publishAt": "2026-08-17",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-insalubre/bouches-du-rhone/eygalieres/",
-      "slug": "nettoyage-insalubre--bouches-du-rhone--eygalieres",
-      "publishAt": "2026-08-17",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-insalubre/bouches-du-rhone/fos-sur-mer/",
-      "slug": "nettoyage-insalubre--bouches-du-rhone--fos-sur-mer",
-      "publishAt": "2026-08-17",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-insalubre/bouches-du-rhone/gardanne/",
-      "slug": "nettoyage-insalubre--bouches-du-rhone--gardanne",
-      "publishAt": "2026-08-17",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-insalubre/bouches-du-rhone/gemenos/",
-      "slug": "nettoyage-insalubre--bouches-du-rhone--gemenos",
-      "publishAt": "2026-08-17",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-insalubre/bouches-du-rhone/istres/",
-      "slug": "nettoyage-insalubre--bouches-du-rhone--istres",
-      "publishAt": "2026-08-17",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-insalubre/bouches-du-rhone/la-ciotat/",
-      "slug": "nettoyage-insalubre--bouches-du-rhone--la-ciotat",
-      "publishAt": "2026-08-17",
-      "needsUniqueDesc": false
-    },
     {
       "url": "/nettoyage-insalubre/bouches-du-rhone/les-pennes-mirabeau/",
       "slug": "nettoyage-insalubre--bouches-du-rhone--les-pennes-mirabeau",
@@ -63,6 +21,48 @@
       "url": "/nettoyage-insalubre/bouches-du-rhone/martigues/",
       "slug": "nettoyage-insalubre--bouches-du-rhone--martigues",
       "publishAt": "2026-08-18",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/bouches-du-rhone/meyreuil/",
+      "slug": "nettoyage-insalubre--bouches-du-rhone--meyreuil",
+      "publishAt": "2026-08-18",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/bouches-du-rhone/miramas/",
+      "slug": "nettoyage-insalubre--bouches-du-rhone--miramas",
+      "publishAt": "2026-08-18",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/bouches-du-rhone/plan-de-cuques/",
+      "slug": "nettoyage-insalubre--bouches-du-rhone--plan-de-cuques",
+      "publishAt": "2026-08-18",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/bouches-du-rhone/roquevaire/",
+      "slug": "nettoyage-insalubre--bouches-du-rhone--roquevaire",
+      "publishAt": "2026-08-18",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/bouches-du-rhone/saint-remy-de-provence/",
+      "slug": "nettoyage-insalubre--bouches-du-rhone--saint-remy-de-provence",
+      "publishAt": "2026-08-19",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/bouches-du-rhone/salon-de-provence/",
+      "slug": "nettoyage-insalubre--bouches-du-rhone--salon-de-provence",
+      "publishAt": "2026-08-19",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/bouches-du-rhone/septemes-les-vallons/",
+      "slug": "nettoyage-insalubre--bouches-du-rhone--septemes-les-vallons",
+      "publishAt": "2026-08-19",
       "needsUniqueDesc": false
     }
   ],
@@ -3978,63 +3978,63 @@
       "slug": "nettoyage-insalubre--bouches-du-rhone--chateaurenard",
       "type": "Page ville service",
       "publishAt": "2026-08-17",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 612
     },
     {
       "url": "/nettoyage-insalubre/bouches-du-rhone/eygalieres/",
       "slug": "nettoyage-insalubre--bouches-du-rhone--eygalieres",
       "type": "Page ville service",
       "publishAt": "2026-08-17",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 614
     },
     {
       "url": "/nettoyage-insalubre/bouches-du-rhone/fos-sur-mer/",
       "slug": "nettoyage-insalubre--bouches-du-rhone--fos-sur-mer",
       "type": "Page ville service",
       "publishAt": "2026-08-17",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 625
     },
     {
       "url": "/nettoyage-insalubre/bouches-du-rhone/gardanne/",
       "slug": "nettoyage-insalubre--bouches-du-rhone--gardanne",
       "type": "Page ville service",
       "publishAt": "2026-08-17",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 616
     },
     {
       "url": "/nettoyage-insalubre/bouches-du-rhone/gemenos/",
       "slug": "nettoyage-insalubre--bouches-du-rhone--gemenos",
       "type": "Page ville service",
       "publishAt": "2026-08-17",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 612
     },
     {
       "url": "/nettoyage-insalubre/bouches-du-rhone/istres/",
       "slug": "nettoyage-insalubre--bouches-du-rhone--istres",
       "type": "Page ville service",
       "publishAt": "2026-08-17",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 610
     },
     {
       "url": "/nettoyage-insalubre/bouches-du-rhone/la-ciotat/",
       "slug": "nettoyage-insalubre--bouches-du-rhone--la-ciotat",
       "type": "Page ville service",
       "publishAt": "2026-08-17",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 607
     },
     {
       "url": "/nettoyage-insalubre/bouches-du-rhone/les-pennes-mirabeau/",
