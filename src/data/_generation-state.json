@@ -1,40 +1,10 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 664,
-  "remaining": 126,
+  "done": 669,
+  "remaining": 121,
   "late": 0,
   "nextBatch": [
-    {
-      "url": "/nettoyage-apres-deces/aveyron/saint-affrique/",
-      "slug": "nettoyage-apres-deces--aveyron--saint-affrique",
-      "publishAt": "2026-09-20",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-apres-deces/aveyron/villefranche-de-rouergue/",
-      "slug": "nettoyage-apres-deces--aveyron--villefranche-de-rouergue",
-      "publishAt": "2026-09-20",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-apres-deces/tarn/albi/",
-      "slug": "nettoyage-apres-deces--tarn--albi",
-      "publishAt": "2026-09-20",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-apres-deces/tarn/carmaux/",
-      "slug": "nettoyage-apres-deces--tarn--carmaux",
-      "publishAt": "2026-09-20",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-apres-deces/tarn/castres/",
-      "slug": "nettoyage-apres-deces--tarn--castres",
-      "publishAt": "2026-09-20",
-      "needsUniqueDesc": false
-    },
     {
       "url": "/nettoyage-apres-deces/tarn/gaillac/",
       "slug": "nettoyage-apres-deces--tarn--gaillac",
@@ -64,6 +34,36 @@
       "slug": "nettoyage-apres-sinistre--aveyron--millau",
       "publishAt": "2026-09-21",
       "needsUniqueDesc": true
+    },
+    {
+      "url": "/nettoyage-apres-sinistre/aveyron/rodez/",
+      "slug": "nettoyage-apres-sinistre--aveyron--rodez",
+      "publishAt": "2026-09-21",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/nettoyage-apres-sinistre/tarn/albi/",
+      "slug": "nettoyage-apres-sinistre--tarn--albi",
+      "publishAt": "2026-09-21",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/nettoyage-apres-sinistre/tarn/castres/",
+      "slug": "nettoyage-apres-sinistre--tarn--castres",
+      "publishAt": "2026-09-21",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/nettoyage-apres-squat/aveyron/decazeville/",
+      "slug": "nettoyage-apres-squat--aveyron--decazeville",
+      "publishAt": "2026-09-22",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-squat/aveyron/millau/",
+      "slug": "nettoyage-apres-squat--aveyron--millau",
+      "publishAt": "2026-09-22",
+      "needsUniqueDesc": false
     }
   ],
   "pages": [
@@ -6048,45 +6048,45 @@
       "slug": "nettoyage-apres-deces--aveyron--saint-affrique",
       "type": "Page ville service",
       "publishAt": "2026-09-20",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 638
     },
     {
       "url": "/nettoyage-apres-deces/aveyron/villefranche-de-rouergue/",
       "slug": "nettoyage-apres-deces--aveyron--villefranche-de-rouergue",
       "type": "Page ville service",
       "publishAt": "2026-09-20",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 633
     },
     {
       "url": "/nettoyage-apres-deces/tarn/albi/",
       "slug": "nettoyage-apres-deces--tarn--albi",
       "type": "Page ville service",
       "publishAt": "2026-09-20",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 662
     },
     {
       "url": "/nettoyage-apres-deces/tarn/carmaux/",
       "slug": "nettoyage-apres-deces--tarn--carmaux",
       "type": "Page ville service",
       "publishAt": "2026-09-20",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 633
     },
     {
       "url": "/nettoyage-apres-deces/tarn/castres/",
       "slug": "nettoyage-apres-deces--tarn--castres",
       "type": "Page ville service",
       "publishAt": "2026-09-20",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 642
     },
     {
       "url": "/nettoyage-apres-deces/tarn/gaillac/",
