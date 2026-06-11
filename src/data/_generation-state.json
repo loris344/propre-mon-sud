@@ -1,46 +1,10 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 267,
-  "remaining": 523,
+  "done": 273,
+  "remaining": 517,
   "late": 0,
   "nextBatch": [
-    {
-      "url": "/debarras/succession/bouches-du-rhone/aix-en-provence/",
-      "slug": "debarras--succession--bouches-du-rhone--aix-en-provence",
-      "publishAt": "2026-07-24",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/succession/bouches-du-rhone/marseille/",
-      "slug": "debarras--succession--bouches-du-rhone--marseille",
-      "publishAt": "2026-07-24",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/succession/gard/ales/",
-      "slug": "debarras--succession--gard--ales",
-      "publishAt": "2026-07-24",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/succession/gard/nimes/",
-      "slug": "debarras--succession--gard--nimes",
-      "publishAt": "2026-07-24",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/succession/haute-garonne/toulouse/",
-      "slug": "debarras--succession--haute-garonne--toulouse",
-      "publishAt": "2026-07-24",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/succession/herault/agde/",
-      "slug": "debarras--succession--herault--agde",
-      "publishAt": "2026-07-24",
-      "needsUniqueDesc": true
-    },
     {
       "url": "/debarras/succession/herault/beziers/",
       "slug": "debarras--succession--herault--beziers",
@@ -63,6 +27,42 @@
       "url": "/zones-intervention/herault/",
       "slug": "zones-intervention--herault",
       "publishAt": "2026-07-25",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/debarras/maison/herault/",
+      "slug": "debarras--maison--herault",
+      "publishAt": "2026-07-25",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/desinfection-logement/bouches-du-rhone/",
+      "slug": "desinfection-logement--bouches-du-rhone",
+      "publishAt": "2026-07-25",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/desinfection-logement/gard/",
+      "slug": "desinfection-logement--gard",
+      "publishAt": "2026-07-25",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/desinfection-logement/haute-garonne/",
+      "slug": "desinfection-logement--haute-garonne",
+      "publishAt": "2026-07-26",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-deces/bouches-du-rhone/",
+      "slug": "nettoyage-apres-deces--bouches-du-rhone",
+      "publishAt": "2026-07-26",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-deces/gard/",
+      "slug": "nettoyage-apres-deces--gard",
+      "publishAt": "2026-07-26",
       "needsUniqueDesc": false
     }
   ],
@@ -2475,54 +2475,54 @@
       "slug": "debarras--succession--bouches-du-rhone--aix-en-provence",
       "type": "Page ville débarras type",
       "publishAt": "2026-07-24",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 617
     },
     {
       "url": "/debarras/succession/bouches-du-rhone/marseille/",
       "slug": "debarras--succession--bouches-du-rhone--marseille",
       "type": "Page ville débarras type",
       "publishAt": "2026-07-24",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 609
     },
     {
       "url": "/debarras/succession/gard/ales/",
       "slug": "debarras--succession--gard--ales",
       "type": "Page ville débarras type",
       "publishAt": "2026-07-24",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 617
     },
     {
       "url": "/debarras/succession/gard/nimes/",
       "slug": "debarras--succession--gard--nimes",
       "type": "Page ville débarras type",
       "publishAt": "2026-07-24",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 602
     },
     {
       "url": "/debarras/succession/haute-garonne/toulouse/",
       "slug": "debarras--succession--haute-garonne--toulouse",
       "type": "Page ville débarras type",
       "publishAt": "2026-07-24",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 621
     },
     {
       "url": "/debarras/succession/herault/agde/",
       "slug": "debarras--succession--herault--agde",
       "type": "Page ville débarras type",
       "publishAt": "2026-07-24",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 625
     },
     {
       "url": "/debarras/succession/herault/beziers/",
