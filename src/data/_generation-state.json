@@ -1,40 +1,10 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 552,
-  "remaining": 238,
+  "done": 557,
+  "remaining": 233,
   "late": 0,
   "nextBatch": [
-    {
-      "url": "/debarras/appartement/bouches-du-rhone/arles/",
-      "slug": "debarras--appartement--bouches-du-rhone--arles",
-      "publishAt": "2026-09-02",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/appartement/bouches-du-rhone/aubagne/",
-      "slug": "debarras--appartement--bouches-du-rhone--aubagne",
-      "publishAt": "2026-09-03",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/appartement/gard/bagnols-sur-ceze/",
-      "slug": "debarras--appartement--gard--bagnols-sur-ceze",
-      "publishAt": "2026-09-03",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/appartement/haute-garonne/colomiers/",
-      "slug": "debarras--appartement--haute-garonne--colomiers",
-      "publishAt": "2026-09-03",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/appartement/haute-garonne/muret/",
-      "slug": "debarras--appartement--haute-garonne--muret",
-      "publishAt": "2026-09-03",
-      "needsUniqueDesc": true
-    },
     {
       "url": "/debarras/cave/haute-garonne/colomiers/",
       "slug": "debarras--cave--haute-garonne--colomiers",
@@ -62,6 +32,36 @@
     {
       "url": "/debarras/maison/bouches-du-rhone/arles/",
       "slug": "debarras--maison--bouches-du-rhone--arles",
+      "publishAt": "2026-09-04",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/maison/bouches-du-rhone/aubagne/",
+      "slug": "debarras--maison--bouches-du-rhone--aubagne",
+      "publishAt": "2026-09-04",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/maison/bouches-du-rhone/chateaurenard/",
+      "slug": "debarras--maison--bouches-du-rhone--chateaurenard",
+      "publishAt": "2026-09-04",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/maison/bouches-du-rhone/istres/",
+      "slug": "debarras--maison--bouches-du-rhone--istres",
+      "publishAt": "2026-09-04",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/maison/bouches-du-rhone/la-ciotat/",
+      "slug": "debarras--maison--bouches-du-rhone--la-ciotat",
+      "publishAt": "2026-09-04",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/maison/bouches-du-rhone/marignane/",
+      "slug": "debarras--maison--bouches-du-rhone--marignane",
       "publishAt": "2026-09-04",
       "needsUniqueDesc": true
     }
@@ -5040,45 +5040,45 @@
       "slug": "debarras--appartement--bouches-du-rhone--arles",
       "type": "Page ville débarras type",
       "publishAt": "2026-09-02",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 605
     },
     {
       "url": "/debarras/appartement/bouches-du-rhone/aubagne/",
       "slug": "debarras--appartement--bouches-du-rhone--aubagne",
       "type": "Page ville débarras type",
       "publishAt": "2026-09-03",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 612
     },
     {
       "url": "/debarras/appartement/gard/bagnols-sur-ceze/",
       "slug": "debarras--appartement--gard--bagnols-sur-ceze",
       "type": "Page ville débarras type",
       "publishAt": "2026-09-03",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 607
     },
     {
       "url": "/debarras/appartement/haute-garonne/colomiers/",
       "slug": "debarras--appartement--haute-garonne--colomiers",
       "type": "Page ville débarras type",
       "publishAt": "2026-09-03",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 605
     },
     {
       "url": "/debarras/appartement/haute-garonne/muret/",
       "slug": "debarras--appartement--haute-garonne--muret",
       "type": "Page ville débarras type",
       "publishAt": "2026-09-03",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 609
     },
     {
       "url": "/debarras/cave/haute-garonne/colomiers/",
