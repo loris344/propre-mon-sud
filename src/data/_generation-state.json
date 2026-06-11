@@ -1,52 +1,10 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 448,
-  "remaining": 342,
+  "done": 455,
+  "remaining": 335,
   "late": 0,
   "nextBatch": [
-    {
-      "url": "/nettoyage-insalubre/bouches-du-rhone/saint-remy-de-provence/",
-      "slug": "nettoyage-insalubre--bouches-du-rhone--saint-remy-de-provence",
-      "publishAt": "2026-08-19",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-insalubre/bouches-du-rhone/salon-de-provence/",
-      "slug": "nettoyage-insalubre--bouches-du-rhone--salon-de-provence",
-      "publishAt": "2026-08-19",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-insalubre/bouches-du-rhone/septemes-les-vallons/",
-      "slug": "nettoyage-insalubre--bouches-du-rhone--septemes-les-vallons",
-      "publishAt": "2026-08-19",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-insalubre/bouches-du-rhone/tarascon/",
-      "slug": "nettoyage-insalubre--bouches-du-rhone--tarascon",
-      "publishAt": "2026-08-19",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-insalubre/bouches-du-rhone/trets/",
-      "slug": "nettoyage-insalubre--bouches-du-rhone--trets",
-      "publishAt": "2026-08-19",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-insalubre/bouches-du-rhone/venelles/",
-      "slug": "nettoyage-insalubre--bouches-du-rhone--venelles",
-      "publishAt": "2026-08-19",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-insalubre/bouches-du-rhone/vitrolles/",
-      "slug": "nettoyage-insalubre--bouches-du-rhone--vitrolles",
-      "publishAt": "2026-08-19",
-      "needsUniqueDesc": false
-    },
     {
       "url": "/nettoyage-insalubre/gard/aigues-mortes/",
       "slug": "nettoyage-insalubre--gard--aigues-mortes",
@@ -64,6 +22,48 @@
       "slug": "nettoyage-insalubre--gard--bagnols-sur-ceze",
       "publishAt": "2026-08-20",
       "needsUniqueDesc": true
+    },
+    {
+      "url": "/nettoyage-insalubre/gard/beaucaire/",
+      "slug": "nettoyage-insalubre--gard--beaucaire",
+      "publishAt": "2026-08-20",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/gard/bouillargues/",
+      "slug": "nettoyage-insalubre--gard--bouillargues",
+      "publishAt": "2026-08-20",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/gard/caissargues/",
+      "slug": "nettoyage-insalubre--gard--caissargues",
+      "publishAt": "2026-08-20",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/gard/garons/",
+      "slug": "nettoyage-insalubre--gard--garons",
+      "publishAt": "2026-08-20",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/gard/la-grand-combe/",
+      "slug": "nettoyage-insalubre--gard--la-grand-combe",
+      "publishAt": "2026-08-21",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/gard/le-grau-du-roi/",
+      "slug": "nettoyage-insalubre--gard--le-grau-du-roi",
+      "publishAt": "2026-08-21",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/gard/les-angles/",
+      "slug": "nettoyage-insalubre--gard--les-angles",
+      "publishAt": "2026-08-21",
+      "needsUniqueDesc": false
     }
   ],
   "pages": [
@@ -4104,63 +4104,63 @@
       "slug": "nettoyage-insalubre--bouches-du-rhone--saint-remy-de-provence",
       "type": "Page ville service",
       "publishAt": "2026-08-19",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 616
     },
     {
       "url": "/nettoyage-insalubre/bouches-du-rhone/salon-de-provence/",
       "slug": "nettoyage-insalubre--bouches-du-rhone--salon-de-provence",
       "type": "Page ville service",
       "publishAt": "2026-08-19",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 608
     },
     {
       "url": "/nettoyage-insalubre/bouches-du-rhone/septemes-les-vallons/",
       "slug": "nettoyage-insalubre--bouches-du-rhone--septemes-les-vallons",
       "type": "Page ville service",
       "publishAt": "2026-08-19",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 622
     },
     {
       "url": "/nettoyage-insalubre/bouches-du-rhone/tarascon/",
       "slug": "nettoyage-insalubre--bouches-du-rhone--tarascon",
       "type": "Page ville service",
       "publishAt": "2026-08-19",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 610
     },
     {
       "url": "/nettoyage-insalubre/bouches-du-rhone/trets/",
       "slug": "nettoyage-insalubre--bouches-du-rhone--trets",
       "type": "Page ville service",
       "publishAt": "2026-08-19",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 620
     },
     {
       "url": "/nettoyage-insalubre/bouches-du-rhone/venelles/",
       "slug": "nettoyage-insalubre--bouches-du-rhone--venelles",
       "type": "Page ville service",
       "publishAt": "2026-08-19",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 602
     },
     {
       "url": "/nettoyage-insalubre/bouches-du-rhone/vitrolles/",
       "slug": "nettoyage-insalubre--bouches-du-rhone--vitrolles",
       "type": "Page ville service",
       "publishAt": "2026-08-19",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 602
     },
     {
       "url": "/nettoyage-insalubre/gard/aigues-mortes/",
