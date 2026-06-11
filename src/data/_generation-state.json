@@ -1,40 +1,10 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 164,
-  "remaining": 626,
+  "done": 169,
+  "remaining": 621,
   "late": 0,
   "nextBatch": [
-    {
-      "url": "/nettoyage-insalubre/herault/montagnac/",
-      "slug": "nettoyage-insalubre--herault--montagnac",
-      "publishAt": "2026-07-09",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-insalubre/herault/nissan-lez-enserune/",
-      "slug": "nettoyage-insalubre--herault--nissan-lez-enserune",
-      "publishAt": "2026-07-09",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-insalubre/herault/palavas-les-flots/",
-      "slug": "nettoyage-insalubre--herault--palavas-les-flots",
-      "publishAt": "2026-07-09",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-insalubre/herault/perols/",
-      "slug": "nettoyage-insalubre--herault--perols",
-      "publishAt": "2026-07-09",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-insalubre/herault/pezenas/",
-      "slug": "nettoyage-insalubre--herault--pezenas",
-      "publishAt": "2026-07-10",
-      "needsUniqueDesc": false
-    },
     {
       "url": "/nettoyage-insalubre/herault/portiragnes/",
       "slug": "nettoyage-insalubre--herault--portiragnes",
@@ -63,6 +33,36 @@
       "url": "/nettoyage-insalubre/herault/saint-clement-de-riviere/",
       "slug": "nettoyage-insalubre--herault--saint-clement-de-riviere",
       "publishAt": "2026-07-10",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/herault/saint-gely-du-fesc/",
+      "slug": "nettoyage-insalubre--herault--saint-gely-du-fesc",
+      "publishAt": "2026-07-10",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/herault/saint-jean-de-vedas/",
+      "slug": "nettoyage-insalubre--herault--saint-jean-de-vedas",
+      "publishAt": "2026-07-11",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/herault/saint-thibery/",
+      "slug": "nettoyage-insalubre--herault--saint-thibery",
+      "publishAt": "2026-07-11",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/herault/sauvian/",
+      "slug": "nettoyage-insalubre--herault--sauvian",
+      "publishAt": "2026-07-11",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/herault/serignan/",
+      "slug": "nettoyage-insalubre--herault--serignan",
+      "publishAt": "2026-07-11",
       "needsUniqueDesc": false
     }
   ],
@@ -1548,45 +1548,45 @@
       "slug": "nettoyage-insalubre--herault--montagnac",
       "type": "Page ville service",
       "publishAt": "2026-07-09",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 763
     },
     {
       "url": "/nettoyage-insalubre/herault/nissan-lez-enserune/",
       "slug": "nettoyage-insalubre--herault--nissan-lez-enserune",
       "type": "Page ville service",
       "publishAt": "2026-07-09",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 749
     },
     {
       "url": "/nettoyage-insalubre/herault/palavas-les-flots/",
       "slug": "nettoyage-insalubre--herault--palavas-les-flots",
       "type": "Page ville service",
       "publishAt": "2026-07-09",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 764
     },
     {
       "url": "/nettoyage-insalubre/herault/perols/",
       "slug": "nettoyage-insalubre--herault--perols",
       "type": "Page ville service",
       "publishAt": "2026-07-09",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 781
     },
     {
       "url": "/nettoyage-insalubre/herault/pezenas/",
       "slug": "nettoyage-insalubre--herault--pezenas",
       "type": "Page ville service",
       "publishAt": "2026-07-10",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 754
     },
     {
       "url": "/nettoyage-insalubre/herault/portiragnes/",
