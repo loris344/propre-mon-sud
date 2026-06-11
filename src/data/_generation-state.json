@@ -1,34 +1,10 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 669,
-  "remaining": 121,
+  "done": 673,
+  "remaining": 117,
   "late": 0,
   "nextBatch": [
-    {
-      "url": "/nettoyage-apres-deces/tarn/gaillac/",
-      "slug": "nettoyage-apres-deces--tarn--gaillac",
-      "publishAt": "2026-09-20",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-apres-deces/tarn/graulhet/",
-      "slug": "nettoyage-apres-deces--tarn--graulhet",
-      "publishAt": "2026-09-21",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-apres-deces/tarn/lavaur/",
-      "slug": "nettoyage-apres-deces--tarn--lavaur",
-      "publishAt": "2026-09-21",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-apres-deces/tarn/mazamet/",
-      "slug": "nettoyage-apres-deces--tarn--mazamet",
-      "publishAt": "2026-09-21",
-      "needsUniqueDesc": false
-    },
     {
       "url": "/nettoyage-apres-sinistre/aveyron/millau/",
       "slug": "nettoyage-apres-sinistre--aveyron--millau",
@@ -62,6 +38,30 @@
     {
       "url": "/nettoyage-apres-squat/aveyron/millau/",
       "slug": "nettoyage-apres-squat--aveyron--millau",
+      "publishAt": "2026-09-22",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-squat/aveyron/onet-le-chateau/",
+      "slug": "nettoyage-apres-squat--aveyron--onet-le-chateau",
+      "publishAt": "2026-09-22",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-squat/aveyron/rodez/",
+      "slug": "nettoyage-apres-squat--aveyron--rodez",
+      "publishAt": "2026-09-22",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-squat/aveyron/saint-affrique/",
+      "slug": "nettoyage-apres-squat--aveyron--saint-affrique",
+      "publishAt": "2026-09-22",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-squat/aveyron/villefranche-de-rouergue/",
+      "slug": "nettoyage-apres-squat--aveyron--villefranche-de-rouergue",
       "publishAt": "2026-09-22",
       "needsUniqueDesc": false
     }
@@ -6093,36 +6093,36 @@
       "slug": "nettoyage-apres-deces--tarn--gaillac",
       "type": "Page ville service",
       "publishAt": "2026-09-20",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 660
     },
     {
       "url": "/nettoyage-apres-deces/tarn/graulhet/",
       "slug": "nettoyage-apres-deces--tarn--graulhet",
       "type": "Page ville service",
       "publishAt": "2026-09-21",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 671
     },
     {
       "url": "/nettoyage-apres-deces/tarn/lavaur/",
       "slug": "nettoyage-apres-deces--tarn--lavaur",
       "type": "Page ville service",
       "publishAt": "2026-09-21",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 665
     },
     {
       "url": "/nettoyage-apres-deces/tarn/mazamet/",
       "slug": "nettoyage-apres-deces--tarn--mazamet",
       "type": "Page ville service",
       "publishAt": "2026-09-21",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 669
     },
     {
       "url": "/nettoyage-apres-sinistre/aveyron/millau/",
