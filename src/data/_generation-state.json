@@ -1,52 +1,10 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 245,
-  "remaining": 545,
+  "done": 252,
+  "remaining": 538,
   "late": 0,
   "nextBatch": [
-    {
-      "url": "/debarras/maison/bouches-du-rhone/aix-en-provence/",
-      "slug": "debarras--maison--bouches-du-rhone--aix-en-provence",
-      "publishAt": "2026-07-21",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/maison/bouches-du-rhone/marseille/",
-      "slug": "debarras--maison--bouches-du-rhone--marseille",
-      "publishAt": "2026-07-21",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/maison/gard/ales/",
-      "slug": "debarras--maison--gard--ales",
-      "publishAt": "2026-07-21",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/maison/gard/nimes/",
-      "slug": "debarras--maison--gard--nimes",
-      "publishAt": "2026-07-21",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/maison/haute-garonne/toulouse/",
-      "slug": "debarras--maison--haute-garonne--toulouse",
-      "publishAt": "2026-07-21",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/maison/herault/agde/",
-      "slug": "debarras--maison--herault--agde",
-      "publishAt": "2026-07-21",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/maison/herault/beziers/",
-      "slug": "debarras--maison--herault--beziers",
-      "publishAt": "2026-07-21",
-      "needsUniqueDesc": true
-    },
     {
       "url": "/debarras/maison/herault/castelnau-le-lez/",
       "slug": "debarras--maison--herault--castelnau-le-lez",
@@ -63,6 +21,48 @@
       "url": "/debarras/maison/herault/frontignan/",
       "slug": "debarras--maison--herault--frontignan",
       "publishAt": "2026-07-22",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/maison/herault/gignac/",
+      "slug": "debarras--maison--herault--gignac",
+      "publishAt": "2026-07-22",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/maison/herault/juvignac/",
+      "slug": "debarras--maison--herault--juvignac",
+      "publishAt": "2026-07-22",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/maison/herault/lattes/",
+      "slug": "debarras--maison--herault--lattes",
+      "publishAt": "2026-07-22",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/maison/herault/lodeve/",
+      "slug": "debarras--maison--herault--lodeve",
+      "publishAt": "2026-07-22",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/maison/herault/lunel/",
+      "slug": "debarras--maison--herault--lunel",
+      "publishAt": "2026-07-23",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/maison/herault/mauguio/",
+      "slug": "debarras--maison--herault--mauguio",
+      "publishAt": "2026-07-23",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/maison/herault/pezenas/",
+      "slug": "debarras--maison--herault--pezenas",
+      "publishAt": "2026-07-23",
       "needsUniqueDesc": true
     }
   ],
@@ -2277,63 +2277,63 @@
       "slug": "debarras--maison--bouches-du-rhone--aix-en-provence",
       "type": "Page ville débarras type",
       "publishAt": "2026-07-21",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 614
     },
     {
       "url": "/debarras/maison/bouches-du-rhone/marseille/",
       "slug": "debarras--maison--bouches-du-rhone--marseille",
       "type": "Page ville débarras type",
       "publishAt": "2026-07-21",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 607
     },
     {
       "url": "/debarras/maison/gard/ales/",
       "slug": "debarras--maison--gard--ales",
       "type": "Page ville débarras type",
       "publishAt": "2026-07-21",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 615
     },
     {
       "url": "/debarras/maison/gard/nimes/",
       "slug": "debarras--maison--gard--nimes",
       "type": "Page ville débarras type",
       "publishAt": "2026-07-21",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 609
     },
     {
       "url": "/debarras/maison/haute-garonne/toulouse/",
       "slug": "debarras--maison--haute-garonne--toulouse",
       "type": "Page ville débarras type",
       "publishAt": "2026-07-21",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 606
     },
     {
       "url": "/debarras/maison/herault/agde/",
       "slug": "debarras--maison--herault--agde",
       "type": "Page ville débarras type",
       "publishAt": "2026-07-21",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 636
     },
     {
       "url": "/debarras/maison/herault/beziers/",
       "slug": "debarras--maison--herault--beziers",
       "type": "Page ville débarras type",
       "publishAt": "2026-07-21",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 621
     },
     {
       "url": "/debarras/maison/herault/castelnau-le-lez/",
