@@ -1,68 +1,68 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 305,
-  "remaining": 485,
+  "done": 320,
+  "remaining": 470,
   "late": 0,
   "nextBatch": [
     {
-      "url": "/desinfection-logement/bouches-du-rhone/marignane/",
-      "slug": "desinfection-logement--bouches-du-rhone--marignane",
-      "publishAt": "2026-07-29",
+      "url": "/desinfection-logement/haute-garonne/balma/",
+      "slug": "desinfection-logement--haute-garonne--balma",
+      "publishAt": "2026-07-31",
       "needsUniqueDesc": false
     },
     {
-      "url": "/desinfection-logement/bouches-du-rhone/martigues/",
-      "slug": "desinfection-logement--bouches-du-rhone--martigues",
-      "publishAt": "2026-07-29",
+      "url": "/desinfection-logement/haute-garonne/blagnac/",
+      "slug": "desinfection-logement--haute-garonne--blagnac",
+      "publishAt": "2026-07-31",
       "needsUniqueDesc": false
     },
     {
-      "url": "/desinfection-logement/bouches-du-rhone/saint-remy-de-provence/",
-      "slug": "desinfection-logement--bouches-du-rhone--saint-remy-de-provence",
-      "publishAt": "2026-07-29",
+      "url": "/desinfection-logement/haute-garonne/colomiers/",
+      "slug": "desinfection-logement--haute-garonne--colomiers",
+      "publishAt": "2026-08-01",
       "needsUniqueDesc": false
     },
     {
-      "url": "/desinfection-logement/bouches-du-rhone/salon-de-provence/",
-      "slug": "desinfection-logement--bouches-du-rhone--salon-de-provence",
-      "publishAt": "2026-07-30",
+      "url": "/desinfection-logement/haute-garonne/cugnaux/",
+      "slug": "desinfection-logement--haute-garonne--cugnaux",
+      "publishAt": "2026-08-01",
       "needsUniqueDesc": false
     },
     {
-      "url": "/desinfection-logement/bouches-du-rhone/vitrolles/",
-      "slug": "desinfection-logement--bouches-du-rhone--vitrolles",
-      "publishAt": "2026-07-30",
+      "url": "/desinfection-logement/haute-garonne/l-union/",
+      "slug": "desinfection-logement--haute-garonne--l-union",
+      "publishAt": "2026-08-01",
       "needsUniqueDesc": false
     },
     {
-      "url": "/desinfection-logement/gard/aigues-mortes/",
-      "slug": "desinfection-logement--gard--aigues-mortes",
-      "publishAt": "2026-07-30",
+      "url": "/desinfection-logement/haute-garonne/muret/",
+      "slug": "desinfection-logement--haute-garonne--muret",
+      "publishAt": "2026-08-01",
       "needsUniqueDesc": false
     },
     {
-      "url": "/desinfection-logement/gard/bagnols-sur-ceze/",
-      "slug": "desinfection-logement--gard--bagnols-sur-ceze",
-      "publishAt": "2026-07-30",
+      "url": "/desinfection-logement/haute-garonne/revel/",
+      "slug": "desinfection-logement--haute-garonne--revel",
+      "publishAt": "2026-08-01",
       "needsUniqueDesc": false
     },
     {
-      "url": "/desinfection-logement/gard/beaucaire/",
-      "slug": "desinfection-logement--gard--beaucaire",
-      "publishAt": "2026-07-30",
+      "url": "/desinfection-logement/haute-garonne/saint-gaudens/",
+      "slug": "desinfection-logement--haute-garonne--saint-gaudens",
+      "publishAt": "2026-08-01",
       "needsUniqueDesc": false
     },
     {
-      "url": "/desinfection-logement/gard/le-grau-du-roi/",
-      "slug": "desinfection-logement--gard--le-grau-du-roi",
-      "publishAt": "2026-07-30",
+      "url": "/desinfection-logement/haute-garonne/saint-jean/",
+      "slug": "desinfection-logement--haute-garonne--saint-jean",
+      "publishAt": "2026-08-01",
       "needsUniqueDesc": false
     },
     {
-      "url": "/desinfection-logement/gard/les-angles/",
-      "slug": "desinfection-logement--gard--les-angles",
-      "publishAt": "2026-07-30",
+      "url": "/desinfection-logement/haute-garonne/tournefeuille/",
+      "slug": "desinfection-logement--haute-garonne--tournefeuille",
+      "publishAt": "2026-08-02",
       "needsUniqueDesc": false
     }
   ],
@@ -2817,135 +2817,135 @@
       "slug": "desinfection-logement--bouches-du-rhone--marignane",
       "type": "Page ville service",
       "publishAt": "2026-07-29",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 612
     },
     {
       "url": "/desinfection-logement/bouches-du-rhone/martigues/",
       "slug": "desinfection-logement--bouches-du-rhone--martigues",
       "type": "Page ville service",
       "publishAt": "2026-07-29",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 609
     },
     {
       "url": "/desinfection-logement/bouches-du-rhone/saint-remy-de-provence/",
       "slug": "desinfection-logement--bouches-du-rhone--saint-remy-de-provence",
       "type": "Page ville service",
       "publishAt": "2026-07-29",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 602
     },
     {
       "url": "/desinfection-logement/bouches-du-rhone/salon-de-provence/",
       "slug": "desinfection-logement--bouches-du-rhone--salon-de-provence",
       "type": "Page ville service",
       "publishAt": "2026-07-30",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 605
     },
     {
       "url": "/desinfection-logement/bouches-du-rhone/vitrolles/",
       "slug": "desinfection-logement--bouches-du-rhone--vitrolles",
       "type": "Page ville service",
       "publishAt": "2026-07-30",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 603
     },
     {
       "url": "/desinfection-logement/gard/aigues-mortes/",
       "slug": "desinfection-logement--gard--aigues-mortes",
       "type": "Page ville service",
       "publishAt": "2026-07-30",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 610
     },
     {
       "url": "/desinfection-logement/gard/bagnols-sur-ceze/",
       "slug": "desinfection-logement--gard--bagnols-sur-ceze",
       "type": "Page ville service",
       "publishAt": "2026-07-30",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 604
     },
     {
       "url": "/desinfection-logement/gard/beaucaire/",
       "slug": "desinfection-logement--gard--beaucaire",
       "type": "Page ville service",
       "publishAt": "2026-07-30",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 603
     },
     {
       "url": "/desinfection-logement/gard/le-grau-du-roi/",
       "slug": "desinfection-logement--gard--le-grau-du-roi",
       "type": "Page ville service",
       "publishAt": "2026-07-30",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 609
     },
     {
       "url": "/desinfection-logement/gard/les-angles/",
       "slug": "desinfection-logement--gard--les-angles",
       "type": "Page ville service",
       "publishAt": "2026-07-30",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 600
     },
     {
       "url": "/desinfection-logement/gard/marguerittes/",
       "slug": "desinfection-logement--gard--marguerittes",
       "type": "Page ville service",
       "publishAt": "2026-07-31",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 601
     },
     {
       "url": "/desinfection-logement/gard/pont-saint-esprit/",
       "slug": "desinfection-logement--gard--pont-saint-esprit",
       "type": "Page ville service",
       "publishAt": "2026-07-31",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 607
     },
     {
       "url": "/desinfection-logement/gard/saint-gilles/",
       "slug": "desinfection-logement--gard--saint-gilles",
       "type": "Page ville service",
       "publishAt": "2026-07-31",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 601
     },
     {
       "url": "/desinfection-logement/gard/uzes/",
       "slug": "desinfection-logement--gard--uzes",
       "type": "Page ville service",
       "publishAt": "2026-07-31",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 608
     },
     {
       "url": "/desinfection-logement/gard/villeneuve-les-avignon/",
       "slug": "desinfection-logement--gard--villeneuve-les-avignon",
       "type": "Page ville service",
       "publishAt": "2026-07-31",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 602
     },
     {
       "url": "/desinfection-logement/haute-garonne/balma/",
