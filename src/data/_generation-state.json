@@ -1,34 +1,10 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 179,
-  "remaining": 611,
+  "done": 183,
+  "remaining": 607,
   "late": 0,
   "nextBatch": [
-    {
-      "url": "/nettoyage-insalubre/herault/sete/",
-      "slug": "nettoyage-insalubre--herault--sete",
-      "publishAt": "2026-07-11",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/nettoyage-insalubre/herault/valras-plage/",
-      "slug": "nettoyage-insalubre--herault--valras-plage",
-      "publishAt": "2026-07-11",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-insalubre/herault/vendargues/",
-      "slug": "nettoyage-insalubre--herault--vendargues",
-      "publishAt": "2026-07-11",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-insalubre/herault/vendres/",
-      "slug": "nettoyage-insalubre--herault--vendres",
-      "publishAt": "2026-07-12",
-      "needsUniqueDesc": false
-    },
     {
       "url": "/nettoyage-insalubre/herault/vias/",
       "slug": "nettoyage-insalubre--herault--vias",
@@ -63,6 +39,30 @@
       "url": "/remise-en-etat-logement/bouches-du-rhone/marseille/",
       "slug": "remise-en-etat-logement--bouches-du-rhone--marseille",
       "publishAt": "2026-07-12",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/remise-en-etat-logement/gard/ales/",
+      "slug": "remise-en-etat-logement--gard--ales",
+      "publishAt": "2026-07-13",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/remise-en-etat-logement/gard/nimes/",
+      "slug": "remise-en-etat-logement--gard--nimes",
+      "publishAt": "2026-07-13",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/remise-en-etat-logement/haute-garonne/toulouse/",
+      "slug": "remise-en-etat-logement--haute-garonne--toulouse",
+      "publishAt": "2026-07-13",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/remise-en-etat-logement/herault/beziers/",
+      "slug": "remise-en-etat-logement--herault--beziers",
+      "publishAt": "2026-07-13",
       "needsUniqueDesc": true
     }
   ],
@@ -1683,36 +1683,36 @@
       "slug": "nettoyage-insalubre--herault--sete",
       "type": "Page ville service",
       "publishAt": "2026-07-11",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 747
     },
     {
       "url": "/nettoyage-insalubre/herault/valras-plage/",
       "slug": "nettoyage-insalubre--herault--valras-plage",
       "type": "Page ville service",
       "publishAt": "2026-07-11",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 733
     },
     {
       "url": "/nettoyage-insalubre/herault/vendargues/",
       "slug": "nettoyage-insalubre--herault--vendargues",
       "type": "Page ville service",
       "publishAt": "2026-07-11",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 741
     },
     {
       "url": "/nettoyage-insalubre/herault/vendres/",
       "slug": "nettoyage-insalubre--herault--vendres",
       "type": "Page ville service",
       "publishAt": "2026-07-12",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 746
     },
     {
       "url": "/nettoyage-insalubre/herault/vias/",
