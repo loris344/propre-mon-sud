@@ -1,52 +1,10 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 203,
-  "remaining": 587,
+  "done": 210,
+  "remaining": 580,
   "late": 0,
   "nextBatch": [
-    {
-      "url": "/debarras/herault/castelnau-le-lez/",
-      "slug": "debarras--herault--castelnau-le-lez",
-      "publishAt": "2026-07-15",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/herault/clermont-l-herault/",
-      "slug": "debarras--herault--clermont-l-herault",
-      "publishAt": "2026-07-15",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/herault/frontignan/",
-      "slug": "debarras--herault--frontignan",
-      "publishAt": "2026-07-15",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/herault/gignac/",
-      "slug": "debarras--herault--gignac",
-      "publishAt": "2026-07-15",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/herault/juvignac/",
-      "slug": "debarras--herault--juvignac",
-      "publishAt": "2026-07-15",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/herault/lattes/",
-      "slug": "debarras--herault--lattes",
-      "publishAt": "2026-07-15",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/herault/lodeve/",
-      "slug": "debarras--herault--lodeve",
-      "publishAt": "2026-07-15",
-      "needsUniqueDesc": true
-    },
     {
       "url": "/debarras/herault/lunel/",
       "slug": "debarras--herault--lunel",
@@ -63,6 +21,48 @@
       "url": "/debarras/herault/pezenas/",
       "slug": "debarras--herault--pezenas",
       "publishAt": "2026-07-16",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/herault/saint-jean-de-vedas/",
+      "slug": "debarras--herault--saint-jean-de-vedas",
+      "publishAt": "2026-07-16",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/herault/serignan/",
+      "slug": "debarras--herault--serignan",
+      "publishAt": "2026-07-16",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/herault/sete/",
+      "slug": "debarras--herault--sete",
+      "publishAt": "2026-07-16",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/herault/valras-plage/",
+      "slug": "debarras--herault--valras-plage",
+      "publishAt": "2026-07-16",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/herault/vias/",
+      "slug": "debarras--herault--vias",
+      "publishAt": "2026-07-17",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/appartement/bouches-du-rhone/aix-en-provence/",
+      "slug": "debarras--appartement--bouches-du-rhone--aix-en-provence",
+      "publishAt": "2026-07-17",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/appartement/bouches-du-rhone/marseille/",
+      "slug": "debarras--appartement--bouches-du-rhone--marseille",
+      "publishAt": "2026-07-17",
       "needsUniqueDesc": true
     }
   ],
@@ -1899,63 +1899,63 @@
       "slug": "debarras--herault--castelnau-le-lez",
       "type": "Page ville débarras",
       "publishAt": "2026-07-15",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 617
     },
     {
       "url": "/debarras/herault/clermont-l-herault/",
       "slug": "debarras--herault--clermont-l-herault",
       "type": "Page ville débarras",
       "publishAt": "2026-07-15",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 602
     },
     {
       "url": "/debarras/herault/frontignan/",
       "slug": "debarras--herault--frontignan",
       "type": "Page ville débarras",
       "publishAt": "2026-07-15",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 608
     },
     {
       "url": "/debarras/herault/gignac/",
       "slug": "debarras--herault--gignac",
       "type": "Page ville débarras",
       "publishAt": "2026-07-15",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 613
     },
     {
       "url": "/debarras/herault/juvignac/",
       "slug": "debarras--herault--juvignac",
       "type": "Page ville débarras",
       "publishAt": "2026-07-15",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 616
     },
     {
       "url": "/debarras/herault/lattes/",
       "slug": "debarras--herault--lattes",
       "type": "Page ville débarras",
       "publishAt": "2026-07-15",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 613
     },
     {
       "url": "/debarras/herault/lodeve/",
       "slug": "debarras--herault--lodeve",
       "type": "Page ville débarras",
       "publishAt": "2026-07-15",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 624
     },
     {
       "url": "/debarras/herault/lunel/",
