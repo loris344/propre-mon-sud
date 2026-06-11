@@ -1,52 +1,10 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 541,
-  "remaining": 249,
+  "done": 548,
+  "remaining": 242,
   "late": 0,
   "nextBatch": [
-    {
-      "url": "/debarras/appartement/",
-      "slug": "debarras--appartement",
-      "publishAt": "2026-09-01",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/apres-deces/",
-      "slug": "debarras--apres-deces",
-      "publishAt": "2026-09-01",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/apres-squat/",
-      "slug": "debarras--apres-squat",
-      "publishAt": "2026-09-01",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/cave/",
-      "slug": "debarras--cave",
-      "publishAt": "2026-09-01",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/diogene/",
-      "slug": "debarras--diogene",
-      "publishAt": "2026-09-01",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/encombrants/",
-      "slug": "debarras--encombrants",
-      "publishAt": "2026-09-02",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/garage/",
-      "slug": "debarras--garage",
-      "publishAt": "2026-09-02",
-      "needsUniqueDesc": true
-    },
     {
       "url": "/debarras/grenier/",
       "slug": "debarras--grenier",
@@ -63,6 +21,48 @@
       "url": "/debarras/maison/",
       "slug": "debarras--maison",
       "publishAt": "2026-09-02",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/succession/",
+      "slug": "debarras--succession",
+      "publishAt": "2026-09-02",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/appartement/bouches-du-rhone/arles/",
+      "slug": "debarras--appartement--bouches-du-rhone--arles",
+      "publishAt": "2026-09-02",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/appartement/bouches-du-rhone/aubagne/",
+      "slug": "debarras--appartement--bouches-du-rhone--aubagne",
+      "publishAt": "2026-09-03",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/appartement/gard/bagnols-sur-ceze/",
+      "slug": "debarras--appartement--gard--bagnols-sur-ceze",
+      "publishAt": "2026-09-03",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/appartement/haute-garonne/colomiers/",
+      "slug": "debarras--appartement--haute-garonne--colomiers",
+      "publishAt": "2026-09-03",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/appartement/haute-garonne/muret/",
+      "slug": "debarras--appartement--haute-garonne--muret",
+      "publishAt": "2026-09-03",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/cave/haute-garonne/colomiers/",
+      "slug": "debarras--cave--haute-garonne--colomiers",
+      "publishAt": "2026-09-03",
       "needsUniqueDesc": true
     }
   ],
@@ -4941,63 +4941,63 @@
       "slug": "debarras--appartement",
       "type": "Page type débarras",
       "publishAt": "2026-09-01",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 616
     },
     {
       "url": "/debarras/apres-deces/",
       "slug": "debarras--apres-deces",
       "type": "Page type débarras",
       "publishAt": "2026-09-01",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 602
     },
     {
       "url": "/debarras/apres-squat/",
       "slug": "debarras--apres-squat",
       "type": "Page type débarras",
       "publishAt": "2026-09-01",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 605
     },
     {
       "url": "/debarras/cave/",
       "slug": "debarras--cave",
       "type": "Page type débarras",
       "publishAt": "2026-09-01",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 606
     },
     {
       "url": "/debarras/diogene/",
       "slug": "debarras--diogene",
       "type": "Page type débarras",
       "publishAt": "2026-09-01",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 602
     },
     {
       "url": "/debarras/encombrants/",
       "slug": "debarras--encombrants",
       "type": "Page type débarras",
       "publishAt": "2026-09-02",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 603
     },
     {
       "url": "/debarras/garage/",
       "slug": "debarras--garage",
       "type": "Page type débarras",
       "publishAt": "2026-09-02",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 600
     },
     {
       "url": "/debarras/grenier/",
