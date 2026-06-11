@@ -1,46 +1,10 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 654,
-  "remaining": 136,
+  "done": 660,
+  "remaining": 130,
   "late": 0,
   "nextBatch": [
-    {
-      "url": "/desinfection-logement/tarn/carmaux/",
-      "slug": "desinfection-logement--tarn--carmaux",
-      "publishAt": "2026-09-18",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/desinfection-logement/tarn/castres/",
-      "slug": "desinfection-logement--tarn--castres",
-      "publishAt": "2026-09-18",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/desinfection-logement/tarn/gaillac/",
-      "slug": "desinfection-logement--tarn--gaillac",
-      "publishAt": "2026-09-19",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/desinfection-logement/tarn/graulhet/",
-      "slug": "desinfection-logement--tarn--graulhet",
-      "publishAt": "2026-09-19",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/desinfection-logement/tarn/lavaur/",
-      "slug": "desinfection-logement--tarn--lavaur",
-      "publishAt": "2026-09-19",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/desinfection-logement/tarn/mazamet/",
-      "slug": "desinfection-logement--tarn--mazamet",
-      "publishAt": "2026-09-19",
-      "needsUniqueDesc": false
-    },
     {
       "url": "/nettoyage-apres-deces/aveyron/decazeville/",
       "slug": "nettoyage-apres-deces--aveyron--decazeville",
@@ -62,6 +26,42 @@
     {
       "url": "/nettoyage-apres-deces/aveyron/rodez/",
       "slug": "nettoyage-apres-deces--aveyron--rodez",
+      "publishAt": "2026-09-20",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-deces/aveyron/saint-affrique/",
+      "slug": "nettoyage-apres-deces--aveyron--saint-affrique",
+      "publishAt": "2026-09-20",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-deces/aveyron/villefranche-de-rouergue/",
+      "slug": "nettoyage-apres-deces--aveyron--villefranche-de-rouergue",
+      "publishAt": "2026-09-20",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-deces/tarn/albi/",
+      "slug": "nettoyage-apres-deces--tarn--albi",
+      "publishAt": "2026-09-20",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-deces/tarn/carmaux/",
+      "slug": "nettoyage-apres-deces--tarn--carmaux",
+      "publishAt": "2026-09-20",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-deces/tarn/castres/",
+      "slug": "nettoyage-apres-deces--tarn--castres",
+      "publishAt": "2026-09-20",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-deces/tarn/gaillac/",
+      "slug": "nettoyage-apres-deces--tarn--gaillac",
       "publishAt": "2026-09-20",
       "needsUniqueDesc": false
     }
@@ -5958,54 +5958,54 @@
       "slug": "desinfection-logement--tarn--carmaux",
       "type": "Page ville service",
       "publishAt": "2026-09-18",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 667
     },
     {
       "url": "/desinfection-logement/tarn/castres/",
       "slug": "desinfection-logement--tarn--castres",
       "type": "Page ville service",
       "publishAt": "2026-09-18",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 679
     },
     {
       "url": "/desinfection-logement/tarn/gaillac/",
       "slug": "desinfection-logement--tarn--gaillac",
       "type": "Page ville service",
       "publishAt": "2026-09-19",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 673
     },
     {
       "url": "/desinfection-logement/tarn/graulhet/",
       "slug": "desinfection-logement--tarn--graulhet",
       "type": "Page ville service",
       "publishAt": "2026-09-19",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 678
     },
     {
       "url": "/desinfection-logement/tarn/lavaur/",
       "slug": "desinfection-logement--tarn--lavaur",
       "type": "Page ville service",
       "publishAt": "2026-09-19",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 699
     },
     {
       "url": "/desinfection-logement/tarn/mazamet/",
       "slug": "desinfection-logement--tarn--mazamet",
       "type": "Page ville service",
       "publishAt": "2026-09-19",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 684
     },
     {
       "url": "/nettoyage-apres-deces/aveyron/decazeville/",
