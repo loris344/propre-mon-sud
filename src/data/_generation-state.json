@@ -1,40 +1,10 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 174,
-  "remaining": 616,
+  "done": 179,
+  "remaining": 611,
   "late": 0,
   "nextBatch": [
-    {
-      "url": "/nettoyage-insalubre/herault/saint-gely-du-fesc/",
-      "slug": "nettoyage-insalubre--herault--saint-gely-du-fesc",
-      "publishAt": "2026-07-10",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-insalubre/herault/saint-jean-de-vedas/",
-      "slug": "nettoyage-insalubre--herault--saint-jean-de-vedas",
-      "publishAt": "2026-07-11",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-insalubre/herault/saint-thibery/",
-      "slug": "nettoyage-insalubre--herault--saint-thibery",
-      "publishAt": "2026-07-11",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-insalubre/herault/sauvian/",
-      "slug": "nettoyage-insalubre--herault--sauvian",
-      "publishAt": "2026-07-11",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-insalubre/herault/serignan/",
-      "slug": "nettoyage-insalubre--herault--serignan",
-      "publishAt": "2026-07-11",
-      "needsUniqueDesc": false
-    },
     {
       "url": "/nettoyage-insalubre/herault/sete/",
       "slug": "nettoyage-insalubre--herault--sete",
@@ -64,6 +34,36 @@
       "slug": "nettoyage-insalubre--herault--vias",
       "publishAt": "2026-07-12",
       "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/herault/vic-la-gardiole/",
+      "slug": "nettoyage-insalubre--herault--vic-la-gardiole",
+      "publishAt": "2026-07-12",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/herault/villeneuve-les-beziers/",
+      "slug": "nettoyage-insalubre--herault--villeneuve-les-beziers",
+      "publishAt": "2026-07-12",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/herault/villeneuve-les-maguelone/",
+      "slug": "nettoyage-insalubre--herault--villeneuve-les-maguelone",
+      "publishAt": "2026-07-12",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/remise-en-etat-logement/bouches-du-rhone/aix-en-provence/",
+      "slug": "remise-en-etat-logement--bouches-du-rhone--aix-en-provence",
+      "publishAt": "2026-07-12",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/remise-en-etat-logement/bouches-du-rhone/marseille/",
+      "slug": "remise-en-etat-logement--bouches-du-rhone--marseille",
+      "publishAt": "2026-07-12",
+      "needsUniqueDesc": true
     }
   ],
   "pages": [
@@ -1638,45 +1638,45 @@
       "slug": "nettoyage-insalubre--herault--saint-gely-du-fesc",
       "type": "Page ville service",
       "publishAt": "2026-07-10",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 730
     },
     {
       "url": "/nettoyage-insalubre/herault/saint-jean-de-vedas/",
       "slug": "nettoyage-insalubre--herault--saint-jean-de-vedas",
       "type": "Page ville service",
       "publishAt": "2026-07-11",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 717
     },
     {
       "url": "/nettoyage-insalubre/herault/saint-thibery/",
       "slug": "nettoyage-insalubre--herault--saint-thibery",
       "type": "Page ville service",
       "publishAt": "2026-07-11",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 731
     },
     {
       "url": "/nettoyage-insalubre/herault/sauvian/",
       "slug": "nettoyage-insalubre--herault--sauvian",
       "type": "Page ville service",
       "publishAt": "2026-07-11",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 727
     },
     {
       "url": "/nettoyage-insalubre/herault/serignan/",
       "slug": "nettoyage-insalubre--herault--serignan",
       "type": "Page ville service",
       "publishAt": "2026-07-11",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 733
     },
     {
       "url": "/nettoyage-insalubre/herault/sete/",
