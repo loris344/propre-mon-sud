@@ -1,16 +1,10 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 266,
-  "remaining": 524,
+  "done": 267,
+  "remaining": 523,
   "late": 0,
   "nextBatch": [
-    {
-      "url": "/debarras/maison/herault/vias/",
-      "slug": "debarras--maison--herault--vias",
-      "publishAt": "2026-07-24",
-      "needsUniqueDesc": true
-    },
     {
       "url": "/debarras/succession/bouches-du-rhone/aix-en-provence/",
       "slug": "debarras--succession--bouches-du-rhone--aix-en-provence",
@@ -64,6 +58,12 @@
       "slug": "debarras--succession--herault--sete",
       "publishAt": "2026-07-25",
       "needsUniqueDesc": true
+    },
+    {
+      "url": "/zones-intervention/herault/",
+      "slug": "zones-intervention--herault",
+      "publishAt": "2026-07-25",
+      "needsUniqueDesc": false
     }
   ],
   "pages": [
@@ -2466,9 +2466,9 @@
       "slug": "debarras--maison--herault--vias",
       "type": "Page ville débarras type",
       "publishAt": "2026-07-24",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 615
     },
     {
       "url": "/debarras/succession/bouches-du-rhone/aix-en-provence/",
