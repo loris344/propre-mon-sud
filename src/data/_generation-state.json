@@ -1,34 +1,10 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 196,
-  "remaining": 594,
+  "done": 200,
+  "remaining": 590,
   "late": 0,
   "nextBatch": [
-    {
-      "url": "/debarras/bouches-du-rhone/aix-en-provence/",
-      "slug": "debarras--bouches-du-rhone--aix-en-provence",
-      "publishAt": "2026-07-14",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/bouches-du-rhone/marseille/",
-      "slug": "debarras--bouches-du-rhone--marseille",
-      "publishAt": "2026-07-14",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/gard/ales/",
-      "slug": "debarras--gard--ales",
-      "publishAt": "2026-07-14",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/gard/nimes/",
-      "slug": "debarras--gard--nimes",
-      "publishAt": "2026-07-14",
-      "needsUniqueDesc": true
-    },
     {
       "url": "/debarras/haute-garonne/toulouse/",
       "slug": "debarras--haute-garonne--toulouse",
@@ -62,6 +38,30 @@
     {
       "url": "/debarras/herault/frontignan/",
       "slug": "debarras--herault--frontignan",
+      "publishAt": "2026-07-15",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/herault/gignac/",
+      "slug": "debarras--herault--gignac",
+      "publishAt": "2026-07-15",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/herault/juvignac/",
+      "slug": "debarras--herault--juvignac",
+      "publishAt": "2026-07-15",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/herault/lattes/",
+      "slug": "debarras--herault--lattes",
+      "publishAt": "2026-07-15",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/herault/lodeve/",
+      "slug": "debarras--herault--lodeve",
       "publishAt": "2026-07-15",
       "needsUniqueDesc": true
     }
@@ -1836,36 +1836,36 @@
       "slug": "debarras--bouches-du-rhone--aix-en-provence",
       "type": "Page ville débarras",
       "publishAt": "2026-07-14",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 630
     },
     {
       "url": "/debarras/bouches-du-rhone/marseille/",
       "slug": "debarras--bouches-du-rhone--marseille",
       "type": "Page ville débarras",
       "publishAt": "2026-07-14",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 603
     },
     {
       "url": "/debarras/gard/ales/",
       "slug": "debarras--gard--ales",
       "type": "Page ville débarras",
       "publishAt": "2026-07-14",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 613
     },
     {
       "url": "/debarras/gard/nimes/",
       "slug": "debarras--gard--nimes",
       "type": "Page ville débarras",
       "publishAt": "2026-07-14",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 611
     },
     {
       "url": "/debarras/haute-garonne/toulouse/",
