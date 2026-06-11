@@ -1,16 +1,10 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 195,
-  "remaining": 595,
+  "done": 196,
+  "remaining": 594,
   "late": 0,
   "nextBatch": [
-    {
-      "url": "/debarras/herault/",
-      "slug": "debarras--herault",
-      "publishAt": "2026-07-13",
-      "needsUniqueDesc": true
-    },
     {
       "url": "/debarras/bouches-du-rhone/aix-en-provence/",
       "slug": "debarras--bouches-du-rhone--aix-en-provence",
@@ -62,6 +56,12 @@
     {
       "url": "/debarras/herault/clermont-l-herault/",
       "slug": "debarras--herault--clermont-l-herault",
+      "publishAt": "2026-07-15",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/herault/frontignan/",
+      "slug": "debarras--herault--frontignan",
       "publishAt": "2026-07-15",
       "needsUniqueDesc": true
     }
@@ -1827,9 +1827,9 @@
       "slug": "debarras--herault",
       "type": "Page département débarras",
       "publishAt": "2026-07-13",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 616
     },
     {
       "url": "/debarras/bouches-du-rhone/aix-en-provence/",
