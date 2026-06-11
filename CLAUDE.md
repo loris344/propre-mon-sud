@@ -106,6 +106,11 @@ une croissance éditoriale organique.
   les juge « trop IA ». Utiliser virgules, deux-points, parenthèses ou phrases coupées à la
   place. (Dans les commentaires de code, peu importe : ils ne sont pas visibles.)
 - ❌ **Bourrage de mots-clés.** Les secondaires s'intègrent naturellement.
+- ❌ **Accroche « Basés à Montpellier » en tête d'article, ou martèlement du siège.** Sur une page
+  qui cible une ville (surtout lointaine : Toulouse, Marseille…), répéter « basés à Montpellier »
+  dessert le lecteur sans rien lui apporter, et ça ne protège PAS du doorway (qui se joue dans le
+  JSON-LD, pas dans l'accroche). Une **seule** mention, discrète et subordonnée, en fin de page,
+  orientée couverture/contact. Voir le barème « Mention d'implantation (Montpellier) ».
 - ❌ **Éditer la publication à la main au quotidien.** Tout passe par `publishAt` + le cron.
 - ❌ **Pointer un lien interne vers une page non publiée** (géré auto par `getMaillage`, ne pas contourner).
 - ❌ Annoncer un schema **`FAQPage` sans Q/R réellement visibles** sur la page.
@@ -143,7 +148,7 @@ Le client a donné le **GO permanent** : dérouler la rédaction des 790 pages s
 | Images | selon l'approvisionnement client (pools `source/<service>/`) ; alt unique/page. Image obligatoire sur toute page (pas de `noImage` sauf cas exceptionnel). Photo précise via `image-map.json` (URL → fichier) |
 | Dates affichées | format **jj/mm/aaaa** (les données restent en ISO pour le tri) |
 | Nom de l'entreprise | **SOS Nettoyage Diogène** (exactement) |
-| Transparence d'implantation | chaque page ville dit « intervention à X depuis Montpellier » (anti-doorway) |
+| Mention d'implantation (Montpellier) | **JAMAIS dans l'intro/accroche.** Au plus **UNE** mention par page ville, en position **subordonnée** dans la section finale (« …nous intervenons à X et dans [secteur], au départ de Montpellier »), tournée couverture/contact — **jamais** d'accroche « Basés à Montpellier ». Pas de promesse de proximité chiffrée (« à 30 min », « à trois quarts d'heure ») hors agglomération de Montpellier. **L'anti-doorway repose sur le JSON-LD (Service + areaServed + provider `#business`) et le contenu local unique, PAS sur la répétition de « Montpellier ».** Les pages dont la ville EST Montpellier le mentionnent naturellement (inchangé). |
 | Liens contextuels dans le corps | 3-6 par page, ancres variées (la diversité d'ancres > ancre exacte répétée) |
 | Liens externes sortants | **uniquement si utile** : 1 lien vers une source OFFICIELLE/autoritaire (service-public, ARS, mairie, ANIL, INSEE…) sur les pages qui citent une procédure ou un dispositif (insalubre, squat, Diogène). JAMAIS le même lien templaté partout, ni sur les pages purement transactionnelles (débarras). Le rendu ouvre l'externe en `target="_blank" rel="noopener noreferrer"`. Pas de `nofollow` vers une source de confiance. Les URLs doivent être réelles (issues de la recherche, conservées dans `sources:`). |
 
