@@ -1,16 +1,10 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 276,
-  "remaining": 514,
+  "done": 277,
+  "remaining": 513,
   "late": 0,
   "nextBatch": [
-    {
-      "url": "/zones-intervention/herault/",
-      "slug": "zones-intervention--herault",
-      "publishAt": "2026-07-25",
-      "needsUniqueDesc": false
-    },
     {
       "url": "/debarras/maison/herault/",
       "slug": "debarras--maison--herault",
@@ -62,6 +56,12 @@
     {
       "url": "/nettoyage-apres-sinistre/gard/",
       "slug": "nettoyage-apres-sinistre--gard",
+      "publishAt": "2026-07-26",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/nettoyage-apres-sinistre/haute-garonne/",
+      "slug": "nettoyage-apres-sinistre--haute-garonne",
       "publishAt": "2026-07-26",
       "needsUniqueDesc": true
     }
@@ -2556,9 +2556,9 @@
       "slug": "zones-intervention--herault",
       "type": "Page zones département",
       "publishAt": "2026-07-25",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 655
     },
     {
       "url": "/debarras/maison/herault/",
