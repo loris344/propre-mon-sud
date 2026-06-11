@@ -1,52 +1,10 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 507,
-  "remaining": 283,
+  "done": 514,
+  "remaining": 276,
   "late": 0,
   "nextBatch": [
-    {
-      "url": "/debarras/bouches-du-rhone/",
-      "slug": "debarras--bouches-du-rhone",
-      "publishAt": "2026-08-27",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/gard/",
-      "slug": "debarras--gard",
-      "publishAt": "2026-08-27",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/haute-garonne/",
-      "slug": "debarras--haute-garonne",
-      "publishAt": "2026-08-27",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/bouches-du-rhone/allauch/",
-      "slug": "debarras--bouches-du-rhone--allauch",
-      "publishAt": "2026-08-27",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/bouches-du-rhone/arles/",
-      "slug": "debarras--bouches-du-rhone--arles",
-      "publishAt": "2026-08-28",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/bouches-du-rhone/aubagne/",
-      "slug": "debarras--bouches-du-rhone--aubagne",
-      "publishAt": "2026-08-28",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/bouches-du-rhone/chateaurenard/",
-      "slug": "debarras--bouches-du-rhone--chateaurenard",
-      "publishAt": "2026-08-28",
-      "needsUniqueDesc": true
-    },
     {
       "url": "/debarras/bouches-du-rhone/istres/",
       "slug": "debarras--bouches-du-rhone--istres",
@@ -63,6 +21,48 @@
       "url": "/debarras/bouches-du-rhone/marignane/",
       "slug": "debarras--bouches-du-rhone--marignane",
       "publishAt": "2026-08-28",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/bouches-du-rhone/martigues/",
+      "slug": "debarras--bouches-du-rhone--martigues",
+      "publishAt": "2026-08-28",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/bouches-du-rhone/saint-remy-de-provence/",
+      "slug": "debarras--bouches-du-rhone--saint-remy-de-provence",
+      "publishAt": "2026-08-29",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/bouches-du-rhone/salon-de-provence/",
+      "slug": "debarras--bouches-du-rhone--salon-de-provence",
+      "publishAt": "2026-08-29",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/bouches-du-rhone/vitrolles/",
+      "slug": "debarras--bouches-du-rhone--vitrolles",
+      "publishAt": "2026-08-29",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/gard/aigues-mortes/",
+      "slug": "debarras--gard--aigues-mortes",
+      "publishAt": "2026-08-29",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/gard/bagnols-sur-ceze/",
+      "slug": "debarras--gard--bagnols-sur-ceze",
+      "publishAt": "2026-08-29",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/gard/beaucaire/",
+      "slug": "debarras--gard--beaucaire",
+      "publishAt": "2026-08-29",
       "needsUniqueDesc": true
     }
   ],
@@ -4635,63 +4635,63 @@
       "slug": "debarras--bouches-du-rhone",
       "type": "Page département débarras",
       "publishAt": "2026-08-27",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 624
     },
     {
       "url": "/debarras/gard/",
       "slug": "debarras--gard",
       "type": "Page département débarras",
       "publishAt": "2026-08-27",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 631
     },
     {
       "url": "/debarras/haute-garonne/",
       "slug": "debarras--haute-garonne",
       "type": "Page département débarras",
       "publishAt": "2026-08-27",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 619
     },
     {
       "url": "/debarras/bouches-du-rhone/allauch/",
       "slug": "debarras--bouches-du-rhone--allauch",
       "type": "Page ville débarras",
       "publishAt": "2026-08-27",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 617
     },
     {
       "url": "/debarras/bouches-du-rhone/arles/",
       "slug": "debarras--bouches-du-rhone--arles",
       "type": "Page ville débarras",
       "publishAt": "2026-08-28",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 603
     },
     {
       "url": "/debarras/bouches-du-rhone/aubagne/",
       "slug": "debarras--bouches-du-rhone--aubagne",
       "type": "Page ville débarras",
       "publishAt": "2026-08-28",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 625
     },
     {
       "url": "/debarras/bouches-du-rhone/chateaurenard/",
       "slug": "debarras--bouches-du-rhone--chateaurenard",
       "type": "Page ville débarras",
       "publishAt": "2026-08-28",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 610
     },
     {
       "url": "/debarras/bouches-du-rhone/istres/",
