@@ -1,28 +1,10 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 278,
-  "remaining": 512,
+  "done": 281,
+  "remaining": 509,
   "late": 0,
   "nextBatch": [
-    {
-      "url": "/desinfection-logement/bouches-du-rhone/",
-      "slug": "desinfection-logement--bouches-du-rhone",
-      "publishAt": "2026-07-25",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/desinfection-logement/gard/",
-      "slug": "desinfection-logement--gard",
-      "publishAt": "2026-07-25",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/desinfection-logement/haute-garonne/",
-      "slug": "desinfection-logement--haute-garonne",
-      "publishAt": "2026-07-26",
-      "needsUniqueDesc": false
-    },
     {
       "url": "/nettoyage-apres-deces/bouches-du-rhone/",
       "slug": "nettoyage-apres-deces--bouches-du-rhone",
@@ -62,6 +44,24 @@
     {
       "url": "/nettoyage-apres-squat/bouches-du-rhone/",
       "slug": "nettoyage-apres-squat--bouches-du-rhone",
+      "publishAt": "2026-07-27",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-squat/gard/",
+      "slug": "nettoyage-apres-squat--gard",
+      "publishAt": "2026-07-27",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-squat/haute-garonne/",
+      "slug": "nettoyage-apres-squat--haute-garonne",
+      "publishAt": "2026-07-27",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-diogene/bouches-du-rhone/",
+      "slug": "nettoyage-diogene--bouches-du-rhone",
       "publishAt": "2026-07-27",
       "needsUniqueDesc": false
     }
@@ -2574,27 +2574,27 @@
       "slug": "desinfection-logement--bouches-du-rhone",
       "type": "Page département service",
       "publishAt": "2026-07-25",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 609
     },
     {
       "url": "/desinfection-logement/gard/",
       "slug": "desinfection-logement--gard",
       "type": "Page département service",
       "publishAt": "2026-07-25",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 619
     },
     {
       "url": "/desinfection-logement/haute-garonne/",
       "slug": "desinfection-logement--haute-garonne",
       "type": "Page département service",
       "publishAt": "2026-07-26",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 620
     },
     {
       "url": "/nettoyage-apres-deces/bouches-du-rhone/",
