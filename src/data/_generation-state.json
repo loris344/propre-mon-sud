@@ -1,28 +1,10 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 296,
-  "remaining": 494,
+  "done": 299,
+  "remaining": 491,
   "late": 0,
   "nextBatch": [
-    {
-      "url": "/remise-en-etat-logement/bouches-du-rhone/",
-      "slug": "remise-en-etat-logement--bouches-du-rhone",
-      "publishAt": "2026-07-28",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/remise-en-etat-logement/gard/",
-      "slug": "remise-en-etat-logement--gard",
-      "publishAt": "2026-07-28",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/remise-en-etat-logement/haute-garonne/",
-      "slug": "remise-en-etat-logement--haute-garonne",
-      "publishAt": "2026-07-28",
-      "needsUniqueDesc": true
-    },
     {
       "url": "/desinfection-logement/bouches-du-rhone/allauch/",
       "slug": "desinfection-logement--bouches-du-rhone--allauch",
@@ -63,6 +45,24 @@
       "url": "/desinfection-logement/bouches-du-rhone/marignane/",
       "slug": "desinfection-logement--bouches-du-rhone--marignane",
       "publishAt": "2026-07-29",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/desinfection-logement/bouches-du-rhone/martigues/",
+      "slug": "desinfection-logement--bouches-du-rhone--martigues",
+      "publishAt": "2026-07-29",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/desinfection-logement/bouches-du-rhone/saint-remy-de-provence/",
+      "slug": "desinfection-logement--bouches-du-rhone--saint-remy-de-provence",
+      "publishAt": "2026-07-29",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/desinfection-logement/bouches-du-rhone/salon-de-provence/",
+      "slug": "desinfection-logement--bouches-du-rhone--salon-de-provence",
+      "publishAt": "2026-07-30",
       "needsUniqueDesc": false
     }
   ],
@@ -2736,27 +2736,27 @@
       "slug": "remise-en-etat-logement--bouches-du-rhone",
       "type": "Page département service",
       "publishAt": "2026-07-28",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 610
     },
     {
       "url": "/remise-en-etat-logement/gard/",
       "slug": "remise-en-etat-logement--gard",
       "type": "Page département service",
       "publishAt": "2026-07-28",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 617
     },
     {
       "url": "/remise-en-etat-logement/haute-garonne/",
       "slug": "remise-en-etat-logement--haute-garonne",
       "type": "Page département service",
       "publishAt": "2026-07-28",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 601
     },
     {
       "url": "/desinfection-logement/bouches-du-rhone/allauch/",
