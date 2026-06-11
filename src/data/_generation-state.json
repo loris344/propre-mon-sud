@@ -1,46 +1,10 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 585,
-  "remaining": 205,
+  "done": 591,
+  "remaining": 199,
   "late": 0,
   "nextBatch": [
-    {
-      "url": "/debarras/maison/haute-garonne/l-union/",
-      "slug": "debarras--maison--haute-garonne--l-union",
-      "publishAt": "2026-09-07",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/maison/haute-garonne/muret/",
-      "slug": "debarras--maison--haute-garonne--muret",
-      "publishAt": "2026-09-07",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/maison/haute-garonne/revel/",
-      "slug": "debarras--maison--haute-garonne--revel",
-      "publishAt": "2026-09-07",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/maison/haute-garonne/saint-gaudens/",
-      "slug": "debarras--maison--haute-garonne--saint-gaudens",
-      "publishAt": "2026-09-08",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/maison/haute-garonne/saint-jean/",
-      "slug": "debarras--maison--haute-garonne--saint-jean",
-      "publishAt": "2026-09-08",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/maison/haute-garonne/tournefeuille/",
-      "slug": "debarras--maison--haute-garonne--tournefeuille",
-      "publishAt": "2026-09-08",
-      "needsUniqueDesc": true
-    },
     {
       "url": "/debarras/succession/bouches-du-rhone/arles/",
       "slug": "debarras--succession--bouches-du-rhone--arles",
@@ -64,6 +28,42 @@
       "slug": "debarras--succession--haute-garonne--colomiers",
       "publishAt": "2026-09-08",
       "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/succession/haute-garonne/muret/",
+      "slug": "debarras--succession--haute-garonne--muret",
+      "publishAt": "2026-09-09",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/zones-intervention/",
+      "slug": "zones-intervention",
+      "publishAt": "2026-09-09",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/zones-intervention/bouches-du-rhone/",
+      "slug": "zones-intervention--bouches-du-rhone",
+      "publishAt": "2026-09-09",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/zones-intervention/gard/",
+      "slug": "zones-intervention--gard",
+      "publishAt": "2026-09-09",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/zones-intervention/haute-garonne/",
+      "slug": "zones-intervention--haute-garonne",
+      "publishAt": "2026-09-09",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/realisations/",
+      "slug": "realisations",
+      "publishAt": "2026-09-09",
+      "needsUniqueDesc": false
     }
   ],
   "pages": [
@@ -5337,54 +5337,54 @@
       "slug": "debarras--maison--haute-garonne--l-union",
       "type": "Page ville débarras type",
       "publishAt": "2026-09-07",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 608
     },
     {
       "url": "/debarras/maison/haute-garonne/muret/",
       "slug": "debarras--maison--haute-garonne--muret",
       "type": "Page ville débarras type",
       "publishAt": "2026-09-07",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 615
     },
     {
       "url": "/debarras/maison/haute-garonne/revel/",
       "slug": "debarras--maison--haute-garonne--revel",
       "type": "Page ville débarras type",
       "publishAt": "2026-09-07",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 611
     },
     {
       "url": "/debarras/maison/haute-garonne/saint-gaudens/",
       "slug": "debarras--maison--haute-garonne--saint-gaudens",
       "type": "Page ville débarras type",
       "publishAt": "2026-09-08",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 613
     },
     {
       "url": "/debarras/maison/haute-garonne/saint-jean/",
       "slug": "debarras--maison--haute-garonne--saint-jean",
       "type": "Page ville débarras type",
       "publishAt": "2026-09-08",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 601
     },
     {
       "url": "/debarras/maison/haute-garonne/tournefeuille/",
       "slug": "debarras--maison--haute-garonne--tournefeuille",
       "type": "Page ville débarras type",
       "publishAt": "2026-09-08",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 608
     },
     {
       "url": "/debarras/succession/bouches-du-rhone/arles/",
