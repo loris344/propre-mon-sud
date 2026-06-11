@@ -1,52 +1,10 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 469,
-  "remaining": 321,
+  "done": 476,
+  "remaining": 314,
   "late": 0,
   "nextBatch": [
-    {
-      "url": "/nettoyage-insalubre/gard/quissac/",
-      "slug": "nettoyage-insalubre--gard--quissac",
-      "publishAt": "2026-08-22",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-insalubre/gard/remoulins/",
-      "slug": "nettoyage-insalubre--gard--remoulins",
-      "publishAt": "2026-08-22",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-insalubre/gard/rodilhan/",
-      "slug": "nettoyage-insalubre--gard--rodilhan",
-      "publishAt": "2026-08-22",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-insalubre/gard/roquemaure/",
-      "slug": "nettoyage-insalubre--gard--roquemaure",
-      "publishAt": "2026-08-22",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-insalubre/gard/saint-christol-les-ales/",
-      "slug": "nettoyage-insalubre--gard--saint-christol-les-ales",
-      "publishAt": "2026-08-22",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-insalubre/gard/saint-gilles/",
-      "slug": "nettoyage-insalubre--gard--saint-gilles",
-      "publishAt": "2026-08-22",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-insalubre/gard/saint-hilaire-de-brethmas/",
-      "slug": "nettoyage-insalubre--gard--saint-hilaire-de-brethmas",
-      "publishAt": "2026-08-22",
-      "needsUniqueDesc": false
-    },
     {
       "url": "/nettoyage-insalubre/gard/sommieres/",
       "slug": "nettoyage-insalubre--gard--sommieres",
@@ -63,6 +21,48 @@
       "url": "/nettoyage-insalubre/gard/vauvert/",
       "slug": "nettoyage-insalubre--gard--vauvert",
       "publishAt": "2026-08-23",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/gard/vezenobres/",
+      "slug": "nettoyage-insalubre--gard--vezenobres",
+      "publishAt": "2026-08-23",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/gard/villeneuve-les-avignon/",
+      "slug": "nettoyage-insalubre--gard--villeneuve-les-avignon",
+      "publishAt": "2026-08-23",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/haute-garonne/auterive/",
+      "slug": "nettoyage-insalubre--haute-garonne--auterive",
+      "publishAt": "2026-08-23",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/haute-garonne/balma/",
+      "slug": "nettoyage-insalubre--haute-garonne--balma",
+      "publishAt": "2026-08-23",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/haute-garonne/blagnac/",
+      "slug": "nettoyage-insalubre--haute-garonne--blagnac",
+      "publishAt": "2026-08-24",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/haute-garonne/carbonne/",
+      "slug": "nettoyage-insalubre--haute-garonne--carbonne",
+      "publishAt": "2026-08-24",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/haute-garonne/castanet-tolosan/",
+      "slug": "nettoyage-insalubre--haute-garonne--castanet-tolosan",
+      "publishAt": "2026-08-24",
       "needsUniqueDesc": false
     }
   ],
@@ -4293,63 +4293,63 @@
       "slug": "nettoyage-insalubre--gard--quissac",
       "type": "Page ville service",
       "publishAt": "2026-08-22",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 605
     },
     {
       "url": "/nettoyage-insalubre/gard/remoulins/",
       "slug": "nettoyage-insalubre--gard--remoulins",
       "type": "Page ville service",
       "publishAt": "2026-08-22",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 606
     },
     {
       "url": "/nettoyage-insalubre/gard/rodilhan/",
       "slug": "nettoyage-insalubre--gard--rodilhan",
       "type": "Page ville service",
       "publishAt": "2026-08-22",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 620
     },
     {
       "url": "/nettoyage-insalubre/gard/roquemaure/",
       "slug": "nettoyage-insalubre--gard--roquemaure",
       "type": "Page ville service",
       "publishAt": "2026-08-22",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 604
     },
     {
       "url": "/nettoyage-insalubre/gard/saint-christol-les-ales/",
       "slug": "nettoyage-insalubre--gard--saint-christol-les-ales",
       "type": "Page ville service",
       "publishAt": "2026-08-22",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 633
     },
     {
       "url": "/nettoyage-insalubre/gard/saint-gilles/",
       "slug": "nettoyage-insalubre--gard--saint-gilles",
       "type": "Page ville service",
       "publishAt": "2026-08-22",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 625
     },
     {
       "url": "/nettoyage-insalubre/gard/saint-hilaire-de-brethmas/",
       "slug": "nettoyage-insalubre--gard--saint-hilaire-de-brethmas",
       "type": "Page ville service",
       "publishAt": "2026-08-22",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 662
     },
     {
       "url": "/nettoyage-insalubre/gard/sommieres/",
