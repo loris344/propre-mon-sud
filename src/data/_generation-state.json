@@ -1,28 +1,10 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 189,
-  "remaining": 601,
+  "done": 192,
+  "remaining": 598,
   "late": 0,
   "nextBatch": [
-    {
-      "url": "/remise-en-etat-logement/gard/ales/",
-      "slug": "remise-en-etat-logement--gard--ales",
-      "publishAt": "2026-07-13",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/remise-en-etat-logement/gard/nimes/",
-      "slug": "remise-en-etat-logement--gard--nimes",
-      "publishAt": "2026-07-13",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/remise-en-etat-logement/haute-garonne/toulouse/",
-      "slug": "remise-en-etat-logement--haute-garonne--toulouse",
-      "publishAt": "2026-07-13",
-      "needsUniqueDesc": true
-    },
     {
       "url": "/remise-en-etat-logement/herault/beziers/",
       "slug": "remise-en-etat-logement--herault--beziers",
@@ -62,6 +44,24 @@
     {
       "url": "/debarras/gard/ales/",
       "slug": "debarras--gard--ales",
+      "publishAt": "2026-07-14",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/gard/nimes/",
+      "slug": "debarras--gard--nimes",
+      "publishAt": "2026-07-14",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/haute-garonne/toulouse/",
+      "slug": "debarras--haute-garonne--toulouse",
+      "publishAt": "2026-07-14",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/herault/agde/",
+      "slug": "debarras--herault--agde",
       "publishAt": "2026-07-14",
       "needsUniqueDesc": true
     }
@@ -1773,27 +1773,27 @@
       "slug": "remise-en-etat-logement--gard--ales",
       "type": "Page ville service",
       "publishAt": "2026-07-13",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 610
     },
     {
       "url": "/remise-en-etat-logement/gard/nimes/",
       "slug": "remise-en-etat-logement--gard--nimes",
       "type": "Page ville service",
       "publishAt": "2026-07-13",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 647
     },
     {
       "url": "/remise-en-etat-logement/haute-garonne/toulouse/",
       "slug": "remise-en-etat-logement--haute-garonne--toulouse",
       "type": "Page ville service",
       "publishAt": "2026-07-13",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 608
     },
     {
       "url": "/remise-en-etat-logement/herault/beziers/",
