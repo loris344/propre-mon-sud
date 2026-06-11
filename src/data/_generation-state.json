@@ -1,16 +1,10 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 277,
-  "remaining": 513,
+  "done": 278,
+  "remaining": 512,
   "late": 0,
   "nextBatch": [
-    {
-      "url": "/debarras/maison/herault/",
-      "slug": "debarras--maison--herault",
-      "publishAt": "2026-07-25",
-      "needsUniqueDesc": true
-    },
     {
       "url": "/desinfection-logement/bouches-du-rhone/",
       "slug": "desinfection-logement--bouches-du-rhone",
@@ -64,6 +58,12 @@
       "slug": "nettoyage-apres-sinistre--haute-garonne",
       "publishAt": "2026-07-26",
       "needsUniqueDesc": true
+    },
+    {
+      "url": "/nettoyage-apres-squat/bouches-du-rhone/",
+      "slug": "nettoyage-apres-squat--bouches-du-rhone",
+      "publishAt": "2026-07-27",
+      "needsUniqueDesc": false
     }
   ],
   "pages": [
@@ -2565,9 +2565,9 @@
       "slug": "debarras--maison--herault",
       "type": "Page département débarras type",
       "publishAt": "2026-07-25",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 676
     },
     {
       "url": "/desinfection-logement/bouches-du-rhone/",
