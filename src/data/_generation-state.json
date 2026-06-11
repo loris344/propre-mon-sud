@@ -1,52 +1,10 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 252,
-  "remaining": 538,
+  "done": 259,
+  "remaining": 531,
   "late": 0,
   "nextBatch": [
-    {
-      "url": "/debarras/maison/herault/castelnau-le-lez/",
-      "slug": "debarras--maison--herault--castelnau-le-lez",
-      "publishAt": "2026-07-22",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/maison/herault/clermont-l-herault/",
-      "slug": "debarras--maison--herault--clermont-l-herault",
-      "publishAt": "2026-07-22",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/maison/herault/frontignan/",
-      "slug": "debarras--maison--herault--frontignan",
-      "publishAt": "2026-07-22",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/maison/herault/gignac/",
-      "slug": "debarras--maison--herault--gignac",
-      "publishAt": "2026-07-22",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/maison/herault/juvignac/",
-      "slug": "debarras--maison--herault--juvignac",
-      "publishAt": "2026-07-22",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/maison/herault/lattes/",
-      "slug": "debarras--maison--herault--lattes",
-      "publishAt": "2026-07-22",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/maison/herault/lodeve/",
-      "slug": "debarras--maison--herault--lodeve",
-      "publishAt": "2026-07-22",
-      "needsUniqueDesc": true
-    },
     {
       "url": "/debarras/maison/herault/lunel/",
       "slug": "debarras--maison--herault--lunel",
@@ -63,6 +21,48 @@
       "url": "/debarras/maison/herault/pezenas/",
       "slug": "debarras--maison--herault--pezenas",
       "publishAt": "2026-07-23",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/maison/herault/saint-jean-de-vedas/",
+      "slug": "debarras--maison--herault--saint-jean-de-vedas",
+      "publishAt": "2026-07-23",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/maison/herault/serignan/",
+      "slug": "debarras--maison--herault--serignan",
+      "publishAt": "2026-07-23",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/maison/herault/sete/",
+      "slug": "debarras--maison--herault--sete",
+      "publishAt": "2026-07-23",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/maison/herault/valras-plage/",
+      "slug": "debarras--maison--herault--valras-plage",
+      "publishAt": "2026-07-23",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/maison/herault/vias/",
+      "slug": "debarras--maison--herault--vias",
+      "publishAt": "2026-07-24",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/succession/bouches-du-rhone/aix-en-provence/",
+      "slug": "debarras--succession--bouches-du-rhone--aix-en-provence",
+      "publishAt": "2026-07-24",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/succession/bouches-du-rhone/marseille/",
+      "slug": "debarras--succession--bouches-du-rhone--marseille",
+      "publishAt": "2026-07-24",
       "needsUniqueDesc": true
     }
   ],
@@ -2340,63 +2340,63 @@
       "slug": "debarras--maison--herault--castelnau-le-lez",
       "type": "Page ville débarras type",
       "publishAt": "2026-07-22",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 614
     },
     {
       "url": "/debarras/maison/herault/clermont-l-herault/",
       "slug": "debarras--maison--herault--clermont-l-herault",
       "type": "Page ville débarras type",
       "publishAt": "2026-07-22",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 614
     },
     {
       "url": "/debarras/maison/herault/frontignan/",
       "slug": "debarras--maison--herault--frontignan",
       "type": "Page ville débarras type",
       "publishAt": "2026-07-22",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 619
     },
     {
       "url": "/debarras/maison/herault/gignac/",
       "slug": "debarras--maison--herault--gignac",
       "type": "Page ville débarras type",
       "publishAt": "2026-07-22",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 618
     },
     {
       "url": "/debarras/maison/herault/juvignac/",
       "slug": "debarras--maison--herault--juvignac",
       "type": "Page ville débarras type",
       "publishAt": "2026-07-22",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 618
     },
     {
       "url": "/debarras/maison/herault/lattes/",
       "slug": "debarras--maison--herault--lattes",
       "type": "Page ville débarras type",
       "publishAt": "2026-07-22",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 608
     },
     {
       "url": "/debarras/maison/herault/lodeve/",
       "slug": "debarras--maison--herault--lodeve",
       "type": "Page ville débarras type",
       "publishAt": "2026-07-22",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 618
     },
     {
       "url": "/debarras/maison/herault/lunel/",
