@@ -1,40 +1,10 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 144,
-  "remaining": 646,
+  "done": 149,
+  "remaining": 641,
   "late": 0,
   "nextBatch": [
-    {
-      "url": "/nettoyage-insalubre/herault/colombiers/",
-      "slug": "nettoyage-insalubre--herault--colombiers",
-      "publishAt": "2026-07-06",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-insalubre/herault/fabregues/",
-      "slug": "nettoyage-insalubre--herault--fabregues",
-      "publishAt": "2026-07-06",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-insalubre/herault/florensac/",
-      "slug": "nettoyage-insalubre--herault--florensac",
-      "publishAt": "2026-07-06",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-insalubre/herault/frontignan/",
-      "slug": "nettoyage-insalubre--herault--frontignan",
-      "publishAt": "2026-07-07",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-insalubre/herault/gigean/",
-      "slug": "nettoyage-insalubre--herault--gigean",
-      "publishAt": "2026-07-07",
-      "needsUniqueDesc": false
-    },
     {
       "url": "/nettoyage-insalubre/herault/gignac/",
       "slug": "nettoyage-insalubre--herault--gignac",
@@ -64,6 +34,36 @@
       "slug": "nettoyage-insalubre--herault--la-grande-motte",
       "publishAt": "2026-07-07",
       "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/herault/lattes/",
+      "slug": "nettoyage-insalubre--herault--lattes",
+      "publishAt": "2026-07-08",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/herault/le-cres/",
+      "slug": "nettoyage-insalubre--herault--le-cres",
+      "publishAt": "2026-07-08",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/herault/lodeve/",
+      "slug": "nettoyage-insalubre--herault--lodeve",
+      "publishAt": "2026-07-08",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/herault/lunel-viel/",
+      "slug": "nettoyage-insalubre--herault--lunel-viel",
+      "publishAt": "2026-07-08",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/herault/lunel/",
+      "slug": "nettoyage-insalubre--herault--lunel",
+      "publishAt": "2026-07-08",
+      "needsUniqueDesc": true
     }
   ],
   "pages": [
@@ -1368,45 +1368,45 @@
       "slug": "nettoyage-insalubre--herault--colombiers",
       "type": "Page ville service",
       "publishAt": "2026-07-06",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 728
     },
     {
       "url": "/nettoyage-insalubre/herault/fabregues/",
       "slug": "nettoyage-insalubre--herault--fabregues",
       "type": "Page ville service",
       "publishAt": "2026-07-06",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 713
     },
     {
       "url": "/nettoyage-insalubre/herault/florensac/",
       "slug": "nettoyage-insalubre--herault--florensac",
       "type": "Page ville service",
       "publishAt": "2026-07-06",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 724
     },
     {
       "url": "/nettoyage-insalubre/herault/frontignan/",
       "slug": "nettoyage-insalubre--herault--frontignan",
       "type": "Page ville service",
       "publishAt": "2026-07-07",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 694
     },
     {
       "url": "/nettoyage-insalubre/herault/gigean/",
       "slug": "nettoyage-insalubre--herault--gigean",
       "type": "Page ville service",
       "publishAt": "2026-07-07",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 726
     },
     {
       "url": "/nettoyage-insalubre/herault/gignac/",
