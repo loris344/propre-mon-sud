@@ -1,40 +1,10 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 502,
-  "remaining": 288,
+  "done": 507,
+  "remaining": 283,
   "late": 0,
   "nextBatch": [
-    {
-      "url": "/remise-en-etat-logement/bouches-du-rhone/arles/",
-      "slug": "remise-en-etat-logement--bouches-du-rhone--arles",
-      "publishAt": "2026-08-26",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/remise-en-etat-logement/bouches-du-rhone/aubagne/",
-      "slug": "remise-en-etat-logement--bouches-du-rhone--aubagne",
-      "publishAt": "2026-08-26",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/remise-en-etat-logement/gard/bagnols-sur-ceze/",
-      "slug": "remise-en-etat-logement--gard--bagnols-sur-ceze",
-      "publishAt": "2026-08-27",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/remise-en-etat-logement/haute-garonne/colomiers/",
-      "slug": "remise-en-etat-logement--haute-garonne--colomiers",
-      "publishAt": "2026-08-27",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/remise-en-etat-logement/haute-garonne/muret/",
-      "slug": "remise-en-etat-logement--haute-garonne--muret",
-      "publishAt": "2026-08-27",
-      "needsUniqueDesc": true
-    },
     {
       "url": "/debarras/bouches-du-rhone/",
       "slug": "debarras--bouches-du-rhone",
@@ -62,6 +32,36 @@
     {
       "url": "/debarras/bouches-du-rhone/arles/",
       "slug": "debarras--bouches-du-rhone--arles",
+      "publishAt": "2026-08-28",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/bouches-du-rhone/aubagne/",
+      "slug": "debarras--bouches-du-rhone--aubagne",
+      "publishAt": "2026-08-28",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/bouches-du-rhone/chateaurenard/",
+      "slug": "debarras--bouches-du-rhone--chateaurenard",
+      "publishAt": "2026-08-28",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/bouches-du-rhone/istres/",
+      "slug": "debarras--bouches-du-rhone--istres",
+      "publishAt": "2026-08-28",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/bouches-du-rhone/la-ciotat/",
+      "slug": "debarras--bouches-du-rhone--la-ciotat",
+      "publishAt": "2026-08-28",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/bouches-du-rhone/marignane/",
+      "slug": "debarras--bouches-du-rhone--marignane",
       "publishAt": "2026-08-28",
       "needsUniqueDesc": true
     }
@@ -4590,45 +4590,45 @@
       "slug": "remise-en-etat-logement--bouches-du-rhone--arles",
       "type": "Page ville service",
       "publishAt": "2026-08-26",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 622
     },
     {
       "url": "/remise-en-etat-logement/bouches-du-rhone/aubagne/",
       "slug": "remise-en-etat-logement--bouches-du-rhone--aubagne",
       "type": "Page ville service",
       "publishAt": "2026-08-26",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 606
     },
     {
       "url": "/remise-en-etat-logement/gard/bagnols-sur-ceze/",
       "slug": "remise-en-etat-logement--gard--bagnols-sur-ceze",
       "type": "Page ville service",
       "publishAt": "2026-08-27",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 609
     },
     {
       "url": "/remise-en-etat-logement/haute-garonne/colomiers/",
       "slug": "remise-en-etat-logement--haute-garonne--colomiers",
       "type": "Page ville service",
       "publishAt": "2026-08-27",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 608
     },
     {
       "url": "/remise-en-etat-logement/haute-garonne/muret/",
       "slug": "remise-en-etat-logement--haute-garonne--muret",
       "type": "Page ville service",
       "publishAt": "2026-08-27",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 604
     },
     {
       "url": "/debarras/bouches-du-rhone/",
