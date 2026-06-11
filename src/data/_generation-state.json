@@ -1,34 +1,10 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 673,
-  "remaining": 117,
+  "done": 677,
+  "remaining": 113,
   "late": 0,
   "nextBatch": [
-    {
-      "url": "/nettoyage-apres-sinistre/aveyron/millau/",
-      "slug": "nettoyage-apres-sinistre--aveyron--millau",
-      "publishAt": "2026-09-21",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/nettoyage-apres-sinistre/aveyron/rodez/",
-      "slug": "nettoyage-apres-sinistre--aveyron--rodez",
-      "publishAt": "2026-09-21",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/nettoyage-apres-sinistre/tarn/albi/",
-      "slug": "nettoyage-apres-sinistre--tarn--albi",
-      "publishAt": "2026-09-21",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/nettoyage-apres-sinistre/tarn/castres/",
-      "slug": "nettoyage-apres-sinistre--tarn--castres",
-      "publishAt": "2026-09-21",
-      "needsUniqueDesc": true
-    },
     {
       "url": "/nettoyage-apres-squat/aveyron/decazeville/",
       "slug": "nettoyage-apres-squat--aveyron--decazeville",
@@ -63,6 +39,30 @@
       "url": "/nettoyage-apres-squat/aveyron/villefranche-de-rouergue/",
       "slug": "nettoyage-apres-squat--aveyron--villefranche-de-rouergue",
       "publishAt": "2026-09-22",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-squat/tarn/albi/",
+      "slug": "nettoyage-apres-squat--tarn--albi",
+      "publishAt": "2026-09-22",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-squat/tarn/carmaux/",
+      "slug": "nettoyage-apres-squat--tarn--carmaux",
+      "publishAt": "2026-09-23",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-squat/tarn/castres/",
+      "slug": "nettoyage-apres-squat--tarn--castres",
+      "publishAt": "2026-09-23",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-squat/tarn/gaillac/",
+      "slug": "nettoyage-apres-squat--tarn--gaillac",
+      "publishAt": "2026-09-23",
       "needsUniqueDesc": false
     }
   ],
@@ -6129,36 +6129,36 @@
       "slug": "nettoyage-apres-sinistre--aveyron--millau",
       "type": "Page ville service",
       "publishAt": "2026-09-21",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 627
     },
     {
       "url": "/nettoyage-apres-sinistre/aveyron/rodez/",
       "slug": "nettoyage-apres-sinistre--aveyron--rodez",
       "type": "Page ville service",
       "publishAt": "2026-09-21",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 617
     },
     {
       "url": "/nettoyage-apres-sinistre/tarn/albi/",
       "slug": "nettoyage-apres-sinistre--tarn--albi",
       "type": "Page ville service",
       "publishAt": "2026-09-21",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 614
     },
     {
       "url": "/nettoyage-apres-sinistre/tarn/castres/",
       "slug": "nettoyage-apres-sinistre--tarn--castres",
       "type": "Page ville service",
       "publishAt": "2026-09-21",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 626
     },
     {
       "url": "/nettoyage-apres-squat/aveyron/decazeville/",
