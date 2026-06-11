@@ -1,40 +1,10 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 159,
-  "remaining": 631,
+  "done": 164,
+  "remaining": 626,
   "late": 0,
   "nextBatch": [
-    {
-      "url": "/nettoyage-insalubre/herault/maraussan/",
-      "slug": "nettoyage-insalubre--herault--maraussan",
-      "publishAt": "2026-07-08",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-insalubre/herault/marseillan/",
-      "slug": "nettoyage-insalubre--herault--marseillan",
-      "publishAt": "2026-07-08",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-insalubre/herault/marsillargues/",
-      "slug": "nettoyage-insalubre--herault--marsillargues",
-      "publishAt": "2026-07-09",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-insalubre/herault/mauguio/",
-      "slug": "nettoyage-insalubre--herault--mauguio",
-      "publishAt": "2026-07-09",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-insalubre/herault/meze/",
-      "slug": "nettoyage-insalubre--herault--meze",
-      "publishAt": "2026-07-09",
-      "needsUniqueDesc": false
-    },
     {
       "url": "/nettoyage-insalubre/herault/montagnac/",
       "slug": "nettoyage-insalubre--herault--montagnac",
@@ -62,6 +32,36 @@
     {
       "url": "/nettoyage-insalubre/herault/pezenas/",
       "slug": "nettoyage-insalubre--herault--pezenas",
+      "publishAt": "2026-07-10",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/herault/portiragnes/",
+      "slug": "nettoyage-insalubre--herault--portiragnes",
+      "publishAt": "2026-07-10",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/herault/poussan/",
+      "slug": "nettoyage-insalubre--herault--poussan",
+      "publishAt": "2026-07-10",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/herault/prades-le-lez/",
+      "slug": "nettoyage-insalubre--herault--prades-le-lez",
+      "publishAt": "2026-07-10",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/herault/saint-andre-de-sangonis/",
+      "slug": "nettoyage-insalubre--herault--saint-andre-de-sangonis",
+      "publishAt": "2026-07-10",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/herault/saint-clement-de-riviere/",
+      "slug": "nettoyage-insalubre--herault--saint-clement-de-riviere",
       "publishAt": "2026-07-10",
       "needsUniqueDesc": false
     }
@@ -1503,45 +1503,45 @@
       "slug": "nettoyage-insalubre--herault--maraussan",
       "type": "Page ville service",
       "publishAt": "2026-07-08",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 749
     },
     {
       "url": "/nettoyage-insalubre/herault/marseillan/",
       "slug": "nettoyage-insalubre--herault--marseillan",
       "type": "Page ville service",
       "publishAt": "2026-07-08",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 752
     },
     {
       "url": "/nettoyage-insalubre/herault/marsillargues/",
       "slug": "nettoyage-insalubre--herault--marsillargues",
       "type": "Page ville service",
       "publishAt": "2026-07-09",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 776
     },
     {
       "url": "/nettoyage-insalubre/herault/mauguio/",
       "slug": "nettoyage-insalubre--herault--mauguio",
       "type": "Page ville service",
       "publishAt": "2026-07-09",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 759
     },
     {
       "url": "/nettoyage-insalubre/herault/meze/",
       "slug": "nettoyage-insalubre--herault--meze",
       "type": "Page ville service",
       "publishAt": "2026-07-09",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 761
     },
     {
       "url": "/nettoyage-insalubre/herault/montagnac/",
