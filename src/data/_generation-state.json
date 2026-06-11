@@ -1,46 +1,10 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 299,
-  "remaining": 491,
+  "done": 305,
+  "remaining": 485,
   "late": 0,
   "nextBatch": [
-    {
-      "url": "/desinfection-logement/bouches-du-rhone/allauch/",
-      "slug": "desinfection-logement--bouches-du-rhone--allauch",
-      "publishAt": "2026-07-28",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/desinfection-logement/bouches-du-rhone/arles/",
-      "slug": "desinfection-logement--bouches-du-rhone--arles",
-      "publishAt": "2026-07-28",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/desinfection-logement/bouches-du-rhone/aubagne/",
-      "slug": "desinfection-logement--bouches-du-rhone--aubagne",
-      "publishAt": "2026-07-29",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/desinfection-logement/bouches-du-rhone/chateaurenard/",
-      "slug": "desinfection-logement--bouches-du-rhone--chateaurenard",
-      "publishAt": "2026-07-29",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/desinfection-logement/bouches-du-rhone/istres/",
-      "slug": "desinfection-logement--bouches-du-rhone--istres",
-      "publishAt": "2026-07-29",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/desinfection-logement/bouches-du-rhone/la-ciotat/",
-      "slug": "desinfection-logement--bouches-du-rhone--la-ciotat",
-      "publishAt": "2026-07-29",
-      "needsUniqueDesc": false
-    },
     {
       "url": "/desinfection-logement/bouches-du-rhone/marignane/",
       "slug": "desinfection-logement--bouches-du-rhone--marignane",
@@ -62,6 +26,42 @@
     {
       "url": "/desinfection-logement/bouches-du-rhone/salon-de-provence/",
       "slug": "desinfection-logement--bouches-du-rhone--salon-de-provence",
+      "publishAt": "2026-07-30",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/desinfection-logement/bouches-du-rhone/vitrolles/",
+      "slug": "desinfection-logement--bouches-du-rhone--vitrolles",
+      "publishAt": "2026-07-30",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/desinfection-logement/gard/aigues-mortes/",
+      "slug": "desinfection-logement--gard--aigues-mortes",
+      "publishAt": "2026-07-30",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/desinfection-logement/gard/bagnols-sur-ceze/",
+      "slug": "desinfection-logement--gard--bagnols-sur-ceze",
+      "publishAt": "2026-07-30",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/desinfection-logement/gard/beaucaire/",
+      "slug": "desinfection-logement--gard--beaucaire",
+      "publishAt": "2026-07-30",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/desinfection-logement/gard/le-grau-du-roi/",
+      "slug": "desinfection-logement--gard--le-grau-du-roi",
+      "publishAt": "2026-07-30",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/desinfection-logement/gard/les-angles/",
+      "slug": "desinfection-logement--gard--les-angles",
       "publishAt": "2026-07-30",
       "needsUniqueDesc": false
     }
@@ -2763,54 +2763,54 @@
       "slug": "desinfection-logement--bouches-du-rhone--allauch",
       "type": "Page ville service",
       "publishAt": "2026-07-28",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 616
     },
     {
       "url": "/desinfection-logement/bouches-du-rhone/arles/",
       "slug": "desinfection-logement--bouches-du-rhone--arles",
       "type": "Page ville service",
       "publishAt": "2026-07-28",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 621
     },
     {
       "url": "/desinfection-logement/bouches-du-rhone/aubagne/",
       "slug": "desinfection-logement--bouches-du-rhone--aubagne",
       "type": "Page ville service",
       "publishAt": "2026-07-29",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 613
     },
     {
       "url": "/desinfection-logement/bouches-du-rhone/chateaurenard/",
       "slug": "desinfection-logement--bouches-du-rhone--chateaurenard",
       "type": "Page ville service",
       "publishAt": "2026-07-29",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 611
     },
     {
       "url": "/desinfection-logement/bouches-du-rhone/istres/",
       "slug": "desinfection-logement--bouches-du-rhone--istres",
       "type": "Page ville service",
       "publishAt": "2026-07-29",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 609
     },
     {
       "url": "/desinfection-logement/bouches-du-rhone/la-ciotat/",
       "slug": "desinfection-logement--bouches-du-rhone--la-ciotat",
       "type": "Page ville service",
       "publishAt": "2026-07-29",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 600
     },
     {
       "url": "/desinfection-logement/bouches-du-rhone/marignane/",
