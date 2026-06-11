@@ -1,68 +1,68 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 591,
-  "remaining": 199,
+  "done": 654,
+  "remaining": 136,
   "late": 0,
   "nextBatch": [
     {
-      "url": "/debarras/succession/bouches-du-rhone/arles/",
-      "slug": "debarras--succession--bouches-du-rhone--arles",
-      "publishAt": "2026-09-08",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/succession/bouches-du-rhone/aubagne/",
-      "slug": "debarras--succession--bouches-du-rhone--aubagne",
-      "publishAt": "2026-09-08",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/succession/gard/bagnols-sur-ceze/",
-      "slug": "debarras--succession--gard--bagnols-sur-ceze",
-      "publishAt": "2026-09-08",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/succession/haute-garonne/colomiers/",
-      "slug": "debarras--succession--haute-garonne--colomiers",
-      "publishAt": "2026-09-08",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/succession/haute-garonne/muret/",
-      "slug": "debarras--succession--haute-garonne--muret",
-      "publishAt": "2026-09-09",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/zones-intervention/",
-      "slug": "zones-intervention",
-      "publishAt": "2026-09-09",
+      "url": "/desinfection-logement/tarn/carmaux/",
+      "slug": "desinfection-logement--tarn--carmaux",
+      "publishAt": "2026-09-18",
       "needsUniqueDesc": false
     },
     {
-      "url": "/zones-intervention/bouches-du-rhone/",
-      "slug": "zones-intervention--bouches-du-rhone",
-      "publishAt": "2026-09-09",
+      "url": "/desinfection-logement/tarn/castres/",
+      "slug": "desinfection-logement--tarn--castres",
+      "publishAt": "2026-09-18",
       "needsUniqueDesc": false
     },
     {
-      "url": "/zones-intervention/gard/",
-      "slug": "zones-intervention--gard",
-      "publishAt": "2026-09-09",
+      "url": "/desinfection-logement/tarn/gaillac/",
+      "slug": "desinfection-logement--tarn--gaillac",
+      "publishAt": "2026-09-19",
       "needsUniqueDesc": false
     },
     {
-      "url": "/zones-intervention/haute-garonne/",
-      "slug": "zones-intervention--haute-garonne",
-      "publishAt": "2026-09-09",
+      "url": "/desinfection-logement/tarn/graulhet/",
+      "slug": "desinfection-logement--tarn--graulhet",
+      "publishAt": "2026-09-19",
       "needsUniqueDesc": false
     },
     {
-      "url": "/realisations/",
-      "slug": "realisations",
-      "publishAt": "2026-09-09",
+      "url": "/desinfection-logement/tarn/lavaur/",
+      "slug": "desinfection-logement--tarn--lavaur",
+      "publishAt": "2026-09-19",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/desinfection-logement/tarn/mazamet/",
+      "slug": "desinfection-logement--tarn--mazamet",
+      "publishAt": "2026-09-19",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-deces/aveyron/decazeville/",
+      "slug": "nettoyage-apres-deces--aveyron--decazeville",
+      "publishAt": "2026-09-19",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-deces/aveyron/millau/",
+      "slug": "nettoyage-apres-deces--aveyron--millau",
+      "publishAt": "2026-09-19",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-deces/aveyron/onet-le-chateau/",
+      "slug": "nettoyage-apres-deces--aveyron--onet-le-chateau",
+      "publishAt": "2026-09-19",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-deces/aveyron/rodez/",
+      "slug": "nettoyage-apres-deces--aveyron--rodez",
+      "publishAt": "2026-09-20",
       "needsUniqueDesc": false
     }
   ],
@@ -5391,567 +5391,567 @@
       "slug": "debarras--succession--bouches-du-rhone--arles",
       "type": "Page ville débarras type",
       "publishAt": "2026-09-08",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 603
     },
     {
       "url": "/debarras/succession/bouches-du-rhone/aubagne/",
       "slug": "debarras--succession--bouches-du-rhone--aubagne",
       "type": "Page ville débarras type",
       "publishAt": "2026-09-08",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 610
     },
     {
       "url": "/debarras/succession/gard/bagnols-sur-ceze/",
       "slug": "debarras--succession--gard--bagnols-sur-ceze",
       "type": "Page ville débarras type",
       "publishAt": "2026-09-08",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 605
     },
     {
       "url": "/debarras/succession/haute-garonne/colomiers/",
       "slug": "debarras--succession--haute-garonne--colomiers",
       "type": "Page ville débarras type",
       "publishAt": "2026-09-08",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 602
     },
     {
       "url": "/debarras/succession/haute-garonne/muret/",
       "slug": "debarras--succession--haute-garonne--muret",
       "type": "Page ville débarras type",
       "publishAt": "2026-09-09",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 602
     },
     {
       "url": "/zones-intervention/",
       "slug": "zones-intervention",
       "type": "Page hub géographique",
       "publishAt": "2026-09-09",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 819
     },
     {
       "url": "/zones-intervention/bouches-du-rhone/",
       "slug": "zones-intervention--bouches-du-rhone",
       "type": "Page zones département",
       "publishAt": "2026-09-09",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 659
     },
     {
       "url": "/zones-intervention/gard/",
       "slug": "zones-intervention--gard",
       "type": "Page zones département",
       "publishAt": "2026-09-09",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 691
     },
     {
       "url": "/zones-intervention/haute-garonne/",
       "slug": "zones-intervention--haute-garonne",
       "type": "Page zones département",
       "publishAt": "2026-09-09",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 652
     },
     {
       "url": "/realisations/",
       "slug": "realisations",
       "type": "Page hub réalisations",
       "publishAt": "2026-09-09",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 858
     },
     {
       "url": "/realisations/debarras-appartement/",
       "slug": "realisations--debarras-appartement",
       "type": "Réalisation catégorie",
       "publishAt": "2026-09-09",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 607
     },
     {
       "url": "/realisations/debarras-maison/",
       "slug": "realisations--debarras-maison",
       "type": "Réalisation catégorie",
       "publishAt": "2026-09-10",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 632
     },
     {
       "url": "/realisations/debarras-succession/",
       "slug": "realisations--debarras-succession",
       "type": "Réalisation catégorie",
       "publishAt": "2026-09-10",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 632
     },
     {
       "url": "/realisations/desinfection-logement/",
       "slug": "realisations--desinfection-logement",
       "type": "Réalisation catégorie",
       "publishAt": "2026-09-10",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 611
     },
     {
       "url": "/realisations/nettoyage-apres-deces/",
       "slug": "realisations--nettoyage-apres-deces",
       "type": "Réalisation catégorie",
       "publishAt": "2026-09-10",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 615
     },
     {
       "url": "/realisations/nettoyage-apres-squat/",
       "slug": "realisations--nettoyage-apres-squat",
       "type": "Réalisation catégorie",
       "publishAt": "2026-09-10",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 622
     },
     {
       "url": "/realisations/nettoyage-diogene/",
       "slug": "realisations--nettoyage-diogene",
       "type": "Réalisation catégorie",
       "publishAt": "2026-09-10",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 615
     },
     {
       "url": "/realisations/nettoyage-insalubre/",
       "slug": "realisations--nettoyage-insalubre",
       "type": "Réalisation catégorie",
       "publishAt": "2026-09-10",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 607
     },
     {
       "url": "/realisations/remise-en-etat-logement/",
       "slug": "realisations--remise-en-etat-logement",
       "type": "Réalisation catégorie",
       "publishAt": "2026-09-11",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 617
     },
     {
       "url": "/debarras/maison/bouches-du-rhone/",
       "slug": "debarras--maison--bouches-du-rhone",
       "type": "Page département débarras type",
       "publishAt": "2026-09-12",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 656
     },
     {
       "url": "/debarras/maison/gard/",
       "slug": "debarras--maison--gard",
       "type": "Page département débarras type",
       "publishAt": "2026-09-12",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 658
     },
     {
       "url": "/debarras/maison/haute-garonne/",
       "slug": "debarras--maison--haute-garonne",
       "type": "Page département débarras type",
       "publishAt": "2026-09-12",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 645
     },
     {
       "url": "/nettoyage-apres-sinistre/",
       "slug": "nettoyage-apres-sinistre",
       "type": "Page mère service secondaire",
       "publishAt": "2026-09-12",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 814
     },
     {
       "url": "/nettoyage-apres-sinistre/degat-des-eaux/",
       "slug": "nettoyage-apres-sinistre--degat-des-eaux",
       "type": "Page service sinistre",
       "publishAt": "2026-09-13",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 602
     },
     {
       "url": "/nettoyage-apres-sinistre/incendie/",
       "slug": "nettoyage-apres-sinistre--incendie",
       "type": "Page service sinistre",
       "publishAt": "2026-09-13",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 612
     },
     {
       "url": "/nettoyage-apres-sinistre/remise-en-etat/",
       "slug": "nettoyage-apres-sinistre--remise-en-etat",
       "type": "Page service sinistre",
       "publishAt": "2026-09-13",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 629
     },
     {
       "url": "/nettoyage-debarras-proprietaire-bailleur/",
       "slug": "nettoyage-debarras-proprietaire-bailleur",
       "type": "Page persona",
       "publishAt": "2026-09-13",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 617
     },
     {
       "url": "/nettoyage-debarras-proprietaire-bailleur/agence-immobiliere/",
       "slug": "nettoyage-debarras-proprietaire-bailleur--agence-immobiliere",
       "type": "Page persona",
       "publishAt": "2026-09-13",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 616
     },
     {
       "url": "/nettoyage-debarras-proprietaire-bailleur/apres-squat/",
       "slug": "nettoyage-debarras-proprietaire-bailleur--apres-squat",
       "type": "Page persona",
       "publishAt": "2026-09-13",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 625
     },
     {
       "url": "/nettoyage-debarras-proprietaire-bailleur/locataire-parti/",
       "slug": "nettoyage-debarras-proprietaire-bailleur--locataire-parti",
       "type": "Page persona",
       "publishAt": "2026-09-13",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 620
     },
     {
       "url": "/nettoyage-debarras-proprietaire-bailleur/logement-insalubre/",
       "slug": "nettoyage-debarras-proprietaire-bailleur--logement-insalubre",
       "type": "Page persona",
       "publishAt": "2026-09-14",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 618
     },
     {
       "url": "/nettoyage-debarras-proprietaire-bailleur/notaire/",
       "slug": "nettoyage-debarras-proprietaire-bailleur--notaire",
       "type": "Page persona",
       "publishAt": "2026-09-14",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 619
     },
     {
       "url": "/nettoyage-debarras-proprietaire-bailleur/syndic/",
       "slug": "nettoyage-debarras-proprietaire-bailleur--syndic",
       "type": "Page persona",
       "publishAt": "2026-09-14",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 626
     },
     {
       "url": "/nettoyage-diogene/logement-encombre/",
       "slug": "nettoyage-diogene--logement-encombre",
       "type": "Page satellite",
       "publishAt": "2026-09-14",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 618
     },
     {
       "url": "/nettoyage-diogene/syllogomanie/",
       "slug": "nettoyage-diogene--syllogomanie",
       "type": "Page satellite",
       "publishAt": "2026-09-14",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 625
     },
     {
       "url": "/nettoyage-diogene/syndrome-noe/",
       "slug": "nettoyage-diogene--syndrome-noe",
       "type": "Page satellite",
       "publishAt": "2026-09-14",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 626
     },
     {
       "url": "/remise-en-etat-logement/",
       "slug": "remise-en-etat-logement",
       "type": "Page mère transversale",
       "publishAt": "2026-09-14",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 825
     },
     {
       "url": "/remise-en-etat-logement/apres-deces/",
       "slug": "remise-en-etat-logement--apres-deces",
       "type": "Page service remise en état",
       "publishAt": "2026-09-15",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 610
     },
     {
       "url": "/remise-en-etat-logement/apres-insalubrite/",
       "slug": "remise-en-etat-logement--apres-insalubrite",
       "type": "Page service remise en état",
       "publishAt": "2026-09-15",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 602
     },
     {
       "url": "/remise-en-etat-logement/apres-sinistre/",
       "slug": "remise-en-etat-logement--apres-sinistre",
       "type": "Page service remise en état",
       "publishAt": "2026-09-15",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 610
     },
     {
       "url": "/remise-en-etat-logement/apres-squat/",
       "slug": "remise-en-etat-logement--apres-squat",
       "type": "Page service remise en état",
       "publishAt": "2026-09-15",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 603
     },
     {
       "url": "/remise-en-etat-logement/locatif/",
       "slug": "remise-en-etat-logement--locatif",
       "type": "Page service remise en état",
       "publishAt": "2026-09-15",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 619
     },
     {
       "url": "/desinfection-logement/aveyron/",
       "slug": "desinfection-logement--aveyron",
       "type": "Page département service",
       "publishAt": "2026-09-15",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 616
     },
     {
       "url": "/desinfection-logement/tarn/",
       "slug": "desinfection-logement--tarn",
       "type": "Page département service",
       "publishAt": "2026-09-15",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 632
     },
     {
       "url": "/nettoyage-apres-deces/aveyron/",
       "slug": "nettoyage-apres-deces--aveyron",
       "type": "Page département service",
       "publishAt": "2026-09-16",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 642
     },
     {
       "url": "/nettoyage-apres-deces/tarn/",
       "slug": "nettoyage-apres-deces--tarn",
       "type": "Page département service",
       "publishAt": "2026-09-16",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 620
     },
     {
       "url": "/nettoyage-apres-sinistre/aveyron/",
       "slug": "nettoyage-apres-sinistre--aveyron",
       "type": "Page département service",
       "publishAt": "2026-09-16",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 623
     },
     {
       "url": "/nettoyage-apres-sinistre/tarn/",
       "slug": "nettoyage-apres-sinistre--tarn",
       "type": "Page département service",
       "publishAt": "2026-09-16",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 629
     },
     {
       "url": "/nettoyage-apres-squat/aveyron/",
       "slug": "nettoyage-apres-squat--aveyron",
       "type": "Page département service",
       "publishAt": "2026-09-16",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 610
     },
     {
       "url": "/nettoyage-apres-squat/tarn/",
       "slug": "nettoyage-apres-squat--tarn",
       "type": "Page département service",
       "publishAt": "2026-09-16",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 616
     },
     {
       "url": "/nettoyage-diogene/aveyron/",
       "slug": "nettoyage-diogene--aveyron",
       "type": "Page département service",
       "publishAt": "2026-09-16",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 638
     },
     {
       "url": "/nettoyage-diogene/tarn/",
       "slug": "nettoyage-diogene--tarn",
       "type": "Page département service",
       "publishAt": "2026-09-17",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 639
     },
     {
       "url": "/nettoyage-insalubre/aveyron/",
       "slug": "nettoyage-insalubre--aveyron",
       "type": "Page département service",
       "publishAt": "2026-09-17",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 660
     },
     {
       "url": "/nettoyage-insalubre/tarn/",
       "slug": "nettoyage-insalubre--tarn",
       "type": "Page département service",
       "publishAt": "2026-09-17",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 652
     },
     {
       "url": "/remise-en-etat-logement/aveyron/",
       "slug": "remise-en-etat-logement--aveyron",
       "type": "Page département service",
       "publishAt": "2026-09-17",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 624
     },
     {
       "url": "/remise-en-etat-logement/tarn/",
       "slug": "remise-en-etat-logement--tarn",
       "type": "Page département service",
       "publishAt": "2026-09-17",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 616
     },
     {
       "url": "/desinfection-logement/aveyron/decazeville/",
       "slug": "desinfection-logement--aveyron--decazeville",
       "type": "Page ville service",
       "publishAt": "2026-09-17",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 608
     },
     {
       "url": "/desinfection-logement/aveyron/millau/",
       "slug": "desinfection-logement--aveyron--millau",
       "type": "Page ville service",
       "publishAt": "2026-09-17",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 628
     },
     {
       "url": "/desinfection-logement/aveyron/onet-le-chateau/",
       "slug": "desinfection-logement--aveyron--onet-le-chateau",
       "type": "Page ville service",
       "publishAt": "2026-09-18",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 625
     },
     {
       "url": "/desinfection-logement/aveyron/rodez/",
       "slug": "desinfection-logement--aveyron--rodez",
       "type": "Page ville service",
       "publishAt": "2026-09-18",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 685
     },
     {
       "url": "/desinfection-logement/aveyron/saint-affrique/",
       "slug": "desinfection-logement--aveyron--saint-affrique",
       "type": "Page ville service",
       "publishAt": "2026-09-18",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 674
     },
     {
       "url": "/desinfection-logement/aveyron/villefranche-de-rouergue/",
       "slug": "desinfection-logement--aveyron--villefranche-de-rouergue",
       "type": "Page ville service",
       "publishAt": "2026-09-18",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 686
     },
     {
       "url": "/desinfection-logement/tarn/albi/",
       "slug": "desinfection-logement--tarn--albi",
       "type": "Page ville service",
       "publishAt": "2026-09-18",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 690
     },
     {
       "url": "/desinfection-logement/tarn/carmaux/",
