@@ -1,52 +1,10 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 528,
-  "remaining": 262,
+  "done": 535,
+  "remaining": 255,
   "late": 0,
   "nextBatch": [
-    {
-      "url": "/debarras/gard/saint-gilles/",
-      "slug": "debarras--gard--saint-gilles",
-      "publishAt": "2026-08-30",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/gard/uzes/",
-      "slug": "debarras--gard--uzes",
-      "publishAt": "2026-08-30",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/gard/villeneuve-les-avignon/",
-      "slug": "debarras--gard--villeneuve-les-avignon",
-      "publishAt": "2026-08-30",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/haute-garonne/balma/",
-      "slug": "debarras--haute-garonne--balma",
-      "publishAt": "2026-08-30",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/haute-garonne/blagnac/",
-      "slug": "debarras--haute-garonne--blagnac",
-      "publishAt": "2026-08-31",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/haute-garonne/colomiers/",
-      "slug": "debarras--haute-garonne--colomiers",
-      "publishAt": "2026-08-31",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/haute-garonne/cugnaux/",
-      "slug": "debarras--haute-garonne--cugnaux",
-      "publishAt": "2026-08-31",
-      "needsUniqueDesc": true
-    },
     {
       "url": "/debarras/haute-garonne/l-union/",
       "slug": "debarras--haute-garonne--l-union",
@@ -63,6 +21,48 @@
       "url": "/debarras/haute-garonne/revel/",
       "slug": "debarras--haute-garonne--revel",
       "publishAt": "2026-08-31",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/haute-garonne/saint-gaudens/",
+      "slug": "debarras--haute-garonne--saint-gaudens",
+      "publishAt": "2026-08-31",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/haute-garonne/saint-jean/",
+      "slug": "debarras--haute-garonne--saint-jean",
+      "publishAt": "2026-09-01",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/haute-garonne/tournefeuille/",
+      "slug": "debarras--haute-garonne--tournefeuille",
+      "publishAt": "2026-09-01",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/appartement/",
+      "slug": "debarras--appartement",
+      "publishAt": "2026-09-01",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/apres-deces/",
+      "slug": "debarras--apres-deces",
+      "publishAt": "2026-09-01",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/apres-squat/",
+      "slug": "debarras--apres-squat",
+      "publishAt": "2026-09-01",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/cave/",
+      "slug": "debarras--cave",
+      "publishAt": "2026-09-01",
       "needsUniqueDesc": true
     }
   ],
@@ -4824,63 +4824,63 @@
       "slug": "debarras--gard--saint-gilles",
       "type": "Page ville débarras",
       "publishAt": "2026-08-30",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 611
     },
     {
       "url": "/debarras/gard/uzes/",
       "slug": "debarras--gard--uzes",
       "type": "Page ville débarras",
       "publishAt": "2026-08-30",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 618
     },
     {
       "url": "/debarras/gard/villeneuve-les-avignon/",
       "slug": "debarras--gard--villeneuve-les-avignon",
       "type": "Page ville débarras",
       "publishAt": "2026-08-30",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 609
     },
     {
       "url": "/debarras/haute-garonne/balma/",
       "slug": "debarras--haute-garonne--balma",
       "type": "Page ville débarras",
       "publishAt": "2026-08-30",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 604
     },
     {
       "url": "/debarras/haute-garonne/blagnac/",
       "slug": "debarras--haute-garonne--blagnac",
       "type": "Page ville débarras",
       "publishAt": "2026-08-31",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 602
     },
     {
       "url": "/debarras/haute-garonne/colomiers/",
       "slug": "debarras--haute-garonne--colomiers",
       "type": "Page ville débarras",
       "publishAt": "2026-08-31",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 603
     },
     {
       "url": "/debarras/haute-garonne/cugnaux/",
       "slug": "debarras--haute-garonne--cugnaux",
       "type": "Page ville débarras",
       "publishAt": "2026-08-31",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 600
     },
     {
       "url": "/debarras/haute-garonne/l-union/",
