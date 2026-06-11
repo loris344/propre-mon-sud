@@ -1,22 +1,10 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 187,
-  "remaining": 603,
+  "done": 189,
+  "remaining": 601,
   "late": 0,
   "nextBatch": [
-    {
-      "url": "/remise-en-etat-logement/bouches-du-rhone/aix-en-provence/",
-      "slug": "remise-en-etat-logement--bouches-du-rhone--aix-en-provence",
-      "publishAt": "2026-07-12",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/remise-en-etat-logement/bouches-du-rhone/marseille/",
-      "slug": "remise-en-etat-logement--bouches-du-rhone--marseille",
-      "publishAt": "2026-07-12",
-      "needsUniqueDesc": true
-    },
     {
       "url": "/remise-en-etat-logement/gard/ales/",
       "slug": "remise-en-etat-logement--gard--ales",
@@ -62,6 +50,18 @@
     {
       "url": "/debarras/bouches-du-rhone/aix-en-provence/",
       "slug": "debarras--bouches-du-rhone--aix-en-provence",
+      "publishAt": "2026-07-14",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/bouches-du-rhone/marseille/",
+      "slug": "debarras--bouches-du-rhone--marseille",
+      "publishAt": "2026-07-14",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/gard/ales/",
+      "slug": "debarras--gard--ales",
       "publishAt": "2026-07-14",
       "needsUniqueDesc": true
     }
@@ -1755,18 +1755,18 @@
       "slug": "remise-en-etat-logement--bouches-du-rhone--aix-en-provence",
       "type": "Page ville service",
       "publishAt": "2026-07-12",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 646
     },
     {
       "url": "/remise-en-etat-logement/bouches-du-rhone/marseille/",
       "slug": "remise-en-etat-logement--bouches-du-rhone--marseille",
       "type": "Page ville service",
       "publishAt": "2026-07-12",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 627
     },
     {
       "url": "/remise-en-etat-logement/gard/ales/",
