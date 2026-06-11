@@ -51,7 +51,8 @@ export const pagesMeta = {
   '/partenariat-mjpm': {
     title: "Partenariat MJPM | -20% Nettoyage Spécialisé",
     description: "Rejoignez notre réseau partenaire MJPM. -20% sur nos services de nettoyage pour vos protégés. Intervention prioritaire dans le Sud de la France.",
-    canonical: "/partenariat-mjpm"
+    canonical: "/partenariat-mjpm",
+    bodyAppend: `<a href="https://www.jesuisnettoyeur.fr" rel="noopener">Partenaire : Jesuisnettoyeur (https://www.jesuisnettoyeur.fr)</a>`
   },
   '/partenariat-maisons-retraite': {
     title: "Partenariat EHPAD | -20% Nettoyage Spécialisé",
@@ -203,7 +204,11 @@ function generatePage(route, meta) {
     <meta name="twitter:image" content="${SITE_URL}/images/logos/p1.png" />
   `;
   
-  return html.replace('</head>', `${metaTags}\n  </head>`);
+  let out = html.replace('</head>', `${metaTags}\n  </head>`);
+  if (meta.bodyAppend) {
+    out = out.replace('</body>', `${meta.bodyAppend}\n</body>`);
+  }
+  return out;
 }
 
 // Fonction principale
