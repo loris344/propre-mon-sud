@@ -1,68 +1,68 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 397,
-  "remaining": 393,
+  "done": 408,
+  "remaining": 382,
   "late": 0,
   "nextBatch": [
     {
-      "url": "/nettoyage-diogene/bouches-du-rhone/allauch/",
-      "slug": "nettoyage-diogene--bouches-du-rhone--allauch",
-      "publishAt": "2026-08-11",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-diogene/bouches-du-rhone/arles/",
-      "slug": "nettoyage-diogene--bouches-du-rhone--arles",
-      "publishAt": "2026-08-11",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-diogene/bouches-du-rhone/aubagne/",
-      "slug": "nettoyage-diogene--bouches-du-rhone--aubagne",
-      "publishAt": "2026-08-12",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-diogene/bouches-du-rhone/chateaurenard/",
-      "slug": "nettoyage-diogene--bouches-du-rhone--chateaurenard",
-      "publishAt": "2026-08-12",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-diogene/bouches-du-rhone/istres/",
-      "slug": "nettoyage-diogene--bouches-du-rhone--istres",
-      "publishAt": "2026-08-12",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-diogene/bouches-du-rhone/la-ciotat/",
-      "slug": "nettoyage-diogene--bouches-du-rhone--la-ciotat",
-      "publishAt": "2026-08-12",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-diogene/bouches-du-rhone/marignane/",
-      "slug": "nettoyage-diogene--bouches-du-rhone--marignane",
-      "publishAt": "2026-08-12",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-diogene/bouches-du-rhone/martigues/",
-      "slug": "nettoyage-diogene--bouches-du-rhone--martigues",
-      "publishAt": "2026-08-12",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-diogene/bouches-du-rhone/saint-remy-de-provence/",
-      "slug": "nettoyage-diogene--bouches-du-rhone--saint-remy-de-provence",
-      "publishAt": "2026-08-12",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-diogene/bouches-du-rhone/salon-de-provence/",
-      "slug": "nettoyage-diogene--bouches-du-rhone--salon-de-provence",
+      "url": "/nettoyage-diogene/gard/aigues-mortes/",
+      "slug": "nettoyage-diogene--gard--aigues-mortes",
       "publishAt": "2026-08-13",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-diogene/gard/bagnols-sur-ceze/",
+      "slug": "nettoyage-diogene--gard--bagnols-sur-ceze",
+      "publishAt": "2026-08-13",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-diogene/gard/beaucaire/",
+      "slug": "nettoyage-diogene--gard--beaucaire",
+      "publishAt": "2026-08-13",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-diogene/gard/le-grau-du-roi/",
+      "slug": "nettoyage-diogene--gard--le-grau-du-roi",
+      "publishAt": "2026-08-13",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-diogene/gard/les-angles/",
+      "slug": "nettoyage-diogene--gard--les-angles",
+      "publishAt": "2026-08-13",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-diogene/gard/marguerittes/",
+      "slug": "nettoyage-diogene--gard--marguerittes",
+      "publishAt": "2026-08-14",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-diogene/gard/pont-saint-esprit/",
+      "slug": "nettoyage-diogene--gard--pont-saint-esprit",
+      "publishAt": "2026-08-14",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-diogene/gard/saint-gilles/",
+      "slug": "nettoyage-diogene--gard--saint-gilles",
+      "publishAt": "2026-08-14",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-diogene/gard/uzes/",
+      "slug": "nettoyage-diogene--gard--uzes",
+      "publishAt": "2026-08-14",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-diogene/gard/villeneuve-les-avignon/",
+      "slug": "nettoyage-diogene--gard--villeneuve-les-avignon",
+      "publishAt": "2026-08-14",
       "needsUniqueDesc": false
     }
   ],
@@ -3645,99 +3645,99 @@
       "slug": "nettoyage-diogene--bouches-du-rhone--allauch",
       "type": "Page ville service",
       "publishAt": "2026-08-11",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 610
     },
     {
       "url": "/nettoyage-diogene/bouches-du-rhone/arles/",
       "slug": "nettoyage-diogene--bouches-du-rhone--arles",
       "type": "Page ville service",
       "publishAt": "2026-08-11",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 633
     },
     {
       "url": "/nettoyage-diogene/bouches-du-rhone/aubagne/",
       "slug": "nettoyage-diogene--bouches-du-rhone--aubagne",
       "type": "Page ville service",
       "publishAt": "2026-08-12",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 610
     },
     {
       "url": "/nettoyage-diogene/bouches-du-rhone/chateaurenard/",
       "slug": "nettoyage-diogene--bouches-du-rhone--chateaurenard",
       "type": "Page ville service",
       "publishAt": "2026-08-12",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 601
     },
     {
       "url": "/nettoyage-diogene/bouches-du-rhone/istres/",
       "slug": "nettoyage-diogene--bouches-du-rhone--istres",
       "type": "Page ville service",
       "publishAt": "2026-08-12",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 605
     },
     {
       "url": "/nettoyage-diogene/bouches-du-rhone/la-ciotat/",
       "slug": "nettoyage-diogene--bouches-du-rhone--la-ciotat",
       "type": "Page ville service",
       "publishAt": "2026-08-12",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 603
     },
     {
       "url": "/nettoyage-diogene/bouches-du-rhone/marignane/",
       "slug": "nettoyage-diogene--bouches-du-rhone--marignane",
       "type": "Page ville service",
       "publishAt": "2026-08-12",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 601
     },
     {
       "url": "/nettoyage-diogene/bouches-du-rhone/martigues/",
       "slug": "nettoyage-diogene--bouches-du-rhone--martigues",
       "type": "Page ville service",
       "publishAt": "2026-08-12",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 619
     },
     {
       "url": "/nettoyage-diogene/bouches-du-rhone/saint-remy-de-provence/",
       "slug": "nettoyage-diogene--bouches-du-rhone--saint-remy-de-provence",
       "type": "Page ville service",
       "publishAt": "2026-08-12",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 605
     },
     {
       "url": "/nettoyage-diogene/bouches-du-rhone/salon-de-provence/",
       "slug": "nettoyage-diogene--bouches-du-rhone--salon-de-provence",
       "type": "Page ville service",
       "publishAt": "2026-08-13",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 603
     },
     {
       "url": "/nettoyage-diogene/bouches-du-rhone/vitrolles/",
       "slug": "nettoyage-diogene--bouches-du-rhone--vitrolles",
       "type": "Page ville service",
       "publishAt": "2026-08-13",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 621
     },
     {
       "url": "/nettoyage-diogene/gard/aigues-mortes/",
