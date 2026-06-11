@@ -1,28 +1,10 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 273,
-  "remaining": 517,
+  "done": 276,
+  "remaining": 514,
   "late": 0,
   "nextBatch": [
-    {
-      "url": "/debarras/succession/herault/beziers/",
-      "slug": "debarras--succession--herault--beziers",
-      "publishAt": "2026-07-25",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/succession/herault/lunel/",
-      "slug": "debarras--succession--herault--lunel",
-      "publishAt": "2026-07-25",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/succession/herault/sete/",
-      "slug": "debarras--succession--herault--sete",
-      "publishAt": "2026-07-25",
-      "needsUniqueDesc": true
-    },
     {
       "url": "/zones-intervention/herault/",
       "slug": "zones-intervention--herault",
@@ -64,6 +46,24 @@
       "slug": "nettoyage-apres-deces--gard",
       "publishAt": "2026-07-26",
       "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-deces/haute-garonne/",
+      "slug": "nettoyage-apres-deces--haute-garonne",
+      "publishAt": "2026-07-26",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-sinistre/bouches-du-rhone/",
+      "slug": "nettoyage-apres-sinistre--bouches-du-rhone",
+      "publishAt": "2026-07-26",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/nettoyage-apres-sinistre/gard/",
+      "slug": "nettoyage-apres-sinistre--gard",
+      "publishAt": "2026-07-26",
+      "needsUniqueDesc": true
     }
   ],
   "pages": [
@@ -2529,27 +2529,27 @@
       "slug": "debarras--succession--herault--beziers",
       "type": "Page ville débarras type",
       "publishAt": "2026-07-25",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 610
     },
     {
       "url": "/debarras/succession/herault/lunel/",
       "slug": "debarras--succession--herault--lunel",
       "type": "Page ville débarras type",
       "publishAt": "2026-07-25",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 610
     },
     {
       "url": "/debarras/succession/herault/sete/",
       "slug": "debarras--succession--herault--sete",
       "type": "Page ville débarras type",
       "publishAt": "2026-07-25",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 618
     },
     {
       "url": "/zones-intervention/herault/",
