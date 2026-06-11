@@ -1,40 +1,10 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 476,
-  "remaining": 314,
+  "done": 481,
+  "remaining": 309,
   "late": 0,
   "nextBatch": [
-    {
-      "url": "/nettoyage-insalubre/gard/sommieres/",
-      "slug": "nettoyage-insalubre--gard--sommieres",
-      "publishAt": "2026-08-23",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-insalubre/gard/uzes/",
-      "slug": "nettoyage-insalubre--gard--uzes",
-      "publishAt": "2026-08-23",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-insalubre/gard/vauvert/",
-      "slug": "nettoyage-insalubre--gard--vauvert",
-      "publishAt": "2026-08-23",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-insalubre/gard/vezenobres/",
-      "slug": "nettoyage-insalubre--gard--vezenobres",
-      "publishAt": "2026-08-23",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-insalubre/gard/villeneuve-les-avignon/",
-      "slug": "nettoyage-insalubre--gard--villeneuve-les-avignon",
-      "publishAt": "2026-08-23",
-      "needsUniqueDesc": false
-    },
     {
       "url": "/nettoyage-insalubre/haute-garonne/auterive/",
       "slug": "nettoyage-insalubre--haute-garonne--auterive",
@@ -63,6 +33,36 @@
       "url": "/nettoyage-insalubre/haute-garonne/castanet-tolosan/",
       "slug": "nettoyage-insalubre--haute-garonne--castanet-tolosan",
       "publishAt": "2026-08-24",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/haute-garonne/colomiers/",
+      "slug": "nettoyage-insalubre--haute-garonne--colomiers",
+      "publishAt": "2026-08-24",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/nettoyage-insalubre/haute-garonne/cugnaux/",
+      "slug": "nettoyage-insalubre--haute-garonne--cugnaux",
+      "publishAt": "2026-08-24",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/haute-garonne/fonsorbes/",
+      "slug": "nettoyage-insalubre--haute-garonne--fonsorbes",
+      "publishAt": "2026-08-24",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/haute-garonne/fronton/",
+      "slug": "nettoyage-insalubre--haute-garonne--fronton",
+      "publishAt": "2026-08-24",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/haute-garonne/grenade/",
+      "slug": "nettoyage-insalubre--haute-garonne--grenade",
+      "publishAt": "2026-08-25",
       "needsUniqueDesc": false
     }
   ],
@@ -4356,45 +4356,45 @@
       "slug": "nettoyage-insalubre--gard--sommieres",
       "type": "Page ville service",
       "publishAt": "2026-08-23",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 619
     },
     {
       "url": "/nettoyage-insalubre/gard/uzes/",
       "slug": "nettoyage-insalubre--gard--uzes",
       "type": "Page ville service",
       "publishAt": "2026-08-23",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 609
     },
     {
       "url": "/nettoyage-insalubre/gard/vauvert/",
       "slug": "nettoyage-insalubre--gard--vauvert",
       "type": "Page ville service",
       "publishAt": "2026-08-23",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 607
     },
     {
       "url": "/nettoyage-insalubre/gard/vezenobres/",
       "slug": "nettoyage-insalubre--gard--vezenobres",
       "type": "Page ville service",
       "publishAt": "2026-08-23",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 624
     },
     {
       "url": "/nettoyage-insalubre/gard/villeneuve-les-avignon/",
       "slug": "nettoyage-insalubre--gard--villeneuve-les-avignon",
       "type": "Page ville service",
       "publishAt": "2026-08-23",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 615
     },
     {
       "url": "/nettoyage-insalubre/haute-garonne/auterive/",
