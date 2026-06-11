@@ -5,5 +5,9 @@
   "/realisations/debarras-maison/": "debarras-avant-apres-evacuation.webp",
   "/realisations/debarras-succession/": "debarras-vide-maison-succession.webp",
   "/realisations/desinfection-logement/": "desinfection-logement-protocole-professionnel.webp",
-  "/realisations/nettoyage-apres-deces/": "nettoyage-apres-deces-decontamination-logement.webp"
+  "/realisations/nettoyage-apres-deces/": "nettoyage-apres-deces-decontamination-logement.webp",
+  "/realisations/nettoyage-apres-squat/": "nettoyage-apres-squat-avant-apres-remise-en-etat.webp",
+  "/realisations/nettoyage-diogene/": "nettoyage-diogene-avant-apres-2.webp",
+  "/realisations/nettoyage-insalubre/": "nettoyage-insalubre-avant-apres-insalubre.webp",
+  "/realisations/remise-en-etat-logement/": "nettoyage-insalubre-remise-en-etat-apres-sinistre.webp"
 }
