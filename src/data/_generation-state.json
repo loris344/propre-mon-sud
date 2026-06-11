@@ -1,52 +1,10 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 696,
-  "remaining": 94,
+  "done": 703,
+  "remaining": 87,
   "late": 0,
   "nextBatch": [
-    {
-      "url": "/nettoyage-diogene/tarn/albi/",
-      "slug": "nettoyage-diogene--tarn--albi",
-      "publishAt": "2026-09-24",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-diogene/tarn/carmaux/",
-      "slug": "nettoyage-diogene--tarn--carmaux",
-      "publishAt": "2026-09-24",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-diogene/tarn/castres/",
-      "slug": "nettoyage-diogene--tarn--castres",
-      "publishAt": "2026-09-25",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-diogene/tarn/gaillac/",
-      "slug": "nettoyage-diogene--tarn--gaillac",
-      "publishAt": "2026-09-25",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-diogene/tarn/graulhet/",
-      "slug": "nettoyage-diogene--tarn--graulhet",
-      "publishAt": "2026-09-25",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-diogene/tarn/lavaur/",
-      "slug": "nettoyage-diogene--tarn--lavaur",
-      "publishAt": "2026-09-25",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-diogene/tarn/mazamet/",
-      "slug": "nettoyage-diogene--tarn--mazamet",
-      "publishAt": "2026-09-25",
-      "needsUniqueDesc": false
-    },
     {
       "url": "/nettoyage-insalubre/aveyron/bozouls/",
       "slug": "nettoyage-insalubre--aveyron--bozouls",
@@ -63,6 +21,48 @@
       "url": "/nettoyage-insalubre/aveyron/decazeville/",
       "slug": "nettoyage-insalubre--aveyron--decazeville",
       "publishAt": "2026-09-26",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/aveyron/espalion/",
+      "slug": "nettoyage-insalubre--aveyron--espalion",
+      "publishAt": "2026-09-26",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/aveyron/luc-la-primaube/",
+      "slug": "nettoyage-insalubre--aveyron--luc-la-primaube",
+      "publishAt": "2026-09-26",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/aveyron/millau/",
+      "slug": "nettoyage-insalubre--aveyron--millau",
+      "publishAt": "2026-09-26",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/nettoyage-insalubre/aveyron/olemps/",
+      "slug": "nettoyage-insalubre--aveyron--olemps",
+      "publishAt": "2026-09-26",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/aveyron/onet-le-chateau/",
+      "slug": "nettoyage-insalubre--aveyron--onet-le-chateau",
+      "publishAt": "2026-09-26",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/aveyron/rodez/",
+      "slug": "nettoyage-insalubre--aveyron--rodez",
+      "publishAt": "2026-09-26",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/nettoyage-insalubre/aveyron/saint-affrique/",
+      "slug": "nettoyage-insalubre--aveyron--saint-affrique",
+      "publishAt": "2026-09-27",
       "needsUniqueDesc": false
     }
   ],
@@ -6336,63 +6336,63 @@
       "slug": "nettoyage-diogene--tarn--albi",
       "type": "Page ville service",
       "publishAt": "2026-09-24",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 641
     },
     {
       "url": "/nettoyage-diogene/tarn/carmaux/",
       "slug": "nettoyage-diogene--tarn--carmaux",
       "type": "Page ville service",
       "publishAt": "2026-09-24",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 661
     },
     {
       "url": "/nettoyage-diogene/tarn/castres/",
       "slug": "nettoyage-diogene--tarn--castres",
       "type": "Page ville service",
       "publishAt": "2026-09-25",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 674
     },
     {
       "url": "/nettoyage-diogene/tarn/gaillac/",
       "slug": "nettoyage-diogene--tarn--gaillac",
       "type": "Page ville service",
       "publishAt": "2026-09-25",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 632
     },
     {
       "url": "/nettoyage-diogene/tarn/graulhet/",
       "slug": "nettoyage-diogene--tarn--graulhet",
       "type": "Page ville service",
       "publishAt": "2026-09-25",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 636
     },
     {
       "url": "/nettoyage-diogene/tarn/lavaur/",
       "slug": "nettoyage-diogene--tarn--lavaur",
       "type": "Page ville service",
       "publishAt": "2026-09-25",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 659
     },
     {
       "url": "/nettoyage-diogene/tarn/mazamet/",
       "slug": "nettoyage-diogene--tarn--mazamet",
       "type": "Page ville service",
       "publishAt": "2026-09-25",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 679
     },
     {
       "url": "/nettoyage-insalubre/aveyron/bozouls/",
