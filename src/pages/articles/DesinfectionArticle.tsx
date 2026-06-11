@@ -219,7 +219,7 @@ const DesinfectionArticle = () => {
               <div className="bg-primary/5 rounded-lg p-6 border border-primary/20">
                 <h3 className="text-xl font-bold text-foreground mb-3">🛡️ Besoin d'une désinfection professionnelle ?</h3>
                 <p className="text-muted-foreground mb-4">
-                  Si vous devez faire face à une situation nécessitant une désinfection professionnelle, il est important de faire appel à des experts certifiés. SOS Nettoyage Diogène propose des interventions selon les normes les plus strictes.
+                  Si vous devez faire face à une situation nécessitant une désinfection professionnelle, il est important de faire appel à des experts certifiés. SOS Nettoyage Diogène & Débarras propose des interventions selon les normes les plus strictes.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3">
                   <button 

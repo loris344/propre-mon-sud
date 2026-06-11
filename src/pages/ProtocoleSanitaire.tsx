@@ -13,7 +13,7 @@ const ProtocoleSanitaire = () => {
   return (
     <>
       <SEOHead
-        title="Fiche Protocole Sanitaire | SOS Nettoyage Diogène"
+        title="Fiche Protocole Sanitaire | SOS Nettoyage Diogène & Débarras"
         description="Protocole sanitaire d'intervention en logement insalubre : traitement des odeurs, gestion des risques biologiques, tri et préservation des documents. Document à joindre aux rapports CCAS et préfecture."
         canonical="/protocole-sanitaire"
         noIndex={true}

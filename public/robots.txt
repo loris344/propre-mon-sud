@@ -1,4 +1,4 @@
-# Robots.txt pour SOS Nettoyage Diogène
+# Robots.txt pour SOS Nettoyage Diogène & Débarras
 # https://www.robotstxt.org/robotstxt.html
 
 User-agent: *

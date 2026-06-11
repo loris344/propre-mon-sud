@@ -5,8 +5,8 @@ const MentionsLegales = () => {
   return (
     <>
       <SEOHead
-        title="Mentions Légales | SOS Nettoyage Diogène"
-        description="Mentions légales du site SOS Nettoyage Diogène. Informations sur l'éditeur, l'hébergeur et les conditions d'utilisation."
+        title="Mentions Légales | SOS Nettoyage Diogène & Débarras"
+        description="Mentions légales du site SOS Nettoyage Diogène & Débarras. Informations sur l'éditeur, l'hébergeur et les conditions d'utilisation."
         canonical="/mentions-legales"
       />
       <main className="min-h-screen pt-24 sm:pt-32 pb-16">
@@ -18,7 +18,7 @@ const MentionsLegales = () => {
               <h2 className="text-xl font-semibold text-foreground">1. Éditeur du site</h2>
               <p>
                 Le site <strong>sosnettoyagediogene.fr</strong> est édité par :<br />
-                <strong>SOS Nettoyage Diogène</strong><br />
+                <strong>SOS Nettoyage Diogène & Débarras</strong><br />
                 SIRET : 939 452 215 00014<br />
                 Société spécialisée dans le nettoyage et débarras professionnel<br />
                 Siège social : 135 rue de la Cavalade, 34000 Montpellier<br />
@@ -29,7 +29,7 @@ const MentionsLegales = () => {
 
             <section>
               <h2 className="text-xl font-semibold text-foreground">2. Directeur de la publication</h2>
-              <p>Le directeur de la publication est le représentant légal de SOS Nettoyage Diogène.</p>
+              <p>Le directeur de la publication est le représentant légal de SOS Nettoyage Diogène & Débarras.</p>
             </section>
 
             <section>
@@ -45,14 +45,14 @@ const MentionsLegales = () => {
               <h2 className="text-xl font-semibold text-foreground">4. Propriété intellectuelle</h2>
               <p>
                 L'ensemble du contenu de ce site (textes, images, logos, vidéos) est protégé par le droit d'auteur.
-                Toute reproduction, même partielle, est interdite sans autorisation préalable de SOS Nettoyage Diogène.
+                Toute reproduction, même partielle, est interdite sans autorisation préalable de SOS Nettoyage Diogène & Débarras.
               </p>
             </section>
 
             <section>
               <h2 className="text-xl font-semibold text-foreground">5. Responsabilité</h2>
               <p>
-                SOS Nettoyage Diogène s'efforce de fournir des informations exactes et à jour. 
+                SOS Nettoyage Diogène & Débarras s'efforce de fournir des informations exactes et à jour. 
                 Toutefois, la société ne saurait être tenue responsable des erreurs, omissions ou résultats 
                 obtenus suite à l'utilisation des informations du site.
               </p>
@@ -61,7 +61,7 @@ const MentionsLegales = () => {
             <section>
               <h2 className="text-xl font-semibold text-foreground">6. Liens hypertextes</h2>
               <p>
-                Ce site peut contenir des liens vers des sites tiers. SOS Nettoyage Diogène n'exerce aucun 
+                Ce site peut contenir des liens vers des sites tiers. SOS Nettoyage Diogène & Débarras n'exerce aucun 
                 contrôle sur ces sites et décline toute responsabilité quant à leur contenu.
               </p>
             </section>

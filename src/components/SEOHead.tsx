@@ -37,7 +37,7 @@ const SEOHead = ({
       <meta property="og:image" content={ogImage} />
       <meta property="og:url" content={finalCanonical} />
       <meta property="og:type" content="website" />
-      <meta property="og:site_name" content="SOS Nettoyage Diogène" />
+      <meta property="og:site_name" content="SOS Nettoyage Diogène & Débarras" />
       <meta property="og:locale" content="fr_FR" />
       
       {/* Twitter */}

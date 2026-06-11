@@ -1,7 +1,7 @@
 // Configuration centralisée du site
 export const SITE_CONFIG = {
   // Identité
-  name: "SOS Nettoyage Diogène",
+  name: "SOS Nettoyage Diogène & Débarras",
   tagline: "Nettoyage Professionnel & Débarras",
   description: "Société spécialisée dans le nettoyage et débarras syndrome de Diogène, insalubrité et gros volumes. Intervention discrète, professionnelle et respectueuse dans le Sud de la France.",
   

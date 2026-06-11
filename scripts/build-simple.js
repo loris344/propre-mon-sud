@@ -54,7 +54,7 @@ function copyLlmsTxt() {
 
 // Fonction principale
 async function build() {
-  console.log('🚀 Build simplifié de SOS Nettoyage Diogène...');
+  console.log('🚀 Build simplifié de SOS Nettoyage Diogène & Débarras...');
   
   // Créer le dossier dist s'il n'existe pas
   if (!fs.existsSync(BUILD_DIR)) {

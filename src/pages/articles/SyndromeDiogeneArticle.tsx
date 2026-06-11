@@ -192,7 +192,7 @@ const SyndromeDiogeneArticle = () => {
               <div className="bg-primary/5 rounded-lg p-6 border border-primary/20">
                 <h3 className="text-xl font-bold text-foreground mb-3">💡 Besoin d'aide professionnelle ?</h3>
                 <p className="text-muted-foreground mb-4">
-                  Si vous êtes confronté à une situation de syndrome de Diogène, des professionnels spécialisés peuvent vous accompagner. SOS Nettoyage Diogène propose des interventions respectueuses et bienveillantes.
+                  Si vous êtes confronté à une situation de syndrome de Diogène, des professionnels spécialisés peuvent vous accompagner. SOS Nettoyage Diogène & Débarras propose des interventions respectueuses et bienveillantes.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3">
                   <button 
