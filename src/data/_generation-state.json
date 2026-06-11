@@ -1,34 +1,10 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 183,
-  "remaining": 607,
+  "done": 187,
+  "remaining": 603,
   "late": 0,
   "nextBatch": [
-    {
-      "url": "/nettoyage-insalubre/herault/vias/",
-      "slug": "nettoyage-insalubre--herault--vias",
-      "publishAt": "2026-07-12",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-insalubre/herault/vic-la-gardiole/",
-      "slug": "nettoyage-insalubre--herault--vic-la-gardiole",
-      "publishAt": "2026-07-12",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-insalubre/herault/villeneuve-les-beziers/",
-      "slug": "nettoyage-insalubre--herault--villeneuve-les-beziers",
-      "publishAt": "2026-07-12",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-insalubre/herault/villeneuve-les-maguelone/",
-      "slug": "nettoyage-insalubre--herault--villeneuve-les-maguelone",
-      "publishAt": "2026-07-12",
-      "needsUniqueDesc": false
-    },
     {
       "url": "/remise-en-etat-logement/bouches-du-rhone/aix-en-provence/",
       "slug": "remise-en-etat-logement--bouches-du-rhone--aix-en-provence",
@@ -63,6 +39,30 @@
       "url": "/remise-en-etat-logement/herault/beziers/",
       "slug": "remise-en-etat-logement--herault--beziers",
       "publishAt": "2026-07-13",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/remise-en-etat-logement/herault/lunel/",
+      "slug": "remise-en-etat-logement--herault--lunel",
+      "publishAt": "2026-07-13",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/remise-en-etat-logement/herault/sete/",
+      "slug": "remise-en-etat-logement--herault--sete",
+      "publishAt": "2026-07-13",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/herault/",
+      "slug": "debarras--herault",
+      "publishAt": "2026-07-13",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/bouches-du-rhone/aix-en-provence/",
+      "slug": "debarras--bouches-du-rhone--aix-en-provence",
+      "publishAt": "2026-07-14",
       "needsUniqueDesc": true
     }
   ],
@@ -1719,36 +1719,36 @@
       "slug": "nettoyage-insalubre--herault--vias",
       "type": "Page ville service",
       "publishAt": "2026-07-12",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 740
     },
     {
       "url": "/nettoyage-insalubre/herault/vic-la-gardiole/",
       "slug": "nettoyage-insalubre--herault--vic-la-gardiole",
       "type": "Page ville service",
       "publishAt": "2026-07-12",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 744
     },
     {
       "url": "/nettoyage-insalubre/herault/villeneuve-les-beziers/",
       "slug": "nettoyage-insalubre--herault--villeneuve-les-beziers",
       "type": "Page ville service",
       "publishAt": "2026-07-12",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 757
     },
     {
       "url": "/nettoyage-insalubre/herault/villeneuve-les-maguelone/",
       "slug": "nettoyage-insalubre--herault--villeneuve-les-maguelone",
       "type": "Page ville service",
       "publishAt": "2026-07-12",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 739
     },
     {
       "url": "/remise-en-etat-logement/bouches-du-rhone/aix-en-provence/",
