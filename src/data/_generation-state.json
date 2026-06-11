@@ -1,52 +1,10 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 564,
-  "remaining": 226,
+  "done": 571,
+  "remaining": 219,
   "late": 0,
   "nextBatch": [
-    {
-      "url": "/debarras/maison/bouches-du-rhone/istres/",
-      "slug": "debarras--maison--bouches-du-rhone--istres",
-      "publishAt": "2026-09-04",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/maison/bouches-du-rhone/la-ciotat/",
-      "slug": "debarras--maison--bouches-du-rhone--la-ciotat",
-      "publishAt": "2026-09-04",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/maison/bouches-du-rhone/marignane/",
-      "slug": "debarras--maison--bouches-du-rhone--marignane",
-      "publishAt": "2026-09-04",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/maison/bouches-du-rhone/martigues/",
-      "slug": "debarras--maison--bouches-du-rhone--martigues",
-      "publishAt": "2026-09-05",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/maison/bouches-du-rhone/saint-remy-de-provence/",
-      "slug": "debarras--maison--bouches-du-rhone--saint-remy-de-provence",
-      "publishAt": "2026-09-05",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/maison/bouches-du-rhone/salon-de-provence/",
-      "slug": "debarras--maison--bouches-du-rhone--salon-de-provence",
-      "publishAt": "2026-09-05",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/maison/bouches-du-rhone/vitrolles/",
-      "slug": "debarras--maison--bouches-du-rhone--vitrolles",
-      "publishAt": "2026-09-05",
-      "needsUniqueDesc": true
-    },
     {
       "url": "/debarras/maison/gard/aigues-mortes/",
       "slug": "debarras--maison--gard--aigues-mortes",
@@ -63,6 +21,48 @@
       "url": "/debarras/maison/gard/beaucaire/",
       "slug": "debarras--maison--gard--beaucaire",
       "publishAt": "2026-09-05",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/maison/gard/le-grau-du-roi/",
+      "slug": "debarras--maison--gard--le-grau-du-roi",
+      "publishAt": "2026-09-06",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/maison/gard/les-angles/",
+      "slug": "debarras--maison--gard--les-angles",
+      "publishAt": "2026-09-06",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/maison/gard/marguerittes/",
+      "slug": "debarras--maison--gard--marguerittes",
+      "publishAt": "2026-09-06",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/maison/gard/pont-saint-esprit/",
+      "slug": "debarras--maison--gard--pont-saint-esprit",
+      "publishAt": "2026-09-06",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/maison/gard/saint-gilles/",
+      "slug": "debarras--maison--gard--saint-gilles",
+      "publishAt": "2026-09-06",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/maison/gard/uzes/",
+      "slug": "debarras--maison--gard--uzes",
+      "publishAt": "2026-09-06",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/maison/gard/villeneuve-les-avignon/",
+      "slug": "debarras--maison--gard--villeneuve-les-avignon",
+      "publishAt": "2026-09-06",
       "needsUniqueDesc": true
     }
   ],
@@ -5148,63 +5148,63 @@
       "slug": "debarras--maison--bouches-du-rhone--istres",
       "type": "Page ville débarras type",
       "publishAt": "2026-09-04",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 606
     },
     {
       "url": "/debarras/maison/bouches-du-rhone/la-ciotat/",
       "slug": "debarras--maison--bouches-du-rhone--la-ciotat",
       "type": "Page ville débarras type",
       "publishAt": "2026-09-04",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 606
     },
     {
       "url": "/debarras/maison/bouches-du-rhone/marignane/",
       "slug": "debarras--maison--bouches-du-rhone--marignane",
       "type": "Page ville débarras type",
       "publishAt": "2026-09-04",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 603
     },
     {
       "url": "/debarras/maison/bouches-du-rhone/martigues/",
       "slug": "debarras--maison--bouches-du-rhone--martigues",
       "type": "Page ville débarras type",
       "publishAt": "2026-09-05",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 608
     },
     {
       "url": "/debarras/maison/bouches-du-rhone/saint-remy-de-provence/",
       "slug": "debarras--maison--bouches-du-rhone--saint-remy-de-provence",
       "type": "Page ville débarras type",
       "publishAt": "2026-09-05",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 604
     },
     {
       "url": "/debarras/maison/bouches-du-rhone/salon-de-provence/",
       "slug": "debarras--maison--bouches-du-rhone--salon-de-provence",
       "type": "Page ville débarras type",
       "publishAt": "2026-09-05",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 602
     },
     {
       "url": "/debarras/maison/bouches-du-rhone/vitrolles/",
       "slug": "debarras--maison--bouches-du-rhone--vitrolles",
       "type": "Page ville débarras type",
       "publishAt": "2026-09-05",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 605
     },
     {
       "url": "/debarras/maison/gard/aigues-mortes/",
