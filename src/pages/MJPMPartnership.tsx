@@ -112,7 +112,18 @@ const MJPMPartnership = () => {
                 <span className="text-sm text-gray-600">📧 contact@sosnettoyagediogene.fr</span>
               </div>
               <div className="flex items-center gap-2">
+                <span className="text-sm text-gray-600">📞 07 67 13 54 58</span>
               </div>
+            </div>
+            <div className="mt-4">
+              <a 
+                href="https://www.jesuisnettoyeur.fr" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-sm text-gray-500 hover:text-blue-600 underline"
+              >
+                Partenaire : Jesuisnettoyeur
+              </a>
             </div>
           </div>
         </div>
