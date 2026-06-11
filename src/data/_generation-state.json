@@ -1,46 +1,10 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 360,
-  "remaining": 430,
+  "done": 366,
+  "remaining": 424,
   "late": 0,
   "nextBatch": [
-    {
-      "url": "/nettoyage-apres-deces/haute-garonne/tournefeuille/",
-      "slug": "nettoyage-apres-deces--haute-garonne--tournefeuille",
-      "publishAt": "2026-08-06",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-apres-sinistre/bouches-du-rhone/arles/",
-      "slug": "nettoyage-apres-sinistre--bouches-du-rhone--arles",
-      "publishAt": "2026-08-06",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/nettoyage-apres-sinistre/bouches-du-rhone/aubagne/",
-      "slug": "nettoyage-apres-sinistre--bouches-du-rhone--aubagne",
-      "publishAt": "2026-08-06",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/nettoyage-apres-sinistre/gard/bagnols-sur-ceze/",
-      "slug": "nettoyage-apres-sinistre--gard--bagnols-sur-ceze",
-      "publishAt": "2026-08-06",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/nettoyage-apres-sinistre/haute-garonne/colomiers/",
-      "slug": "nettoyage-apres-sinistre--haute-garonne--colomiers",
-      "publishAt": "2026-08-07",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/nettoyage-apres-sinistre/haute-garonne/muret/",
-      "slug": "nettoyage-apres-sinistre--haute-garonne--muret",
-      "publishAt": "2026-08-07",
-      "needsUniqueDesc": true
-    },
     {
       "url": "/nettoyage-apres-squat/bouches-du-rhone/allauch/",
       "slug": "nettoyage-apres-squat--bouches-du-rhone--allauch",
@@ -63,6 +27,42 @@
       "url": "/nettoyage-apres-squat/bouches-du-rhone/chateaurenard/",
       "slug": "nettoyage-apres-squat--bouches-du-rhone--chateaurenard",
       "publishAt": "2026-08-07",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-squat/bouches-du-rhone/istres/",
+      "slug": "nettoyage-apres-squat--bouches-du-rhone--istres",
+      "publishAt": "2026-08-07",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-squat/bouches-du-rhone/la-ciotat/",
+      "slug": "nettoyage-apres-squat--bouches-du-rhone--la-ciotat",
+      "publishAt": "2026-08-08",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-squat/bouches-du-rhone/marignane/",
+      "slug": "nettoyage-apres-squat--bouches-du-rhone--marignane",
+      "publishAt": "2026-08-08",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-squat/bouches-du-rhone/martigues/",
+      "slug": "nettoyage-apres-squat--bouches-du-rhone--martigues",
+      "publishAt": "2026-08-08",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-squat/bouches-du-rhone/saint-remy-de-provence/",
+      "slug": "nettoyage-apres-squat--bouches-du-rhone--saint-remy-de-provence",
+      "publishAt": "2026-08-08",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-squat/bouches-du-rhone/salon-de-provence/",
+      "slug": "nettoyage-apres-squat--bouches-du-rhone--salon-de-provence",
+      "publishAt": "2026-08-08",
       "needsUniqueDesc": false
     }
   ],
@@ -3312,54 +3312,54 @@
       "slug": "nettoyage-apres-deces--haute-garonne--tournefeuille",
       "type": "Page ville service",
       "publishAt": "2026-08-06",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 610
     },
     {
       "url": "/nettoyage-apres-sinistre/bouches-du-rhone/arles/",
       "slug": "nettoyage-apres-sinistre--bouches-du-rhone--arles",
       "type": "Page ville service",
       "publishAt": "2026-08-06",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 625
     },
     {
       "url": "/nettoyage-apres-sinistre/bouches-du-rhone/aubagne/",
       "slug": "nettoyage-apres-sinistre--bouches-du-rhone--aubagne",
       "type": "Page ville service",
       "publishAt": "2026-08-06",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 604
     },
     {
       "url": "/nettoyage-apres-sinistre/gard/bagnols-sur-ceze/",
       "slug": "nettoyage-apres-sinistre--gard--bagnols-sur-ceze",
       "type": "Page ville service",
       "publishAt": "2026-08-06",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 604
     },
     {
       "url": "/nettoyage-apres-sinistre/haute-garonne/colomiers/",
       "slug": "nettoyage-apres-sinistre--haute-garonne--colomiers",
       "type": "Page ville service",
       "publishAt": "2026-08-07",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 602
     },
     {
       "url": "/nettoyage-apres-sinistre/haute-garonne/muret/",
       "slug": "nettoyage-apres-sinistre--haute-garonne--muret",
       "type": "Page ville service",
       "publishAt": "2026-08-07",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 609
     },
     {
       "url": "/nettoyage-apres-squat/bouches-du-rhone/allauch/",
