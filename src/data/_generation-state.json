@@ -1,58 +1,10 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 320,
-  "remaining": 470,
+  "done": 329,
+  "remaining": 461,
   "late": 0,
   "nextBatch": [
-    {
-      "url": "/desinfection-logement/haute-garonne/balma/",
-      "slug": "desinfection-logement--haute-garonne--balma",
-      "publishAt": "2026-07-31",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/desinfection-logement/haute-garonne/blagnac/",
-      "slug": "desinfection-logement--haute-garonne--blagnac",
-      "publishAt": "2026-07-31",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/desinfection-logement/haute-garonne/colomiers/",
-      "slug": "desinfection-logement--haute-garonne--colomiers",
-      "publishAt": "2026-08-01",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/desinfection-logement/haute-garonne/cugnaux/",
-      "slug": "desinfection-logement--haute-garonne--cugnaux",
-      "publishAt": "2026-08-01",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/desinfection-logement/haute-garonne/l-union/",
-      "slug": "desinfection-logement--haute-garonne--l-union",
-      "publishAt": "2026-08-01",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/desinfection-logement/haute-garonne/muret/",
-      "slug": "desinfection-logement--haute-garonne--muret",
-      "publishAt": "2026-08-01",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/desinfection-logement/haute-garonne/revel/",
-      "slug": "desinfection-logement--haute-garonne--revel",
-      "publishAt": "2026-08-01",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/desinfection-logement/haute-garonne/saint-gaudens/",
-      "slug": "desinfection-logement--haute-garonne--saint-gaudens",
-      "publishAt": "2026-08-01",
-      "needsUniqueDesc": false
-    },
     {
       "url": "/desinfection-logement/haute-garonne/saint-jean/",
       "slug": "desinfection-logement--haute-garonne--saint-jean",
@@ -60,9 +12,57 @@
       "needsUniqueDesc": false
     },
     {
-      "url": "/desinfection-logement/haute-garonne/tournefeuille/",
-      "slug": "desinfection-logement--haute-garonne--tournefeuille",
+      "url": "/nettoyage-apres-deces/bouches-du-rhone/allauch/",
+      "slug": "nettoyage-apres-deces--bouches-du-rhone--allauch",
       "publishAt": "2026-08-02",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-deces/bouches-du-rhone/arles/",
+      "slug": "nettoyage-apres-deces--bouches-du-rhone--arles",
+      "publishAt": "2026-08-02",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-deces/bouches-du-rhone/aubagne/",
+      "slug": "nettoyage-apres-deces--bouches-du-rhone--aubagne",
+      "publishAt": "2026-08-02",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-deces/bouches-du-rhone/chateaurenard/",
+      "slug": "nettoyage-apres-deces--bouches-du-rhone--chateaurenard",
+      "publishAt": "2026-08-02",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-deces/bouches-du-rhone/istres/",
+      "slug": "nettoyage-apres-deces--bouches-du-rhone--istres",
+      "publishAt": "2026-08-02",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-deces/bouches-du-rhone/la-ciotat/",
+      "slug": "nettoyage-apres-deces--bouches-du-rhone--la-ciotat",
+      "publishAt": "2026-08-02",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-deces/bouches-du-rhone/marignane/",
+      "slug": "nettoyage-apres-deces--bouches-du-rhone--marignane",
+      "publishAt": "2026-08-03",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-deces/bouches-du-rhone/martigues/",
+      "slug": "nettoyage-apres-deces--bouches-du-rhone--martigues",
+      "publishAt": "2026-08-03",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-deces/bouches-du-rhone/saint-remy-de-provence/",
+      "slug": "nettoyage-apres-deces--bouches-du-rhone--saint-remy-de-provence",
+      "publishAt": "2026-08-03",
       "needsUniqueDesc": false
     }
   ],
@@ -2952,72 +2952,72 @@
       "slug": "desinfection-logement--haute-garonne--balma",
       "type": "Page ville service",
       "publishAt": "2026-07-31",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 609
     },
     {
       "url": "/desinfection-logement/haute-garonne/blagnac/",
       "slug": "desinfection-logement--haute-garonne--blagnac",
       "type": "Page ville service",
       "publishAt": "2026-07-31",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 604
     },
     {
       "url": "/desinfection-logement/haute-garonne/colomiers/",
       "slug": "desinfection-logement--haute-garonne--colomiers",
       "type": "Page ville service",
       "publishAt": "2026-08-01",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 605
     },
     {
       "url": "/desinfection-logement/haute-garonne/cugnaux/",
       "slug": "desinfection-logement--haute-garonne--cugnaux",
       "type": "Page ville service",
       "publishAt": "2026-08-01",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 601
     },
     {
       "url": "/desinfection-logement/haute-garonne/l-union/",
       "slug": "desinfection-logement--haute-garonne--l-union",
       "type": "Page ville service",
       "publishAt": "2026-08-01",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 606
     },
     {
       "url": "/desinfection-logement/haute-garonne/muret/",
       "slug": "desinfection-logement--haute-garonne--muret",
       "type": "Page ville service",
       "publishAt": "2026-08-01",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 633
     },
     {
       "url": "/desinfection-logement/haute-garonne/revel/",
       "slug": "desinfection-logement--haute-garonne--revel",
       "type": "Page ville service",
       "publishAt": "2026-08-01",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 613
     },
     {
       "url": "/desinfection-logement/haute-garonne/saint-gaudens/",
       "slug": "desinfection-logement--haute-garonne--saint-gaudens",
       "type": "Page ville service",
       "publishAt": "2026-08-01",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 609
     },
     {
       "url": "/desinfection-logement/haute-garonne/saint-jean/",
@@ -3033,9 +3033,9 @@
       "slug": "desinfection-logement--haute-garonne--tournefeuille",
       "type": "Page ville service",
       "publishAt": "2026-08-02",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 618
     },
     {
       "url": "/nettoyage-apres-deces/bouches-du-rhone/allauch/",
