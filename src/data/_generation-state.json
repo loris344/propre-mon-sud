@@ -1,46 +1,10 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 428,
-  "remaining": 362,
+  "done": 434,
+  "remaining": 356,
   "late": 0,
   "nextBatch": [
-    {
-      "url": "/nettoyage-insalubre/bouches-du-rhone/allauch/",
-      "slug": "nettoyage-insalubre--bouches-du-rhone--allauch",
-      "publishAt": "2026-08-16",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-insalubre/bouches-du-rhone/arles/",
-      "slug": "nettoyage-insalubre--bouches-du-rhone--arles",
-      "publishAt": "2026-08-16",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/nettoyage-insalubre/bouches-du-rhone/aubagne/",
-      "slug": "nettoyage-insalubre--bouches-du-rhone--aubagne",
-      "publishAt": "2026-08-16",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/nettoyage-insalubre/bouches-du-rhone/auriol/",
-      "slug": "nettoyage-insalubre--bouches-du-rhone--auriol",
-      "publishAt": "2026-08-16",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-insalubre/bouches-du-rhone/bouc-bel-air/",
-      "slug": "nettoyage-insalubre--bouches-du-rhone--bouc-bel-air",
-      "publishAt": "2026-08-16",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-insalubre/bouches-du-rhone/cassis/",
-      "slug": "nettoyage-insalubre--bouches-du-rhone--cassis",
-      "publishAt": "2026-08-16",
-      "needsUniqueDesc": false
-    },
     {
       "url": "/nettoyage-insalubre/bouches-du-rhone/chateaurenard/",
       "slug": "nettoyage-insalubre--bouches-du-rhone--chateaurenard",
@@ -63,6 +27,42 @@
       "url": "/nettoyage-insalubre/bouches-du-rhone/gardanne/",
       "slug": "nettoyage-insalubre--bouches-du-rhone--gardanne",
       "publishAt": "2026-08-17",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/bouches-du-rhone/gemenos/",
+      "slug": "nettoyage-insalubre--bouches-du-rhone--gemenos",
+      "publishAt": "2026-08-17",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/bouches-du-rhone/istres/",
+      "slug": "nettoyage-insalubre--bouches-du-rhone--istres",
+      "publishAt": "2026-08-17",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/bouches-du-rhone/la-ciotat/",
+      "slug": "nettoyage-insalubre--bouches-du-rhone--la-ciotat",
+      "publishAt": "2026-08-17",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/bouches-du-rhone/les-pennes-mirabeau/",
+      "slug": "nettoyage-insalubre--bouches-du-rhone--les-pennes-mirabeau",
+      "publishAt": "2026-08-18",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/bouches-du-rhone/marignane/",
+      "slug": "nettoyage-insalubre--bouches-du-rhone--marignane",
+      "publishAt": "2026-08-18",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/bouches-du-rhone/martigues/",
+      "slug": "nettoyage-insalubre--bouches-du-rhone--martigues",
+      "publishAt": "2026-08-18",
       "needsUniqueDesc": false
     }
   ],
@@ -3924,54 +3924,54 @@
       "slug": "nettoyage-insalubre--bouches-du-rhone--allauch",
       "type": "Page ville service",
       "publishAt": "2026-08-16",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 612
     },
     {
       "url": "/nettoyage-insalubre/bouches-du-rhone/arles/",
       "slug": "nettoyage-insalubre--bouches-du-rhone--arles",
       "type": "Page ville service",
       "publishAt": "2026-08-16",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 612
     },
     {
       "url": "/nettoyage-insalubre/bouches-du-rhone/aubagne/",
       "slug": "nettoyage-insalubre--bouches-du-rhone--aubagne",
       "type": "Page ville service",
       "publishAt": "2026-08-16",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 630
     },
     {
       "url": "/nettoyage-insalubre/bouches-du-rhone/auriol/",
       "slug": "nettoyage-insalubre--bouches-du-rhone--auriol",
       "type": "Page ville service",
       "publishAt": "2026-08-16",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 603
     },
     {
       "url": "/nettoyage-insalubre/bouches-du-rhone/bouc-bel-air/",
       "slug": "nettoyage-insalubre--bouches-du-rhone--bouc-bel-air",
       "type": "Page ville service",
       "publishAt": "2026-08-16",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 603
     },
     {
       "url": "/nettoyage-insalubre/bouches-du-rhone/cassis/",
       "slug": "nettoyage-insalubre--bouches-du-rhone--cassis",
       "type": "Page ville service",
       "publishAt": "2026-08-16",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 613
     },
     {
       "url": "/nettoyage-insalubre/bouches-du-rhone/chateaurenard/",
