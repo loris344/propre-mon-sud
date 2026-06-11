@@ -1,52 +1,10 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 421,
-  "remaining": 369,
+  "done": 428,
+  "remaining": 362,
   "late": 0,
   "nextBatch": [
-    {
-      "url": "/nettoyage-diogene/haute-garonne/cugnaux/",
-      "slug": "nettoyage-diogene--haute-garonne--cugnaux",
-      "publishAt": "2026-08-15",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-diogene/haute-garonne/l-union/",
-      "slug": "nettoyage-diogene--haute-garonne--l-union",
-      "publishAt": "2026-08-15",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-diogene/haute-garonne/muret/",
-      "slug": "nettoyage-diogene--haute-garonne--muret",
-      "publishAt": "2026-08-15",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-diogene/haute-garonne/revel/",
-      "slug": "nettoyage-diogene--haute-garonne--revel",
-      "publishAt": "2026-08-15",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-diogene/haute-garonne/saint-gaudens/",
-      "slug": "nettoyage-diogene--haute-garonne--saint-gaudens",
-      "publishAt": "2026-08-15",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-diogene/haute-garonne/saint-jean/",
-      "slug": "nettoyage-diogene--haute-garonne--saint-jean",
-      "publishAt": "2026-08-15",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-diogene/haute-garonne/tournefeuille/",
-      "slug": "nettoyage-diogene--haute-garonne--tournefeuille",
-      "publishAt": "2026-08-16",
-      "needsUniqueDesc": false
-    },
     {
       "url": "/nettoyage-insalubre/bouches-du-rhone/allauch/",
       "slug": "nettoyage-insalubre--bouches-du-rhone--allauch",
@@ -64,6 +22,48 @@
       "slug": "nettoyage-insalubre--bouches-du-rhone--aubagne",
       "publishAt": "2026-08-16",
       "needsUniqueDesc": true
+    },
+    {
+      "url": "/nettoyage-insalubre/bouches-du-rhone/auriol/",
+      "slug": "nettoyage-insalubre--bouches-du-rhone--auriol",
+      "publishAt": "2026-08-16",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/bouches-du-rhone/bouc-bel-air/",
+      "slug": "nettoyage-insalubre--bouches-du-rhone--bouc-bel-air",
+      "publishAt": "2026-08-16",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/bouches-du-rhone/cassis/",
+      "slug": "nettoyage-insalubre--bouches-du-rhone--cassis",
+      "publishAt": "2026-08-16",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/bouches-du-rhone/chateaurenard/",
+      "slug": "nettoyage-insalubre--bouches-du-rhone--chateaurenard",
+      "publishAt": "2026-08-17",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/bouches-du-rhone/eygalieres/",
+      "slug": "nettoyage-insalubre--bouches-du-rhone--eygalieres",
+      "publishAt": "2026-08-17",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/bouches-du-rhone/fos-sur-mer/",
+      "slug": "nettoyage-insalubre--bouches-du-rhone--fos-sur-mer",
+      "publishAt": "2026-08-17",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/bouches-du-rhone/gardanne/",
+      "slug": "nettoyage-insalubre--bouches-du-rhone--gardanne",
+      "publishAt": "2026-08-17",
+      "needsUniqueDesc": false
     }
   ],
   "pages": [
@@ -3861,63 +3861,63 @@
       "slug": "nettoyage-diogene--haute-garonne--cugnaux",
       "type": "Page ville service",
       "publishAt": "2026-08-15",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 609
     },
     {
       "url": "/nettoyage-diogene/haute-garonne/l-union/",
       "slug": "nettoyage-diogene--haute-garonne--l-union",
       "type": "Page ville service",
       "publishAt": "2026-08-15",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 617
     },
     {
       "url": "/nettoyage-diogene/haute-garonne/muret/",
       "slug": "nettoyage-diogene--haute-garonne--muret",
       "type": "Page ville service",
       "publishAt": "2026-08-15",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 610
     },
     {
       "url": "/nettoyage-diogene/haute-garonne/revel/",
       "slug": "nettoyage-diogene--haute-garonne--revel",
       "type": "Page ville service",
       "publishAt": "2026-08-15",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 624
     },
     {
       "url": "/nettoyage-diogene/haute-garonne/saint-gaudens/",
       "slug": "nettoyage-diogene--haute-garonne--saint-gaudens",
       "type": "Page ville service",
       "publishAt": "2026-08-15",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 627
     },
     {
       "url": "/nettoyage-diogene/haute-garonne/saint-jean/",
       "slug": "nettoyage-diogene--haute-garonne--saint-jean",
       "type": "Page ville service",
       "publishAt": "2026-08-15",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 633
     },
     {
       "url": "/nettoyage-diogene/haute-garonne/tournefeuille/",
       "slug": "nettoyage-diogene--haute-garonne--tournefeuille",
       "type": "Page ville service",
       "publishAt": "2026-08-16",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 623
     },
     {
       "url": "/nettoyage-insalubre/bouches-du-rhone/allauch/",
