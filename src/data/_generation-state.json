@@ -1,46 +1,10 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 690,
-  "remaining": 100,
+  "done": 696,
+  "remaining": 94,
   "late": 0,
   "nextBatch": [
-    {
-      "url": "/nettoyage-diogene/aveyron/decazeville/",
-      "slug": "nettoyage-diogene--aveyron--decazeville",
-      "publishAt": "2026-09-23",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-diogene/aveyron/millau/",
-      "slug": "nettoyage-diogene--aveyron--millau",
-      "publishAt": "2026-09-24",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-diogene/aveyron/onet-le-chateau/",
-      "slug": "nettoyage-diogene--aveyron--onet-le-chateau",
-      "publishAt": "2026-09-24",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-diogene/aveyron/rodez/",
-      "slug": "nettoyage-diogene--aveyron--rodez",
-      "publishAt": "2026-09-24",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-diogene/aveyron/saint-affrique/",
-      "slug": "nettoyage-diogene--aveyron--saint-affrique",
-      "publishAt": "2026-09-24",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-diogene/aveyron/villefranche-de-rouergue/",
-      "slug": "nettoyage-diogene--aveyron--villefranche-de-rouergue",
-      "publishAt": "2026-09-24",
-      "needsUniqueDesc": false
-    },
     {
       "url": "/nettoyage-diogene/tarn/albi/",
       "slug": "nettoyage-diogene--tarn--albi",
@@ -63,6 +27,42 @@
       "url": "/nettoyage-diogene/tarn/gaillac/",
       "slug": "nettoyage-diogene--tarn--gaillac",
       "publishAt": "2026-09-25",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-diogene/tarn/graulhet/",
+      "slug": "nettoyage-diogene--tarn--graulhet",
+      "publishAt": "2026-09-25",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-diogene/tarn/lavaur/",
+      "slug": "nettoyage-diogene--tarn--lavaur",
+      "publishAt": "2026-09-25",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-diogene/tarn/mazamet/",
+      "slug": "nettoyage-diogene--tarn--mazamet",
+      "publishAt": "2026-09-25",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/aveyron/bozouls/",
+      "slug": "nettoyage-insalubre--aveyron--bozouls",
+      "publishAt": "2026-09-25",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/aveyron/capdenac-gare/",
+      "slug": "nettoyage-insalubre--aveyron--capdenac-gare",
+      "publishAt": "2026-09-25",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-insalubre/aveyron/decazeville/",
+      "slug": "nettoyage-insalubre--aveyron--decazeville",
+      "publishAt": "2026-09-26",
       "needsUniqueDesc": false
     }
   ],
@@ -6282,54 +6282,54 @@
       "slug": "nettoyage-diogene--aveyron--decazeville",
       "type": "Page ville service",
       "publishAt": "2026-09-23",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 661
     },
     {
       "url": "/nettoyage-diogene/aveyron/millau/",
       "slug": "nettoyage-diogene--aveyron--millau",
       "type": "Page ville service",
       "publishAt": "2026-09-24",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 661
     },
     {
       "url": "/nettoyage-diogene/aveyron/onet-le-chateau/",
       "slug": "nettoyage-diogene--aveyron--onet-le-chateau",
       "type": "Page ville service",
       "publishAt": "2026-09-24",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 661
     },
     {
       "url": "/nettoyage-diogene/aveyron/rodez/",
       "slug": "nettoyage-diogene--aveyron--rodez",
       "type": "Page ville service",
       "publishAt": "2026-09-24",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 651
     },
     {
       "url": "/nettoyage-diogene/aveyron/saint-affrique/",
       "slug": "nettoyage-diogene--aveyron--saint-affrique",
       "type": "Page ville service",
       "publishAt": "2026-09-24",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 655
     },
     {
       "url": "/nettoyage-diogene/aveyron/villefranche-de-rouergue/",
       "slug": "nettoyage-diogene--aveyron--villefranche-de-rouergue",
       "type": "Page ville service",
       "publishAt": "2026-09-24",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 653
     },
     {
       "url": "/nettoyage-diogene/tarn/albi/",
