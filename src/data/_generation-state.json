@@ -1,68 +1,68 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 351,
-  "remaining": 439,
+  "done": 360,
+  "remaining": 430,
   "late": 0,
   "nextBatch": [
-    {
-      "url": "/nettoyage-apres-deces/haute-garonne/balma/",
-      "slug": "nettoyage-apres-deces--haute-garonne--balma",
-      "publishAt": "2026-08-05",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-apres-deces/haute-garonne/blagnac/",
-      "slug": "nettoyage-apres-deces--haute-garonne--blagnac",
-      "publishAt": "2026-08-05",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-apres-deces/haute-garonne/colomiers/",
-      "slug": "nettoyage-apres-deces--haute-garonne--colomiers",
-      "publishAt": "2026-08-05",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-apres-deces/haute-garonne/cugnaux/",
-      "slug": "nettoyage-apres-deces--haute-garonne--cugnaux",
-      "publishAt": "2026-08-05",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-apres-deces/haute-garonne/l-union/",
-      "slug": "nettoyage-apres-deces--haute-garonne--l-union",
-      "publishAt": "2026-08-05",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-apres-deces/haute-garonne/muret/",
-      "slug": "nettoyage-apres-deces--haute-garonne--muret",
-      "publishAt": "2026-08-05",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-apres-deces/haute-garonne/revel/",
-      "slug": "nettoyage-apres-deces--haute-garonne--revel",
-      "publishAt": "2026-08-06",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-apres-deces/haute-garonne/saint-gaudens/",
-      "slug": "nettoyage-apres-deces--haute-garonne--saint-gaudens",
-      "publishAt": "2026-08-06",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-apres-deces/haute-garonne/saint-jean/",
-      "slug": "nettoyage-apres-deces--haute-garonne--saint-jean",
-      "publishAt": "2026-08-06",
-      "needsUniqueDesc": false
-    },
     {
       "url": "/nettoyage-apres-deces/haute-garonne/tournefeuille/",
       "slug": "nettoyage-apres-deces--haute-garonne--tournefeuille",
       "publishAt": "2026-08-06",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-sinistre/bouches-du-rhone/arles/",
+      "slug": "nettoyage-apres-sinistre--bouches-du-rhone--arles",
+      "publishAt": "2026-08-06",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/nettoyage-apres-sinistre/bouches-du-rhone/aubagne/",
+      "slug": "nettoyage-apres-sinistre--bouches-du-rhone--aubagne",
+      "publishAt": "2026-08-06",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/nettoyage-apres-sinistre/gard/bagnols-sur-ceze/",
+      "slug": "nettoyage-apres-sinistre--gard--bagnols-sur-ceze",
+      "publishAt": "2026-08-06",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/nettoyage-apres-sinistre/haute-garonne/colomiers/",
+      "slug": "nettoyage-apres-sinistre--haute-garonne--colomiers",
+      "publishAt": "2026-08-07",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/nettoyage-apres-sinistre/haute-garonne/muret/",
+      "slug": "nettoyage-apres-sinistre--haute-garonne--muret",
+      "publishAt": "2026-08-07",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/nettoyage-apres-squat/bouches-du-rhone/allauch/",
+      "slug": "nettoyage-apres-squat--bouches-du-rhone--allauch",
+      "publishAt": "2026-08-07",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-squat/bouches-du-rhone/arles/",
+      "slug": "nettoyage-apres-squat--bouches-du-rhone--arles",
+      "publishAt": "2026-08-07",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-squat/bouches-du-rhone/aubagne/",
+      "slug": "nettoyage-apres-squat--bouches-du-rhone--aubagne",
+      "publishAt": "2026-08-07",
+      "needsUniqueDesc": false
+    },
+    {
+      "url": "/nettoyage-apres-squat/bouches-du-rhone/chateaurenard/",
+      "slug": "nettoyage-apres-squat--bouches-du-rhone--chateaurenard",
+      "publishAt": "2026-08-07",
       "needsUniqueDesc": false
     }
   ],
@@ -3231,81 +3231,81 @@
       "slug": "nettoyage-apres-deces--haute-garonne--balma",
       "type": "Page ville service",
       "publishAt": "2026-08-05",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 662
     },
     {
       "url": "/nettoyage-apres-deces/haute-garonne/blagnac/",
       "slug": "nettoyage-apres-deces--haute-garonne--blagnac",
       "type": "Page ville service",
       "publishAt": "2026-08-05",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 674
     },
     {
       "url": "/nettoyage-apres-deces/haute-garonne/colomiers/",
       "slug": "nettoyage-apres-deces--haute-garonne--colomiers",
       "type": "Page ville service",
       "publishAt": "2026-08-05",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 661
     },
     {
       "url": "/nettoyage-apres-deces/haute-garonne/cugnaux/",
       "slug": "nettoyage-apres-deces--haute-garonne--cugnaux",
       "type": "Page ville service",
       "publishAt": "2026-08-05",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 664
     },
     {
       "url": "/nettoyage-apres-deces/haute-garonne/l-union/",
       "slug": "nettoyage-apres-deces--haute-garonne--l-union",
       "type": "Page ville service",
       "publishAt": "2026-08-05",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 658
     },
     {
       "url": "/nettoyage-apres-deces/haute-garonne/muret/",
       "slug": "nettoyage-apres-deces--haute-garonne--muret",
       "type": "Page ville service",
       "publishAt": "2026-08-05",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 674
     },
     {
       "url": "/nettoyage-apres-deces/haute-garonne/revel/",
       "slug": "nettoyage-apres-deces--haute-garonne--revel",
       "type": "Page ville service",
       "publishAt": "2026-08-06",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 695
     },
     {
       "url": "/nettoyage-apres-deces/haute-garonne/saint-gaudens/",
       "slug": "nettoyage-apres-deces--haute-garonne--saint-gaudens",
       "type": "Page ville service",
       "publishAt": "2026-08-06",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 678
     },
     {
       "url": "/nettoyage-apres-deces/haute-garonne/saint-jean/",
       "slug": "nettoyage-apres-deces--haute-garonne--saint-jean",
       "type": "Page ville service",
       "publishAt": "2026-08-06",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 603
     },
     {
       "url": "/nettoyage-apres-deces/haute-garonne/tournefeuille/",
