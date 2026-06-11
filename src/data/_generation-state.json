@@ -1,28 +1,10 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 224,
-  "remaining": 566,
+  "done": 227,
+  "remaining": 563,
   "late": 0,
   "nextBatch": [
-    {
-      "url": "/debarras/appartement/herault/beziers/",
-      "slug": "debarras--appartement--herault--beziers",
-      "publishAt": "2026-07-18",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/appartement/herault/lunel/",
-      "slug": "debarras--appartement--herault--lunel",
-      "publishAt": "2026-07-18",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/appartement/herault/sete/",
-      "slug": "debarras--appartement--herault--sete",
-      "publishAt": "2026-07-18",
-      "needsUniqueDesc": true
-    },
     {
       "url": "/debarras/cave/bouches-du-rhone/aix-en-provence/",
       "slug": "debarras--cave--bouches-du-rhone--aix-en-provence",
@@ -62,6 +44,24 @@
     {
       "url": "/debarras/garage/bouches-du-rhone/aix-en-provence/",
       "slug": "debarras--garage--bouches-du-rhone--aix-en-provence",
+      "publishAt": "2026-07-19",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/garage/bouches-du-rhone/marseille/",
+      "slug": "debarras--garage--bouches-du-rhone--marseille",
+      "publishAt": "2026-07-19",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/garage/gard/ales/",
+      "slug": "debarras--garage--gard--ales",
+      "publishAt": "2026-07-19",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/garage/gard/nimes/",
+      "slug": "debarras--garage--gard--nimes",
       "publishAt": "2026-07-19",
       "needsUniqueDesc": true
     }
@@ -2088,27 +2088,27 @@
       "slug": "debarras--appartement--herault--beziers",
       "type": "Page ville débarras type",
       "publishAt": "2026-07-18",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 615
     },
     {
       "url": "/debarras/appartement/herault/lunel/",
       "slug": "debarras--appartement--herault--lunel",
       "type": "Page ville débarras type",
       "publishAt": "2026-07-18",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 619
     },
     {
       "url": "/debarras/appartement/herault/sete/",
       "slug": "debarras--appartement--herault--sete",
       "type": "Page ville débarras type",
       "publishAt": "2026-07-18",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 626
     },
     {
       "url": "/debarras/cave/bouches-du-rhone/aix-en-provence/",
