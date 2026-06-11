@@ -1,52 +1,10 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 571,
-  "remaining": 219,
+  "done": 578,
+  "remaining": 212,
   "late": 0,
   "nextBatch": [
-    {
-      "url": "/debarras/maison/gard/aigues-mortes/",
-      "slug": "debarras--maison--gard--aigues-mortes",
-      "publishAt": "2026-09-05",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/maison/gard/bagnols-sur-ceze/",
-      "slug": "debarras--maison--gard--bagnols-sur-ceze",
-      "publishAt": "2026-09-05",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/maison/gard/beaucaire/",
-      "slug": "debarras--maison--gard--beaucaire",
-      "publishAt": "2026-09-05",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/maison/gard/le-grau-du-roi/",
-      "slug": "debarras--maison--gard--le-grau-du-roi",
-      "publishAt": "2026-09-06",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/maison/gard/les-angles/",
-      "slug": "debarras--maison--gard--les-angles",
-      "publishAt": "2026-09-06",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/maison/gard/marguerittes/",
-      "slug": "debarras--maison--gard--marguerittes",
-      "publishAt": "2026-09-06",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/debarras/maison/gard/pont-saint-esprit/",
-      "slug": "debarras--maison--gard--pont-saint-esprit",
-      "publishAt": "2026-09-06",
-      "needsUniqueDesc": true
-    },
     {
       "url": "/debarras/maison/gard/saint-gilles/",
       "slug": "debarras--maison--gard--saint-gilles",
@@ -63,6 +21,48 @@
       "url": "/debarras/maison/gard/villeneuve-les-avignon/",
       "slug": "debarras--maison--gard--villeneuve-les-avignon",
       "publishAt": "2026-09-06",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/maison/haute-garonne/balma/",
+      "slug": "debarras--maison--haute-garonne--balma",
+      "publishAt": "2026-09-07",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/maison/haute-garonne/blagnac/",
+      "slug": "debarras--maison--haute-garonne--blagnac",
+      "publishAt": "2026-09-07",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/maison/haute-garonne/colomiers/",
+      "slug": "debarras--maison--haute-garonne--colomiers",
+      "publishAt": "2026-09-07",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/maison/haute-garonne/cugnaux/",
+      "slug": "debarras--maison--haute-garonne--cugnaux",
+      "publishAt": "2026-09-07",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/maison/haute-garonne/l-union/",
+      "slug": "debarras--maison--haute-garonne--l-union",
+      "publishAt": "2026-09-07",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/maison/haute-garonne/muret/",
+      "slug": "debarras--maison--haute-garonne--muret",
+      "publishAt": "2026-09-07",
+      "needsUniqueDesc": true
+    },
+    {
+      "url": "/debarras/maison/haute-garonne/revel/",
+      "slug": "debarras--maison--haute-garonne--revel",
+      "publishAt": "2026-09-07",
       "needsUniqueDesc": true
     }
   ],
@@ -5211,63 +5211,63 @@
       "slug": "debarras--maison--gard--aigues-mortes",
       "type": "Page ville débarras type",
       "publishAt": "2026-09-05",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 607
     },
     {
       "url": "/debarras/maison/gard/bagnols-sur-ceze/",
       "slug": "debarras--maison--gard--bagnols-sur-ceze",
       "type": "Page ville débarras type",
       "publishAt": "2026-09-05",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 614
     },
     {
       "url": "/debarras/maison/gard/beaucaire/",
       "slug": "debarras--maison--gard--beaucaire",
       "type": "Page ville débarras type",
       "publishAt": "2026-09-05",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 613
     },
     {
       "url": "/debarras/maison/gard/le-grau-du-roi/",
       "slug": "debarras--maison--gard--le-grau-du-roi",
       "type": "Page ville débarras type",
       "publishAt": "2026-09-06",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 611
     },
     {
       "url": "/debarras/maison/gard/les-angles/",
       "slug": "debarras--maison--gard--les-angles",
       "type": "Page ville débarras type",
       "publishAt": "2026-09-06",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 606
     },
     {
       "url": "/debarras/maison/gard/marguerittes/",
       "slug": "debarras--maison--gard--marguerittes",
       "type": "Page ville débarras type",
       "publishAt": "2026-09-06",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 611
     },
     {
       "url": "/debarras/maison/gard/pont-saint-esprit/",
       "slug": "debarras--maison--gard--pont-saint-esprit",
       "type": "Page ville débarras type",
       "publishAt": "2026-09-06",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 605
     },
     {
       "url": "/debarras/maison/gard/saint-gilles/",
