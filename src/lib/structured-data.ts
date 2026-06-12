@@ -35,8 +35,8 @@ export const localBusinessSchema = {
   },
   geo: {
     "@type": "GeoCoordinates",
-    latitude: "43.611",
-    longitude: "3.8767",
+    latitude: "43.6029058",
+    longitude: "3.9100103",
   },
   // Zone d'intervention déclarée en territoires administratifs (plus propre
   // qu'une liste de villes) ; le détail ville par ville vit sur les pages
@@ -96,11 +96,11 @@ export const localBusinessSchema = {
       },
     ],
   },
-  // sameAs RETIRÉ : les anciens profils « propremonsud » ne correspondent plus
-  // à l'entité renommée (SOS Nettoyage Diogène & Débarras) et un sameAs vers un
-  // profil incohérent brouille l'entité. À RÉTABLIR avec les vraies URLs des
-  // profils officiels (Google Business Profile, Facebook, etc.) une fois
-  // confirmées, par ex. : sameAs: ["https://www.facebook.com/<page-reelle>"].
+  // sameAs : profils officiels CONFIRMÉS de la même entité. Relie le site à la
+  // fiche Google Business Profile (renforce l'entité + cohérence NAP). URL
+  // canonique via le CID stable de la fiche (survit à un changement de nom).
+  // Ajouter ici les autres profils réels confirmés (Facebook, PagesJaunes…).
+  sameAs: ["https://www.google.com/maps?cid=17374493770164689124"],
   image: `${SITE_URL}/images/logos/p1.png`,
   logo: `${SITE_URL}/images/logos/logo.png`,
 };
