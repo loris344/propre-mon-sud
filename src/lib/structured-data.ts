@@ -51,7 +51,6 @@ export const localBusinessSchema = {
     "Désinfection et Insalubrité",
     "Nettoyage Après Décès",
   ],
-  openingHours: "Mo-Su 08:00-20:00",
   priceRange: "€€",
   paymentAccepted: "Cash, Credit Card, Bank Transfer",
   currenciesAccepted: "EUR",

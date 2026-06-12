@@ -20,32 +20,8 @@ export const SEO_CONFIGS: Record<string, SEOConfig> = {
 
   '/blog': {
     title: "Blog Expert | Syndrome de Diogène & Nettoyage",
-    description: "Guides experts : syndrome de Diogène, débarras après décès, protocoles de désinfection, prévention de l'insalubrité. Conseils professionnels 2025.",
+    description: "Guides pratiques de nos équipes : syndrome de Diogène, débarras après décès, désinfection, prévention de l'insalubrité et remise en état des logements.",
     canonical: "/blog"
-  },
-
-  '/blog/syndrome-diogene-identifier-gerer': {
-    title: "Syndrome de Diogène : Guide Complet 2025",
-    description: "Découvrez les 8 signes d'alerte du syndrome de Diogène, les statistiques en France et notre protocole d'intervention professionnel.",
-    canonical: "/blog/syndrome-diogene-identifier-gerer"
-  },
-
-  '/blog/debarras-apres-deces-accompagnement': {
-    title: "Débarras Après Décès : Guide Complet 2025",
-    description: "Protocole de débarras après décès : délais légaux, étapes et accompagnement psychologique. Service 24h/24 dans le Sud de la France.",
-    canonical: "/blog/debarras-apres-deces-accompagnement"
-  },
-
-  '/blog/desinfection-assainissement-protocoles': {
-    title: "Désinfection & Assainissement : Protocoles 2025",
-    description: "Protocoles de désinfection certifiés, produits homologués et techniques professionnelles. Garantie 99,9% d'efficacité.",
-    canonical: "/blog/desinfection-assainissement-protocoles"
-  },
-
-  '/blog/prevention-insalubrite-conseils': {
-    title: "Prévention Insalubrité : 15 Conseils d'Experts",
-    description: "15 conseils d'experts pour prévenir l'insalubrité : entretien, organisation, signes d'alerte. Guide pratique avec checklist gratuite.",
-    canonical: "/blog/prevention-insalubrite-conseils"
   },
 
   '/partenariat-mjpm': {

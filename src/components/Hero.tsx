@@ -78,18 +78,14 @@ const Hero = () => {
                   {[1, 2, 3, 4, 5].map((star) => (
                     <svg
                       key={star}
-                    className={`w-4 h-4 ${
-                        star <= 4 
-                          ? 'text-amber-400 fill-amber-400' 
-                          : 'text-amber-400 fill-amber-400 opacity-70'
-                      }`}
+                    className="w-4 h-4 text-amber-400 fill-amber-400"
                       viewBox="0 0 24 24"
                     >
                       <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
                     </svg>
                   ))}
                 </div>
-                <span className="text-sm font-semibold text-foreground ml-1">4,7 (94 avis)</span>
+                <span className="text-sm font-semibold text-foreground ml-1">5,0</span>
               </div>
             </div>
 

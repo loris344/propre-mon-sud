@@ -184,7 +184,7 @@ Le client a donné le **GO permanent** : dérouler la rédaction des 790 pages s
 |---|---|
 | Mots — page locale (ville/département) | **≥ 600** |
 | Mots — pages mères P1/P2 | **≥ 800** |
-| Similarité inter-pages (Jaccard 5-grammes) | **bloquant ≥ 0.70** (à câbler dans `validate-seo.mjs`) |
+| Similarité inter-pages (Jaccard 5-grammes) | **bloquant ≥ 0.70** (câblé dans `validate-seo.mjs` : `SIMILARITY_THRESHOLD`). Objectif d'élagage : descendre vers 0.60 au fil de la différenciation des grappes de villes. |
 | Faits locaux | **≥ 1 fait local vérifié par section H2** (quartier, bâti, SCHS/ARS, INSEE…) |
 | Meta description | unique, écrite à la main au moment de la rédaction |
 | Images | selon l'approvisionnement client (pools `source/<service>/`) ; alt unique/page. Image obligatoire sur toute page (pas de `noImage` sauf cas exceptionnel). Photo précise via `image-map.json` (URL → fichier) |
@@ -236,12 +236,15 @@ Tourne en `prebuild` : **le build échoue** si une règle est violée. Périmèt
 6. `FAQPage` ⇒ Q/R réellement écrites (frontmatter `faq` non vide).
 7. Image exacte requise si `imageRequired` (`src/data/image-map.json`).
 8. Liens obligatoires : aucune cible cassée.
-9. **Similarité inter-pages** : bloquant si Jaccard de 5-grammes ≥ `SIMILARITY_THRESHOLD`.
-   Corps < `MIN_BODY_WORDS` → warning (page mince).
+9. **Similarité inter-pages** : **bloquant** si Jaccard de 5-grammes ≥ `SIMILARITY_THRESHOLD`.
+10. **Corps trop court** : **bloquant** si < `MIN_BODY_WORDS` (page locale) ou `MIN_BODY_WORDS_PILLAR` (mères/hubs).
 
-⚠️ Seuils actuels du code (0.82 / 250 mots) **à durcir** vers les valeurs validées du barème
-qualité (0.70 / 600 mots) avant le lancement de la production. Tant que le code n'est pas
-aligné, le barème client prime sur le code pour la rédaction.
+✅ Seuils du code ALIGNÉS sur le barème client (état au 12/06/2026) :
+`SIMILARITY_THRESHOLD = 0.70`, `MIN_BODY_WORDS = 600`, `MIN_BODY_WORDS_PILLAR = 800`.
+Chantier d'amélioration continue : différencier les grappes de villes sœurs (après-décès,
+squat, Diogène, insalubre) — distribution réelle au 12/06 : 0 page ≥ 0.70 (garde-fou), mais
+~149 pages entre 0.60 et 0.69 et 318 pages ≥ 0.50 (plus proche voisin). Au fur et à mesure
+des réécritures, abaisser `SIMILARITY_THRESHOLD` (0.70 → 0.65 → 0.60) pour verrouiller l'acquis.
 
 ## Maillage interne & profondeur
 

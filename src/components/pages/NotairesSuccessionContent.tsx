@@ -46,7 +46,7 @@ const NotairesSuccessionContent = () => {
                         </svg>
                       ))}
                     </div>
-                    <span className="text-sm font-semibold text-foreground ml-1">4,7 (94 avis)</span>
+                    <span className="text-sm font-semibold text-foreground ml-1">5,0</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <span className="text-sm text-muted-foreground font-medium">En collaboration avec l'ARS</span>
