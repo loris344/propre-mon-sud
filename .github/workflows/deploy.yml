@@ -3,11 +3,20 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [ main ]
+  # Rebuild quotidien : fait passer en ligne les pages dont la date de
+  # publication (publishAt) est atteinte, sans aucune édition manuelle.
+  # 05:00 UTC ≈ 06:00/07:00 Paris. La validation SEO (prebuild) bloque le
+  # déploiement en cas d'erreur.
+  schedule:
+    - cron: '0 5 * * *'
+  # Déclenchement manuel possible depuis l'onglet Actions.
   workflow_dispatch:
 
-# TEST DIAGNOSTIC : version minimale (contents: write seulement, sans keepalive
-# ni issue d'alerte) pour isoler la cause du « Repository access blocked ».
-# La version complète est dans l'historique git (commit cc3485e) à restaurer.
+# IMPORTANT (diagnostic 12/06/2026) : ne demander QUE `contents: write`.
+# Demander `actions: write` (keepalive) ou `issues: write` (issue d'alerte) au
+# GITHUB_TOKEN faisait échouer le step « Set up job » avec « Repository access
+# blocked » sur ce dépôt. Le keepalive anti-désactivation-60j et l'alerte d'échec
+# sont à réintégrer SANS ces scopes (keepalive en mode commit = contents:write).
 permissions:
   contents: write
 
@@ -24,6 +33,7 @@ jobs:
         node-version: '20'
         cache: 'npm'
 
+    # `npm ci` : installation reproductible depuis le lockfile.
     - name: Install dependencies
       run: npm ci --include=optional --legacy-peer-deps
 
