@@ -5,7 +5,13 @@ import { ResponsiveImage } from "./ResponsiveImage";
 import Link from "next/link";
 import type { NavLink } from "@/lib/seo-pages";
 
-const Footer = ({ services = [] }: { services?: NavLink[] }) => {
+const Footer = ({
+  services = [],
+  secondary = [],
+}: {
+  services?: NavLink[];
+  secondary?: NavLink[];
+}) => {
   return (
     <footer className="bg-gradient-to-b from-background to-secondary/30 border-t border-border/50">
       <div className="container mx-auto px-4 sm:px-6 py-12 sm:py-16">
@@ -42,7 +48,7 @@ const Footer = ({ services = [] }: { services?: NavLink[] }) => {
               <div className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-primary flex-shrink-0" />
                 <div>
-                  <a href="tel:0767135458" onClick={() => gtag_report_conversion()} className="font-medium text-foreground hover:text-primary transition-colors">
+                  <a href="tel:0767135458" onClick={() => { if (typeof gtag_report_conversion === "function") gtag_report_conversion(); }} className="font-medium text-foreground hover:text-primary transition-colors">
                     07 67 13 54 58
                   </a>
                   <div className="text-sm text-muted-foreground">Disponible 7j/7</div>
@@ -81,7 +87,10 @@ const Footer = ({ services = [] }: { services?: NavLink[] }) => {
             </div>
           </div>
 
-          {/* Services — vrais liens crawlables vers les pages mères publiées */}
+          {/* Services + pillars secondaires — vrais liens crawlables vers les
+              pages racines publiées. Garantit que chaque silo (y compris
+              sinistre, remise en état, bailleurs, zones, réalisations) est à
+              1 clic, donc toute sa descendance à ≤ 3 clics de l'accueil. */}
           <div className="space-y-4">
             <h3 className="font-semibold text-foreground text-lg">Nos Services</h3>
             <div className="space-y-2">
@@ -104,6 +113,15 @@ const Footer = ({ services = [] }: { services?: NavLink[] }) => {
                   <div className="text-sm text-muted-foreground">• Évacuation Déchets</div>
                 </>
               )}
+              {secondary.map((s) => (
+                <Link
+                  key={s.url}
+                  href={s.url}
+                  className="block text-sm text-muted-foreground transition-colors hover:text-primary"
+                >
+                  {s.label}
+                </Link>
+              ))}
             </div>
           </div>
         </div>
@@ -137,14 +155,28 @@ const Footer = ({ services = [] }: { services?: NavLink[] }) => {
               © {new Date().getFullYear()} SOS Nettoyage Diogène & Débarras. Tous droits réservés.
             </div>
             <div className="flex flex-wrap items-center justify-center gap-4 text-sm text-muted-foreground">
+              {/* Pages partenariats B2B : indexables et dans le sitemap, elles
+                  doivent être crawlables (sinon orphelines à ∞ clic). */}
               <Link
-                href="/mentions-legales"
+                href="/partenariat-mjpm/"
+                className="hover:text-foreground transition-colors"
+              >
+                Partenariat MJPM
+              </Link>
+              <Link
+                href="/partenariat-maisons-retraite/"
+                className="hover:text-foreground transition-colors"
+              >
+                Partenariat maisons de retraite
+              </Link>
+              <Link
+                href="/mentions-legales/"
                 className="hover:text-foreground transition-colors"
               >
                 Mentions légales
               </Link>
               <Link
-                href="/politique-confidentialite"
+                href="/politique-confidentialite/"
                 className="hover:text-foreground transition-colors"
               >
                 Politique de confidentialité

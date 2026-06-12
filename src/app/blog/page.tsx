@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Footer from "@/components/Footer";
-import { getServiceHubs } from "@/lib/seo-pages";
+import { getServiceHubs, getSecondaryHubs } from "@/lib/seo-pages";
 import NewsletterForm from "@/components/NewsletterForm";
 import { buildMetadata } from "@/lib/metadata";
 import { getAllArticles, articleUrl } from "@/lib/articles";
@@ -111,7 +111,7 @@ export default function BlogPage() {
           </section>
         </div>
       </main>
-      <Footer services={getServiceHubs()} />
+      <Footer services={getServiceHubs()} secondary={getSecondaryHubs()} />
     </>
   );
 }

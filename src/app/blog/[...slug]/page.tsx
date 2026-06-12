@@ -7,7 +7,7 @@ import { ArrowLeft, Calendar, Clock } from "lucide-react";
 import Footer from "@/components/Footer";
 import ArticleCTA from "@/components/ArticleCTA";
 import MarkdownLink from "@/components/MarkdownLink";
-import { getServiceHubs, getMaillageForUrl } from "@/lib/seo-pages";
+import { getServiceHubs, getSecondaryHubs, getMaillageForUrl } from "@/lib/seo-pages";
 import {
   getAllArticles,
   getArticlesByCategory,
@@ -33,6 +33,17 @@ import { SITE_URL, jsonLd } from "@/lib/structured-data";
  */
 export const dynamicParams = false;
 
+/**
+ * INVARIANT CRITIQUE (output: export) : cette route doit TOUJOURS produire au
+ * moins un paramètre. Avec `output: export` + `dynamicParams = false`, un
+ * `generateStaticParams()` qui renvoie [] fait ÉCHOUER `next build` en entier
+ * (« Page is missing generateStaticParams() »), donc le déploiement quotidien
+ * du jour ne part pas — aucune page, même les pages SEO dues, ne sort.
+ * Garantie : les 8 catégories du plan publient dès la date de lancement
+ * (publishAt = startDate) et ne sont jamais dépubliées → la route a au moins 8
+ * params en permanence, même quand aucun article n'est encore éclos.
+ * NE JAMAIS reculer la date de publication des catégories après le lancement.
+ */
 export function generateStaticParams() {
   const params: { slug: string[] }[] = [];
   for (const a of getAllArticles())
@@ -139,7 +150,6 @@ export async function generateMetadata({
   return {
     title: article.title,
     description: article.description,
-    keywords: article.keywords,
     alternates: { canonical },
     openGraph: {
       title: article.title,
@@ -269,7 +279,7 @@ function CategoryPage({ category }: { category: BlogCategory }) {
           </article>
         </div>
       </main>
-      <Footer services={getServiceHubs()} />
+      <Footer services={getServiceHubs()} secondary={getSecondaryHubs()} />
     </>
   );
 }
@@ -372,7 +382,7 @@ function ArticlePage({ article }: { article: Article }) {
           </article>
         </div>
       </main>
-      <Footer services={getServiceHubs()} />
+      <Footer services={getServiceHubs()} secondary={getSecondaryHubs()} />
     </>
   );
 }

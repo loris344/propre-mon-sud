@@ -14,7 +14,7 @@ import fs from "node:fs";
 import path from "node:path";
 import matter from "gray-matter";
 import seoData from "@/data/seo-pages.json";
-import { buildDate } from "@/lib/build-date";
+import { publicationDate } from "@/lib/build-date";
 
 const CONTENT_DIR = path.join(process.cwd(), "content/blog-categories");
 const isProd = process.env.NODE_ENV === "production";
@@ -85,7 +85,9 @@ function isCategoryPublished(c: BlogCategory): boolean {
   if (c.draft) return false;
   if (!isProd) return true; // dev : prévisualisation de tout ce qui est rédigé
   if (!c.publishAt) return false;
-  return c.publishAt <= buildDate();
+  // publicationDate() (plancher au lancement), cohérent avec les pages SEO et
+  // les articles : garantit que le squelette blog est présent dès le 1er build.
+  return c.publishAt <= publicationDate();
 }
 
 export function getPublishedCategories(): BlogCategory[] {

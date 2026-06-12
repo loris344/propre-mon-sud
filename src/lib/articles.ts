@@ -2,7 +2,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import readingTime from "reading-time";
-import { buildDate } from "@/lib/build-date";
+import { publicationDate } from "@/lib/build-date";
 
 const ARTICLES_DIR = path.join(process.cwd(), "content/articles");
 
@@ -68,7 +68,10 @@ export function getAllArticles(): Article[] {
   const files = fs.readdirSync(ARTICLES_DIR).filter((f) => /\.mdx?$/.test(f));
   let articles = files.map(readArticleFile);
   if (isProd) {
-    const today = buildDate();
+    // publicationDate() (plancher au lancement) et NON buildDate() brut : avant
+    // le lancement, les articles du jour J doivent prévisualiser comme les pages
+    // SEO, sinon la route blog peut être vide et `next build` échoue.
+    const today = publicationDate();
     articles = articles.filter((a) => !a.draft && (!a.publishAt || a.publishAt <= today));
   }
   return articles.sort((a, b) => (a.date < b.date ? 1 : -1));

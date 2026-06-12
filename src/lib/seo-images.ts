@@ -34,8 +34,21 @@ function altFor(page: SeoPage): string {
   if (page.altProposed) return page.altProposed;
   const where = page.ville || page.departement || page.region;
   const base = page.h1 || page.title || page.service;
-  return where ? `${base} — illustration de nos interventions à ${where}` : `${base} — illustration de nos interventions`;
+  // Pas de tiret cadratin : l'alt est du contenu visible par les outils, la
+  // règle de style du client s'y applique aussi.
+  return where ? `${base} : illustration de nos interventions à ${where}` : `${base} : illustration de nos interventions`;
 }
+
+/** Silos transversaux sans pool photo propre : ils réutilisent le pool
+ *  insalubre (mêmes typologies de chantiers). Le champ `service` du plan reste
+ *  exact (il alimente le serviceType du JSON-LD) ; seul le pool est partagé.
+ *  L'alias vit ici (et pas dans image-fallbacks.json) pour survivre aux
+ *  régénérations via `npm run seo:images`. */
+const POOL_ALIASES: Record<string, string> = {
+  "Nettoyage après sinistre": "Nettoyage insalubre",
+  "Remise en état de logement": "Nettoyage insalubre",
+  "Nettoyage extrême": "Nettoyage insalubre",
+};
 
 export function resolveSeoImage(page: SeoPage): ResolvedImage | null {
   const alt = altFor(page);
@@ -45,7 +58,7 @@ export function resolveSeoImage(page: SeoPage): ResolvedImage | null {
   if (exact) return { src: `${OPTIMIZED}/${exact}`, alt, exact: true };
 
   // 2) Fallback par service (rotation déterministe pour éviter les répétitions)
-  const pool = FALLBACKS[page.service] || [];
+  const pool = FALLBACKS[page.service] || FALLBACKS[POOL_ALIASES[page.service]] || [];
   if (pool.length > 0) {
     const file = pool[hash(page.url) % pool.length];
     return { src: `${OPTIMIZED}/${file}`, alt, exact: false };

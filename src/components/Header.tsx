@@ -50,18 +50,32 @@ const Header = ({ services = [] }: { services?: NavLink[] }) => {
     [pathname, router, scrollToSection],
   );
 
-  const handleLogoClick = useCallback(() => {
-    setIsMenuOpen(false);
-    router.push("/");
-  }, [router]);
+  // Entrées de nav rendues en VRAIS <a href> (crawlables) : sur la home on
+  // intercepte le clic pour garder le défilement doux, ailleurs le lien navigue.
+  const handleNavLink = useCallback(
+    (e: React.MouseEvent, section: string) => {
+      setIsMenuOpen(false);
+      if (pathname === "/") {
+        e.preventDefault();
+        scrollToSection(section);
+      }
+    },
+    [pathname, scrollToSection],
+  );
+
+  const reportConversion = useCallback(() => {
+    if (typeof gtag_report_conversion === "function") gtag_report_conversion();
+  }, []);
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 border-b border-border/50 bg-background/95 shadow-sm backdrop-blur-sm">
       <nav className="container mx-auto px-4 py-3 sm:px-6 sm:py-4">
         <div className="flex items-center justify-between gap-2 sm:gap-4">
-          <div
-            className="flex min-w-0 items-center space-x-2 sm:space-x-3 cursor-pointer"
-            onClick={handleLogoClick}
+          <Link
+            href="/"
+            className="flex min-w-0 items-center space-x-2 sm:space-x-3"
+            onClick={() => setIsMenuOpen(false)}
+            aria-label="SOS Nettoyage Diogène & Débarras, retour à l'accueil"
           >
             <img
               src="/images/logos/logo-transparent.webp"
@@ -81,15 +95,16 @@ const Header = ({ services = [] }: { services?: NavLink[] }) => {
                 </span>
               </div>
             </div>
-          </div>
+          </Link>
 
           <div className="hidden flex-1 items-center justify-center space-x-6 md:flex">
-            <button
-              onClick={() => handleNavigation("accueil")}
+            <Link
+              href="/"
+              onClick={(e) => handleNavLink(e, "accueil")}
               className="font-medium text-foreground transition-colors hover:text-primary"
             >
               Accueil
-            </button>
+            </Link>
             {/* Services : menu déroulant au clic. Les vrais liens restent dans
                 le HTML même fermé (masqués en CSS) → toujours crawlables. */}
             <div className="relative" ref={servicesRef}>
@@ -124,24 +139,26 @@ const Header = ({ services = [] }: { services?: NavLink[] }) => {
                 </div>
               )}
             </div>
-            <button
-              onClick={() => handleNavigation("avis")}
+            <Link
+              href="/#avis"
+              onClick={(e) => handleNavLink(e, "avis")}
               className="font-medium text-foreground transition-colors hover:text-primary"
             >
               Avis
-            </button>
+            </Link>
             <Link
-              href="/blog"
+              href="/blog/"
               className="font-medium text-foreground transition-colors hover:text-primary"
             >
               Blog
             </Link>
-            <button
-              onClick={() => handleNavigation("contact")}
+            <Link
+              href="/#contact"
+              onClick={(e) => handleNavLink(e, "contact")}
               className="font-medium text-foreground transition-colors hover:text-primary"
             >
               Contact
-            </button>
+            </Link>
           </div>
 
           <div className="hidden flex-shrink-0 items-center space-x-2 lg:flex">
@@ -149,7 +166,7 @@ const Header = ({ services = [] }: { services?: NavLink[] }) => {
             <ReviewsDisplay />
             <a
               href="tel:0767135458"
-              onClick={() => gtag_report_conversion()}
+              onClick={reportConversion}
               className="flex items-center gap-1 whitespace-nowrap text-sm font-semibold text-primary hover:underline"
             >
               <Phone className="h-4 w-4" />
@@ -186,12 +203,13 @@ const Header = ({ services = [] }: { services?: NavLink[] }) => {
         {isMenuOpen && (
           <div className="mt-4 rounded-lg border border-border/50 bg-card p-4 shadow-lg sm:p-6 lg:hidden">
             <div className="space-y-4 sm:space-y-6">
-              <button
-                onClick={() => handleNavigation("accueil")}
+              <Link
+                href="/"
+                onClick={(e) => handleNavLink(e, "accueil")}
                 className="block w-full py-3 text-left text-base font-medium text-foreground transition-colors hover:text-primary sm:py-4 sm:text-lg"
               >
                 Accueil
-              </button>
+              </Link>
               <div>
                 <button
                   onClick={() => setIsServicesOpen((v) => !v)}
@@ -218,25 +236,27 @@ const Header = ({ services = [] }: { services?: NavLink[] }) => {
                   </div>
                 )}
               </div>
-              <button
-                onClick={() => handleNavigation("avis")}
+              <Link
+                href="/#avis"
+                onClick={(e) => handleNavLink(e, "avis")}
                 className="block w-full py-3 text-left text-base font-medium text-foreground transition-colors hover:text-primary sm:py-4 sm:text-lg"
               >
                 Avis
-              </button>
+              </Link>
               <Link
-                href="/blog"
+                href="/blog/"
                 onClick={() => setIsMenuOpen(false)}
                 className="block w-full py-3 text-left text-base font-medium text-foreground transition-colors hover:text-primary sm:py-4 sm:text-lg"
               >
                 Blog
               </Link>
-              <button
-                onClick={() => handleNavigation("contact")}
+              <Link
+                href="/#contact"
+                onClick={(e) => handleNavLink(e, "contact")}
                 className="block w-full py-3 text-left text-base font-medium text-foreground transition-colors hover:text-primary sm:py-4 sm:text-lg"
               >
                 Contact
-              </button>
+              </Link>
 
               <div className="space-y-4 border-t border-border/50 pt-4 sm:space-y-6 sm:pt-6">
                 <div className="flex justify-center">
@@ -247,7 +267,7 @@ const Header = ({ services = [] }: { services?: NavLink[] }) => {
                 </div>
                 <a
                   href="tel:0767135458"
-                  onClick={() => gtag_report_conversion()}
+                  onClick={reportConversion}
                   className="block w-full rounded-lg bg-primary px-6 py-4 text-center text-lg font-bold text-primary-foreground transition-colors hover:bg-primary/90"
                 >
                   <Phone className="mr-2 inline-block h-5 w-5" />

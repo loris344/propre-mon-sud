@@ -25,7 +25,7 @@ export default function ArticleCTA() {
         </button>
         <a
           href="tel:0767135458"
-          onClick={() => gtag_report_conversion()}
+          onClick={() => { if (typeof gtag_report_conversion === "function") gtag_report_conversion(); }}
           className="bg-green-600 text-white px-6 py-2 rounded-md hover:bg-green-700 transition-colors font-medium text-center"
         >
           📞 07 67 13 54 58

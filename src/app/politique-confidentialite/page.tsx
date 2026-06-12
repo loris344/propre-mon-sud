@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { buildMetadata } from "@/lib/metadata";
 import Footer from "@/components/Footer";
 import CallLink from "@/components/CallLink";
-import { getServiceHubs } from "@/lib/seo-pages";
+import { getServiceHubs, getSecondaryHubs } from "@/lib/seo-pages";
 
 export const metadata: Metadata = buildMetadata("/politique-confidentialite");
 
@@ -110,7 +110,7 @@ const PolitiqueConfidentialite = () => {
           </div>
         </div>
       </main>
-      <Footer services={getServiceHubs()} />
+      <Footer services={getServiceHubs()} secondary={getSecondaryHubs()} />
     </>
   );
 };

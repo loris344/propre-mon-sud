@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { buildMetadata } from "@/lib/metadata";
 import Footer from "@/components/Footer";
-import { getServiceHubs } from "@/lib/seo-pages";
+import { getServiceHubs, getSecondaryHubs } from "@/lib/seo-pages";
 
 export const metadata: Metadata = buildMetadata("/mentions-legales");
 
@@ -67,7 +67,7 @@ const MentionsLegales = () => {
           </div>
         </div>
       </main>
-      <Footer services={getServiceHubs()} />
+      <Footer services={getServiceHubs()} secondary={getSecondaryHubs()} />
     </>
   );
 };

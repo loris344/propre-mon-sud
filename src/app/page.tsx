@@ -6,7 +6,7 @@ import WhyChooseUs from "@/components/WhyChooseUs";
 import CustomerReviews from "@/components/CustomerReviews";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
-import { getServiceHubs } from "@/lib/seo-pages";
+import { getServiceHubs, getSecondaryHubs } from "@/lib/seo-pages";
 import LandingFAQ from "@/components/LandingFAQ";
 import HashScroll from "@/components/HashScroll";
 import { buildMetadata } from "@/lib/metadata";
@@ -80,7 +80,7 @@ export default function HomePage() {
           <Contact />
         </section>
       </main>
-      <Footer services={getServiceHubs()} />
+      <Footer services={getServiceHubs()} secondary={getSecondaryHubs()} />
     </>
   );
 }

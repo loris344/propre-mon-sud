@@ -21,25 +21,13 @@ import internalLinks from "@/data/internal-links.json";
 import { SITE_URL, BUSINESS_ID } from "@/lib/structured-data";
 import { getAllArticles, articleUrl } from "@/lib/articles";
 import { getPublishedCategories } from "@/lib/blog-categories";
-import { buildDate } from "@/lib/build-date";
+import { buildDate, publicationDate } from "@/lib/build-date";
 import type { PlannedPage, PageStatus, PageIntent } from "@/lib/page-plan";
 
-export { buildDate };
+export { buildDate, publicationDate };
 
 const CONTENT_DIR = path.join(process.cwd(), "content/seo");
 const isProd = process.env.NODE_ENV === "production";
-
-/**
- * Date qui pilote la publication. Plancher à la date de lancement du plan :
- * un build effectué AVANT le lancement prévisualise le set du jour J (et ne
- * laisse jamais la route catch-all sans aucune page, ce que `output: export`
- * interdit). À partir du lancement, c'est la vraie date du build qui s'applique.
- */
-export function publicationDate(): string {
-  const start = (seoData as { meta?: { schedule?: { startDate?: string } } }).meta?.schedule?.startDate || "1970-01-01";
-  const today = buildDate();
-  return today > start ? today : start;
-}
 
 export interface SeoPage {
   id: string;
@@ -116,7 +104,21 @@ const EXISTING_PUBLIC = new Set<string>([
 ]);
 
 /* ------------------------------------------------------------------ MDX --- */
+/** Cache de build : readMdx est appelé par isPublished pour CHAQUE page, et
+ *  getPublishedPages l'est par le layout, le footer de chaque page et le
+ *  sitemap. Sans mémoïsation, le build relit/re-parse les ~790 MDX des
+ *  centaines de fois (coût quadratique au fil des publications). En dev, pas
+ *  de cache : la prévisualisation doit refléter les éditions à chaud. */
+const mdxCache = new Map<string, SeoMdx | null>();
+
 export function readMdx(slug: string): SeoMdx | null {
+  if (isProd && mdxCache.has(slug)) return mdxCache.get(slug) ?? null;
+  const result = readMdxUncached(slug);
+  if (isProd) mdxCache.set(slug, result);
+  return result;
+}
+
+function readMdxUncached(slug: string): SeoMdx | null {
   const file = path.join(CONTENT_DIR, `${slug}.mdx`);
   if (!fs.existsSync(file)) return null;
   const { data, content } = matter(fs.readFileSync(file, "utf8"));
@@ -162,9 +164,14 @@ export function isPublished(page: SeoPage): boolean {
   return page.publishAt <= publicationDate();
 }
 
-/** Toutes les pages catch-all qui DOIVENT être générées statiquement. */
+/** Toutes les pages catch-all qui DOIVENT être générées statiquement.
+ *  Mémoïsé en prod (résultat invariant pendant un build). */
+let _publishedPages: SeoPage[] | null = null;
 export function getPublishedPages(): SeoPage[] {
-  return PAGES.filter(isPublished);
+  if (isProd && _publishedPages) return _publishedPages;
+  const pages = PAGES.filter(isPublished);
+  if (isProd) _publishedPages = pages;
+  return pages;
 }
 
 export interface NavLink {
@@ -183,6 +190,30 @@ export function getServiceHubs(): NavLink[] {
   return getPublishedPages()
     .filter((p) => p.priority === 1 && /^\/[^/]+\/$/.test(p.url))
     .map((p) => ({ url: p.url, label: p.title }));
+}
+
+/**
+ * Pillars SECONDAIRES (silos transversaux et hubs) : pages racines à un seul
+ * segment qui ne sont PAS dans la nav principale (priorité ≠ 1) mais qui ont
+ * une descendance (villes, sous-pages). Sans lien sitewide, leurs villes
+ * tombent à 4 clics de l'accueil (pillar à 2-3 clics + département + ville).
+ * Affichés dans le footer (crawlable partout) → le pillar passe à 1 clic et
+ * toute sa descendance repasse à ≤ 3 clics. Liste curÉe et stable, filtrée
+ * sur les pages réellement publiées (jamais de lien vers une page future).
+ */
+const SECONDARY_HUB_URLS = [
+  "/nettoyage-apres-sinistre/",
+  "/remise-en-etat-logement/",
+  "/nettoyage-debarras-proprietaire-bailleur/",
+  "/zones-intervention/",
+  "/realisations/",
+];
+export function getSecondaryHubs(): NavLink[] {
+  const pub = publicUrlSet();
+  return SECONDARY_HUB_URLS.filter((u) => pub.has(u)).map((u) => ({
+    url: u,
+    label: BY_URL.get(u)?.title || u,
+  }));
 }
 
 export function getPageByUrl(url: string): SeoPage | undefined {
@@ -330,7 +361,11 @@ export function buildBreadcrumb(page: SeoPage): Crumb[] {
  *   - Service + areaServed (City/AdministrativeArea) = la modélisation honnête
  *     d'une entreprise qui se déplace.
  */
-export function buildJsonLd(page: SeoPage, crumbs: Crumb[]): object[] {
+export function buildJsonLd(
+  page: SeoPage,
+  crumbs: Crumb[],
+  meta: ReturnType<typeof effectiveMeta>,
+): object[] {
   const blocks: object[] = [];
   const wants = (s: string) => page.schemaType?.toLowerCase().includes(s);
   const absolute = (u: string) => (u.startsWith("http") ? u : `${SITE_URL}${u}`);
@@ -344,12 +379,15 @@ export function buildJsonLd(page: SeoPage, crumbs: Crumb[]): object[] {
     blocks.push({
       "@context": "https://schema.org",
       "@type": "Service",
-      name: page.h1 || page.title,
+      // Metas EFFECTIVES (override frontmatter > plan) : les descriptions du
+      // plan Excel sont templatées/en collision, elles ne doivent fuir nulle
+      // part — y compris dans les données structurées.
+      name: meta.h1,
       serviceType: page.service || page.keyword,
       url: absolute(page.url),
       areaServed: area,
       provider: { "@id": BUSINESS_ID },
-      description: page.metaDescription,
+      description: meta.metaDescription,
     });
   }
   if (crumbs.length > 1) {

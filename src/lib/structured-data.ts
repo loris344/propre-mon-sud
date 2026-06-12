@@ -97,10 +97,11 @@ export const localBusinessSchema = {
       },
     ],
   },
-  sameAs: [
-    "https://www.facebook.com/propremonsud",
-    "https://www.linkedin.com/company/propre-mon-sud",
-  ],
+  // sameAs RETIRÉ : les anciens profils « propremonsud » ne correspondent plus
+  // à l'entité renommée (SOS Nettoyage Diogène & Débarras) et un sameAs vers un
+  // profil incohérent brouille l'entité. À RÉTABLIR avec les vraies URLs des
+  // profils officiels (Google Business Profile, Facebook, etc.) une fois
+  // confirmées, par ex. : sameAs: ["https://www.facebook.com/<page-reelle>"].
   image: `${SITE_URL}/images/logos/p1.png`,
   logo: `${SITE_URL}/images/logos/logo.png`,
 };

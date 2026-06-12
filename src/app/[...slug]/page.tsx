@@ -19,6 +19,7 @@ import {
   buildBreadcrumb,
   buildJsonLd,
   getServiceHubs,
+  getSecondaryHubs,
 } from "@/lib/seo-pages";
 
 export const dynamicParams = false;
@@ -46,7 +47,6 @@ export async function generateMetadata({
   return {
     title: meta.metaTitle,
     description: meta.metaDescription,
-    keywords: [page.keyword, ...page.secondaryKeywords].filter((k) => k && !k.startsWith("/")).join(", "),
     alternates: { canonical },
     robots: { index: true, follow: true },
     openGraph: {
@@ -75,7 +75,7 @@ export default async function SeoPage({
   const meta = effectiveMeta(page, mdx);
   const crumbs = buildBreadcrumb(page);
   const maillage = getMaillage(page);
-  const schemas = buildJsonLd(page, crumbs);
+  const schemas = buildJsonLd(page, crumbs, meta);
   const img = mdx.noImage ? null : resolveSeoImage(page);
   const childrenLabel = page.type.includes("hub") || page.type.includes("mère")
     ? "Nos services spécialisés"
@@ -119,7 +119,8 @@ export default async function SeoPage({
               <div className="relative w-full aspect-[16/9] overflow-hidden rounded-lg bg-muted">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src={img.src} alt={img.alt} width={1600} height={900}
-                     className="absolute inset-0 w-full h-full object-cover" loading="eager" />
+                     className="absolute inset-0 w-full h-full object-cover" loading="eager"
+                     fetchPriority="high" />
               </div>
             </figure>
           )}
@@ -164,7 +165,7 @@ export default async function SeoPage({
           </article>
         </div>
       </main>
-      <Footer services={getServiceHubs()} />
+      <Footer services={getServiceHubs()} secondary={getSecondaryHubs()} />
     </>
   );
 }
