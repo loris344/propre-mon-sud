@@ -1,71 +1,10 @@
 {
   "updatedFor": "génération SEO",
   "total": 790,
-  "done": 703,
-  "remaining": 87,
+  "done": 790,
+  "remaining": 0,
   "late": 0,
-  "nextBatch": [
-    {
-      "url": "/nettoyage-insalubre/aveyron/bozouls/",
-      "slug": "nettoyage-insalubre--aveyron--bozouls",
-      "publishAt": "2026-09-25",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-insalubre/aveyron/capdenac-gare/",
-      "slug": "nettoyage-insalubre--aveyron--capdenac-gare",
-      "publishAt": "2026-09-25",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-insalubre/aveyron/decazeville/",
-      "slug": "nettoyage-insalubre--aveyron--decazeville",
-      "publishAt": "2026-09-26",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-insalubre/aveyron/espalion/",
-      "slug": "nettoyage-insalubre--aveyron--espalion",
-      "publishAt": "2026-09-26",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-insalubre/aveyron/luc-la-primaube/",
-      "slug": "nettoyage-insalubre--aveyron--luc-la-primaube",
-      "publishAt": "2026-09-26",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-insalubre/aveyron/millau/",
-      "slug": "nettoyage-insalubre--aveyron--millau",
-      "publishAt": "2026-09-26",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/nettoyage-insalubre/aveyron/olemps/",
-      "slug": "nettoyage-insalubre--aveyron--olemps",
-      "publishAt": "2026-09-26",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-insalubre/aveyron/onet-le-chateau/",
-      "slug": "nettoyage-insalubre--aveyron--onet-le-chateau",
-      "publishAt": "2026-09-26",
-      "needsUniqueDesc": false
-    },
-    {
-      "url": "/nettoyage-insalubre/aveyron/rodez/",
-      "slug": "nettoyage-insalubre--aveyron--rodez",
-      "publishAt": "2026-09-26",
-      "needsUniqueDesc": true
-    },
-    {
-      "url": "/nettoyage-insalubre/aveyron/saint-affrique/",
-      "slug": "nettoyage-insalubre--aveyron--saint-affrique",
-      "publishAt": "2026-09-27",
-      "needsUniqueDesc": false
-    }
-  ],
+  "nextBatch": [],
   "pages": [
     {
       "url": "/nettoyage-extreme/",
@@ -6399,783 +6338,783 @@
       "slug": "nettoyage-insalubre--aveyron--bozouls",
       "type": "Page ville service",
       "publishAt": "2026-09-25",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 678
     },
     {
       "url": "/nettoyage-insalubre/aveyron/capdenac-gare/",
       "slug": "nettoyage-insalubre--aveyron--capdenac-gare",
       "type": "Page ville service",
       "publishAt": "2026-09-25",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 651
     },
     {
       "url": "/nettoyage-insalubre/aveyron/decazeville/",
       "slug": "nettoyage-insalubre--aveyron--decazeville",
       "type": "Page ville service",
       "publishAt": "2026-09-26",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 634
     },
     {
       "url": "/nettoyage-insalubre/aveyron/espalion/",
       "slug": "nettoyage-insalubre--aveyron--espalion",
       "type": "Page ville service",
       "publishAt": "2026-09-26",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 630
     },
     {
       "url": "/nettoyage-insalubre/aveyron/luc-la-primaube/",
       "slug": "nettoyage-insalubre--aveyron--luc-la-primaube",
       "type": "Page ville service",
       "publishAt": "2026-09-26",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 635
     },
     {
       "url": "/nettoyage-insalubre/aveyron/millau/",
       "slug": "nettoyage-insalubre--aveyron--millau",
       "type": "Page ville service",
       "publishAt": "2026-09-26",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 645
     },
     {
       "url": "/nettoyage-insalubre/aveyron/olemps/",
       "slug": "nettoyage-insalubre--aveyron--olemps",
       "type": "Page ville service",
       "publishAt": "2026-09-26",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 644
     },
     {
       "url": "/nettoyage-insalubre/aveyron/onet-le-chateau/",
       "slug": "nettoyage-insalubre--aveyron--onet-le-chateau",
       "type": "Page ville service",
       "publishAt": "2026-09-26",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 627
     },
     {
       "url": "/nettoyage-insalubre/aveyron/rodez/",
       "slug": "nettoyage-insalubre--aveyron--rodez",
       "type": "Page ville service",
       "publishAt": "2026-09-26",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 628
     },
     {
       "url": "/nettoyage-insalubre/aveyron/saint-affrique/",
       "slug": "nettoyage-insalubre--aveyron--saint-affrique",
       "type": "Page ville service",
       "publishAt": "2026-09-27",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 626
     },
     {
       "url": "/nettoyage-insalubre/aveyron/sebazac-concoures/",
       "slug": "nettoyage-insalubre--aveyron--sebazac-concoures",
       "type": "Page ville service",
       "publishAt": "2026-09-27",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 641
     },
     {
       "url": "/nettoyage-insalubre/aveyron/severac-d-aveyron/",
       "slug": "nettoyage-insalubre--aveyron--severac-d-aveyron",
       "type": "Page ville service",
       "publishAt": "2026-09-27",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 630
     },
     {
       "url": "/nettoyage-insalubre/aveyron/villefranche-de-rouergue/",
       "slug": "nettoyage-insalubre--aveyron--villefranche-de-rouergue",
       "type": "Page ville service",
       "publishAt": "2026-09-27",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 637
     },
     {
       "url": "/nettoyage-insalubre/tarn/albi/",
       "slug": "nettoyage-insalubre--tarn--albi",
       "type": "Page ville service",
       "publishAt": "2026-09-27",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 625
     },
     {
       "url": "/nettoyage-insalubre/tarn/carmaux/",
       "slug": "nettoyage-insalubre--tarn--carmaux",
       "type": "Page ville service",
       "publishAt": "2026-09-27",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 621
     },
     {
       "url": "/nettoyage-insalubre/tarn/castres/",
       "slug": "nettoyage-insalubre--tarn--castres",
       "type": "Page ville service",
       "publishAt": "2026-09-27",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 628
     },
     {
       "url": "/nettoyage-insalubre/tarn/gaillac/",
       "slug": "nettoyage-insalubre--tarn--gaillac",
       "type": "Page ville service",
       "publishAt": "2026-09-28",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 629
     },
     {
       "url": "/nettoyage-insalubre/tarn/graulhet/",
       "slug": "nettoyage-insalubre--tarn--graulhet",
       "type": "Page ville service",
       "publishAt": "2026-09-28",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 616
     },
     {
       "url": "/nettoyage-insalubre/tarn/labruguiere/",
       "slug": "nettoyage-insalubre--tarn--labruguiere",
       "type": "Page ville service",
       "publishAt": "2026-09-28",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 641
     },
     {
       "url": "/nettoyage-insalubre/tarn/lavaur/",
       "slug": "nettoyage-insalubre--tarn--lavaur",
       "type": "Page ville service",
       "publishAt": "2026-09-28",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 615
     },
     {
       "url": "/nettoyage-insalubre/tarn/lisle-sur-tarn/",
       "slug": "nettoyage-insalubre--tarn--lisle-sur-tarn",
       "type": "Page ville service",
       "publishAt": "2026-09-28",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 630
     },
     {
       "url": "/nettoyage-insalubre/tarn/mazamet/",
       "slug": "nettoyage-insalubre--tarn--mazamet",
       "type": "Page ville service",
       "publishAt": "2026-09-28",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 624
     },
     {
       "url": "/nettoyage-insalubre/tarn/puylaurens/",
       "slug": "nettoyage-insalubre--tarn--puylaurens",
       "type": "Page ville service",
       "publishAt": "2026-09-28",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 622
     },
     {
       "url": "/nettoyage-insalubre/tarn/rabastens/",
       "slug": "nettoyage-insalubre--tarn--rabastens",
       "type": "Page ville service",
       "publishAt": "2026-09-29",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 626
     },
     {
       "url": "/nettoyage-insalubre/tarn/realmont/",
       "slug": "nettoyage-insalubre--tarn--realmont",
       "type": "Page ville service",
       "publishAt": "2026-09-29",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 636
     },
     {
       "url": "/nettoyage-insalubre/tarn/saint-juery/",
       "slug": "nettoyage-insalubre--tarn--saint-juery",
       "type": "Page ville service",
       "publishAt": "2026-09-29",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 631
     },
     {
       "url": "/nettoyage-insalubre/tarn/saint-sulpice-la-pointe/",
       "slug": "nettoyage-insalubre--tarn--saint-sulpice-la-pointe",
       "type": "Page ville service",
       "publishAt": "2026-09-29",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 628
     },
     {
       "url": "/remise-en-etat-logement/aveyron/millau/",
       "slug": "remise-en-etat-logement--aveyron--millau",
       "type": "Page ville service",
       "publishAt": "2026-09-29",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 642
     },
     {
       "url": "/remise-en-etat-logement/aveyron/rodez/",
       "slug": "remise-en-etat-logement--aveyron--rodez",
       "type": "Page ville service",
       "publishAt": "2026-09-29",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 614
     },
     {
       "url": "/remise-en-etat-logement/tarn/albi/",
       "slug": "remise-en-etat-logement--tarn--albi",
       "type": "Page ville service",
       "publishAt": "2026-09-29",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 618
     },
     {
       "url": "/remise-en-etat-logement/tarn/castres/",
       "slug": "remise-en-etat-logement--tarn--castres",
       "type": "Page ville service",
       "publishAt": "2026-09-30",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 614
     },
     {
       "url": "/debarras/aveyron/",
       "slug": "debarras--aveyron",
       "type": "Page département débarras",
       "publishAt": "2026-09-30",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 622
     },
     {
       "url": "/debarras/tarn/",
       "slug": "debarras--tarn",
       "type": "Page département débarras",
       "publishAt": "2026-09-30",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 643
     },
     {
       "url": "/debarras/aveyron/decazeville/",
       "slug": "debarras--aveyron--decazeville",
       "type": "Page ville débarras",
       "publishAt": "2026-09-30",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 609
     },
     {
       "url": "/debarras/aveyron/millau/",
       "slug": "debarras--aveyron--millau",
       "type": "Page ville débarras",
       "publishAt": "2026-09-30",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 619
     },
     {
       "url": "/debarras/aveyron/onet-le-chateau/",
       "slug": "debarras--aveyron--onet-le-chateau",
       "type": "Page ville débarras",
       "publishAt": "2026-09-30",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 614
     },
     {
       "url": "/debarras/aveyron/rodez/",
       "slug": "debarras--aveyron--rodez",
       "type": "Page ville débarras",
       "publishAt": "2026-09-30",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 624
     },
     {
       "url": "/debarras/aveyron/saint-affrique/",
       "slug": "debarras--aveyron--saint-affrique",
       "type": "Page ville débarras",
       "publishAt": "2026-10-01",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 625
     },
     {
       "url": "/debarras/aveyron/villefranche-de-rouergue/",
       "slug": "debarras--aveyron--villefranche-de-rouergue",
       "type": "Page ville débarras",
       "publishAt": "2026-10-01",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 628
     },
     {
       "url": "/debarras/tarn/albi/",
       "slug": "debarras--tarn--albi",
       "type": "Page ville débarras",
       "publishAt": "2026-10-01",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 626
     },
     {
       "url": "/debarras/tarn/carmaux/",
       "slug": "debarras--tarn--carmaux",
       "type": "Page ville débarras",
       "publishAt": "2026-10-01",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 630
     },
     {
       "url": "/debarras/tarn/castres/",
       "slug": "debarras--tarn--castres",
       "type": "Page ville débarras",
       "publishAt": "2026-10-01",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 622
     },
     {
       "url": "/debarras/tarn/gaillac/",
       "slug": "debarras--tarn--gaillac",
       "type": "Page ville débarras",
       "publishAt": "2026-10-01",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 632
     },
     {
       "url": "/debarras/tarn/graulhet/",
       "slug": "debarras--tarn--graulhet",
       "type": "Page ville débarras",
       "publishAt": "2026-10-01",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 607
     },
     {
       "url": "/debarras/tarn/lavaur/",
       "slug": "debarras--tarn--lavaur",
       "type": "Page ville débarras",
       "publishAt": "2026-10-02",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 615
     },
     {
       "url": "/debarras/tarn/mazamet/",
       "slug": "debarras--tarn--mazamet",
       "type": "Page ville débarras",
       "publishAt": "2026-10-02",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 625
     },
     {
       "url": "/debarras/appartement/aveyron/millau/",
       "slug": "debarras--appartement--aveyron--millau",
       "type": "Page ville débarras type",
       "publishAt": "2026-10-02",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 638
     },
     {
       "url": "/debarras/appartement/aveyron/rodez/",
       "slug": "debarras--appartement--aveyron--rodez",
       "type": "Page ville débarras type",
       "publishAt": "2026-10-02",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 615
     },
     {
       "url": "/debarras/appartement/tarn/albi/",
       "slug": "debarras--appartement--tarn--albi",
       "type": "Page ville débarras type",
       "publishAt": "2026-10-02",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 624
     },
     {
       "url": "/debarras/appartement/tarn/castres/",
       "slug": "debarras--appartement--tarn--castres",
       "type": "Page ville débarras type",
       "publishAt": "2026-10-02",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 638
     },
     {
       "url": "/debarras/cave/aveyron/millau/",
       "slug": "debarras--cave--aveyron--millau",
       "type": "Page ville débarras type",
       "publishAt": "2026-10-02",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 633
     },
     {
       "url": "/debarras/cave/aveyron/rodez/",
       "slug": "debarras--cave--aveyron--rodez",
       "type": "Page ville débarras type",
       "publishAt": "2026-10-03",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 633
     },
     {
       "url": "/debarras/cave/tarn/albi/",
       "slug": "debarras--cave--tarn--albi",
       "type": "Page ville débarras type",
       "publishAt": "2026-10-03",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 633
     },
     {
       "url": "/debarras/cave/tarn/castres/",
       "slug": "debarras--cave--tarn--castres",
       "type": "Page ville débarras type",
       "publishAt": "2026-10-03",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 644
     },
     {
       "url": "/debarras/garage/aveyron/millau/",
       "slug": "debarras--garage--aveyron--millau",
       "type": "Page ville débarras type",
       "publishAt": "2026-10-03",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 628
     },
     {
       "url": "/debarras/garage/aveyron/rodez/",
       "slug": "debarras--garage--aveyron--rodez",
       "type": "Page ville débarras type",
       "publishAt": "2026-10-03",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 615
     },
     {
       "url": "/debarras/garage/tarn/albi/",
       "slug": "debarras--garage--tarn--albi",
       "type": "Page ville débarras type",
       "publishAt": "2026-10-03",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 612
     },
     {
       "url": "/debarras/garage/tarn/castres/",
       "slug": "debarras--garage--tarn--castres",
       "type": "Page ville débarras type",
       "publishAt": "2026-10-03",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 613
     },
     {
       "url": "/debarras/grenier/aveyron/millau/",
       "slug": "debarras--grenier--aveyron--millau",
       "type": "Page ville débarras type",
       "publishAt": "2026-10-04",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 611
     },
     {
       "url": "/debarras/grenier/aveyron/rodez/",
       "slug": "debarras--grenier--aveyron--rodez",
       "type": "Page ville débarras type",
       "publishAt": "2026-10-04",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 614
     },
     {
       "url": "/debarras/grenier/tarn/albi/",
       "slug": "debarras--grenier--tarn--albi",
       "type": "Page ville débarras type",
       "publishAt": "2026-10-04",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 607
     },
     {
       "url": "/debarras/grenier/tarn/castres/",
       "slug": "debarras--grenier--tarn--castres",
       "type": "Page ville débarras type",
       "publishAt": "2026-10-04",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 611
     },
     {
       "url": "/debarras/maison/aveyron/decazeville/",
       "slug": "debarras--maison--aveyron--decazeville",
       "type": "Page ville débarras type",
       "publishAt": "2026-10-04",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 601
     },
     {
       "url": "/debarras/maison/aveyron/millau/",
       "slug": "debarras--maison--aveyron--millau",
       "type": "Page ville débarras type",
       "publishAt": "2026-10-04",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 600
     },
     {
       "url": "/debarras/maison/aveyron/onet-le-chateau/",
       "slug": "debarras--maison--aveyron--onet-le-chateau",
       "type": "Page ville débarras type",
       "publishAt": "2026-10-04",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 603
     },
     {
       "url": "/debarras/maison/aveyron/rodez/",
       "slug": "debarras--maison--aveyron--rodez",
       "type": "Page ville débarras type",
       "publishAt": "2026-10-05",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 608
     },
     {
       "url": "/debarras/maison/aveyron/saint-affrique/",
       "slug": "debarras--maison--aveyron--saint-affrique",
       "type": "Page ville débarras type",
       "publishAt": "2026-10-05",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 613
     },
     {
       "url": "/debarras/maison/aveyron/villefranche-de-rouergue/",
       "slug": "debarras--maison--aveyron--villefranche-de-rouergue",
       "type": "Page ville débarras type",
       "publishAt": "2026-10-05",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 612
     },
     {
       "url": "/debarras/maison/tarn/albi/",
       "slug": "debarras--maison--tarn--albi",
       "type": "Page ville débarras type",
       "publishAt": "2026-10-05",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 600
     },
     {
       "url": "/debarras/maison/tarn/carmaux/",
       "slug": "debarras--maison--tarn--carmaux",
       "type": "Page ville débarras type",
       "publishAt": "2026-10-05",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 616
     },
     {
       "url": "/debarras/maison/tarn/castres/",
       "slug": "debarras--maison--tarn--castres",
       "type": "Page ville débarras type",
       "publishAt": "2026-10-05",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 602
     },
     {
       "url": "/debarras/maison/tarn/gaillac/",
       "slug": "debarras--maison--tarn--gaillac",
       "type": "Page ville débarras type",
       "publishAt": "2026-10-05",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 612
     },
     {
       "url": "/debarras/maison/tarn/graulhet/",
       "slug": "debarras--maison--tarn--graulhet",
       "type": "Page ville débarras type",
       "publishAt": "2026-10-06",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 607
     },
     {
       "url": "/debarras/maison/tarn/lavaur/",
       "slug": "debarras--maison--tarn--lavaur",
       "type": "Page ville débarras type",
       "publishAt": "2026-10-06",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 609
     },
     {
       "url": "/debarras/maison/tarn/mazamet/",
       "slug": "debarras--maison--tarn--mazamet",
       "type": "Page ville débarras type",
       "publishAt": "2026-10-06",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 614
     },
     {
       "url": "/debarras/succession/aveyron/millau/",
       "slug": "debarras--succession--aveyron--millau",
       "type": "Page ville débarras type",
       "publishAt": "2026-10-06",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 606
     },
     {
       "url": "/debarras/succession/aveyron/rodez/",
       "slug": "debarras--succession--aveyron--rodez",
       "type": "Page ville débarras type",
       "publishAt": "2026-10-06",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 620
     },
     {
       "url": "/debarras/succession/tarn/albi/",
       "slug": "debarras--succession--tarn--albi",
       "type": "Page ville débarras type",
       "publishAt": "2026-10-06",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 601
     },
     {
       "url": "/debarras/succession/tarn/castres/",
       "slug": "debarras--succession--tarn--castres",
       "type": "Page ville débarras type",
       "publishAt": "2026-10-06",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 614
     },
     {
       "url": "/zones-intervention/aveyron/",
       "slug": "zones-intervention--aveyron",
       "type": "Page zones département",
       "publishAt": "2026-10-07",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 667
     },
     {
       "url": "/zones-intervention/tarn/",
       "slug": "zones-intervention--tarn",
       "type": "Page zones département",
       "publishAt": "2026-10-07",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 675
     },
     {
       "url": "/debarras/maison/aveyron/",
       "slug": "debarras--maison--aveyron",
       "type": "Page département débarras type",
       "publishAt": "2026-10-07",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 683
     },
     {
       "url": "/debarras/maison/tarn/",
       "slug": "debarras--maison--tarn",
       "type": "Page département débarras type",
       "publishAt": "2026-10-07",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 710
     },
     {
       "url": "/debarras-occitanie/",
       "slug": "debarras-occitanie",
       "type": "Page régionale",
       "publishAt": "2026-10-07",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 622
     },
     {
       "url": "/debarras-paca/",
       "slug": "debarras-paca",
       "type": "Page régionale",
       "publishAt": "2026-10-07",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 614
     },
     {
       "url": "/nettoyage-extreme-occitanie/",
       "slug": "nettoyage-extreme-occitanie",
       "type": "Page régionale",
       "publishAt": "2026-10-07",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 634
     },
     {
       "url": "/nettoyage-extreme-paca/",
       "slug": "nettoyage-extreme-paca",
       "type": "Page régionale",
       "publishAt": "2026-10-08",
-      "written": false,
+      "written": true,
       "draft": false,
-      "words": 0
+      "words": 626
     }
   ]
 }

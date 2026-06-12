@@ -68,7 +68,7 @@ const LandingOdeursNuisibles = () => {
                 <div className="relative aspect-[3/4] rounded-2xl overflow-hidden shadow-lg group">
                   <img
                     src="/images/examples/odeurs-nuisibles-van.png"
-                    alt="Équipe SOS Nettoyage Diogène équipée pour le traitement des odeurs et nuisibles"
+                    alt="Équipe SOS Nettoyage Diogène & Débarras équipée pour le traitement des odeurs et nuisibles"
                     className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                     loading="lazy"
                   />
@@ -172,7 +172,7 @@ const LandingOdeursNuisibles = () => {
               <div className="grid grid-cols-1 gap-3">
                 <img
                   src="/images/examples/odeurs-nuisibles-van.png"
-                  alt="Véhicule d'intervention SOS Nettoyage Diogène"
+                  alt="Véhicule d'intervention SOS Nettoyage Diogène & Débarras"
                   className="rounded-2xl object-cover w-full h-64 sm:h-80 shadow-lg"
                   loading="lazy"
                 />

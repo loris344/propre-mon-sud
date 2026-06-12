@@ -155,7 +155,7 @@ const LandingApresDeces = () => {
                 />
                 <img
                   src="/images/logos/p1.webp"
-                  alt="L'équipe SOS Nettoyage Diogène au complet"
+                  alt="L'équipe SOS Nettoyage Diogène & Débarras au complet"
                   className="rounded-2xl object-cover w-full h-52 sm:h-72 shadow-lg"
                   loading="lazy"
                 />

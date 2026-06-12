@@ -38,7 +38,7 @@ export function buildMetadata(pathname: string, overrides?: Partial<SEOConfig>):
       title: config.title,
       description: config.description,
       url: canonical,
-      siteName: "SOS Nettoyage Diogène",
+      siteName: "SOS Nettoyage Diogène & Débarras",
       locale: "fr_FR",
       type: "website",
       images: [{ url: ogImage }],

@@ -13,12 +13,12 @@ const GTM_ID = "GTM-T2V8JRGG";
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "SOS Nettoyage Diogène | Nettoyage & Débarras Sud France",
+    default: "SOS Nettoyage Diogène & Débarras | Nettoyage & Débarras Sud France",
     template: "%s",
   },
   description:
     "Société spécialisée dans le nettoyage syndrome de Diogène, débarras, insalubrité et nettoyage après décès. Intervention discrète à Montpellier, Marseille et tout le Sud de la France.",
-  authors: [{ name: "SOS Nettoyage Diogène" }],
+  authors: [{ name: "SOS Nettoyage Diogène & Débarras" }],
   icons: {
     icon: [
       { url: "/favicon.ico", type: "image/x-icon" },
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   manifest: "/site.webmanifest",
   appleWebApp: {
     capable: true,
-    title: "SOS Nettoyage Diogène",
+    title: "SOS Nettoyage Diogène & Débarras",
     statusBarStyle: "default",
   },
 };

@@ -13,7 +13,7 @@ export default function ArticleCTA() {
       </h3>
       <p className="text-muted-foreground mb-4">
         Si vous êtes confronté à une situation difficile, des professionnels
-        spécialisés peuvent vous accompagner. SOS Nettoyage Diogène propose des
+        spécialisés peuvent vous accompagner. SOS Nettoyage Diogène & Débarras propose des
         interventions respectueuses et bienveillantes dans tout le Sud de la France.
       </p>
       <div className="flex flex-col sm:flex-row gap-3">

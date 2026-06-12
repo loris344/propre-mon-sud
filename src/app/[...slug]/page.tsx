@@ -73,7 +73,7 @@ export async function generateMetadata({
       title: meta.metaTitle,
       description: meta.metaDescription,
       url: canonical,
-      siteName: "SOS Nettoyage Diogène",
+      siteName: "SOS Nettoyage Diogène & Débarras",
       locale: "fr_FR",
       type: "website",
       images: img ? [{ url: img.src, alt: img.alt }] : undefined,

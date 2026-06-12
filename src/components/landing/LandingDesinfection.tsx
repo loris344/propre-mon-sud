@@ -190,7 +190,7 @@ const LandingDesinfection = () => {
                 />
                 <img
                   src="/images/logos/p1.webp"
-                  alt="L'équipe SOS Nettoyage Diogène"
+                  alt="L'équipe SOS Nettoyage Diogène & Débarras"
                   className="rounded-2xl object-cover w-full h-52 sm:h-72 shadow-lg"
                   loading="lazy"
                 />

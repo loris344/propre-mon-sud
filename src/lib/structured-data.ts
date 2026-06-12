@@ -19,8 +19,8 @@ export const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "@id": BUSINESS_ID,
-  name: "SOS Nettoyage Diogène",
-  alternateName: "SOS Nettoyage Diogène Montpellier",
+  name: "SOS Nettoyage Diogène & Débarras",
+  alternateName: "SOS Nettoyage Diogène",
   description:
     "Société spécialisée dans le nettoyage syndrome de Diogène, débarras et insalubrité. Intervention discrète et professionnelle dans le Sud de la France.",
   url: SITE_URL,
@@ -57,7 +57,7 @@ export const localBusinessSchema = {
   currenciesAccepted: "EUR",
   hasOfferCatalog: {
     "@type": "OfferCatalog",
-    name: "Services SOS Nettoyage Diogène",
+    name: "Services SOS Nettoyage Diogène & Débarras",
     itemListElement: [
       {
         "@type": "Offer",

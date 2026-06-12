@@ -13,7 +13,7 @@ export interface SEOConfig {
 
 export const SEO_CONFIGS: Record<string, SEOConfig> = {
   '/': {
-    title: "SOS Nettoyage Diogène | Nettoyage & Débarras Sud France",
+    title: "SOS Nettoyage Diogène & Débarras | Nettoyage & Débarras Sud France",
     description: "Nettoyage syndrome de Diogène, débarras, insalubrité et après décès. Intervention discrète à Montpellier, Marseille et Sud France.",
     canonical: "/"
   },
@@ -61,21 +61,21 @@ export const SEO_CONFIGS: Record<string, SEOConfig> = {
   },
 
   '/404': {
-    title: "Page Non Trouvée | SOS Nettoyage Diogène",
+    title: "Page Non Trouvée | SOS Nettoyage Diogène & Débarras",
     description: "La page que vous recherchez n'existe pas. Retournez à l'accueil pour découvrir nos services.",
     canonical: "/404",
     noIndex: true
   },
 
   '/mentions-legales': {
-    title: "Mentions Légales | SOS Nettoyage Diogène",
-    description: "Mentions légales du site SOS Nettoyage Diogène. Informations sur l'éditeur, l'hébergeur et les conditions d'utilisation.",
+    title: "Mentions Légales | SOS Nettoyage Diogène & Débarras",
+    description: "Mentions légales du site SOS Nettoyage Diogène & Débarras. Informations sur l'éditeur, l'hébergeur et les conditions d'utilisation.",
     canonical: "/mentions-legales"
   },
 
   '/politique-confidentialite': {
-    title: "Politique de Confidentialité | SOS Nettoyage Diogène",
-    description: "Politique de confidentialité et protection des données personnelles de SOS Nettoyage Diogène.",
+    title: "Politique de Confidentialité | SOS Nettoyage Diogène & Débarras",
+    description: "Politique de confidentialité et protection des données personnelles de SOS Nettoyage Diogène & Débarras.",
     canonical: "/politique-confidentialite"
   },
 
@@ -115,7 +115,7 @@ export const SEO_CONFIGS: Record<string, SEOConfig> = {
   },
 
   '/protocole-sanitaire': {
-    title: "Fiche Protocole Sanitaire | SOS Nettoyage Diogène",
+    title: "Fiche Protocole Sanitaire | SOS Nettoyage Diogène & Débarras",
     description: "Protocole sanitaire d'intervention en logement insalubre : odeurs, risques biologiques, tri des documents. Document à joindre aux rapports CCAS, MJPM et préfecture.",
     canonical: "/protocole-sanitaire",
     noIndex: true
