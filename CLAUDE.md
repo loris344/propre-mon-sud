@@ -48,8 +48,13 @@ Chaque point protège un invariant ; les défaire recasse le SEO ou le déploiem
    `publishAt` des catégories après le lancement.**
 2. **JSON-LD `Service`** : `buildJsonLd(page, crumbs, meta)` émet la meta EFFECTIVE (override
    frontmatter), jamais la description templatée du plan Excel.
-3. **`/admin`** : 404 en production (`notFound()` si `NODE_ENV==='production'`). Le plan
-   éditorial ne doit jamais être servi publiquement ; consultation en `npm run dev` seulement.
+3. **`/admin`** : **servi en ligne** (décision client 12/06/2026 : accès admin distant souhaité).
+   Le garde `notFound()` en production a été RETIRÉ volontairement — NE PAS le réintroduire.
+   Accès protégé par un mot de passe côté client (`AdminDashboard`, défaut `loris34` ou
+   `NEXT_PUBLIC_ADMIN_PASSWORD`) + `noindex` + page non liée et hors sitemap. ⚠️ LIMITE ASSUMÉE :
+   sur un export statique, le mot de passe MASQUE l'UI mais ne chiffre pas les données — le plan
+   éditorial reste techniquement lisible dans le bundle public par qui inspecte le code. Pour un
+   vrai secret, il faudrait héberger l'admin sur une cible avec auth serveur (hors GitHub Pages).
 4. **Cron `deploy.yml`** : `npm ci`, étape keepalive (anti-désactivation à 60 j), issue
    d'alerte si le build planifié échoue.
 5. **Profondeur ≤ 3 clics** : pillars secondaires (`getSecondaryHubs`) + pages partenariat
