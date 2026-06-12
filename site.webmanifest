@@ -1,0 +1,84 @@
+{
+  "name": "SOS Nettoyage Diogène",
+  "short_name": "SOS Nettoyage Diogène",
+  "description": "SOS Nettoyage Diogène - Société spécialisée dans le nettoyage et débarras syndrome de Diogène à Montpellier. Intervention discrète, professionnelle et respectueuse.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1e40af",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "fr",
+  "dir": "ltr",
+  "categories": ["business", "productivity", "utilities"],
+  "icons": [
+    {
+      "src": "/favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-32x32.png", 
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512", 
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/logo.png",
+      "sizes": "1024x1024",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/hero-cleaning.jpg",
+      "sizes": "800x500",
+      "type": "image/jpeg",
+      "form_factor": "wide",
+      "label": "Page d'accueil - Services de nettoyage professionnel"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Devis Gratuit",
+      "short_name": "Devis",
+      "description": "Demander un devis gratuit",
+      "url": "/#contact",
+      "icons": [
+        {
+          "src": "/favicon-32x32.png",
+          "sizes": "32x32"
+        }
+      ]
+    },
+    {
+      "name": "Services",
+      "short_name": "Services", 
+      "description": "Voir nos services",
+      "url": "/#services",
+      "icons": [
+        {
+          "src": "/favicon-32x32.png",
+          "sizes": "32x32"
+        }
+      ]
+    }
+  ]
+}

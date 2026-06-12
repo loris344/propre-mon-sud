@@ -1,0 +1,35 @@
+OÙ DÉPOSER LES NOUVELLES PHOTOS DES PAGES SEO
+=============================================
+
+1. Déposez vos photos (jpg / jpeg / png / webp) dans le dossier du service
+   correspondant, ci-dessous.
+
+   - Désinfection logment .................. → service « Désinfection logement »
+   - Nettoyage après décès ................. → service « Nettoyage après décès »
+   - Nettoyage insalubre (... + sinistre) .. → service « Nettoyage insalubre » (sert aussi sinistre / remise en état)
+   - Nettoyage après squat ................. → service « Nettoyage après squat »
+   - Nettoyage Diogène ..................... → service « Nettoyage Diogène »
+   - débarras .............................. → service « Débarras »
+
+   RÈGLE DE NOMMAGE SEO (importante) :
+   Nommez chaque fichier d'après ce qu'il MONTRE, en français, mots séparés
+   par des tirets, SANS répéter le service (le script l'ajoute en préfixe).
+   Le nom final devient : <service>-<votre-nom>.webp
+     ex. dossier « débarras » + fichier « cave-grenier.jpg »
+         → debarras-cave-grenier.webp
+     ex. dossier « Nettoyage Diogène » + « avant-apres-2.jpg »
+         → nettoyage-diogene-avant-apres-2.webp
+   À éviter : noms anglais, « IMG_1234 », « capture-ecran », « copie »,
+   ou le même nom partout. Variez (1 nom = 1 scène).
+
+2. Lancez la conversion :   npm run seo:images
+   → crée les WebP 1600x900 dans public/images/seo/optimized/
+   → met à jour src/data/image-fallbacks.json automatiquement
+
+3. (Optionnel) Pour forcer UNE photo précise sur UNE page précise,
+   ajoutez une entrée dans src/data/image-map.json :
+     { "/url-exacte-de-la-page/": "nom-du-fichier.webp" }
+
+Tant qu'un service n'a aucune photo, ses pages s'affichent SANS image
+(c'est volontaire — aucune image inventée). Conseil : 4 à 8 photos par
+service pour une bonne rotation entre les pages.
