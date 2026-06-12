@@ -13,7 +13,8 @@ name: Keepalive (anti-désactivation du cron à 60 jours)
 
 on:
   schedule:
-    - cron: '0 4 1 * *'   # le 1er de chaque mois à 04:00 UTC
+    - cron: '0 4 * * 1'   # chaque lundi à 04:00 UTC (marge large vs la limite 60 j,
+                          #  résiste à un run planifié occasionnellement sauté)
   workflow_dispatch:        # déclenchement manuel possible (onglet Actions)
 
 permissions:
