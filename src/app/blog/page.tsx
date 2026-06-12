@@ -4,24 +4,20 @@ import Footer from "@/components/Footer";
 import { getServiceHubs } from "@/lib/seo-pages";
 import NewsletterForm from "@/components/NewsletterForm";
 import { buildMetadata } from "@/lib/metadata";
-import { getAllArticles } from "@/lib/articles";
+import { getAllArticles, articleUrl } from "@/lib/articles";
+import { getPublishedCategories } from "@/lib/blog-categories";
 
 export const metadata: Metadata = buildMetadata("/blog");
 
+/** Dates affichées en jj/mm/aaaa (barème client) ; les données restent en ISO. */
 function formatDate(iso: string): string {
-  try {
-    return new Date(iso).toLocaleDateString("fr-FR", {
-      day: "numeric",
-      month: "long",
-      year: "numeric",
-    });
-  } catch {
-    return iso;
-  }
+  const m = /^(\d{4})-(\d{2})-(\d{2})/.exec(iso);
+  return m ? `${m[3]}/${m[2]}/${m[1]}` : iso;
 }
 
 export default function BlogPage() {
   const articles = getAllArticles();
+  const categories = getPublishedCategories();
 
   return (
     <>
@@ -36,6 +32,23 @@ export default function BlogPage() {
               pour le nettoyage, le débarras et la désinfection.
             </p>
           </section>
+
+          {categories.length > 0 && (
+            <nav aria-label="Rubriques du blog" className="max-w-6xl mx-auto mb-12">
+              <ul className="flex flex-wrap justify-center gap-3">
+                {categories.map((c) => (
+                  <li key={c.segment}>
+                    <Link
+                      href={c.url}
+                      className="inline-block px-4 py-2 rounded-full border border-border bg-card text-foreground hover:border-primary hover:text-primary transition-colors"
+                    >
+                      {c.title}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+          )}
 
           <section className="max-w-6xl mx-auto">
             <div className="grid gap-8 md:gap-12 lg:grid-cols-2">
@@ -70,7 +83,7 @@ export default function BlogPage() {
                       <span>📖 {article.readTime}</span>
                     </div>
                     <Link
-                      href={`/blog/${article.slug}`}
+                      href={articleUrl(article)}
                       className="text-primary hover:text-primary/80 font-medium flex items-center gap-1"
                     >
                       Lire l&apos;article <span>→</span>

@@ -15,7 +15,10 @@
  *   9. Cohérence : toute page écrite non-draft a bien une entrée dans le plan
  *
  * Périmètre : toutes les pages catch-all rédigées (mdx présent, non draft),
- * car elles finiront toutes publiées. Lance : `node scripts/validate-seo.mjs`
+ * car elles finiront toutes publiées — PLUS le blog : articles
+ * (content/articles) et catégories (content/blog-categories). Les 4 articles
+ * historiques (sans categorySlug, hors plan) ont des contrôles allégés pour ne
+ * pas casser l'existant. Lance : `node scripts/validate-seo.mjs`
  */
 import fs from "node:fs";
 import path from "node:path";
@@ -41,14 +44,34 @@ const EXISTING_PUBLIC = new Set([
   "/partenariat-mjpm/", "/partenariat-maisons-retraite/",
 ]);
 
-// Articles de blog existants (non draft) : cibles valides pour les liens du corps.
+// Articles de blog rédigés (non draft) : collectés une fois, pour leurs propres
+// contrôles ET comme cibles valides des liens du corps des autres pages.
+// URL imbriquée sous la catégorie du plan si frontmatter `categorySlug`.
 const BLOG_URLS = new Set();
+const blogArticles = [];
 const ARTICLES_DIR = path.join(ROOT, "content/articles");
 if (fs.existsSync(ARTICLES_DIR)) {
   for (const f of fs.readdirSync(ARTICLES_DIR)) {
     if (!/\.mdx?$/.test(f)) continue;
-    const { data } = matter(fs.readFileSync(path.join(ARTICLES_DIR, f), "utf8"));
-    if (data.draft !== true) BLOG_URLS.add(`/blog/${f.replace(/\.mdx?$/, "")}/`);
+    const { data, content } = matter(fs.readFileSync(path.join(ARTICLES_DIR, f), "utf8"));
+    if (data.draft === true) continue;
+    const slug = f.replace(/\.mdx?$/, "");
+    const url = data.categorySlug ? `/blog/${data.categorySlug}/${slug}/` : `/blog/${slug}/`;
+    BLOG_URLS.add(url);
+    blogArticles.push({ file: f, slug, url, data, body: content.trim() });
+  }
+}
+
+// Catégories de blog rédigées (non draft).
+const blogCategories = [];
+const CATEGORIES_DIR = path.join(ROOT, "content/blog-categories");
+if (fs.existsSync(CATEGORIES_DIR)) {
+  for (const f of fs.readdirSync(CATEGORIES_DIR)) {
+    if (!/\.mdx?$/.test(f)) continue;
+    const { data, content } = matter(fs.readFileSync(path.join(CATEGORIES_DIR, f), "utf8"));
+    if (data.draft === true) continue;
+    const segment = f.replace(/\.mdx?$/, "");
+    blogCategories.push({ file: f, segment, url: `/blog/${segment}/`, data, body: content.trim() });
   }
 }
 
@@ -78,6 +101,33 @@ if (fs.existsSync(CONTENT_DIR)) {
 /* --- Index des cibles publiables (pour les liens) ------------------------- */
 const writtenUrls = new Set(written.map((w) => w.page.url));
 const linkTargetOk = (url) => EXISTING_PUBLIC.has(url) || writtenUrls.has(url) || byUrl.has(url);
+
+/**
+ * Liens INTERNES DU CORPS (markdown). Le rendu les rend auto-activants
+ * (cible non publiée → texte simple, jamais de 404), donc :
+ *   - cible inconnue du plan = ERREUR (faute de frappe, lien mort pour toujours),
+ *     rétrogradée en warning si strict=false (articles historiques hors plan)
+ *   - cible publiée APRÈS la page = simple INFO (lien dormant N jours)
+ */
+function checkBodyLinks(u, body, pagePublishAt, strict = true) {
+  for (const m of body.matchAll(/\]\((\/[^)#?\s]*)[^)]*\)/g)) {
+    const raw = m[1];
+    const target = raw.endsWith("/") ? raw : `${raw}/`;
+    if (target === "/") continue;
+    const known = byUrl.has(target) || EXISTING_PUBLIC.has(target) || BLOG_URLS.has(target);
+    if (!known) {
+      const msg = `Lien du corps vers une cible inconnue (jamais résolue) : ${raw}`;
+      if (strict) err(u, msg);
+      else warn(u, msg);
+      continue;
+    }
+    const t = byUrl.get(target);
+    if (t?.publishAt && pagePublishAt && t.publishAt > pagePublishAt) {
+      const days = Math.round((new Date(t.publishAt) - new Date(pagePublishAt)) / 864e5);
+      warn(u, `lien du corps dormant ${days} j (cible ${target} publiée le ${t.publishAt}) — OK, auto-activé ensuite.`);
+    }
+  }
+}
 
 /* --- Contrôles par page --------------------------------------------------- */
 const titles = new Map();
@@ -132,25 +182,94 @@ for (const { page, data, body } of written) {
       err(u, `Lien obligatoire vers une cible inconnue : ${link.target}`);
   }
 
-  // Liens INTERNES DU CORPS (markdown). Le rendu les rend auto-activants
-  // (cible non publiée → texte simple, jamais de 404), donc :
-  //   - cible inconnue du plan = ERREUR (faute de frappe, lien mort pour toujours)
-  //   - cible publiée APRÈS la page = simple INFO (lien dormant N jours)
-  for (const m of body.matchAll(/\]\((\/[^)#?\s]*)[^)]*\)/g)) {
-    const raw = m[1];
-    const target = raw.endsWith("/") ? raw : `${raw}/`;
-    if (target === "/") continue;
-    const known = byUrl.has(target) || EXISTING_PUBLIC.has(target) || BLOG_URLS.has(target);
-    if (!known) {
-      err(u, `Lien du corps vers une cible inconnue (jamais résolue) : ${raw}`);
-      continue;
-    }
-    const t = byUrl.get(target);
-    if (t?.publishAt && page.publishAt && t.publishAt > page.publishAt) {
-      const days = Math.round((new Date(t.publishAt) - new Date(page.publishAt)) / 864e5);
-      warn(u, `lien du corps dormant ${days} j (cible ${target} publiée le ${t.publishAt}) — OK, auto-activé ensuite.`);
-    }
+  checkBodyLinks(u, body, page.publishAt || "");
+}
+
+/* --- Contrôles BLOG : articles --------------------------------------------- */
+const categoryPlanBySegment = new Map(
+  PAGES.filter((p) => p.type === "Catégorie blog").map((p) => [
+    p.url.replace(/^\/blog\//, "").replace(/\/$/, ""),
+    p,
+  ]),
+);
+const MIN_ARTICLE_WORDS = 600;   // même barème que les pages locales
+const MIN_CATEGORY_WORDS = 120;  // intro de page-liste (les cartes articles complètent)
+
+for (const a of blogArticles) {
+  const u = a.url;
+  const isPlanned = Boolean(a.data.categorySlug);
+
+  const title = a.data.metaTitle || a.data.title;
+  const description = a.data.metaDescription || a.data.description;
+  if (!title) err(u, "Titre manquant (frontmatter title).");
+  else if (titles.has(title)) err(u, `Titre dupliqué avec ${titles.get(title)}.`);
+  else titles.set(title, u);
+  if (!description) err(u, "Description manquante (frontmatter description).");
+  else {
+    if (descs.has(description)) err(u, `Description dupliquée avec ${descs.get(description)}.`);
+    else descs.set(description, u);
+    const L = description.length;
+    if (L < 70 || L > 165) warn(u, `Description hors plage (${L} car., viser 120-160).`);
   }
+  if (!a.data.date) err(u, "Date manquante (frontmatter date).");
+
+  if (!isPlanned) {
+    // Article historique (hors plan) : contrôles allégés, pas de régression.
+    checkBodyLinks(u, a.body, "", false);
+    continue;
+  }
+
+  // Article du plan : contrôles complets.
+  const seg = String(a.data.categorySlug);
+  if (!categoryPlanBySegment.has(seg)) err(u, `categorySlug inconnu du plan : ${seg}`);
+  const planned = byUrl.get(u);
+  if (!planned) err(u, "URL hors plan : aucune entrée correspondante dans seo-pages.json.");
+  if (!a.data.publishAt) err(u, "publishAt manquant (goutte-à-goutte des articles du plan).");
+  else if (planned?.publishAt && String(a.data.publishAt) !== planned.publishAt)
+    warn(u, `publishAt (${a.data.publishAt}) différent du plan (${planned.publishAt}).`);
+
+  const faq = Array.isArray(a.data.faq) ? a.data.faq.filter((f) => f && f.q && f.a) : [];
+  if (faq.length === 0) err(u, "FAQ manquante (frontmatter faq) — exigée sur les articles du plan.");
+
+  const minWords = Number(a.data.minWords) || MIN_ARTICLE_WORDS;
+  const words = a.body.split(/\s+/).filter(Boolean).length;
+  if (words < minWords) err(u, `Corps trop court : ${words} mots (minimum ${minWords}).`);
+
+  checkBodyLinks(u, a.body, String(a.data.publishAt || ""));
+}
+
+/* --- Contrôles BLOG : catégories ------------------------------------------- */
+for (const c of blogCategories) {
+  const u = c.url;
+  const plan = categoryPlanBySegment.get(c.segment);
+  if (!plan) {
+    err(`content/blog-categories/${c.file}`, "Segment inconnu du plan (aucune « Catégorie blog » correspondante).");
+    continue;
+  }
+
+  const title = c.data.metaTitle || plan.metaTitle;
+  const description = c.data.metaDescription || plan.metaDescription;
+  const h1 = c.data.title || plan.h1;
+  if (!title) err(u, "Meta title manquant.");
+  else if (titles.has(title)) err(u, `Meta title dupliqué avec ${titles.get(title)}.`);
+  else titles.set(title, u);
+  if (!description) err(u, "Meta description manquante.");
+  else {
+    if (descs.has(description)) err(u, `Meta description dupliquée avec ${descs.get(description)} (écrire l'override frontmatter).`);
+    else descs.set(description, u);
+    const L = description.length;
+    if (L < 70 || L > 165) warn(u, `Meta description hors plage (${L} car., viser 120-160).`);
+  }
+  if (!h1) err(u, "Titre manquant (frontmatter title).");
+
+  const faq = Array.isArray(c.data.faq) ? c.data.faq.filter((f) => f && f.q && f.a) : [];
+  if (faq.length === 0) err(u, "FAQ manquante (frontmatter faq) — le rendu affiche une section FAQ rédigée.");
+
+  const minWords = Number(c.data.minWords) || MIN_CATEGORY_WORDS;
+  const words = c.body.split(/\s+/).filter(Boolean).length;
+  if (words < minWords) err(u, `Intro trop courte : ${words} mots (minimum ${minWords}).`);
+
+  checkBodyLinks(u, c.body, plan.publishAt || "");
 }
 
 /* --- Similarité inter-pages (Jaccard de 5-grammes) ------------------------ */
@@ -167,7 +286,11 @@ function jaccard(a, b) {
   const uni = a.size + b.size - inter;
   return uni === 0 ? 0 : inter / uni;
 }
-const sig = written.map((w) => ({ url: w.page.url, sh: shingles(norm(w.body)) }));
+const sig = [
+  ...written.map((w) => ({ url: w.page.url, sh: shingles(norm(w.body)) })),
+  ...blogArticles.map((a) => ({ url: a.url, sh: shingles(norm(a.body)) })),
+  ...blogCategories.map((c) => ({ url: c.url, sh: shingles(norm(c.body)) })),
+];
 for (let i = 0; i < sig.length; i++) {
   for (let j = i + 1; j < sig.length; j++) {
     const s = jaccard(sig[i].sh, sig[j].sh);
@@ -177,7 +300,9 @@ for (let i = 0; i < sig.length; i++) {
 }
 
 /* --- Rapport -------------------------------------------------------------- */
-console.log(`\nValidation SEO — ${written.length} page(s) rédigée(s) contrôlée(s).`);
+console.log(
+  `\nValidation SEO — ${written.length} page(s) catch-all, ${blogArticles.length} article(s) de blog, ${blogCategories.length} catégorie(s) de blog contrôlés.`,
+);
 if (warnings.length) {
   console.log(`\n${warnings.length} avertissement(s) :`);
   for (const w of warnings) console.log("  " + w);

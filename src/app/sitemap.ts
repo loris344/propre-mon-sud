@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
-import { getAllArticles } from "@/lib/articles";
+import { getAllArticles, articleUrl } from "@/lib/articles";
+import { getPublishedCategories } from "@/lib/blog-categories";
 import { getPublishedPages } from "@/lib/seo-pages";
 import { SITE_URL } from "@/lib/structured-data";
 
@@ -30,9 +31,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }));
 
   const articleEntries: MetadataRoute.Sitemap = getAllArticles().map((article) => ({
-    url: `${SITE_URL}/blog/${article.slug}/`,
-    lastModified: article.date,
+    url: `${SITE_URL}${articleUrl(article)}`,
+    lastModified: article.publishAt || article.date,
     changeFrequency: "monthly",
+    priority: 0.6,
+  }));
+
+  // Catégories du blog publiées (même goutte-à-goutte que le reste du plan).
+  const categoryEntries: MetadataRoute.Sitemap = getPublishedCategories().map((c) => ({
+    url: `${SITE_URL}${c.url}`,
+    lastModified: c.publishAt || undefined,
+    changeFrequency: "weekly",
     priority: 0.6,
   }));
 
@@ -45,5 +54,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: page.priority && page.priority <= 1 ? 0.8 : 0.6,
   }));
 
-  return [...staticEntries, ...articleEntries, ...seoEntries];
+  return [...staticEntries, ...articleEntries, ...categoryEntries, ...seoEntries];
 }

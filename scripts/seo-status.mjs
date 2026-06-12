@@ -20,6 +20,30 @@ const CONTENT_DIR = path.join(ROOT, "content/seo");
 const OUT = path.join(ROOT, "src/data/_generation-state.json");
 
 const catchall = PAGES.filter((p) => p.handledBy === "catchall");
+
+/* --- Blog (catégories + articles du plan, handledBy: "blog") --------------- */
+const ARTICLES_DIR = path.join(ROOT, "content/articles");
+const CATEGORIES_DIR = path.join(ROOT, "content/blog-categories");
+const blogPlan = PAGES.filter((p) => p.handledBy === "blog");
+
+function blogFileFor(p) {
+  if (p.type === "Catégorie blog")
+    return path.join(CATEGORIES_DIR, `${p.url.replace(/^\/blog\//, "").replace(/\/$/, "")}.mdx`);
+  return path.join(ARTICLES_DIR, `${p.url.replace(/\/$/, "").split("/").pop()}.mdx`);
+}
+
+const blogState = blogPlan.map((p) => {
+  const file = blogFileFor(p);
+  let written = false, draft = false;
+  if (fs.existsSync(file)) {
+    written = true;
+    draft = matter(fs.readFileSync(file, "utf8")).data.draft === true;
+  }
+  return { url: p.url, type: p.type, publishAt: p.publishAt, written, draft };
+});
+const blogDone = blogState.filter((s) => s.written && !s.draft);
+const blogRemaining = blogState.filter((s) => !s.written || s.draft)
+  .sort((a, b) => String(a.publishAt).localeCompare(String(b.publishAt)));
 const state = catchall.map((p) => {
   const file = path.join(CONTENT_DIR, `${p.slug}.mdx`);
   let written = false, draft = false, words = 0;
@@ -64,10 +88,21 @@ fs.writeFileSync(OUT, JSON.stringify({
     url: s.url, slug: s.slug, publishAt: s.publishAt,
     needsUniqueDesc: needsUniqueDesc.has(s.slug),
   })),
+  blog: {
+    total: blogPlan.length,
+    done: blogDone.length,
+    remaining: blogRemaining.length,
+    nextBatch: blogRemaining.slice(0, 10).map((s) => ({ url: s.url, type: s.type, publishAt: s.publishAt })),
+  },
   pages: state,
 }, null, 2) + "\n", "utf8");
 
 console.log(`Avancement génération : ${done.length}/${catchall.length} pages rédigées.`);
+console.log(`Blog (plan) : ${blogDone.length}/${blogPlan.length} rédigés (catégories + articles).`);
+if (blogRemaining.length) {
+  console.log(`Prochaines pages blog (par date) :`);
+  for (const s of blogRemaining.slice(0, 10)) console.log(`  ${s.publishAt}  ${s.url}  (${s.type})`);
+}
 if (late.length) {
   console.log(`\n⚠️  ${late.length} page(s) EN RETARD (date atteinte, pas de contenu publiable) :`);
   for (const s of late.slice(0, 10)) console.log(`  ${s.publishAt}  ${s.url}`);

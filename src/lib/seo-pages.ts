@@ -19,18 +19,15 @@ import matter from "gray-matter";
 import seoData from "@/data/seo-pages.json";
 import internalLinks from "@/data/internal-links.json";
 import { SITE_URL, BUSINESS_ID } from "@/lib/structured-data";
-import { getAllArticles } from "@/lib/articles";
+import { getAllArticles, articleUrl } from "@/lib/articles";
+import { getPublishedCategories } from "@/lib/blog-categories";
+import { buildDate } from "@/lib/build-date";
 import type { PlannedPage, PageStatus, PageIntent } from "@/lib/page-plan";
+
+export { buildDate };
 
 const CONTENT_DIR = path.join(process.cwd(), "content/seo");
 const isProd = process.env.NODE_ENV === "production";
-
-/** Date de référence du build. Surchargée par SEO_BUILD_DATE pour les tests. */
-export function buildDate(): string {
-  const override = process.env.SEO_BUILD_DATE;
-  if (override && /^\d{4}-\d{2}-\d{2}$/.test(override)) return override;
-  return new Date().toISOString().slice(0, 10);
-}
 
 /**
  * Date qui pilote la publication. Plancher à la date de lancement du plan :
@@ -199,14 +196,16 @@ export function urlFromSlugSegments(segments: string[] | undefined): string {
 }
 
 /** Ensemble des URLs publiquement accessibles (pour filtrer le maillage).
- *  Inclut les articles de blog publiés : le maillage du plan et les liens
- *  rédigés dans les corps peuvent pointer vers /blog/<slug>/. */
+ *  Inclut les articles de blog publiés (URL plate ou imbriquée sous leur
+ *  catégorie) et les catégories de blog publiées : le maillage du plan et les
+ *  liens rédigés dans les corps peuvent pointer vers ces pages. */
 let _publicUrls: Set<string> | null = null;
 function publicUrlSet(): Set<string> {
   if (_publicUrls) return _publicUrls;
   const set = new Set<string>(EXISTING_PUBLIC);
   for (const p of getPublishedPages()) set.add(p.url);
-  for (const a of getAllArticles()) set.add(`/blog/${a.slug}/`);
+  for (const a of getAllArticles()) set.add(articleUrl(a));
+  for (const c of getPublishedCategories()) set.add(c.url);
   _publicUrls = set;
   return set;
 }
@@ -266,11 +265,16 @@ export interface MaillageGroups {
   suggested: InternalLink[];
 }
 export function getMaillage(page: SeoPage): MaillageGroups {
+  return getMaillageForUrl(page.url);
+}
+
+/** Même maillage, pour les pages hors catch-all (articles et catégories blog). */
+export function getMaillageForUrl(url: string): MaillageGroups {
   const pub = publicUrlSet();
   const seen = new Set<string>();
   const groups: MaillageGroups = { sameCity: [], children: [], related: [], suggested: [] };
-  for (const link of LINKS[page.url] ?? []) {
-    if (link.target === page.url || !pub.has(link.target) || seen.has(link.target)) continue;
+  for (const link of LINKS[url] ?? []) {
+    if (link.target === url || !pub.has(link.target) || seen.has(link.target)) continue;
     const t = (link.type || "").toLowerCase();
     if (t.includes("parent")) continue; // déjà dans le fil d'Ariane
     seen.add(link.target);
