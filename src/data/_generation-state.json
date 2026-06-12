@@ -5,6 +5,12 @@
   "remaining": 0,
   "late": 0,
   "nextBatch": [],
+  "blog": {
+    "total": 47,
+    "done": 47,
+    "remaining": 0,
+    "nextBatch": []
+  },
   "pages": [
     {
       "url": "/nettoyage-extreme/",

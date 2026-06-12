@@ -18,8 +18,16 @@ Le **GO client est permanent** : continue sans redemander « je continue ? ». P
 locaux par ville) · tiret cadratin « — » dans le texte · meta description non unique · committer
 un build rouge · inventer un fait local non vérifié.
 
-État au dernier point connu : voir `seo:status` (≈77/790 au 2026-06-26). Voir aussi les mémoires
-[[seo-mission]], [[style-redaction]], [[seo-etat-de-lart-2026]].
+État au dernier point connu : **790/790 pages catch-all ET 47/47 pages blog rédigées (2026-06-12)**.
+La production de contenu est TERMINÉE ; la publication s'égrène seule via le cron quotidien
+jusqu'au ~13/10/2026. Le blog a ses routes (`src/app/blog/[...slug]/`), ses catégories
+(`content/blog-categories/`) et ses articles (`content/articles/`, frontmatter `categorySlug`
++ `publishAt`). NOTE : le plan contient un doublon strict
+(`blog--insalubrite--desinfection-apres-insalubrite` ≡ version desinfection) ; une seule version
+est rédigée (sous /blog/desinfection/), l'autre URL ne sera jamais publiée (décision volontaire,
+anti-cannibalisation). Reste à faire si demandé : pilotage GSC (jalon stop-or-go à ~50-80 pages
+publiées), élagage trimestriel, intégration des photos client. Voir aussi les mémoires
+[[seo-mission]], [[blog-infrastructure]], [[style-redaction]], [[seo-etat-de-lart-2026]].
 
 ---
 
