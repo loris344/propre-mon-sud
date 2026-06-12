@@ -14,23 +14,29 @@ on:
 
 permissions:
   contents: write
+  # Création d'une issue d'alerte si le build planifié échoue.
+  issues: write
+  # Requis par keepalive-workflow (ré-activation via l'API Actions).
+  actions: write
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-    
+
     steps:
     - name: Checkout
       uses: actions/checkout@v4
-      
+
     - name: Setup Node.js
       uses: actions/setup-node@v4
       with:
         node-version: '20'
         cache: 'npm'
 
+    # `npm ci` : installation reproductible depuis le lockfile. Le rebuild
+    # quotidien ne doit jamais casser à cause d'un bump transitif.
     - name: Install dependencies
-      run: npm install --include=optional --legacy-peer-deps
+      run: npm ci --include=optional --legacy-peer-deps
 
     - name: Build
       run: npm run build
@@ -41,3 +47,34 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./out
         enable_jekyll: false
+
+    # GitHub désactive les workflows planifiés après 60 jours sans activité
+    # du dépôt. La production de contenu étant terminée, le repo peut rester
+    # sans commit humain pendant que le goutte-à-goutte court jusqu'en
+    # octobre : sans keepalive, la publication s'arrêterait net en silence.
+    - name: Keepalive (empêche la désactivation du cron à 60 jours)
+      uses: gautamkrishnar/keepalive-workflow@v2
+
+    # Un échec du build planifié = goutte-à-goutte gelé. Personne ne regarde
+    # l'onglet Actions tous les jours : on ouvre une issue pour le signaler.
+    - name: Alerte en cas d'échec
+      if: failure()
+      uses: actions/github-script@v7
+      with:
+        script: |
+          const title = `Échec du déploiement quotidien (${new Date().toISOString().slice(0, 10)})`;
+          const { data: issues } = await github.rest.issues.listForRepo({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            state: 'open',
+            labels: 'deploy-failure',
+          });
+          if (issues.length === 0) {
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title,
+              labels: ['deploy-failure'],
+              body: `Le workflow de déploiement a échoué : la publication goutte-à-goutte est GELÉE tant que le build ne repasse pas.\n\nVoir le run : ${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`,
+            });
+          }

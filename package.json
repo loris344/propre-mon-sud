@@ -8,13 +8,15 @@
     "dev": "next dev",
     "prebuild": "node scripts/validate-seo.mjs",
     "build": "next build",
+    "postbuild": "node scripts/gen-redirects.mjs",
     "start": "next start",
     "lint": "next lint",
     "serve": "npx serve out",
     "seo:import": "python3 scripts/excel-to-seo.py",
     "seo:images": "node scripts/optimize-images.mjs",
     "seo:status": "node scripts/seo-status.mjs",
-    "seo:validate": "node scripts/validate-seo.mjs"
+    "seo:validate": "node scripts/validate-seo.mjs",
+    "seo:reschedule": "node scripts/shift-schedule.mjs"
   },
   "dependencies": {
     "@radix-ui/react-label": "^2.1.8",

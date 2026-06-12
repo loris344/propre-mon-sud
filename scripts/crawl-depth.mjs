@@ -35,6 +35,18 @@ const fileToUrl = (fp) => {
 const files = walk(OUT);
 const nodes = new Set(files.map(fileToUrl));
 
+// Pages NOINDEX (landing payantes, fiches B2B en campagne, /admin, /404, stubs
+// de redirection) : volontairement hors du maillage. Elles n'ont pas vocation
+// à être à ≤ 3 clics — on les exclut du contrôle pour ne garder que le signal
+// utile (pages indexables réellement orphelines = bug).
+const noindex = new Set();
+for (const fp of files) {
+  const html = fs.readFileSync(fp, "utf8");
+  if (/<meta[^>]+name=["']robots["'][^>]*content=["'][^"']*noindex/i.test(html)) {
+    noindex.add(fileToUrl(fp));
+  }
+}
+
 // 2) Normalise un href en chemin interne (ou null si externe/non-page)
 const SITE_HOST = "sosnettoyagediogene.fr";
 function normalize(href) {
@@ -110,8 +122,13 @@ for (const r of rows) {
   console.log(`  ${d.padEnd(4)} ${String(r.priority).padEnd(8)}  ${String(r.type).padEnd(18)}  ${r.url}${flag}`);
 }
 
-const bad = rows.filter((r) => r.depth > 3);
-console.log(`\n${bad.length === 0 ? "✓ Toutes les pages rendues sont à ≤ 3 clics de /." : `⚠️ ${bad.length} page(s) à plus de 3 clics (ou inaccessibles) :`}`);
+// Seules les pages INDEXABLES comptent : une page noindex orpheline est voulue.
+const bad = rows.filter((r) => r.depth > 3 && !noindex.has(r.url));
+const skipped = rows.filter((r) => r.depth > 3 && noindex.has(r.url)).length;
+console.log(
+  `\n${bad.length === 0 ? "✓ Toutes les pages INDEXABLES sont à ≤ 3 clics de /." : `⚠️ ${bad.length} page(s) indexable(s) à plus de 3 clics (ou inaccessibles) :`}` +
+    (skipped ? `  (${skipped} page(s) noindex orpheline(s) ignorée(s) : landing, partenariats campagne, redirections, admin, 404)` : ""),
+);
 for (const r of bad) {
   console.log(`  [${r.depth === Infinity ? "∞" : r.depth} clics] ${r.url}  (priority ${r.priority})`);
   if (r.depth !== Infinity) console.log(`       chemin: ${pathTo(r.url)}`);

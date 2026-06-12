@@ -1,0 +1,9 @@
+{
+  "_comment": "Redirections 301 (statiques) : ancienne URL -> cible. Générées en stubs HTML meta-refresh + canonical par scripts/gen-redirects.mjs (postbuild). Sert pour les anciens contenus retirés ET l'élagage trimestriel (pages villes à 0 clic consolidées vers leur page département). Clés et valeurs avec slash final.",
+  "redirects": {
+    "/blog/desinfection-assainissement-protocoles/": "/desinfection-logement/",
+    "/blog/debarras-apres-deces-accompagnement/": "/nettoyage-apres-deces/",
+    "/blog/syndrome-diogene-identifier-gerer/": "/nettoyage-diogene/",
+    "/blog/prevention-insalubrite-conseils/": "/nettoyage-insalubre/"
+  }
+}

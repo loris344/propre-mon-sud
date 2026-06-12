@@ -107,8 +107,11 @@ const linkTargetOk = (url) => EXISTING_PUBLIC.has(url) || writtenUrls.has(url) |
  * (cible non publiée → texte simple, jamais de 404), donc :
  *   - cible inconnue du plan = ERREUR (faute de frappe, lien mort pour toujours),
  *     rétrogradée en warning si strict=false (articles historiques hors plan)
- *   - cible publiée APRÈS la page = simple INFO (lien dormant N jours)
+ *   - cible publiée APRÈS la page = lien dormant N jours : comportement NORMAL
+ *     du goutte-à-goutte, agrégé en une ligne de synthèse pour ne pas noyer
+ *     les vrais warnings (seuls les dormants > 90 j sont listés un par un).
  */
+const dormant = { count: 0, maxDays: 0, pages: new Set() };
 function checkBodyLinks(u, body, pagePublishAt, strict = true) {
   for (const m of body.matchAll(/\]\((\/[^)#?\s]*)[^)]*\)/g)) {
     const raw = m[1];
@@ -124,14 +127,26 @@ function checkBodyLinks(u, body, pagePublishAt, strict = true) {
     const t = byUrl.get(target);
     if (t?.publishAt && pagePublishAt && t.publishAt > pagePublishAt) {
       const days = Math.round((new Date(t.publishAt) - new Date(pagePublishAt)) / 864e5);
-      warn(u, `lien du corps dormant ${days} j (cible ${target} publiée le ${t.publishAt}) — OK, auto-activé ensuite.`);
+      dormant.count++;
+      dormant.pages.add(u);
+      if (days > dormant.maxDays) dormant.maxDays = days;
+      if (days > 90)
+        warn(u, `lien du corps dormant ${days} j (cible ${target} publiée le ${t.publishAt}) — long, vérifier le planning.`);
     }
   }
+}
+
+/** Liens contextuels du corps : barème client = 3 à 6 par page. */
+function countBodyInternalLinks(body) {
+  let n = 0;
+  for (const m of body.matchAll(/\]\((\/[^)#?\s]*)[^)]*\)/g)) if (m[1] !== "/") n++;
+  return n;
 }
 
 /* --- Contrôles par page --------------------------------------------------- */
 const titles = new Map();
 const descs = new Map();
+const h1s = new Map();
 
 for (const { page, data, body } of written) {
   const u = page.url;
@@ -156,6 +171,12 @@ for (const { page, data, body } of written) {
   }
 
   if (!h1) err(u, "H1 manquant.");
+  else {
+    // Deux pages avec le même H1 = deux pages en compétition sur la même
+    // requête (cannibalisation) : à différencier par un override frontmatter.
+    if (h1s.has(h1)) err(u, `H1 dupliqué avec ${h1s.get(h1)} (cannibalisation interne).`);
+    else h1s.set(h1, u);
+  }
   if (!page.canonical) err(u, "Canonical absente.");
   else if (!/^https:\/\//.test(page.canonical)) err(u, `Canonical non absolue : ${page.canonical}`);
 
@@ -181,6 +202,11 @@ for (const { page, data, body } of written) {
     if (link.priority === "Obligatoire" && !byUrl.has(link.target) && !EXISTING_PUBLIC.has(link.target))
       err(u, `Lien obligatoire vers une cible inconnue : ${link.target}`);
   }
+
+  // Barème client : 3-6 liens contextuels dans le corps (le maillage structuré
+  // en pied de page ne compte pas).
+  const bodyLinks = countBodyInternalLinks(body);
+  if (bodyLinks < 3) warn(u, `${bodyLinks} lien(s) contextuel(s) dans le corps (barème : 3-6).`);
 
   checkBodyLinks(u, body, page.publishAt || "");
 }
@@ -303,6 +329,10 @@ for (let i = 0; i < sig.length; i++) {
 console.log(
   `\nValidation SEO — ${written.length} page(s) catch-all, ${blogArticles.length} article(s) de blog, ${blogCategories.length} catégorie(s) de blog contrôlés.`,
 );
+if (dormant.count)
+  console.log(
+    `ℹ ${dormant.count} lien(s) dormant(s) sur ${dormant.pages.size} page(s) (max ${dormant.maxDays} j) — normal, auto-activés au fil des publications.`,
+  );
 if (warnings.length) {
   console.log(`\n${warnings.length} avertissement(s) :`);
   for (const w of warnings) console.log("  " + w);

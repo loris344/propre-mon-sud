@@ -18,25 +18,57 @@ Le **GO client est permanent** : continue sans redemander « je continue ? ». P
 locaux par ville) · tiret cadratin « — » dans le texte · meta description non unique · committer
 un build rouge · inventer un fait local non vérifié.
 
-État au dernier point connu : **790/790 pages catch-all ET 47/47 pages blog rédigées (2026-06-12)**.
-La production de contenu est TERMINÉE ; la publication s'égrène seule via le cron quotidien
-jusqu'au ~13/10/2026. Le blog a ses routes (`src/app/blog/[...slug]/`), ses catégories
-(`content/blog-categories/`) et ses articles (`content/articles/`, frontmatter `categorySlug`
-+ `publishAt`). NOTE : le plan contient un doublon strict
-(`blog--insalubrite--desinfection-apres-insalubrite` ≡ version desinfection) ; une seule version
-est rédigée (sous /blog/desinfection/), l'autre URL ne sera jamais publiée (décision volontaire,
-anti-cannibalisation). Reste à faire si demandé : pilotage GSC (jalon stop-or-go à ~50-80 pages
-publiées), élagage trimestriel, intégration des photos client. Voir aussi les mémoires
-[[seo-mission]], [[blog-infrastructure]], [[style-redaction]], [[seo-etat-de-lart-2026]].
+État au dernier point connu : **790/790 pages catch-all ET 47/47 pages blog rédigées**.
+La production de contenu est TERMINÉE. **Calendrier recalé au départ 2026-06-13** (commande
+`npm run seo:reschedule -- <date>` si le lancement glisse encore ; recale plan + frontmatter
+blog d'un bloc) ; la publication s'égrène seule via le cron quotidien jusqu'au ~2026-10-16.
+Le blog a ses routes (`src/app/blog/[...slug]/`), ses catégories (`content/blog-categories/`)
+et ses articles (`content/articles/`, frontmatter `categorySlug` + `publishAt`). NOTE : le plan
+contient un doublon strict (`blog--insalubrite--desinfection-apres-insalubrite` ≡ version
+desinfection) ; une seule version est rédigée (sous /blog/desinfection/), l'autre URL ne sera
+jamais publiée (décision volontaire, anti-cannibalisation).
+
+**Audit SEO complet réalisé (technique + contenu + stratégie) — correctifs structurels
+appliqués** (voir § Audit ci-dessous). Reste à faire si demandé : pilotage GSC (jalon
+stop-or-go à ~50-80 pages publiées), élagage trimestriel (outillé : `redirects.json`),
+photos client, couche E-E-A-T (page « Qui sommes-nous », kit confiance, byline blog),
+réécriture des sections centrales des grappes après-décès/squat/Diogène (similarité ~50-70 %
+entre villes sœurs), raccourcir ~190 meta descriptions > 160 car., compléter `sources:` sur
+~130 pages. Voir aussi les mémoires [[seo-mission]], [[blog-infrastructure]],
+[[style-redaction]], [[seo-etat-de-lart-2026]], [[audit-seo-correctifs]].
+
+## 🔧 Audit SEO — correctifs structurels appliqués (à NE PAS défaire)
+
+Chaque point protège un invariant ; les défaire recasse le SEO ou le déploiement.
+
+1. **Squelette blog publié au lancement** (hub + 8 catégories à `publishAt = startDate`).
+   INVARIANT CRITIQUE `output: export` : si la route `blog/[...slug]` n'a AUCUNE page publiée,
+   `generateStaticParams()` renvoie `[]` et **`next build` échoue en entier** → le déploiement
+   quotidien ne part pas (même les pages SEO dues restent hors ligne). **NE JAMAIS reculer le
+   `publishAt` des catégories après le lancement.**
+2. **JSON-LD `Service`** : `buildJsonLd(page, crumbs, meta)` émet la meta EFFECTIVE (override
+   frontmatter), jamais la description templatée du plan Excel.
+3. **`/admin`** : 404 en production (`notFound()` si `NODE_ENV==='production'`). Le plan
+   éditorial ne doit jamais être servi publiquement ; consultation en `npm run dev` seulement.
+4. **Cron `deploy.yml`** : `npm ci`, étape keepalive (anti-désactivation à 60 j), issue
+   d'alerte si le build planifié échoue.
+5. **Profondeur ≤ 3 clics** : pillars secondaires (`getSecondaryHubs`) + pages partenariat
+   dans le footer ; `/debarras/maison/` lie ses villes en direct. Audit :
+   `node scripts/crawl-depth.mjs` → « ✓ Toutes les pages INDEXABLES à ≤ 3 clics ».
+6. **Redirections statiques** : `src/data/redirects.json` → `scripts/gen-redirects.mjs`
+   (postbuild) = stubs meta-refresh + canonical. Pour les anciennes URL ET l'élagage trimestriel.
+7. **Validation durcie** : H1 uniques (anti-cannibalisation), liens du corps < 3 signalés,
+   liens dormants agrégés en une ligne.
+8. **4 articles historiques supprimés** (stats inventées, « 2025 » périmé, 0 lien) → redirigés
+   vers leur silo. `sameAs` retiré du LocalBusiness (profils à l'ancien nom « propremonsud »,
+   à rétablir avec les vraies URLs).
 
 ---
 
 > Source de vérité **humaine** des règles SEO. Le code (`scripts/validate-seo.mjs`,
 > `src/lib/seo-pages.ts`) les *applique* ; ce fichier explique le *quoi* et le *pourquoi*.
 > En cas de doute sur un seuil chiffré, le code fait foi (les valeurs ci-dessous y renvoient).
->
-> ⚠️ Le `README.md` est **périmé** (décrit l'ancien stack Vite/React Router/Helmet
-> d'avant la migration Next.js). Ne pas s'y fier pour l'architecture.
+> Le `README.md` est à jour (stack Next.js) ; pour l'architecture, se fier à la table ci-dessous.
 
 ## Le projet en une phrase
 
@@ -63,8 +95,10 @@ slug d'une page SEO = son URL sans les `/` de bord, avec les `/` internes → `-
 
 ## Stratégie de publication — goutte-à-goutte (décision client verrouillée)
 
-Définie dans `seo-pages.json > meta.schedule` : **démarrage le 2026-06-10**, 14 jours à
-**4 pages/jour**, puis **7 pages/jour** en croisière (étalement jusqu'au ~2026-10-08).
+Définie dans `seo-pages.json > meta.schedule` : **démarrage le 2026-06-13** (recalable via
+`npm run seo:reschedule -- <date>`), 14 jours à **4 pages/jour**, puis **7 pages/jour** en
+croisière (étalement jusqu'au ~2026-10-16). Le jour du lancement publie en plus le squelette
+du blog (hub + 8 catégories) : c'est structurel, pas un burst de pages de contenu.
 
 - Une page n'est publiée que si `publishAt <= date du build` **ET** `draft: false` **ET** son MDX existe.
 - Un **rebuild quotidien** (cron GitHub Actions `0 5 * * *` dans `.github/workflows/deploy.yml`)
