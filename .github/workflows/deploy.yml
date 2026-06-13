@@ -5,11 +5,17 @@ on:
     branches: [ main ]
   # Rebuild quotidien : fait passer en ligne les pages dont la date de
   # publication (publishAt) est atteinte, sans aucune édition manuelle.
-  # 05:00 UTC ≈ 06:00/07:00 Paris. La validation SEO (prebuild) bloque le
-  # déploiement en cas d'erreur.
+  # Plusieurs créneaux/jour à des minutes hors :00 (les minutes pile sont les
+  # plus saturées chez GitHub, donc les plus souvent sautées). Le build est
+  # idempotent : relancer plusieurs fois ne publie que les pages dues, sans
+  # risque. Multiplier les tentatives maximise la probabilité qu'au moins une
+  # passe chaque jour. Reste "best-effort" côté GitHub : le seul déclenchement
+  # GARANTI est un cron externe (cron-job.org) tapant workflow_dispatch.
   schedule:
-    - cron: '0 5 * * *'
-  # Déclenchement manuel possible depuis l'onglet Actions.
+    - cron: '13 5 * * *'    # ~07:13 Paris
+    - cron: '37 8 * * *'    # ~10:37 Paris
+    - cron: '23 13 * * *'   # ~15:23 Paris
+  # Déclenchement manuel possible depuis l'onglet Actions (bouton « Run workflow »).
   workflow_dispatch:
 
 # IMPORTANT (diagnostic 12/06/2026) : ne demander QUE `contents: write`.
