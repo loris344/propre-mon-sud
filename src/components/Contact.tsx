@@ -148,6 +148,9 @@ const Contact = () => {
               <CardTitle className="text-2xl sm:text-3xl font-semibold text-foreground">
                 Demande de Devis Gratuit
               </CardTitle>
+              <p className="text-sm text-muted-foreground mt-2">
+                Nous ne recrutons pas de nettoyeurs : inutile d'envoyer une candidature ou une demande d'emploi via ce formulaire.
+              </p>
             </CardHeader>
             
             <CardContent>

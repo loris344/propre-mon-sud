@@ -85,7 +85,7 @@ const Hero = () => {
                     </svg>
                   ))}
                 </div>
-                <span className="text-sm font-semibold text-foreground ml-1">5,0</span>
+                <span className="text-sm font-semibold text-foreground ml-1">5</span>
               </div>
             </div>
 

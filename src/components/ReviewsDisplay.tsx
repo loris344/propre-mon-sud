@@ -24,7 +24,7 @@ const ReviewsDisplay = () => {
       
       {/* Note et nombre d'avis */}
       <div className="flex items-center gap-0.5 text-xs whitespace-nowrap">
-        <span className="font-semibold text-foreground">5,0</span>
+        <span className="font-semibold text-foreground">5</span>
       </div>
     </div>
   );

@@ -44,7 +44,7 @@ const CustomerReviews = memo(() => {
                    <Star key={i} className="w-5 h-5 fill-amber-400 text-amber-400" />
                  ))}
                </div>
-               <span className="text-2xl font-bold text-foreground">5,0</span>
+               <span className="text-2xl font-bold text-foreground">5</span>
              </div>
              <div className="text-muted-foreground">
                Avis vérifiés
