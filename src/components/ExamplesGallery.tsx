@@ -1,5 +1,38 @@
 import { Sparkles } from "lucide-react";
 
+const beforeAfter = [
+  {
+    src: "/images/examples/avant-apres-nettoyage-diogene-insalubre-perpignan.webp",
+    alt: "Avant et après nettoyage syndrome de Diogène et logement insalubre à Perpignan",
+    label: "Avant / Après - Diogène, Perpignan",
+  },
+  {
+    src: "/images/examples/avant-apres-remise-en-etat-accumulation-extreme-montpellier.webp",
+    alt: "Avant et après remise en état d'un logement en accumulation extrême à Montpellier",
+    label: "Avant / Après - Remise en état, Montpellier",
+  },
+  {
+    src: "/images/examples/avant-apres-nettoyage-diogene-sete.webp",
+    alt: "Avant et après nettoyage syndrome de Diogène à Sète",
+    label: "Avant / Après - Diogène, Sète",
+  },
+  {
+    src: "/images/examples/avant-apres-debarras-logement-nimes.webp",
+    alt: "Avant et après débarras d'un logement encombré à Nîmes",
+    label: "Avant / Après - Débarras, Nîmes",
+  },
+  {
+    src: "/images/examples/avant-apres-nettoyage-apres-deces-albi.webp",
+    alt: "Avant et après nettoyage après décès à Albi",
+    label: "Avant / Après - Après décès, Albi",
+  },
+  {
+    src: "/images/examples/avant-apres-debarras-maison-succession-nimes.webp",
+    alt: "Avant et après débarras d'une maison en succession à Nîmes",
+    label: "Avant / Après - Succession, Nîmes",
+  },
+];
+
 const ExamplesGallery = () => {
   return (
     <section className="py-12 sm:py-20 bg-background">
@@ -18,67 +51,29 @@ const ExamplesGallery = () => {
         </div>
 
         <div className="max-w-7xl mx-auto">
-          {/* Row 1: 3 avant/après photos */}
+          {/* Row 1: avant/après (vraies réalisations, nommées par service + ville) */}
           <div className="grid md:grid-cols-3 gap-4 sm:gap-6 mb-4 sm:mb-6">
-            <div className="group relative">
-              <div className="relative bg-card rounded-xl p-3 pb-4 border border-border/50 shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <div className="rounded-lg overflow-hidden">
-                  <img
-                    src="/images/examples/toulouse1.webp"
-                    alt="Avant/Après nettoyage salon - Syndrome de Diogène"
-                    className="w-full h-auto rounded-lg"
-                    width={800}
-                    height={600}
-                    draggable="false"
-                    loading="lazy"
-                  />
-                </div>
-                <div className="mt-3 flex items-center gap-2">
-                  <div className="w-2 h-2 bg-primary rounded-full"></div>
-                  <span className="text-xs font-medium text-foreground">Avant / Après - Salon</span>
-                </div>
-              </div>
-            </div>
-
-            <div className="group relative">
-              <div className="relative bg-card rounded-xl p-3 pb-4 border border-border/50 shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <div className="rounded-lg overflow-hidden">
-                  <img
-                    src="/images/examples/toulouse2.webp"
-                    alt="Avant/Après nettoyage sanitaires"
-                    className="w-full h-auto rounded-lg"
-                    width={800}
-                    height={600}
-                    draggable="false"
-                    loading="lazy"
-                  />
-                </div>
-                <div className="mt-3 flex items-center gap-2">
-                  <div className="w-2 h-2 bg-accent rounded-full"></div>
-                  <span className="text-xs font-medium text-foreground">Avant / Après - Sanitaires</span>
+            {beforeAfter.map((item, i) => (
+              <div key={item.src} className="group relative">
+                <div className="relative bg-card rounded-xl p-3 pb-4 border border-border/50 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                  <div className="rounded-lg overflow-hidden">
+                    <img
+                      src={item.src}
+                      alt={item.alt}
+                      className="w-full h-auto rounded-lg"
+                      width={1200}
+                      height={900}
+                      draggable="false"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div className="mt-3 flex items-center gap-2">
+                    <div className={`w-2 h-2 rounded-full ${i % 2 === 0 ? "bg-primary" : "bg-accent"}`}></div>
+                    <span className="text-xs font-medium text-foreground">{item.label}</span>
+                  </div>
                 </div>
               </div>
-            </div>
-
-            <div className="group relative">
-              <div className="relative bg-card rounded-xl p-3 pb-4 border border-border/50 shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <div className="rounded-lg overflow-hidden">
-                  <img
-                    src="/images/examples/toulouse3.webp"
-                    alt="Avant/Après nettoyage salle de bain"
-                    className="w-full h-auto rounded-lg"
-                    width={800}
-                    height={600}
-                    draggable="false"
-                    loading="lazy"
-                  />
-                </div>
-                <div className="mt-3 flex items-center gap-2">
-                  <div className="w-2 h-2 bg-primary rounded-full"></div>
-                  <span className="text-xs font-medium text-foreground">Avant / Après - Salle de bain</span>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
 
           {/* Row 2: 2 photos équipe */}
@@ -107,18 +102,18 @@ const ExamplesGallery = () => {
               <div className="relative bg-card rounded-xl p-3 pb-4 border border-border/50 shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <div className="rounded-lg overflow-hidden">
                   <img
-                    src="/images/examples/nettoyeur.webp"
-                    alt="Professionnel de nettoyage spécialisé"
+                    src="/images/examples/debarras-evacuation-objets-encombrants.webp"
+                    alt="Évacuation d'objets encombrants par notre équipe en combinaison de protection"
                     className="w-full h-auto rounded-lg"
-                    width={800}
-                    height={600}
+                    width={1200}
+                    height={900}
                     draggable="false"
                     loading="lazy"
                   />
                 </div>
                 <div className="mt-3 flex items-center gap-2">
                   <div className="w-2 h-2 bg-accent rounded-full"></div>
-                  <span className="text-xs font-medium text-foreground">Intervention professionnelle</span>
+                  <span className="text-xs font-medium text-foreground">Débarras et évacuation</span>
                 </div>
               </div>
             </div>
