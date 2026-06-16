@@ -89,26 +89,26 @@ const ProtocoleSanitaireContent = () => {
             <div className="grid md:grid-cols-3 gap-4 sm:gap-6">
               <figure className="bg-card rounded-xl p-3 pb-4 border border-border/50 shadow-lg">
                 <div className="rounded-lg overflow-hidden">
-                  <img src="/images/examples/toulouse1.webp" alt="Avant/Après nettoyage salon - Syndrome de Diogène" width={800} height={600} loading="lazy" className="w-full h-auto rounded-lg" />
+                  <img src="/images/examples/avant-apres-nettoyage-diogene-insalubre-perpignan.webp" alt="Avant et après nettoyage syndrome de Diogène et logement insalubre à Perpignan" width={1200} height={900} loading="lazy" className="w-full h-auto rounded-lg" />
                 </div>
                 <figcaption className="mt-3 flex items-center gap-2 text-xs font-medium text-foreground">
-                  <span className="w-2 h-2 bg-primary rounded-full" /> Avant / Après - Salon
+                  <span className="w-2 h-2 bg-primary rounded-full" /> Avant / Après - Diogène, Perpignan
                 </figcaption>
               </figure>
               <figure className="bg-card rounded-xl p-3 pb-4 border border-border/50 shadow-lg">
                 <div className="rounded-lg overflow-hidden">
-                  <img src="/images/examples/toulouse2.webp" alt="Avant/Après nettoyage sanitaires" width={800} height={600} loading="lazy" className="w-full h-auto rounded-lg" />
+                  <img src="/images/examples/avant-apres-nettoyage-diogene-sete.webp" alt="Avant et après nettoyage syndrome de Diogène à Sète" width={1200} height={900} loading="lazy" className="w-full h-auto rounded-lg" />
                 </div>
                 <figcaption className="mt-3 flex items-center gap-2 text-xs font-medium text-foreground">
-                  <span className="w-2 h-2 bg-accent rounded-full" /> Avant / Après - Sanitaires
+                  <span className="w-2 h-2 bg-accent rounded-full" /> Avant / Après - Diogène, Sète
                 </figcaption>
               </figure>
               <figure className="bg-card rounded-xl p-3 pb-4 border border-border/50 shadow-lg">
                 <div className="rounded-lg overflow-hidden">
-                  <img src="/images/examples/toulouse3.webp" alt="Avant/Après nettoyage salle de bain" width={800} height={600} loading="lazy" className="w-full h-auto rounded-lg" />
+                  <img src="/images/examples/avant-apres-nettoyage-apres-deces-albi.webp" alt="Avant et après nettoyage après décès à Albi" width={1200} height={900} loading="lazy" className="w-full h-auto rounded-lg" />
                 </div>
                 <figcaption className="mt-3 flex items-center gap-2 text-xs font-medium text-foreground">
-                  <span className="w-2 h-2 bg-primary rounded-full" /> Avant / Après - Salle de bain
+                  <span className="w-2 h-2 bg-primary rounded-full" /> Avant / Après - Après décès, Albi
                 </figcaption>
               </figure>
             </div>
@@ -152,7 +152,7 @@ const ProtocoleSanitaireContent = () => {
                   <li className="flex gap-3"><CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-0.5" /><span>Mise en dépression du logement si nécessaire pour limiter la diffusion d'odeurs</span></li>
                   </ul>
                 </div>
-                <img src="/images/examples/nettoyeur.webp" alt="Intervenant en combinaison de protection EPI" width="220" height="280" loading="lazy" className="w-full h-56 md:h-full object-cover rounded-lg border border-border" />
+                <img src="/images/examples/debarras-evacuation-objets-encombrants.webp" alt="Notre équipe en combinaison de protection lors d'une intervention" width="1200" height="900" loading="lazy" className="w-full h-56 md:h-full object-cover rounded-lg border border-border" />
               </Card>
             </div>
 

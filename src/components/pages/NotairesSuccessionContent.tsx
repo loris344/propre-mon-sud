@@ -101,26 +101,26 @@ const NotairesSuccessionContent = () => {
               <div className="grid md:grid-cols-3 gap-4 sm:gap-6">
                 <figure className="bg-card rounded-xl p-3 pb-4 border border-border/50 shadow-lg">
                   <div className="rounded-lg overflow-hidden">
-                    <img src="/images/examples/toulouse1.webp" alt="Avant/Après remise en état d'un salon - succession" width={800} height={600} loading="lazy" className="w-full h-auto rounded-lg" />
+                    <img src="/images/examples/avant-apres-debarras-maison-succession-nimes.webp" alt="Avant et après débarras d'une maison en succession à Nîmes" width={1200} height={900} loading="lazy" className="w-full h-auto rounded-lg" />
                   </div>
                   <figcaption className="mt-3 flex items-center gap-2 text-xs font-medium text-foreground">
-                    <span className="w-2 h-2 bg-primary rounded-full" /> Avant / Après - Salon
+                    <span className="w-2 h-2 bg-primary rounded-full" /> Avant / Après - Succession, Nîmes
                   </figcaption>
                 </figure>
                 <figure className="bg-card rounded-xl p-3 pb-4 border border-border/50 shadow-lg">
                   <div className="rounded-lg overflow-hidden">
-                    <img src="/images/examples/toulouse2.webp" alt="Avant/Après remise en état de sanitaires" width={800} height={600} loading="lazy" className="w-full h-auto rounded-lg" />
+                    <img src="/images/examples/avant-apres-debarras-logement-nimes.webp" alt="Avant et après débarras d'un logement encombré à Nîmes" width={1200} height={900} loading="lazy" className="w-full h-auto rounded-lg" />
                   </div>
                   <figcaption className="mt-3 flex items-center gap-2 text-xs font-medium text-foreground">
-                    <span className="w-2 h-2 bg-accent rounded-full" /> Avant / Après - Sanitaires
+                    <span className="w-2 h-2 bg-accent rounded-full" /> Avant / Après - Débarras, Nîmes
                   </figcaption>
                 </figure>
                 <figure className="bg-card rounded-xl p-3 pb-4 border border-border/50 shadow-lg">
                   <div className="rounded-lg overflow-hidden">
-                    <img src="/images/examples/toulouse3.webp" alt="Avant/Après remise en état d'une salle de bain" width={800} height={600} loading="lazy" className="w-full h-auto rounded-lg" />
+                    <img src="/images/examples/avant-apres-remise-en-etat-accumulation-extreme-montpellier.webp" alt="Avant et après remise en état d'un logement en accumulation extrême à Montpellier" width={1200} height={900} loading="lazy" className="w-full h-auto rounded-lg" />
                   </div>
                   <figcaption className="mt-3 flex items-center gap-2 text-xs font-medium text-foreground">
-                    <span className="w-2 h-2 bg-primary rounded-full" /> Avant / Après - Salle de bain
+                    <span className="w-2 h-2 bg-primary rounded-full" /> Avant / Après - Remise en état, Montpellier
                   </figcaption>
                 </figure>
               </div>
