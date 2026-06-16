@@ -12,9 +12,9 @@ const beforeAfter = [
     label: "Avant / Après - Remise en état, Montpellier",
   },
   {
-    src: "/images/examples/avant-apres-nettoyage-diogene-sete.webp",
-    alt: "Avant et après nettoyage syndrome de Diogène à Sète",
-    label: "Avant / Après - Diogène, Sète",
+    src: "/images/examples/avant-apres-nettoyage-diogene-marseille.webp",
+    alt: "Avant et après nettoyage syndrome de Diogène à Marseille",
+    label: "Avant / Après - Diogène, Marseille",
   },
   {
     src: "/images/examples/avant-apres-debarras-logement-nimes.webp",
@@ -27,9 +27,9 @@ const beforeAfter = [
     label: "Avant / Après - Après décès, Albi",
   },
   {
-    src: "/images/examples/avant-apres-debarras-maison-succession-nimes.webp",
-    alt: "Avant et après débarras d'une maison en succession à Nîmes",
-    label: "Avant / Après - Succession, Nîmes",
+    src: "/images/examples/avant-apres-nettoyage-insalubre-toulouse.webp",
+    alt: "Avant et après nettoyage d'un logement insalubre à Toulouse",
+    label: "Avant / Après - Insalubre, Toulouse",
   },
 ];
 

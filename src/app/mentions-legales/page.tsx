@@ -35,8 +35,8 @@ const MentionsLegales = () => {
               <h2 className="text-xl font-semibold text-foreground">3. Hébergement</h2>
               <p>
                 Ce site est hébergé par :<br />
-                Lovable / Netlify<br />
-                Adresse : San Francisco, CA, États-Unis
+                GitHub, Inc. (GitHub Pages)<br />
+                Adresse : 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis
               </p>
             </section>
 
