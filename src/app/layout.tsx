@@ -47,6 +47,31 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     // pages SEO qui le référencent déjà via provider @id.
     <html lang="fr">
       <body>
+        {/*
+          Auto-retry global des images. Une <img> qui échoue (edge CDN froid
+          juste après le déploiement quotidien, blip réseau) n'est JAMAIS
+          rechargée d'elle-même par le navigateur : elle reste cassée jusqu'à
+          un reload manuel. Ce script, exécuté en tout début de <body> (avant
+          que la moindre image du contenu soit parsée), réessaie la même URL
+          (jusqu'à 3 fois, délai croissant) pour TOUTE image du site : home,
+          pages SEO, blog, landing, images dans le corps des articles, et tout
+          futur contenu. Aucun impact SEO (les <img> restent dans le HTML).
+        */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html:
+              "(function(){var M=3,B='data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7';" +
+              "window.addEventListener('error',function(e){var t=e.target;" +
+              "if(!t||t.tagName!=='IMG')return;var s=t.getAttribute('src');" +
+              "if(!s||s.lastIndexOf('data:',0)===0)return;" +
+              "var n=+(t.getAttribute('data-r')||0);if(n>=M)return;" +
+              "var real=t.getAttribute('data-rs')||s;t.setAttribute('data-rs',real);" +
+              "t.setAttribute('data-r',n+1);" +
+              "setTimeout(function(){t.src=B;setTimeout(function(){t.src=real;},50);},400*(n+1));" +
+              "},true);})();",
+          }}
+        />
+
         {/* Google Tag Manager */}
         <Script id="gtm" strategy="afterInteractive">
           {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':

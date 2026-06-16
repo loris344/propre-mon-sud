@@ -6,7 +6,6 @@ import remarkGfm from "remark-gfm";
 import Footer from "@/components/Footer";
 import ArticleCTA from "@/components/ArticleCTA";
 import MarkdownLink from "@/components/MarkdownLink";
-import RetryImage from "@/components/RetryImage";
 import { jsonLd } from "@/lib/structured-data";
 import { withTrailingSlash } from "@/lib/metadata";
 import { resolveSeoImage } from "@/lib/seo-images";
@@ -118,8 +117,10 @@ export default async function SeoPage({
           {img && (
             <figure className="max-w-4xl mx-auto mb-8">
               <div className="relative w-full aspect-[16/9] overflow-hidden rounded-lg bg-muted">
-                <RetryImage key={img.src} src={img.src} alt={img.alt} width={1600} height={900}
-                            className="absolute inset-0 w-full h-full object-cover" />
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src={img.src} alt={img.alt} width={1600} height={900}
+                     className="absolute inset-0 w-full h-full object-cover"
+                     loading="eager" fetchPriority="high" decoding="async" />
               </div>
             </figure>
           )}

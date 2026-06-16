@@ -7,7 +7,6 @@ import { ArrowLeft, Calendar, Clock } from "lucide-react";
 import Footer from "@/components/Footer";
 import ArticleCTA from "@/components/ArticleCTA";
 import MarkdownLink from "@/components/MarkdownLink";
-import RetryImage from "@/components/RetryImage";
 import { getServiceHubs, getSecondaryHubs, getMaillageForUrl } from "@/lib/seo-pages";
 import {
   getAllArticles,
@@ -348,11 +347,12 @@ function ArticlePage({ article }: { article: Article }) {
 
           {article.cover && (
             <div className="max-w-4xl mx-auto mb-8">
-              <RetryImage
-                key={article.cover}
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
                 src={article.cover}
                 alt={article.title}
                 className="w-full h-64 object-cover rounded-lg"
+                decoding="async"
               />
             </div>
           )}
