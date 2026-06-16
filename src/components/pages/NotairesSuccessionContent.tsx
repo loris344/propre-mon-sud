@@ -56,7 +56,7 @@ const NotairesSuccessionContent = () => {
               </div>
               <div className="relative w-full lg:w-80 shrink-0">
                 <img
-                  src="/images/examples/nettoyeurs.webp"
+                  src="/images/examples/equipe-nettoyage-diogene-combinaisons-protection.webp"
                   alt="Équipe d'intervention sur un logement en succession"
                   width="320"
                   height="240"

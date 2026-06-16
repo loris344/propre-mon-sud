@@ -87,11 +87,11 @@ const ExamplesGallery = () => {
               <div className="relative bg-card rounded-xl p-3 pb-4 border border-border/50 shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <div className="rounded-lg overflow-hidden">
                   <img
-                    src="/images/examples/nettoyeurs.webp"
-                    alt="Équipe de nettoyage en intervention"
+                    src="/images/examples/equipe-nettoyage-diogene-combinaisons-protection.webp"
+                    alt="Équipe de nettoyage en combinaisons de protection à l'arrière du camion d'intervention"
                     className="w-full h-auto rounded-lg"
-                    width={1200}
-                    height={829}
+                    width={1400}
+                    height={920}
                     draggable="false"
                     loading="lazy"
                   />
