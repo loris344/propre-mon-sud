@@ -21,16 +21,6 @@ const beforeAfter = [
     alt: "Avant et après débarras d'un logement encombré à Nîmes",
     label: "Avant / Après - Débarras, Nîmes",
   },
-  {
-    src: "/images/examples/avant-apres-nettoyage-apres-deces-albi.webp",
-    alt: "Avant et après nettoyage après décès à Albi",
-    label: "Avant / Après - Après décès, Albi",
-  },
-  {
-    src: "/images/examples/avant-apres-nettoyage-insalubre-toulouse.webp",
-    alt: "Avant et après nettoyage d'un logement insalubre à Toulouse",
-    label: "Avant / Après - Insalubre, Toulouse",
-  },
 ];
 
 const ExamplesGallery = () => {
@@ -52,7 +42,7 @@ const ExamplesGallery = () => {
 
         <div className="max-w-7xl mx-auto">
           {/* Row 1: avant/après (vraies réalisations, nommées par service + ville) */}
-          <div className="grid md:grid-cols-3 gap-4 sm:gap-6 mb-4 sm:mb-6">
+          <div className="grid md:grid-cols-2 gap-4 sm:gap-6 mb-4 sm:mb-6">
             {beforeAfter.map((item, i) => (
               <div key={item.src} className="group relative">
                 <div className="relative bg-card rounded-xl p-3 pb-4 border border-border/50 shadow-lg hover:shadow-xl transition-shadow duration-300">
