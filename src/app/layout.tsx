@@ -5,6 +5,7 @@ import { Providers } from "./providers";
 import Header from "@/components/Header";
 import PhoneToast from "@/components/PhoneToast";
 import Analytics from "@/components/Analytics";
+import CallTracking from "@/components/CallTracking";
 import { SITE_URL } from "@/lib/structured-data";
 import { getServiceHubs } from "@/lib/seo-pages";
 
@@ -88,6 +89,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             style={{ display: "none", visibility: "hidden" }}
           />
         </noscript>
+
+        {/* Suivi des appels Google Ads (numéro de transfert). Inerte tant que
+            l'ID de conversion + le libellé d'appel ne sont pas renseignés. */}
+        <CallTracking />
 
         <Providers>
           <PhoneToast />

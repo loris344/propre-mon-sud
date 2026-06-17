@@ -4,4 +4,9 @@ export {};
 
 declare global {
   function gtag_report_conversion(url?: string): void;
+
+  interface Window {
+    gtag?: (...args: unknown[]) => void;
+    dataLayer?: unknown[];
+  }
 }
