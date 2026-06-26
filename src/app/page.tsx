@@ -65,16 +65,16 @@ export default function HomePage() {
         <section id="services" aria-labelledby="services-title" className="scroll-mt-24">
           <Services />
         </section>
-        <WhyChooseUs />
-        <section id="avis" aria-labelledby="avis-title" className="scroll-mt-24">
-          <CustomerReviews />
-        </section>
         <section id="faq" aria-labelledby="faq-title" className="scroll-mt-24">
           <LandingFAQ
             title="Questions fréquentes"
             subtitle="Tout ce qu'il faut savoir avant de nous contacter."
             items={faqItems}
           />
+        </section>
+        <WhyChooseUs />
+        <section id="avis" aria-labelledby="avis-title" className="scroll-mt-24">
+          <CustomerReviews />
         </section>
         <section id="contact" aria-labelledby="contact-title" className="scroll-mt-24">
           <Contact />

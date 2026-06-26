@@ -24,7 +24,7 @@ const CustomerReviews = memo(() => {
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
           <h2 id="avis-title" className="text-3xl md:text-4xl font-bold text-foreground">
-            Avis Clients Vérifiés
+            Avis Clients
           </h2>
           <p className="text-lg text-muted-foreground">
             Découvrez les témoignages de nos clients satisfaits dans le Sud de la France
@@ -46,7 +46,7 @@ const CustomerReviews = memo(() => {
                </div>
              </div>
              <div className="text-muted-foreground">
-               Avis vérifiés
+               Avis Google
              </div>
            </div>
         </div>
@@ -123,7 +123,7 @@ const CustomerReviews = memo(() => {
         {/* Note de bas de page */}
         <div className="text-center mt-12">
           <p className="text-sm text-muted-foreground">
-            Tous nos avis sont vérifiés et proviennent de clients réels ayant utilisé nos services.
+            Tous nos avis proviennent de clients réels ayant utilisé nos services.
           </p>
         </div>
       </div>
