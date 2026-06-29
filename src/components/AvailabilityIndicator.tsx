@@ -30,25 +30,19 @@ const AvailabilityIndicator = () => {
   return (
     <div className="flex items-center gap-2">
       <div className="relative">
-        {/* Point vert clignotant */}
-        <div 
-          className={`w-3 h-3 rounded-full ${
-            isAvailable 
-              ? 'bg-green-500 animate-pulse' 
-              : 'bg-gray-400'
-          }`}
-        />
+        {/* Point vert clignotant, affiché en permanence */}
+        <div className="w-3 h-3 rounded-full bg-green-500 animate-pulse" />
         {/* Anneau de clignotement pour l'effet "pulse" */}
-        {isAvailable && (
-          <div className="absolute inset-0 w-3 h-3 rounded-full bg-green-500 animate-ping opacity-75" />
-        )}
+        <div className="absolute inset-0 w-3 h-3 rounded-full bg-green-500 animate-ping opacity-75" />
       </div>
-      
-      <span className={`text-xs font-medium whitespace-nowrap hidden lg:inline ${
-        isAvailable ? 'text-green-600' : 'text-gray-500'
-      }`}>
-        {isAvailable ? 'Disponible' : 'Hors horaires'}
-      </span>
+
+      {/* Le texte « Disponible » n'apparaît que pendant les horaires d'ouverture.
+          Hors horaires, on ne garde que le point vert, sans mention. */}
+      {isAvailable && (
+        <span className="text-xs font-medium whitespace-nowrap hidden lg:inline text-green-600">
+          Disponible
+        </span>
+      )}
     </div>
   );
 };
