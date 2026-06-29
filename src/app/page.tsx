@@ -63,7 +63,7 @@ export default function HomePage() {
           <ExamplesGallery />
         </section>
         <section id="services" aria-labelledby="services-title" className="scroll-mt-24">
-          <Services />
+          <Services services={getServiceHubs()} />
         </section>
         <section id="faq" aria-labelledby="faq-title" className="scroll-mt-24">
           <LandingFAQ
