@@ -11,11 +11,6 @@ const beforeAfter = [
     alt: "Avant et après remise en état d'un logement en accumulation extrême à Montpellier",
     label: "Avant / Après - Remise en état, Montpellier",
   },
-  {
-    src: "/images/examples/avant-apres-nettoyage-diogene-marseille.webp",
-    alt: "Avant et après nettoyage syndrome de Diogène à Marseille",
-    label: "Avant / Après - Diogène, Marseille",
-  },
 ];
 
 const ExamplesGallery = () => {
