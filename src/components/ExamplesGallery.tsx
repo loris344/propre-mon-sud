@@ -16,11 +16,6 @@ const beforeAfter = [
     alt: "Avant et après nettoyage syndrome de Diogène à Marseille",
     label: "Avant / Après - Diogène, Marseille",
   },
-  {
-    src: "/images/examples/avant-apres-debarras-logement-nimes.webp",
-    alt: "Avant et après débarras d'un logement encombré à Nîmes",
-    label: "Avant / Après - Débarras, Nîmes",
-  },
 ];
 
 const ExamplesGallery = () => {
