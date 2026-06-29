@@ -7,46 +7,19 @@ import { memo } from "react";
 import Link from "next/link";
 import type { NavLink } from "@/lib/seo-pages";
 
-// Métadonnées d'affichage (icône + accroche) par hub de service. La LISTE des
-// services affichés vient de getServiceHubs() (= menu « Services ») ; cette table
-// ne fait qu'enrichir le rendu. Un nouveau hub sans entrée ici reste affiché
-// (icône + description de repli), donc rien à maintenir pour qu'il apparaisse.
-const SERVICE_META: Record<string, { icon: LucideIcon; description: string }> = {
-  "/nettoyage-diogene/": {
-    icon: Home,
-    description:
-      "Intervention spécialisée dans les situations d'accumulation compulsive, avec respect et discrétion totale.",
-  },
-  "/debarras/": {
-    icon: Trash2,
-    description:
-      "Évacuation et tri de tous types d'objets, meubles et déchets, dans le respect de l'environnement.",
-  },
-  "/desinfection-logement/": {
-    icon: ShieldCheck,
-    description:
-      "Traitement des environnements insalubres avec des produits professionnels et des techniques adaptées.",
-  },
-  "/nettoyage-apres-deces/": {
-    icon: Heart,
-    description:
-      "Nettoyage et remise en état après décès, avec une approche bienveillante, discrète et professionnelle.",
-  },
-  "/nettoyage-apres-squat/": {
-    icon: KeyRound,
-    description:
-      "Remise en état complète d'un logement après une occupation illégale ou un squat.",
-  },
-  "/nettoyage-insalubre/": {
-    icon: SprayCan,
-    description:
-      "Nettoyage et assainissement des logements très dégradés ou déclarés insalubres.",
-  },
-  "/nettoyage-extreme/": {
-    icon: Sparkles,
-    description:
-      "Nettoyage en profondeur des situations les plus extrêmes, du sol au plafond.",
-  },
+// Métadonnées d'affichage par hub de service. La LISTE des services affichés
+// vient de getServiceHubs() (= menu « Services ») ; cette table ne fait
+// qu'enrichir le rendu (icône, et libellé plus court si le titre de la page
+// fait bizarre dans ce contexte). Un hub sans entrée ici reste affiché (icône
+// de repli + libellé du plan), donc rien à maintenir pour qu'il apparaisse.
+const SERVICE_META: Record<string, { icon: LucideIcon; label?: string }> = {
+  "/nettoyage-diogene/": { icon: Home },
+  "/debarras/": { icon: Trash2, label: "Débarras complet" },
+  "/desinfection-logement/": { icon: ShieldCheck },
+  "/nettoyage-apres-deces/": { icon: Heart },
+  "/nettoyage-apres-squat/": { icon: KeyRound },
+  "/nettoyage-insalubre/": { icon: SprayCan },
+  "/nettoyage-extreme/": { icon: Sparkles },
 };
 
 const Services = ({ services = [] }: { services?: NavLink[] }) => {
@@ -67,30 +40,24 @@ const Services = ({ services = [] }: { services?: NavLink[] }) => {
         {/* Tous les services réunis dans un seul bloc. La liste suit le menu
             « Services » (hubs publiés) : chaque service renvoie vers sa page. */}
         <Card className="max-w-5xl mx-auto border-border/50 shadow-lg">
-          <CardContent className="p-4 sm:p-8">
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-4">
+          <CardContent className="p-4 sm:p-6">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-3">
               {services.map((service) => {
                 const meta = SERVICE_META[service.url];
                 const Icon = meta?.icon ?? Sparkles;
+                const label = meta?.label ?? service.label;
                 return (
                   <Link
                     key={service.url}
                     href={service.url}
-                    className="group flex items-start gap-4 rounded-xl p-4 transition-colors hover:bg-secondary/50"
+                    className="group flex items-center gap-3 rounded-xl p-3 transition-colors hover:bg-secondary/50"
                   >
-                    <div className="w-11 h-11 flex-shrink-0 bg-gradient-to-br from-primary to-primary/80 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <div className="w-10 h-10 flex-shrink-0 bg-gradient-to-br from-primary to-primary/80 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                       <Icon className="w-5 h-5 text-primary-foreground" />
                     </div>
-                    <div className="space-y-1">
-                      <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors">
-                        {service.label}
-                      </h3>
-                      {meta?.description && (
-                        <p className="text-sm text-muted-foreground leading-relaxed">
-                          {meta.description}
-                        </p>
-                      )}
-                    </div>
+                    <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors">
+                      {label}
+                    </h3>
                   </Link>
                 );
               })}
