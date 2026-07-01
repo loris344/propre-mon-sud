@@ -18,7 +18,7 @@ const MentionsLegales = () => {
               <p>
                 Le site <strong>sosnettoyagediogene.fr</strong> est édité par :<br />
                 <strong>SOS Nettoyage Diogène & Débarras</strong><br />
-                SIRET : 939 452 215 00014<br />
+                SIRET : 891 792 749 00055<br />
                 Société spécialisée dans le nettoyage et débarras professionnel<br />
                 Siège social : 135 rue de la Cavalade, 34000 Montpellier<br />
                 Téléphone : <a href="tel:+33767135458" className="text-primary hover:underline">07 67 13 54 58</a><br />
