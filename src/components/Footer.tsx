@@ -8,9 +8,11 @@ import type { NavLink } from "@/lib/seo-pages";
 const Footer = ({
   services = [],
   secondary = [],
+  hidePartnerLinks = false,
 }: {
   services?: NavLink[];
   secondary?: NavLink[];
+  hidePartnerLinks?: boolean;
 }) => {
   return (
     <footer className="bg-gradient-to-b from-background to-secondary/30 border-t border-border/50">
@@ -156,19 +158,26 @@ const Footer = ({
             </div>
             <div className="flex flex-wrap items-center justify-center gap-4 text-sm text-muted-foreground">
               {/* Pages partenariats B2B : indexables et dans le sitemap, elles
-                  doivent être crawlables (sinon orphelines à ∞ clic). */}
-              <Link
-                href="/partenariat-mjpm/"
-                className="hover:text-foreground transition-colors"
-              >
-                Partenariat MJPM
-              </Link>
-              <Link
-                href="/partenariat-maisons-retraite/"
-                className="hover:text-foreground transition-colors"
-              >
-                Partenariat maisons de retraite
-              </Link>
+                  doivent être crawlables (sinon orphelines à ∞ clic). Masquées
+                  uniquement sur les landing pages Google Ads (hidePartnerLinks) :
+                  ces liens y sont hors-sujet, mais restent crawlables via ce
+                  même Footer sur les 839 autres pages du site. */}
+              {!hidePartnerLinks && (
+                <>
+                  <Link
+                    href="/partenariat-mjpm/"
+                    className="hover:text-foreground transition-colors"
+                  >
+                    Partenariat MJPM
+                  </Link>
+                  <Link
+                    href="/partenariat-maisons-retraite/"
+                    className="hover:text-foreground transition-colors"
+                  >
+                    Partenariat maisons de retraite
+                  </Link>
+                </>
+              )}
               <Link
                 href="/mentions-legales/"
                 className="hover:text-foreground transition-colors"

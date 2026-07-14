@@ -1,261 +1,197 @@
 "use client";
 
-import { Phone, ShieldCheck, Bug, CheckCircle, ArrowRight, Star, Clock, Sparkles, AlertTriangle, Droplets, Camera, MessageCircle } from "lucide-react";
+import { Phone, Mail, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
-import Contact from "@/components/Contact";
+import CallLink from "@/components/CallLink";
+import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
 import LandingReviews from "@/components/LandingReviews";
 import LandingFAQ from "@/components/LandingFAQ";
+import LandingServices from "@/components/landing/LandingServices";
+import LandingZones from "@/components/landing/LandingZones";
+import { homepageFaqItems } from "@/data/homepage-faq";
+
+const PHONE = "0767135458";
+const PHONE_DISPLAY = "07 67 13 54 58";
+
+const scrollToForm = () => {
+  document.getElementById('devis-gratuit')?.scrollIntoView({ behavior: 'smooth' });
+};
 
 const LandingDesinfection = () => {
-  const scrollToContact = () => {
-    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
-  };
-
   return (
-    <>
-      <main className="min-h-screen">
-        {/* Hero */}
-        <section className="relative overflow-hidden pt-32 sm:pt-40 pb-16 sm:pb-24">
-          <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-secondary/10" />
+    <main className="min-h-screen">
+      {/* Hero : même structure que la homepage (titre, boutons, avis Google, images avant/après) + formulaire complet en 2e colonne */}
+      <section className="relative overflow-hidden pt-32 sm:pt-40 pb-12 sm:pb-16">
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-secondary/10" />
 
-          <div className="container mx-auto px-4 sm:px-6 relative">
-            <div className="grid lg:grid-cols-2 gap-10 items-center">
+        <div className="container mx-auto px-4 sm:px-6 relative">
+          <div className="grid lg:grid-cols-2 gap-10 items-start">
+            <div className="space-y-6">
               <div>
-                <div className="inline-flex items-center gap-2 bg-destructive/10 border border-destructive/20 text-foreground px-5 py-2.5 rounded-full text-sm font-medium mb-6">
-                  <AlertTriangle className="w-4 h-4 text-destructive" />
-                  Urgence insalubrité · Intervention rapide
-                </div>
-
-                <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground leading-[1.1]">
-                  Logement insalubre ?<br />
-                  <span className="text-primary">On assainit tout.</span>
+                <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground leading-[1.1]">
+                  Entreprise Nettoyage de l'Extrême pour <span className="text-primary">Logement Insalubre</span>
                 </h1>
 
-                <p className="text-lg text-muted-foreground mt-5 leading-relaxed">
-                  Désinfection professionnelle, traitement anti-nuisibles et remise en état complète
-                  des logements contaminés. Intervention discrète dans tout le Sud de la France.
-                </p>
-
-                <div className="flex flex-col sm:flex-row gap-4 mt-8">
-                  <Button variant="hero" size="lg" onClick={scrollToContact} className="text-lg px-8 py-6 shadow-lg">
-                    Devis Gratuit
-                    <ArrowRight className="w-5 h-5 ml-2" />
-                  </Button>
-                  <a href="tel:+33767135458" onClick={() => gtag_report_conversion()}>
-                    <Button variant="outline" size="lg" className="text-lg px-8 py-6 w-full border-2">
-                      <Phone className="w-5 h-5 mr-2" />
-                      07 67 13 54 58
-                    </Button>
-                  </a>
-                </div>
-
-                <div className="flex flex-wrap items-center gap-4 sm:gap-6 mt-6 text-sm text-muted-foreground">
-                  <div className="flex items-center gap-1.5">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="w-4 h-4 fill-amber-400 text-amber-400" />
-                    ))}
-                    <span className="ml-1 font-medium">4.7/5</span>
-                  </div>
-                  <span className="flex items-center gap-1.5"><ShieldCheck className="w-4 h-4" /> Produits pro homologués</span>
-                  <span className="flex items-center gap-1.5"><Clock className="w-4 h-4" /> 7j/7</span>
-                </div>
-
-                <div className="flex items-center gap-4 mt-3">
-                  <span className="text-sm sm:text-base text-muted-foreground font-medium">
-                    En collaboration avec l'ARS
+                <p className="text-base sm:text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl mt-4">
+                  Société spécialisée dans la désinfection et le nettoyage de logements insalubres, débarras et gros volumes.
+                  <span className="block mt-2 font-medium text-foreground">
+                    Intervention en{" "}
+                    <span className="text-primary font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+                      Région Occitanie et PACA
+                    </span>
                   </span>
-                  <div className="flex items-center gap-3">
-                    <img src="/logos/RF.webp" alt="République Française" className="h-12 sm:h-16 w-auto object-contain" width={128} height={116} loading="lazy" />
-                    <img src="/logos/ARS.webp" alt="Agence Régionale de Santé" className="h-12 sm:h-16 w-auto object-contain" width={128} height={74} loading="lazy" />
-                  </div>
-                </div>
-              </div>
-
-              {/* Images */}
-              <div className="grid grid-cols-3 gap-3">
-                <div className="relative aspect-[3/4] rounded-2xl overflow-hidden shadow-lg group">
-                  <img src="/images/examples/insalubrite1.webp" alt="Cuisine insalubre avant intervention" className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
-                  <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent p-3">
-                    <span className="text-xs font-medium text-white">Cuisine</span>
-                  </div>
-                </div>
-                <div className="relative aspect-[3/4] rounded-2xl overflow-hidden shadow-lg group mt-6">
-                  <img src="/images/examples/insalubrite2.webp" alt="Logement insalubre avant nettoyage" className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
-                  <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent p-3">
-                    <span className="text-xs font-medium text-white">Salon</span>
-                  </div>
-                </div>
-                <div className="relative aspect-[3/4] rounded-2xl overflow-hidden shadow-lg group">
-                  <img src="/images/examples/insalubrite3.webp" alt="Remise en état après désinfection" className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
-                  <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent p-3">
-                    <span className="text-xs font-medium text-white">Après</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Comment ça marche */}
-        <section className="py-16 sm:py-20 bg-card border-y border-border/50">
-          <div className="container mx-auto px-4 sm:px-6">
-            <h2 className="text-2xl sm:text-3xl font-bold text-center text-foreground mb-4">
-              Comment ça marche ?
-            </h2>
-            <p className="text-center text-muted-foreground mb-12 max-w-xl mx-auto">
-              Simple, rapide et sans engagement.
-            </p>
-
-            <div className="max-w-4xl mx-auto grid sm:grid-cols-3 gap-6">
-              {[
-                { step: "1", title: "Contactez-nous", desc: "Par téléphone ou mail, décrivez la situation. On vous écoute et on vous conseille." },
-                { step: "2", title: "Quelques infos & photos", desc: "Envoyez-nous quelques photos et décrivez la situation. On établit un devis précis." },
-                { step: "3", title: "On intervient", desc: "Désinfection, traitement, remise en état. Votre logement retrouve un environnement sain." },
-              ].map((item, i) => (
-                <Card key={i} className="p-6 sm:p-8 border-border/50 text-center">
-                  <div className="w-14 h-14 rounded-2xl bg-primary text-primary-foreground flex items-center justify-center text-xl font-bold mx-auto mb-5">
-                    {item.step}
-                  </div>
-                  <h3 className="text-lg font-bold text-foreground mb-3">{item.title}</h3>
-                  <p className="text-muted-foreground text-sm leading-relaxed">{item.desc}</p>
-                </Card>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Solutions */}
-        <section className="py-16 sm:py-20">
-          <div className="container mx-auto px-4 sm:px-6">
-            <h2 className="text-2xl sm:text-3xl font-bold text-center text-foreground mb-4">
-              Nos solutions d'assainissement
-            </h2>
-            <p className="text-center text-muted-foreground mb-12 max-w-xl mx-auto">
-              Des techniques adaptées à chaque type de contamination.
-            </p>
-
-            <div className="grid sm:grid-cols-3 gap-6 max-w-5xl mx-auto">
-              {[
-                { icon: Sparkles, title: "Désinfection totale", desc: "Élimination des bactéries et virus avec des produits professionnels homologués. Nébulisation et pulvérisation." },
-                { icon: Bug, title: "Traitement anti-nuisibles", desc: "Cafards, punaises de lit, rongeurs, mites. Diagnostic précis et traitement ciblé pour une élimination durable." },
-                { icon: Droplets, title: "Remise en état complète", desc: "Nettoyage en profondeur, désodorisation, traitement des surfaces. Le logement retrouve un état habitable." },
-              ].map((item, i) => (
-                <Card key={i} className="p-6 sm:p-8 border-border/50 hover:shadow-lg transition-shadow duration-300">
-                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-5">
-                    <item.icon className="w-6 h-6 text-primary" />
-                  </div>
-                  <h3 className="text-lg font-bold text-foreground mb-3">{item.title}</h3>
-                  <p className="text-muted-foreground text-sm leading-relaxed">{item.desc}</p>
-                </Card>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Photo équipe */}
-        <section className="py-16 sm:py-20 bg-card border-y border-border/50">
-          <div className="container mx-auto px-4 sm:px-6">
-            <div className="max-w-5xl mx-auto grid sm:grid-cols-2 gap-10 items-center">
-              <div>
-                <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-4">
-                  Une équipe dédiée à votre projet
-                </h2>
-                <p className="text-muted-foreground leading-relaxed mb-6">
-                  Chaque intervention est réalisée par des professionnels formés, en tenue de protection,
-                  avec du matériel adapté à chaque situation.
                 </p>
-                <div className="space-y-3">
-                  {[
-                    "Logement insalubre ou contaminé",
-                    "Syndrome de Diogène",
-                    "Infestation de nuisibles persistante",
-                    "Après un sinistre (incendie, inondation)",
-                    "Logement vacant à remettre en location",
-                  ].map((item, i) => (
-                    <div key={i} className="flex items-start gap-3">
-                      <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                      <span className="text-foreground">{item}</span>
-                    </div>
+              </div>
+
+              {/* CTA Buttons */}
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
+                <CallLink phone={PHONE}>
+                  <Button variant="hero" size="lg" className="text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 w-full">
+                    <Phone className="w-4 h-4 sm:w-5 sm:h-5" />
+                    {PHONE_DISPLAY}
+                  </Button>
+                </CallLink>
+                <Button variant="accent" size="lg" className="text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6" onClick={scrollToForm}>
+                  <Mail className="w-4 h-4 sm:w-5 sm:h-5" />
+                  Devis Gratuit
+                </Button>
+              </div>
+
+              {/* Avis Google */}
+              <div className="flex items-center gap-1">
+                <svg className="w-5 h-5 flex-shrink-0" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#4285F4"/>
+                  <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+                  <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/>
+                  <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+                </svg>
+                <div className="flex items-center gap-0.5">
+                  {[1, 2, 3, 4, 5].map((star) => (
+                    <svg key={star} className="w-4 h-4 text-amber-400 fill-amber-400" viewBox="0 0 24 24">
+                      <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                    </svg>
                   ))}
                 </div>
+                <span className="ml-1 text-sm font-medium text-muted-foreground">4.7/5</span>
               </div>
-              <div className="grid grid-cols-2 gap-3">
-                <img
-                  src="/images/team/equipe-intervention.webp"
-                  alt="Équipe en tenue de protection lors d'une désinfection"
-                  className="rounded-2xl object-cover w-full h-52 sm:h-72 shadow-lg"
-                  loading="lazy"
-                />
-                <img
-                  src="/images/logos/p1.webp"
-                  alt="L'équipe SOS Nettoyage Diogène & Débarras"
-                  className="rounded-2xl object-cover w-full h-52 sm:h-72 shadow-lg"
-                  loading="lazy"
-                />
+
+              {/* ARS */}
+              <div className="flex items-center gap-4">
+                <span className="text-sm sm:text-base text-muted-foreground font-medium">
+                  En collaboration avec l'ARS
+                </span>
+                <div className="flex items-center gap-3">
+                  <img src="/logos/RF.webp" alt="République Française" className="h-12 sm:h-16 w-auto object-contain" width={128} height={116} loading="lazy" />
+                  <img src="/logos/ARS.webp" alt="Agence Régionale de Santé" className="h-12 sm:h-16 w-auto object-contain" width={128} height={74} loading="lazy" />
+                </div>
+              </div>
+
+              <div className="flex items-center gap-2 text-muted-foreground pt-2 border-t border-border/50">
+                <Clock className="w-4 h-4 text-accent" />
+                <span className="text-xs sm:text-sm font-medium">Intervention 7j/7</span>
+              </div>
+
+              {/* Images : mêmes photos que la homepage */}
+              <div className="relative">
+                <div className="flex flex-col gap-2 rounded-2xl overflow-hidden shadow-2xl bg-card p-2">
+                  <div className="relative">
+                    <img
+                      src="/images/examples/ex1.webp"
+                      alt="Exemple de transformation - Avant/Après nettoyage logement insalubre"
+                      className="w-full h-auto rounded-lg"
+                      loading="lazy"
+                      width={800}
+                      height={600}
+                    />
+                    <div className="absolute bottom-2 left-2 bg-primary/90 text-primary-foreground text-xs px-2 py-1 rounded">Avant</div>
+                    <div className="absolute bottom-2 right-2 bg-accent/90 text-accent-foreground text-xs px-2 py-1 rounded">Après</div>
+                  </div>
+                  <div className="relative">
+                    <img
+                      src="/images/examples/ex2.jpg"
+                      alt="Exemple de transformation - Résultat après intervention professionnelle"
+                      className="w-full h-auto rounded-lg"
+                      loading="lazy"
+                      width={800}
+                      height={600}
+                    />
+                    <div className="absolute bottom-2 right-2 bg-accent/90 text-accent-foreground text-xs px-2 py-1 rounded">Après</div>
+                  </div>
+                </div>
+                <div className="absolute -bottom-4 -left-4 sm:-bottom-6 sm:-left-6 bg-card p-4 sm:p-6 rounded-xl shadow-lg border border-border max-w-xs">
+                  <div className="text-center space-y-2">
+                    <div className="text-xl sm:text-2xl font-bold text-primary">6+</div>
+                    <div className="text-xs sm:text-sm text-muted-foreground">Années d'expérience</div>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        </section>
 
-        {/* Avis clients */}
-        <LandingReviews serviceKey="desinfection" />
+            {/* Sur mobile uniquement : la FAQ s'intercale ici, avant le formulaire (desktop : masquée, la FAQ desktop est plus bas) */}
+            <div className="lg:hidden">
+              <LandingFAQ
+                title="Questions fréquentes"
+                subtitle="Tout ce qu'il faut savoir avant de nous contacter."
+                items={homepageFaqItems}
+              />
+            </div>
 
-        {/* Urgence */}
-        <section className="py-16 sm:py-20 bg-card border-y border-border/50">
-          <div className="container mx-auto px-4 sm:px-6">
-            <div className="max-w-2xl mx-auto">
-              <Card className="p-8 sm:p-10 bg-gradient-to-br from-destructive/5 to-destructive/10 border-destructive/20 text-center">
-                <AlertTriangle className="w-10 h-10 text-destructive mx-auto mb-4" />
-                <h3 className="text-xl font-bold text-foreground mb-3">Situation urgente ?</h3>
-                <p className="text-muted-foreground mb-6 leading-relaxed">
-                  En cas de risque sanitaire immédiat, une intervention en urgence 7j/7 est possible.
-                  Appelez-nous directement.
-                </p>
-                <a href="tel:+33767135458" onClick={() => gtag_report_conversion()}>
-                  <Button variant="hero" size="lg" className="text-lg py-6 px-8">
-                    <Phone className="w-5 h-5 mr-2" />
-                    07 67 13 54 58
-                  </Button>
-                </a>
-              </Card>
+            <div id="devis-gratuit" className="scroll-mt-24">
+              <ContactForm />
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* FAQ */}
+      {/* FAQ desktop (les mêmes questions que la homepage : prix, tri, discrétion, délais). Sur mobile, une copie est déjà affichée avant le formulaire dans le hero. */}
+      <div className="hidden lg:block">
         <LandingFAQ
-          items={[
-            { question: "Qu'est-ce qu'un logement insalubre ?", answer: "C'est un logement présentant des risques sanitaires : accumulation de déchets, infestations, moisissures, odeurs persistantes. On intervient pour le débarras complet et la remise en état du logement." },
-            { question: "Quels produits utilisez-vous ?", answer: "Des produits professionnels homologués, adaptés à chaque type de contamination. On respecte les dosages et les temps de sécurité." },
-            { question: "Combien de temps faut-il attendre avant de réoccuper le logement ?", answer: "Ça dépend du traitement. Pour une désinfection standard, quelques heures d'aération suffisent. On vous précise les délais sur place." },
-            { question: "Traitez-vous aussi les nuisibles ?", answer: "Oui. Cafards, punaises de lit, rongeurs, mites. On fait un diagnostic puis un traitement ciblé pour une élimination durable, avec débarras des nids et déchets contaminés." },
-            { question: "Intervenez-vous en urgence ?", answer: "Oui, 7j/7. En cas de risque sanitaire immédiat, appelez-nous directement au 07 67 13 54 58." },
-            { question: "Comment obtenir un devis ?", answer: "Envoyez-nous quelques photos et vidéos en décrivant la situation. On vous répond avec un devis gratuit et sans engagement." },
-          ]}
+          title="Questions fréquentes"
+          subtitle="Tout ce qu'il faut savoir avant de nous contacter."
+          items={homepageFaqItems}
         />
+      </div>
 
-        {/* CTA final */}
-        <section className="py-16 sm:py-20 bg-gradient-to-b from-primary/5 to-primary/10">
-          <div className="container mx-auto px-4 sm:px-6 text-center">
-            <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-4">
-              Ne laissez pas l'insalubrité s'aggraver
-            </h2>
-            <p className="text-muted-foreground max-w-xl mx-auto mb-8 text-lg">
-              Envoyez-nous quelques photos par mail ou téléphone, on vous répond avec un devis gratuit.
-            </p>
-            <Button variant="hero" size="lg" onClick={scrollToContact} className="text-lg px-10 py-6 shadow-lg">
-              Demander un Devis Gratuit
-              <ArrowRight className="w-5 h-5 ml-2" />
-            </Button>
+      {/* Nos services */}
+      <LandingServices />
+
+      {/* Comment ça marche */}
+      <section className="py-16 sm:py-20 bg-card border-y border-border/50">
+        <div className="container mx-auto px-4 sm:px-6">
+          <h2 className="text-2xl sm:text-3xl font-bold text-center text-foreground mb-4">
+            Comment ça marche ?
+          </h2>
+          <p className="text-center text-muted-foreground mb-12 max-w-xl mx-auto">
+            Simple, rapide et sans engagement.
+          </p>
+
+          <div className="max-w-4xl mx-auto grid sm:grid-cols-3 gap-6">
+            {[
+              { step: "1", title: "Contactez-nous", desc: "Par téléphone ou mail, décrivez la situation. Nous vous écoutons et vous conseillons sur la marche à suivre." },
+              { step: "2", title: "Quelques infos & photos", desc: "Envoyez-nous quelques photos et une description de la situation. Nous établissons un devis précis." },
+              { step: "3", title: "Débarras, désinfection & remise en état", desc: "Débarras des déchets et objets contaminés, désinfection totale, traitement anti-nuisibles si besoin. Le logement retrouve un environnement sain et habitable." },
+            ].map((item, i) => (
+              <div key={i} className="p-6 sm:p-8 bg-background rounded-2xl border border-border/50 text-center">
+                <div className="w-14 h-14 rounded-2xl bg-primary text-primary-foreground flex items-center justify-center text-xl font-bold mx-auto mb-5">
+                  {item.step}
+                </div>
+                <h3 className="text-lg font-bold text-foreground mb-3">{item.title}</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">{item.desc}</p>
+              </div>
+            ))}
           </div>
-        </section>
+        </div>
+      </section>
 
-        <Contact />
-        <Footer />
-      </main>
-    </>
+      {/* Avis clients */}
+      <LandingReviews serviceKey={["desinfection", "debarras"]} />
+
+      {/* Zones d'intervention */}
+      <LandingZones />
+
+      <Footer hidePartnerLinks />
+    </main>
   );
 };
 

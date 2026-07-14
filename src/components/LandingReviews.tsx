@@ -36,12 +36,15 @@ const REVIEWS_BY_SERVICE: Record<string, Review[]> = {
   ],
 };
 
+type ServiceKey = "diogene" | "debarras" | "desinfection" | "deces";
+
 interface LandingReviewsProps {
-  serviceKey: "diogene" | "debarras" | "desinfection" | "deces";
+  serviceKey: ServiceKey | ServiceKey[];
 }
 
 const LandingReviews = memo(({ serviceKey }: LandingReviewsProps) => {
-  const reviews = REVIEWS_BY_SERVICE[serviceKey] || [];
+  const keys = Array.isArray(serviceKey) ? serviceKey : [serviceKey];
+  const reviews = keys.flatMap((key) => REVIEWS_BY_SERVICE[key] || []);
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
