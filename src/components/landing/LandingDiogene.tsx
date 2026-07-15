@@ -46,6 +46,9 @@ const LandingDiogene = () => {
               </div>
 
               {/* CTA Buttons */}
+              <p className="text-xs text-muted-foreground">
+                Numéro non surtaxé, appel au tarif normal.
+              </p>
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
                 <CallLink phone={PHONE}>
                   <Button variant="hero" size="lg" className="text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 w-full">
