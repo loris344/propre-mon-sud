@@ -164,14 +164,21 @@ const Header = ({ services = [] }: { services?: NavLink[] }) => {
           <div className="hidden flex-shrink-0 items-center space-x-2 lg:flex">
             <AvailabilityIndicator />
             <ReviewsDisplay />
-            <a
-              href="tel:0767135458"
-              onClick={reportConversion}
-              className="flex items-center gap-1 whitespace-nowrap text-sm font-semibold text-primary hover:underline"
-            >
-              <Phone className="h-4 w-4" />
-              07 67 13 54 58
-            </a>
+            <div className="relative flex items-center">
+              <a
+                href="tel:0767135458"
+                onClick={reportConversion}
+                className="flex items-center gap-1 whitespace-nowrap text-sm font-semibold text-primary hover:underline"
+              >
+                <Phone className="h-4 w-4" />
+                07 67 13 54 58
+              </a>
+              {pathname?.startsWith("/landing/") && (
+                <span className="absolute left-0 top-full mt-0.5 whitespace-nowrap rounded-full bg-accent px-1.5 py-0.5 text-[9px] font-semibold text-accent-foreground shadow-md">
+                  Non surtaxé
+                </span>
+              )}
+            </div>
             <Button
               variant="hero"
               size="sm"

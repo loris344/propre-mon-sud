@@ -19,7 +19,7 @@ const PhoneToast = () => {
   return (
     <div className="fixed bottom-3 left-3 z-50 flex flex-col items-start gap-1">
       {isLandingPage && (
-        <span className="ml-1 rounded-full bg-background/95 px-2 py-0.5 text-[10px] text-muted-foreground shadow-sm">
+        <span className="ml-1 rounded-full bg-accent px-2 py-0.5 text-[10px] font-semibold text-accent-foreground shadow-md">
           Numéro non surtaxé
         </span>
       )}
