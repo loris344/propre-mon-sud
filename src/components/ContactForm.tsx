@@ -6,8 +6,10 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import { sendContactEmail, ContactFormData } from "@/lib/emailService";
+import { trackMetaLead } from "@/lib/meta-pixel";
 import { Shield, Send, CheckCircle, AlertCircle } from "lucide-react";
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 
 interface FormErrors {
   firstName?: string;
@@ -17,8 +19,9 @@ interface FormErrors {
   description?: string;
 }
 
-const ContactForm = ({ className, onSuccess }: { className?: string; onSuccess?: () => void }) => {
+const ContactForm = ({ className }: { className?: string }) => {
   const { toast } = useToast();
+  const pathname = usePathname();
   const [formData, setFormData] = useState<ContactFormData>({
     firstName: '',
     phone: '',
@@ -87,7 +90,10 @@ const ContactForm = ({ className, onSuccess }: { className?: string; onSuccess?:
 
       if (success) {
         setIsSubmitted(true);
-        onSuccess?.();
+        // Conversion Meta Pixel : sur TOUTE page du site (le formulaire est le
+        // même partout), identifiée par la page où le lead a été soumis.
+        const contentName = pathname && pathname !== "/" ? pathname.replace(/^\/|\/$/g, "").replace(/\//g, "-") : "home";
+        trackMetaLead(contentName);
 
         toast({
           title: "Demande envoyée avec succès !",
