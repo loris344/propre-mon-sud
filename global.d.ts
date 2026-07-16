@@ -8,5 +8,7 @@ declare global {
   interface Window {
     gtag?: (...args: unknown[]) => void;
     dataLayer?: unknown[];
+    // Injecté par le Meta Pixel (posé via GTM, tag "Meta Pixel - Base Code").
+    fbq?: (...args: unknown[]) => void;
   }
 }

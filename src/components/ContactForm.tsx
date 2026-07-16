@@ -17,7 +17,7 @@ interface FormErrors {
   description?: string;
 }
 
-const ContactForm = ({ className }: { className?: string }) => {
+const ContactForm = ({ className, onSuccess }: { className?: string; onSuccess?: () => void }) => {
   const { toast } = useToast();
   const [formData, setFormData] = useState<ContactFormData>({
     firstName: '',
@@ -87,6 +87,7 @@ const ContactForm = ({ className }: { className?: string }) => {
 
       if (success) {
         setIsSubmitted(true);
+        onSuccess?.();
 
         toast({
           title: "Demande envoyée avec succès !",

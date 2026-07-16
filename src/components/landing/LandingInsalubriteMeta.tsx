@@ -12,6 +12,7 @@ import LandingZones from "@/components/landing/LandingZones";
 import PriceEstimator from "@/components/landing/PriceEstimator";
 import ExamplesGallery from "@/components/ExamplesGallery";
 import { homepageFaqItems } from "@/data/homepage-faq";
+import { trackMetaLead } from "@/lib/meta-pixel";
 
 const PHONE = "0767135458";
 const PHONE_DISPLAY = "07 67 13 54 58";
@@ -86,7 +87,7 @@ const LandingInsalubriteMeta = () => {
                 width={800}
                 height={450}
               />
-              <ContactForm />
+              <ContactForm onSuccess={() => trackMetaLead("insalubrite")} />
             </div>
           </div>
         </div>
