@@ -51,7 +51,6 @@ const LandingInsalubriteMeta = () => {
                 Devis Gratuit
               </Button>
             </div>
-            <p className="text-xs text-muted-foreground">Numéro non surtaxé, appel au tarif normal.</p>
 
             <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-2 pt-2">
               <div className="flex items-center gap-1.5">
@@ -79,6 +78,14 @@ const LandingInsalubriteMeta = () => {
           <div className="grid lg:grid-cols-2 gap-6 max-w-5xl mx-auto items-start">
             <PriceEstimator serviceLabel="désinfection de logement insalubre" />
             <div id="devis-gratuit" className="scroll-mt-24">
+              <img
+                src="/images/examples/avant-apres-nettoyage-insalubre-toulouse.webp"
+                alt="Avant et après désinfection d'un logement insalubre"
+                className="lg:hidden w-full h-auto rounded-xl shadow-lg mb-4"
+                loading="lazy"
+                width={800}
+                height={450}
+              />
               <ContactForm />
             </div>
           </div>
