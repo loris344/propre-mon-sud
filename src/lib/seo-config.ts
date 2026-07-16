@@ -90,6 +90,20 @@ export const SEO_CONFIGS: Record<string, SEOConfig> = {
     noIndex: true
   },
 
+  '/landing/diogene-devis-meta': {
+    title: "Nettoyage Syndrome de Diogène | Estimation & Devis Gratuit",
+    description: "Nettoyage et débarras syndrome de Diogène. Estimez le prix de votre intervention et obtenez un devis gratuit. Occitanie, PACA, Sud France.",
+    canonical: "/landing/diogene-devis-meta",
+    noIndex: true
+  },
+
+  '/landing/insalubrite-devis-meta': {
+    title: "Désinfection Logement Insalubre | Estimation & Devis Gratuit",
+    description: "Désinfection et remise en état de logements insalubres. Estimez le prix de votre intervention et obtenez un devis gratuit. Occitanie, PACA, Sud France.",
+    canonical: "/landing/insalubrite-devis-meta",
+    noIndex: true
+  },
+
   '/protocole-sanitaire': {
     title: "Fiche Protocole Sanitaire | SOS Nettoyage Diogène & Débarras",
     description: "Protocole sanitaire d'intervention en logement insalubre : odeurs, risques biologiques, tri des documents. Document à joindre aux rapports CCAS, MJPM et préfecture.",
