@@ -1,8 +1,7 @@
 "use client";
 
-import { Phone, Mail, Clock } from "lucide-react";
+import { Mail, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import CallLink from "@/components/CallLink";
 import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
 import LandingReviews from "@/components/LandingReviews";
@@ -12,9 +11,6 @@ import LandingZones from "@/components/landing/LandingZones";
 import PriceEstimator from "@/components/landing/PriceEstimator";
 import ExamplesGallery from "@/components/ExamplesGallery";
 import { homepageFaqItems } from "@/data/homepage-faq";
-
-const PHONE = "0767135458";
-const PHONE_DISPLAY = "07 67 13 54 58";
 
 const scrollToForm = () => {
   document.getElementById('devis-gratuit')?.scrollIntoView({ behavior: 'smooth' });
@@ -40,14 +36,8 @@ const LandingDiogeneMeta = () => {
               <span className="font-semibold text-foreground">Occitanie et PACA</span>.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-3 justify-center">
-              <CallLink phone={PHONE}>
-                <Button variant="hero" size="lg" className="text-base px-6 py-4 w-full sm:w-auto">
-                  <Phone className="w-4 h-4" />
-                  {PHONE_DISPLAY}
-                </Button>
-              </CallLink>
-              <Button variant="accent" size="lg" className="text-base px-6 py-4" onClick={scrollToForm}>
+            <div className="flex justify-center">
+              <Button variant="accent" size="lg" className="text-base px-8 py-4" onClick={scrollToForm}>
                 <Mail className="w-4 h-4" />
                 Devis Gratuit
               </Button>

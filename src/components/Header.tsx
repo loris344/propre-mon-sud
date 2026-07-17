@@ -6,6 +6,7 @@ import { useState, useCallback, useRef, useEffect, memo } from "react";
 import { useRouter, usePathname } from "next/navigation";
 import Link from "next/link";
 import type { NavLink } from "@/lib/seo-pages";
+import { isMetaLandingPage } from "@/lib/meta-landing-pages";
 import AvailabilityIndicator from "./AvailabilityIndicator";
 import ReviewsDisplay from "./ReviewsDisplay";
 
@@ -66,6 +67,10 @@ const Header = ({ services = [] }: { services?: NavLink[] }) => {
   const reportConversion = useCallback(() => {
     if (typeof gtag_report_conversion === "function") gtag_report_conversion();
   }, []);
+
+  // Landing pages Meta Ads : aucun numéro affiché nulle part, seul le
+  // formulaire est suivi comme conversion sur ces pages.
+  const hidePhone = isMetaLandingPage(pathname);
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 border-b border-border/50 bg-background/95 shadow-sm backdrop-blur-sm">
@@ -164,21 +169,23 @@ const Header = ({ services = [] }: { services?: NavLink[] }) => {
           <div className="hidden flex-shrink-0 items-center space-x-2 lg:flex">
             <AvailabilityIndicator />
             <ReviewsDisplay />
-            <div className="relative flex items-center">
-              <a
-                href="tel:0767135458"
-                onClick={reportConversion}
-                className="flex items-center gap-1 whitespace-nowrap text-sm font-semibold text-primary hover:underline"
-              >
-                <Phone className="h-4 w-4" />
-                07 67 13 54 58
-              </a>
-              {pathname?.startsWith("/landing/") && (
-                <span className="absolute left-0 top-full mt-0.5 whitespace-nowrap rounded-full bg-accent px-1.5 py-0.5 text-[9px] font-semibold text-accent-foreground shadow-md">
-                  Non surtaxé
-                </span>
-              )}
-            </div>
+            {!hidePhone && (
+              <div className="relative flex items-center">
+                <a
+                  href="tel:0767135458"
+                  onClick={reportConversion}
+                  className="flex items-center gap-1 whitespace-nowrap text-sm font-semibold text-primary hover:underline"
+                >
+                  <Phone className="h-4 w-4" />
+                  07 67 13 54 58
+                </a>
+                {pathname?.startsWith("/landing/") && (
+                  <span className="absolute left-0 top-full mt-0.5 whitespace-nowrap rounded-full bg-accent px-1.5 py-0.5 text-[9px] font-semibold text-accent-foreground shadow-md">
+                    Non surtaxé
+                  </span>
+                )}
+              </div>
+            )}
             <Button
               variant="hero"
               size="sm"
@@ -272,14 +279,16 @@ const Header = ({ services = [] }: { services?: NavLink[] }) => {
                 <div className="flex justify-center">
                   <ReviewsDisplay />
                 </div>
-                <a
-                  href="tel:0767135458"
-                  onClick={reportConversion}
-                  className="block w-full rounded-lg bg-primary px-6 py-4 text-center text-lg font-bold text-primary-foreground transition-colors hover:bg-primary/90"
-                >
-                  <Phone className="mr-2 inline-block h-5 w-5" />
-                  07 67 13 54 58
-                </a>
+                {!hidePhone && (
+                  <a
+                    href="tel:0767135458"
+                    onClick={reportConversion}
+                    className="block w-full rounded-lg bg-primary px-6 py-4 text-center text-lg font-bold text-primary-foreground transition-colors hover:bg-primary/90"
+                  >
+                    <Phone className="mr-2 inline-block h-5 w-5" />
+                    07 67 13 54 58
+                  </a>
+                )}
                 <Button
                   variant="hero"
                   size="lg"

@@ -2,6 +2,7 @@
 
 import { Phone } from "lucide-react";
 import { usePathname } from "next/navigation";
+import { isMetaLandingPage } from "@/lib/meta-landing-pages";
 
 const teamMembers = [
   { src: "/images/loris-photo.webp", alt: "Loris" },
@@ -9,18 +10,17 @@ const teamMembers = [
   { src: "/images/team/aymeric.webp", alt: "Aymeric" },
 ];
 
-// Landing pages Meta Ads : la mention "non surtaxé" y est retirée à la demande
-// du client (pas de tracking d'appel Google Ads dessus, mention jugée superflue).
-const NON_SURTAXE_EXCLUDED_PATHS = ["/landing/diogene-devis-meta", "/landing/insalubrite-devis-meta"];
-
 const PhoneToast = () => {
   const pathname = usePathname();
+
+  // Landing pages Meta Ads : aucun numéro affiché nulle part sur ces pages,
+  // le formulaire est le seul canal de conversion suivi.
+  if (isMetaLandingPage(pathname)) return null;
+
   // Mention "non surtaxé" uniquement sur les landing pages Google Ads : le
   // numéro peut y être swappé en 08/09 par le tracking d'appels (voir
   // CallTracking.tsx), ce qui peut inquiéter le visiteur.
-  const isLandingPage =
-    pathname?.startsWith("/landing/") &&
-    !NON_SURTAXE_EXCLUDED_PATHS.some((path) => pathname.startsWith(path));
+  const isLandingPage = pathname?.startsWith("/landing/");
 
   return (
     <div className="fixed bottom-3 left-3 z-50 flex flex-col items-start gap-1">
