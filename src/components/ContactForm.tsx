@@ -128,115 +128,115 @@ const ContactForm = ({ className }: { className?: string }) => {
   };
 
   return (
-    <Card className={`shadow-xl border-border/50 p-4 sm:p-6 ${className ?? ""}`}>
-      <CardHeader className="pb-4 sm:pb-6">
-        <CardTitle className="text-2xl sm:text-3xl font-semibold text-foreground">
+    <Card className={`shadow-xl border-border/50 p-3 sm:p-6 ${className ?? ""}`}>
+      <CardHeader className="pb-3 sm:pb-6">
+        <CardTitle className="text-xl sm:text-3xl font-semibold text-foreground">
           Demande de Devis Gratuit
         </CardTitle>
-        <p className="text-sm text-muted-foreground mt-2">
+        <p className="text-xs sm:text-sm text-muted-foreground mt-1 sm:mt-2">
           Réservé aux demandes de devis, pas aux candidatures.
         </p>
       </CardHeader>
 
       <CardContent>
         {isSubmitted ? (
-          <div className="text-center py-8 space-y-4">
-            <div className="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mx-auto">
-              <CheckCircle className="w-8 h-8 text-accent" />
+          <div className="text-center py-6 sm:py-8 space-y-3 sm:space-y-4">
+            <div className="w-12 h-12 sm:w-16 sm:h-16 bg-accent/20 rounded-full flex items-center justify-center mx-auto">
+              <CheckCircle className="w-6 h-6 sm:w-8 sm:h-8 text-accent" />
             </div>
-            <h3 className="text-xl font-semibold text-foreground">Demande envoyée !</h3>
-            <p className="text-muted-foreground">
+            <h3 className="text-lg sm:text-xl font-semibold text-foreground">Demande envoyée !</h3>
+            <p className="text-sm sm:text-base text-muted-foreground">
               Votre demande a été transmise. Nous vous contacterons rapidement au {formData.phone}.
             </p>
           </div>
         ) : (
-          <form onSubmit={handleSubmit} className="space-y-6 sm:space-y-8">
-            <div className="grid sm:grid-cols-2 gap-4 sm:gap-6">
-              <div className="space-y-3">
-                <label className="text-base sm:text-lg font-medium text-foreground">Prénom *</label>
+          <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
+            <div className="grid sm:grid-cols-2 gap-3 sm:gap-5">
+              <div className="space-y-1.5 sm:space-y-2">
+                <label className="text-sm sm:text-base font-medium text-foreground">Prénom *</label>
                 <Input
                   placeholder="Votre prénom"
                   value={formData.firstName}
                   onChange={(e) => handleInputChange('firstName', e.target.value)}
-                  className={`text-base sm:text-lg py-3 sm:py-4 ${errors.firstName ? "border-destructive" : ""}`}
+                  className={`text-sm sm:text-base py-2 sm:py-3 ${errors.firstName ? "border-destructive" : ""}`}
                 />
                 {errors.firstName && (
-                  <p className="text-sm sm:text-base text-destructive flex items-center gap-2">
-                    <AlertCircle className="w-4 h-4 sm:w-5 sm:h-5" />
+                  <p className="text-xs sm:text-sm text-destructive flex items-center gap-1.5">
+                    <AlertCircle className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
                     {errors.firstName}
                   </p>
                 )}
               </div>
-              <div className="space-y-3">
-                <label className="text-base sm:text-lg font-medium text-foreground">Téléphone *</label>
+              <div className="space-y-1.5 sm:space-y-2">
+                <label className="text-sm sm:text-base font-medium text-foreground">Téléphone *</label>
                 <Input
                   placeholder="06 00 00 00 00"
                   value={formData.phone}
                   onChange={(e) => handleInputChange('phone', e.target.value)}
-                  className={`text-base sm:text-lg py-3 sm:py-4 ${errors.phone ? "border-destructive" : ""}`}
+                  className={`text-sm sm:text-base py-2 sm:py-3 ${errors.phone ? "border-destructive" : ""}`}
                 />
                 {errors.phone && (
-                  <p className="text-sm sm:text-base text-destructive flex items-center gap-2">
-                    <AlertCircle className="w-4 h-4 sm:w-5 sm:h-5" />
+                  <p className="text-xs sm:text-sm text-destructive flex items-center gap-1.5">
+                    <AlertCircle className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
                     {errors.phone}
                   </p>
                 )}
               </div>
             </div>
 
-            <div className="space-y-3">
-              <label className="text-base sm:text-lg font-medium text-foreground">Email *</label>
+            <div className="space-y-1.5 sm:space-y-2">
+              <label className="text-sm sm:text-base font-medium text-foreground">Email *</label>
               <Input
                 type="email"
                 placeholder="votre.email@exemple.fr"
                 value={formData.email}
                 onChange={(e) => handleInputChange('email', e.target.value)}
-                className={`text-base sm:text-lg py-3 sm:py-4 ${errors.email ? "border-destructive" : ""}`}
+                className={`text-sm sm:text-base py-2 sm:py-3 ${errors.email ? "border-destructive" : ""}`}
               />
               {errors.email && (
-                <p className="text-sm sm:text-base text-destructive flex items-center gap-2">
-                  <AlertCircle className="w-4 h-4 sm:w-5 sm:h-5" />
+                <p className="text-xs sm:text-sm text-destructive flex items-center gap-1.5">
+                  <AlertCircle className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
                   {errors.email}
                 </p>
               )}
             </div>
 
-            <div className="space-y-3">
-              <label className="text-base sm:text-lg font-medium text-foreground">Ville ou village d'intervention *</label>
+            <div className="space-y-1.5 sm:space-y-2">
+              <label className="text-sm sm:text-base font-medium text-foreground">Ville ou village d'intervention *</label>
               <Input
                 placeholder="Montpellier, Marseille, Toulouse..."
                 value={formData.city}
                 onChange={(e) => handleInputChange('city', e.target.value)}
-                className={`text-base sm:text-lg py-3 sm:py-4 ${errors.city ? "border-destructive" : ""}`}
+                className={`text-sm sm:text-base py-2 sm:py-3 ${errors.city ? "border-destructive" : ""}`}
               />
               {errors.city && (
-                <p className="text-sm sm:text-base text-destructive flex items-center gap-2">
-                  <AlertCircle className="w-4 h-4 sm:w-5 sm:h-5" />
+                <p className="text-xs sm:text-sm text-destructive flex items-center gap-1.5">
+                  <AlertCircle className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
                   {errors.city}
                 </p>
               )}
             </div>
 
-            <div className="space-y-3">
-              <label className="text-base sm:text-lg font-medium text-foreground">Description de la situation *</label>
+            <div className="space-y-1.5 sm:space-y-2">
+              <label className="text-sm sm:text-base font-medium text-foreground">Description de la situation *</label>
               <Textarea
                 placeholder="Décrivez brièvement votre situation (type de logement, surfaces approximatives, urgence...)"
-                rows={4}
+                rows={3}
                 value={formData.description}
                 onChange={(e) => handleInputChange('description', e.target.value)}
-                className={`text-base sm:text-lg py-3 sm:py-4 ${errors.description ? "border-destructive" : ""}`}
+                className={`text-sm sm:text-base py-2 sm:py-3 ${errors.description ? "border-destructive" : ""}`}
               />
               {errors.description && (
-                <p className="text-sm sm:text-base text-destructive flex items-center gap-2">
-                  <AlertCircle className="w-4 h-4 sm:w-5 sm:h-5" />
+                <p className="text-xs sm:text-sm text-destructive flex items-center gap-1.5">
+                  <AlertCircle className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
                   {errors.description}
                 </p>
               )}
             </div>
 
-            <div className="flex items-start gap-3 sm:gap-4 p-4 sm:p-6 bg-accent/10 rounded-lg border border-accent/20">
-              <Shield className="w-6 h-6 sm:w-7 sm:h-7 text-accent mt-0.5 flex-shrink-0" />
-              <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
+            <div className="flex items-start gap-2.5 sm:gap-4 p-3 sm:p-5 bg-accent/10 rounded-lg border border-accent/20">
+              <Shield className="w-5 h-5 sm:w-6 sm:h-6 text-accent mt-0.5 flex-shrink-0" />
+              <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">
                 <span className="font-medium text-foreground">Confidentialité garantie :</span>
                 {" "}Toutes vos informations sont traitées avec la plus grande discrétion et ne seront jamais communiquées à des tiers.
               </p>
@@ -246,17 +246,17 @@ const ContactForm = ({ className }: { className?: string }) => {
               type="submit"
               variant="hero"
               size="lg"
-              className="w-full text-lg sm:text-xl py-6 sm:py-8 min-h-[60px] sm:min-h-[70px]"
+              className="w-full text-base sm:text-lg py-4 sm:py-6 min-h-[48px] sm:min-h-[60px]"
               disabled={isSubmitting}
             >
               {isSubmitting ? (
                 <>
-                  <div className="w-5 h-5 sm:w-6 sm:h-6 border-2 border-white border-t-transparent rounded-full animate-spin mr-2" />
+                  <div className="w-4 h-4 sm:w-5 sm:h-5 border-2 border-white border-t-transparent rounded-full animate-spin mr-2" />
                   Envoi en cours...
                 </>
               ) : (
                 <>
-                  <Send className="w-5 h-5 sm:w-6 sm:h-6" />
+                  <Send className="w-4 h-4 sm:w-5 sm:h-5" />
                   Envoyer ma demande
                 </>
               )}

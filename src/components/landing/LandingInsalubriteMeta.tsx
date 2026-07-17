@@ -64,18 +64,19 @@ const LandingInsalubriteMeta = () => {
             </div>
           </div>
 
+          <img
+            src="/images/examples/avant-apres-remise-en-etat-accumulation-extreme-montpellier.webp"
+            alt="Avant et après remise en état d'un logement en accumulation extrême à Montpellier"
+            className="w-full max-w-2xl mx-auto h-auto rounded-xl shadow-lg mb-8 sm:mb-10"
+            loading="lazy"
+            width={800}
+            height={450}
+          />
+
           {/* Formulaire + estimateur : le coeur de la page, visible sans scroll excessif */}
           <div className="grid lg:grid-cols-2 gap-6 max-w-5xl mx-auto items-start">
             <PriceEstimator serviceLabel="désinfection de logement insalubre" />
             <div id="devis-gratuit" className="scroll-mt-24">
-              <img
-                src="/images/examples/avant-apres-nettoyage-insalubre-toulouse.webp"
-                alt="Avant et après désinfection d'un logement insalubre"
-                className="lg:hidden w-full h-auto rounded-xl shadow-lg mb-4"
-                loading="lazy"
-                width={800}
-                height={450}
-              />
               <ContactForm />
             </div>
           </div>
