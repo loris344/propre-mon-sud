@@ -33,15 +33,15 @@ export default function HomePage() {
         <section id="exemples" aria-labelledby="exemples-title" className="scroll-mt-24">
           <ExamplesGallery />
         </section>
-        <section id="services" aria-labelledby="services-title" className="scroll-mt-24">
-          <Services services={getServiceHubs()} />
-        </section>
         <section id="faq" aria-labelledby="faq-title" className="scroll-mt-24">
           <LandingFAQ
             title="Questions fréquentes"
             subtitle="Tout ce qu'il faut savoir avant de nous contacter."
             items={homepageFaqItems}
           />
+        </section>
+        <section id="services" aria-labelledby="services-title" className="scroll-mt-24">
+          <Services services={getServiceHubs()} />
         </section>
         <WhyChooseUs />
         <section id="avis" aria-labelledby="avis-title" className="scroll-mt-24">
