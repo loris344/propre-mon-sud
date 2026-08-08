@@ -20,7 +20,7 @@ export const homepageFaqItems: FAQItem[] = [
     question:
       "Le service comprend-il le débarras, la désinfection, le traitement des odeurs et des nuisibles ?",
     answer:
-      "Oui. L'intervention comprend le débarras complet et l'évacuation des déchets, le lessivage, la désinfection totale des pièces (normes virucides/bactéricides en collaboration avec l'ARS), le traitement anti-nuisibles (cafards, punaises de lit, rongeurs) et la remise en état des surfaces pour supprimer les odeurs tenaces.",
+      "Oui. L'intervention comprend le débarras complet et l'évacuation des déchets, le lessivage, la désinfection totale des pièces (normes virucides/bactéricides), le traitement anti-nuisibles (cafards, punaises de lit, rongeurs) et la remise en état des surfaces pour supprimer les odeurs tenaces.",
   },
   {
     question:

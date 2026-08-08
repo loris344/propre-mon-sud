@@ -88,30 +88,6 @@ const Hero = () => {
               </div>
             </div>
 
-            {/* ARS Collaboration */}
-            <div className="flex items-center gap-4 mt-1">
-              <span className="text-sm sm:text-base text-muted-foreground font-medium">
-                En collaboration avec l'ARS
-              </span>
-              <div className="flex items-center gap-3">
-                <img 
-                  src="/logos/RF.webp" 
-                  alt="République Française" 
-                  className="h-12 sm:h-16 w-auto object-contain"
-                  loading="eager"
-                  width={128}
-                  height={116}
-                />
-                <img 
-                  src="/logos/ARS.webp" 
-                  alt="Agence Régionale de Santé" 
-                  className="h-12 sm:h-16 w-auto object-contain"
-                  loading="eager"
-                  width={128}
-                  height={74}
-                />
-              </div>
-            </div>
             
             {/* Quick Info */}
             <div className="flex flex-wrap gap-4 sm:gap-6 pt-4 sm:pt-6 border-t border-border/50">

@@ -61,16 +61,6 @@ const LandingApresDeces = () => {
                   <span className="flex items-center gap-1.5"><Eye className="w-4 h-4" /> Discrétion absolue</span>
                   <span className="flex items-center gap-1.5"><Clock className="w-4 h-4" /> 7j/7</span>
                 </div>
-
-                <div className="flex items-center gap-4 mt-3">
-                  <span className="text-sm sm:text-base text-muted-foreground font-medium">
-                    En collaboration avec l'ARS
-                  </span>
-                  <div className="flex items-center gap-3">
-                    <img src="/logos/RF.webp" alt="République Française" className="h-12 sm:h-16 w-auto object-contain" width={128} height={116} loading="lazy" />
-                    <img src="/logos/ARS.webp" alt="Agence Régionale de Santé" className="h-12 sm:h-16 w-auto object-contain" width={128} height={74} loading="lazy" />
-                  </div>
-                </div>
               </div>
 
               {/* Images */}

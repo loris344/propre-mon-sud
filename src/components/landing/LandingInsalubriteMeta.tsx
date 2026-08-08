@@ -56,11 +56,6 @@ const LandingInsalubriteMeta = () => {
                 <Clock className="w-4 h-4 text-accent" />
                 <span className="text-xs sm:text-sm font-medium">Intervention 7j/7</span>
               </div>
-              <div className="flex items-center gap-2">
-                <span className="text-xs sm:text-sm text-muted-foreground font-medium">En collaboration avec l'ARS</span>
-                <img src="/logos/RF.webp" alt="République Française" className="h-8 w-auto object-contain" width={80} height={72} loading="lazy" />
-                <img src="/logos/ARS.webp" alt="Agence Régionale de Santé" className="h-8 w-auto object-contain" width={80} height={46} loading="lazy" />
-              </div>
             </div>
           </div>
 

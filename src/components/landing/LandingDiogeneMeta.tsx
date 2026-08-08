@@ -57,11 +57,6 @@ const LandingDiogeneMeta = () => {
                 <Clock className="w-4 h-4 text-accent" />
                 <span className="text-xs sm:text-sm font-medium">Intervention 7j/7</span>
               </div>
-              <div className="flex items-center gap-2">
-                <span className="text-xs sm:text-sm text-muted-foreground font-medium">En collaboration avec l'ARS</span>
-                <img src="/logos/RF.webp" alt="République Française" className="h-8 w-auto object-contain" width={80} height={72} loading="lazy" />
-                <img src="/logos/ARS.webp" alt="Agence Régionale de Santé" className="h-8 w-auto object-contain" width={80} height={46} loading="lazy" />
-              </div>
             </div>
           </div>
 
@@ -99,7 +94,7 @@ const LandingDiogeneMeta = () => {
               { step: "01", title: "Échange téléphonique ou par mail", desc: "Vous nous décrivez la situation librement. Nous écoutons, nous comprenons, sans engagement de votre part." },
               { step: "02", title: "Quelques infos, photos & devis gratuit", desc: "Envoyez-nous quelques photos du logement et une description de la situation. Un devis clair et détaillé vous est envoyé rapidement." },
               { step: "03", title: "Débarras et tri complet", desc: "Encombrants, déchets et objets accumulés sont triés puis évacués en décheterie professionnelle. Papiers importants, objets de valeur et souvenirs sont conservés et vous sont restitués." },
-              { step: "04", title: "Nettoyage, désinfection & remise en état", desc: "Lessivage et désinfection totale des pièces, en collaboration avec l'ARS. Le logement redevient propre et habitable, avec un suivi de satisfaction." },
+              { step: "04", title: "Nettoyage, désinfection & remise en état", desc: "Lessivage et désinfection totale des pièces. Le logement redevient propre et habitable, avec un suivi de satisfaction." },
             ].map((item, i) => (
               <div key={i} className="flex gap-5 sm:gap-8 mb-8 last:mb-0">
                 <div className="flex-shrink-0">

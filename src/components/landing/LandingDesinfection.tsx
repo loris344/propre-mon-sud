@@ -79,17 +79,6 @@ const LandingDesinfection = () => {
                 <span className="ml-1 text-sm font-medium text-muted-foreground">4.7/5</span>
               </div>
 
-              {/* ARS */}
-              <div className="flex items-center gap-4">
-                <span className="text-sm sm:text-base text-muted-foreground font-medium">
-                  En collaboration avec l'ARS
-                </span>
-                <div className="flex items-center gap-3">
-                  <img src="/logos/RF.webp" alt="République Française" className="h-12 sm:h-16 w-auto object-contain" width={128} height={116} loading="lazy" />
-                  <img src="/logos/ARS.webp" alt="Agence Régionale de Santé" className="h-12 sm:h-16 w-auto object-contain" width={128} height={74} loading="lazy" />
-                </div>
-              </div>
-
               <div className="flex items-center gap-2 text-muted-foreground pt-2 border-t border-border/50">
                 <Clock className="w-4 h-4 text-accent" />
                 <span className="text-xs sm:text-sm font-medium">Intervention 7j/7</span>
