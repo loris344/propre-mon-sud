@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
-import { CONSENT_CHANGE_EVENT, readConsent, type ConsentChoice } from "@/lib/consent";
+import { CONSENT_CHANGE_EVENT, getConsent, type ConsentChoice } from "@/lib/consent";
 
 /**
  * Initialise PostHog après le rendu initial (déféré pour ne pas pénaliser le
@@ -39,7 +39,7 @@ export default function Analytics() {
       }
     };
 
-    if (readConsent()?.analytics) schedulePostHog();
+    if (getConsent().analytics) schedulePostHog();
 
     const onConsentChange = (e: Event) => {
       const { analytics } = (e as CustomEvent<ConsentChoice>).detail;

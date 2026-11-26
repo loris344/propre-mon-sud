@@ -1,20 +1,21 @@
 /**
- * Consentement cookies (RGPD / CNIL) + Google Consent Mode v2.
+ * Consentement cookies (RGPD / CNIL) via tarteaucitron.js + Google Consent Mode v2.
  *
  * - Par défaut TOUT est refusé (script inline `CONSENT_DEFAULT_SCRIPT`, exécuté
- *   dans app/layout.tsx AVANT GTM et gtag.js).
- * - Le choix du visiteur est stocké dans localStorage (`STORAGE_KEY`) et
- *   redemandé au bout de 6 mois (recommandation CNIL).
+ *   dans app/layout.tsx AVANT GTM et gtag.js). Il réapplique aussi le choix
+ *   déjà enregistré dans le cookie tarteaucitron, sans attendre son chargement.
+ * - Le bandeau est tarteaucitron (components/CookieBanner.tsx), avec 2 services
+ *   « maison » (`TAC_ANALYTICS`, `TAC_ADS`) qui ne chargent rien eux-mêmes : GTM
+ *   charge les tags, eux ne font que piloter le consentement via `applyConsent`.
  * - À chaque choix : `gtag('consent','update',…)` + événement dataLayer
  *   `cookie_consent_update` (déclencheur GTM pour le Meta Pixel) + événement
  *   DOM `CONSENT_CHANGE_EVENT` (PostHog, voir components/Analytics.tsx).
  */
 
-export const STORAGE_KEY = "sos_cookie_consent";
-export const CONSENT_VERSION = 1;
-export const CONSENT_MAX_AGE_MS = 182 * 24 * 60 * 60 * 1000; // ~6 mois
+export const TAC_COOKIE = "tarteaucitron";
+export const TAC_ANALYTICS = "sosanalytics";
+export const TAC_ADS = "sosads";
 export const CONSENT_CHANGE_EVENT = "sos-consent-change";
-export const OPEN_PREFERENCES_EVENT = "sos-open-cookie-preferences";
 
 export type ConsentChoice = {
   /** Mesure d'audience : Google Analytics 4, PostHog */
@@ -23,37 +24,26 @@ export type ConsentChoice = {
   ads: boolean;
 };
 
-type StoredConsent = ConsentChoice & { v: number; ts: number };
-
-export function readConsent(): ConsentChoice | null {
-  try {
-    const raw = window.localStorage.getItem(STORAGE_KEY);
-    if (!raw) return null;
-    const c = JSON.parse(raw) as StoredConsent;
-    if (c.v !== CONSENT_VERSION || Date.now() - c.ts > CONSENT_MAX_AGE_MS) return null;
-    return { analytics: !!c.analytics, ads: !!c.ads };
-  } catch {
-    return null;
+declare global {
+  interface Window {
+    __sosConsent?: ConsentChoice;
+    tarteaucitron?: {
+      init: (params: Record<string, unknown>) => void;
+      services: Record<string, unknown>;
+      job?: string[];
+      userInterface: { openPanel: () => void };
+    };
   }
 }
 
-function toConsentModeState(c: ConsentChoice) {
-  const ads = c.ads ? "granted" : "denied";
-  return {
-    ad_storage: ads,
-    ad_user_data: ads,
-    ad_personalization: ads,
-    analytics_storage: c.analytics ? "granted" : "denied",
-  };
+export function getConsent(): ConsentChoice {
+  return window.__sosConsent ?? { analytics: false, ads: false };
 }
 
-export function saveConsent(choice: ConsentChoice) {
-  const stored: StoredConsent = { ...choice, v: CONSENT_VERSION, ts: Date.now() };
-  try {
-    window.localStorage.setItem(STORAGE_KEY, JSON.stringify(stored));
-  } catch {
-    // Stockage bloqué (navigation privée stricte) : le choix vaut pour la page.
-  }
+export function applyConsent(partial: Partial<ConsentChoice>) {
+  const prev = getConsent();
+  const next = { ...prev, ...partial };
+  window.__sosConsent = next;
 
   window.dataLayer = window.dataLayer || [];
   // gtag() doit pousser l'objet `arguments` (et non un tableau) dans le dataLayer.
@@ -63,28 +53,39 @@ export function saveConsent(choice: ConsentChoice) {
       // eslint-disable-next-line prefer-rest-params
       window.dataLayer!.push(arguments);
     };
-  gtag("consent", "update", toConsentModeState(choice));
+  const update: Record<string, string> = {};
+  if (partial.analytics !== undefined) {
+    update.analytics_storage = next.analytics ? "granted" : "denied";
+  }
+  if (partial.ads !== undefined) {
+    const ads = next.ads ? "granted" : "denied";
+    update.ad_storage = ads;
+    update.ad_user_data = ads;
+    update.ad_personalization = ads;
+  }
+  gtag("consent", "update", update);
   window.dataLayer.push({
     event: "cookie_consent_update",
-    consent_analytics: choice.analytics,
-    consent_ads: choice.ads,
+    consent_analytics: next.analytics,
+    consent_ads: next.ads,
   });
 
   // Meta Pixel (posé via GTM) : retire le consentement s'il est déjà chargé.
-  if (typeof window.fbq === "function") {
-    window.fbq("consent", choice.ads ? "grant" : "revoke");
+  if (partial.ads !== undefined && typeof window.fbq === "function") {
+    window.fbq("consent", next.ads ? "grant" : "revoke");
   }
 
-  window.dispatchEvent(new CustomEvent<ConsentChoice>(CONSENT_CHANGE_EVENT, { detail: choice }));
+  window.dispatchEvent(new CustomEvent<ConsentChoice>(CONSENT_CHANGE_EVENT, { detail: next }));
 }
 
 export function openCookiePreferences() {
-  window.dispatchEvent(new Event(OPEN_PREFERENCES_EVENT));
+  window.tarteaucitron?.userInterface.openPanel();
 }
 
 /**
  * Script inline à exécuter AVANT GTM / gtag.js : état par défaut « refusé »,
- * puis réapplication immédiate du choix déjà enregistré (visiteur qui revient).
+ * puis réapplication immédiate du choix déjà enregistré par tarteaucitron
+ * (cookie `tarteaucitron=!sosanalytics=true!sosads=false`).
  */
 export const CONSENT_DEFAULT_SCRIPT =
   "(function(){window.dataLayer=window.dataLayer||[];" +
@@ -92,8 +93,9 @@ export const CONSENT_DEFAULT_SCRIPT =
   "gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied'," +
   "analytics_storage:'denied',functionality_storage:'granted',security_storage:'granted',wait_for_update:500});" +
   "gtag('set','ads_data_redaction',true);gtag('set','url_passthrough',true);" +
-  "try{var c=JSON.parse(localStorage.getItem('" + STORAGE_KEY + "'));" +
-  "if(c&&c.v===" + CONSENT_VERSION + "&&Date.now()-c.ts<=" + CONSENT_MAX_AGE_MS + "){" +
-  "var a=c.ads?'granted':'denied';" +
+  "var m=document.cookie.match(/(?:^|; )" + TAC_COOKIE + "=([^;]*)/),c=m?decodeURIComponent(m[1]):'';" +
+  "var an=c.indexOf('!" + TAC_ANALYTICS + "=true')>-1,ad=c.indexOf('!" + TAC_ADS + "=true')>-1;" +
+  "window.__sosConsent={analytics:an,ads:ad};" +
+  "if(an||ad){var a=ad?'granted':'denied';" +
   "gtag('consent','update',{ad_storage:a,ad_user_data:a,ad_personalization:a," +
-  "analytics_storage:c.analytics?'granted':'denied'});}}catch(e){}})();";
+  "analytics_storage:an?'granted':'denied'});}})();";
