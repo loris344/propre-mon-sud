@@ -6,6 +6,7 @@ import { Card } from "@/components/ui/card";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import LandingReviews from "@/components/LandingReviews";
+import { formatGoogleRating } from "@/data/reviews";
 import LandingFAQ from "@/components/LandingFAQ";
 
 const LandingApresDeces = () => {
@@ -56,7 +57,7 @@ const LandingApresDeces = () => {
                     {[...Array(5)].map((_, i) => (
                       <Star key={i} className="w-4 h-4 fill-amber-400 text-amber-400" />
                     ))}
-                    <span className="ml-1 font-medium">4.7/5</span>
+                    <span className="ml-1 font-medium">{formatGoogleRating()}</span>
                   </div>
                   <span className="flex items-center gap-1.5"><Eye className="w-4 h-4" /> Discrétion absolue</span>
                   <span className="flex items-center gap-1.5"><Clock className="w-4 h-4" /> 7j/7</span>
@@ -180,7 +181,7 @@ const LandingApresDeces = () => {
         </section>
 
         {/* Avis clients */}
-        <LandingReviews serviceKey="deces" />
+        <LandingReviews />
 
         {/* Ce qu'on fait */}
         <section className="py-16 sm:py-20 bg-card border-y border-border/50">

@@ -6,6 +6,7 @@ import CallLink from "@/components/CallLink";
 import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
 import LandingReviews from "@/components/LandingReviews";
+import { formatGoogleRating } from "@/data/reviews";
 import LandingFAQ from "@/components/LandingFAQ";
 import LandingServices from "@/components/landing/LandingServices";
 import LandingZones from "@/components/landing/LandingZones";
@@ -77,7 +78,7 @@ const LandingDiogene = () => {
                     </svg>
                   ))}
                 </div>
-                <span className="ml-1 text-sm font-medium text-muted-foreground">4.7/5</span>
+                <span className="ml-1 text-sm font-medium text-muted-foreground">{formatGoogleRating()}</span>
               </div>
 
               <div className="flex items-center gap-2 text-muted-foreground pt-2 border-t border-border/50">
@@ -183,7 +184,7 @@ const LandingDiogene = () => {
       </section>
 
       {/* Avis clients */}
-      <LandingReviews serviceKey="diogene" />
+      <LandingReviews />
 
       {/* Zones d'intervention */}
       <LandingZones />

@@ -1,61 +1,63 @@
 /**
- * Avis clients affichés sur la page d'accueil.
- * Pour ajouter / modifier un avis, édite simplement ce fichier.
+ * Avis Google RÉELS, recopiés depuis la fiche Google Business (prénom seul).
+ * Affichés sur la page d'accueil (CustomerReviews) et les landing pages
+ * (LandingReviews).
+ *
+ * ⚠️ Ne JAMAIS inventer, réécrire ni ajouter un avis absent de la fiche Google
+ * (pratique commerciale trompeuse, art. L121-4 Code conso), ni afficher l'avis
+ * d'un membre de l'équipe. Pour mettre à jour : recopier depuis la fiche,
+ * puis ajuster GOOGLE_RATING / GOOGLE_REVIEW_COUNT.
  */
+export const GOOGLE_REVIEWS_URL = "https://www.google.com/maps?cid=17374493770164689124";
+export const GOOGLE_RATING = 5.0;
+export const GOOGLE_REVIEW_COUNT = 10;
+
 export interface Review {
   id: number;
   name: string;
-  location: string;
   rating: number;
+  /** Mois de la visite, tel qu'affiché par Google */
   date: string;
   text: string;
-  service: string;
 }
 
 export const REVIEWS: Review[] = [
   {
     id: 1,
-    name: "Marie L.",
-    location: "Montpellier",
+    name: "Julien",
     rating: 5,
-    date: "2024-11-15",
-    text: "Service exceptionnel ! Équipe très professionnelle et discrète. Intervention rapide et efficace. Je recommande vivement.",
-    service: "Nettoyage Syndrome de Diogène",
+    date: "Août 2026",
+    text: "Excellent service. Bon relationnel client. Nous avons solicité leur service pour le nettoyage complet d'une maison et nous en sommes très satisfait.",
   },
   {
     id: 2,
-    name: "Jean-Pierre M.",
-    location: "Sète",
+    name: "Rg",
     rating: 5,
-    date: "2024-08-22",
-    text: "Très satisfait du service. Respect total de la situation et intervention dans les délais. Prix correct pour la qualité.",
-    service: "Débarras Gros Volumes",
+    date: "Juin 2026",
+    text: "Service au top sur Marseille pour un gros débarras de volumes et d'encombrants. Le résultat avant/après est impressionnant, tout a été vidé et nettoyé en un …",
   },
   {
     id: 3,
-    name: "Michel R.",
-    location: "Nîmes",
+    name: "Françoise",
     rating: 5,
-    date: "2024-03-10",
-    text: "Excellent service ! L'équipe a su comprendre notre situation et nous accompagner avec bienveillance. Le résultat dépasse nos attentes.",
-    service: "Nettoyage Syndrome de Diogène",
+    date: "Mai 2026",
+    text: "La réponse à la demande d'intervention et l'intervention elle-même sont rapides et efficaces.",
   },
   {
     id: 4,
-    name: "Catherine B.",
-    location: "Perpignan",
+    name: "Emmanuelle",
     rating: 5,
-    date: "2023-09-18",
-    text: "Service professionnel et humain. L'équipe a su gérer une situation complexe avec beaucoup de délicatesse. Je recommande sans hésitation.",
-    service: "Débarras Gros Volumes",
+    date: "Mai 2026",
+    text: "Travail sérieux et responsable effectué dans le respect du délai et du contrat établi. Échange fluide avec l'entreprise qui est à l'écoute des contraintes et particularités de la mission à effectuer.",
   },
   {
     id: 5,
-    name: "Alain T.",
-    location: "Toulouse",
+    name: "Amandine",
     rating: 5,
-    date: "2023-05-14",
-    text: "Très bon service, équipe compétente et discrète. Le nettoyage a été fait dans les règles de l'art. Merci pour votre professionnalisme.",
-    service: "Désinfection Insalubrité",
+    date: "Mai 2026",
+    text: "Entreprise de confiance, service efficace, je recommande !",
   },
 ];
+
+export const formatGoogleRating = () =>
+  `${GOOGLE_RATING.toFixed(1).replace(".", ",")}/5 · ${GOOGLE_REVIEW_COUNT} avis Google`;

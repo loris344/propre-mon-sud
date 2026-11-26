@@ -3,7 +3,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Star, Quote } from "lucide-react";
 import { memo, useState, useEffect } from "react";
-import { REVIEWS } from "@/data/reviews";
+import { REVIEWS, GOOGLE_REVIEWS_URL, formatGoogleRating } from "@/data/reviews";
 
 const CustomerReviews = memo(() => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -45,9 +45,14 @@ const CustomerReviews = memo(() => {
                  ))}
                </div>
              </div>
-             <div className="text-muted-foreground">
-               Avis Google
-             </div>
+             <a
+               href={GOOGLE_REVIEWS_URL}
+               target="_blank"
+               rel="noopener noreferrer"
+               className="text-muted-foreground underline-offset-4 hover:underline"
+             >
+               {formatGoogleRating()}
+             </a>
            </div>
         </div>
 
@@ -66,8 +71,7 @@ const CustomerReviews = memo(() => {
                       <div className="flex items-start justify-between mb-4">
                         <div>
                           <h3 className="text-lg font-semibold text-foreground">{review.name}</h3>
-                          <p className="text-sm text-muted-foreground">{review.location}</p>
-                          <p className="text-xs text-muted-foreground">{review.date}</p>
+                          <p className="text-xs text-muted-foreground">Avis Google · {review.date}</p>
                         </div>
                         <div className="flex">
                           {[...Array(5)].map((_, i) => (
@@ -81,13 +85,6 @@ const CustomerReviews = memo(() => {
                             />
                           ))}
                         </div>
-                      </div>
-
-                      {/* Service */}
-                      <div className="mb-3">
-                        <span className="inline-block px-2 py-1 bg-primary/10 text-primary text-xs rounded-full">
-                          {review.service}
-                        </span>
                       </div>
 
                       {/* Texte de l'avis */}
@@ -122,9 +119,14 @@ const CustomerReviews = memo(() => {
 
         {/* Note de bas de page */}
         <div className="text-center mt-12">
-          <p className="text-sm text-muted-foreground">
-            Tous nos avis proviennent de clients réels ayant utilisé nos services.
-          </p>
+          <a
+            href={GOOGLE_REVIEWS_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm font-medium text-primary underline-offset-4 hover:underline"
+          >
+            Voir tous nos avis sur Google
+          </a>
         </div>
       </div>
     </section>
