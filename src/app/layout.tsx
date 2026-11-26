@@ -6,6 +6,8 @@ import Header from "@/components/Header";
 import PhoneToast from "@/components/PhoneToast";
 import Analytics from "@/components/Analytics";
 import CallTracking from "@/components/CallTracking";
+import CookieBanner from "@/components/CookieBanner";
+import { CONSENT_DEFAULT_SCRIPT } from "@/lib/consent";
 import { SITE_URL } from "@/lib/structured-data";
 import { getServiceHubs } from "@/lib/seo-pages";
 
@@ -73,6 +75,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           }}
         />
 
+        {/*
+          Google Consent Mode v2 : tout refusé par défaut, puis choix déjà
+          enregistré réappliqué. DOIT s'exécuter avant GTM et gtag.js
+          (CallTracking) : script synchrone, eux sont en afterInteractive.
+        */}
+        <script dangerouslySetInnerHTML={{ __html: CONSENT_DEFAULT_SCRIPT }} />
+
         {/* Google Tag Manager */}
         <Script id="gtm" strategy="afterInteractive">
           {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -100,6 +109,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           {children}
         </Providers>
         <Analytics />
+        <CookieBanner />
       </body>
     </html>
   );

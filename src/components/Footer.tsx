@@ -3,6 +3,7 @@
 import { Phone, Mail, MapPin, Clock, Shield, Heart, Building2 } from "lucide-react";
 import { ResponsiveImage } from "./ResponsiveImage";
 import Link from "next/link";
+import { openCookiePreferences } from "@/lib/consent";
 import type { NavLink } from "@/lib/seo-pages";
 
 const Footer = ({
@@ -190,6 +191,13 @@ const Footer = ({
               >
                 Politique de confidentialité
               </Link>
+              <button
+                type="button"
+                onClick={openCookiePreferences}
+                className="hover:text-foreground transition-colors"
+              >
+                Gérer les cookies
+              </button>
             </div>
           </div>
         </div>

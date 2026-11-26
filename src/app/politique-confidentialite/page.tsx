@@ -84,9 +84,26 @@ const PolitiqueConfidentialite = () => {
             <section>
               <h2 className="text-xl font-semibold text-foreground">7. Cookies</h2>
               <p>
-                Ce site utilise Google Tag Manager et Google Analytics pour analyser le trafic.
-                Ces outils peuvent déposer des cookies sur votre navigateur. Vous pouvez les refuser
-                via les paramètres de votre navigateur.
+                Lors de votre première visite, un bandeau vous permet d'accepter ou de refuser les
+                cookies non essentiels, par finalité. Tant que vous n'avez pas accepté, aucun cookie
+                de mesure d'audience ou de publicité n'est déposé. Votre choix est conservé 6 mois ;
+                vous pouvez le modifier à tout moment via le lien « Gérer les cookies » en bas de
+                chaque page.
+              </p>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>
+                  <strong>Mesure d'audience</strong> (soumis à consentement) : Google Analytics et
+                  PostHog, pour établir des statistiques de fréquentation et améliorer le site.
+                </li>
+                <li>
+                  <strong>Publicité</strong> (soumis à consentement) : Google Ads et Meta (Facebook),
+                  pour mesurer les demandes de devis et appels issus de nos annonces.
+                </li>
+              </ul>
+              <p>
+                Google Tag Manager est utilisé pour charger ces outils selon votre choix (Google
+                Consent Mode). Sans consentement, Google peut recevoir des signaux techniques
+                anonymes, sans cookie, pour la modélisation statistique des conversions.
               </p>
             </section>
 
